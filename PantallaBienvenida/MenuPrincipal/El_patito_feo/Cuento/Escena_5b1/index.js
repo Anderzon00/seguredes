@@ -1436,7 +1436,11 @@ if (reversed == null) { reversed = false; }
 	this.instance_9 = new lib.texto10();
 	this.instance_9.setTransform(-250,536,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_5}]},3).to({state:[]},1).to({state:[{t:this.instance_6}]},1).to({state:[]},1).to({state:[{t:this.instance_7}]},1).to({state:[]},1).to({state:[{t:this.instance_8}]},1).to({state:[]},1).to({state:[{t:this.instance_9}]},1).wait(3));
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFFFF").s().p("Aj6PIQgLgIgBgRQgBgKACgUQAIg+gKhdIgPiaQgBgXAAhOQAAg+gEgnQgFgzgShIQgWhSgJgpQgkiagHjEQgEh5AHjsQAAgSAKgDQAIgDAGAKQAFAJgBALIgCFFQAEC4AcCIQAGAeAZBkQAUBQAIAyQALBFAFCAIARGHINDh1QCBgSBAgHQBsgLBXAAQAQAAABAIQABAFgGAEQgFADgHABIy2CeIgOABQgSAAgIgHgEgnHAN7QgIgBgEgHQgFgIAAgUIAClEQABhugBg9QgChcgIhKIpVgCQgFAAgDgCQgFgCAAgHQAAgIAFgEQAHgFARAAIJCgEIgKhQQgJhGgEgnQgGhLgBhkIACivQADi6gIjZQgBgOAHgEQAIgFAHAIQAHAIABAKQAEAYABA7QACDkgBBxIgCCtQAABjAIBKIAPBqIAJA/IAcAAQA1AAAbgDQAOgCAjgGQAfgGASgBQAKgCAIADQAFACACAEQADAEgBAFQgDAIgNADQhQAVhZAEIgsAAIABAKQAFA1AABFIgBB5QgDDTAIDTQABAOgGAGQgEADgFAAIgEgBgA0cMGIi+gBQg4AAgdgJQgvgNgSgkQgIgPgCgTQgBgMAAgYIgCmYQgBiBABhAQAChpAGhWQAGhRAQgtQAZhGA2gdQAagPAmgFQAYgDAsAAQClgCBWALQAYADADANQADAMgNAGQgNAGgNgEIgYgKQgPgFgKADQAOAgAIAPQAPAZARAQQALAJAQAJIAcAPQA5AgA3A8QAiAlA6BMIAcAmQAPAWAHATQANAhACAvIgBBTIABBpQgBA8gKAqQgSBFg2BGQgiAthLBJQgfAfgRAOQgbAXgbAMQgiAQgvAFQgZADgsAAIgPAAgA3plgQguAPgYAhQgXAfgJA7QgKA4gDBHQgCArAABVIAAJGQAAAtAGAVQANAmAeALQALADAZAAIFIgBQAcAAAOgFQAOgEATgOQB2hVBVh5QAigyAMglQAQgugBhJQgFhRACgpIADg6QAAghgIgXQgHgYgdgpQhDhbgpgsQhChHhGgfQgUgJgGgEQgPgJgGgLQgFgHgEgRQgEgQgFgIQgNgOgGgIQgEgHAAgIQABgIAGgEQgjAGg2gDIhYgFIgEAAQgvAAgmANgASjLRQgGgDABgJQACgIAHgEQAIgFAVgCQAPgFANgPQAIgJALgVQBEh/AZgzQAyhkAihSQAYg6Ath+IATgzQgCgEACgGQACgEAEgCQAbhHATgsQAghLAvhbQAeg4A6hpQBni5A/haQBliSBwhXQA7gvAvgFQBAgHBEA4QAvAnAoA/QAdAuAiBJQCfFbA0F6IAKBKIIcBDQAKABADAGQADAGgIAFQgHAFgJAAQhKgBhbgJQg2gGhtgPIjIgbIABAFQAJBAANAuQAJAfAQAtIAcBLQAgBbATBkQgTAAgNggQgUgygSg1QglhvgsjWQkhgmiugPQl/ghkzATIgHAAIghBbQg7CmguBbQgNAbgtBTQgmBFgTArIgSAnQgLAVgNANQgPAQgVAGQgJADgJAAQgMAAgLgFgEAgvAAcQBuAGCJAPQBTAICkAVIB7APIgbiJQg9lGg+imQhKjJhziIQgxg6grgJQg/gOhSBDQhlBTheCGQg5BRhhCqIhUCYQguBWgfBGQgUAtgjBbICNgBIB4AAQCnAABgAEgEgynAFfQAAi6gHhcQgFg1gPhuQgPhsgEg4QgHhYABiwIACmLQAAgPAHgEQAIgFAHALQAHAJAAANQABEhgBBhIgBCIQABBNAFA8QADAbATCOQAoEzgWE5IgYADg");
+	this.shape.setTransform(683.597,293.1202);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_5}]},3).to({state:[]},1).to({state:[{t:this.instance_6}]},1).to({state:[]},1).to({state:[{t:this.instance_7}]},1).to({state:[]},1).to({state:[{t:this.instance_8}]},1).to({state:[]},1).to({state:[{t:this.instance_9}]},1).to({state:[{t:this.shape},{t:this.instance_9}]},2).wait(1));
 
 	// Capa_1
 	this.prevEscena = new lib.Símbolo3();
@@ -1449,11 +1453,11 @@ if (reversed == null) { reversed = false; }
 	this.nextEscena.setTransform(255.3,609.6,1,1,0,0,0,20.2,20);
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkNIAAIbAQhkNIAAIHAAbkNIAAIH");
-	this.shape.setTransform(176.35,605.725);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkNIAAIbAQhkNIAAIHAAbkNIAAIH");
+	this.shape_1.setTransform(176.35,605.725);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).wait(14));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.nextEscena},{t:this.prevEscena}]}).wait(14));
 
 	// btns_media
 	this.next = new lib.Símbolo4();
@@ -1538,21 +1542,21 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/fondo1.png?1665929669235", id:"fondo1"},
-		{src:"images/manocelular.png?1665929669235", id:"manocelular"},
-		{src:"images/index_atlas_P_1.png?1665929669098", id:"index_atlas_P_1"},
-		{src:"sounds/Voice10.mp3?1665929669235", id:"Voice10"},
-		{src:"sounds/BGM.mp3?1665929669235", id:"BGM"},
-		{src:"sounds/Voice0.mp3?1665929669235", id:"Voice0"},
-		{src:"sounds/Voice9.mp3?1665929669235", id:"Voice9"},
-		{src:"sounds/Voice1.mp3?1665929669235", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1665929669235", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1665929669235", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1665929669235", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1665929669235", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1665929669235", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1665929669235", id:"Voice7"},
-		{src:"sounds/Voice8.mp3?1665929669235", id:"Voice8"}
+		{src:"images/fondo1.png?1665934265451", id:"fondo1"},
+		{src:"images/manocelular.png?1665934265451", id:"manocelular"},
+		{src:"images/index_atlas_P_1.png?1665934265299", id:"index_atlas_P_1"},
+		{src:"sounds/Voice10.mp3?1665934265451", id:"Voice10"},
+		{src:"sounds/BGM.mp3?1665934265451", id:"BGM"},
+		{src:"sounds/Voice0.mp3?1665934265451", id:"Voice0"},
+		{src:"sounds/Voice9.mp3?1665934265451", id:"Voice9"},
+		{src:"sounds/Voice1.mp3?1665934265451", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1665934265451", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1665934265451", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1665934265451", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1665934265451", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1665934265451", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1665934265451", id:"Voice7"},
+		{src:"sounds/Voice8.mp3?1665934265451", id:"Voice8"}
 	],
 	preloads: []
 };
