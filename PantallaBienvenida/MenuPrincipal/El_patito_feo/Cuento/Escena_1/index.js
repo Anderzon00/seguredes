@@ -1326,108 +1326,91 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		stage.on('drawstart', initStage, this, true);
-		function initStage(){stretchToFit();}
+		function initStage() {
+			stretchToFit();
+		}
 		
-		var root = this; 
+		var root = this;
 		root.unmuteMC.visible = false;
-		 root.playaudio.visible = true;
+		root.playaudio.visible = true;
 		
 		
-		root.playSound = function(linkage, type, stopPrevious, props)
-		{	
+		root.playSound = function (linkage, type, stopPrevious, props) {
 			if (!props)
 				props = {};
-				
+		
 			if (stopPrevious && root[type])
 				root[type].stop();
-				
+		
 			root[type] = createjs.Sound.play(linkage, props);
-			
-			if(root.currentFrame < root.totalFrames-1)	
-			root[type].on("complete", function () {
-		                       root.gotoAndStop(root.currentFrame + 1);
-				
-				
-		                    }, this);;
-			
-			
-			
-			root.on("click", function(e)
-		    {
-			
-				 
-				
-				 
-				   if (e.target.name === "playaudio")
-				 {
-		         
-			     root[type].stop();
-				 root[type] = createjs.Sound.play(linkage, props);
-					 
-					 
-					 
-					 if(root.currentFrame < root.totalFrames-1)	
-			root[type].on("complete", function () {
-		                       root.gotoAndStop(root.currentFrame + 1);
-				
-				
-		                    }, this);;
-			
-					 
-					 
-		         root.pause.visible = true;
-		         root.playaudio.visible = false;
-		         }
-				 
-				  else if (e.target.name === "pause")
-				 {
-		          root[type].stop();
-				  root.pause.visible = false;
-		          root.playaudio.visible = true;
-		         }
-				 
-				else if (e.target.name === "unmuteMC")
-				
-				 {		 
-				  createjs.Sound.muted = false;
-		         root.muteMC.visible = true;
-			     root.unmuteMC.visible = false;	
-				 }
-			
-			else if (e.target.name === "muteMC")
-				 {
-		        createjs.Sound.muted = true;
-		         root.muteMC.visible = false;
-		         root.unmuteMC.visible = true;
-		         }
-				 
-				 
-				 
-		    });
-			
+		
+			if (root.currentFrame < root.totalFrames - 1)
+				root[type].on("complete", function () {
+					root.gotoAndStop(root.currentFrame + 1);
+		
+		
+				}, this);;
+		
+		
+		
+			root.on("click", function (e) {
+		
+		
+		
+		
+				if (e.target.name === "playaudio") {
+		
+					root[type].stop();
+					root[type] = createjs.Sound.play(linkage, props);
+					if (root.currentFrame < root.totalFrames - 1)
+						root[type].on("complete", function () {
+							root.gotoAndStop(root.currentFrame + 1);
+						}, this);;
+					root.pause.visible = true;
+					root.playaudio.visible = false;
+		
+				} else if (e.target.name === "pause") {
+					root[type].stop();
+					root.pause.visible = false;
+					root.playaudio.visible = true;
+				} else if (e.target.name === "unmuteMC")
+		
+				{
+					createjs.Sound.muted = false;
+					root.muteMC.visible = true;
+					root.unmuteMC.visible = false;
+				} else if (e.target.name === "muteMC") {
+					createjs.Sound.muted = true;
+					root.muteMC.visible = false;
+					root.unmuteMC.visible = true;
+				}
+		
+		
+		
+			});
+		
 		};
 		
-		root.on("click", function(e)
-		{
+		root.on("click", function (e) {
 			if (e.target.name === "prev")
-				
-			
-				
-			if(root.currentFrame=== this.totalFrames-1)
-				root.gotoAndStop(root.currentFrame - 2);
-			else
-			
-				root.gotoAndStop(root.currentFrame - 1);
-			else if (e.target.name === "next")
+		
+		
+		
+				if (root.currentFrame === this.totalFrames - 1)
+					root.gotoAndStop(root.currentFrame - 2);
+				else
+		
+					root.gotoAndStop(root.currentFrame - 1);
+				else if (e.target.name === "next")
 				root.gotoAndStop(root.currentFrame + 1);
 			else if (e.target.name == "pressToStart")
 				root.gotoAndStop(1);
-			
-			 else if (e.target.name == "adelanteEscena")
-				
-		 	window.open('../Escena_2', '_self');
-			
-			
+		
+			else if (e.target.name == "adelanteEscena")
+		
+				window.open('../Escena_2', '_self');
+		
+		
 		});
 		
 		if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) // chrome requires a initial user interaction to play audio
@@ -1610,7 +1593,7 @@ if (reversed == null) { reversed = false; }
 
 	// btns_nav
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AARkDIAAIHAQ1kDIAAIHAw0kDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("Aw0kDIAAIHAQ1kDIAAIHAARkDIAAIH");
 	this.shape.setTransform(172.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(6));
@@ -1638,12 +1621,12 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1665501784270", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_NP_1.jpg?1665501784270", id:"index_atlas_NP_1"},
-		{src:"sounds/Voice0.mp3?1665501784454", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1665501784454", id:"Voice1"},
-		{src:"sounds/BGM.mp3?1665501784454", id:"BGM"},
-		{src:"sounds/Voice2.mp3?1665501784454", id:"Voice2"}
+		{src:"images/index_atlas_P_1.png?1665928477117", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_NP_1.jpg?1665928477117", id:"index_atlas_NP_1"},
+		{src:"sounds/Voice0.mp3?1665928477311", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1665928477311", id:"Voice1"},
+		{src:"sounds/BGM.mp3?1665928477311", id:"BGM"},
+		{src:"sounds/Voice2.mp3?1665928477311", id:"Voice2"}
 	],
 	preloads: []
 };

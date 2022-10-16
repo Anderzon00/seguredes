@@ -97,7 +97,7 @@ lib.ssMetadata = [
 
 
 
-(lib.fondo = function() {
+(lib.fondo11 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
@@ -415,7 +415,7 @@ if (reversed == null) { reversed = false; }
 	// actions
 	this.fullscreen = new lib.fullscreen();
 	this.fullscreen.name = "fullscreen";
-	this.fullscreen.setTransform(641.3,31.7,1,1,0,0,0,23.3,23.4);
+	this.fullscreen.setTransform(118.3,33,1,1,0,0,0,23.3,23.4);
 	new cjs.ButtonHelper(this.fullscreen, 0, 1, 2, false, new lib.fullscreen(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.fullscreen).wait(1));
@@ -459,7 +459,7 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.bannernegro1();
 	this.instance.setTransform(95,621,0.5025,0.5);
 
-	this.instance_1 = new lib.fondo();
+	this.instance_1 = new lib.fondo11();
 	this.instance_1.setTransform(-43,-37,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance},{t:this.shape}]}).wait(1));
@@ -477,7 +477,7 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1665767687574", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1665928005403", id:"index_atlas_1"}
 	],
 	preloads: []
 };
