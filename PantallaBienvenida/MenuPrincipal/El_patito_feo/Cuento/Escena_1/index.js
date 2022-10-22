@@ -1572,14 +1572,14 @@ if (reversed == null) { reversed = false; }
 
 	// texto 1
 	this.instance_2 = new lib.texto1mc();
-	this.instance_2.setTransform(775,494.5);
+	this.instance_2.setTransform(769.15,494.5,0.9703,1);
 	this.instance_2._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(2).to({_off:false},0).wait(4));
 
 	// texto 2
 	this.instance_3 = new lib.texto2mc();
-	this.instance_3.setTransform(595,550.3,1,1,0,0,0,-378,43.8);
+	this.instance_3.setTransform(616.5,550.3,1,1,0,0,0,-378,43.8);
 	this.instance_3._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(3).to({_off:false},0).wait(3));
@@ -1621,12 +1621,12 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1665928477117", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_NP_1.jpg?1665928477117", id:"index_atlas_NP_1"},
-		{src:"sounds/Voice0.mp3?1665928477311", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1665928477311", id:"Voice1"},
-		{src:"sounds/BGM.mp3?1665928477311", id:"BGM"},
-		{src:"sounds/Voice2.mp3?1665928477311", id:"Voice2"}
+		{src:"images/index_atlas_P_1.png?1666545120819", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_NP_1.jpg?1666545120819", id:"index_atlas_NP_1"},
+		{src:"sounds/Voice0.mp3?1666545121009", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1666545121009", id:"Voice1"},
+		{src:"sounds/BGM.mp3?1666545121009", id:"BGM"},
+		{src:"sounds/Voice2.mp3?1666545121009", id:"Voice2"}
 	],
 	preloads: []
 };

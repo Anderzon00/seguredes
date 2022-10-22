@@ -2394,7 +2394,7 @@ if (reversed == null) { reversed = false; }
 				
 			root[type] = createjs.Sound.play(linkage, props);
 			
-			if(root.currentFrame < 6)	
+			if(root.currentFrame < 7)	
 			root[type].on("complete", function () {
 		                       root.gotoAndStop(root.currentFrame + 1);
 				
@@ -2566,8 +2566,7 @@ if (reversed == null) { reversed = false; }
 		_this.btnInteraccion.on('click', function(){	
 		_this.playSound("Voice4", "voice", true); 
 		 _this.celular.gotoAndPlay(52); 
-		 if(_this.currentFrame <7)
-		 _this.gotoAndStop(_this.currentFrame + 1);
+		 
 		});
 	}
 	this.frame_7 = function() {
@@ -2730,7 +2729,7 @@ if (reversed == null) { reversed = false; }
 	// Capa_1
 	this.btnInteraccion = new lib.btnInteractivo();
 	this.btnInteraccion.name = "btnInteraccion";
-	this.btnInteraccion.setTransform(706.55,433.05);
+	this.btnInteraccion.setTransform(692.55,418.05);
 	new cjs.ButtonHelper(this.btnInteraccion, 0, 1, 2, false, new lib.btnInteractivo(), 3);
 
 	this.instance_1 = new lib.Interpolación11("synched",0);
@@ -2747,7 +2746,7 @@ if (reversed == null) { reversed = false; }
 	this.escenaNo.setTransform(649.7,385.55);
 	new cjs.ButtonHelper(this.escenaNo, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion,p:{x:706.55,y:433.05}}]},6).to({state:[{t:this.btnInteraccion,p:{x:702.55,y:429.05}}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.escenaSi}]},1).to({state:[{t:this.escenaNo}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion}]},6).to({state:[{t:this.instance_1}]},2).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.escenaSi}]},1).to({state:[{t:this.escenaNo}]},1).wait(1));
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(8).to({_off:false},0).wait(1).to({regY:0,scaleX:0.0503,scaleY:0.9999,skewY:0,y:279.65},0).wait(1).to({scaleX:0.102,scaleY:0.9998,y:279.6501},0).wait(1).to({scaleX:0.1537,scaleY:0.9997},0).wait(1).to({scaleX:0.2054,scaleY:0.9996},0).wait(1).to({scaleX:0.2571,scaleY:0.9995,y:279.6502},0).wait(1).to({scaleX:0.3088,scaleY:0.9994},0).wait(1).to({scaleX:0.3604,scaleY:0.9993},0).wait(1).to({scaleX:0.4121,scaleY:0.9992,y:279.6503},0).wait(1).to({scaleX:0.4638,scaleY:0.9991},0).wait(1).to({scaleX:0.5155,scaleY:0.999},0).wait(1).to({scaleX:0.5672,scaleY:0.9989,y:279.6504},0).wait(1).to({scaleX:0.6189,scaleY:0.9988},0).wait(1).to({scaleX:0.6706},0).wait(1).to({scaleX:0.7223,scaleY:0.9987,y:279.6505},0).wait(1).to({scaleX:0.774,scaleY:0.9986},0).wait(1).to({scaleX:0.8257,scaleY:0.9985},0).wait(1).to({scaleX:0.8774,scaleY:0.9984,y:279.6506},0).wait(1).to({scaleX:0.9291,scaleY:0.9983},0).wait(1).to({scaleX:0.9808,scaleY:0.9982},0).wait(1).to({scaleX:1.0325,scaleY:0.9981,y:279.6507},0).to({_off:true},1).wait(2));
 
 	// texto 1
@@ -2830,20 +2829,20 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/fondo.png?1666470943703", id:"fondo"},
-		{src:"images/index_atlas_P_1.png?1666470943410", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1666470943410", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1666470943412", id:"index_atlas_P_3"},
-		{src:"sounds/Voice7.mp3?1666470943703", id:"Voice7"},
-		{src:"sounds/Voice6.mp3?1666470943703", id:"Voice6"},
-		{src:"sounds/Voice4.mp3?1666470943703", id:"Voice4"},
-		{src:"sounds/BGM.mp3?1666470943703", id:"BGM"},
-		{src:"sounds/Voice0.mp3?1666470943703", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1666470943703", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1666470943703", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1666470943703", id:"Voice3"},
-		{src:"sounds/Voice10.mp3?1666470943703", id:"Voice10"},
-		{src:"sounds/Voice5.mp3?1666470943703", id:"Voice5"}
+		{src:"images/fondo.png?1666651758587", id:"fondo"},
+		{src:"images/index_atlas_P_1.png?1666651758354", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1666651758354", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1666651758356", id:"index_atlas_P_3"},
+		{src:"sounds/Voice7.mp3?1666651758587", id:"Voice7"},
+		{src:"sounds/Voice6.mp3?1666651758587", id:"Voice6"},
+		{src:"sounds/Voice4.mp3?1666651758587", id:"Voice4"},
+		{src:"sounds/BGM.mp3?1666651758587", id:"BGM"},
+		{src:"sounds/Voice0.mp3?1666651758587", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1666651758587", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1666651758587", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1666651758587", id:"Voice3"},
+		{src:"sounds/Voice10.mp3?1666651758587", id:"Voice10"},
+		{src:"sounds/Voice5.mp3?1666651758587", id:"Voice5"}
 	],
 	preloads: []
 };

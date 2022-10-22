@@ -1273,7 +1273,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('../Escena 6_1', '_self');
+		window.open('../Escena_6_1', '_self');
 		});
 	}
 	this.frame_1 = function() {
@@ -1379,7 +1379,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('../Escena 6_1', '_self');
+		window.open('../Escena_6_1', '_self');
 		});
 	}
 
@@ -1406,37 +1406,37 @@ if (reversed == null) { reversed = false; }
 
 	// textos copia
 	this.instance = new lib.ModEsc5b1Linea1();
-	this.instance.setTransform(-169,510,0.5,0.5);
+	this.instance.setTransform(3,510,0.5,0.5);
 
 	this.instance_1 = new lib.text3();
-	this.instance_1.setTransform(-76,510,0.5,0.5);
+	this.instance_1.setTransform(3,510,0.5,0.5);
 
 	this.instance_2 = new lib.texto5();
-	this.instance_2.setTransform(-47,510,0.5,0.5);
+	this.instance_2.setTransform(3,510,0.5,0.5);
 
 	this.instance_3 = new lib.texto7();
-	this.instance_3.setTransform(-338,510,0.5,0.5);
+	this.instance_3.setTransform(3,510,0.5,0.5);
 
 	this.instance_4 = new lib.texto9();
-	this.instance_4.setTransform(-99,510,0.5,0.5);
+	this.instance_4.setTransform(3,510,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},2).to({state:[{t:this.instance_1}]},2).to({state:[{t:this.instance_2}]},2).to({state:[{t:this.instance_3}]},2).to({state:[{t:this.instance_4}]},2).wait(4));
 
 	// textos
 	this.instance_5 = new lib.text2();
-	this.instance_5.setTransform(-169,536,0.5,0.5);
+	this.instance_5.setTransform(3,536,0.5,0.5);
 
 	this.instance_6 = new lib.texto4();
-	this.instance_6.setTransform(-92,536,0.5,0.5);
+	this.instance_6.setTransform(3,536,0.5,0.5);
 
 	this.instance_7 = new lib.texto6();
-	this.instance_7.setTransform(-70,538,0.5,0.5);
+	this.instance_7.setTransform(3,538,0.5,0.5);
 
 	this.instance_8 = new lib.texto8();
-	this.instance_8.setTransform(-149,538,0.5,0.5);
+	this.instance_8.setTransform(3,538,0.5,0.5);
 
 	this.instance_9 = new lib.texto10();
-	this.instance_9.setTransform(-250,538,0.5,0.5);
+	this.instance_9.setTransform(3,538,0.5,0.5);
 
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("rgba(143,198,250,0.996)").s().p("AgbBZQgggKgSgbQgLgRgDgVQgEgUAHgUQAJgfAcgTQAcgTAeADQAgACAZAYQAYAXAFAfQAFAegRAdQgSAegdALQgQAGgQAAQgOAAgPgFg");
@@ -1534,7 +1534,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(258,253.5,1044.2,456.5);
+p.nominalBounds = new cjs.Rectangle(503,253.5,799.2,456.5);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -1544,21 +1544,21 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/fondo1.png?1666081514062", id:"fondo1"},
-		{src:"images/manocelular.png?1666081514062", id:"manocelular"},
-		{src:"images/index_atlas_P_1.png?1666081513916", id:"index_atlas_P_1"},
-		{src:"sounds/Voice10.mp3?1666081514062", id:"Voice10"},
-		{src:"sounds/BGM.mp3?1666081514062", id:"BGM"},
-		{src:"sounds/Voice0.mp3?1666081514062", id:"Voice0"},
-		{src:"sounds/Voice9.mp3?1666081514062", id:"Voice9"},
-		{src:"sounds/Voice1.mp3?1666081514062", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1666081514062", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1666081514062", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1666081514062", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1666081514062", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1666081514062", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1666081514062", id:"Voice7"},
-		{src:"sounds/Voice8.mp3?1666081514062", id:"Voice8"}
+		{src:"images/fondo1.png?1666548809148", id:"fondo1"},
+		{src:"images/manocelular.png?1666548809148", id:"manocelular"},
+		{src:"images/index_atlas_P_1.png?1666548809000", id:"index_atlas_P_1"},
+		{src:"sounds/Voice10.mp3?1666548809148", id:"Voice10"},
+		{src:"sounds/BGM.mp3?1666548809148", id:"BGM"},
+		{src:"sounds/Voice0.mp3?1666548809148", id:"Voice0"},
+		{src:"sounds/Voice9.mp3?1666548809148", id:"Voice9"},
+		{src:"sounds/Voice1.mp3?1666548809148", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1666548809148", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1666548809148", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1666548809148", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1666548809148", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1666548809148", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1666548809148", id:"Voice7"},
+		{src:"sounds/Voice8.mp3?1666548809148", id:"Voice8"}
 	],
 	preloads: []
 };

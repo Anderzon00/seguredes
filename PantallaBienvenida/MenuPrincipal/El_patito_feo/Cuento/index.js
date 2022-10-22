@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[2374,1682,466,90],[2374,1866,315,90],[2374,1774,457,90],[1234,1682,466,90],[1234,1866,315,90],[1234,1774,457,90],[1702,1682,466,90],[1551,1866,315,90],[1693,1774,457,90],[0,2918,2372,153],[0,0,2888,1680],[1234,1958,253,89],[1489,1958,253,89],[0,1682,1232,1234],[1868,1866,254,89],[1868,1957,254,89]]}
+		{name:"index_atlas_1", frames: [[2053,1682,466,90],[2053,2234,315,90],[2053,1958,457,90],[2053,1774,466,90],[2370,2234,315,90],[2053,2050,457,90],[2053,1866,466,90],[2521,1682,315,90],[2053,2142,457,90],[0,3735,2372,153],[0,1682,2051,2051],[0,0,2888,1680],[2521,1956,253,89],[2512,2047,253,89],[2521,1774,254,89],[2521,1865,254,89]]}
 ];
 
 
@@ -97,28 +97,28 @@ lib.ssMetadata = [
 
 
 
-(lib.fondo11 = function() {
+(lib.Basic_Elements_273Convertido01 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.inicio2 = function() {
+(lib.fondo11 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Inicio = function() {
+(lib.inicio2 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.transparentfullscreenicon5db8080e1827c2209856081572341774099 = function() {
+(lib.Inicio = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
@@ -151,23 +151,19 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Capa_1
-	this.instance = new lib.transparentfullscreenicon5db8080e1827c2209856081572341774099();
-	this.instance.setTransform(0,0,0.0378,0.0378);
+	this.instance = new lib.Basic_Elements_273Convertido01();
+	this.instance.setTransform(22,5,0.0168,0.0168);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(1,1,1).p("AjojpIHRAAIAAHTInRAAg");
-	this.shape.setTransform(23.3,23.35);
+	this.shape.graphics.f("#FFFFFF").s().p("AijCkIAAlHIFHAAIAAFHg");
+	this.shape.setTransform(36.6,21.375);
 
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#FFFFFF").s().p("AjoDqIAAnTIHRAAIAAHTg");
-	this.shape_1.setTransform(23.3,23.35);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance,p:{scaleX:0.0378,scaleY:0.0378,x:0,y:0}}]}).to({state:[{t:this.instance,p:{scaleX:0.0313,scaleY:0.0313,x:4,y:4}}]},1).to({state:[{t:this.instance,p:{scaleX:0.0281,scaleY:0.0281,x:6,y:6}}]},1).to({state:[{t:this.shape_1},{t:this.shape},{t:this.instance,p:{scaleX:0.0378,scaleY:0.0378,x:0,y:0}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance,p:{scaleX:0.0168,scaleY:0.0168,x:22,y:5}}]}).to({state:[{t:this.instance,p:{scaleX:0.0179,scaleY:0.0179,x:21,y:4}}]},1).to({state:[{t:this.instance,p:{scaleX:0.0146,scaleY:0.0146,x:24,y:7}}]},1).to({state:[{t:this.shape}]},1).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-1,-1,48.6,48.7);
+p.nominalBounds = new cjs.Rectangle(20.2,4,37.5,36.7);
 
 
 (lib.btncontenidos = function(mode,startPosition,loop,reversed) {
@@ -474,10 +470,10 @@ lib.properties = {
 	width: 1366,
 	height: 768,
 	fps: 25,
-	color: "#235594",
+	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1665936745603", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1666651600954", id:"index_atlas_1"}
 	],
 	preloads: []
 };

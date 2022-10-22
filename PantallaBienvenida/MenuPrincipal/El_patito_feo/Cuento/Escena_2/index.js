@@ -1812,15 +1812,15 @@ if (reversed == null) { reversed = false; }
 
 	// textos
 	this.instance_1 = new lib.texto1mc();
-	this.instance_1.setTransform(773,495);
+	this.instance_1.setTransform(773.25,495);
 
 	this.instance_2 = new lib.texto2mc();
-	this.instance_2.setTransform(497.8,550.8,1,1,0,0,0,-378,43.8);
+	this.instance_2.setTransform(593.25,550.8,1,1,0,0,0,-378,43.8);
 
 	this.instance_3 = new lib.text3();
-	this.instance_3.setTransform(-135,506,0.5,0.5);
+	this.instance_3.setTransform(-1,506,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},2).to({state:[{t:this.instance_1},{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(3));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1,p:{x:773.25}}]},2).to({state:[{t:this.instance_1,p:{x:773}},{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(3));
 
 	// lago fondo blanco
 	this.instance_4 = new lib.Símbolo9();
@@ -1856,7 +1856,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_10.setTransform(0,-6,0.5008,0.5057);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwvkEIAAIHAAMkCIAAIHAQwkEIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQwkEIAAIHAAMkCIAAIHAwvkEIAAIH");
 	this.shape.setTransform(171.85,605.975);
 
 	this.shape_1 = new cjs.Shape();
@@ -1868,7 +1868,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(458.5,318.5,829.5,357.1);
+p.nominalBounds = new cjs.Rectangle(591.5,318.5,696.5,357.1);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -1878,13 +1878,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1665928831267", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1665928831268", id:"index_atlas_P_2"},
-		{src:"sounds/Voice0.mp3?1665928831777", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1665928831777", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1665928831777", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1665928831777", id:"Voice3"},
-		{src:"sounds/BGM.mp3?1665928831777", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1666545249753", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1666545249754", id:"index_atlas_P_2"},
+		{src:"sounds/Voice0.mp3?1666545250244", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1666545250244", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1666545250244", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1666545250244", id:"Voice3"},
+		{src:"sounds/BGM.mp3?1666545250244", id:"BGM"}
 	],
 	preloads: []
 };
