@@ -1676,7 +1676,7 @@ if (reversed == null) { reversed = false; }
 	// interacción
 	this.btnInteraccion = new lib.btnInteractivo();
 	this.btnInteraccion.name = "btnInteraccion";
-	this.btnInteraccion.setTransform(790.6,365.15,1,1,0,0,0,-21.1,7.5);
+	this.btnInteraccion.setTransform(800.6,346.15,1,1,0,0,0,-21.1,7.5);
 	new cjs.ButtonHelper(this.btnInteraccion, 0, 1, 2, false, new lib.btnInteractivo(), 3);
 
 	this.nextEscenaFinal = new lib.nextscene();
@@ -1684,7 +1684,7 @@ if (reversed == null) { reversed = false; }
 	this.nextEscenaFinal.setTransform(235.1,589.6);
 	new cjs.ButtonHelper(this.nextEscenaFinal, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion}]},6).to({state:[{t:this.btnInteraccion},{t:this.nextEscenaFinal}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion,p:{x:800.6,y:346.15}}]},6).to({state:[{t:this.btnInteraccion,p:{x:801.6,y:347.15}},{t:this.nextEscenaFinal}]},1).wait(1));
 
 	// textos copia
 	this.instance = new lib.text1();
@@ -1808,15 +1808,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1666545509504", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1666545509504", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1666545509504", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1666545509767", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1666545509767", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1666545509767", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1666545509767", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1666545509767", id:"Voice4"},
-		{src:"sounds/BGM.mp3?1666545509767", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1666762622987", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1666762622987", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1666762622988", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1666762623272", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1666762623272", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1666762623272", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1666762623272", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1666762623272", id:"Voice4"},
+		{src:"sounds/BGM.mp3?1666762623272", id:"BGM"}
 	],
 	preloads: []
 };

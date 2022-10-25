@@ -2032,7 +2032,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.nextEscenaFinal.on('click', function(){
+		_this.nextescene.on('click', function(){
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
@@ -2046,7 +2046,7 @@ if (reversed == null) { reversed = false; }
 	// interacción
 	this.btnInteraccion = new lib.btnInteractivo();
 	this.btnInteraccion.name = "btnInteraccion";
-	this.btnInteraccion.setTransform(663.6,395.95,1,1,0,0,0,-21.1,7.5);
+	this.btnInteraccion.setTransform(672.6,393.95,1,1,0,0,0,-21.1,7.5);
 	this.btnInteraccion._off = true;
 	new cjs.ButtonHelper(this.btnInteraccion, 0, 1, 2, false, new lib.btnInteractivo(), 3);
 
@@ -2181,13 +2181,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1666548617504", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1666548617505", id:"index_atlas_P_2"},
-		{src:"sounds/Voice0.mp3?1666548617670", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1666548617670", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1666548617670", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1666548617670", id:"Voice3"},
-		{src:"sounds/BGM.mp3?1666548617670", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1666762670717", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1666762670718", id:"index_atlas_P_2"},
+		{src:"sounds/Voice0.mp3?1666762670871", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1666762670871", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1666762670871", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1666762670871", id:"Voice3"},
+		{src:"sounds/BGM.mp3?1666762670871", id:"BGM"}
 	],
 	preloads: []
 };

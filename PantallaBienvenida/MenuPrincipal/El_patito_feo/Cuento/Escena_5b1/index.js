@@ -1069,6 +1069,32 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-230.9,-0.6,80.9,80.6);
 
 
+(lib.nextscene = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.siguienteAnimado();
+	this.instance.setTransform(20.2,20,1,1,0,0,0,20.2,20);
+
+	this.instance_1 = new lib._3btncambioEscenaRight();
+	this.instance_1.setTransform(0,0,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-0.3,-1.1,41.199999999999996,41.2);
+
+
 (lib.btnPlayanimado = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1375,7 +1401,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.nextEscenaFinal.on('click', function(){
+		_this.btnNextEscena.on('click', function(){
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
@@ -1389,18 +1415,18 @@ if (reversed == null) { reversed = false; }
 	// interacción
 	this.btnInteraccion = new lib.btnInteractivo();
 	this.btnInteraccion.name = "btnInteraccion";
-	this.btnInteraccion.setTransform(663.6,477.9,1,1,0,0,0,-21.1,7.5);
+	this.btnInteraccion.setTransform(678.6,459.9,1,1,0,0,0,-21.1,7.5);
 	this.btnInteraccion._off = true;
 	new cjs.ButtonHelper(this.btnInteraccion, 0, 1, 2, false, new lib.btnInteractivo(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.btnInteraccion).wait(12).to({_off:false},0).wait(2));
 
 	// btnNextEscena
-	this.btnNextEscena = new lib.siguienteAnimado();
+	this.btnNextEscena = new lib.nextscene();
 	this.btnNextEscena.name = "btnNextEscena";
-	this.btnNextEscena.setTransform(255.6,609.8,1,1,0,0,0,20.2,20);
+	this.btnNextEscena.setTransform(255.3,609.6,1,1,0,0,0,20.2,20);
 	this.btnNextEscena._off = true;
-	new cjs.ButtonHelper(this.btnNextEscena, 0, 1, 2, false, new lib.siguienteAnimado(), 3);
+	new cjs.ButtonHelper(this.btnNextEscena, 0, 1, 1);
 
 	this.timeline.addTween(cjs.Tween.get(this.btnNextEscena).wait(13).to({_off:false},0).wait(1));
 
@@ -1438,11 +1464,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_9 = new lib.texto10();
 	this.instance_9.setTransform(3,538,0.5,0.5);
 
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("rgba(143,198,250,0.996)").s().p("AgbBZQgggKgSgbQgLgRgDgVQgEgUAHgUQAJgfAcgTQAcgTAeADQAgACAZAYQAYAXAFAfQAFAegRAdQgSAegdALQgQAGgQAAQgOAAgPgFg");
-	this.shape.setTransform(81.9956,204.936);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_5}]},3).to({state:[]},1).to({state:[{t:this.instance_6}]},1).to({state:[]},1).to({state:[{t:this.instance_7}]},1).to({state:[]},1).to({state:[{t:this.instance_8}]},1).to({state:[]},1).to({state:[{t:this.shape},{t:this.instance_9}]},1).wait(3));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_5}]},3).to({state:[]},1).to({state:[{t:this.instance_6}]},1).to({state:[]},1).to({state:[{t:this.instance_7}]},1).to({state:[]},1).to({state:[{t:this.instance_8}]},1).to({state:[]},1).to({state:[{t:this.instance_9}]},1).wait(3));
 
 	// Capa_1
 	this.prevEscena = new lib.Símbolo3();
@@ -1455,11 +1477,11 @@ if (reversed == null) { reversed = false; }
 	this.nextEscena.setTransform(255.3,609.6,1,1,0,0,0,20.2,20);
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AAbkNIAAIHAQhkNIAAIHAwgkNIAAIb");
-	this.shape_1.setTransform(176.35,605.725);
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkNIAAIbAQhkNIAAIHAAbkNIAAIH");
+	this.shape.setTransform(176.35,605.725);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.nextEscena},{t:this.prevEscena}]}).wait(14));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).wait(14));
 
 	// btns_media
 	this.next = new lib.Símbolo4();
@@ -1544,21 +1566,21 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/fondo1.png?1666548809148", id:"fondo1"},
-		{src:"images/manocelular.png?1666548809148", id:"manocelular"},
-		{src:"images/index_atlas_P_1.png?1666548809000", id:"index_atlas_P_1"},
-		{src:"sounds/Voice10.mp3?1666548809148", id:"Voice10"},
-		{src:"sounds/BGM.mp3?1666548809148", id:"BGM"},
-		{src:"sounds/Voice0.mp3?1666548809148", id:"Voice0"},
-		{src:"sounds/Voice9.mp3?1666548809148", id:"Voice9"},
-		{src:"sounds/Voice1.mp3?1666548809148", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1666548809148", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1666548809148", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1666548809148", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1666548809148", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1666548809148", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1666548809148", id:"Voice7"},
-		{src:"sounds/Voice8.mp3?1666548809148", id:"Voice8"}
+		{src:"images/fondo1.png?1666762830134", id:"fondo1"},
+		{src:"images/manocelular.png?1666762830134", id:"manocelular"},
+		{src:"images/index_atlas_P_1.png?1666762829970", id:"index_atlas_P_1"},
+		{src:"sounds/Voice10.mp3?1666762830134", id:"Voice10"},
+		{src:"sounds/BGM.mp3?1666762830134", id:"BGM"},
+		{src:"sounds/Voice0.mp3?1666762830134", id:"Voice0"},
+		{src:"sounds/Voice9.mp3?1666762830134", id:"Voice9"},
+		{src:"sounds/Voice1.mp3?1666762830134", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1666762830134", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1666762830134", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1666762830135", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1666762830135", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1666762830135", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1666762830135", id:"Voice7"},
+		{src:"sounds/Voice8.mp3?1666762830135", id:"Voice8"}
 	],
 	preloads: []
 };
