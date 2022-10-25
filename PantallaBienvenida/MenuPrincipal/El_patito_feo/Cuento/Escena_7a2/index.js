@@ -2054,7 +2054,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('../Escena_7a2', '_self');
+		window.open('../Escena_8a3', '_self');
 		});
 	}
 	this.frame_34 = function() {
@@ -2070,7 +2070,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('../Escena_7b2', '_self');
+		window.open('../Escena_8b3', '_self');
 		});
 	}
 
@@ -2253,23 +2253,23 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1666650980681", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1666650980681", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1666650980682", id:"index_atlas_P_3"},
-		{src:"sounds/Voice9.mp3?1666650980943", id:"Voice9"},
-		{src:"sounds/BGM.mp3?1666650980943", id:"BGM"},
-		{src:"sounds/Voice0.mp3?1666650980943", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1666650980943", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1666650980943", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1666650980943", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1666650980943", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1666650980943", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1666650980943", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1666650980943", id:"Voice7"},
-		{src:"sounds/Voice10.mp3?1666650980943", id:"Voice10"},
-		{src:"sounds/Voice11.mp3?1666650980943", id:"Voice11"},
-		{src:"sounds/Voice12.mp3?1666650980943", id:"Voice12"},
-		{src:"sounds/Voice13.mp3?1666650980943", id:"Voice13"}
+		{src:"images/index_atlas_P_1.png?1666718977666", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1666718977667", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1666718977668", id:"index_atlas_P_3"},
+		{src:"sounds/Voice9.mp3?1666718977906", id:"Voice9"},
+		{src:"sounds/BGM.mp3?1666718977906", id:"BGM"},
+		{src:"sounds/Voice0.mp3?1666718977906", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1666718977906", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1666718977906", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1666718977906", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1666718977906", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1666718977906", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1666718977906", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1666718977906", id:"Voice7"},
+		{src:"sounds/Voice10.mp3?1666718977906", id:"Voice10"},
+		{src:"sounds/Voice11.mp3?1666718977906", id:"Voice11"},
+		{src:"sounds/Voice12.mp3?1666718977906", id:"Voice12"},
+		{src:"sounds/Voice13.mp3?1666718977906", id:"Voice13"}
 	],
 	preloads: []
 };
