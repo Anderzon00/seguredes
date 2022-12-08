@@ -957,7 +957,7 @@ if (reversed == null) { reversed = false; }
 			
 			console.log(contador);
 			
-			 if (contador < "2") {	 		 
+			 if (contador < "15") {	 		 
 				
 		    setTimeout(sayHello, 1000); 
 						
