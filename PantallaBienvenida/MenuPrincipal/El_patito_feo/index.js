@@ -552,6 +552,21 @@ if (reversed == null) { reversed = false; }
 			window.open("../", "_self");
 		}
 		
+		
+		
+		
+		
+		var _this = this;
+		/*
+		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
+		*/
+		_this.btnActividades.on('click', function(){
+		/*
+		Carga la URL en una ventana nueva del navegador.
+		*/
+		window.open('./Actividades', '_self');
+		});
+		
 	}
 	this.frame_12 = function() {
 		this.stop();
@@ -601,9 +616,10 @@ if (reversed == null) { reversed = false; }
 	this.instance_3.setTransform(1208.75,33.5);
 	new cjs.ButtonHelper(this.instance_3, 0, 1, 2);
 
-	this.instance_4 = new lib.btnActividades();
-	this.instance_4.setTransform(1013.5,33.5);
-	new cjs.ButtonHelper(this.instance_4, 0, 1, 2);
+	this.btnActividades = new lib.btnActividades();
+	this.btnActividades.name = "btnActividades";
+	this.btnActividades.setTransform(1013.5,33.5);
+	new cjs.ButtonHelper(this.btnActividades, 0, 1, 2);
 
 	this.btnContenidos = new lib.btnContenidos();
 	this.btnContenidos.name = "btnContenidos";
@@ -620,25 +636,25 @@ if (reversed == null) { reversed = false; }
 	this.btnInicio.setTransform(613.25,740.25);
 	new cjs.ButtonHelper(this.btnInicio, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnInicio},{t:this.btnVolver},{t:this.btnContenidos},{t:this.instance_4},{t:this.instance_3}]}).wait(13));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnInicio},{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.instance_3}]}).wait(13));
 
 	// barra
-	this.instance_5 = new lib.barraseguredes();
-	this.instance_5.setTransform(100,622,0.5,0.5);
+	this.instance_4 = new lib.barraseguredes();
+	this.instance_4.setTransform(100,622,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(13));
+
+	// tarjeta
+	this.instance_5 = new lib.Portada();
+	this.instance_5.setTransform(100,52,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(13));
 
-	// tarjeta
-	this.instance_6 = new lib.Portada();
-	this.instance_6.setTransform(100,52,0.5,0.5);
+	// fondo
+	this.instance_6 = new lib.Background();
+	this.instance_6.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(13));
-
-	// fondo
-	this.instance_7 = new lib.Background();
-	this.instance_7.setTransform(0,0,0.5,0.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(13));
 
 	this._renderFirstFrame();
 
@@ -653,10 +669,10 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Background.png?1665289266381", id:"Background"},
-		{src:"images/barraseguredes.png?1665289266381", id:"barraseguredes"},
-		{src:"images/Portada.png?1665289266381", id:"Portada"},
-		{src:"images/index_atlas_1.png?1665289266284", id:"index_atlas_1"}
+		{src:"images/Background.png?1670455638125", id:"Background"},
+		{src:"images/barraseguredes.png?1670455638125", id:"barraseguredes"},
+		{src:"images/Portada.png?1670455638125", id:"Portada"},
+		{src:"images/index_atlas_1.png?1670455638072", id:"index_atlas_1"}
 	],
 	preloads: []
 };

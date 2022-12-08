@@ -596,7 +596,7 @@ if (reversed == null) { reversed = false; }
 		
 		this.btnComoEvitarlo.addEventListener("click", fl_ClickToGoToWebPage_15);
 		function fl_ClickToGoToWebPage_15() {
-			window.open("Como_evitarlo", "_self");
+			window.open("Como_evitarlo/index.html", "_self");
 		}
 		
 		this.btnSiMeOcurre.addEventListener("click", fl_ClickToGoToWebPage_16);
@@ -708,7 +708,7 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1662849929303", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1666082569395", id:"index_atlas_1"}
 	],
 	preloads: []
 };
@@ -807,6 +807,21 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
+		}
+	}
+}
+an.handleFilterCache = function(event) {
+	if(!event.paused){
+		var target = event.target;
+		if(target){
+			if(target.filterCacheList){
+				for(var index = 0; index < target.filterCacheList.length ; index++){
+					var cacheInst = target.filterCacheList[index];
+					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
+						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
+					}
+				}
+			}
 		}
 	}
 }

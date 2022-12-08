@@ -2702,19 +2702,19 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1666975165660", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1666975165660", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1666975165660", id:"index_atlas_P_3"},
-		{src:"images/index_atlas_P_4.png?1666975165661", id:"index_atlas_P_4"},
-		{src:"sounds/Voice10.mp3?1666975166051", id:"Voice10"},
-		{src:"sounds/BGM.mp3?1666975166051", id:"BGM"},
-		{src:"sounds/Voice0.mp3?1666975166051", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1666975166051", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1666975166051", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1666975166051", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1666975166051", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1666975166051", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1666975166051", id:"Voice6"}
+		{src:"images/index_atlas_P_1.png?1669996936963", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1669996936963", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1669996936963", id:"index_atlas_P_3"},
+		{src:"images/index_atlas_P_4.png?1669996936964", id:"index_atlas_P_4"},
+		{src:"sounds/Voice10.mp3?1669996937347", id:"Voice10"},
+		{src:"sounds/BGM.mp3?1669996937347", id:"BGM"},
+		{src:"sounds/Voice0.mp3?1669996937347", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1669996937347", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1669996937347", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1669996937347", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1669996937347", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1669996937347", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1669996937347", id:"Voice6"}
 	],
 	preloads: []
 };

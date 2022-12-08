@@ -1878,13 +1878,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1666762547013", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1666762547014", id:"index_atlas_P_2"},
-		{src:"sounds/Voice0.mp3?1666762547553", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1666762547553", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1666762547553", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1666762547553", id:"Voice3"},
-		{src:"sounds/BGM.mp3?1666762547553", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1668524710349", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1668524710349", id:"index_atlas_P_2"},
+		{src:"sounds/Voice0.mp3?1668524710901", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1668524710901", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1668524710901", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1668524710901", id:"Voice3"},
+		{src:"sounds/BGM.mp3?1668524710901", id:"BGM"}
 	],
 	preloads: []
 };

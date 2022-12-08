@@ -164,7 +164,54 @@ lib.ssMetadata = [
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
+// helper functions:
 
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
+
+
+(lib.Símbolo1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.formainferiorizq();
+	this.instance.setTransform(-596,114.25,0.5,0.5);
+
+	this.instance_1 = new lib.formainferiorder();
+	this.instance_1.setTransform(294,85.25,0.5,0.5);
+
+	this.instance_2 = new lib.formasuperiorder();
+	this.instance_2.setTransform(411,-282.75,0.5,0.5);
+
+	this.instance_3 = new lib.formasuperiorizq();
+	this.instance_3.setTransform(-594,-283.75,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.Símbolo1, new cjs.Rectangle(-596,-283.7,1192,567.5), null);
 
 
 (lib.btncontenidos = function(mode,startPosition,loop,reversed) {
@@ -324,6 +371,9 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
+		//INDEX CONTENIDOS
+		
+		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 		    stretchToFit();
@@ -341,6 +391,13 @@ if (reversed == null) { reversed = false; }
 			window.open("../", "_self");
 		}
 		
+		
+		
+		this.btnActividades.addEventListener("click", fl_ClickToGoToWebPage_19);
+		
+		function fl_ClickToGoToWebPage_19() {
+			window.open("../Actividades", "_self");
+		}
 		
 		
 		  
@@ -391,19 +448,11 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// actions
-	this.instance = new lib.formainferiorizq();
-	this.instance.setTransform(97,452,0.5,0.5);
+	this.movieClip_9 = new lib.Símbolo1();
+	this.movieClip_9.name = "movieClip_9";
+	this.movieClip_9.setTransform(693,337.75);
 
-	this.instance_1 = new lib.formainferiorder();
-	this.instance_1.setTransform(987,423,0.5,0.5);
-
-	this.instance_2 = new lib.formasuperiorder();
-	this.instance_2.setTransform(1104,55,0.5,0.5);
-
-	this.instance_3 = new lib.formasuperiorizq();
-	this.instance_3.setTransform(99,54,0.5,0.5);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.movieClip_9).wait(1));
 
 	// btns_nav
 	this.btnVolver = new lib.btnVolver();
@@ -437,16 +486,16 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]}).wait(1));
 
 	// fondo
-	this.instance_4 = new lib.bannernegro();
-	this.instance_4.setTransform(97,621,0.5023,0.5);
+	this.instance = new lib.bannernegro();
+	this.instance.setTransform(97,621,0.5023,0.5);
 
-	this.instance_5 = new lib.fondopapel();
-	this.instance_5.setTransform(99,54,0.5008,0.5);
+	this.instance_1 = new lib.fondopapel();
+	this.instance_1.setTransform(99,54,0.5008,0.5);
 
-	this.instance_6 = new lib.fondo();
-	this.instance_6.setTransform(-39,-37,0.5,0.5);
+	this.instance_2 = new lib.fondo();
+	this.instance_2.setTransform(-39,-37,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6},{t:this.instance_5},{t:this.instance_4}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 	this._renderFirstFrame();
 
@@ -461,7 +510,7 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1665289110229", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1670456946929", id:"index_atlas_1"}
 	],
 	preloads: []
 };
