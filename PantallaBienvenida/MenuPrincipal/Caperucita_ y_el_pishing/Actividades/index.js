@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[2375,2820,466,90],[2846,1774,315,90],[2378,1866,457,90],[2378,1682,466,90],[3163,1774,315,90],[2837,1866,457,90],[2378,1774,466,90],[2378,1958,315,90],[2846,1682,457,90],[0,2820,2373,154],[0,1682,2376,1136],[0,0,2888,1680],[2378,2050,253,89],[2633,2140,253,89],[2695,1958,254,89],[2695,2049,254,89]]}
+		{name:"index_atlas_1", frames: [[2375,2820,466,90],[2378,1958,315,90],[2378,1866,457,90],[2378,1682,466,90],[2695,1958,315,90],[2837,1866,457,90],[2378,1774,466,90],[2378,2050,315,90],[2846,1682,457,90],[0,2820,2373,154],[0,1682,2376,1136],[0,0,2888,1680],[2378,2142,253,89],[2633,2232,253,89],[2846,1774,611,64],[2695,2050,254,89],[2695,2141,254,89]]}
 ];
 
 
@@ -125,16 +125,23 @@ lib.ssMetadata = [
 
 
 
-(lib.volver2 = function() {
+(lib.tituloPhishingcontenido = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Volver = function() {
+(lib.volver2 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Volver = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -409,16 +416,19 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]}).wait(1));
 
 	// fondo
-	this.instance = new lib.bannernegro();
-	this.instance.setTransform(101,622,0.5002,0.4991);
+	this.instance = new lib.tituloPhishingcontenido();
+	this.instance.setTransform(227,18,0.5,0.5);
 
-	this.instance_1 = new lib.fondopapel();
-	this.instance_1.setTransform(101,55,0.4996,0.5);
+	this.instance_1 = new lib.bannernegro();
+	this.instance_1.setTransform(101,622,0.5002,0.4991);
 
-	this.instance_2 = new lib.fondo11();
-	this.instance_2.setTransform(-38,-37,0.5,0.5);
+	this.instance_2 = new lib.fondopapel();
+	this.instance_2.setTransform(101,55,0.4996,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this.instance_3 = new lib.fondo11();
+	this.instance_3.setTransform(-38,-37,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 	this._renderFirstFrame();
 
@@ -433,7 +443,7 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1675538871579", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1675568797641", id:"index_atlas_1"}
 	],
 	preloads: []
 };
