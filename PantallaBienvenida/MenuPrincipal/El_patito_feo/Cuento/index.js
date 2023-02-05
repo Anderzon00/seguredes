@@ -342,6 +342,14 @@ if (reversed == null) { reversed = false; }
 		 
 		window.open('../Contenidos', '_self');
 		}); 
+		
+		_this.btnActividades.on('click', function(){
+		 
+		window.open('../Actividades', '_self');
+		}); 
+		
+		
+		
 		this.stop(); 
 		var root= this; 
 		var key; 
@@ -473,7 +481,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1669998007294", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1675000164050", id:"index_atlas_1"}
 	],
 	preloads: []
 };

@@ -104,7 +104,7 @@ lib.ssMetadata = [
 
 
 
-(lib.fondo = function() {
+(lib.fondo11 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
@@ -296,12 +296,14 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
-		this.stop(); 
-		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 		    stretchToFit();
 		}
+		
+		this.stop(); 
+		
+		
 		
 		this.btnInicio.addEventListener("click", fl_ClickToGoToWebPage_10);
 		function fl_ClickToGoToWebPage_10() {
@@ -356,6 +358,20 @@ if (reversed == null) { reversed = false; }
 		*/
 		window.open('../Contenidos', '_self');
 		});
+		
+		
+		
+		
+		var _this = this;
+		/*
+		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
+		*/
+		_this.btnActividades.on('click', function(){
+		/*
+		Carga la URL en una ventana nueva del navegador.
+		*/
+		window.open('index.html', '_self');
+		});
 	}
 
 	// actions tween:
@@ -377,12 +393,12 @@ if (reversed == null) { reversed = false; }
 	// btns_menu
 	this.btnAyuda = new lib.btnAyuda();
 	this.btnAyuda.name = "btnAyuda";
-	this.btnAyuda.setTransform(1197.75,31.8,0.5176,0.5092,0,0,0,0.7,0.3);
+	this.btnAyuda.setTransform(1197.75,32.8,0.5176,0.5092,0,0,0,0.7,0.3);
 	new cjs.ButtonHelper(this.btnAyuda, 0, 1, 2);
 
 	this.btnActividades = new lib.btnActividades();
 	this.btnActividades.name = "btnActividades";
-	this.btnActividades.setTransform(1009.1,33.2,1,1.0086,0,0,0,0,0.1);
+	this.btnActividades.setTransform(1009.1,34.2,1,1.0086,0,0,0,0,0.1);
 	new cjs.ButtonHelper(this.btnActividades, 0, 1, 2);
 
 	this.btnContenidos = new lib.btncontenidos();
@@ -397,17 +413,17 @@ if (reversed == null) { reversed = false; }
 	this.instance.setTransform(101,622,0.5002,0.4991);
 
 	this.instance_1 = new lib.fondopapel();
-	this.instance_1.setTransform(101,55,0.4993,0.5);
+	this.instance_1.setTransform(101,55,0.4996,0.5);
 
-	this.instance_2 = new lib.fondo();
-	this.instance_2.setTransform(-39,-37,0.5,0.5);
+	this.instance_2 = new lib.fondo11();
+	this.instance_2.setTransform(-38,-37,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(644,347,761,456);
+p.nominalBounds = new cjs.Rectangle(645,347,761,456);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -415,9 +431,9 @@ lib.properties = {
 	height: 768,
 	fps: 25,
 	color: "#235594",
-	opacity: 0.00,
+	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1670456255001", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1674702050285", id:"index_atlas_1"}
 	],
 	preloads: []
 };

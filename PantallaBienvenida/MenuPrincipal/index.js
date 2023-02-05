@@ -522,10 +522,17 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
-		this.btnCuento1.addEventListener("click", fl_ClickToGoToWebPage_3);
+		this.btnCuento1.addEventListener("click", fl );
 		
-		function fl_ClickToGoToWebPage_3() {
+		function fl() {
 				window.open("./El_patito_feo", "_self");
+		}
+		
+		
+		this.btnCuento2.addEventListener("click", f2);
+		
+		function f2() {
+				window.open("./Caperucita_ y_el_pishing", "_self");
 		}
 	}
 
@@ -550,11 +557,12 @@ if (reversed == null) { reversed = false; }
 	this.instance_2.setTransform(3239.7,245.2,0.9979,1);
 	new cjs.ButtonHelper(this.instance_2, 0, 1, 2);
 
-	this.instance_3 = new lib.cuento2();
-	this.instance_3.setTransform(1397.55,237.3,1.0038,1,0,0,0,0.4,0.1);
-	new cjs.ButtonHelper(this.instance_3, 0, 1, 2);
+	this.btnCuento2 = new lib.cuento2();
+	this.btnCuento2.name = "btnCuento2";
+	this.btnCuento2.setTransform(1397.55,237.3,1.0038,1,0,0,0,0.4,0.1);
+	new cjs.ButtonHelper(this.btnCuento2, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.btnCuento1},{t:this.instance}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnCuento2},{t:this.instance_2},{t:this.instance_1},{t:this.btnCuento1},{t:this.instance}]}).wait(1));
 
 	this._renderFirstFrame();
 
@@ -910,36 +918,30 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(160));
 
-	// cuerpo_caperucitaRoja_png
-	this.instance_2 = new lib.caperucita();
-	this.instance_2.setTransform(1253.95,284);
+	// patoYcaperucita
+	this.instance_2 = new lib.btnPato();
+	this.instance_2.setTransform(143.9,419.75,0.9524,0.9524,0,0,0,133.9,209.9);
+	new cjs.ButtonHelper(this.instance_2, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(160));
+	this.instance_3 = new lib.caperucita();
+	this.instance_3.setTransform(1253.95,284);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2}]}).wait(160));
 
 	// mano
-	this.instance_3 = new lib.mano();
-	this.instance_3.setTransform(1269.15,513.35,0.5,0.5,0,0,0,7.9,85.7);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(160));
-
-	// pato
-	this.instance_4 = new lib.btnPato();
-	this.instance_4.setTransform(143.9,419.75,0.9524,0.9524,0,0,0,133.9,209.9);
-	new cjs.ButtonHelper(this.instance_4, 0, 1, 1);
+	this.instance_4 = new lib.mano();
+	this.instance_4.setTransform(1269.15,513.35,0.5,0.5,0,0,0,7.9,85.7);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(160));
 
-	// titulo_seccion
+	// FONFO
 	this.instance_5 = new lib.tituloseccion();
 	this.instance_5.setTransform(454,18,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(160));
-
-	// FONFO
 	this.instance_6 = new lib.Fondo();
 	this.instance_6.setTransform(-12,0,0.5088,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(160));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6},{t:this.instance_5}]}).wait(160));
 
 	// tarjetas
 	this.instance_7 = new lib.Interpolación3("synched",0);
@@ -960,7 +962,7 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1663908230093", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1675535493075", id:"index_atlas_1"}
 	],
 	preloads: []
 };
@@ -1059,6 +1061,21 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
+		}
+	}
+}
+an.handleFilterCache = function(event) {
+	if(!event.paused){
+		var target = event.target;
+		if(target){
+			if(target.filterCacheList){
+				for(var index = 0; index < target.filterCacheList.length ; index++){
+					var cacheInst = target.filterCacheList[index];
+					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
+						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
+					}
+				}
+			}
 		}
 	}
 }

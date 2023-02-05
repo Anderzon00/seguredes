@@ -660,7 +660,7 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.Interpolación8("synched",0);
 	this.instance.setTransform(532.55,-439.95);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:520.35,y:-320.8},74).to({x:507.15,y:-439.95},79).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:520.35,y:-320.8},74).to({x:532.55,y:-439.95},79).wait(1));
 
 	// niña-derecha.png
 	this.instance_1 = new lib.Interpolación2("synched",0);
@@ -949,7 +949,7 @@ if (reversed == null) { reversed = false; }
 		 
 		_this.btnEntrar1.on('click', function(){	
 			
-		if ($("#imput1").val()=="Respeto") 
+		if ($("#imput1").val()=="Respeto" || $("#imput1").val()=="respeto"  ) 
 			window.open('../Sopa', '_self'); 
 			else  		
 		_this.gotoAndStop(1);	
@@ -959,7 +959,7 @@ if (reversed == null) { reversed = false; }
 		 
 		_this.btnEntrar2.on('click', function(){ 
 				
-		if ($("#imput2").val()=="Confianza") 
+		if ($("#imput2").val()=="Confianza"  || $("#imput2").val()=="confianza") 
 			
 			window.open('../quiz', '_self'); 
 			else 		 
@@ -988,7 +988,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_1.setTransform(521,439,0.5091,0.5308);
 
 	this.instance_2 = new lib.Estrellas();
-	this.instance_2.setTransform(593.65,142.65,1.0256,1.0617,0,0,0,-233.7,-94.9);
+	this.instance_2.setTransform(589.65,142.65,1.0256,1.0617,0,0,0,-233.7,-94.9);
 
 	this.instance_3 = new lib.CARTAESTATICA();
 	this.instance_3.setTransform(575.2,197);
@@ -1065,7 +1065,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_10.setTransform(-3,-21,0.5032,0.4887);
 
 	this.instance_11 = new lib.fondo2();
-	this.instance_11.setTransform(579.8,221.7,1,1,0,0,0,597.8,309.7);
+	this.instance_11.setTransform(594.8,288.7,1,1,0,0,0,597.8,309.7);
 	this.instance_11.filters = [new cjs.BlurFilter(8, 8, 3)];
 	this.instance_11.cache(-2,-2,1200,602);
 
@@ -1074,7 +1074,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(565.5,225.5,627.0999999999999,351.20000000000005);
+p.nominalBounds = new cjs.Rectangle(580.5,292.5,626.5,298.5);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -1084,10 +1084,10 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1670455741251", id:"index_atlas_1"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1670455741318", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1670455741318", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1670455741318", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1673635150736", id:"index_atlas_1"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1673635150807", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1673635150807", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1673635150807", id:"an.TextInput"}
 	],
 	preloads: []
 };

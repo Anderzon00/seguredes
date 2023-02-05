@@ -669,10 +669,10 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Background.png?1670455638125", id:"Background"},
-		{src:"images/barraseguredes.png?1670455638125", id:"barraseguredes"},
-		{src:"images/Portada.png?1670455638125", id:"Portada"},
-		{src:"images/index_atlas_1.png?1670455638072", id:"index_atlas_1"}
+		{src:"images/Background.png?1673623920638", id:"Background"},
+		{src:"images/barraseguredes.png?1673623920638", id:"barraseguredes"},
+		{src:"images/Portada.png?1673623920638", id:"Portada"},
+		{src:"images/index_atlas_1.png?1673623920595", id:"index_atlas_1"}
 	],
 	preloads: []
 };

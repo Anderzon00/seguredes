@@ -1100,8 +1100,8 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/fondoizq.png?1670456708288", id:"fondoizq"},
-		{src:"images/index_atlas_1.png?1670456708173", id:"index_atlas_1"}
+		{src:"images/fondoizq.png?1675538355095", id:"fondoizq"},
+		{src:"images/index_atlas_1.png?1675538354985", id:"index_atlas_1"}
 	],
 	preloads: []
 };
