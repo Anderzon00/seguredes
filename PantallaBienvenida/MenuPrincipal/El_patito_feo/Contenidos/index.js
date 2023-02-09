@@ -372,76 +372,120 @@ if (reversed == null) { reversed = false; }
 			this.isSingleFrame = true;
 		}
 		//INDEX CONTENIDOS
-		
+		this.stop();
 		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
-		    stretchToFit();
+			stretchToFit();
 		}
 		
 		
+		/////////////////////////////////////////////////
+		var _this = this;
 		
-		this.btnInicio.addEventListener("click", fl_ClickToGoToWebPage_10);
-		function fl_ClickToGoToWebPage_10() {
-			window.open("../../../../", "_self");
-		}
-		
-		this.btnVolver.addEventListener("click", fl_ClickToGoToWebPage_11);
-		function fl_ClickToGoToWebPage_11() {
-			window.open("../", "_self");
-		}
-		
-		
-		
-		this.btnActividades.addEventListener("click", fl_ClickToGoToWebPage_19);
-		
-		function fl_ClickToGoToWebPage_19() {
-			window.open("../Actividades", "_self");
-		}
+		_this.btnInicio.on('click', function () {
+			createjs.Sound.play("sound2", {
+				volume: 0.5
+			}).on("complete", function () {
+				window.open("../../../../", "_self");
+			}, this);
+		});
 		
 		
-		  
-		  
+		_this.btnVolver.on('click', function () {
 		
-		this.stop();
+			createjs.Sound.play("sound2", {
+				volume: 0.5
+			}).on("complete", function () {
+		
+				window.open("../", "_self");
 		
 		
-		var root= this;
+			}, this);
+		});
+		
+		
+		_this.btnContenidos.on('click', function () {
+		
+			createjs.Sound.play("sound1", {
+				volume: 0.5
+			}).on("complete", function () {
+		
+				window.open('./', '_self');
+		
+			}, this);
+		});
+		
+		
+		_this.btnActividades.on('click', function () {
+		
+			createjs.Sound.play("sound1", {
+				volume: 0.5
+			}).on("complete", function () {
+				window.open('../Actividades', '_self');
+			}, this);
+		
+		
+		});
+		
+		
+		
+		
+		this.btnAyuda.on('click', function () {
+		
+			createjs.Sound.play("sound1", {
+				volume: 0.5
+			}).on("complete", function () {
+				alert("ayuda");
+		
+			}, this);
+		
+		});
+		
+		
+		var root = this;
 		
 		var key;
 		
 		var element = document.createElement('div');
 		canvas.parentNode.appendChild(element);
-		height = 13.5*Math.max(window.innerHeight )/16 ; 
-		width = 27.85*(Math.max(window.innerWidth)/32) ;
-		topElement= 1.1*Math.max(window.innerHeight )/16 +'px';
-		leftElement = 2.325*Math.max(window.innerWidth)/32 +'px';
+		height = 13.5 * Math.max(window.innerHeight) / 16;
+		width = 27.85 * (Math.max(window.innerWidth) / 32);
+		topElement = 1.1 * Math.max(window.innerHeight) / 16 + 'px';
+		leftElement = 2.325 * Math.max(window.innerWidth) / 32 + 'px';
 		
 		
 		
-		element.innerHTML = '<iframe  id="video"  style="border:none "   src="./Menu" width="'+ width+ '" height="'+height+'">';	 
+		element.innerHTML = '<iframe  id="video"  style="border:none "   src="./Menu" width="' + width + '" height="' + height + '">';
 		
 		
 		
 		
-		  function embed (style){				
-		        for (key in style)
-			    element.style[key] = style[key];		
-		}	 
+		function embed(style) {
+			for (key in style)
+				element.style[key] = style[key];
+		}
 		
-		 embed( {position: 'absolute', 	 top: topElement  ,	left: leftElement});
+		embed({
+			position: 'absolute',
+			top: topElement,
+			left: leftElement
+		});
 		
-		window.addEventListener('resize', () =>{
-		topElement= 1.1*Math.max(window.innerHeight )/16 +'px';
-		leftElement = 2.325*Math.max(window.innerWidth)/32 +'px';
-		height = 13.5*Math.max(window.innerHeight )/16 ; 
-		width = 27.85*(Math.max(window.innerWidth)/32) ;
-		embed( {position: 'absolute', 	 top:topElement   ,	left: leftElement});  
-		document.getElementById('video').style.width = width +'px'; 
-		document.getElementById('video').style.height = height +'px'; 
+		window.addEventListener('resize', () => {
+			topElement = 1.1 * Math.max(window.innerHeight) / 16 + 'px';
+			leftElement = 2.325 * Math.max(window.innerWidth) / 32 + 'px';
+			height = 13.5 * Math.max(window.innerHeight) / 16;
+			width = 27.85 * (Math.max(window.innerWidth) / 32);
+			embed({
+				position: 'absolute',
+				top: topElement,
+				left: leftElement
+			});
+			document.getElementById('video').style.width = width + 'px';
+			document.getElementById('video').style.height = height + 'px';
 		
-		 }
-		)
+		})
 	}
 
 	// actions tween:
@@ -510,7 +554,9 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1674701915186", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1675871388624", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1675871388658", id:"sound2"},
+		{src:"sounds/sound1.mp3?1675871388658", id:"sound1"}
 	],
 	preloads: []
 };

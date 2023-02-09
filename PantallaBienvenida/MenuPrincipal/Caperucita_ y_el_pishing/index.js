@@ -540,41 +540,39 @@ if (reversed == null) { reversed = false; }
 		} 
 		
 		this.btnContenidos.addEventListener("click", fl_ClickToGoToWebPage_4); 
-		function fl_ClickToGoToWebPage_4() {
-			window.open("./Contenidos", "_self");
+		function fl_ClickToGoToWebPage_4() {	
+			 createjs.Sound.play("sound1", { volume: 0.5}).on("complete", function () {                   	
+			window.open("./Contenidos", "_self");		 
+		                    }, this);
 		}
 		  
 		this.button_popup.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_2.bind(this));
 		function fl_ClickToGoToAndPlayFromFrame_2(){
-			this.gotoAndPlay(1);
+			createjs.Sound.play("sound2", { volume: 0.5}).on("complete", function () {       
+			this.gotoAndPlay(1);		 
+		                    }, this);
 		}
 		
 		this.btnInicio.addEventListener("click", fl_ClickToGoToWebPage_2);
 		function fl_ClickToGoToWebPage_2() {
+			createjs.Sound.play("sound2", { volume: 0.5}).on("complete", function () {                    
 			window.open("../../../../", "_self");
+				 
+		                    }, this);	
 		}
 		
 		this.btnVolver.addEventListener("click", fl_ClickToGoToWebPage_3);
-		function fl_ClickToGoToWebPage_3() {
-			window.open("../", "_self");
+		function fl_ClickToGoToWebPage_3() {	
+			createjs.Sound.play("sound2", { volume: 0.5}).on("complete", function () {                    
+			window.open("../", "_self");		 
+		                    }, this);	
 		}
 		
-		
-		
-		
-		
-		
-		
-		
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
 		_this.btnActividades.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('./Actividades', '_self');
+			createjs.Sound.play("sound1", { volume: 0.5}).on("complete", function () {
+		                    	window.open('./Actividades', '_self');	 
+		                    }, this); 
 		});
 		
 	}
@@ -682,10 +680,12 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Background.png?1675531187063", id:"Background"},
-		{src:"images/barraseguredes.png?1675531187063", id:"barraseguredes"},
-		{src:"images/Portada.png?1675531187063", id:"Portada"},
-		{src:"images/index_atlas_1.png?1675531187011", id:"index_atlas_1"}
+		{src:"images/Background.png?1675959748465", id:"Background"},
+		{src:"images/barraseguredes.png?1675959748465", id:"barraseguredes"},
+		{src:"images/Portada.png?1675959748465", id:"Portada"},
+		{src:"images/index_atlas_1.png?1675959748407", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1675959748465", id:"sound2"},
+		{src:"sounds/sound1.mp3?1675959748465", id:"sound1"}
 	],
 	preloads: []
 };

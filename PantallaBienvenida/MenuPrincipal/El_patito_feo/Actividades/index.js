@@ -307,12 +307,24 @@ if (reversed == null) { reversed = false; }
 		
 		this.btnInicio.addEventListener("click", fl_ClickToGoToWebPage_10);
 		function fl_ClickToGoToWebPage_10() {
+			createjs.Sound.play("sound2", { volume: 0.5}).on("complete", function () {
+		                   
+			
 			window.open("../../../../", "_self");
+				 
+		                    }, this);	
+			
 		}
 		
 		this.btnVolver.addEventListener("click", fl_ClickToGoToWebPage_11);
 		function fl_ClickToGoToWebPage_11() {
+			
+			createjs.Sound.play("sound2", { volume: 0.5}).on("complete", function () {
+		                    
+			
 			window.open("../", "_self");
+				 
+		                    }, this);
 		}  
 		
 		
@@ -353,10 +365,17 @@ if (reversed == null) { reversed = false; }
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
 		_this.btnContenidos.on('click', function(){
+			createjs.Sound.play("sound1", { volume: 0.5}).on("complete", function () {
+		                    
+			
+		window.open('../Contenidos', '_self');
+				 
+		                    }, this);
+			
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('../Contenidos', '_self');
+		
 		});
 		
 		
@@ -367,10 +386,14 @@ if (reversed == null) { reversed = false; }
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
 		_this.btnActividades.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
+			
+		createjs.Sound.play("sound1", { volume: 0.5}).on("complete", function () {
+		                    
+			
 		window.open('index.html', '_self');
+				 
+		                    }, this); 
+		
 		});
 	}
 
@@ -433,7 +456,9 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1674702050285", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1675877399081", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1675877399116", id:"sound2"},
+		{src:"sounds/sound1.mp3?1675877399116", id:"sound1"}
 	],
 	preloads: []
 };

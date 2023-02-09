@@ -336,23 +336,40 @@ if (reversed == null) { reversed = false; }
 		} 
 		this.btnInicio.addEventListener("click", fl_ClickToGoToWebPage_10);
 		function fl_ClickToGoToWebPage_10() {
-			window.open("../../../../", "_self");
+			createjs.Sound.play("sound2", { volume: 0.5}).on("complete", function () {
+		                    
+				window.open("../../../../", "_self");
+				 
+		                    }, this);
+			
+			
+			
 		}
 		
 		this.btnVolver.addEventListener("click", fl_ClickToGoToWebPage_11);
 		function fl_ClickToGoToWebPage_11() {
-			window.open("../", "_self");
+			createjs.Sound.play("sound2", { volume: 0.5}).on("complete", function () {                    
+				window.open("../", "_self");		 
+		                    }, this);
+			
+			
 		} 
 		var _this = this;
 		 
 		_this.btnContenidos.on('click', function(){
+			createjs.Sound.play("sound1", { volume: 0.5}).on("complete", function () {                    
+		window.open('../Contenidos', '_self');		 
+		                    }, this);
 		 
-		window.open('../Contenidos', '_self');
+		
 		}); 
 		
 		_this.btnActividades.on('click', function(){
+			createjs.Sound.play("sound1", { volume: 0.5}).on("complete", function () {                    
+		window.open('../Actividades', '_self');		 
+		                    }, this);
 		 
-		window.open('../Actividades', '_self');
+		
 		}); 
 		
 		
@@ -491,7 +508,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1675531167614", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1675961304314", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1675961304351", id:"sound2"},
+		{src:"sounds/sound1.mp3?1675961304351", id:"sound1"}
 	],
 	preloads: []
 };

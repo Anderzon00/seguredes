@@ -340,27 +340,29 @@ if (reversed == null) { reversed = false; }
 		
 		this.btnInicio.addEventListener("click", fl_ClickToGoToWebPage_10);
 		function fl_ClickToGoToWebPage_10() {
-			window.open("../../../../", "_self");
+			createjs.Sound.play("sound2", { volume: 0.5}).on("complete", function () {                   
+				window.open("../../../../", "_self");		 
+		                    }, this);
+			
 		}
 		
 		this.btnVolver.addEventListener("click", fl_ClickToGoToWebPage_11);
 		function fl_ClickToGoToWebPage_11() {
-			window.open("../", "_self");
+			createjs.Sound.play("sound2", { volume: 0.5}).on("complete", function () {                    
+			window.open("../", "_self");		 
+		                    }, this);
+			
 		}
 		
 		this.btnActividades.addEventListener("click", fl_ClickToGoToWebPage_12);
 		function fl_ClickToGoToWebPage_12() {
-			window.open("../Actividades", "_self");
+			createjs.Sound.play("sound1", { volume: 0.5}).on("complete", function () {                    
+				window.open("../Actividades", "_self");		 
+		                    }, this);
 		}
 		
-		 
-		  
-		
 		this.stop();
-		
-		
 		var root= this;
-		
 		var key;
 		
 		var element = document.createElement('div');
@@ -370,12 +372,7 @@ if (reversed == null) { reversed = false; }
 		topElement= 1.1*Math.max(window.innerHeight )/16 +'px';
 		leftElement = 2.325*Math.max(window.innerWidth)/32 +'px';
 		
-		
-		
 		element.innerHTML = '<iframe  id="video"  style="border:none "   src="./Menu" width="'+ width+ '" height="'+height+'">';	 
-		
-		
-		
 		
 		  function embed (style){				
 		        for (key in style)
@@ -392,7 +389,6 @@ if (reversed == null) { reversed = false; }
 		embed( {position: 'absolute', 	 top:topElement   ,	left: leftElement});  
 		document.getElementById('video').style.width = width +'px'; 
 		document.getElementById('video').style.height = height +'px'; 
-		
 		 }
 		)
 	}
@@ -474,7 +470,9 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1675535681659", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1675961705860", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1675961705896", id:"sound2"},
+		{src:"sounds/sound1.mp3?1675961705896", id:"sound1"}
 	],
 	preloads: []
 };

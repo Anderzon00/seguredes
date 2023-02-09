@@ -576,7 +576,7 @@ if (reversed == null) { reversed = false; }
 		}
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
-		    stretchToFit();
+			stretchToFit();
 		}
 		
 		this.siguiente.addEventListener("click", fl_ClickToGoToWebPage_12);
@@ -586,29 +586,56 @@ if (reversed == null) { reversed = false; }
 		
 		this.btnQueEs.addEventListener("click", fl_ClickToGoToWebPage_13);
 		function fl_ClickToGoToWebPage_13() {
-			window.open("Que_es", "_self");
+			createjs.Sound.play("audio", {
+				volume: 0.5
+			}).on("complete", function () {
+				window.open("Que_es", "_self");
+			}, this);
 		}
 		
 		this.btnComoOcurre.addEventListener("click", fl_ClickToGoToWebPage_14);
 		function fl_ClickToGoToWebPage_14() {
-			window.open("Como_ocurre", "_self");
+			createjs.Sound.play("audio", {
+				volume: 0.5
+			}).on("complete", function () {
+				window.open("Como_ocurre", "_self");
+			}, this);
 		}
 		
 		this.btnComoEvitarlo.addEventListener("click", fl_ClickToGoToWebPage_15);
 		function fl_ClickToGoToWebPage_15() {
-			window.open("Como_evitarlo/index.html", "_self");
+			createjs.Sound.play("audio", {
+				volume: 0.5
+			}).on("complete", function () {
+				window.open("Como_evitarlo/index.html", "_self");
+			}, this);
 		}
 		
 		this.btnSiMeOcurre.addEventListener("click", fl_ClickToGoToWebPage_16);
 		function fl_ClickToGoToWebPage_16() {
-			window.open("Si_me_ocurre", "_self");
+			createjs.Sound.play("audio", {
+				volume: 0.5
+			}).on("complete", function () {
+				window.open("Si_me_ocurre", "_self");
+		
+			}, this);
 		}
 		
 		
-		this.btnContenidoExtra.addEventListener("click", fl_ClickToGoToWebPage_17);
-		function fl_ClickToGoToWebPage_17() {
-			window.open("Contenido_Extra", "_self");
-		}
+		
+		
+		var _this = this;
+		
+		_this.btnContenidoExtra.on('click', function () {
+		
+			createjs.Sound.play("audio", {
+				volume: 0.5
+			}).on("complete", function () {
+		
+				window.open("Contenido_Extra", "_self");
+		
+			}, this);
+		});
 	}
 
 	// actions tween:
@@ -708,7 +735,8 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1666082569395", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1675873695276", id:"index_atlas_1"},
+		{src:"sounds/audio.mp3?1675873695330", id:"audio"}
 	],
 	preloads: []
 };

@@ -524,47 +524,93 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,12];
 	// timeline functions:
 	this.frame_0 = function() {
-		this.stop();
-		
-		
+		this.stop(); 
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
-		    stretchToFit();
-		} 
-		
-		this.btnContenidos.addEventListener("click", fl_ClickToGoToWebPage_4); 
-		function fl_ClickToGoToWebPage_4() {
-			window.open("./Contenidos", "_self");
+			stretchToFit();
 		}
-		  
-		this.button_popup.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_2.bind(this));
-		function fl_ClickToGoToAndPlayFromFrame_2(){
-			this.gotoAndPlay(1);
-		}
-		
-		this.btnInicio.addEventListener("click", fl_ClickToGoToWebPage_2);
-		function fl_ClickToGoToWebPage_2() {
-			window.open("../../../../", "_self");
-		}
-		
-		this.btnVolver.addEventListener("click", fl_ClickToGoToWebPage_3);
-		function fl_ClickToGoToWebPage_3() {
-			window.open("../", "_self");
-		}
-		
-		
-		
-		
+		 
 		
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnActividades.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('./Actividades', '_self');
+		
+		_this.btnInicio.on('click', function () {
+		
+			createjs.Sound.play("sound2", {
+				volume: 0.1
+			}).on("complete", function () {
+		
+				window.open("../../../../", "_self");
+		
+			}, this);
+		});
+		
+		
+		_this.btnVolver.on('click', function () {
+		
+			createjs.Sound.play("sound2", {
+				volume: 0.1
+			}).on("complete", function () {
+		
+				window.open("../", "_self");
+		
+			}, this);
+		});
+		
+		
+		_this.btnContenidos.on('click', function () {
+		
+			createjs.Sound.play("sound1", {
+				volume: 0.1
+			}).on("complete", function () {
+		
+				window.open("./Contenidos", "_self");
+		
+			}, this);
+		});
+		
+		
+		_this.btnActividades.on('click', function () {
+			
+		createjs.Sound.play("sound1", {
+				volume: 0.1
+			}).on("complete", function () {
+			window.open('./Actividades', '_self');
+		
+			}, this);
+		
+		
+		});
+		
+		
+		
+		
+		this.btnAyuda.on('click', function () {
+			
+		createjs.Sound.play("sound1", {
+				volume: 0.1
+			}).on("complete", function () {
+		alert("ayuda");
+		
+			}, this);
+		
+		
+		});
+		
+		
+		
+		
+		
+		_this.button_popup.on('click', function () {
+			
+		createjs.Sound.play("sound2", {
+				volume: 0.1
+			}).on("complete", function () {
+		
+			_this.gotoAndPlay(1);
+		
+			}, this);
+		
+		
 		});
 		
 	}
@@ -612,9 +658,10 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({_off:false},0).to({regX:35.8,regY:32.3,scaleX:0.0028,scaleY:0.0031,x:683.1,y:352.4},10).to({_off:true,regX:0,regY:0,scaleX:1,scaleY:1,x:685,y:345},1).wait(1));
 
 	// botones
-	this.instance_3 = new lib.btnAyuda();
-	this.instance_3.setTransform(1208.75,33.5);
-	new cjs.ButtonHelper(this.instance_3, 0, 1, 2);
+	this.btnAyuda = new lib.btnAyuda();
+	this.btnAyuda.name = "btnAyuda";
+	this.btnAyuda.setTransform(1208.75,33.5);
+	new cjs.ButtonHelper(this.btnAyuda, 0, 1, 2);
 
 	this.btnActividades = new lib.btnActividades();
 	this.btnActividades.name = "btnActividades";
@@ -636,25 +683,25 @@ if (reversed == null) { reversed = false; }
 	this.btnInicio.setTransform(613.25,740.25);
 	new cjs.ButtonHelper(this.btnInicio, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnInicio},{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.instance_3}]}).wait(13));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnInicio},{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]}).wait(13));
 
 	// barra
-	this.instance_4 = new lib.barraseguredes();
-	this.instance_4.setTransform(100,622,0.5,0.5);
+	this.instance_3 = new lib.barraseguredes();
+	this.instance_3.setTransform(100,622,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(13));
+
+	// tarjeta
+	this.instance_4 = new lib.Portada();
+	this.instance_4.setTransform(100,52,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(13));
 
-	// tarjeta
-	this.instance_5 = new lib.Portada();
-	this.instance_5.setTransform(100,52,0.5,0.5);
+	// fondo
+	this.instance_5 = new lib.Background();
+	this.instance_5.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(13));
-
-	// fondo
-	this.instance_6 = new lib.Background();
-	this.instance_6.setTransform(0,0,0.5,0.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(13));
 
 	this._renderFirstFrame();
 
@@ -669,10 +716,12 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Background.png?1673623920638", id:"Background"},
-		{src:"images/barraseguredes.png?1673623920638", id:"barraseguredes"},
-		{src:"images/Portada.png?1673623920638", id:"Portada"},
-		{src:"images/index_atlas_1.png?1673623920595", id:"index_atlas_1"}
+		{src:"images/Background.png?1675957669420", id:"Background"},
+		{src:"images/barraseguredes.png?1675957669420", id:"barraseguredes"},
+		{src:"images/Portada.png?1675957669420", id:"Portada"},
+		{src:"images/index_atlas_1.png?1675957669357", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1675957669420", id:"sound2"},
+		{src:"sounds/sound1.mp3?1675957669420", id:"sound1"}
 	],
 	preloads: []
 };

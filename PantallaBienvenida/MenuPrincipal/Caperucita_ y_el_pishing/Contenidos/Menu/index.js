@@ -888,33 +888,64 @@ if (reversed == null) { reversed = false; }
 		
 		this.siguiente.addEventListener("click", fl_ClickToGoToWebPage_12);
 		function fl_ClickToGoToWebPage_12() {
-			window.open("Que_es", "_self");
+			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
+		                    
+				window.open("Que_es", "_self");
+				 
+		                    }, this);
+			
 		}
 		
 		this.btnQueEs.addEventListener("click", fl_ClickToGoToWebPage_13);
 		function fl_ClickToGoToWebPage_13() {
+			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
+		                    
 			window.open("Que_es", "_self");
+				 
+		                    }, this);
+			
 		}
 		
 		this.btnComoOcurre.addEventListener("click", fl_ClickToGoToWebPage_14);
 		function fl_ClickToGoToWebPage_14() {
-			window.open("Como_ocurre", "_self");
+		createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
+		                    
+		window.open("Como_ocurre", "_self");
+				 
+		                    }, this);
+			
+			
 		}
 		
 		this.btnComoEvitarlo.addEventListener("click", fl_ClickToGoToWebPage_15);
 		function fl_ClickToGoToWebPage_15() {
+			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
+		                    
 			window.open("Como_evitarlo/index.html", "_self");
+				 
+		                    }, this);
+			
 		}
 		
 		this.btnSiMeOcurre.addEventListener("click", fl_ClickToGoToWebPage_16);
 		function fl_ClickToGoToWebPage_16() {
-			window.open("Si_me_ocurre", "_self");
+			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
+		                    
+		window.open("Si_me_ocurre", "_self");
+				 
+		                    }, this);
+			
 		}
 		
 		
 		this.btnContenidoExtra.addEventListener("click", fl_ClickToGoToWebPage_17);
 		function fl_ClickToGoToWebPage_17() {
+			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
+		                    
 			window.open("Contenido_Extra", "_self");
+				 
+		                    }, this);
+		
 		}
 	}
 
@@ -988,7 +1019,8 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1668915790405", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1675962351958", id:"index_atlas_1"},
+		{src:"sounds/sound.mp3?1675962352022", id:"sound"}
 	],
 	preloads: []
 };

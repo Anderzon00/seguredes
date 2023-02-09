@@ -1034,8 +1034,14 @@ if (reversed == null) { reversed = false; }
 		 
 		
 		_this.btnAceptar.on('click', function(){
+			
+			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
+		                    
+			_this.gotoAndStop(0);
+				 
+		                    }, this);
 		
-		_this.gotoAndStop(0);
+		
 		});
 	}
 
@@ -1146,10 +1152,11 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1675538852858", id:"index_atlas_1"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1675538852925", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1675538852925", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1675538852925", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1675960314002", id:"index_atlas_1"},
+		{src:"sounds/sound.mp3?1675960314070", id:"sound"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1675960314070", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1675960314070", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1675960314070", id:"an.TextInput"}
 	],
 	preloads: []
 };
