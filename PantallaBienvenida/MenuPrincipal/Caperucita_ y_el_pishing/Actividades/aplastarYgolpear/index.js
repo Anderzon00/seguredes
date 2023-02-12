@@ -5111,14 +5111,14 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/FondoActividad.png?1675535850283", id:"FondoActividad"},
-		{src:"images/index_atlas_1.png?1675535850048", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1675535850050", id:"index_atlas_2"},
-		{src:"sounds/sound1.mp3?1675535850283", id:"sound1"},
-		{src:"sounds/Voice2.mp3?1675535850283", id:"Voice2"},
-		{src:"sounds/sound2.mp3?1675535850283", id:"sound2"},
-		{src:"sounds/mixkitelectricpop2365wav.mp3?1675535850283", id:"mixkitelectricpop2365wav"},
-		{src:"sounds/sound.mp3?1675535850283", id:"sound"}
+		{src:"images/FondoActividad.png?1676166361857", id:"FondoActividad"},
+		{src:"images/index_atlas_1.png?1676166361625", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1676166361627", id:"index_atlas_2"},
+		{src:"sounds/sound1.mp3?1676166361857", id:"sound1"},
+		{src:"sounds/Voice2.mp3?1676166361857", id:"Voice2"},
+		{src:"sounds/sound2.mp3?1676166361857", id:"sound2"},
+		{src:"sounds/mixkitelectricpop2365wav.mp3?1676166361857", id:"mixkitelectricpop2365wav"},
+		{src:"sounds/sound.mp3?1676166361857", id:"sound"}
 	],
 	preloads: []
 };
