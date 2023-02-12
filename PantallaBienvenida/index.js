@@ -55,6 +55,24 @@ p.nominalBounds = new cjs.Rectangle(0,0,276,98);
 p.nominalBounds = new cjs.Rectangle(0,0,276,98);
 
 
+(lib.btnInicio = function() {
+	this.initialize(img.btnInicio);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,220,98);
+
+
+(lib.btnInicioHover = function() {
+	this.initialize(img.btnInicioHover);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,220,98);
+
+
+(lib.Fondo_1 = function() {
+	this.initialize(img.Fondo_1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,2888,1680);
+
+
 (lib.globorojoderecha = function() {
 	this.initialize(img.globorojoderecha);
 }).prototype = p = new cjs.Bitmap();
@@ -77,12 +95,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,88,276);
 	this.initialize(img.globoverdeizquierda);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,88,277);
-
-
-(lib.Libroconfondos = function() {
-	this.initialize(img.Libroconfondos);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,2888,1680);
 
 
 (lib.Seguredes = function() {
@@ -291,6 +303,32 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-43,-145,96,289);
 
 
+(lib.inicio = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.btnInicio();
+	this.instance.setTransform(-59,-26,0.5695,0.5724);
+
+	this.instance_1 = new lib.btnInicioHover();
+	this.instance_1.setTransform(-59,-26,0.5946,0.5946);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance}]},1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-59,-26,130.8,58.3);
+
+
 (lib.btnVamos = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -460,6 +498,17 @@ if (reversed == null) { reversed = false; }
 				 
 		                    }, this);
 		});
+		
+		
+		_this.btnInicio.on('click', function(){
+		
+			 createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
+		                    
+					 window.open("../", "_self");
+		
+				 
+		                    }, this);
+		});
 	}
 
 	// actions tween:
@@ -490,14 +539,21 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(30).to({_off:false},0).wait(1).to({regX:517.5,regY:197.5,scaleX:0.5462,scaleY:0.5342,x:683,y:246.35},0).wait(1).to({scaleX:0.5896,scaleY:0.6205,y:243.2},0).wait(1).to({scaleX:0.6329,scaleY:0.7069,y:240.05},0).wait(1).to({scaleX:0.6551,scaleY:0.7414,y:239.1},0).wait(1).to({scaleX:0.6772,scaleY:0.7759,y:238.2},0).wait(1).to({scaleX:0.6552,scaleY:0.7551,x:683.05,y:238.95},0).wait(1).to({scaleX:0.6331,scaleY:0.7343,x:683,y:239.75},0).wait(1).to({scaleX:0.611,scaleY:0.7136,x:683.05,y:240.5},0).wait(1).to({scaleX:0.5889,scaleY:0.6928,x:683,y:241.25},0).wait(1).to({scaleX:0.5668,scaleY:0.6721,x:683.05,y:242.05},0).wait(1).to({scaleX:0.5629,scaleY:0.6607,x:683,y:244.25},0).wait(1).to({scaleX:0.559,scaleY:0.6493,y:246.4},0).wait(1).to({scaleX:0.5551,scaleY:0.6379,y:248.6},0).wait(1).to({scaleX:0.5511,scaleY:0.6265,x:682.95,y:250.8},0).wait(1).to({scaleX:0.5472,scaleY:0.6152,y:253},0).wait(1).to({scaleX:0.5433,scaleY:0.6038,x:683,y:247.4},0).wait(1).to({scaleX:0.5393,scaleY:0.5924,y:241.8},0).wait(1).to({scaleX:0.5354,scaleY:0.581,y:236.2},0).wait(1).to({scaleX:0.5315,scaleY:0.5696,y:230.6},0).wait(1).to({scaleX:0.5275,scaleY:0.5582,y:233.25},0).wait(1).to({scaleX:0.5236,scaleY:0.5469,y:235.9},0).wait(1).to({scaleX:0.5197,scaleY:0.5355,x:682.95,y:238.5},0).wait(1).to({scaleX:0.5157,scaleY:0.5241,x:683,y:241.15},0).wait(1).to({scaleX:0.5118,scaleY:0.5127,x:682.95,y:243.8},0).wait(1).to({scaleX:0.5079,scaleY:0.5013,y:247.55},0).wait(1).to({scaleX:0.5039,scaleY:0.49,x:683,y:251.25},0).wait(1).to({scaleX:0.5,scaleY:0.4786,y:255},0).wait(46));
 
 	// Capa_1
+	this.btnInicio = new lib.inicio();
+	this.btnInicio.name = "btnInicio";
+	this.btnInicio.setTransform(599.75,733.35,1.048,0.9286,0,0,0,0,0.1);
+	new cjs.ButtonHelper(this.btnInicio, 0, 1, 2);
+
 	this.btnCreditos = new lib.btnCreditos();
 	this.btnCreditos.name = "btnCreditos";
-	this.btnCreditos.setTransform(1241.7,679.95,1,1,0,0,0,67.8,20);
-	this.btnCreditos.alpha = 0;
-	this.btnCreditos._off = true;
+	this.btnCreditos.setTransform(756.3,730.55,0.9177,1.0643,0,0,0,67.9,20.2);
 	new cjs.ButtonHelper(this.btnCreditos, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get(this.btnCreditos).wait(81).to({_off:false},0).wait(1).to({regX:69.3,regY:25.3,x:1243.2,y:685.25,alpha:0.0471},0).wait(1).to({alpha:0.0943},0).wait(1).to({alpha:0.1414},0).wait(1).to({alpha:0.1886},0).wait(1).to({alpha:0.2357},0).wait(1).to({alpha:0.2829},0).wait(1).to({alpha:0.33},0).wait(1).to({alpha:0.3771},0).wait(1).to({alpha:0.4243},0).wait(1).to({alpha:0.4714},0).wait(1).to({alpha:0.5186},0).wait(1).to({alpha:0.5657},0).wait(1).to({alpha:0.6129},0).wait(1).to({alpha:0.66},0).wait(1).to({alpha:0.7071},0).wait(1).to({alpha:0.7543},0).wait(1).to({alpha:0.8014},0).wait(1).to({alpha:0.8486},0).wait(1).to({alpha:0.8957},0).wait(1).to({alpha:0.9429},0).wait(2));
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("rgba(0,197,255,0)").ss(1,1,1).p("AjinlIHFAAIAAPLInFAAg");
+	this.shape.setTransform(682.025,701.85);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.shape},{t:this.btnCreditos},{t:this.btnInicio}]},81).wait(22));
 
 	// globos
 	this.instance_4 = new lib.globoVerdeIzq();
@@ -518,7 +574,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4}]},30).wait(73));
 
 	// libro
-	this.instance_9 = new lib.Libroconfondos();
+	this.instance_9 = new lib.Fondo_1();
 	this.instance_9.setTransform(-39,-50,0.5,0.5087);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(103));
@@ -536,20 +592,22 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/amarillo.png?1675954702372", id:"amarillo"},
-		{src:"images/botonvamos.png?1675954702372", id:"botonvamos"},
-		{src:"images/botonVamosClic.png?1675954702373", id:"botonVamosClic"},
-		{src:"images/BtnCreditos.png?1675954702373", id:"BtnCreditos"},
-		{src:"images/btnCreditosHover.png?1675954702373", id:"btnCreditosHover"},
-		{src:"images/globorojoderecha.png?1675954702373", id:"globorojoderecha"},
-		{src:"images/globorojoizquierda.png?1675954702373", id:"globorojoizquierda"},
-		{src:"images/globoverdederecha.png?1675954702373", id:"globoverdederecha"},
-		{src:"images/globoverdeizquierda.png?1675954702373", id:"globoverdeizquierda"},
-		{src:"images/Libroconfondos.png?1675954702373", id:"Libroconfondos"},
-		{src:"images/Seguredes.png?1675954702373", id:"Seguredes"},
-		{src:"images/texto.png?1675954702373", id:"texto"},
-		{src:"images/tituloBienvenida.png?1675954702373", id:"tituloBienvenida"},
-		{src:"sounds/sound.mp3?1675954702373", id:"sound"}
+		{src:"images/amarillo.png?1676214456472", id:"amarillo"},
+		{src:"images/botonvamos.png?1676214456472", id:"botonvamos"},
+		{src:"images/botonVamosClic.png?1676214456472", id:"botonVamosClic"},
+		{src:"images/BtnCreditos.png?1676214456472", id:"BtnCreditos"},
+		{src:"images/btnCreditosHover.png?1676214456472", id:"btnCreditosHover"},
+		{src:"images/btnInicio.png?1676214456472", id:"btnInicio"},
+		{src:"images/btnInicioHover.png?1676214456472", id:"btnInicioHover"},
+		{src:"images/Fondo_1.png?1676214456472", id:"Fondo_1"},
+		{src:"images/globorojoderecha.png?1676214456472", id:"globorojoderecha"},
+		{src:"images/globorojoizquierda.png?1676214456472", id:"globorojoizquierda"},
+		{src:"images/globoverdederecha.png?1676214456472", id:"globoverdederecha"},
+		{src:"images/globoverdeizquierda.png?1676214456472", id:"globoverdeizquierda"},
+		{src:"images/Seguredes.png?1676214456472", id:"Seguredes"},
+		{src:"images/texto.png?1676214456472", id:"texto"},
+		{src:"images/tituloBienvenida.png?1676214456472", id:"tituloBienvenida"},
+		{src:"sounds/sound.mp3?1676214456472", id:"sound"}
 	],
 	preloads: []
 };
