@@ -1026,7 +1026,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		   window.open('../AplastarYgolpear', '_self');
+		   window.open('../AplastarGolpear', '_self');
 		});
 	}
 	this.frame_1 = function() {
@@ -1152,11 +1152,11 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1675960314002", id:"index_atlas_1"},
-		{src:"sounds/sound.mp3?1675960314070", id:"sound"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1675960314070", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1675960314070", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1675960314070", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1676169171264", id:"index_atlas_1"},
+		{src:"sounds/sound.mp3?1676169171337", id:"sound"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1676169171337", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1676169171337", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1676169171337", id:"an.TextInput"}
 	],
 	preloads: []
 };
