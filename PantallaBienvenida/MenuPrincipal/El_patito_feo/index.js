@@ -536,7 +536,7 @@ if (reversed == null) { reversed = false; }
 		_this.btnInicio.on('click', function () {
 		
 			createjs.Sound.play("sound2", {
-				volume: 0.1
+				volume: 0.5
 			}).on("complete", function () {
 		
 				window.open("../../../../", "_self");
@@ -548,7 +548,7 @@ if (reversed == null) { reversed = false; }
 		_this.btnVolver.on('click', function () {
 		
 			createjs.Sound.play("sound2", {
-				volume: 0.1
+				volume: 0.5
 			}).on("complete", function () {
 		
 				window.open("../", "_self");
@@ -560,7 +560,7 @@ if (reversed == null) { reversed = false; }
 		_this.btnContenidos.on('click', function () {
 		
 			createjs.Sound.play("sound1", {
-				volume: 0.1
+				volume: 0.5
 			}).on("complete", function () {
 		
 				window.open("./Contenidos", "_self");
@@ -572,7 +572,7 @@ if (reversed == null) { reversed = false; }
 		_this.btnActividades.on('click', function () {
 			
 		createjs.Sound.play("sound1", {
-				volume: 0.1
+				volume: 0.5
 			}).on("complete", function () {
 			window.open('./Actividades', '_self');
 		
@@ -587,7 +587,7 @@ if (reversed == null) { reversed = false; }
 		this.btnAyuda.on('click', function () {
 			
 		createjs.Sound.play("sound1", {
-				volume: 0.1
+				volume: 0.5
 			}).on("complete", function () {
 		alert("ayuda");
 		
@@ -603,7 +603,7 @@ if (reversed == null) { reversed = false; }
 		_this.button_popup.on('click', function () {
 			
 		createjs.Sound.play("sound2", {
-				volume: 0.1
+				volume: 0.5
 			}).on("complete", function () {
 		
 			_this.gotoAndPlay(1);
@@ -612,7 +612,6 @@ if (reversed == null) { reversed = false; }
 		
 		
 		});
-		
 	}
 	this.frame_12 = function() {
 		this.stop();
@@ -716,12 +715,12 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Background.png?1675957669420", id:"Background"},
-		{src:"images/barraseguredes.png?1675957669420", id:"barraseguredes"},
-		{src:"images/Portada.png?1675957669420", id:"Portada"},
-		{src:"images/index_atlas_1.png?1675957669357", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1675957669420", id:"sound2"},
-		{src:"sounds/sound1.mp3?1675957669420", id:"sound1"}
+		{src:"images/Background.png?1676298394914", id:"Background"},
+		{src:"images/barraseguredes.png?1676298394914", id:"barraseguredes"},
+		{src:"images/Portada.png?1676298394914", id:"Portada"},
+		{src:"images/index_atlas_1.png?1676298394858", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1676298394914", id:"sound2"},
+		{src:"sounds/sound1.mp3?1676298394914", id:"sound1"}
 	],
 	preloads: []
 };

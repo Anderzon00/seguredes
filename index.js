@@ -759,27 +759,32 @@ if (reversed == null) { reversed = false; }
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
 
 	// Capa_1
 	this.instance = new lib.interactivo();
 	this.instance.setTransform(11.9,189.8,0.8901,0.8901,0,0,0,-0.1,-0.2);
 
-	this.instance_1 = new lib.perfilusuario();
-	this.instance_1.setTransform(-94,0);
+	this.instance_1 = new lib.interactivosobre();
+	this.instance_1.setTransform(11.9,188.9,1.2471,1.2465,0,0,0,-0.1,-0.1);
 
-	this.instance_2 = new lib.interactivosobre();
-	this.instance_2.setTransform(11.9,188.9,1.2471,1.2465,0,0,0,-0.1,-0.1);
+	this.instance_2 = new lib.interactivoclic();
+	this.instance_2.setTransform(5.9,183.2,1,1,0,0,0,-6.1,-5.8);
 
-	this.instance_3 = new lib.interactivoclic();
-	this.instance_3.setTransform(5.9,183.2,1,1,0,0,0,-6.1,-5.8);
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("rgba(0,197,255,0)").ss(1,1,1).p("AFAmPIBQAAIAAMeIsfAAIAAhQ");
+	this.shape.setTransform(19.35,196.85);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1,p:{scaleX:1,scaleY:1}},{t:this.instance}]}).to({state:[{t:this.instance_1,p:{scaleX:1.0001,scaleY:1.002}},{t:this.instance_2}]},1).to({state:[{t:this.instance_1,p:{scaleX:1.0001,scaleY:1.002}},{t:this.instance_3}]},1).wait(1));
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#000000").s().p("Ak/GPIhQAAIAAseIMeAAIAABQIAALOg");
+	this.shape_1.setTransform(11.35,188.85);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.shape_1},{t:this.shape},{t:this.instance_2}]},1).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-94,0,212,239.8);
+p.nominalBounds = new cjs.Rectangle(-37.8,140.2,99.6,99.60000000000002);
 
 
 (lib.manual = function(mode,startPosition,loop,reversed) {
@@ -910,20 +915,19 @@ if (reversed == null) { reversed = false; }
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(50));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(60));
 
 	// Capa_2
+	this.instance = new lib.perfilusuario();
+	this.instance.setTransform(-106,0);
+
 	this.button_7 = new lib.pantallamov();
 	this.button_7.name = "button_7";
 	this.button_7.setTransform(-13.5,58.2,1,1,0,0,0,0,58.2);
-	new cjs.ButtonHelper(this.button_7, 0, 1, 2);
+	new cjs.ButtonHelper(this.button_7, 0, 1, 2, false, new lib.pantallamov(), 3);
 
-	this.instance = new lib.perfilusuario();
-	this.instance.setTransform(-102.5,-27.4,1,1,14.9992);
-	this.instance._off = true;
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.button_7}]}).to({state:[{t:this.instance}]},4).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).wait(6));
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(4).to({_off:false},0).wait(5).to({rotation:0,x:-106.05,y:0},0).wait(5).to({rotation:-14.9994,x:-102.5,y:27.25},0).wait(5).to({rotation:0,x:-105.95,y:0},0).wait(5).to({rotation:14.9996,x:-102.45,y:-27.4},0).wait(5).to({rotation:0,x:-105.9,y:0},0).wait(5).to({rotation:-14.9996,x:-102.45,y:27.3},0).wait(5).to({rotation:0,x:-106.3,y:0},0).wait(5).to({scaleX:0.9999,scaleY:0.9999,rotation:14.9984,x:-102.5,y:-27.4},0).wait(6));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.button_7},{t:this.instance}]}).to({state:[{t:this.instance}]},4).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},5).to({state:[{t:this.instance}]},6).to({state:[{t:this.instance}]},5).wait(5));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(4).to({rotation:14.9992,x:-102.5,y:-27.4},0).wait(5).to({rotation:0,x:-106.05,y:0},0).wait(5).to({rotation:-14.9994,x:-102.5,y:27.25},0).wait(5).to({rotation:0,x:-105.95,y:0},0).wait(5).to({rotation:14.9996,x:-102.45,y:-27.4},0).wait(5).to({rotation:0,x:-105.9,y:0},0).wait(5).to({rotation:-14.9996,x:-102.45,y:27.3},0).wait(5).to({rotation:0,x:-106.3,y:0},0).wait(5).to({scaleX:0.9999,scaleY:0.9999,rotation:14.9984,x:-102.5,y:-27.4},0).wait(6).to({scaleX:1,scaleY:1,rotation:-14.9996,x:-102.45,y:27.3},0).wait(5).to({rotation:0,x:-106.3,y:0},0).wait(5));
 
 	this._renderFirstFrame();
 
@@ -952,12 +956,11 @@ if (reversed == null) { reversed = false; }
 	this.instance_2 = new lib.pescador();
 	this.instance_2.setTransform(193,183.5,1,1,0,0,0,152,183.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(31));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(90.6,2,553.4,733);
+}).prototype = getMCSymbolPrototype(lib.pescador2, new cjs.Rectangle(92.1,2,551.9,733), null);
 
 
 // stage content:
@@ -1094,12 +1097,12 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/fondoizq.png?1676214495371", id:"fondoizq"},
-		{src:"images/index_atlas_P_1.png?1676214495252", id:"index_atlas_P_1"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1676214495371", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1676214495371", id:"sound"},
-		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1676214495371", id:"notificationsound70621onlineaudioconvertercom"},
-		{src:"sounds/sound2.mp3?1676214495371", id:"sound2"}
+		{src:"images/fondoizq.png?1676297795558", id:"fondoizq"},
+		{src:"images/index_atlas_P_1.png?1676297795447", id:"index_atlas_P_1"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1676297795558", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/sound.mp3?1676297795558", id:"sound"},
+		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1676297795558", id:"notificationsound70621onlineaudioconvertercom"},
+		{src:"sounds/sound2.mp3?1676297795558", id:"sound2"}
 	],
 	preloads: []
 };

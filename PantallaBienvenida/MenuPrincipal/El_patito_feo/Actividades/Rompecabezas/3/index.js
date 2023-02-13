@@ -1995,7 +1995,8 @@ if (reversed == null) { reversed = false; }
 		root.onMiss = function()
 		{	
 			createjs.Tween.get(pieces.target).to({x:pieces.target.originalX, y:pieces.target.originalY}, 350, createjs.Ease.backInOut);
-		};
+		createjs.Sound.play("error");
+			};
 		
 		root.setup();
 		
@@ -2116,11 +2117,12 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/fondo.png?1673740171863", id:"fondo"},
-		{src:"images/index_atlas_1.png?1673740171731", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1673740171732", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1673740171733", id:"index_atlas_3"},
-		{src:"sounds/drop.mp3?1673740171863", id:"drop"}
+		{src:"images/fondo.png?1676311597027", id:"fondo"},
+		{src:"images/index_atlas_1.png?1676311596884", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1676311596885", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1676311596886", id:"index_atlas_3"},
+		{src:"sounds/drop.mp3?1676311597027", id:"drop"},
+		{src:"sounds/error.mp3?1676311597027", id:"error"}
 	],
 	preloads: []
 };

@@ -581,7 +581,16 @@ if (reversed == null) { reversed = false; }
 		
 		this.siguiente.addEventListener("click", fl_ClickToGoToWebPage_12);
 		function fl_ClickToGoToWebPage_12() {
-			window.open("Que_es", "_self");
+			
+			
+			createjs.Sound.play("principales", {
+				volume: 0.5
+			}).on("complete", function () {
+				window.open("Que_es", "_self");
+			}, this);
+			
+			
+			 
 		}
 		
 		this.btnQueEs.addEventListener("click", fl_ClickToGoToWebPage_13);
@@ -735,8 +744,9 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1675873695276", id:"index_atlas_1"},
-		{src:"sounds/audio.mp3?1675873695330", id:"audio"}
+		{src:"images/index_atlas_1.png?1676298973281", id:"index_atlas_1"},
+		{src:"sounds/audio.mp3?1676298973325", id:"audio"},
+		{src:"sounds/principales.mp3?1676298973325", id:"principales"}
 	],
 	preloads: []
 };

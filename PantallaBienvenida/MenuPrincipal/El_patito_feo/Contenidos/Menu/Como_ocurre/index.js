@@ -231,15 +231,34 @@ if (reversed == null) { reversed = false; }
 		 var _this = this;
 		 
 		_this.atrasA.on('click', function(){ 
-		window.open('../Que_es', '_self');
+			createjs.Sound.play("audio", {
+				volume: 0.5
+			}).on("complete", function () {
+				window.open("Que_es", "_self");
+			}, this);
+			 
+			
+			
+		 
 		});
 		  
 		_this.siguienteA.on('click', function(){ 
+			
+			createjs.Sound.play("audio", {
+				volume: 0.5
+			}).on("complete", function () {
 		window.open('../Como_evitarlo', '_self');
+			}, this);
+			
+			
 		});
 		
 		_this.btnindice.on('click', function(){
+			createjs.Sound.play("audio2", {
+				volume: 0.5
+			}).on("complete", function () {
 		window.open('../', '_self');
+			}, this);
 		});
 	}
 
@@ -304,7 +323,9 @@ lib.properties = {
 	color: "#0066CC",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1663991769808", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1676299753872", id:"index_atlas_1"},
+		{src:"sounds/audio2.mp3?1676299753903", id:"audio2"},
+		{src:"sounds/audio.mp3?1676299753903", id:"audio"}
 	],
 	preloads: []
 };
@@ -403,6 +424,21 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
+		}
+	}
+}
+an.handleFilterCache = function(event) {
+	if(!event.paused){
+		var target = event.target;
+		if(target){
+			if(target.filterCacheList){
+				for(var index = 0; index < target.filterCacheList.length ; index++){
+					var cacheInst = target.filterCacheList[index];
+					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
+						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
+					}
+				}
+			}
 		}
 	}
 }

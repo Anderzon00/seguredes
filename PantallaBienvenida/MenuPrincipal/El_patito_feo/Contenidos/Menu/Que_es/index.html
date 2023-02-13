@@ -22,7 +22,7 @@
   }
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1663989110989"></script>
+<script src="index.js?1676299848101"></script>
 <script>
 // Global Scripts
 	</script>
@@ -35,6 +35,7 @@ function init() {
 	var comp=AdobeAn.getComposition("7C1B920775F18E4C9C20E78B1DF9DE91");
 	var lib=comp.getLibrary();
 	var loader = new createjs.LoadQueue(false);
+	loader.installPlugin(createjs.Sound);
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
 	var lib=comp.getLibrary();
@@ -70,6 +71,8 @@ function handleComplete(evt,comp) {
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
+function playSound(id, loop, offset) {
+	return createjs.Sound.play(id, {'interrupt':createjs.Sound.INTERRUPT_EARLY, 'loop': loop, 'offset': offset});}
 </script>
 <script>
 	function stretchToFit() {

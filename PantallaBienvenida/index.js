@@ -608,9 +608,9 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Fondo_1.png?1676216081838", id:"Fondo_1"},
-		{src:"images/index_atlas_P_1.png?1676216081741", id:"index_atlas_P_1"},
-		{src:"sounds/sound.mp3?1676216081838", id:"sound"}
+		{src:"images/Fondo_1.png?1676225842432", id:"Fondo_1"},
+		{src:"images/index_atlas_P_1.png?1676225842344", id:"index_atlas_P_1"},
+		{src:"sounds/sound.mp3?1676225842432", id:"sound"}
 	],
 	preloads: []
 };

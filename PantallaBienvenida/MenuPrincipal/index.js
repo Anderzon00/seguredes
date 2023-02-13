@@ -504,14 +504,30 @@ if (reversed == null) { reversed = false; }
 		this.btnCuento1.addEventListener("click", fl );
 		
 		function fl() {
-				window.open("./El_patito_feo", "_self");
+			
+			createjs.Sound.play("intro", { volume: 0.5}).on("complete", function () {
+		                    
+		window.open("./El_patito_feo", "_self");
+				 
+		                    }, this);
+			
+			
+			
+				
+			
 		}
 		
 		
 		this.btnCuento2.addEventListener("click", f2);
 		
 		function f2() {
-				window.open("./Caperucita_ y_el_pishing", "_self");
+			
+			createjs.Sound.play("intro", { volume: 0.5}).on("complete", function () {
+		                    
+		window.open("./Caperucita_ y_el_pishing", "_self");
+				 
+		                    }, this);
+				
 		}
 	}
 
@@ -666,6 +682,14 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// timeline functions:
+	this.frame_2 = function() {
+		playSound("sound");
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(1));
+
 	// Capa_1
 	this.instance = new lib.sobre_siguiente();
 	this.instance.setTransform(61.3,3.65,0.5179,0.5133,0,-179.2914,0.6972,175.1,17.2);
@@ -814,6 +838,8 @@ if (reversed == null) { reversed = false; }
 		this.btnAdelante.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_10.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_10(){
+			
+			
 			this.gotoAndPlay(21);
 		}
 		
@@ -948,26 +974,27 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Alapato.png?1675876576492", id:"Alapato"},
-		{src:"images/botónirinicio.png?1675876576492", id:"botónirinicio"},
-		{src:"images/brillopantalla.png?1675876576492", id:"brillopantalla"},
-		{src:"images/btnflecha.png?1675876576492", id:"btnflecha"},
-		{src:"images/btniriniciodown.png?1675876576492", id:"btniriniciodown"},
-		{src:"images/CaraPato.png?1675876576492", id:"CaraPato"},
-		{src:"images/cuerpocaperucitaRoja.png?1675876576492", id:"cuerpocaperucitaRoja"},
-		{src:"images/Fondo.png?1675876576492", id:"Fondo"},
-		{src:"images/ja.png?1675876576492", id:"ja"},
-		{src:"images/manocaperucitaRoja.png?1675876576492", id:"manocaperucitaRoja"},
-		{src:"images/manoclic.png?1675876576492", id:"manoclic"},
-		{src:"images/manopress.png?1675876576492", id:"manopress"},
-		{src:"images/Pantalla.png?1675876576492", id:"Pantalla"},
-		{src:"images/PortadaCuento.png?1675876576492", id:"PortadaCuento"},
-		{src:"images/PortadaCuento2.png?1675876576492", id:"PortadaCuento2"},
-		{src:"images/PortadaCuento3.png?1675876576492", id:"PortadaCuento3"},
-		{src:"images/PortadaCuento4.png?1675876576492", id:"PortadaCuento4"},
-		{src:"images/titulocuento.png?1675876576492", id:"titulocuento"},
-		{src:"images/tituloseccion.png?1675876576492", id:"tituloseccion"},
-		{src:"sounds/sound.mp3?1675876576492", id:"sound"}
+		{src:"images/Alapato.png?1676297922139", id:"Alapato"},
+		{src:"images/botónirinicio.png?1676297922139", id:"botónirinicio"},
+		{src:"images/brillopantalla.png?1676297922139", id:"brillopantalla"},
+		{src:"images/btnflecha.png?1676297922139", id:"btnflecha"},
+		{src:"images/btniriniciodown.png?1676297922139", id:"btniriniciodown"},
+		{src:"images/CaraPato.png?1676297922139", id:"CaraPato"},
+		{src:"images/cuerpocaperucitaRoja.png?1676297922139", id:"cuerpocaperucitaRoja"},
+		{src:"images/Fondo.png?1676297922139", id:"Fondo"},
+		{src:"images/ja.png?1676297922139", id:"ja"},
+		{src:"images/manocaperucitaRoja.png?1676297922139", id:"manocaperucitaRoja"},
+		{src:"images/manoclic.png?1676297922139", id:"manoclic"},
+		{src:"images/manopress.png?1676297922139", id:"manopress"},
+		{src:"images/Pantalla.png?1676297922139", id:"Pantalla"},
+		{src:"images/PortadaCuento.png?1676297922139", id:"PortadaCuento"},
+		{src:"images/PortadaCuento2.png?1676297922139", id:"PortadaCuento2"},
+		{src:"images/PortadaCuento3.png?1676297922139", id:"PortadaCuento3"},
+		{src:"images/PortadaCuento4.png?1676297922139", id:"PortadaCuento4"},
+		{src:"images/titulocuento.png?1676297922139", id:"titulocuento"},
+		{src:"images/tituloseccion.png?1676297922139", id:"tituloseccion"},
+		{src:"sounds/intro.mp3?1676297922139", id:"intro"},
+		{src:"sounds/sound.mp3?1676297922139", id:"sound"}
 	],
 	preloads: []
 };

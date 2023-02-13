@@ -680,12 +680,12 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Background.png?1675959748465", id:"Background"},
-		{src:"images/barraseguredes.png?1675959748465", id:"barraseguredes"},
-		{src:"images/Portada.png?1675959748465", id:"Portada"},
-		{src:"images/index_atlas_1.png?1675959748407", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1675959748465", id:"sound2"},
-		{src:"sounds/sound1.mp3?1675959748465", id:"sound1"}
+		{src:"images/Background.png?1676166414898", id:"Background"},
+		{src:"images/barraseguredes.png?1676166414898", id:"barraseguredes"},
+		{src:"images/Portada.png?1676166414898", id:"Portada"},
+		{src:"images/index_atlas_1.png?1676166414829", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1676166414898", id:"sound2"},
+		{src:"sounds/sound1.mp3?1676166414898", id:"sound1"}
 	],
 	preloads: []
 };
