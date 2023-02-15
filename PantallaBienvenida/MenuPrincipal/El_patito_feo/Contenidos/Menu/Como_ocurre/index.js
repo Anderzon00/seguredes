@@ -234,7 +234,7 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.play("audio", {
 				volume: 0.5
 			}).on("complete", function () {
-				window.open("Que_es", "_self");
+				window.open("../Que_es", "_self");
 			}, this);
 			 
 			
@@ -323,9 +323,9 @@ lib.properties = {
 	color: "#0066CC",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1676299753872", id:"index_atlas_1"},
-		{src:"sounds/audio2.mp3?1676299753903", id:"audio2"},
-		{src:"sounds/audio.mp3?1676299753903", id:"audio"}
+		{src:"images/index_atlas_1.png?1676484655597", id:"index_atlas_1"},
+		{src:"sounds/audio2.mp3?1676484655639", id:"audio2"},
+		{src:"sounds/audio.mp3?1676484655639", id:"audio"}
 	],
 	preloads: []
 };

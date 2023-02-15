@@ -404,7 +404,9 @@ if (reversed == null) { reversed = false; }
 		
 		
 		
-		element.innerHTML = '<iframe  id="video"  style="border:none "   src="./Escena_1" width="' + width + '" height="' + height + '">';
+		element.innerHTML = '<iframe  id="video"  style="border:none "  allow="autoplay"  src="./Escena_1" width="' + width + '" height="' + height + '">';
+
+		
 		var x = document.getElementById("video");
 		x.muted = true;
 		
