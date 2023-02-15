@@ -753,6 +753,8 @@ if (reversed == null) { reversed = false; }
 		this.btnAtrasC.addEventListener("click", fl_ClickToGoToAndStopAtFrame_4.bind(this));
 		function fl_ClickToGoToAndStopAtFrame_4(){
 			
+			height = 0;
+		width = 0;
 			element.innerHTML = '<iframe  id="video"  style="border:none "   src="" width="' + width + '" height="' + height + '">';
 		
 			this.gotoAndStop(0);
@@ -853,8 +855,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1676476949229", id:"index_atlas_1"},
-		{src:"sounds/QuestionSoundEffect.mp3?1676476949330", id:"QuestionSoundEffect"}
+		{src:"images/index_atlas_1.png?1676481536200", id:"index_atlas_1"},
+		{src:"sounds/QuestionSoundEffect.mp3?1676481536292", id:"QuestionSoundEffect"}
 	],
 	preloads: []
 };
