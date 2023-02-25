@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[1513,994,466,90],[367,1697,315,90],[0,1520,457,90],[1513,1086,466,90],[684,1697,315,90],[459,1605,457,90],[1513,1178,466,90],[1001,1697,315,90],[918,1605,457,90],[1211,1405,708,106],[1211,1296,707,107],[1211,994,300,300],[0,1612,365,91],[1377,1605,366,91],[709,1513,553,90],[1264,1513,553,90],[0,0,1824,992],[1826,0,140,139],[709,994,500,500],[0,994,707,524]]}
+		{name:"index_atlas_1", frames: [[1513,994,466,90],[1194,1697,315,90],[1108,1605,457,90],[1513,1086,466,90],[1511,1697,315,90],[1567,1605,457,90],[1513,1178,466,90],[0,1704,315,90],[0,1612,457,90],[1211,1405,708,106],[1211,1296,707,107],[1211,994,300,300],[0,1520,552,90],[827,1697,365,91],[554,1605,552,90],[459,1697,366,91],[709,1513,553,90],[1264,1513,553,90],[0,0,1824,992],[1826,0,140,139],[709,994,500,500],[0,994,707,524]]}
 ];
 
 
@@ -123,37 +123,51 @@ p.nominalBounds = new cjs.Rectangle(0,0,2373,154);
 
 
 
-(lib.btnIrInicio = function() {
+(lib.BtnInicioCuentoHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnIrInicioHover = function() {
+(lib.btnIrInicio = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnMenuCuentos = function() {
+(lib.btnIrInicioCuento = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnMenuCuentosHover = function() {
+(lib.btnIrInicioHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.fondopapel1 = function() {
+(lib.btnMenuCuentos = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(16);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.btnMenuCuentosHover = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(17);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.fondopapel1 = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -172,21 +186,21 @@ p.nominalBounds = new cjs.Rectangle(0,0,2376,1136);
 
 (lib.icono = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(17);
+	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.mano2 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(18);
+	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Mensaje = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(19);
+	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -270,19 +284,11 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("sound2");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(1));
-
 	// Capa_1
-	this.instance = new lib.btnMenuCuentos();
+	this.instance = new lib.btnIrInicioCuento();
 	this.instance.setTransform(322,-21,0.5,0.5);
 
-	this.instance_1 = new lib.btnMenuCuentosHover();
+	this.instance_1 = new lib.BtnInicioCuentoHover();
 	this.instance_1.setTransform(322,-21,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance}]},1).wait(1));
@@ -290,7 +296,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(322,-21,276.5,45);
+p.nominalBounds = new cjs.Rectangle(322,-21,276,45);
 
 
 (lib.btnVolver = function(mode,startPosition,loop,reversed) {
@@ -855,7 +861,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btnVolverAcuento = new lib.btnVolverAcuento();
 	this.btnVolverAcuento.name = "btnVolverAcuento";
-	this.btnVolverAcuento.setTransform(148.8,741.45,1,1,0,0,0,460.2,1.5);
+	this.btnVolverAcuento.setTransform(149.8,741.45,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolverAcuento, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_7}]}).to({state:[{t:this.btnVolverAcuento}]},13).wait(4));
@@ -886,15 +892,15 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1677299338312", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1677299338312", id:"barraseguredes"},
-		{src:"images/fondo11.png?1677299338312", id:"fondo11"},
-		{src:"images/fondoMorado.png?1677299338312", id:"fondoMorado"},
-		{src:"images/Portada.png?1677299338312", id:"Portada"},
-		{src:"images/index_atlas_1.png?1677299338231", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1677299338312", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1677299338312", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1677299338312", id:"sound1"}
+		{src:"images/bannernegro1.png?1677300769692", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1677300769692", id:"barraseguredes"},
+		{src:"images/fondo11.png?1677300769692", id:"fondo11"},
+		{src:"images/fondoMorado.png?1677300769692", id:"fondoMorado"},
+		{src:"images/Portada.png?1677300769692", id:"Portada"},
+		{src:"images/index_atlas_1.png?1677300769608", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1677300769692", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1677300769692", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1677300769692", id:"sound1"}
 	],
 	preloads: []
 };

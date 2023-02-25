@@ -1537,13 +1537,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677293599888", id:"index_atlas_1"},
-		{src:"sounds/entrar.mp3?1677293600009", id:"entrar"},
-		{src:"sounds/error.mp3?1677293600009", id:"error"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1677293600009", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1677293600009", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1677293600009", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1677293600009", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1677300753951", id:"index_atlas_1"},
+		{src:"sounds/entrar.mp3?1677300754056", id:"entrar"},
+		{src:"sounds/error.mp3?1677300754056", id:"error"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1677300754056", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1677300754056", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1677300754056", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1677300754056", id:"an.TextInput"}
 	],
 	preloads: []
 };
