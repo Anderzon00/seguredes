@@ -438,9 +438,9 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1676169195018", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1676169195054", id:"sound2"},
-		{src:"sounds/sound1.mp3?1676169195054", id:"sound1"}
+		{src:"images/index_atlas_1.png?1676776752912", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1676776752950", id:"sound2"},
+		{src:"sounds/sound1.mp3?1676776752950", id:"sound1"}
 	],
 	preloads: []
 };

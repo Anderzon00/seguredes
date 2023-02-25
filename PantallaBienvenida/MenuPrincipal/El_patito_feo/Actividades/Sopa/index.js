@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[658,1166,447,102],[1107,1166,447,102],[1556,1166,447,102],[2005,1166,238,101],[2005,1269,238,101],[3733,483,237,102],[3590,949,61,63],[3882,587,61,62],[3590,1014,61,63],[0,0,2376,1164],[3904,202,100,100],[3733,202,169,169],[3733,0,200,200],[3970,373,87,61],[3733,587,147,70],[3458,0,273,657],[0,1166,656,835],[3458,949,130,85],[3733,373,235,108],[3458,659,141,288],[3945,587,72,52],[3904,304,140,67],[3678,659,267,548],[2378,0,1078,1078],[2378,1080,1298,674]]}
+		{name:"index_atlas_1", frames: [[3458,971,447,102],[658,1166,447,102],[1107,1166,447,102],[1556,1257,238,101],[658,1270,238,101],[2091,1166,237,102],[3733,550,296,89],[1556,1166,296,89],[4002,0,87,87],[4002,89,87,87],[4002,178,87,87],[4002,267,87,87],[4002,419,61,63],[4031,549,61,62],[4002,484,61,63],[0,0,2376,1164],[3458,659,590,140],[3458,801,432,168],[3880,1091,169,169],[4091,0,2,78],[3678,1075,200,200],[4002,356,87,61],[898,1270,147,70],[3458,0,273,657],[0,1166,656,835],[3880,1262,130,85],[1854,1166,235,108],[3907,801,141,288],[4012,1262,72,52],[1047,1270,140,67],[3733,0,267,548],[2378,0,1078,1078],[2378,1080,1298,674]]}
 ];
 
 
@@ -69,135 +69,191 @@ lib.ssMetadata = [
 
 
 
-(lib.Emoji1 = function() {
+(lib.btnMenuActividadesHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Emoji2 = function() {
+(lib.btnMenuActividades = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Emoji3 = function() {
+(lib.BtnMutepngcopia = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.fondo = function() {
+(lib.BtnMuteHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Iconodecontenidos = function() {
+(lib.BtnVolumenActivado = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.imgsopaLetras = function() {
+(lib.btnVolumenActivoHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Lupafondo = function() {
+(lib.Emoji1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PatoPicoAbajo = function() {
+(lib.Emoji2 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PatoPicoArriba = function() {
+(lib.Emoji3 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PatoSilueta = function() {
+(lib.fondo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.pato = function() {
+(lib.FondoSopaLineaDer = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PicoAbajo = function() {
+(lib.FOndoSopaLineaPunteadaIzq = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.picoarriba = function() {
+(lib.imgsopaLetras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Profesoraala = function() {
+(lib.LineasSeparadoras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ProfesoraPicoAbajo = function() {
+(lib.Lupafondo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ProfesoraPicoArriba = function() {
+(lib.PatoPicoAbajo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ProfesoraSilueta_1 = function() {
+(lib.PatoPicoArriba = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.SopaFOndo = function() {
+(lib.PatoSilueta = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.VentanaRetroalimentación = function() {
+(lib.pato = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(24);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.PicoAbajo = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(25);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.picoarriba = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(26);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Profesoraala = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(27);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.ProfesoraPicoAbajo = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(28);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.ProfesoraPicoArriba = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(29);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.ProfesoraSilueta_1 = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(30);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.SopaFOndo = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(31);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.VentanaRetroalimentación = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(32);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -621,6 +677,74 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-85.2,-16.7,170.5,33.5);
 
 
+(lib.btnSound = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.BtnVolumenActivado();
+	this.instance.setTransform(0,0,0.5,0.5);
+
+	this.instance_1 = new lib.btnVolumenActivoHover();
+	this.instance_1.setTransform(0,0,0.5,0.5);
+
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("rgba(0,197,255,0)").ss(1,1,1).p("AjZjZIGzAAIAAGzImzAAg");
+	this.shape.setTransform(21.75,21.75);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#33CC00").s().p("AjZDZIAAmyIGyAAIAAGyg");
+	this.shape_1.setTransform(21.75,21.75);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.shape_1},{t:this.shape}]},2).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-1,-1,45.5,45.5);
+
+
+(lib.btnMute = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.BtnMutepngcopia();
+	this.instance.setTransform(0,0,0.5,0.5);
+
+	this.instance_1 = new lib.BtnMuteHover();
+	this.instance_1.setTransform(0,0,0.5,0.5);
+
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("rgba(0,197,255,0)").ss(1,1,1).p("AjZjZIGzAAIAAGzImzAAg");
+	this.shape.setTransform(21.75,21.75);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#33CC00").s().p("AjZDZIAAmyIGyAAIAAGyg");
+	this.shape_1.setTransform(21.75,21.75);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.shape_1},{t:this.shape}]},2).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-1,-1,45.5,45.5);
+
+
 (lib.btnIndece = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -633,23 +757,26 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Capa_1
-	this.instance = new lib.Iconodecontenidos();
+	this.instance = new lib.btnMenuActividades();
 	this.instance.setTransform(-25,-25,0.5,0.5);
 
+	this.instance_1 = new lib.btnMenuActividadesHover();
+	this.instance_1.setTransform(-28,-26,0.5198,0.5201);
+
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("rgba(0,197,255,0)").ss(1,1,1).p("AkzkzIJnAAIAAJnIgyAA");
+	this.shape.graphics.f().s("rgba(0,197,255,0)").ss(1,1,1).p("AkzkzIJnAAIAABaAE0ECIAAAyIgyAA");
 	this.shape.setTransform(5.8,-1.2);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#33CC99").s().p("AkzDuIAAnbIJnAAIAAHbg");
-	this.shape_1.setTransform(0.8,0.8);
+	this.shape_1.graphics.f("#33CC99").s().p("AhHDuIqZAAIAAnbIKZAAIMpAAIAAHbg");
+	this.shape_1.setTransform(43.75,0.8);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance,p:{scaleX:0.5,scaleY:0.5}}]}).to({state:[{t:this.instance,p:{scaleX:0.5198,scaleY:0.5201}}]},1).to({state:[{t:this.instance,p:{scaleX:0.5,scaleY:0.5}}]},1).to({state:[{t:this.shape_1},{t:this.shape}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance}]},1).to({state:[{t:this.shape_1},{t:this.shape}]},1).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-29.9,-32.9,67.5,63.5);
+p.nominalBounds = new cjs.Rectangle(-30,-32.9,155.9,63.5);
 
 
 (lib.btnSalir = function(mode,startPosition,loop,reversed) {
@@ -744,7 +871,7 @@ if (reversed == null) { reversed = false; }
 	this.ikNode_1.name = "ikNode_1";
 	this.ikNode_1.setTransform(43.8,-153.5,1,1,0,0,0,43.8,102.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:1,scaleY:1,rotation:-14.9985,x:96.45,y:-122.65,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:0,y:0.05,regX:29.7,x:123.65,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:0,x:115.05,regX:35.1,y:-160.85}}]}).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-13.3233,x:96.5,y:-122.6,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:0.4406,y:0.1,regX:29.7,x:123.65,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-0.6374,x:115,regX:35.1,y:-160.85}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-11.6484,x:96.5,y:-122.45,regY:15.4,regX:11.5}},{t:this.ikNode_6,p:{rotation:0.8839,y:0.1,regX:29.8,x:123.75,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-1.2766,x:114.95,regX:35.1,y:-160.85}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-9.974,x:96.5,y:-122.6,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:1.3273,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-1.9159,x:115.1,regX:35.2,y:-160.85}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-8.2993,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:1.7707,y:0.1,regX:29.7,x:123.65,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-2.5555,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-6.6247,x:96.45,y:-122.6,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:2.2134,y:0.1,regX:29.8,x:123.75,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-3.1945,x:114.95,regX:35.1,y:-160.85}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-4.9497,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:2.657,y:0.15,regX:29.7,x:123.55,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-3.834,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-3.2762,x:96.6,y:-122.6,regY:15.3,regX:11.6}},{t:this.ikNode_6,p:{rotation:3.1,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-4.4731,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-1.6011,x:96.6,y:-122.4,regY:15.4,regX:11.6}},{t:this.ikNode_6,p:{rotation:3.5431,y:0.15,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-5.1127,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:0.0691,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:3.9865,y:0.1,regX:29.8,x:123.75,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-5.7521,x:114.85,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:1.7437,x:96.45,y:-122.5,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:4.4301,y:0.15,regX:29.7,x:123.55,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-6.3913,x:115,regX:35.2,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:3.4172,x:96.6,y:-122.55,regY:15.3,regX:11.6}},{t:this.ikNode_6,p:{rotation:4.8731,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-7.0313,x:114.85,regX:35.1,y:-160.75}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:1,scaleY:1,rotation:5.0926,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:5.3164,y:0.15,regX:29.7,x:123.55,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-7.6704,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:6.7665,x:96.45,y:-122.5,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:5.7591,y:0.2,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-8.3096,x:115,regX:35.2,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:8.4408,x:96.5,y:-122.4,regY:15.4,regX:11.5}},{t:this.ikNode_6,p:{rotation:6.203,y:0.15,regX:29.8,x:123.7,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-8.949,x:114.85,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:6.8846,x:96.4,y:-122.4,regY:15.4,regX:11.5}},{t:this.ikNode_6,p:{rotation:5.789,y:0.2,regX:29.7,x:123.55,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-8.352,x:115,regX:35.2,y:-160.75}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:5.3297,x:96.45,y:-122.5,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:5.3752,y:0.2,regX:29.7,x:123.55,scaleX:0.9999,scaleY:0.9999}},{t:this.ikNode_2,p:{rotation:-7.7551,x:114.85,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:3.7738,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:4.9617,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-7.1591,x:114.85,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:2.2161,x:96.45,y:-122.5,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:4.5485,y:0.15,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-6.562,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:0.661,x:96.5,y:-122.5,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:4.1346,y:0.15,regX:29.7,x:123.55,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-5.9657,x:114.85,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-0.891,x:96.5,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:3.721,y:0.2,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-5.3682,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-2.4472,x:96.5,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:3.3066,y:0.15,regX:29.7,x:123.65,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-4.7713,x:115.05,regX:35.2,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-4.0025,x:96.4,y:-122.6,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:2.8934,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-4.175,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-5.559,x:96.45,y:-122.4,regY:15.4,regX:11.5}},{t:this.ikNode_6,p:{rotation:2.4794,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-3.5782,x:114.95,regX:35.1,y:-160.85}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-7.1162,x:96.5,y:-122.4,regY:15.4,regX:11.5}},{t:this.ikNode_6,p:{rotation:2.0663,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-2.9818,x:114.95,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-8.6716,x:96.45,y:-122.65,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:1.6526,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-2.3849,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-10.2272,x:96.4,y:-122.6,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:1.239,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-1.7882,x:114.95,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-11.7834,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:0.8253,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-1.1908,x:115,regX:35.1,y:-160.85}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-13.3394,x:96.5,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:0.4118,y:0.05,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-0.5945,x:114.95,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-14.8964,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:0,y:0.05,regX:29.7,x:123.7,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:0,x:115.05,regX:35.1,y:-160.85}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:1,scaleY:1,rotation:-14.9985,x:96.45,y:-122.65,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:0,y:0.05,regX:29.7,x:123.65,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:0,x:115.05,regX:35.1,y:-160.85}}]}).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-13.3233,x:96.5,y:-122.6,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:0.4406,y:0.1,regX:29.7,x:123.65,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-0.6374,x:115,regX:35.1,y:-160.85}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-11.6484,x:96.5,y:-122.45,regY:15.4,regX:11.5}},{t:this.ikNode_6,p:{rotation:0.8839,y:0.1,regX:29.8,x:123.75,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-1.2766,x:114.95,regX:35.1,y:-160.85}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-9.974,x:96.5,y:-122.6,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:1.3273,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-1.9159,x:115.1,regX:35.2,y:-160.85}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-8.2994,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:1.7707,y:0.1,regX:29.7,x:123.65,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-2.5555,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-6.6247,x:96.45,y:-122.6,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:2.2134,y:0.1,regX:29.8,x:123.75,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-3.1945,x:114.95,regX:35.1,y:-160.85}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-4.9497,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:2.657,y:0.15,regX:29.7,x:123.55,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-3.834,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-3.2762,x:96.6,y:-122.6,regY:15.3,regX:11.6}},{t:this.ikNode_6,p:{rotation:3.1,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-4.4731,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-1.6011,x:96.6,y:-122.4,regY:15.4,regX:11.6}},{t:this.ikNode_6,p:{rotation:3.5431,y:0.15,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-5.1127,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:0.0691,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:3.9865,y:0.1,regX:29.8,x:123.75,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-5.753,x:114.85,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:1.7437,x:96.45,y:-122.5,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:4.4301,y:0.15,regX:29.7,x:123.55,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-6.3913,x:115,regX:35.2,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:3.4172,x:96.6,y:-122.55,regY:15.3,regX:11.6}},{t:this.ikNode_6,p:{rotation:4.8731,y:0.15,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-7.0312,x:114.85,regX:35.1,y:-160.75}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:5.0927,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:5.3164,y:0.15,regX:29.7,x:123.55,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-7.6704,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:6.7665,x:96.45,y:-122.5,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:5.76,y:0.2,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-8.3096,x:115,regX:35.2,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:8.4408,x:96.5,y:-122.4,regY:15.4,regX:11.5}},{t:this.ikNode_6,p:{rotation:6.203,y:0.15,regX:29.8,x:123.7,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-8.9489,x:114.85,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:6.8846,x:96.4,y:-122.4,regY:15.4,regX:11.5}},{t:this.ikNode_6,p:{rotation:5.789,y:0.2,regX:29.7,x:123.55,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-8.352,x:115,regX:35.2,y:-160.75}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:5.3297,x:96.45,y:-122.5,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:5.3752,y:0.2,regX:29.7,x:123.55,scaleX:0.9999,scaleY:0.9999}},{t:this.ikNode_2,p:{rotation:-7.7551,x:114.85,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:3.7738,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:4.9616,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-7.1591,x:114.85,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:2.2161,x:96.45,y:-122.5,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:4.5485,y:0.15,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-6.5619,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:0.661,x:96.5,y:-122.5,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:4.1346,y:0.15,regX:29.7,x:123.55,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-5.9657,x:114.85,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-0.891,x:96.5,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:3.721,y:0.2,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-5.3682,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-2.4472,x:96.5,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:3.3066,y:0.15,regX:29.7,x:123.65,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-4.7713,x:115.05,regX:35.2,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-4.0025,x:96.4,y:-122.6,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:2.8934,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-4.175,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-5.559,x:96.45,y:-122.4,regY:15.4,regX:11.5}},{t:this.ikNode_6,p:{rotation:2.4794,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-3.5782,x:114.95,regX:35.1,y:-160.85}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-7.1162,x:96.5,y:-122.4,regY:15.4,regX:11.5}},{t:this.ikNode_6,p:{rotation:2.0663,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-2.9818,x:114.95,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-8.6716,x:96.45,y:-122.65,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:1.6526,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-2.3849,x:114.9,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-10.2272,x:96.4,y:-122.6,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:1.239,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-1.7882,x:114.95,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-11.7834,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:0.8253,y:0.1,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-1.1908,x:115,regX:35.1,y:-160.85}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-13.3394,x:96.5,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:0.4118,y:0.05,regX:29.7,x:123.6,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:-0.5945,x:114.95,regX:35.1,y:-160.8}}]},1).to({state:[{t:this.ikNode_1},{t:this.ikNode_4,p:{scaleX:0.9999,scaleY:0.9999,rotation:-14.8964,x:96.45,y:-122.55,regY:15.3,regX:11.5}},{t:this.ikNode_6,p:{rotation:0,y:0.05,regX:29.7,x:123.7,scaleX:1,scaleY:1}},{t:this.ikNode_2,p:{rotation:0,x:115.05,regX:35.1,y:-160.85}}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -782,7 +909,7 @@ if (reversed == null) { reversed = false; }
 	this.ikNode_9.name = "ikNode_9";
 	this.ikNode_9.setTransform(75,-234,1,1,0,0,0,175,92);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ikNode_9,p:{x:75,y:-234}},{t:this.ikNode_11,p:{rotation:0,x:96.3,y:-190.4}},{t:this.ikNode_8,p:{regX:147,scaleX:1,scaleY:1,rotation:3.94,x:125.1,y:-210.95,regY:35}}]}).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:1.0687,x:96.25,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:3.6563,x:124.95,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:2.1403,x:96.3,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:3.3751,x:125,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:3.2118,x:96.3,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:3.0939,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:4.2827,x:96.35,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.8121,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:5.3534,x:96.3,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.5311,x:125,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:6.425,x:96.35,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.2494,x:125.05,y:-211.05,regY:34.9}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:7.4972,x:96.4,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:1.9676,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:8.5684,x:96.4,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:1.6868,x:125.1,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:9.6391,x:96.45,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:1.4052,x:125.1,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:10.7107,x:96.4,y:-190.35}},{t:this.ikNode_8,p:{regX:146.8,scaleX:1,scaleY:1,rotation:1.1245,x:124.95,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:11.7824,x:96.5,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:0.842,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:12.8538,x:96.4,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:0.5605,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:13.9253,x:96.45,y:-190.4}},{t:this.ikNode_8,p:{regX:147,scaleX:0.9999,scaleY:0.9999,rotation:0.2789,x:125.2,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75,y:-234}},{t:this.ikNode_11,p:{rotation:14.9964,x:96.4,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:0,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:13.4969,x:96.45,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:0.3987,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:11.9968,x:96.45,y:-190.4}},{t:this.ikNode_8,p:{regX:146.8,scaleX:0.9999,scaleY:0.9999,rotation:0.8,x:124.9,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:10.4963,x:96.4,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:1.2023,x:125,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:8.9967,x:96.35,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:1.602,x:125,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:7.4972,x:96.4,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.0035,x:125.05,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:5.9966,x:96.35,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:2.4042,x:125,y:-211,regY:34.9}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:4.4976,x:96.35,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.8051,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234.05}},{t:this.ikNode_11,p:{rotation:2.9972,x:96.3,y:-190.45}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:3.2069,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234.05}},{t:this.ikNode_11,p:{rotation:1.4972,x:96.25,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:3.6081,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234.05}},{t:this.ikNode_11,p:{rotation:0,x:96.25,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:4.0077,x:125.1,y:-211.05,regY:34.9}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ikNode_9,p:{x:75,y:-234}},{t:this.ikNode_11,p:{rotation:0,x:96.3,y:-190.4}},{t:this.ikNode_8,p:{regX:147,scaleX:1,scaleY:1,rotation:3.94,x:125.1,y:-210.95,regY:35}}]}).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:1.0687,x:96.25,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:3.6563,x:124.95,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:2.1403,x:96.3,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:3.3751,x:125,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:3.2118,x:96.3,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:3.0939,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:4.2827,x:96.35,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.8121,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:5.3534,x:96.3,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.5311,x:125,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:6.425,x:96.35,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.2494,x:125.05,y:-211.05,regY:34.9}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:7.4972,x:96.4,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:1.9676,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:8.5684,x:96.4,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:1.6868,x:125.1,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:9.6391,x:96.45,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:1.4052,x:125.1,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:10.7107,x:96.4,y:-190.35}},{t:this.ikNode_8,p:{regX:146.8,scaleX:1,scaleY:1,rotation:1.1245,x:124.95,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:11.7824,x:96.5,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:0.842,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:12.8538,x:96.4,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:0.5605,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:13.9253,x:96.45,y:-190.4}},{t:this.ikNode_8,p:{regX:147,scaleX:0.9999,scaleY:0.9999,rotation:0.2789,x:125.2,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75,y:-234}},{t:this.ikNode_11,p:{rotation:14.9964,x:96.4,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:0,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:13.4969,x:96.45,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:0.3987,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:11.9968,x:96.45,y:-190.4}},{t:this.ikNode_8,p:{regX:146.8,scaleX:0.9999,scaleY:0.9999,rotation:0.8,x:124.9,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:10.4963,x:96.4,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:1.2023,x:125,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:8.9967,x:96.35,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:1.602,x:125,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:7.4972,x:96.4,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.0035,x:125.05,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:5.9966,x:96.35,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:2.4042,x:125,y:-211,regY:34.9}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:4.4976,x:96.35,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.8051,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234.05}},{t:this.ikNode_11,p:{rotation:2.9973,x:96.3,y:-190.45}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:3.2069,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234.05}},{t:this.ikNode_11,p:{rotation:1.4972,x:96.25,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:3.6081,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234.05}},{t:this.ikNode_11,p:{rotation:0,x:96.25,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:4.0077,x:125.1,y:-211.05,regY:34.9}}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -942,7 +1069,16 @@ if (reversed == null) { reversed = false; }
 		function initStage() {
 		stretchToFit();
 		}
+		
+		createjs.Sound.play("sound", { volume: 0.8});
+		
 		this.stop();
+		
+		
+		
+		
+		
+		
 		
 		var _this =this;
 		
@@ -1017,6 +1153,33 @@ if (reversed == null) { reversed = false; }
 		*/
 		window.open('../Menu', '_self');
 		});
+		var _this = this; 
+		
+		_this.on("click", function (e) {
+		
+		
+		
+		
+				
+				if (e.target.name === "unmute")
+		
+				{
+					createjs.Sound.muted = false;
+					_this.mute.visible = true;
+					_this.unmute.visible = false;
+				} else if (e.target.name === "mute") {
+					createjs.Sound.muted = true;
+					_this.mute.visible = false;
+					_this.unmute.visible = true;
+				}
+				
+				
+				 
+				
+		
+		
+		
+			});
 	}
 	this.frame_1 = function() {
 		var _this = this;
@@ -1043,16 +1206,32 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1));
 
 	// navegacion
+	this.instance = new lib.LineasSeparadoras();
+	this.instance.setTransform(167,592,0.5,0.5);
+
+	this.instance_1 = new lib.LineasSeparadoras();
+	this.instance_1.setTransform(231,590,0.5,0.5);
+
+	this.mute = new lib.btnSound();
+	this.mute.name = "mute";
+	this.mute.setTransform(176.9,590.4);
+	new cjs.ButtonHelper(this.mute, 0, 1, 2, false, new lib.btnSound(), 3);
+
+	this.unmute = new lib.btnMute();
+	this.unmute.name = "unmute";
+	this.unmute.setTransform(177.5,590.85);
+	new cjs.ButtonHelper(this.unmute, 0, 1, 2, false, new lib.btnMute(), 3);
+
 	this.btnindice = new lib.btnIndece();
 	this.btnindice.name = "btnindice";
-	this.btnindice.setTransform(42.85,607.85);
+	this.btnindice.setTransform(35.85,614.85);
 	new cjs.ButtonHelper(this.btnindice, 0, 1, 2, false, new lib.btnIndece(), 3);
 
-	this.timeline.addTween(cjs.Tween.get(this.btnindice).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnindice},{t:this.unmute},{t:this.mute},{t:this.instance_1},{t:this.instance}]}).wait(2));
 
 	// cuadro
-	this.instance = new lib.SopaFOndo();
-	this.instance.setTransform(241,0,0.6566,0.5374);
+	this.instance_2 = new lib.SopaFOndo();
+	this.instance_2.setTransform(241,0,0.6566,0.5374);
 
 	this.btnReintentar = new lib.btnReintentar();
 	this.btnReintentar.name = "btnReintentar";
@@ -1064,59 +1243,66 @@ if (reversed == null) { reversed = false; }
 	this.btnSalir.setTransform(610.6,347.3);
 	new cjs.ButtonHelper(this.btnSalir, 0, 1, 2);
 
-	this.instance_1 = new lib.pato_2();
-	this.instance_1.setTransform(1008.6,354.5,0.5,0.5,0,0,0,-80,-70.4);
+	this.instance_3 = new lib.pato_2();
+	this.instance_3.setTransform(1008.6,354.5,0.5,0.5,0,0,0,-80,-70.4);
 
-	this.instance_2 = new lib.emojis();
-	this.instance_2.setTransform(578.15,136.9,1,1,0,0,0,-115.2,-48.2);
+	this.instance_4 = new lib.emojis();
+	this.instance_4.setTransform(578.15,136.9,1,1,0,0,0,-115.2,-48.2);
 
-	this.instance_3 = new lib.VentanaRetroalimentación();
-	this.instance_3.setTransform(270,91,0.5,0.5);
+	this.instance_5 = new lib.VentanaRetroalimentación();
+	this.instance_5.setTransform(270,91,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.btnSalir},{t:this.btnReintentar}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2}]}).to({state:[{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.btnSalir},{t:this.btnReintentar}]},1).wait(1));
 
 	// patos
-	this.instance_4 = new lib.pato_1();
-	this.instance_4.setTransform(957.45,299.55,0.5485,0.5002,0,3.8186,3.1735,36.9,2.8);
+	this.instance_6 = new lib.pato_1();
+	this.instance_6.setTransform(957.45,299.55,0.5485,0.5002,0,3.8186,3.1735,36.9,2.8);
 
-	this.instance_5 = new lib.profesora();
-	this.instance_5.setTransform(192.8,310,0.5487,0.5,0,0,0,133.6,18);
+	this.instance_7 = new lib.profesora();
+	this.instance_7.setTransform(192.8,310,0.5487,0.5,0,0,0,133.6,18);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5},{t:this.instance_4}]}).to({state:[]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_7},{t:this.instance_6}]}).to({state:[]},1).wait(1));
 
 	// lupas
-	this.instance_6 = new lib.lupas();
-	this.instance_6.setTransform(1035.1,136.5,0.4,0.4,0,0,180,56,-6);
-
-	this.instance_7 = new lib.Lupafondo();
-	this.instance_7.setTransform(1010,73,0.5,0.5);
-
 	this.instance_8 = new lib.lupas();
-	this.instance_8.setTransform(128.95,136.5,0.4,0.4,0,0,0,56.1,-6);
+	this.instance_8.setTransform(1035.1,136.5,0.4,0.4,0,0,180,56,-6);
 
 	this.instance_9 = new lib.Lupafondo();
-	this.instance_9.setTransform(63,73,0.5,0.5);
+	this.instance_9.setTransform(1010,73,0.5,0.5);
 
-	this.instance_10 = new lib.Lupafondo();
-	this.instance_10.setTransform(152,-132,0.5,0.5);
+	this.instance_10 = new lib.lupas();
+	this.instance_10.setTransform(128.95,136.5,0.4,0.4,0,0,0,56.1,-6);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6}]}).to({state:[]},1).wait(1));
+	this.instance_11 = new lib.Lupafondo();
+	this.instance_11.setTransform(63,73,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8}]}).to({state:[]},1).wait(1));
 
 	// FONDO
-	this.instance_11 = new lib.fondo();
-	this.instance_11.setTransform(-7,-2,0.5032,0.5042);
+	this.instance_12 = new lib.FondoSopaLineaDer();
+	this.instance_12.setTransform(894,501,0.5,0.5);
 
-	this.instance_12 = new lib.fondo2();
-	this.instance_12.setTransform(590.8,226.4,1,1,0,0,0,597.8,358.4);
-	this.instance_12.filters = [new cjs.BlurFilter(19, 19, 1)];
-	this.instance_12.cache(-2,-2,1200,721);
+	this.instance_13 = new lib.FOndoSopaLineaPunteadaIzq();
+	this.instance_13.setTransform(3,487,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_11}]}).to({state:[{t:this.instance_12}]},1).wait(1));
+	this.instance_14 = new lib.fondo2();
+	this.instance_14.setTransform(590.8,226.4,1,1,0,0,0,597.8,358.4);
+	this.instance_14.filters = [new cjs.BlurFilter(19, 19, 1)];
+	this.instance_14.cache(-2,-2,1200,721);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_13},{t:this.instance_12}]}).to({state:[{t:this.instance_14}]},1).wait(1));
+
+	// Capa_2
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("rgba(0,197,255,0)").ss(1,1,1).p("Ehalg1DMC1LAAAMAAABqHMi1LAAAg");
+	this.shape.setTransform(587.825,344.625);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(2));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(577.5,182.5,624.5,452.4);
+p.nominalBounds = new cjs.Rectangle(577.5,182.5,624.5,502.79999999999995);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -1126,7 +1312,8 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1673633046117", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1677299323034", id:"index_atlas_1"},
+		{src:"sounds/sound.mp3?1677299323197", id:"sound"}
 	],
 	preloads: []
 };

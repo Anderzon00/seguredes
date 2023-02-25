@@ -420,11 +420,8 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		
 		_this.btnVamos.on('click', function(){
-		
-			 createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
-				 window.open("MenuPrincipal", "_self");
-				 
+			 createjs.Sound.play("sound", { volume: 0.8}).on("complete", function () {                    
+				 window.open("MenuPrincipal", "_self");		 
 		                    }, this);
 		});
 	}
@@ -493,36 +490,17 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_102 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
 		_this.stop();
 		
-		
-		
-		
-		
-		
-		var _this = this;
-		
 		_this.btnCreditos.on('click', function(){
-		
-			 createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
-				alert("creditos" );
-				 
+			 createjs.Sound.play("sound", { volume: 0.8}).on("complete", function () {                    
+				alert("creditos" );		 
 		                    }, this);
 		});
 		
-		
 		_this.btnInicio.on('click', function(){
-		
-			 createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
-					 window.open("../", "_self");
-		
-				 
+			 createjs.Sound.play("sound", { volume: 0.8}).on("complete", function () {                    
+					 window.open("../", "_self");		 
 		                    }, this);
 		});
 	}
@@ -608,9 +586,9 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Fondo_1.png?1676481393183", id:"Fondo_1"},
-		{src:"images/index_atlas_P_1.png?1676481393058", id:"index_atlas_P_1"},
-		{src:"sounds/sound.mp3?1676481393183", id:"sound"}
+		{src:"images/Fondo_1.png?1677259366542", id:"Fondo_1"},
+		{src:"images/index_atlas_P_1.png?1677259366456", id:"index_atlas_P_1"},
+		{src:"sounds/sound.mp3?1677259366542", id:"sound"}
 	],
 	preloads: []
 };

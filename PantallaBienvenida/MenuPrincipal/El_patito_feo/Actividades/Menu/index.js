@@ -962,10 +962,7 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		
 		_this.stop();
 	}
 
@@ -999,10 +996,6 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
 		_this.stop();
 	}
 
@@ -1309,13 +1302,9 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 		
-		
 		var _this = this;
 		 
-		
-		 
-		_this.btnRompecabezas.on('click', function(){
-			
+		_this.btnRompecabezas.on('click', function(){	
 			
 			createjs.Sound.play("entrar", {
 				volume: 0.5
@@ -1333,28 +1322,15 @@ if (reversed == null) { reversed = false; }
 		    window.open('../Rompecabezas/3', '_self');
 		} 
 			}, this);
-			
-			
-		
-			
-			
-			 
-		
-			
 		}); 
 		 
-		_this.btnEntrar1.on('click', function(){	
-			
-		if ($("#imput1").val()=="Respeto" || $("#imput1").val()=="respeto"  ) { 
-			
+		_this.btnEntrar1.on('click', function(){		
+		if ($("#imput1").val()=="Respeto" || $("#imput1").val()=="respeto"  ) { 	
 			createjs.Sound.play("entrar", {
 				volume: 0.5
 			}).on("complete", function () {
 					window.open('../Sopa', '_self');
 			}, this);
-			
-		
-			
 			}
 			
 			else  		
@@ -1363,30 +1339,17 @@ if (reversed == null) { reversed = false; }
 		});
 			 
 		 
-		_this.btnEntrar2.on('click', function(){ 
-				
-		if ($("#imput2").val()=="Confianza"  || $("#imput2").val()=="confianza") { 
-			
+		_this.btnEntrar2.on('click', function(){ 		
+		if ($("#imput2").val()=="Confianza"  || $("#imput2").val()=="confianza") { 	
 			createjs.Sound.play("entrar", {
 				volume: 0.5
 			}).on("complete", function () {
 				window.open('../quiz', '_self');
 			}, this);
-			
-			
-			
-			
-			
-			
 			}
 			else 		 
-		_this.gotoAndStop(1); 
-		 
+		_this.gotoAndStop(1);  
 		});
-		
-		
-		
-		
 		window.addEventListener("keydown", function(e){
 			 
 			 if( e.keyCode==13){
@@ -1399,57 +1362,33 @@ if (reversed == null) { reversed = false; }
 			window.open('../quiz', '_self'); 
 			else 		 
 		_this.gotoAndStop(1); 
-			 
-			 
-			 
 		
 			 }
-		            
 		        });
-		
-		
-				
-				
-		
-		
-		
-		
-				
 				
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		
 		_this.BtnInteractivoB.on('click', function(){
-		/*
-		Reproducción de un clip de película/vídeo o una línea de tiempo actual.
-		Reproduce el clip de película especificado o el vídeo.
-		*/
+		
 		_this.niña.play();
 		});
 		
 		
 		_this.BtnInteractivoA.on('click', function(){
-		/*
-		Reproducción de un clip de película/vídeo o una línea de tiempo actual.
-		Reproduce el clip de película especificado o el vídeo.
-		*/
+		
 		_this.niño.play();
 		});
+		
+		_this.niño.stop();
+		
+		_this.niña.stop();
 	}
 	this.frame_1 = function() {
 		var _this = this;
-		 
 		
 		_this.btnAceptar.on('click', function(){
-		
 		_this.gotoAndStop(0);
 		});
-		
-		
-		
-		
-		
 		createjs.Sound.play("error", {volume: 0.5	});
 	}
 
@@ -1489,7 +1428,7 @@ if (reversed == null) { reversed = false; }
 	// niños
 	this.BtnInteractivoB = new lib.btnInteractivoB();
 	this.BtnInteractivoB.name = "BtnInteractivoB";
-	this.BtnInteractivoB.setTransform(976.7,316.95,1,1,0,0,0,-21.1,7.5);
+	this.BtnInteractivoB.setTransform(976.7,371.95,1,1,0,0,0,-21.1,7.5);
 	new cjs.ButtonHelper(this.BtnInteractivoB, 0, 1, 2, false, new lib.btnInteractivoB(), 3);
 
 	this.niño = new lib.niño();
@@ -1549,18 +1488,30 @@ if (reversed == null) { reversed = false; }
 	// FONDO
 	this.BtnInteractivoA = new lib.btnInteractivoB();
 	this.BtnInteractivoA.name = "BtnInteractivoA";
-	this.BtnInteractivoA.setTransform(145,482.2,1,1,0,0,0,-21.1,7.5);
+	this.BtnInteractivoA.setTransform(162,212.2,1,1,0,0,0,-21.1,7.5);
 	new cjs.ButtonHelper(this.BtnInteractivoA, 0, 1, 2, false, new lib.btnInteractivoB(), 3);
 
 	this.instance_9 = new lib.fondo();
 	this.instance_9.setTransform(-3,-21,0.5032,0.4887);
+
+	this.niño_1 = new lib.niño();
+	this.niño_1.name = "niño_1";
+	this.niño_1.setTransform(126.95,378.05,1,1,0,0,0,126.9,173.5);
+	this.niño_1.filters = [new cjs.BlurFilter(21, 21, 1)];
+	this.niño_1.cache(-2,-2,258,351);
+
+	this.niña_1 = new lib.niña();
+	this.niña_1.name = "niña_1";
+	this.niña_1.setTransform(1034.5,277,1,1,0,0,0,94.4,139.1);
+	this.niña_1.filters = [new cjs.BlurFilter(24, 24, 1)];
+	this.niña_1.cache(-2,-82,193,362);
 
 	this.instance_10 = new lib.fondo2();
 	this.instance_10.setTransform(594.8,288.7,1,1,0,0,0,597.8,309.7);
 	this.instance_10.filters = [new cjs.BlurFilter(8, 8, 3)];
 	this.instance_10.cache(-2,-2,1200,602);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9},{t:this.BtnInteractivoA}]}).to({state:[{t:this.instance_10}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9},{t:this.BtnInteractivoA}]}).to({state:[{t:this.instance_10},{t:this.niña_1},{t:this.niño_1}]},1).wait(1));
 
 	// stageBackground
 	this.shape = new cjs.Shape();
@@ -1586,13 +1537,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1676305585503", id:"index_atlas_1"},
-		{src:"sounds/entrar.mp3?1676305585601", id:"entrar"},
-		{src:"sounds/error.mp3?1676305585601", id:"error"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1676305585601", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1676305585601", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1676305585601", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1676305585601", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1677293599888", id:"index_atlas_1"},
+		{src:"sounds/entrar.mp3?1677293600009", id:"entrar"},
+		{src:"sounds/error.mp3?1677293600009", id:"error"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1677293600009", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1677293600009", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1677293600009", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1677293600009", id:"an.TextInput"}
 	],
 	preloads: []
 };

@@ -1,5 +1,4 @@
-/**
-*
+/*
 * @source: https://english.fromatogra.com/games/word-search/js/index.js
 *
 * @licstart  The following is the entire license notice for the 
@@ -28,24 +27,10 @@
 */
 
   var contador = 0;
-
-
-  var element = document.createElement('li');
-   
+  var element = document.createElement('li');   
   element.id = 'contador';
   element.className="contador"
- 
- 
-
- 
-                                   
-  
   document.body.appendChild(element);
- 
-
-
-
-
 class App {
   constructor(div) {
     this.div = div;
@@ -53,11 +38,6 @@ class App {
     this.ctx = canvas.getContext('2d');
     this.dirty = true;
     this.prev = +new Date();
-
-
-
-
-
     
     this.resize();
     
@@ -436,13 +416,6 @@ class PuzzleApp extends App {
     
     this.ctx.fillStyle = "black";
     this.ctx.font = (wsize * 0.5) + 'px Patrick Hand';
-
-    
- 
-
-
-
-    
     this.ctx.textAlign = "center";
     this.ctx.textBaseline = "middle";
 
@@ -478,65 +451,28 @@ class PuzzleApp extends App {
       return;
     
     let word = this.puzzle.wordAt(this.selection.position, this.selection.direction, this.selection.length+1);
-
-
-
-
-
  
     if (word) {
       let list = document.getElementById("list");
-       
 
       let elements = list.getElementsByTagName("li");
     
       Array.prototype.some.call(elements, li => {
-
-
-
-        
         if (li.innerText == word) {
-  
-
           li.classList.add("found");
           contador++; 
           element.innerHTML =contador ;
 
-         
-         
-  
-
-
-
-
- 
-  
-
-
-
-
-
           this.selections.push(this.selection.clone().fill());
           return true;
         }
-
-      
-
-
-
         return false;
       });
     }
     
     this.selection = null;
   }
-
-
-  
 }
-
-
-
 let app = null;
 
 document.addEventListener("DOMContentLoaded", function(event) {

@@ -979,9 +979,8 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		stage.on('drawstart', initStage, this, true);
-		function initStage() {
-			
-			
+		
+		function initStage() {	
 		    stretchToFit();
 		}
 	}
@@ -989,25 +988,14 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		
 		_this.btnIngresar.on('click', function(){
-		
-			 createjs.Sound.play("sound", { volume: 0.8}).on("complete", function () {
-		                    
-				window.open("PantallaBienvenida", "_self");
-				 
+			 createjs.Sound.play("sound", { volume: 0.8}).on("complete", function () {                    
+				window.open("PantallaBienvenida", "_self");		 
 		                    }, this);
 		});
 		
-		
-		
-		 
-		 
-		
 		_this.manual.on('click', function(){
-		
-			 createjs.Sound.play("sound2", { volume: 0.5}).on("complete", function () {
-		                    
-				alert("MenuPrincipal");
-				 
+			 createjs.Sound.play("sound2", { volume: 0.8}).on("complete", function () {                    
+				alert("MenuPrincipal");		 
 		                    }, this);
 		});
 	}
@@ -1080,14 +1068,14 @@ if (reversed == null) { reversed = false; }
 
 	// der_fondo
 	this.instance_7 = new lib.fondodDer();
-	this.instance_7.setTransform(-1684.25,-122,1,1,0,0,0,1021.5,697);
+	this.instance_7.setTransform(-1657.85,-118,1,1,0,0,0,1021.5,697);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(1).to({regX:2043.5,regY:1394,x:-636.55,y:575.3},0).wait(1).to({x:-610.85,y:575.6},0).wait(1).to({x:-585.15,y:575.85},0).wait(1).to({x:-559.5,y:576.15},0).wait(1).to({x:-533.8,y:576.45},0).wait(1).to({x:-508.1,y:576.7},0).wait(1).to({x:-482.4,y:577},0).wait(1).to({x:-456.75,y:577.25},0).wait(1).to({x:-431.05,y:577.55},0).wait(1).to({x:-405.35,y:577.85},0).wait(1).to({x:-379.7,y:578.1},0).wait(1).to({x:-354,y:578.4},0).wait(1).to({x:-328.3,y:578.65},0).wait(1).to({x:-302.6,y:578.95},0).wait(1).to({x:-276.95,y:579.25},0).wait(1).to({x:-251.25,y:579.5},0).wait(1).to({x:-225.55,y:579.8},0).wait(1).to({x:-199.9,y:580.1},0).wait(1).to({x:-174.2,y:580.35},0).wait(1).to({x:-148.5,y:580.65},0).wait(1).to({x:-122.8,y:580.9},0).wait(1).to({x:-97.15,y:581.2},0).wait(1).to({x:-71.45,y:581.5},0).wait(1).to({x:-45.75,y:581.75},0).wait(1).to({x:-20.1,y:582.05},0).wait(1).to({x:5.6,y:582.3},0).wait(1).to({x:31.3,y:582.6},0).wait(1).to({x:57,y:582.9},0).wait(1).to({x:82.65,y:583.15},0).wait(1).to({x:108.35,y:583.45},0).wait(1).to({x:134.05,y:583.75},0).wait(1).to({x:159.7,y:584},0).wait(1).to({x:185.4,y:584.3},0).wait(1).to({x:211.1,y:584.55},0).wait(1).to({x:236.8,y:584.85},0).wait(1).to({x:262.45,y:585.15},0).wait(1).to({x:288.15,y:585.4},0).wait(1).to({x:313.85,y:585.7},0).wait(1).to({x:339.5,y:585.95},0).wait(61));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(1).to({regX:2043.5,regY:1394,x:-636,y:579.05},0).wait(1).to({x:-636.15},0).wait(1).to({x:-636.3},0).wait(1).to({x:-636.5},0).wait(1).to({x:-608.6},0).wait(1).to({x:-580.75},0).wait(1).to({x:-552.9},0).wait(1).to({x:-525},0).wait(1).to({x:-497.15},0).wait(1).to({x:-469.3},0).wait(1).to({x:-441.4},0).wait(1).to({x:-413.55},0).wait(1).to({x:-385.7},0).wait(1).to({x:-357.85},0).wait(1).to({x:-329.95},0).wait(1).to({x:-302.1},0).wait(1).to({x:-274.25},0).wait(1).to({x:-246.35},0).wait(1).to({x:-218.5},0).wait(1).to({x:-190.65},0).wait(1).to({x:-162.75},0).wait(1).to({x:-134.9},0).wait(1).to({x:-107.05},0).wait(1).to({x:-79.15},0).wait(1).to({x:-51.3},0).wait(1).to({x:-23.45},0).wait(1).to({x:4.45},0).wait(1).to({x:32.3},0).wait(1).to({x:60.15},0).wait(1).to({x:88},0).wait(1).to({x:115.9},0).wait(1).to({x:143.75},0).wait(1).to({x:171.6},0).wait(1).to({x:199.5},0).wait(1).to({x:227.35},0).wait(1).to({x:255.2},0).wait(1).to({x:283.1},0).wait(1).to({x:310.95},0).wait(1).to({x:338.8},0).wait(1).to({x:337.3},0).wait(60));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(-1000.7,262,3016,1021);
+p.nominalBounds = new cjs.Rectangle(-975,266,2990.3,1010.0999999999999);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -1097,12 +1085,12 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/fondoizq.png?1676481374143", id:"fondoizq"},
-		{src:"images/index_atlas_P_1.png?1676481373983", id:"index_atlas_P_1"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1676481374143", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1676481374143", id:"sound"},
-		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1676481374143", id:"notificationsound70621onlineaudioconvertercom"},
-		{src:"sounds/sound2.mp3?1676481374143", id:"sound2"}
+		{src:"images/fondoizq.png?1677279503544", id:"fondoizq"},
+		{src:"images/index_atlas_P_1.png?1677279503409", id:"index_atlas_P_1"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1677279503544", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/sound.mp3?1677279503544", id:"sound"},
+		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1677279503544", id:"notificationsound70621onlineaudioconvertercom"},
+		{src:"sounds/sound2.mp3?1677279503544", id:"sound2"}
 	],
 	preloads: []
 };
