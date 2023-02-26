@@ -790,6 +790,14 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// timeline functions:
+	this.frame_2 = function() {
+		playSound("SoundBoton");
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(1));
+
 	// Capa_1
 	this.instance = new lib.btnsalir();
 	this.instance.setTransform(0,0,0.5,0.5);
@@ -818,6 +826,14 @@ if (reversed == null) { reversed = false; }
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
+
+	// timeline functions:
+	this.frame_2 = function() {
+		playSound("SoundBoton");
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(1));
 
 	// Capa_1
 	this.instance = new lib.btnreintentar();
@@ -1070,7 +1086,7 @@ if (reversed == null) { reversed = false; }
 		stretchToFit();
 		}
 		
-		createjs.Sound.play("sound", { volume: 0.8});
+		createjs.Sound.play("sound", { volume: 0.3, loop: -1});
 		
 		this.stop();
 		
@@ -1148,10 +1164,12 @@ if (reversed == null) { reversed = false; }
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
 		_this.btnindice.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
+		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
+		                    
+			
 		window.open('../Menu', '_self');
+				 
+		                    }, this);
 		});
 		var _this = this; 
 		
@@ -1191,15 +1209,27 @@ if (reversed == null) { reversed = false; }
 		
 		
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		 
 		_this.btnSalir.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
+			
+			
+			createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
+		                    
+			
+		
 		window.open('../Menu', '_self');
+				 
+		                    }, this);
+			
+		 
 		});
+		
+		createjs.Sound.stop();
+		
+		
+		
+		
+		createjs.Sound.play("audioLoop");
 	}
 
 	// actions tween:
@@ -1312,8 +1342,10 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677299323034", id:"index_atlas_1"},
-		{src:"sounds/sound.mp3?1677299323197", id:"sound"}
+		{src:"images/index_atlas_1.png?1677352490719", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1677352490880", id:"audioLoop"},
+		{src:"sounds/SoundBoton.mp3?1677352490880", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1677352490880", id:"sound"}
 	],
 	preloads: []
 };

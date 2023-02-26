@@ -296,17 +296,7 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
-		history.pushState("", document.title, window.location.pathname);
 		
-		this.btnAadelanteC.addEventListener("click", fl_ClickToGoToWebPage_16);
-		function fl_ClickToGoToWebPage_16() {
-			window.open("../Contenido_Extra", "_self");
-		}
-		
-		this.btnAtrasC.addEventListener("click", fl_ClickToGoToAndStopAtFrame_4.bind(this));
-		function fl_ClickToGoToAndStopAtFrame_4(){
-			this.gotoAndStop(0);
-		}
 	}
 
 	// actions tween:
@@ -331,7 +321,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/indexpequeño_atlas_1.png?1676476543249", id:"indexpequeño_atlas_1"}
+		{src:"images/indexpequeño_atlas_1.png?1677340362333", id:"indexpequeño_atlas_1"}
 	],
 	preloads: []
 };

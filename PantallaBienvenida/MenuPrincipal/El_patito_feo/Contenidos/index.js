@@ -734,20 +734,20 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(690.5,353.6,412.4000000000001,273.4);
+p.nominalBounds = new cjs.Rectangle(689.5,357.1,413.4000000000001,269.9);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
-	width: 1189,
-	height: 642,
+	width: 1187,
+	height: 649,
 	fps: 25,
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677292329883", id:"index_atlas_1"},
-		{src:"sounds/fondo.mp3?1677292329934", id:"fondo"},
-		{src:"sounds/audio.mp3?1677292329934", id:"audio"},
-		{src:"sounds/principales.mp3?1677292329934", id:"principales"}
+		{src:"images/index_atlas_1.png?1677338911788", id:"index_atlas_1"},
+		{src:"sounds/fondo.mp3?1677338911841", id:"fondo"},
+		{src:"sounds/audio.mp3?1677338911841", id:"audio"},
+		{src:"sounds/principales.mp3?1677338911841", id:"principales"}
 	],
 	preloads: []
 };

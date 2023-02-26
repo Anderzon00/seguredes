@@ -385,6 +385,14 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// timeline functions:
+	this.frame_2 = function() {
+		playSound("sound1");
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
+
 	// Capa_1
 	this.instance = new lib._1ContenidosNORMAL();
 	this.instance.setTransform(-114.25,-22.5,0.5,0.5);
@@ -728,7 +736,7 @@ if (reversed == null) { reversed = false; }
 		document.getElementById('my-id').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
 		document.getElementById('my-id').style.top =   1.1 * Math.max(window.innerHeight) / 16 + 'px';
 		document.getElementById('video').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('video').style.height = 13.5 * Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('video').style.height = 13.56 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		embed();
@@ -757,6 +765,10 @@ if (reversed == null) { reversed = false; }
 		document.getElementById('video').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
 		document.getElementById('video').style.height = 13.5 * Math.max(window.innerHeight) / 16 + 'px';
 		}
+		
+		
+		
+		
 		
 		embed();
 		
@@ -803,7 +815,7 @@ if (reversed == null) { reversed = false; }
 
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#FFFFFF").s().p("Ehc7AsYMAAAhYvMC53AAAMAAABYvg");
-	this.shape.setTransform(697.6585,335.15,1.0019,1);
+	this.shape.setTransform(696.6084,335.15,1.0019,1);
 
 	this.instance_3 = new lib.fondopapel1();
 	this.instance_3.setTransform(101,52,0.6535,0.5726);
@@ -892,15 +904,15 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1677300769692", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1677300769692", id:"barraseguredes"},
-		{src:"images/fondo11.png?1677300769692", id:"fondo11"},
-		{src:"images/fondoMorado.png?1677300769692", id:"fondoMorado"},
-		{src:"images/Portada.png?1677300769692", id:"Portada"},
-		{src:"images/index_atlas_1.png?1677300769608", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1677300769692", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1677300769692", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1677300769692", id:"sound1"}
+		{src:"images/bannernegro1.png?1677354362342", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1677354362342", id:"barraseguredes"},
+		{src:"images/fondo11.png?1677354362342", id:"fondo11"},
+		{src:"images/fondoMorado.png?1677354362342", id:"fondoMorado"},
+		{src:"images/Portada.png?1677354362342", id:"Portada"},
+		{src:"images/index_atlas_1.png?1677354362268", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1677354362342", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1677354362342", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1677354362342", id:"sound1"}
 	],
 	preloads: []
 };
