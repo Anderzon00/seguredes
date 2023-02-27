@@ -612,6 +612,18 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,12,13,14,15];
 	// timeline functions:
 	this.frame_0 = function() {
+		const elementdiv = document.getElementById('cuento');
+		elementdiv?.remove();
+		
+		
+		const elementdiv1 = document.getElementById('contenidos');
+		elementdiv1?.remove();
+		
+		
+		  
+		const elementdiv2 = document.getElementById('actividades');
+		elementdiv2?.remove();
+		
 		this.stop(); 
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
@@ -639,14 +651,14 @@ if (reversed == null) { reversed = false; }
 		
 		
 		_this.btnContenidos.on('click', function () {		
-				document.getElementById("video").src= "./Contenidos/index.html";
-				_this.gotoAndStop('Contenidos');	
+				_this.gotoAndStop("Contenidos");
+				 
 		});
 		
 		
 		_this.btnActividades.on('click', function () {	 	
-				document.getElementById("video").src= "./Actividades/Menu/index.html";		
-				_this.gotoAndStop('Actividades');		 
+				_this.gotoAndStop("Actividades");
+				 		 
 		});
 		
 		this.btnAyuda.on('click', function () {		 
@@ -657,34 +669,7 @@ if (reversed == null) { reversed = false; }
 		_this.button_popup.on('click', function () {
 			_this.gotoAndPlay(1);
 		});
-		var root = this;
-		var key;
-		var element = document.createElement('div');
-		element.setAttribute('id', 'my-id');
-		 document.body.appendChild(element);
-		 element.style.position = "absolute";
 		
-		element.innerHTML = '<iframe  id="video"  style="border:none" allow="autoplay"  >';
-		 document.getElementById("video").src= " "; 
-		 
-		 
-		 
-		 
-		 
-		
-		 
-		function embed() {	
-		document.getElementById('my-id').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('my-id').style.top =   1.1 * Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('video').style.width = 0;//27.93 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('video').style.height = 0;// 13.5 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		})
 	}
 	this.frame_12 = function() {
 		this.stop();
@@ -697,19 +682,44 @@ if (reversed == null) { reversed = false; }
 		 
 		createjs.Sound.play("SoundPlay", {	volume: 0.5
 			}).on("complete", function () {
-				_this.gotoAndStop(13);
+				
+				
+				
+				
+				
+				_this.gotoAndStop("Cuento");
 			}, this);
 			
 		});
 	}
 	this.frame_13 = function() {
-		document.getElementById("video").src= "./Cuento/Escena_1/index.html";
+		const elementdiv = document.getElementById('cuento');
+		elementdiv?.remove();
+		
+		
+		const elementdiv1 = document.getElementById('contenidos');
+		elementdiv1?.remove();
+		
+		
+		  
+		const elementdiv2 = document.getElementById('actividades');
+		elementdiv2?.remove();
+		  
+		  
+		var root = this;
+		var key;
+		var element = document.createElement('div');
+		element.setAttribute('id', 'cuento');
+		document.body.appendChild(element);
+		element.style.position = "absolute"; 
 		 
+		element.innerHTML = '<iframe  src= "./Cuento/Escena_1/index.html" id="i_cuento"   style="border:none" allow="autoplay"  >';
+		
 		function embed() {	
-		document.getElementById('my-id').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('my-id').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('video').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('video').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('cuento').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		document.getElementById('cuento').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_cuento').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		embed();
@@ -730,13 +740,33 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_14 = function() {
-		document.getElementById("video").src= "./Contenidos/index.html";
+		const elementdiv = document.getElementById('cuento');
+		elementdiv?.remove();
+		
+		
+		const elementdiv1 = document.getElementById('contenidos');
+		elementdiv1?.remove();
+		
+		
+		  
+		const elementdiv2 = document.getElementById('actividades');
+		elementdiv2?.remove();
+		
+		
+		var root = this;
+		var key;
+		var element = document.createElement('div');
+		element.setAttribute('id', 'contenidos');
+		document.body.appendChild(element);
+		element.style.position = "absolute"; 
 		 
+		element.innerHTML = '<iframe  src= "./Contenidos/index.html"  id="i_contenidos"   style="border:none" allow="autoplay"  >';
+		
 		function embed() {	
-		document.getElementById('my-id').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('my-id').style.top =   1.1 * Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('video').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('video').style.height = 13.56 * Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('contenidos').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		document.getElementById('contenidos').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_contenidos').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_contenidos').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		embed();
@@ -757,18 +787,34 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_15 = function() {
-		document.getElementById("video").src= "./Actividades/Menu/index.html";
+		const elementdiv = document.getElementById('cuento');
+		elementdiv?.remove();
+		
+		
+		const elementdiv1 = document.getElementById('contenidos');
+		elementdiv1?.remove();
+		
+		
+		  
+		const elementdiv2 = document.getElementById('actividades');
+		elementdiv2?.remove();
+		  
+		  
+		var root = this;
+		var key;
+		var element = document.createElement('div');
+		element.setAttribute('id', 'actividades');
+		document.body.appendChild(element);
+		element.style.position = "absolute"; 
 		 
+		element.innerHTML = '<iframe  src= "./Actividades/Menu/index.html" id="i_actividades"   style="border:none" allow="autoplay"  >';
+		
 		function embed() {	
-		document.getElementById('my-id').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('my-id').style.top =   1.1 * Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('video').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('video').style.height = 13.5 * Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('actividades').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		document.getElementById('actividades').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_actividades').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_actividades').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
-		
-		
-		
-		
 		
 		embed();
 		
@@ -904,15 +950,15 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1677354362342", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1677354362342", id:"barraseguredes"},
-		{src:"images/fondo11.png?1677354362342", id:"fondo11"},
-		{src:"images/fondoMorado.png?1677354362342", id:"fondoMorado"},
-		{src:"images/Portada.png?1677354362342", id:"Portada"},
-		{src:"images/index_atlas_1.png?1677354362268", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1677354362342", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1677354362342", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1677354362342", id:"sound1"}
+		{src:"images/bannernegro1.png?1677465893601", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1677465893601", id:"barraseguredes"},
+		{src:"images/fondo11.png?1677465893601", id:"fondo11"},
+		{src:"images/fondoMorado.png?1677465893601", id:"fondoMorado"},
+		{src:"images/Portada.png?1677465893601", id:"Portada"},
+		{src:"images/index_atlas_1.png?1677465893518", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1677465893601", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1677465893601", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1677465893601", id:"sound1"}
 	],
 	preloads: []
 };

@@ -349,7 +349,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Extra_atlas_1.png?1677122498367", id:"Extra_atlas_1"}
+		{src:"images/Extra_atlas_1.png?1677467737003", id:"Extra_atlas_1"}
 	],
 	preloads: []
 };

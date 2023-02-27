@@ -118,7 +118,7 @@ lib.ssMetadata = [
 
 
 
-(lib.fondo = function() {
+(lib.fondo111 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
@@ -1274,7 +1274,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_7 = new lib.img_act1();
 	this.instance_7.setTransform(334.2,263.25,0.5308,0.5308,0,0,0,-0.8,0.1);
 
-	this.instance_8 = new lib.fondo();
+	this.instance_8 = new lib.fondo111();
 	this.instance_8.setTransform(0,0,0.5032,0.4887);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.btnRompecabezas},{t:this.btnEntrar1},{t:this.btnEntrar2},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -1491,7 +1491,7 @@ if (reversed == null) { reversed = false; }
 	this.BtnInteractivoA.setTransform(162,212.2,1,1,0,0,0,-21.1,7.5);
 	new cjs.ButtonHelper(this.BtnInteractivoA, 0, 1, 2, false, new lib.btnInteractivoB(), 3);
 
-	this.instance_9 = new lib.fondo();
+	this.instance_9 = new lib.fondo111();
 	this.instance_9.setTransform(-3,-21,0.5032,0.4887);
 
 	this.niño_1 = new lib.niño();
@@ -1537,13 +1537,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677376143468", id:"index_atlas_1"},
-		{src:"sounds/entrar.mp3?1677376143573", id:"entrar"},
-		{src:"sounds/error.mp3?1677376143573", id:"error"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1677376143573", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1677376143573", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1677376143573", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1677376143573", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1677468519328", id:"index_atlas_1"},
+		{src:"sounds/entrar.mp3?1677468519418", id:"entrar"},
+		{src:"sounds/error.mp3?1677468519418", id:"error"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1677468519418", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1677468519418", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1677468519418", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1677468519418", id:"an.TextInput"}
 	],
 	preloads: []
 };

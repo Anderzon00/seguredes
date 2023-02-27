@@ -744,10 +744,10 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677338911788", id:"index_atlas_1"},
-		{src:"sounds/fondo.mp3?1677338911841", id:"fondo"},
-		{src:"sounds/audio.mp3?1677338911841", id:"audio"},
-		{src:"sounds/principales.mp3?1677338911841", id:"principales"}
+		{src:"images/index_atlas_1.png?1677467768223", id:"index_atlas_1"},
+		{src:"sounds/fondo.mp3?1677467768271", id:"fondo"},
+		{src:"sounds/audio.mp3?1677467768271", id:"audio"},
+		{src:"sounds/principales.mp3?1677467768271", id:"principales"}
 	],
 	preloads: []
 };
