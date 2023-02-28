@@ -1041,9 +1041,8 @@ if (reversed == null) { reversed = false; }
 	// Capa_1
 	this.instance = new lib.cuerpopato();
 	this.instance.setTransform(140.25,209.9,0.5,0.5,0,0,0,134,209.9);
-	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regY:210.1,scaleX:0.4743,scaleY:0.4742,x:143.8,y:214},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1422,8 +1421,7 @@ if (reversed == null) { reversed = false; }
 
 	// patoYcaperucita
 	this.instance_2 = new lib.btnPato();
-	this.instance_2.setTransform(143.9,419.75,0.9524,0.9524,0,0,0,133.9,209.9);
-	new cjs.ButtonHelper(this.instance_2, 0, 1, 1);
+	this.instance_2.setTransform(143.9,419.85,0.9524,0.9524,0,0,0,133.9,210);
 
 	this.instance_3 = new lib.caperucita();
 	this.instance_3.setTransform(1253.95,284);
@@ -1470,9 +1468,9 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png", id:"index_atlas_1"},
-		{src:"sounds/intro.mp3", id:"intro"},
-		{src:"sounds/sound.mp3", id:"sound"}
+		{src:"images/index_atlas_1.png?1677525153473", id:"index_atlas_1"},
+		{src:"sounds/intro.mp3?1677525153549", id:"intro"},
+		{src:"sounds/sound.mp3?1677525153549", id:"sound"}
 	],
 	preloads: []
 };

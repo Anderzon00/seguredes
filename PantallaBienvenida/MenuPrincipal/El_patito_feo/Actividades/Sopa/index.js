@@ -1086,7 +1086,30 @@ if (reversed == null) { reversed = false; }
 		stretchToFit();
 		}
 		
-		createjs.Sound.play("sound", { volume: 0.3, loop: -1});
+		sound = createjs.Sound.play("sound", { volume: 0.3, loop: -1});
+		
+		
+		
+		var _this = this; 
+		
+		_this.on("click", function (e) {
+		
+		
+				if (e.target.name === "unmute")
+		
+				{
+				sound.muted = false;
+					_this.mute.visible = true;
+					_this.unmute.visible = false;
+				} else if (e.target.name === "mute") {
+				sound.muted = true;
+					_this.mute.visible = false;
+					_this.unmute.visible = true;
+				}		
+		
+			});
+			
+		
 		
 		this.stop();
 		
@@ -1171,33 +1194,6 @@ if (reversed == null) { reversed = false; }
 				 
 		                    }, this);
 		});
-		var _this = this; 
-		
-		_this.on("click", function (e) {
-		
-		
-		
-		
-				
-				if (e.target.name === "unmute")
-		
-				{
-					createjs.Sound.muted = false;
-					_this.mute.visible = true;
-					_this.unmute.visible = false;
-				} else if (e.target.name === "mute") {
-					createjs.Sound.muted = true;
-					_this.mute.visible = false;
-					_this.unmute.visible = true;
-				}
-				
-				
-				 
-				
-		
-		
-		
-			});
 	}
 	this.frame_1 = function() {
 		var _this = this;
@@ -1342,10 +1338,10 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677352490719", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1677352490880", id:"audioLoop"},
-		{src:"sounds/SoundBoton.mp3?1677352490880", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1677352490880", id:"sound"}
+		{src:"images/index_atlas_1.png?1677549483391", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1677549483525", id:"audioLoop"},
+		{src:"sounds/SoundBoton.mp3?1677549483525", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1677549483525", id:"sound"}
 	],
 	preloads: []
 };

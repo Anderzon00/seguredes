@@ -669,7 +669,6 @@ if (reversed == null) { reversed = false; }
 		_this.button_popup.on('click', function () {
 			_this.gotoAndPlay(1);
 		});
-		
 	}
 	this.frame_12 = function() {
 		this.stop();
@@ -682,11 +681,6 @@ if (reversed == null) { reversed = false; }
 		 
 		createjs.Sound.play("SoundPlay", {	volume: 0.5
 			}).on("complete", function () {
-				
-				
-				
-				
-				
 				_this.gotoAndStop("Cuento");
 			}, this);
 			
@@ -732,26 +726,22 @@ if (reversed == null) { reversed = false; }
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
 		_this.btnVolverAcuento.on('click', function(){
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
-		_this.gotoAndPlay(0);
+		createjs.Sound.play("sound2", {	volume: 0.5
+			}).on("complete", function () {
+				_this.gotoAndPlay(0);
+			}, this);
+		
 		});
 	}
 	this.frame_14 = function() {
 		const elementdiv = document.getElementById('cuento');
 		elementdiv?.remove();
 		
-		
 		const elementdiv1 = document.getElementById('contenidos');
 		elementdiv1?.remove();
-		
-		
 		  
 		const elementdiv2 = document.getElementById('actividades');
 		elementdiv2?.remove();
-		
 		
 		var root = this;
 		var key;
@@ -761,6 +751,15 @@ if (reversed == null) { reversed = false; }
 		element.style.position = "absolute"; 
 		 
 		element.innerHTML = '<iframe  src= "./Contenidos/index.html"  id="i_contenidos"   style="border:none" allow="autoplay"  >';
+		
+		var _this = this;
+		
+		_this.btnContenidos.on('click', function () {
+		
+			var iframe = document.getElementById('i_contenidos');
+		iframe.src = iframe.src;	
+				 
+		});
 		
 		function embed() {	
 		document.getElementById('contenidos').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
@@ -790,16 +789,12 @@ if (reversed == null) { reversed = false; }
 		const elementdiv = document.getElementById('cuento');
 		elementdiv?.remove();
 		
-		
 		const elementdiv1 = document.getElementById('contenidos');
 		elementdiv1?.remove();
-		
-		
 		  
 		const elementdiv2 = document.getElementById('actividades');
 		elementdiv2?.remove();
-		  
-		  
+		    
 		var root = this;
 		var key;
 		var element = document.createElement('div');
@@ -808,6 +803,20 @@ if (reversed == null) { reversed = false; }
 		element.style.position = "absolute"; 
 		 
 		element.innerHTML = '<iframe  src= "./Actividades/Menu/index.html" id="i_actividades"   style="border:none" allow="autoplay"  >';
+		
+		var _this = this;
+		
+		
+		
+		_this.btnActividades.on('click', function () {
+		
+			var iframe = document.getElementById('i_actividades');
+		iframe.src = iframe.src;
+			
+				 
+		});
+		
+		
 		
 		function embed() {	
 		document.getElementById('actividades').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
@@ -882,7 +891,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_5 = new lib.mano();
 	this.instance_5.setTransform(666.85,93,1,1,0,0,0,-97,-564.9);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5},{t:this.btnInicio,p:{x:113.15}}]}).to({state:[{t:this.instance_5},{t:this.btnInicio,p:{x:102.35}}]},12).to({state:[]},1).wait(4));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5},{t:this.btnInicio}]}).to({state:[]},13).wait(4));
 
 	// botones
 	this.btnAyuda = new lib.btnAyuda();
@@ -950,15 +959,15 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1677465893601", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1677465893601", id:"barraseguredes"},
-		{src:"images/fondo11.png?1677465893601", id:"fondo11"},
-		{src:"images/fondoMorado.png?1677465893601", id:"fondoMorado"},
-		{src:"images/Portada.png?1677465893601", id:"Portada"},
-		{src:"images/index_atlas_1.png?1677465893518", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1677465893601", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1677465893601", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1677465893601", id:"sound1"}
+		{src:"images/bannernegro1.png?1677548095773", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1677548095773", id:"barraseguredes"},
+		{src:"images/fondo11.png?1677548095773", id:"fondo11"},
+		{src:"images/fondoMorado.png?1677548095773", id:"fondoMorado"},
+		{src:"images/Portada.png?1677548095773", id:"Portada"},
+		{src:"images/index_atlas_1.png?1677548095695", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1677548095773", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1677548095773", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1677548095773", id:"sound1"}
 	],
 	preloads: []
 };
