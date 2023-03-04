@@ -5,7 +5,7 @@ var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"index_atlas_1", frames: [[1238,379,115,91],[1176,749,115,90],[1238,472,115,91],[0,581,115,91],[1293,749,115,90],[117,581,115,91],[278,574,447,102],[1238,645,447,102],[727,664,447,102],[298,678,238,101],[1687,740,238,101],[1804,110,237,102],[1410,749,115,90],[538,678,115,91],[1687,649,296,89],[0,678,296,89],[278,290,87,87],[278,379,87,87],[1927,740,115,91],[278,468,87,87],[727,574,87,87],[1804,214,61,63],[1930,214,61,62],[1867,214,61,63],[960,379,276,283],[384,0,384,284],[0,290,276,289],[1433,0,369,280],[770,0,376,287],[1148,0,283,377],[0,0,382,288],[384,286,287,284],[673,289,285,283],[1720,282,275,365],[1433,282,285,361],[2041,0,2,78],[960,289,130,85],[1804,0,235,108]]},
 		{name:"index_atlas_2", frames: [[0,0,987,885],[1454,817,469,359],[658,1269,384,364],[1418,1462,284,452],[1704,1462,276,455],[989,444,463,455],[1117,901,284,469],[1454,444,469,371],[1132,1462,284,457],[0,1724,463,292],[1654,0,381,378],[1403,1178,471,282],[658,1635,472,276],[658,901,457,366],[989,0,663,442],[0,887,656,835]]},
-		{name:"index_atlas_3", frames: [[0,0,1324,882],[0,884,1298,674]]}
+		{name:"index_atlas_3", frames: [[0,0,1324,882],[0,884,1425,738]]}
 ];
 
 
@@ -414,7 +414,7 @@ lib.ssMetadata = [
 
 
 
-(lib.VentanaRetroalimentación = function() {
+(lib.RetroalimentacionFinalRompecabezas = function() {
 	this.initialize(ss["index_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -1830,6 +1830,7 @@ if (reversed == null) { reversed = false; }
 		_this.btnReintentar.on('click', function(){
 			
 			
+			
 			createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
 		                    
 			
@@ -1893,31 +1894,31 @@ if (reversed == null) { reversed = false; }
 	// botones
 	this.btnReintentar = new lib.btnReintentar();
 	this.btnReintentar.name = "btnReintentar";
-	this.btnReintentar.setTransform(-225.75,142.55);
+	this.btnReintentar.setTransform(-177.75,142.55);
 	new cjs.ButtonHelper(this.btnReintentar, 0, 1, 2);
 
 	this.btnSalir = new lib.btnSalir();
 	this.btnSalir.name = "btnSalir";
-	this.btnSalir.setTransform(-2.25,142.55);
+	this.btnSalir.setTransform(56.75,142.55);
 	new cjs.ButtonHelper(this.btnSalir, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnSalir},{t:this.btnReintentar}]}).wait(1));
 
 	// pato
 	this.instance = new lib.pato_1();
-	this.instance.setTransform(368.05,88.05,0.5,0.5,0,0,0,-80,-70.4);
+	this.instance.setTransform(378.05,88.05,0.5,0.5,0,0,0,-80,-70.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	// emotes
 	this.instance_1 = new lib.emojis();
-	this.instance_1.setTransform(-33.45,-63.9,1,1,0,0,0,-115.2,-48.2);
+	this.instance_1.setTransform(-20.45,-77.9,1,1,0,0,0,-115.2,-48.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
 	// mensaje
-	this.instance_2 = new lib.VentanaRetroalimentación();
-	this.instance_2.setTransform(-345,-107,0.5,0.5);
+	this.instance_2 = new lib.RetroalimentacionFinalRompecabezas();
+	this.instance_2.setTransform(-356,-126,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
 
@@ -2125,6 +2126,8 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.stop();
 			
 			createjs.Sound.play("win");
+			createjs.Sound.play("retroalimentacion");
+		
 		
 			_this.mensaje.visible=true;
 			 
@@ -2183,11 +2186,11 @@ if (reversed == null) { reversed = false; }
 				{
 					 
 					
-					 sound.play();
+					 sound.muted = false;
 					_this.mute.visible = true;
 					_this.unmute.visible = false;
 				} else if (e.target.name === "mute") {
-		 			sound.stop();
+		           sound.muted = true;
 					_this.mute.visible = false;
 					_this.unmute.visible = true;
 				}
@@ -2224,17 +2227,6 @@ if (reversed == null) { reversed = false; }
 	this.shape.setTransform(8,615.45);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.btnindice},{t:this.unmute},{t:this.mute},{t:this.instance_1},{t:this.instance}]}).wait(1));
-
-	// Capa_2
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("rgba(0,197,255,0)").ss(1,1,1).p("EgkogFxMBJRAAAIAALjMhJRAAAg");
-	this.shape_1.setTransform(242.525,605.95);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("rgba(51,255,51,0.659)").s().p("EgkoAFyIAArjMBJRAAAIAALjg");
-	this.shape_2.setTransform(242.525,605.95);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1}]}).wait(1));
 
 	// win
 	this.mensaje = new lib.mensaje();
@@ -2314,14 +2306,15 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677546015130", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1677546015130", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1677546015130", id:"index_atlas_3"},
-		{src:"sounds/drop.mp3?1677546015273", id:"drop"},
-		{src:"sounds/error.mp3?1677546015273", id:"error"},
-		{src:"sounds/win.mp3?1677546015273", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1677546015273", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1677546015273", id:"sound"}
+		{src:"images/index_atlas_1.png?1677942776610", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1677942776611", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1677942776612", id:"index_atlas_3"},
+		{src:"sounds/drop.mp3?1677942776793", id:"drop"},
+		{src:"sounds/error.mp3?1677942776793", id:"error"},
+		{src:"sounds/win.mp3?1677942776793", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1677942776793", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1677942776793", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1677942776793", id:"retroalimentacion"}
 	],
 	preloads: []
 };

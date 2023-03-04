@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[3458,971,447,102],[658,1166,447,102],[1107,1166,447,102],[1556,1257,238,101],[658,1270,238,101],[2091,1166,237,102],[3733,550,296,89],[1556,1166,296,89],[4002,0,87,87],[4002,89,87,87],[4002,178,87,87],[4002,267,87,87],[4002,419,61,63],[4031,549,61,62],[4002,484,61,63],[0,0,2376,1164],[3458,659,590,140],[3458,801,432,168],[3880,1091,169,169],[4091,0,2,78],[3678,1075,200,200],[4002,356,87,61],[898,1270,147,70],[3458,0,273,657],[0,1166,656,835],[3880,1262,130,85],[1854,1166,235,108],[3907,801,141,288],[4012,1262,72,52],[1047,1270,140,67],[3733,0,267,548],[2378,0,1078,1078],[2378,1080,1298,674]]}
+		{name:"index_atlas_1", frames: [[3458,971,447,102],[658,1166,447,102],[658,1270,447,102],[1107,1270,238,101],[1346,1166,238,101],[1107,1166,237,102],[3733,550,296,89],[801,1545,296,89],[4002,0,87,87],[4002,89,87,87],[4002,178,87,87],[4002,267,87,87],[4024,801,61,63],[4002,484,61,62],[4002,419,61,63],[0,0,2376,1164],[3458,659,590,140],[3458,801,432,168],[801,1374,169,169],[4031,548,2,78],[658,1664,200,200],[4002,356,87,61],[3892,888,147,70],[3458,0,273,657],[0,1166,656,835],[3892,801,130,85],[972,1374,235,108],[658,1374,141,288],[972,1484,72,52],[860,1636,140,67],[3733,0,267,548],[2378,1080,1425,738],[2378,0,1078,1078]]}
 ];
 
 
@@ -244,14 +244,14 @@ lib.ssMetadata = [
 
 
 
-(lib.SopaFOndo = function() {
+(lib.RetroalimetaciónFinalSopaLetras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(31);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.VentanaRetroalimentación = function() {
+(lib.SopaFOndo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(32);
 }).prototype = p = new cjs.Sprite();
@@ -1169,7 +1169,7 @@ if (reversed == null) { reversed = false; }
 		      .forEach(p => contador= p.textContent);
 			
 			console.log(contador);
-			
+			//14
 			 if (contador < 14) {	 		 
 				
 		    setTimeout(sayHello, 1000); 
@@ -1196,6 +1196,9 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_1 = function() {
+		createjs.Sound.stop();
+		createjs.Sound.play("retroalimentacion");
+		
 		var _this = this;
 		
 		_this.btnReintentar.on('click', function(){
@@ -1220,7 +1223,6 @@ if (reversed == null) { reversed = false; }
 		 
 		});
 		
-		createjs.Sound.stop();
 		
 		
 		
@@ -1261,22 +1263,22 @@ if (reversed == null) { reversed = false; }
 
 	this.btnReintentar = new lib.btnReintentar();
 	this.btnReintentar.name = "btnReintentar";
-	this.btnReintentar.setTransform(381.9,347.3);
+	this.btnReintentar.setTransform(339.85,347.3);
 	new cjs.ButtonHelper(this.btnReintentar, 0, 1, 2);
 
 	this.btnSalir = new lib.btnSalir();
 	this.btnSalir.name = "btnSalir";
-	this.btnSalir.setTransform(610.6,347.3);
+	this.btnSalir.setTransform(568.55,347.3);
 	new cjs.ButtonHelper(this.btnSalir, 0, 1, 2);
 
 	this.instance_3 = new lib.pato_2();
-	this.instance_3.setTransform(1008.6,354.5,0.5,0.5,0,0,0,-80,-70.4);
+	this.instance_3.setTransform(945.45,264.9,0.5,0.5,0,0,0,-80,-70.4);
 
 	this.instance_4 = new lib.emojis();
 	this.instance_4.setTransform(578.15,136.9,1,1,0,0,0,-115.2,-48.2);
 
-	this.instance_5 = new lib.VentanaRetroalimentación();
-	this.instance_5.setTransform(270,91,0.5,0.5);
+	this.instance_5 = new lib.RetroalimetaciónFinalSopaLetras();
+	this.instance_5.setTransform(168,78,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2}]}).to({state:[{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.btnSalir},{t:this.btnReintentar}]},1).wait(1));
 
@@ -1338,10 +1340,11 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677549483391", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1677549483525", id:"audioLoop"},
-		{src:"sounds/SoundBoton.mp3?1677549483525", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1677549483525", id:"sound"}
+		{src:"images/index_atlas_1.png?1677943821279", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1677943821431", id:"audioLoop"},
+		{src:"sounds/SoundBoton.mp3?1677943821431", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1677943821431", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1677943821431", id:"retroalimentacion"}
 	],
 	preloads: []
 };

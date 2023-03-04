@@ -945,10 +945,10 @@ lib.properties = {
 	color: "#66FF00",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677278142507", id:"index_atlas_1"},
-		{src:"sounds/generales.mp3?1677278142598", id:"generales"},
-		{src:"sounds/indice.mp3?1677278142598", id:"indice"},
-		{src:"sounds/QuestionSoundEffect.mp3?1677278142598", id:"QuestionSoundEffect"}
+		{src:"images/index_atlas_1.png?1677699271990", id:"index_atlas_1"},
+		{src:"sounds/generales.mp3?1677699272066", id:"generales"},
+		{src:"sounds/indice.mp3?1677699272066", id:"indice"},
+		{src:"sounds/QuestionSoundEffect.mp3?1677699272066", id:"QuestionSoundEffect"}
 	],
 	preloads: []
 };

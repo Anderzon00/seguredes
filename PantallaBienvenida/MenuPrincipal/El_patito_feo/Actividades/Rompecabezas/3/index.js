@@ -4,7 +4,7 @@ var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"index_atlas_1", frames: [[0,472,115,91],[403,1026,115,90],[117,472,115,91],[1885,832,115,91],[520,1026,115,90],[1885,925,115,91],[949,1110,447,102],[1398,1119,447,102],[286,1134,447,102],[1807,214,238,101],[1807,317,238,101],[1807,110,237,102],[1885,1111,115,90],[1885,1018,115,91],[286,935,296,89],[949,1017,296,89],[671,285,87,87],[949,460,87,87],[286,1026,115,91],[949,549,87,87],[949,638,87,87],[1457,278,61,63],[1325,365,61,62],[1457,343,61,63],[671,460,276,382],[1521,0,284,451],[1047,278,276,455],[0,0,285,470],[760,0,285,458],[0,574,382,282],[671,844,276,288],[949,735,369,280],[1325,453,376,287],[1703,453,283,377],[287,285,382,287],[287,0,471,283],[1596,832,287,285],[1047,0,472,276],[0,858,284,281],[1320,742,274,366],[384,574,285,359],[2044,0,2,78],[1325,278,130,85],[1807,0,235,108]]},
-		{name:"index_atlas_2", frames: [[0,676,987,885],[937,1563,469,358],[1408,1204,385,364],[0,1563,463,455],[465,1563,470,371],[1408,1570,463,292],[989,837,381,378],[1408,837,457,365],[1300,0,656,835],[0,0,1298,674]]},
+		{name:"index_atlas_2", frames: [[0,740,987,885],[1461,1577,469,358],[1647,837,385,364],[1427,0,463,455],[989,1577,470,371],[459,1627,463,292],[1647,457,381,378],[0,1627,457,365],[989,740,656,835],[0,0,1425,738]]},
 		{name:"index_atlas_3", frames: [[0,891,1324,882],[0,0,1322,889]]}
 ];
 
@@ -414,7 +414,7 @@ lib.ssMetadata = [
 
 
 
-(lib.VentanaRetroalimentación = function() {
+(lib.RetroalimentacionFinalRompecabezas = function() {
 	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
@@ -1884,31 +1884,31 @@ if (reversed == null) { reversed = false; }
 	// botones
 	this.btnReintentar = new lib.btnReintentar();
 	this.btnReintentar.name = "btnReintentar";
-	this.btnReintentar.setTransform(-225.75,142.55);
+	this.btnReintentar.setTransform(-226.75,142.55);
 	new cjs.ButtonHelper(this.btnReintentar, 0, 1, 2);
 
 	this.btnSalir = new lib.btnSalir();
 	this.btnSalir.name = "btnSalir";
-	this.btnSalir.setTransform(-2.25,142.55);
+	this.btnSalir.setTransform(12.75,142.55);
 	new cjs.ButtonHelper(this.btnSalir, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnSalir},{t:this.btnReintentar}]}).wait(1));
 
 	// emotes
 	this.instance = new lib.emojis();
-	this.instance.setTransform(-33.45,-63.9,1,1,0,0,0,-115.2,-48.2);
+	this.instance.setTransform(-57.45,-81.9,1,1,0,0,0,-115.2,-48.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	// pato
 	this.instance_1 = new lib.pato_1();
-	this.instance_1.setTransform(360.05,75.05,0.5,0.5,0,0,0,-80,-70.4);
+	this.instance_1.setTransform(400.05,75.05,0.5,0.5,0,0,0,-80,-70.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
 	// mensaje
-	this.instance_2 = new lib.VentanaRetroalimentación();
-	this.instance_2.setTransform(-345,-107,0.5,0.5);
+	this.instance_2 = new lib.RetroalimentacionFinalRompecabezas();
+	this.instance_2.setTransform(-393,-129,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
 
@@ -2109,12 +2109,10 @@ if (reversed == null) { reversed = false; }
 		root.onWin = function()
 		{
 				createjs.Sound.stop();
+				createjs.Sound.play("retroalimentacion");
+		
 			
-			createjs.Sound.play("correctas", { volume: 0.8}).on("complete", function () {
-		                    
-			
-		window.open('../../Menu', '_self');		 
-		                    }, this);
+			createjs.Sound.play("correctas", { volume: 0.8});
 			_this.mensaje.visible=true;
 			 
 		};
@@ -2140,26 +2138,6 @@ if (reversed == null) { reversed = false; }
 		    element.msRequestFullscreen();
 		  } 
 		});
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnindice.on('click', function(){
-			
-			
-			createjs.Sound.play("sonidoBotones", { volume: 0.8}).on("complete", function () {
-		                    
-			
-		window.open('../../Menu', '_self');		 
-		                    }, this);
-			
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		});
-		
-		
-		
 		sound = createjs.Sound.play("sound", { volume: 0.3,loop:-1});
 		
 		sound.play();
@@ -2179,6 +2157,29 @@ if (reversed == null) { reversed = false; }
 					_this.unmute.visible = true;
 				}
 			});
+		
+		
+		
+		
+		
+		var _this = this;
+		
+		/*
+		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
+		*/
+		_this.btnindice.on('click', function(){
+			
+			
+			createjs.Sound.play("sonidoBotones", { volume: 0.8}).on("complete", function () {
+		                    
+			
+		window.open('../../Menu', '_self');		 
+		                    }, this);
+			
+		/*
+		Carga la URL en una ventana nueva del navegador.
+		*/
+		});
 	}
 
 	// actions tween:
@@ -2286,14 +2287,15 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677547493640", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1677547493641", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1677547493641", id:"index_atlas_3"},
-		{src:"sounds/drop.mp3?1677547493784", id:"drop"},
-		{src:"sounds/error.mp3?1677547493784", id:"error"},
-		{src:"sounds/correctas.mp3?1677547493784", id:"correctas"},
-		{src:"sounds/sonidoBotones.mp3?1677547493784", id:"sonidoBotones"},
-		{src:"sounds/sound.mp3?1677547493784", id:"sound"}
+		{src:"images/index_atlas_1.png?1677942973089", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1677942973089", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1677942973089", id:"index_atlas_3"},
+		{src:"sounds/drop.mp3?1677942973236", id:"drop"},
+		{src:"sounds/error.mp3?1677942973236", id:"error"},
+		{src:"sounds/correctas.mp3?1677942973236", id:"correctas"},
+		{src:"sounds/sonidoBotones.mp3?1677942973236", id:"sonidoBotones"},
+		{src:"sounds/sound.mp3?1677942973236", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1677942973236", id:"retroalimentacion"}
 	],
 	preloads: []
 };

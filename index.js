@@ -1085,12 +1085,12 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/fondoizq.png?1677542543936", id:"fondoizq"},
-		{src:"images/index_atlas_P_1.png?1677542543825", id:"index_atlas_P_1"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1677542543936", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1677542543936", id:"sound"},
-		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1677542543936", id:"notificationsound70621onlineaudioconvertercom"},
-		{src:"sounds/sound2.mp3?1677542543936", id:"sound2"}
+		{src:"images/fondoizq.png?1677687446069", id:"fondoizq"},
+		{src:"images/index_atlas_P_1.png?1677687445960", id:"index_atlas_P_1"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1677687446069", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/sound.mp3?1677687446069", id:"sound"},
+		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1677687446069", id:"notificationsound70621onlineaudioconvertercom"},
+		{src:"sounds/sound2.mp3?1677687446069", id:"sound2"}
 	],
 	preloads: []
 };

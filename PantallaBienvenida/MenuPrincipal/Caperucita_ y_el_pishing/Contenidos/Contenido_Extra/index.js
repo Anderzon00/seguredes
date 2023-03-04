@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[0,0,1373,455],[1437,1447,100,100],[1402,1587,374,374],[1437,1230,499,215],[1288,1984,271,38],[1561,1963,271,38],[1561,2003,271,38],[1404,374,499,215],[0,1230,1435,355],[1437,1549,382,25],[1375,0,372,372],[0,457,1402,397],[0,1587,1400,291],[1288,1880,102,102],[0,856,1442,372],[0,1880,1286,152]]}
+		{name:"index_atlas_1", frames: [[1412,87,286,85],[1412,0,287,85],[0,0,604,397],[606,0,434,339],[1042,0,368,243],[1042,245,440,137],[606,341,382,25],[1288,384,102,102],[0,399,1286,152]]}
 ];
 
 
@@ -27,114 +27,65 @@ lib.ssMetadata = [
 
 
 
-(lib.bordes = function() {
+(lib.btnIndiceContenidosHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Iconodecontenidos = function() {
+(lib.btnIndiceContenidos_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.imggoogle = function() {
+(lib.formainferiorder = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.imgsecurekids = function() {
+(lib.formainferiorizq = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacionDOWN = function() {
+(lib.formasuperiorder = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacionUP = function() {
+(lib.formasuperiorizq = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacion = function() {
+(lib.posicion = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.metacomplianceimg = function() {
+(lib.SiguienteAtras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Metacompliancetext = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(8);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.posicion = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(9);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.safetyimg = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(10);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.safetytext = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(11);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.securekidstext = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(12);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.SiguienteAtras = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(13);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.textphishingquizgoogle = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(14);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.titulo = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(15);
+	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -155,59 +106,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	}
 
 
-(lib.scroll_dummy = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Layer_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#999999").ss(1,1,1).p("AAAkrQAVAAAOAOQAPAPAAAVIAAHzQAAAVgPAOQgOAPgVAAQgUAAgPgPQgOgOAAgVIAAnzQAAgVAOgPQAPgOAUAAg");
-	this.shape.setTransform(5,30);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#999999").s().p("AgjEdQgOgPAAgUIAAnzQAAgUAOgPQAQgPATAAQAVAAAOAPQAPAPAAAUIAAHzQAAAUgPAPQgOAPgVAAQgTAAgQgPg");
-	this.shape_1.setTransform(5,30);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.scroll_dummy, new cjs.Rectangle(-1,-1,12,62), null);
-
-
-(lib.Hit = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// hit
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FF0000").s().p("Egx/AgVMAAAhApMBj/AAAMAAABApg");
-	this.shape.setTransform(0,-23.1);
-	this.shape._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(3).to({_off:false},0).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-320,-230,640,413.8);
-
-
-(lib.btnMasInformacion = function(mode,startPosition,loop,reversed) {
+(lib.Símbolo1 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -219,25 +118,23 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Capa_1
-	this.instance = new lib.masinformacion();
-	this.instance.setTransform(0,0,0.5,0.5);
+	this.instance = new lib.formainferiorizq();
+	this.instance.setTransform(-597,114,0.5,0.5);
 
-	this.instance_1 = new lib.masinformacionUP();
-	this.instance_1.setTransform(0,0,0.5,0.5);
+	this.instance_1 = new lib.formainferiorder();
+	this.instance_1.setTransform(288,85,0.5,0.5);
 
-	this.instance_2 = new lib.masinformacionDOWN();
-	this.instance_2.setTransform(0,0,0.5,0.5);
+	this.instance_2 = new lib.formasuperiorder();
+	this.instance_2.setTransform(406,-284,0.5,0.5);
 
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#000000").s().p("ArWCnIAAlOIWtAAIAAFOg");
-	this.shape.setTransform(67.825,4.8);
+	this.instance_3 = new lib.formasuperiorizq();
+	this.instance_3.setTransform(-597,-284,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.shape}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-4.9,-11.9,145.5,33.5);
+}).prototype = getMCSymbolPrototype(lib.Símbolo1, new cjs.Rectangle(-597,-284,1187,567.5), null);
 
 
 (lib.btnIndece = function(mode,startPosition,loop,reversed) {
@@ -252,19 +149,22 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Capa_1
-	this.instance = new lib.Iconodecontenidos();
-	this.instance.setTransform(-25,-25,0.5,0.5);
+	this.instance = new lib.btnIndiceContenidos_1();
+	this.instance.setTransform(-31,-25,0.5,0.5);
+
+	this.instance_1 = new lib.btnIndiceContenidosHover();
+	this.instance_1.setTransform(-29,-25,0.5198,0.5201);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#3399FF").s().p("AkzDuIAAnbIJnAAIAAHbg");
-	this.shape.setTransform(0.8,0.8);
+	this.shape.graphics.f("#3399FF").s().p("Ap4DuIAAnbITxAAIAAHbg");
+	this.shape.setTransform(-29.95,0.8,1.166,1,0,0,0,-63.2,0);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance,p:{scaleX:0.5,scaleY:0.5}}]}).to({state:[{t:this.instance,p:{scaleX:0.5198,scaleY:0.5201}}]},1).to({state:[{t:this.instance,p:{scaleX:0.5,scaleY:0.5}}]},1).to({state:[{t:this.shape}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance}]},1).to({state:[{t:this.shape}]},1).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-29.9,-25,61.5,52);
+p.nominalBounds = new cjs.Rectangle(-31,-25,150.7,49.6);
 
 
 (lib.sobre_siguiente = function(mode,startPosition,loop,reversed) {
@@ -296,309 +196,6 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-51,-51,120.3,102);
-
-
-(lib.Símbolo2 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	this.isSingleFrame = false;
-	// timeline functions:
-	this.frame_0 = function() {
-		if(this.isSingleFrame) {
-			return;
-		}
-		if(this.totalFrames == 1) {
-			this.isSingleFrame = true;
-		}
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.phishingquiz.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('https://phishingquiz.withgoogle.com/', '_blank');
-		});
-		
-		
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.securekids.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('https://securekids.es/etiqueta/que-es-phishing/', '_blank');
-		});
-		
-		
-		
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.metacompliance.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('https://www.metacompliance.com/es/lp/ultimate-guide-phishing', '_blank');
-		});
-		
-		
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.safety.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('https://es.safetydetectives.com/blog/que-es-el-phishing-guia-sencilla-con-ejemplos/', '_blank');
-		});
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
-
-	// Capa_1
-	this.safety = new lib.btnMasInformacion();
-	this.safety.name = "safety";
-	this.safety.setTransform(567.1,988.45);
-	new cjs.ButtonHelper(this.safety, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
-
-	this.instance = new lib.metacomplianceimg();
-	this.instance.setTransform(815,615,0.4332,0.5134);
-
-	this.instance_1 = new lib.Metacompliancetext();
-	this.instance_1.setTransform(20,522,0.5,0.5);
-
-	this.instance_2 = new lib.safetytext();
-	this.instance_2.setTransform(20,816,0.5,0.5);
-
-	this.instance_3 = new lib.bordes();
-	this.instance_3.setTransform(-5,791,0.543,0.5);
-
-	this.instance_4 = new lib.safetyimg();
-	this.instance_4.setTransform(830,833,0.5,0.5);
-
-	this.instance_5 = new lib.imgsecurekids();
-	this.instance_5.setTransform(812,303,0.4439,0.5161);
-
-	this.metacompliance = new lib.btnMasInformacion();
-	this.metacompliance.name = "metacompliance";
-	this.metacompliance.setTransform(567.1,695.9);
-	new cjs.ButtonHelper(this.metacompliance, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
-
-	this.instance_6 = new lib.bordes();
-	this.instance_6.setTransform(0,498,0.543,0.5);
-
-	this.securekids = new lib.btnMasInformacion();
-	this.securekids.name = "securekids";
-	this.securekids.setTransform(567.1,427.35);
-	new cjs.ButtonHelper(this.securekids, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
-
-	this.instance_7 = new lib.securekidstext();
-	this.instance_7.setTransform(16,268,0.543,0.5);
-
-	this.instance_8 = new lib.imggoogle();
-	this.instance_8.setTransform(829,19,0.5,0.5);
-
-	this.phishingquiz = new lib.btnMasInformacion();
-	this.phishingquiz.name = "phishingquiz";
-	this.phishingquiz.setTransform(567.1,182.8);
-	new cjs.ButtonHelper(this.phishingquiz, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
-
-	this.instance_9 = new lib.textphishingquizgoogle();
-	this.instance_9.setTransform(11,30,0.543,0.5);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9},{t:this.phishingquiz},{t:this.instance_8},{t:this.instance_7},{t:this.securekids},{t:this.instance_6},{t:this.metacompliance},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.safety}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.Símbolo2, new cjs.Rectangle(-5,19,1038.6,1000), null);
-
-
-(lib.Símbolo1 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// timeline functions:
-	this.frame_0 = function() {
-		var root = this;
-		
-		root.targetTimeline = this;
-		root.targetTimeline.loop = true;
-		root.targetTimeline.force = 1;
-		root.targetTimeline.friction = 0.8;
-		root.targetTimeline.direction = -1; // scroll direction
-		root.targetTimeline.minFrame = 0; // set the start range value here
-		root.targetTimeline.maxFrame = root.targetTimeline.totalFrames - 1; // set the end range value here
-		root.targetTimeline.speed = 0;
-		root.targetTimeline.pressed = false;
-		
-		root.start = function ()
-		{
-			createjs.Touch.enable(stage);
-			root.hit.cursor = "default";
-			root.gotoAndStop(root.targetTimeline.minFrame);
-			canvas.addEventListener('mousewheel', root.onMouseWheel.bind(root));
-			canvas.addEventListener('DOMMouseScroll', root.onMouseWheel.bind(root));
-			stage.on("stagemousedown", root.onStageMouseDown.bind(root));
-			createjs.Ticker.on("tick", root.tickHandler);
-		};
-		
-		root.onMouseWheel = function (e)
-		{
-			e.preventDefault();
-		
-			var evt = window.event || e;
-			var delta = Math.max(-1, Math.min(1, evt.wheelDelta || -evt.detail));
-		
-			root.targetTimeline.speed += delta * root.force * root.direction;
-		};
-		
-		root.onStageMouseDown = function (e)
-		{
-			root.targetTimeline.pressedX = e.stageX / stage.scaleX;
-			root.targetTimeline.pressed = true;
-			root.targetTimeline.stageMouseUp = stage.on("stagemouseup", root.onStageMouseUp.bind(root));
-		};
-		
-		root.tickHandler = function (e)
-		{
-			var clamp = root.targetTimeline.loop ? "loopClamp" : "clamp";
-			var mouseX = stage.mouseX / stage.scaleX;
-			
-			if (root.targetTimeline.pressed && mouseX !== root.targetTimeline.pressedX)
-			{
-				root.targetTimeline.speed = (mouseX > root.targetTimeline.pressedX ? 1 : -1) * root.direction * root.force;
-				root.targetTimeline.pressedX = mouseX;
-			}
-			
-			root.targetTimeline.speed *= root.targetTimeline.friction;
-			root.targetTimeline.gotoAndStop(root[clamp](root.targetTimeline.currentFrame + root.targetTimeline.speed, root.targetTimeline.minFrame, root.targetTimeline.maxFrame));
-		};
-		
-		root.onStageMouseUp = function (e)
-		{
-			root.targetTimeline.pressed = false;
-			stage.off("stagemouseup", root.targetTimeline.stageMouseUp);
-		};
-		
-		root.loopClamp = function(value, min, max)
-		{
-			if (value < min)
-				return min;
-			
-			if (value > max)
-				return max;
-				
-			return value;
-		};
-		
-		root.clamp = function(value, min, max)
-		{
-			if (value < min)
-				return max;
-			
-			if (value > max)
-				return min;
-				
-			return value;
-		};
-		
-		if (!root.hasStarted)
-		{
-			root.start();
-			root.hasStarted = true;
-		}
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(61));
-
-	// mascara (mask)
-	var mask = new cjs.Shape();
-	mask._off = true;
-	mask.graphics.p("EhXgAcyMAAAg5jMCvBAAAMAAAA5jg");
-	mask.setTransform(-0.525,-61.925);
-
-	// scroll_dummy
-	this.instance = new lib.scroll_dummy();
-	this.instance.setTransform(537,-197,1,1,0,0,0,5,30);
-
-	var maskedShapeInstanceList = [this.instance];
-
-	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
-		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
-	}
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({y:-41.25},60).wait(1));
-
-	// anim
-	this.instance_1 = new lib.Símbolo2();
-	this.instance_1.setTransform(0.1,165.8,1,1,0,0,0,528,392.8);
-
-	var maskedShapeInstanceList = [this.instance_1];
-
-	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
-		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
-	}
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({regX:514.3,regY:519,x:-13.6,y:279.8},0).wait(1).to({y:267.55},0).wait(1).to({y:255.35},0).wait(1).to({y:243.1},0).wait(1).to({y:230.85},0).wait(1).to({y:218.65},0).wait(1).to({y:206.4},0).wait(1).to({y:194.2},0).wait(1).to({y:181.95},0).wait(1).to({y:169.7},0).wait(1).to({y:157.5},0).wait(1).to({y:145.25},0).wait(1).to({y:133.05},0).wait(1).to({y:120.8},0).wait(1).to({y:108.55},0).wait(1).to({y:96.35},0).wait(1).to({y:84.1},0).wait(1).to({y:71.9},0).wait(1).to({y:59.65},0).wait(1).to({y:47.4},0).wait(1).to({y:35.2},0).wait(1).to({y:22.95},0).wait(1).to({y:10.75},0).wait(1).to({y:-1.5},0).wait(1).to({y:-13.75},0).wait(1).to({y:-25.95},0).wait(1).to({y:-38.2},0).wait(1).to({y:-50.4},0).wait(1).to({y:-62.65},0).wait(1).to({y:-74.9},0).wait(1).to({y:-87.1},0).wait(1).to({y:-99.35},0).wait(1).to({y:-111.55},0).wait(1).to({y:-123.8},0).wait(1).to({y:-136.05},0).wait(1).to({y:-148.25},0).wait(1).to({y:-160.5},0).wait(1).to({y:-172.7},0).wait(1).to({y:-184.95},0).wait(1).to({y:-197.2},0).wait(1).to({y:-209.4},0).wait(1).to({y:-221.65},0).wait(1).to({y:-233.85},0).wait(1).to({y:-246.1},0).wait(1).to({y:-258.35},0).wait(1).to({y:-270.55},0).wait(1).to({y:-282.8},0).wait(1).to({y:-295},0).wait(1).to({y:-307.25},0).wait(1).to({y:-319.5},0).wait(1).to({y:-331.7},0).wait(1).to({y:-343.95},0).wait(1).to({y:-356.15},0).wait(1).to({y:-368.4},0).wait(1).to({y:-380.65},0).wait(1).to({y:-392.85},0).wait(1).to({y:-405.1},0).wait(1).to({y:-417.3},0).wait(1).to({y:-429.55},0).wait(1).to({y:-441.8},0).wait(1));
-
-	// rail
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#999999").ss(1,1,1).p("AAA+dQAVAAAOAPQAPAPAAAUMAAAA7XQAAAUgPAPQgOAPgVAAQgUAAgPgPQgOgPAAgUMAAAg7XQAAgUAOgPQAPgPAUAAg");
-	this.shape.setTransform(537,-117.629,1,0.5474);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#CCCCCC").s().p("AgjePQgOgPAAgUMAAAg7XQAAgUAOgPQAQgPATAAQAVAAAOAPQAPAPAAAUMAAAA7XQAAAUgPAPQgOAPgVAAQgTAAgQgPg");
-	this.shape_1.setTransform(537,-117.629,1,0.5474);
-
-	var maskedShapeInstanceList = [this.shape,this.shape_1];
-
-	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
-		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
-	}
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(61));
-
-	// hit
-	this.hit = new lib.Hit();
-	this.hit.name = "hit";
-	this.hit.setTransform(-566.3,1,1.7587,1,0,0,0,-320.2,0);
-	new cjs.ButtonHelper(this.hit, 0, 1, 2, false, new lib.Hit(), 3);
-
-	var maskedShapeInstanceList = [this.hit];
-
-	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
-		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
-	}
-
-	this.timeline.addTween(cjs.Tween.get(this.hit).wait(61));
-
-	this._renderFirstFrame();
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-560.6,-246.1,1120.2,368.4);
 
 
 (lib.btnSiguiente = function(mode,startPosition,loop,reversed) {
@@ -656,6 +253,48 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
+		var root = this;
+		var key;
+		
+		var element = document.createElement('div');
+		canvas.parentNode.appendChild(element);
+		height = 9 * Math.max(window.innerHeight) / 16;
+		width = 27.85 * (Math.max(window.innerWidth) / 32);
+		topElement = 3.3 * Math.max(window.innerHeight) / 16 + 'px';
+		leftElement = 2 * Math.max(window.innerWidth) / 32 + 'px';
+		
+		element.innerHTML = '<iframe  id="video"  style="border:none "   src="indexpequeño.html" width="' + width + '" height="' + height + '">';
+		
+		
+		 
+		
+		
+		
+		function embed(style) {
+			for (key in style)
+				element.style[key] = style[key];
+		}
+		
+		embed({
+			position: 'absolute',
+			top: topElement,
+			left: leftElement
+		});
+		
+		window.addEventListener('resize', () => {
+			topElement = 4 * Math.max(window.innerHeight) / 16 + 'px';
+			leftElement = 3.3 * Math.max(window.innerWidth) / 32 + 'px';
+			height = 9* Math.max(window.innerHeight) / 16;
+			width = 27.85 * (Math.max(window.innerWidth) / 32);
+			embed({
+				position: 'absolute',
+				top: topElement,
+				left: leftElement
+			});
+			document.getElementById('video').style.width = width + 'px';
+			document.getElementById('video').style.height = height + 'px';
+		
+		})
 		if(document.location.href.indexOf('#')>-1){
 		this.gotoAndStop(document.location.href.split('#')[1]);
 		}
@@ -665,19 +304,32 @@ if (reversed == null) { reversed = false; }
 		    stretchToFit();
 		}
 		
-		
-		
-		
-		
 		this.btnAtras.addEventListener("click", fl_ClickToGoToWebPage_19);
 		
 		 function fl_ClickToGoToWebPage_19() {
+			 createjs.Sound.play("audioG", { volume: 0.8}).on("complete", function () {
+		                    
+			
 			window.open("../Si_me_ocurre/index.html#final", "_self");
+				 
+		                    }, this);
+		
+			 
+			 
 		}	 
 		
 		this.btnIndice.addEventListener("click", fl_ClickToGoToWebPage_20);
 		function fl_ClickToGoToWebPage_20() {
+			
+			createjs.Sound.play("audioC", { volume: 0.8}).on("complete", function () {
+		                    
+			
 			window.open("../", "_self");
+				 
+		                    }, this);
+		
+			
+			
 		}
 	}
 
@@ -692,12 +344,6 @@ if (reversed == null) { reversed = false; }
 	this.instance_1.setTransform(272,25,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
-
-	// imagen_1
-	this.instance_2 = new lib.Símbolo1();
-	this.instance_2.setTransform(600.05,558.7,1,1,0,0,0,-13.6,196.2);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
 
 	// flechas
 	this.btnAtras = new lib.btnSiguiente();
@@ -715,10 +361,17 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.btnIndice).wait(1));
 
+	// Capa_2
+	this.movieClip_9 = new lib.Símbolo1();
+	this.movieClip_9.name = "movieClip_9";
+	this.movieClip_9.setTransform(597.5,284.9);
+
+	this.timeline.addTween(cjs.Tween.get(this.movieClip_9).wait(1));
+
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(609.5,349.5,519.3,284);
+p.nominalBounds = new cjs.Rectangle(594,325.4,593.5,305.6);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -726,9 +379,11 @@ lib.properties = {
 	height: 649,
 	fps: 25,
 	color: "#FFFFFF",
-	opacity: 1.00,
+	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1672156749441", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1677686481035", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1677686481066", id:"audioG"},
+		{src:"sounds/audioC.mp3?1677686481066", id:"audioC"}
 	],
 	preloads: []
 };
