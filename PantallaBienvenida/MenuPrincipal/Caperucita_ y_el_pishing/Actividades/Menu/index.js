@@ -1565,12 +1565,12 @@ if (reversed == null) { reversed = false; }
 
 	// stageBackground
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("rgba(0,0,0,0)").ss(1,1,1,3,true).p("Ehecg0QMC85AAAMAAABohMi85AAAg");
-	this.shape.setTransform(594.5,324.5);
+	this.shape.graphics.f().s("rgba(0,0,0,0)").ss(1,1,1,3,true).p("EhecgtOMC85AAAMAAABadMi85AAAg");
+	this.shape.setTransform(594.5,279.5);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("rgba(35,85,148,0)").s().p("EhecA0RMAAAhohMC85AAAMAAABohg");
-	this.shape_1.setTransform(594.5,324.5);
+	this.shape_1.graphics.f("rgba(35,85,148,0)").s().p("EhecAtPMAAAhadMC85AAAMAAABadg");
+	this.shape_1.setTransform(594.5,279.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(3));
 
@@ -1582,18 +1582,18 @@ p.nominalBounds = new cjs.Rectangle(0,0,1248,637);
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
 	width: 1189,
-	height: 649,
+	height: 559,
 	fps: 25,
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677971909540", id:"index_atlas_1"},
-		{src:"sounds/error41.mp3?1677971909658", id:"error41"},
-		{src:"sounds/sound.mp3?1677971909658", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1677971909658", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1677971909658", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1677971909658", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1677971909658", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1677972280067", id:"index_atlas_1"},
+		{src:"sounds/error41.mp3?1677972280182", id:"error41"},
+		{src:"sounds/sound.mp3?1677972280182", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1677972280182", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1677972280182", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1677972280182", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1677972280182", id:"an.TextInput"}
 	],
 	preloads: []
 };
