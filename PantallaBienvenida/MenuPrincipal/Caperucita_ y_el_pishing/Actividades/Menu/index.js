@@ -1405,22 +1405,33 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		this.stop();
-		
+		window.addEventListener("keydown", function(e){
+			 
+			 if( e.keyCode==13){
+				
+			 
+		if ($("#imput1").val()=="Estafa" || $("#imput1").val()=="estafa"  ) 
+			window.open('../PeligroNoPeligro', '_self'); 
+		else if ($("#imput2").val()=="Suplantación"  || $("#imput2").val()=="suplantación" ||$("#imput2").val()=="Suplantacion"  || $("#imput2").val()=="suplantacion") 
+				window.open('../ExplosionGlobos', '_self'); 
+			else 		 
+		_this.gotoAndStop(1);	 }
+		        });
 		
 		var _this = this;
-		 
-		
-		 
-		
-			
-			
-		 
-		
-		 
+				
 		_this.btnEntrar1.on('click', function(){	
 			
 		if ($("#imput1").val()=="Estafa" || $("#imput1").val()=="estafa"  ) 
+			
+		 { 	
+			createjs.Sound.play("play", {
+				volume: 0.5
+			}).on("complete", function () {
 			window.open('../PeligroNoPeligro', '_self'); 
+			}, this);
+			}
+		
 			else  		
 		_this.gotoAndStop(1);	
 			
@@ -1431,25 +1442,34 @@ if (reversed == null) { reversed = false; }
 				
 		if ($("#imput2").val()=="Suplantación"  || $("#imput2").val()=="suplantación" ||$("#imput2").val()=="Suplantacion"  || $("#imput2").val()=="suplantacion") 
 			
+		
+		 { 	
+			createjs.Sound.play("play", {
+				volume: 0.5
+			}).on("complete", function () {
 			window.open('../ExplosionGlobos', '_self'); 
+			}, this);
+			}
+		
+		
 			else 		 
-		_this.gotoAndStop(1); 
-		 
+		_this.gotoAndStop(1);  
 		});
-		
-		
-		
-		
 		
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
 		_this.AplastarYgolpear.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
+		
+			 { 	
+			createjs.Sound.play("play", {
+				volume: 0.5
+			}).on("complete", function () {
 		   window.open('../AplastarGolpear', '_self');
+			}, this);
+			}
+			
 		});
 	}
 	this.frame_1 = function() {
@@ -1587,13 +1607,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677972661151", id:"index_atlas_1"},
-		{src:"sounds/error41.mp3?1677972661276", id:"error41"},
-		{src:"sounds/sound.mp3?1677972661276", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1677972661276", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1677972661276", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1677972661276", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1677972661276", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1678036955315", id:"index_atlas_1"},
+		{src:"sounds/play.mp3?1678036955419", id:"play"},
+		{src:"sounds/error41.mp3?1678036955419", id:"error41"},
+		{src:"sounds/sound.mp3?1678036955419", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1678036955419", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1678036955419", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1678036955419", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1678036955419", id:"an.TextInput"}
 	],
 	preloads: []
 };
