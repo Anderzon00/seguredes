@@ -639,7 +639,7 @@ if (reversed == null) { reversed = false; }
 		_this.btnInicio.on('click', function () {
 			createjs.Sound.play("sound2", {	volume: 0.5
 			}).on("complete", function () {
-				window.open("../../../../", "_self");
+				window.open("../../", "_self");
 			}, this);
 		});
 		
@@ -648,7 +648,7 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.play("sound2", {
 				volume: 0.8
 			}).on("complete", function () {
-				window.open("../", "_self");
+				window.open("../MenuPrincipal", "_self");
 			}, this);
 		});
 		
@@ -959,14 +959,14 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1677948527500", id:"bannernegro1"},
-		{src:"images/fondo1111.png?1677948527500", id:"fondo1111"},
-		{src:"images/fondoMorado.png?1677948527500", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1677948527421", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1677948527421", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1677948527500", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1677948527500", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1677948527500", id:"sound1"}
+		{src:"images/bannernegro1.png?1678162577765", id:"bannernegro1"},
+		{src:"images/fondo1111.png?1678162577765", id:"fondo1111"},
+		{src:"images/fondoMorado.png?1678162577765", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1678162577625", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1678162577626", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1678162577769", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1678162577769", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1678162577769", id:"sound1"}
 	],
 	preloads: []
 };

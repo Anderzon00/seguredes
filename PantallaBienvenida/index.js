@@ -421,7 +421,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnVamos.on('click', function(){
 			 createjs.Sound.play("sound", { volume: 0.8}).on("complete", function () {                    
-				 window.open("MenuPrincipal", "_self");		 
+				 window.open("../MenuPrincipal", "_self");		 
 		                    }, this);
 		});
 	}
@@ -586,9 +586,9 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Fondo_1.png?1677259366542", id:"Fondo_1"},
-		{src:"images/index_atlas_P_1.png?1677259366456", id:"index_atlas_P_1"},
-		{src:"sounds/sound.mp3?1677259366542", id:"sound"}
+		{src:"images/Fondo_1.png?1678160696350", id:"Fondo_1"},
+		{src:"images/index_atlas_P_1.png?1678160696156", id:"index_atlas_P_1"},
+		{src:"sounds/sound.mp3?1678160696351", id:"sound"}
 	],
 	preloads: []
 };
