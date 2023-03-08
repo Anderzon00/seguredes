@@ -2599,7 +2599,7 @@ if (reversed == null) { reversed = false; }
 		 var _this = this;
 		 
 		 
-		 sound =createjs.Sound.play("BGM",  { volume: 0.5, loop: -1 });
+		 sound =createjs.Sound.play("BGM",  { volume: 0.8, loop: -1 });
 		
 		 
 		 _this.on("click", function (e) {
@@ -2981,7 +2981,17 @@ if (reversed == null) { reversed = false; }
 		createjs.Sound.play("Voice2");
 	}
 	this.frame_15 = function() {
-		var _this= this;
+		var _this = this;
+		/*
+		Detener un clip de película o un vídeo
+		Detiene el clip de película o el vídeo especificado.
+		*/
+		_this.stop();
+		
+		
+		
+		
+		
 		
 		
 		
@@ -3477,21 +3487,19 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_15}]},1).to({state:[{t:this.instance_15},{t:this.instance_16},{t:this.retroalimentacion_mc},{t:this.r1}]},1).to({state:[{t:this.instance_17}]},1).to({state:[{t:this.instance_17},{t:this.instance_16},{t:this.retroalimentacion_mc},{t:this.r2}]},1).to({state:[{t:this.instance_18}]},1).to({state:[{t:this.instance_18},{t:this.instance_16},{t:this.retroalimentacion_mc},{t:this.r3}]},1).to({state:[{t:this.instance_19}]},1).to({state:[{t:this.instance_19},{t:this.instance_16},{t:this.retroalimentacion_mc},{t:this.r4}]},1).to({state:[{t:this.instance_20}]},1).to({state:[{t:this.instance_20},{t:this.instance_16},{t:this.retroalimentacion_mc},{t:this.r5}]},1).to({state:[{t:this.instance_21}]},1).to({state:[{t:this.instance_21},{t:this.instance_16},{t:this.retroalimentacion_mc},{t:this.r6}]},1).to({state:[{t:this.instance_22}]},1).to({state:[{t:this.instance_22},{t:this.instance_16},{t:this.retroalimentacion_mc},{t:this.r7}]},1).to({state:[{t:this.instance_24},{t:this.instance_23,p:{x:206,y:134}}]},1).to({state:[{t:this.instance_23,p:{x:220,y:100}},{t:this.instance_25}]},1).wait(1));
 
 	// respuestas
-	this.incorrectastext = new cjs.Text("Malas", "bold 30px 'Comic Sans MS'", "#990000");
+	this.incorrectastext = new cjs.Text("Malas", "bold 28px 'Comic Sans MS'", "#990000");
 	this.incorrectastext.name = "incorrectastext";
-	this.incorrectastext.lineHeight = 44;
+	this.incorrectastext.lineHeight = 41;
 	this.incorrectastext.lineWidth = 157;
-	this.incorrectastext.alpha = 0.57647059;
 	this.incorrectastext.parent = this;
-	this.incorrectastext.setTransform(560.3,306.6);
+	this.incorrectastext.setTransform(560.3,305.6);
 
-	this.correctastext = new cjs.Text("Correctas", "bold 30px 'Comic Sans MS'", "#006600");
+	this.correctastext = new cjs.Text("Correctas", "bold 28px 'Comic Sans MS'", "#006600");
 	this.correctastext.name = "correctastext";
-	this.correctastext.lineHeight = 44;
+	this.correctastext.lineHeight = 41;
 	this.correctastext.lineWidth = 157;
-	this.correctastext.alpha = 0.57647059;
 	this.correctastext.parent = this;
-	this.correctastext.setTransform(559.3,266.8);
+	this.correctastext.setTransform(559.3,265.8);
 
 	this.instance_26 = new lib.bien_mal();
 	this.instance_26.setTransform(247.75,299.05,1,1,0,0,0,16.5,32.8);
@@ -3502,7 +3510,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_28 = new lib.retroalimentacionFinalQuiz();
 	this.instance_28.setTransform(82,55,0.5932,0.5932);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_27},{t:this.instance_26},{t:this.correctastext,p:{x:559.3,y:266.8}},{t:this.incorrectastext,p:{x:560.3,y:306.6}}]},15).to({state:[{t:this.instance_28},{t:this.correctastext,p:{x:516,y:368.8}},{t:this.incorrectastext,p:{x:533,y:415.45}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_27},{t:this.instance_26},{t:this.correctastext,p:{x:559.3,y:265.8}},{t:this.incorrectastext,p:{x:560.3,y:305.6}}]},15).to({state:[{t:this.instance_28},{t:this.correctastext,p:{x:516,y:368.8}},{t:this.incorrectastext,p:{x:533,y:415.45}}]},1).wait(1));
 
 	// emotes
 	this.instance_29 = new lib.emotesmc();
@@ -3546,22 +3554,22 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/EstrellasFondoRompecabezas.png?1677944789982", id:"EstrellasFondoRompecabezas"},
-		{src:"images/FondoselecciónMúltiple.png?1677944789982", id:"FondoselecciónMúltiple"},
-		{src:"images/Fondo2selecciónMúltiple.png?1677944789982", id:"Fondo2selecciónMúltiple"},
-		{src:"images/index_atlas_1.png?1677944789713", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1677944789714", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1677944789714", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1677944789715", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1677944789715", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1677944789722", id:"index_atlas_6"},
-		{src:"sounds/Voice2.mp3?1677944789982", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1677944789982", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1677944789982", id:"Voice4"},
-		{src:"sounds/Voice1.mp3?1677944789982", id:"Voice1"},
-		{src:"sounds/SoundBoton.mp3?1677944789982", id:"SoundBoton"},
-		{src:"sounds/retroalimentacion.mp3?1677944789982", id:"retroalimentacion"},
-		{src:"sounds/BGM.mp3?1677944789982", id:"BGM"}
+		{src:"images/EstrellasFondoRompecabezas.png?1678298113222", id:"EstrellasFondoRompecabezas"},
+		{src:"images/FondoselecciónMúltiple.png?1678298113222", id:"FondoselecciónMúltiple"},
+		{src:"images/Fondo2selecciónMúltiple.png?1678298113222", id:"Fondo2selecciónMúltiple"},
+		{src:"images/index_atlas_1.png?1678298112936", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1678298112937", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1678298112937", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1678298112938", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1678298112938", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1678298112938", id:"index_atlas_6"},
+		{src:"sounds/Voice2.mp3?1678298113222", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1678298113222", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1678298113222", id:"Voice4"},
+		{src:"sounds/Voice1.mp3?1678298113222", id:"Voice1"},
+		{src:"sounds/SoundBoton.mp3?1678298113222", id:"SoundBoton"},
+		{src:"sounds/retroalimentacion.mp3?1678298113222", id:"retroalimentacion"},
+		{src:"sounds/BGM.mp3?1678298113222", id:"BGM"}
 	],
 	preloads: []
 };

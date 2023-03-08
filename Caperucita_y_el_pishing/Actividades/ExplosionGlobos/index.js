@@ -2129,13 +2129,13 @@ if (reversed == null) { reversed = false; }
 	this.shape_2.graphics.f("#FFFFFF").s().p("AjaDGQgugHgigwQgpg6AAhRQAAhQApg6QApg5A5AAQA7AAAoA5IAJAOQAgA1AABHQAABRgpA6QgoA5g7AAQgJAAgJgCgABmCHQgpg6AAhQQAAhRApg6QApg5A6AAQA5AAApA5QApA6AABRQAABQgpA6QgpA5g5AAQg6AAgpg5g");
 	this.shape_2.setTransform(41.15,23);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.shape}]},39).to({state:[{t:this.shape_1}]},11).to({state:[{t:this.shape_2}]},9).wait(11));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.shape}]},39).to({state:[{t:this.shape_1}]},8).to({state:[{t:this.shape_2}]},8).wait(8));
 
 	// Capa_1
 	this.instance = new lib.Ojos();
 	this.instance.setTransform(4,2,0.45,0.45);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(70));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(63));
 
 	this._renderFirstFrame();
 
@@ -4532,7 +4532,7 @@ if (reversed == null) { reversed = false; }
 
 	// Ojos_png
 	this.instance = new lib.ojosLobo();
-	this.instance.setTransform(718.45,144.4,1,1,0,0,0,36.2,21.4);
+	this.instance.setTransform(682.25,123);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
@@ -4560,15 +4560,15 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1));
 
-	// Boca2_png
-	this.instance_5 = new lib.boca();
-	this.instance_5.setTransform(722.4,191.2,1,1,0,0,0,30.4,18.2);
+	// Capa_1
+	this.instance_5 = new lib.ventanaRetroalimentaciónNegativa();
+	this.instance_5.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1));
 
-	// Capa_1
-	this.instance_6 = new lib.ventanaRetroalimentaciónNegativa();
-	this.instance_6.setTransform(0,0,0.5,0.5);
+	// Boca2_png
+	this.instance_6 = new lib.boca();
+	this.instance_6.setTransform(713.45,210.2,1,1,3.9759,0,0,30.4,18.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(1));
 
@@ -5535,7 +5535,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_4 = new lib.letreroVerde();
 	this.instance_4.setTransform(575.7,209.65,1,1,0,0,0,422.7,218.6);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.explosion},{t:this.explosion2},{t:this.explosion3},{t:this.mal},{t:this.bien}]}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.correctastext,p:{x:604.3,y:266.8}},{t:this.incorrectastext,p:{x:605.3,y:306.6}},{t:this.btnReintentar},{t:this.btnSalir}]},10).to({state:[{t:this.instance_4},{t:this.correctastext,p:{x:473,y:307.85}},{t:this.incorrectastext,p:{x:474,y:338.5}},{t:this.btnReintentarVerde},{t:this.btnSalirVerde},{t:this.instance_3}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.explosion},{t:this.explosion2},{t:this.explosion3},{t:this.mal},{t:this.bien}]}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.correctastext,p:{x:604.3,y:266.8,font:"bold 30px 'Comic Sans MS'",lineHeight:43.8}},{t:this.incorrectastext,p:{x:605.3,y:306.6,font:"bold 30px 'Comic Sans MS'",lineHeight:43.8}},{t:this.btnReintentar},{t:this.btnSalir}]},10).to({state:[{t:this.instance_4},{t:this.correctastext,p:{x:473,y:308.85,font:"bold 28px 'Comic Sans MS'",lineHeight:41}},{t:this.incorrectastext,p:{x:474,y:339.5,font:"bold 28px 'Comic Sans MS'",lineHeight:41}},{t:this.btnReintentarVerde},{t:this.btnSalirVerde},{t:this.instance_3}]},1).wait(1));
 
 	// Capa_1
 	this.instance_5 = new lib.Lineasparaletras();
@@ -6568,18 +6568,18 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/FondoActividad.png?1677957871327", id:"FondoActividad"},
-		{src:"images/index_atlas_1.png?1677957871010", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1677957871010", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1677957871013", id:"index_atlas_3"},
-		{src:"sounds/audioG.mp3?1677957871327", id:"audioG"},
-		{src:"sounds/audioC.mp3?1677957871327", id:"audioC"},
-		{src:"sounds/correct.mp3?1677957871327", id:"correct"},
-		{src:"sounds/mal.mp3?1677957871327", id:"mal"},
-		{src:"sounds/final_corretas.mp3?1677957871327", id:"final_corretas"},
-		{src:"sounds/sound2.mp3?1677957871327", id:"sound2"},
-		{src:"sounds/sound.mp3?1677957871327", id:"sound"},
-		{src:"sounds/s_1.mp3?1677957871327", id:"s_1"}
+		{src:"images/FondoActividad.png?1678293821103", id:"FondoActividad"},
+		{src:"images/index_atlas_1.png?1678293820642", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1678293820642", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1678293820646", id:"index_atlas_3"},
+		{src:"sounds/audioG.mp3?1678293821103", id:"audioG"},
+		{src:"sounds/audioC.mp3?1678293821103", id:"audioC"},
+		{src:"sounds/correct.mp3?1678293821103", id:"correct"},
+		{src:"sounds/mal.mp3?1678293821103", id:"mal"},
+		{src:"sounds/final_corretas.mp3?1678293821103", id:"final_corretas"},
+		{src:"sounds/sound2.mp3?1678293821103", id:"sound2"},
+		{src:"sounds/sound.mp3?1678293821103", id:"sound"},
+		{src:"sounds/s_1.mp3?1678293821103", id:"s_1"}
 	],
 	preloads: []
 };

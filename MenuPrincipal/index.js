@@ -589,6 +589,55 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.pinocho_silueta, new cjs.Rectangle(0,0,240,219.5), null);
 
 
+(lib.Interpolación10 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.GeppetobrazoDEr();
+	this.instance.setTransform(-41.25,-35.5,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-41.2,-35.5,82.5,71);
+
+
+(lib.Interpolación8 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.GeppetoMangaDer();
+	this.instance.setTransform(-23.3,-81.9,0.5,0.5,4.944);
+
+	this.instance_1 = new lib.GeppetobrazoIzq();
+	this.instance_1.setTransform(-13.4,-33.55,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-28.4,-81.9,56.9,163.9);
+
+
 (lib.Interpolación7 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -983,18 +1032,70 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.Interpolación2("synched",0);
 	this.instance.setTransform(76.1,58.55,1,1,0,0,0,6.6,28.8);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:-9.9563,y:58.5},24).to({rotation:0,y:58.55},19).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	// lobo
 	this.instance_1 = new lib.zorrocuerpo();
 	this.instance_1.setTransform(0,41,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(44));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.zorro, new cjs.Rectangle(0,0,103,112.5), null);
+
+
+(lib.gepetto = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Geppeto_Ojos_png
+	this.instance = new lib.GeppetoOjos();
+	this.instance.setTransform(119,59,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(50));
+
+	// MergedLayer_1
+	this.instance_1 = new lib.Interpolación8("synched",0);
+	this.instance_1.setTransform(68,95.05,1,1,0,0,0,16.6,-79.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({regY:-79.4,rotation:4.1994,x:67.95,y:95.1},24).to({regY:-79.5,rotation:0,x:68,y:95.05},25).wait(1));
+
+	// Geppeto_Boca_png
+	this.instance_2 = new lib.GeppetoBoca();
+	this.instance_2.setTransform(117,101,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(50));
+
+	// Geppeto_Cabeza_png
+	this.instance_3 = new lib.GeppetoCabeza();
+	this.instance_3.setTransform(66,0,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(50));
+
+	// Geppetto_Silueta_png
+	this.instance_4 = new lib.GeppettoSilueta();
+	this.instance_4.setTransform(0,90,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(50));
+
+	// Geppeto_brazoDEr_png
+	this.instance_5 = new lib.Interpolación10("synched",0);
+	this.instance_5.setTransform(134.65,168,1,1,0,0,0,-36.6,-10.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).to({rotation:-19.9734},24).to({rotation:0},25).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,-3.8,103,116.3);
+p.nominalBounds = new cjs.Rectangle(0,0,223.6,430.5);
 
 
 (lib.carpintero = function(mode,startPosition,loop,reversed) {
@@ -1052,68 +1153,50 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
 
-	// gepeto
-	this.instance_3 = new lib.GeppetoOjos();
-	this.instance_3.setTransform(360,180,0.5,0.5);
+	// gepetto
+	this.instance_3 = new lib.gepetto();
+	this.instance_3.setTransform(347.2,336.2,1,1,0,0,0,106.2,215.2);
 
-	this.instance_4 = new lib.GeppetoMangaDer();
-	this.instance_4.setTransform(269,217,0.5,0.5);
-
-	this.instance_5 = new lib.GeppetoCabeza();
-	this.instance_5.setTransform(307,121,0.5,0.5);
-
-	this.instance_6 = new lib.GeppetobrazoIzq();
-	this.instance_6.setTransform(279,262,0.5,0.5);
-
-	this.instance_7 = new lib.GeppetoBoca();
-	this.instance_7.setTransform(357,223,0.5,0.5);
-
-	this.instance_8 = new lib.GeppettoSilueta();
-	this.instance_8.setTransform(241,211,0.5,0.5);
-
-	this.instance_9 = new lib.GeppetobrazoDEr();
-	this.instance_9.setTransform(371,264,0.5,0.5);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1));
 
 	// aurora
-	this.instance_10 = new lib.Auroraboca();
-	this.instance_10.setTransform(733,389,0.5,0.5);
+	this.instance_4 = new lib.Auroraboca();
+	this.instance_4.setTransform(733,389,0.5,0.5);
 
-	this.instance_11 = new lib.Auroraojos();
-	this.instance_11.setTransform(725,373,0.5,0.5);
+	this.instance_5 = new lib.Auroraojos();
+	this.instance_5.setTransform(725,373,0.5,0.5);
 
-	this.instance_12 = new lib.AuroraSilueta();
-	this.instance_12.setTransform(610,338,0.5,0.5);
+	this.instance_6 = new lib.AuroraSilueta();
+	this.instance_6.setTransform(610,338,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_12},{t:this.instance_11},{t:this.instance_10}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6},{t:this.instance_5},{t:this.instance_4}]}).wait(1));
 
 	// pinocho_silueta
-	this.instance_13 = new lib.pinocho_silueta();
-	this.instance_13.setTransform(598,397.8,1,1,0,0,0,120,109.8);
+	this.instance_7 = new lib.pinocho_silueta();
+	this.instance_7.setTransform(598,397.8,1,1,0,0,0,120,109.8);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(1));
 
 	// zorro
-	this.instance_14 = new lib.zorro();
-	this.instance_14.setTransform(-12.5,472.2,1,1,0,0,0,51.5,56.2);
+	this.instance_8 = new lib.zorro();
+	this.instance_8.setTransform(-12.5,472.2,1,1,0,0,0,51.5,56.2);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(1));
 
 	// bukho
-	this.instance_15 = new lib.bukho();
-	this.instance_15.setTransform(-3,214.2,1,1,0,0,0,35,45.2);
+	this.instance_9 = new lib.bukho();
+	this.instance_9.setTransform(-3,214.2,1,1,0,0,0,35,45.2);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(1));
 
 	// Capa_9
-	this.instance_16 = new lib.Titulo();
-	this.instance_16.setTransform(-56,24,0.5,0.5);
+	this.instance_10 = new lib.Titulo();
+	this.instance_10.setTransform(-56,24,0.5,0.5);
 
-	this.instance_17 = new lib.Fondo_1();
-	this.instance_17.setTransform(-76,10,0.4862,0.4827);
+	this.instance_11 = new lib.Fondo_1();
+	this.instance_11.setTransform(-76,10,0.4862,0.4827);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_17},{t:this.instance_16}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_11},{t:this.instance_10}]}).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1208,7 +1291,6 @@ if (reversed == null) { reversed = false; }
 	// Capa_1
 	this.instance = new lib.pinocho();
 	this.instance.setTransform(459,250.1,1,1,0,0,0,459,250.1);
-	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regX:458.9,regY:250,scaleX:1.0327,scaleY:1.0327,x:458.9,y:250},0).wait(1).to({regX:459,regY:250.1,scaleX:1,scaleY:1,x:459,y:250.1},0).wait(1));
 
@@ -1972,16 +2054,16 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Fondo.png?1678200122377", id:"Fondo"},
-		{src:"images/Fondo_1.png?1678200122377", id:"Fondo_1"},
-		{src:"images/Pantalla.png?1678200122377", id:"Pantalla"},
-		{src:"images/PortadaCuento2.png?1678200122377", id:"PortadaCuento2"},
-		{src:"images/index_atlas_P_1.png?1678200122224", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1678200122224", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1678200122225", id:"index_atlas_P_3"},
-		{src:"images/index_atlas_P_4.png?1678200122226", id:"index_atlas_P_4"},
-		{src:"sounds/intro.mp3?1678200122377", id:"intro"},
-		{src:"sounds/sound.mp3?1678200122377", id:"sound"}
+		{src:"images/Fondo.png?1678203666562", id:"Fondo"},
+		{src:"images/Fondo_1.png?1678203666562", id:"Fondo_1"},
+		{src:"images/Pantalla.png?1678203666562", id:"Pantalla"},
+		{src:"images/PortadaCuento2.png?1678203666562", id:"PortadaCuento2"},
+		{src:"images/index_atlas_P_1.png?1678203666442", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1678203666443", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1678203666443", id:"index_atlas_P_3"},
+		{src:"images/index_atlas_P_4.png?1678203666445", id:"index_atlas_P_4"},
+		{src:"sounds/intro.mp3?1678203666562", id:"intro"},
+		{src:"sounds/sound.mp3?1678203666562", id:"sound"}
 	],
 	preloads: []
 };

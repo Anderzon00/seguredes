@@ -26,6 +26,18 @@
 *
 */
 
+let myAudio = new Audio();
+let myAudio2= new Audio();
+ 
+ 
+   myAudio.src = 'sound.mp3';
+  myAudio2.src = 'sound2.mp3';
+  
+
+
+
+ 
+
   var contador = 0;
   var element = document.createElement('li');   
   element.id = 'contador';
@@ -461,14 +473,28 @@ class PuzzleApp extends App {
         if (li.innerText == word) {
           li.classList.add("found");
           contador++; 
+          myAudio2.pause();
+          myAudio.play();
+        
           element.innerHTML =contador ;
 
           this.selections.push(this.selection.clone().fill());
           return true;
         }
+
+        else {
+
+          myAudio2.play();
+      
+        }
+
+
         return false;
       });
     }
+
+
+    
     
     this.selection = null;
   }
