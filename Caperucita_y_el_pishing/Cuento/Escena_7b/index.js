@@ -2000,10 +2000,10 @@ if (reversed == null) { reversed = false; }
 
 	// lago fondo blanco
 	this.instance_6 = new lib.Símbolo9();
-	this.instance_6.setTransform(594,472.15,1.0135,1,0,0,0,593.4,151.2);
+	this.instance_6.setTransform(594.05,472.15,1.0135,1,0,0,0,593.4,151.2);
 	this.instance_6.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:594.6,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(8));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:594.65,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(8));
 
 	// Capa_1
 	this.prevEscena = new lib.Símbolo3();
@@ -2017,11 +2017,11 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
 	this.shape.setTransform(176.35,604.725);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
 	this.shape_1.setTransform(176.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena,p:{y:609.6}},{t:this.prevEscena}]}).to({state:[{t:this.shape},{t:this.nextEscena,p:{y:609}},{t:this.prevEscena}]},8).to({state:[{t:this.shape_1},{t:this.prevEscena}]},1).wait(1));
@@ -2108,16 +2108,16 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Fondo.png?1673539903428", id:"Fondo"},
-		{src:"images/index_atlas_P_1.png?1673539903287", id:"index_atlas_P_1"},
-		{src:"sounds/Voice0.mp3?1673539903428", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1673539903428", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1673539903428", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1673539903428", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1673539903428", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1673539903428", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1673539903428", id:"Voice6"},
-		{src:"sounds/BGM.mp3?1673539903428", id:"BGM"}
+		{src:"images/Fondo.png?1678417084315", id:"Fondo"},
+		{src:"images/index_atlas_P_1.png?1678417084115", id:"index_atlas_P_1"},
+		{src:"sounds/Voice0.mp3?1678417084315", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1678417084315", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1678417084315", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1678417084315", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1678417084315", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1678417084315", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1678417084315", id:"Voice6"},
+		{src:"sounds/BGM.mp3?1678417084315", id:"BGM"}
 	],
 	preloads: []
 };

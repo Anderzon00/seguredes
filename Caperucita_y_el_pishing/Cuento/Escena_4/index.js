@@ -43,7 +43,7 @@ lib.ssMetadata = [
 
 
 
-(lib._2 = function() {
+(lib._21 = function() {
 	this.initialize(ss["index_atlas_P_3"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
@@ -197,7 +197,7 @@ lib.ssMetadata = [
 
 
 
-(lib.caperucitasilueta = function() {
+(lib.caperucitasilueta11 = function() {
 	this.initialize(ss["index_atlas_P_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -1791,7 +1791,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_10).to({regX:38.9,rotation:-10.944,x:-301.45,y:-19.65},24).to({regX:39,rotation:0,x:-301.4,y:-19.7},34).wait(171));
 
 	// caperucita-silueta.png
-	this.instance_11 = new lib.caperucitasilueta();
+	this.instance_11 = new lib.caperucitasilueta11();
 	this.instance_11.setTransform(-409,-290,0.5,0.5);
 
 	var maskedShapeInstanceList = [this.instance_11];
@@ -2070,8 +2070,8 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},2).to({state:[{t:this.instance_1}]},2).wait(4));
 
 	// textos
-	this.instance_2 = new lib._2();
-	this.instance_2.setTransform(2,536,0.5,0.5);
+	this.instance_2 = new lib._21();
+	this.instance_2.setTransform(-15,536,0.5,0.5);
 
 	this.instance_3 = new lib._4();
 	this.instance_3.setTransform(2,536,0.5,0.5);
@@ -2080,10 +2080,10 @@ if (reversed == null) { reversed = false; }
 
 	// lago fondo blanco
 	this.instance_4 = new lib.Símbolo9();
-	this.instance_4.setTransform(0.05,509,1.0067,1,0,0,0,1.7,188);
+	this.instance_4.setTransform(0,509,1.0067,1,0,0,0,1.5,188);
 	this.instance_4.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1).to({regX:594,regY:219.8,scaleX:1.0086,x:596.95,y:540.8,alpha:0.5},0).wait(1).to({scaleX:1.0105,x:597.6,alpha:1},0).wait(6));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1).to({regX:594,regY:219.8,scaleX:1.0086,x:597.1,y:540.8,alpha:0.5},0).wait(1).to({scaleX:1.0105,x:597.75,alpha:1},0).wait(6));
 
 	// Capa_1
 	this.prevEscena = new lib.Símbolo3();
@@ -2097,11 +2097,11 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
 	this.shape.setTransform(176.35,604.725);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
 	this.shape_1.setTransform(176.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).to({state:[{t:this.shape_1},{t:this.prevEscena}]},7).wait(1));
@@ -2185,15 +2185,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1673453431780", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1673453431780", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1673453431781", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1673453431912", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1673453431912", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1673453431912", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1673453431912", id:"Voice3"},
-		{src:"sounds/Voice5.mp3?1673453431912", id:"Voice5"},
-		{src:"sounds/BGM.mp3?1673453431912", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1678415545399", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1678415545399", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1678415545400", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1678415545520", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1678415545520", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1678415545520", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1678415545520", id:"Voice3"},
+		{src:"sounds/Voice5.mp3?1678415545520", id:"Voice5"},
+		{src:"sounds/BGM.mp3?1678415545520", id:"BGM"}
 	],
 	preloads: []
 };

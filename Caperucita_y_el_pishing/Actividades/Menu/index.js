@@ -1607,14 +1607,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1678036955315", id:"index_atlas_1"},
-		{src:"sounds/play.mp3?1678036955419", id:"play"},
-		{src:"sounds/error41.mp3?1678036955419", id:"error41"},
-		{src:"sounds/sound.mp3?1678036955419", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1678036955419", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1678036955419", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1678036955419", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1678036955419", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1678416452581", id:"index_atlas_1"},
+		{src:"sounds/play.mp3?1678416452679", id:"play"},
+		{src:"sounds/error41.mp3?1678416452679", id:"error41"},
+		{src:"sounds/sound.mp3?1678416452679", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1678416452679", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1678416452679", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1678416452679", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1678416452679", id:"an.TextInput"}
 	],
 	preloads: []
 };

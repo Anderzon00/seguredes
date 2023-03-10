@@ -2638,7 +2638,7 @@ if (reversed == null) { reversed = false; }
 		  
 		this.btnindice.addEventListener("click", fl_ClickToGoToWebPage_13);
 		function fl_ClickToGoToWebPage_13() {	
-		createjs.Sound.play("audioG", { volume: 0.8}).on("complete", function () {
+		createjs.Sound.play("audioC", { volume: 0.8}).on("complete", function () {
 		 window.open("../", "_self");		 
 		                    }, this);	
 			}
@@ -2723,7 +2723,7 @@ if (reversed == null) { reversed = false; }
 		this.btnAtrasE.addEventListener("click", fl_ClickToGoToAndStopAtFrame_2.bind(this));
 		
 		function fl_ClickToGoToAndStopAtFrame_2(){
-			createjs.Sound.play("audioC", { volume: 0.8}).on("complete", function () {   
+			createjs.Sound.play("audioG", { volume: 0.8}).on("complete", function () {   
 			this.gotoAndStop(3);
 				                     }, this);
 		}
@@ -2875,11 +2875,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677682793532", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1677682793701", id:"audioG"},
-		{src:"sounds/audioC.mp3?1677682793701", id:"audioC"},
-		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1677682793701", id:"y2matecomFreesoundeffectKeyboardtyping"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1677682793701", id:"y2matecomsonidodemagiaefectohadas"}
+		{src:"images/index_atlas_1.png?1678370441285", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1678370441456", id:"audioG"},
+		{src:"sounds/audioC.mp3?1678370441456", id:"audioC"},
+		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1678370441456", id:"y2matecomFreesoundeffectKeyboardtyping"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1678370441456", id:"y2matecomsonidodemagiaefectohadas"}
 	],
 	preloads: []
 };
