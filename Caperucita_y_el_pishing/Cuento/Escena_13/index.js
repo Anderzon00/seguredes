@@ -2305,7 +2305,7 @@ if (reversed == null) { reversed = false; }
 		*/
 		_this.stop();
 	}
-	this.frame_145 = function() {
+	this.frame_132 = function() {
 		contador++;
 		console.log(contador);
 		var _this = this;
@@ -2318,7 +2318,7 @@ if (reversed == null) { reversed = false; }
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(144).call(this.frame_145).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(131).call(this.frame_132).wait(1));
 
 	// Capa_12
 	this.instance = new lib.boca();
@@ -2327,36 +2327,36 @@ if (reversed == null) { reversed = false; }
 	this.instance_1 = new lib.boca2();
 	this.instance_1.setTransform(424.05,-81.3,0.5,0.4938,0,0,0,-159.9,50.1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},1).to({state:[{t:this.instance_1}]},1).wait(144));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},1).to({state:[{t:this.instance_1}]},1).wait(131));
 
 	// Cazador-ojos.png
 	this.instance_2 = new lib.ojos();
 	this.instance_2.setTransform(414.85,-97.85,0.5686,0.5686,0,0,0,11.8,7.9);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(146));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(133));
 
 	// Cazador-BrazoIzq.png
 	this.instance_3 = new lib.brazoizq();
-	this.instance_3.setTransform(447.45,-47.1,1,1,-32.2272,0,0,159.3,15.2);
+	this.instance_3.setTransform(447.5,-47.15,1,1,-62.2275,0,0,159.4,15.2);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1).to({regX:159.4,regY:15,scaleX:0.9999,scaleY:0.9999,rotation:5.2472,x:447.6,y:-47.2},28).to({regX:159.3,regY:14.8,scaleX:0.9998,scaleY:0.9998,rotation:37.9909,x:447.65,y:-47.25},30).to({regY:15.1,scaleX:1,scaleY:1,rotation:35.2482,x:447.45,y:-47.15},31).to({regY:15.2,rotation:-32.2272,y:-47.1},55).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({rotation:-62.2267},1).to({regY:15,scaleX:0.9999,scaleY:0.9999,rotation:-39.7523,x:447.7,y:-47.2},28).to({regX:159.3,regY:14.9,rotation:-59.7939,x:447.55},30).to({regY:15.1,rotation:-45.74,y:-47.15},30).to({regX:159.4,regY:15.2,scaleX:1,scaleY:1,rotation:-62.2275,x:447.5},43).wait(1));
 
 	// Cazador-Silueta.png
 	this.instance_4 = new lib.CazadorSiluetapngcopia();
 	this.instance_4.setTransform(391,-145,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(146));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(133));
 
 	// Cazador-MangaDer.png
 	this.instance_5 = new lib.brazoder();
-	this.instance_5.setTransform(431.5,-52.3,0.9999,0.9999,-29.8137,0,0,148.1,100.8);
+	this.instance_5.setTransform(431.5,-52.25,0.9999,0.9999,-53.2613,0,0,148.1,100.8);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1).to({regY:100.7,rotation:45.1849,x:431.55,y:-52.25},28).to({regY:100.6,rotation:16.6374,x:431.65},30).to({regY:100.7,rotation:45.1849,x:431.55},31).to({regY:100.8,rotation:-29.8137,x:431.5,y:-52.3},55).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1).to({regY:100.7,rotation:30.1855,y:-52.2},28).to({regY:100.6,rotation:16.6374,x:431.65,y:-52.25},30).to({regY:100.7,rotation:45.1849,x:431.55},30).to({regY:100.8,rotation:-53.2613,x:431.5},43).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(335.1,-145,256.4,337);
+p.nominalBounds = new cjs.Rectangle(333.1,-145,258.4,337);
 
 
 (lib.brazomov = function(mode,startPosition,loop,reversed) {
@@ -2808,11 +2808,11 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
 	this.shape.setTransform(176.35,604.725);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
 	this.shape_1.setTransform(176.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).to({state:[{t:this.shape_1},{t:this.prevEscena}]},11).wait(1));
@@ -2857,10 +2857,10 @@ if (reversed == null) { reversed = false; }
 
 	// lago fondo blanco
 	this.instance_6 = new lib.Símbolo9();
-	this.instance_6.setTransform(594.05,472.15,1.0135,1,0,0,0,593.4,151.2);
+	this.instance_6.setTransform(594,472.15,1.0135,1,0,0,0,593.3,151.2);
 	this.instance_6.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:594.65,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(10));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:594.7,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(10));
 
 	// Capa_3 (mask)
 	var mask = new cjs.Shape();
@@ -2937,18 +2937,18 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Fondo.png?1673453873362", id:"Fondo"},
-		{src:"images/index_atlas_P_1.png?1673453873181", id:"index_atlas_P_1"},
-		{src:"sounds/Voice0.mp3?1673453873362", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1673453873362", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1673453873362", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1673453873362", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1673453873362", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1673453873362", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1673453873362", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1673453873362", id:"Voice7"},
-		{src:"sounds/Voice8.mp3?1673453873362", id:"Voice8"},
-		{src:"sounds/BGM.mp3?1673453873362", id:"BGM"}
+		{src:"images/Fondo.png?1678492381359", id:"Fondo"},
+		{src:"images/index_atlas_P_1.png?1678492381165", id:"index_atlas_P_1"},
+		{src:"sounds/Voice0.mp3?1678492381359", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1678492381359", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1678492381360", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1678492381360", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1678492381360", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1678492381360", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1678492381360", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1678492381360", id:"Voice7"},
+		{src:"sounds/Voice8.mp3?1678492381360", id:"Voice8"},
+		{src:"sounds/BGM.mp3?1678492381360", id:"BGM"}
 	],
 	preloads: []
 };
