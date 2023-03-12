@@ -612,6 +612,14 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,12,13,14,15];
 	// timeline functions:
 	this.frame_0 = function() {
+		this.stop(); 
+		
+		stage.on('drawstart', initStage, this, true);
+		function initStage() {
+			stretchToFit();
+		}
+		
+		
 		const elementdiv = document.getElementById('cuento');
 		elementdiv?.remove();
 		
@@ -624,11 +632,8 @@ if (reversed == null) { reversed = false; }
 		const elementdiv2 = document.getElementById('actividades');
 		elementdiv2?.remove();
 		
-		this.stop(); 
-		stage.on('drawstart', initStage, this, true);
-		function initStage() {
-			stretchToFit();
-		}
+		
+		
 		 
 		
 		var _this = this;
@@ -690,15 +695,11 @@ if (reversed == null) { reversed = false; }
 		const elementdiv = document.getElementById('cuento');
 		elementdiv?.remove();
 		
-		
 		const elementdiv1 = document.getElementById('contenidos');
 		elementdiv1?.remove();
-		
-		
 		  
 		const elementdiv2 = document.getElementById('actividades');
-		elementdiv2?.remove();
-		  
+		elementdiv2?.remove();  
 		  
 		var root = this;
 		var key;
@@ -959,15 +960,15 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1678414348142", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1678414348142", id:"barraseguredes"},
-		{src:"images/fondo11.png?1678414348142", id:"fondo11"},
-		{src:"images/fondoMorado.png?1678414348142", id:"fondoMorado"},
-		{src:"images/Portada.png?1678414348142", id:"Portada"},
-		{src:"images/index_atlas_1.png?1678414348065", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1678414348142", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1678414348142", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1678414348142", id:"sound1"}
+		{src:"images/bannernegro1.png?1678577072383", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1678577072383", id:"barraseguredes"},
+		{src:"images/fondo11.png?1678577072383", id:"fondo11"},
+		{src:"images/fondoMorado.png?1678577072383", id:"fondoMorado"},
+		{src:"images/Portada.png?1678577072383", id:"Portada"},
+		{src:"images/index_atlas_1.png?1678577072305", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1678577072383", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1678577072383", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1678577072383", id:"sound1"}
 	],
 	preloads: []
 };

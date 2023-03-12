@@ -3167,33 +3167,33 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// Ojos_png
-	this.instance = new lib.ojosLobo();
-	this.instance.setTransform(718.45,144.4,1,1,0,0,0,36.2,21.4);
+	// Capa_1
+	this.instance = new lib.ventanaRetroalimentaciónNegativa();
+	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-	// Letrero_png
-	this.instance_1 = new lib.Letrero();
-	this.instance_1.setTransform(654,346,0.45,0.45);
+	// Ojos_png
+	this.instance_1 = new lib.ojosLobo();
+	this.instance_1.setTransform(709.45,149.4,1,1,0,0,0,36.2,21.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
-	// CejaIzquiera_png
-	this.instance_2 = new lib.CejaIzquiera();
-	this.instance_2.setTransform(683,114,0.45,0.45);
+	// Letrero_png
+	this.instance_2 = new lib.Letrero();
+	this.instance_2.setTransform(654,346,0.45,0.45);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
 
-	// Capa_1
-	this.instance_3 = new lib.ventanaRetroalimentaciónNegativa();
-	this.instance_3.setTransform(0,0,0.5,0.5);
+	// CejaIzquiera_png
+	this.instance_3 = new lib.CejaIzquiera();
+	this.instance_3.setTransform(664,118,0.45,0.45);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1));
 
 	// CejaDer_png
 	this.instance_4 = new lib.CejaDer();
-	this.instance_4.setTransform(727,111,0.45,0.45);
+	this.instance_4.setTransform(715,116,0.45,0.45);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1));
 
@@ -3205,7 +3205,7 @@ if (reversed == null) { reversed = false; }
 
 	// Boca2_png
 	this.instance_6 = new lib.boca();
-	this.instance_6.setTransform(711.4,210.15,1,1,4.4659,0,0,30.4,18.2);
+	this.instance_6.setTransform(719.4,210.15,1,1,4.4659,0,0,30.4,18.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(1));
 
@@ -5069,21 +5069,20 @@ if (reversed == null) { reversed = false; }
 	this.btnReintentar.setTransform(313,373);
 	new cjs.ButtonHelper(this.btnReintentar, 0, 1, 2);
 
-	this.incorrectastext = new cjs.Text("Malas", "bold 28px 'Comic Sans MS'", "#990000");
+	this.incorrectastext = new cjs.Text("Malas", "bold 24px 'Comic Sans MS'", "#990000");
 	this.incorrectastext.name = "incorrectastext";
-	this.incorrectastext.lineHeight = 41;
+	this.incorrectastext.lineHeight = 35;
 	this.incorrectastext.lineWidth = 157;
-	this.incorrectastext.alpha = 0.57647059;
+	this.incorrectastext.alpha = 0.98823529;
 	this.incorrectastext.parent = this;
-	this.incorrectastext.setTransform(605.3,306.6);
+	this.incorrectastext.setTransform(605.3,312.6);
 
-	this.correctastext = new cjs.Text("Correctas", "bold 28px 'Comic Sans MS'", "#006600");
+	this.correctastext = new cjs.Text("Correctas", "bold 24px 'Comic Sans MS'", "#006600");
 	this.correctastext.name = "correctastext";
-	this.correctastext.lineHeight = 41;
+	this.correctastext.lineHeight = 35;
 	this.correctastext.lineWidth = 157;
-	this.correctastext.alpha = 0.57647059;
 	this.correctastext.parent = this;
-	this.correctastext.setTransform(604.3,266.8);
+	this.correctastext.setTransform(604.3,269.8);
 
 	this.instance_2 = new lib.bien_mal();
 	this.instance_2.setTransform(292.75,299.05,1,1,0,0,0,16.5,32.8);
@@ -5107,7 +5106,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_5 = new lib.letreroVerde();
 	this.instance_5.setTransform(575.7,209.65,1,1,0,0,0,422.7,218.6);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_4},{t:this.instance_3,p:{x:251,y:134}},{t:this.instance_2},{t:this.correctastext,p:{x:604.3,y:266.8}},{t:this.incorrectastext,p:{x:605.3,y:306.6}},{t:this.btnReintentar},{t:this.btnSalir}]},1).to({state:[{t:this.instance_5},{t:this.instance_3,p:{x:179,y:96}},{t:this.correctastext,p:{x:469,y:307.85}},{t:this.incorrectastext,p:{x:474,y:338.5}},{t:this.btnReintentarVerde},{t:this.btnSalirVerde}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_4},{t:this.instance_3,p:{x:251,y:134}},{t:this.instance_2},{t:this.correctastext,p:{x:604.3,y:269.8}},{t:this.incorrectastext,p:{x:605.3,y:312.6}},{t:this.btnReintentar},{t:this.btnSalir}]},1).to({state:[{t:this.instance_5},{t:this.instance_3,p:{x:179,y:96}},{t:this.correctastext,p:{x:469,y:310.85}},{t:this.incorrectastext,p:{x:474,y:341.5}},{t:this.btnReintentarVerde},{t:this.btnSalirVerde}]},1).wait(1));
 
 	// cuyes
 	this.normalBien = new lib.cuy5();
@@ -5126,7 +5125,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_9 = new lib.cuy1();
 	this.instance_9.setTransform(239.05,43.4);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.normalBien}]}).to({state:[]},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.normalBien}]}).to({state:[]},1).to({state:[]},1).wait(1));
 
 	// animales
 	this.instance_10 = new lib.abejaMc();
@@ -5162,16 +5161,16 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/FondoActividad.png?1678293884313", id:"FondoActividad"},
-		{src:"images/index_atlas_1.png?1678293884064", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1678293884065", id:"index_atlas_2"},
-		{src:"sounds/audioG.mp3?1678293884313", id:"audioG"},
-		{src:"sounds/audioC.mp3?1678293884313", id:"audioC"},
-		{src:"sounds/sound1.mp3?1678293884313", id:"sound1"},
-		{src:"sounds/Voice2.mp3?1678293884313", id:"Voice2"},
-		{src:"sounds/sound2.mp3?1678293884313", id:"sound2"},
-		{src:"sounds/mixkitelectricpop2365wav.mp3?1678293884313", id:"mixkitelectricpop2365wav"},
-		{src:"sounds/sound.mp3?1678293884313", id:"sound"}
+		{src:"images/FondoActividad.png?1678578848255", id:"FondoActividad"},
+		{src:"images/index_atlas_1.png?1678578848010", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1678578848012", id:"index_atlas_2"},
+		{src:"sounds/audioG.mp3?1678578848255", id:"audioG"},
+		{src:"sounds/audioC.mp3?1678578848255", id:"audioC"},
+		{src:"sounds/sound1.mp3?1678578848255", id:"sound1"},
+		{src:"sounds/Voice2.mp3?1678578848255", id:"Voice2"},
+		{src:"sounds/sound2.mp3?1678578848255", id:"sound2"},
+		{src:"sounds/mixkitelectricpop2365wav.mp3?1678578848255", id:"mixkitelectricpop2365wav"},
+		{src:"sounds/sound.mp3?1678578848255", id:"sound"}
 	],
 	preloads: []
 };

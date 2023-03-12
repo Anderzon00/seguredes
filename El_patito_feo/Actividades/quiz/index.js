@@ -3397,22 +3397,22 @@ if (reversed == null) { reversed = false; }
 
 	this.btnSalir = new lib.btnSalir();
 	this.btnSalir.name = "btnSalir";
-	this.btnSalir.setTransform(575.5,398.5,1,1,0,0,0,59.5,25.5);
+	this.btnSalir.setTransform(606.5,398.5,1,1,0,0,0,59.5,25.5);
 	new cjs.ButtonHelper(this.btnSalir, 0, 1, 2);
 
 	this.btnReintentar = new lib.btnReintentar();
 	this.btnReintentar.name = "btnReintentar";
-	this.btnReintentar.setTransform(268,373);
+	this.btnReintentar.setTransform(299,373);
 	new cjs.ButtonHelper(this.btnReintentar, 0, 1, 2);
 
 	this.btnSalirVerde = new lib.btnSalirVerde();
 	this.btnSalirVerde.name = "btnSalirVerde";
-	this.btnSalirVerde.setTransform(542.15,483.3,1,1,0,0,0,59.2,25.5);
+	this.btnSalirVerde.setTransform(614.15,483.3,1,1,0,0,0,59.2,25.5);
 	new cjs.ButtonHelper(this.btnSalirVerde, 0, 1, 2);
 
 	this.btnReintentarVerde = new lib.btnReintentarVerde();
 	this.btnReintentarVerde.name = "btnReintentarVerde";
-	this.btnReintentarVerde.setTransform(360.25,483.3,1,1,0,0,0,111.8,25.5);
+	this.btnReintentarVerde.setTransform(432.25,483.3,1,1,0,0,0,111.8,25.5);
 	new cjs.ButtonHelper(this.btnReintentarVerde, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.shape_1},{t:this.btnA},{t:this.btnB},{t:this.btnC},{t:this.btnD}]},1).to({state:[{t:this.btn_continuar}]},1).to({state:[{t:this.shape_1},{t:this.btnA2},{t:this.btnB2},{t:this.btnC2},{t:this.btnD2}]},1).to({state:[{t:this.btn_continuar}]},1).to({state:[{t:this.shape_1},{t:this.btnA3},{t:this.btnB3},{t:this.btnC3},{t:this.btnD3}]},1).to({state:[{t:this.btn_continuar}]},1).to({state:[{t:this.shape_1},{t:this.btnA4},{t:this.btnB4},{t:this.btnC4},{t:this.btnD4}]},1).to({state:[{t:this.btn_continuar}]},1).to({state:[{t:this.shape_1},{t:this.btnA5},{t:this.btnB5},{t:this.btnC5},{t:this.btnD5}]},1).to({state:[{t:this.btn_continuar}]},1).to({state:[{t:this.shape_1},{t:this.btnA6},{t:this.btnB6},{t:this.btnC6},{t:this.btnD6}]},1).to({state:[{t:this.btn_continuar}]},1).to({state:[{t:this.shape_1},{t:this.btnA7},{t:this.btnB7},{t:this.btnC7},{t:this.btnD7}]},1).to({state:[{t:this.btn_continuar}]},1).to({state:[{t:this.btnReintentar},{t:this.btnSalir}]},1).to({state:[{t:this.btnReintentarVerde},{t:this.btnSalirVerde}]},1).wait(1));
@@ -3554,22 +3554,22 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/EstrellasFondoRompecabezas.png?1678414636939", id:"EstrellasFondoRompecabezas"},
-		{src:"images/FondoselecciónMúltiple.png?1678414636939", id:"FondoselecciónMúltiple"},
-		{src:"images/Fondo2selecciónMúltiple.png?1678414636939", id:"Fondo2selecciónMúltiple"},
-		{src:"images/index_atlas_1.png?1678414636698", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1678414636698", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1678414636698", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1678414636699", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1678414636700", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1678414636701", id:"index_atlas_6"},
-		{src:"sounds/Voice2.mp3?1678414636939", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1678414636939", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1678414636939", id:"Voice4"},
-		{src:"sounds/Voice1.mp3?1678414636939", id:"Voice1"},
-		{src:"sounds/SoundBoton.mp3?1678414636939", id:"SoundBoton"},
-		{src:"sounds/retroalimentacion.mp3?1678414636939", id:"retroalimentacion"},
-		{src:"sounds/BGM.mp3?1678414636939", id:"BGM"}
+		{src:"images/EstrellasFondoRompecabezas.png?1678568272334", id:"EstrellasFondoRompecabezas"},
+		{src:"images/FondoselecciónMúltiple.png?1678568272334", id:"FondoselecciónMúltiple"},
+		{src:"images/Fondo2selecciónMúltiple.png?1678568272334", id:"Fondo2selecciónMúltiple"},
+		{src:"images/index_atlas_1.png?1678568272085", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1678568272085", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1678568272086", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1678568272086", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1678568272087", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1678568272088", id:"index_atlas_6"},
+		{src:"sounds/Voice2.mp3?1678568272334", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1678568272334", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1678568272334", id:"Voice4"},
+		{src:"sounds/Voice1.mp3?1678568272334", id:"Voice1"},
+		{src:"sounds/SoundBoton.mp3?1678568272334", id:"SoundBoton"},
+		{src:"sounds/retroalimentacion.mp3?1678568272334", id:"retroalimentacion"},
+		{src:"sounds/BGM.mp3?1678568272334", id:"BGM"}
 	],
 	preloads: []
 };
