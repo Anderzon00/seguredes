@@ -2313,23 +2313,25 @@ if (reversed == null) { reversed = false; }
 			
 		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
 		   
-		var rnd= Math.floor(Math.random() * 3);
+		var rnd= Math.floor(Math.random() * 9);
 			
-			console.log(rnd);
 			
-		switch (rnd) {
-		  case 0:
+			if (rnd == 0 || rnd == 3 ||rnd == 6 ) {
+		      window.open('../3', '_self');
+		
+		}
+				
+		if (rnd == 1 || rnd == 4 ||rnd == 7) {
 		    window.open('../1', '_self');
-		    break;
-		    
-		  case 1:
+		
+		}
+		
+		
+		
+		if (rnd == 2 || rnd == 5 ||rnd == 8) {
 		    window.open('../2', '_self');
-		    // expected output: "Mangoes and papayas are $2.79 a pound."
-		    break;
-		  default:
-		    window.open('../3', '_self');
-		}	 
-		                    }, this);
+		
+		}                    }, this);
 				
 		});
 		
@@ -2778,13 +2780,13 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1678487774536", id:"index_atlas_P_1"},
-		{src:"sounds/drop.mp3?1678487774698", id:"drop"},
-		{src:"sounds/error.mp3?1678487774698", id:"error"},
-		{src:"sounds/win.mp3?1678487774698", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1678487774698", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1678487774698", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1678487774698", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1678597033996", id:"index_atlas_P_1"},
+		{src:"sounds/drop.mp3?1678597034161", id:"drop"},
+		{src:"sounds/error.mp3?1678597034161", id:"error"},
+		{src:"sounds/win.mp3?1678597034161", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1678597034161", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1678597034161", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1678597034161", id:"retroalimentacion"}
 	],
 	preloads: []
 };

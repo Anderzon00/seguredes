@@ -1302,8 +1302,6 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 		
-		
-		
 		var _this = this;
 		 
 		_this.btnRompecabezas.on('click', function(){	
@@ -1550,13 +1548,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1678590196505", id:"index_atlas_1"},
-		{src:"sounds/entrar.mp3?1678590196603", id:"entrar"},
-		{src:"sounds/error.mp3?1678590196603", id:"error"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1678590196603", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1678590196603", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1678590196603", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1678590196603", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1678586403356", id:"index_atlas_1"},
+		{src:"sounds/entrar.mp3?1678586403453", id:"entrar"},
+		{src:"sounds/error.mp3?1678586403453", id:"error"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1678586403453", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1678586403453", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1678586403453", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1678586403453", id:"an.TextInput"}
 	],
 	preloads: []
 };

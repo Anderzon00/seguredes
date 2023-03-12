@@ -684,7 +684,7 @@ if (reversed == null) { reversed = false; }
 		 
 		_this.bntPlay.on('click', function(){
 		 
-		createjs.Sound.play("SoundPlay", {	volume: 0.5
+		createjs.Sound.play("SoundPlay", {	volume: 0.8
 			}).on("complete", function () {
 				_this.gotoAndStop("Cuento");
 			}, this);
@@ -727,9 +727,9 @@ if (reversed == null) { reversed = false; }
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
 		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.5
+		createjs.Sound.play("sound2", {	volume: 0.8
 			}).on("complete", function () {
-				_this.gotoAndPlay(0);
+				_this.gotoAndStop(0);
 			}, this);
 		
 		});
@@ -779,11 +779,10 @@ if (reversed == null) { reversed = false; }
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
 		_this.btnVolverAcuento.on('click', function(){
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
-		_this.gotoAndPlay(0);
+		createjs.Sound.play("sound2", {	volume: 0.8
+			}).on("complete", function () {
+				_this.gotoAndStop(0);
+			}, this);
 		});
 	}
 	this.frame_15 = function() {
@@ -836,10 +835,10 @@ if (reversed == null) { reversed = false; }
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
 		_this.btnVolverAcuento.on('click', function(){
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		createjs.Sound.play("sound2", {	volume: 0.8
+			}).on("complete", function () {
+				_this.gotoAndStop(0);
+			}, this);
 		_this.gotoAndPlay(0);
 		});
 	}
@@ -960,15 +959,15 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1678577072383", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1678577072383", id:"barraseguredes"},
-		{src:"images/fondo11.png?1678577072383", id:"fondo11"},
-		{src:"images/fondoMorado.png?1678577072383", id:"fondoMorado"},
-		{src:"images/Portada.png?1678577072383", id:"Portada"},
-		{src:"images/index_atlas_1.png?1678577072305", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1678577072383", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1678577072383", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1678577072383", id:"sound1"}
+		{src:"images/bannernegro1.png?1678595457128", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1678595457128", id:"barraseguredes"},
+		{src:"images/fondo11.png?1678595457128", id:"fondo11"},
+		{src:"images/fondoMorado.png?1678595457128", id:"fondoMorado"},
+		{src:"images/Portada.png?1678595457128", id:"Portada"},
+		{src:"images/index_atlas_1.png?1678595457048", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1678595457128", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1678595457128", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1678595457128", id:"sound1"}
 	],
 	preloads: []
 };

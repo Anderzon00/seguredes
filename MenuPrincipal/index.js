@@ -1538,16 +1538,28 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// Capa_2 (mask)
+	var mask = new cjs.Shape();
+	mask._off = true;
+	mask.graphics.p("EgiSArJMAAAhWRMBElAAAMAAABWRg");
+	mask.setTransform(213.25,206.9827);
+
 	// Capa_1
 	this.instance = new lib.Interpolación9("synched",0);
 	this.instance.setTransform(523.6,327.8,1,1,3.9539,0,0,377.7,161.7);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:377.8,regY:161.8,rotation:-4.7448,x:523.7,y:327.9},21).to({rotation:3.7437,y:327.85},17).wait(10));
+	var maskedShapeInstanceList = [this.instance];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:377.8,regY:161.8,rotation:-4.7448,x:523.7,y:327.9},37).to({rotation:3.7437,y:327.85},26).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-7.5,13.5,564.1,529.6);
+p.nominalBounds = new cjs.Rectangle(-6.2,13.5,439,469.6);
 
 
 (lib.abuela = function(mode,startPosition,loop,reversed) {
@@ -1637,7 +1649,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.cuerpopato, new cjs.Rectangle(-156,-197,567.3,822.2), null);
+}).prototype = getMCSymbolPrototype(lib.cuerpopato, new cjs.Rectangle(-163.6,-197,574.9,822.2), null);
 
 
 (lib.cuento2mc = function(mode,startPosition,loop,reversed) {
@@ -1741,7 +1753,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-4.7,6.5,283.59999999999997,411);
+p.nominalBounds = new cjs.Rectangle(-8.5,6.5,287.4,411);
 
 
 (lib.Interpolación3 = function(mode,startPosition,loop,reversed) {
@@ -2082,16 +2094,16 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Fondo.png?1678401596630", id:"Fondo"},
-		{src:"images/Pantalla.png?1678401596630", id:"Pantalla"},
-		{src:"images/PortadaCuento2.png?1678401596630", id:"PortadaCuento2"},
-		{src:"images/index_atlas_P_1.png?1678401596518", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1678401596519", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1678401596519", id:"index_atlas_P_3"},
-		{src:"images/index_atlas_P_4.png?1678401596519", id:"index_atlas_P_4"},
-		{src:"images/index_atlas_P_5.png?1678401596521", id:"index_atlas_P_5"},
-		{src:"sounds/intro.mp3?1678401596630", id:"intro"},
-		{src:"sounds/sound.mp3?1678401596630", id:"sound"}
+		{src:"images/Fondo.png?1678596523800", id:"Fondo"},
+		{src:"images/Pantalla.png?1678596523800", id:"Pantalla"},
+		{src:"images/PortadaCuento2.png?1678596523800", id:"PortadaCuento2"},
+		{src:"images/index_atlas_P_1.png?1678596523678", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1678596523678", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1678596523679", id:"index_atlas_P_3"},
+		{src:"images/index_atlas_P_4.png?1678596523679", id:"index_atlas_P_4"},
+		{src:"images/index_atlas_P_5.png?1678596523680", id:"index_atlas_P_5"},
+		{src:"sounds/intro.mp3?1678596523800", id:"intro"},
+		{src:"sounds/sound.mp3?1678596523800", id:"sound"}
 	],
 	preloads: []
 };
