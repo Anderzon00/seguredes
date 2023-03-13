@@ -100,19 +100,33 @@ function playSound(id, loop, offset) {
 		<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
 		<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%; ' />
 	</div>
- 
-	<script>
-		const url ='../MenuPrincipal/images/index_atlas_1.png ';
 
+	
 		
+	
 
-		req = new XMLHttpRequest();
-		req.open('GET', url);
-		req.send();
-	  </script>
+
+  
 
 
 </body>
+
+
+<script>
+			
+	var images = new Array()
+	function preload() {
+		for (i = 0; i < preload.arguments.length; i++) {
+			images[i] = new Image()
+			images[i].src = preload.arguments[i]
+		}
+	}
+	preload(
+		 "../MenuPrincipal/images/index_atlas_1.png "
+	)
+ 
+</script>
+
 </html>
 <!-- 
 stage.on('drawstart', initStage, this, true);
