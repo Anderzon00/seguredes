@@ -1871,10 +1871,13 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.instance_6}]}).wait(58));
 
 	// Capa_1
-	this.instance_9 = new lib.Fondo1();
-	this.instance_9.setTransform(-343,-258,0.5109,0.4991);
+	this.instance_9 = new lib.brillopantalla();
+	this.instance_9.setTransform(867,-263,1,1,0,0,180);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(58));
+	this.instance_10 = new lib.Fondo1();
+	this.instance_10.setTransform(-343,-258,0.5109,0.4991);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_10},{t:this.instance_9}]}).wait(58));
 
 	this._renderFirstFrame();
 
@@ -1902,7 +1905,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-244.7,-260.6,1213,579.9000000000001);
+p.nominalBounds = new cjs.Rectangle(-244.7,-260.7,1213,580);
 
 
 (lib.pinocho = function(mode,startPosition,loop,reversed) {
@@ -2477,20 +2480,20 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CespedFrente.png?1678805533205", id:"CespedFrente"},
-		{src:"images/Fondo1.png?1678805533205", id:"Fondo1"},
-		{src:"images/Fondo.png?1678805533205", id:"Fondo"},
-		{src:"images/Fondo_1.png?1678805533205", id:"Fondo_1"},
-		{src:"images/Pantalla.png?1678805533205", id:"Pantalla"},
-		{src:"images/PortadaCuento2.png?1678805533205", id:"PortadaCuento2"},
-		{src:"images/index_atlas_1.png?1678805533035", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1678805533035", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1678805533035", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1678805533036", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1678805533036", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1678805533038", id:"index_atlas_6"},
-		{src:"sounds/intro.mp3?1678805533205", id:"intro"},
-		{src:"sounds/sound.mp3?1678805533205", id:"sound"}
+		{src:"images/CespedFrente.png?1678809879257", id:"CespedFrente"},
+		{src:"images/Fondo1.png?1678809879257", id:"Fondo1"},
+		{src:"images/Fondo.png?1678809879257", id:"Fondo"},
+		{src:"images/Fondo_1.png?1678809879257", id:"Fondo_1"},
+		{src:"images/Pantalla.png?1678809879257", id:"Pantalla"},
+		{src:"images/PortadaCuento2.png?1678809879257", id:"PortadaCuento2"},
+		{src:"images/index_atlas_1.png?1678809879038", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1678809879038", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1678809879038", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1678809879039", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1678809879039", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1678809879043", id:"index_atlas_6"},
+		{src:"sounds/intro.mp3?1678809879257", id:"intro"},
+		{src:"sounds/sound.mp3?1678809879257", id:"sound"}
 	],
 	preloads: []
 };
