@@ -95,6 +95,13 @@ lib.ssMetadata = [
 
 
 
+(lib.Arbol = function() {
+	this.initialize(ss["index_atlas_2"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
+
+
 (lib.Auroraboca = function() {
 	this.initialize(ss["index_atlas_6"]);
 	this.gotoAndStop(7);
@@ -297,12 +304,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,2377,198);
 
 
 
-(lib.Fondo1 = function() {
-	this.initialize(img.Fondo1);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,2374,1140);
-
-
 (lib.Fondo = function() {
 	this.initialize(img.Fondo);
 }).prototype = p = new cjs.Bitmap();
@@ -313,6 +314,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,2732,1536);
 	this.initialize(img.Fondo_1);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,2375,1135);
+
+
+(lib.Fondo_1_1 = function() {
+	this.initialize(img.Fondo_1_1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,2374,1140);
 
 
 (lib.GeppetoBoca = function() {
@@ -367,13 +374,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,2375,1135);
 (lib.ja = function() {
 	this.initialize(ss["index_atlas_6"]);
 	this.gotoAndStop(36);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.LoboArbol = function() {
-	this.initialize(ss["index_atlas_2"]);
-	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -1222,8 +1222,8 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Lobo_Arbol_png
-	this.instance = new lib.LoboArbol();
-	this.instance.setTransform(-308,-272,0.5,0.5);
+	this.instance = new lib.Arbol();
+	this.instance.setTransform(196,-272,0.5,0.5,0,0,180);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(96));
 
@@ -1848,7 +1848,7 @@ if (reversed == null) { reversed = false; }
 
 	// lobo
 	this.instance_4 = new lib.lobo();
-	this.instance_4.setTransform(-9.65,9.2);
+	this.instance_4.setTransform(-34.4,14.8);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(58));
 
@@ -1866,7 +1866,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_7.setTransform(315,-19,0.5,0.5);
 
 	this.instance_8 = new lib.cerdo_medio();
-	this.instance_8.setTransform(241.25,152.25);
+	this.instance_8.setTransform(202.25,146.15,1,1,0,0,180);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.instance_6}]}).wait(58));
 
@@ -1874,10 +1874,10 @@ if (reversed == null) { reversed = false; }
 	this.instance_9 = new lib.brillopantalla();
 	this.instance_9.setTransform(867,-263,1,1,0,0,180);
 
-	this.instance_10 = new lib.Fondo1();
-	this.instance_10.setTransform(-343,-258,0.5109,0.4991);
+	this.instance_10 = new lib.Fondo_1_1();
+	this.instance_10.setTransform(869.9,-258,0.5109,0.4991,0,0,180);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_10},{t:this.instance_9}]}).wait(58));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_10},{t:this.instance_9}]}).to({state:[{t:this.instance_10},{t:this.instance_9}]},57).wait(1));
 
 	this._renderFirstFrame();
 
@@ -2032,7 +2032,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-94.5,-0.9,1174,568.5);
+p.nominalBounds = new cjs.Rectangle(-94.5,-0.9,1173.9,568.5);
 
 
 (lib.cuento2mc = function(mode,startPosition,loop,reversed) {
@@ -2480,20 +2480,20 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CespedFrente.png?1678809879257", id:"CespedFrente"},
-		{src:"images/Fondo1.png?1678809879257", id:"Fondo1"},
-		{src:"images/Fondo.png?1678809879257", id:"Fondo"},
-		{src:"images/Fondo_1.png?1678809879257", id:"Fondo_1"},
-		{src:"images/Pantalla.png?1678809879257", id:"Pantalla"},
-		{src:"images/PortadaCuento2.png?1678809879257", id:"PortadaCuento2"},
-		{src:"images/index_atlas_1.png?1678809879038", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1678809879038", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1678809879038", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1678809879039", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1678809879039", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1678809879043", id:"index_atlas_6"},
-		{src:"sounds/intro.mp3?1678809879257", id:"intro"},
-		{src:"sounds/sound.mp3?1678809879257", id:"sound"}
+		{src:"images/CespedFrente.png?1678817952326", id:"CespedFrente"},
+		{src:"images/Fondo.png?1678817952326", id:"Fondo"},
+		{src:"images/Fondo_1.png?1678817952326", id:"Fondo_1"},
+		{src:"images/Fondo_1_1.png?1678817952326", id:"Fondo_1_1"},
+		{src:"images/Pantalla.png?1678817952326", id:"Pantalla"},
+		{src:"images/PortadaCuento2.png?1678817952326", id:"PortadaCuento2"},
+		{src:"images/index_atlas_1.png?1678817952109", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1678817952110", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1678817952110", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1678817952110", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1678817952111", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1678817952112", id:"index_atlas_6"},
+		{src:"sounds/intro.mp3?1678817952326", id:"intro"},
+		{src:"sounds/sound.mp3?1678817952326", id:"sound"}
 	],
 	preloads: []
 };
