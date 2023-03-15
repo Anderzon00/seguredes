@@ -2187,6 +2187,21 @@ if (reversed == null) { reversed = false; }
 		                    }, this);
 				
 		}
+		
+		
+		
+		
+		this.btnCuento3.addEventListener("click", f2);
+		
+		function f2() {
+			
+			createjs.Sound.play("intro", { volume: 0.8}).on("complete", function () {
+		                    
+		window.open("../Pinocho_y_el_sexting", "_self");
+				 
+		                    }, this);
+				
+		}
 	}
 
 	// actions tween:
@@ -2480,20 +2495,20 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CespedFrente.png?1678817952326", id:"CespedFrente"},
-		{src:"images/Fondo.png?1678817952326", id:"Fondo"},
-		{src:"images/Fondo_1.png?1678817952326", id:"Fondo_1"},
-		{src:"images/Fondo_1_1.png?1678817952326", id:"Fondo_1_1"},
-		{src:"images/Pantalla.png?1678817952326", id:"Pantalla"},
-		{src:"images/PortadaCuento2.png?1678817952326", id:"PortadaCuento2"},
-		{src:"images/index_atlas_1.png?1678817952109", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1678817952110", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1678817952110", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1678817952110", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1678817952111", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1678817952112", id:"index_atlas_6"},
-		{src:"sounds/intro.mp3?1678817952326", id:"intro"},
-		{src:"sounds/sound.mp3?1678817952326", id:"sound"}
+		{src:"images/CespedFrente.png?1678904300640", id:"CespedFrente"},
+		{src:"images/Fondo.png?1678904300640", id:"Fondo"},
+		{src:"images/Fondo_1.png?1678904300640", id:"Fondo_1"},
+		{src:"images/Fondo_1_1.png?1678904300640", id:"Fondo_1_1"},
+		{src:"images/Pantalla.png?1678904300640", id:"Pantalla"},
+		{src:"images/PortadaCuento2.png?1678904300640", id:"PortadaCuento2"},
+		{src:"images/index_atlas_1.png?1678904300481", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1678904300481", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1678904300482", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1678904300483", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1678904300483", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1678904300486", id:"index_atlas_6"},
+		{src:"sounds/intro.mp3?1678904300640", id:"intro"},
+		{src:"sounds/sound.mp3?1678904300640", id:"sound"}
 	],
 	preloads: []
 };
