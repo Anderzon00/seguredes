@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[1513,994,466,90],[367,1763,315,90],[554,1671,457,90],[1513,1086,466,90],[684,1763,315,90],[1013,1671,457,90],[1513,1178,466,90],[1001,1763,315,90],[1472,1671,457,90],[1211,1405,708,106],[1211,1296,707,107],[1211,994,300,300],[1110,1579,552,90],[0,1704,365,91],[0,1612,552,90],[1664,1513,366,91],[0,1520,553,90],[555,1579,553,90],[0,0,1824,992],[1826,0,140,139],[709,994,500,500],[0,994,707,524],[709,1513,803,64]]}
+		{name:"index_atlas_1", frames: [[1513,994,466,90],[367,1763,315,90],[554,1671,457,90],[1513,1086,466,90],[684,1763,315,90],[1013,1671,457,90],[1513,1178,466,90],[1001,1763,315,90],[1472,1671,457,90],[1211,1405,708,106],[1211,1296,707,107],[1211,994,300,300],[1110,1579,552,90],[0,1712,365,91],[0,1620,552,90],[1664,1513,366,91],[0,1528,553,90],[555,1579,553,90],[0,0,1824,992],[1826,0,140,139],[709,994,500,500],[709,1513,803,64],[0,994,707,532]]}
 ];
 
 
@@ -204,14 +204,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,2377,1137);
 
 
 
-(lib.Mensaje = function() {
+(lib.NombreCuento = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.NombreCuento = function() {
+(lib.Notificacion = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
@@ -597,7 +597,7 @@ if (reversed == null) { reversed = false; }
 	this.button_popup.setTransform(0,135);
 	new cjs.ButtonHelper(this.button_popup, 0, 1, 2);
 
-	this.instance_1 = new lib.Mensaje();
+	this.instance_1 = new lib.Notificacion();
 	this.instance_1.setTransform(-176.75,-161.75,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.button_popup},{t:this.instance}]}).wait(1));
@@ -956,15 +956,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1678891822591", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1678891822591", id:"barraseguredes"},
-		{src:"images/fondo11.png?1678891822591", id:"fondo11"},
-		{src:"images/fondoMorado.png?1678891822591", id:"fondoMorado"},
-		{src:"images/FondoOscuro.png?1678891822591", id:"FondoOscuro"},
-		{src:"images/index_atlas_1.png?1678891822517", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1678891822591", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1678891822591", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1678891822591", id:"sound1"}
+		{src:"images/bannernegro1.png?1679279090046", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1679279090046", id:"barraseguredes"},
+		{src:"images/fondo11.png?1679279090046", id:"fondo11"},
+		{src:"images/fondoMorado.png?1679279090046", id:"fondoMorado"},
+		{src:"images/FondoOscuro.png?1679279090046", id:"FondoOscuro"},
+		{src:"images/index_atlas_1.png?1679279089967", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1679279090046", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1679279090046", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1679279090046", id:"sound1"}
 	],
 	preloads: []
 };
