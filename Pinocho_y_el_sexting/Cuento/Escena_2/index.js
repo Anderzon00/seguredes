@@ -751,6 +751,29 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-5.5,-6.9,25.5,16.6);
 
 
+(lib.luz = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.rf(["#FF9737","#C1912A","#D9C3A3","#E9B817","#000000"],[0,0.655,0.953,1,1],0,0,0,0,0,73.4).s().p("AntIGQjRjRgEktQgEkqDNjXQDMjWElgEQEkgEDSDSQDRDRAEEtQAEEqjNDXQjMDWklAEIgJAAQkeAAjPjOg");
+	this.shape.setTransform(0.0009,0);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.luz, new cjs.Rectangle(-70.7,-72.4,141.4,144.8), null);
+
+
 (lib.Interpolación23 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -766,7 +789,7 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.BrazoIzq();
 	this.instance.setTransform(-34.75,-39.25,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(16));
 
 	this._renderFirstFrame();
 
@@ -2367,42 +2390,49 @@ if (reversed == null) { reversed = false; }
 	this.instance_1 = new lib.Interpolación23("synched",0);
 	this.instance_1.setTransform(17,-18,1,1,0,0,0,-29,17.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({regY:17.4,rotation:8.2652,x:16.95,y:-18.1},24).to({regY:17.5,rotation:0,x:17,y:-18},25).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({regY:17.4,rotation:0.6881,y:-18.1},2).to({rotation:5.853,x:16.95,y:-18.15,startPosition:15},15).to({rotation:8.2652,y:-18.1,startPosition:0},7).to({regY:17.5,rotation:0,x:17,y:-18},25).wait(1));
+
+	// Capa_2
+	this.instance_2 = new lib.luz();
+	this.instance_2.setTransform(66.45,-60,0.2894,0.2894);
+	this.instance_2.alpha = 0.2188;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({scaleX:0.8481,scaleY:0.8481,x:66.4786,y:-59.3929,alpha:0.2},0).wait(1).to({scaleX:1.4068,scaleY:1.4068,x:66.5071,y:-58.7857,alpha:0.18},0).wait(1).to({scaleX:1.9655,scaleY:1.9655,x:66.5357,y:-58.1786,alpha:0.16},0).wait(1).to({scaleX:2.5242,scaleY:2.5242,x:66.5643,y:-57.5714,alpha:0.14},0).wait(1).to({scaleX:3.0829,scaleY:3.0829,x:66.5929,y:-56.9643,alpha:0.12},0).wait(1).to({scaleX:3.6416,scaleY:3.6416,x:66.6214,y:-56.3571,alpha:0.1},0).wait(1).to({scaleX:4.2003,scaleY:4.2003,x:66.65,y:-55.75,alpha:0.08},0).wait(8).to({scaleX:0.2921,scaleY:0.2921,x:66.45,y:-60,alpha:0.2188},0).to({_off:true},1).wait(34));
 
 	// BrazoDer.png
-	this.instance_2 = new lib.BrazoDer();
-	this.instance_2.setTransform(-59.75,-20.75,0.5,0.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(50));
-
-	// Pelo-Atras.png
-	this.instance_3 = new lib.PeloAtras();
-	this.instance_3.setTransform(-81.75,-136.75,0.5,0.5);
+	this.instance_3 = new lib.BrazoDer();
+	this.instance_3.setTransform(-59.75,-20.75,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(50));
 
-	// AlaIzq.png  
-	this.instance_4 = new lib.Interpolación16("synched",0);
-	this.instance_4.setTransform(47,-6.25,1,1,0,0,0,-25,21);
+	// Pelo-Atras.png
+	this.instance_4 = new lib.PeloAtras();
+	this.instance_4.setTransform(-81.75,-136.75,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).to({regX:-24.9,rotation:-9.1885,x:47.1,y:-6.2},24).to({regX:-25,rotation:0,x:47,y:-6.25},25).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(50));
+
+	// AlaIzq.png  
+	this.instance_5 = new lib.Interpolación16("synched",0);
+	this.instance_5.setTransform(47,-6.25,1,1,0,0,0,-25,21);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).to({regX:-24.9,rotation:-9.1885,x:47.1,y:-6.2},24).to({regX:-25,rotation:0,x:47,y:-6.25},25).wait(1));
 
 	// AlaDerecha.png
-	this.instance_5 = new lib.Interpolación18("synched",0);
-	this.instance_5.setTransform(-58,-10,1,1,0,0,0,18,17);
+	this.instance_6 = new lib.Interpolación18("synched",0);
+	this.instance_6.setTransform(-58,-10,1,1,0,0,0,18,17);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).to({regX:17.9,rotation:7.9445,x:-58.05},24).to({regX:18,rotation:0,x:-58},25).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).to({regX:17.9,rotation:7.9445,x:-58.05},24).to({regX:18,rotation:0,x:-58},25).wait(1));
 
 	// estrellas
-	this.instance_6 = new lib.estrellas();
-	this.instance_6.setTransform(0,-57.45);
+	this.instance_7 = new lib.estrellas();
+	this.instance_7.setTransform(0,-57.45);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(50));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(50));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-213.7,-178.1,427.5,314.9);
+p.nominalBounds = new cjs.Rectangle(-230.4,-359.9,594,608.2);
 
 
 (lib.hada = function(mode,startPosition,loop,reversed) {
@@ -2889,14 +2919,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1679277816797", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1679277816797", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1679277816799", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1679277816964", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1679277816964", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1679277816964", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1679277816964", id:"Voice3"},
-		{src:"sounds/BGM.mp3?1679277816964", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1679282185047", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1679282185047", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1679282185049", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1679282185214", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1679282185214", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1679282185214", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1679282185214", id:"Voice3"},
+		{src:"sounds/BGM.mp3?1679282185214", id:"BGM"}
 	],
 	preloads: []
 };
