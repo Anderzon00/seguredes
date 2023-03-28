@@ -2175,20 +2175,7 @@ if (reversed == null) { reversed = false; }
 			
 		}
 		
-		
-		this.btnCuento2.addEventListener("click", f2);
-		
-		function f2() {
-			
-			createjs.Sound.play("intro", { volume: 0.8}).on("complete", function () {
-		                    
-		window.open("../Caperucita_y_el_pishing", "_self");
-				 
-		                    }, this);
-				
-		}
-		
-		
+		 
 		
 		
 		this.btnCuento3.addEventListener("click", f2);
@@ -2202,6 +2189,17 @@ if (reversed == null) { reversed = false; }
 		                    }, this);
 				
 		}
+		
+		
+		
+		
+		var _this = this;
+		
+		_this.btnCuento2.on('click', function(){
+		createjs.Sound.play("intro", { volume: 0.8}).on("complete", function () {                    
+		window.open("../Caperucita_y_el_pishing", "_self");		 
+		                    }, this);
+		});
 	}
 
 	// actions tween:
@@ -2495,20 +2493,20 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CespedFrente.png?1678904300640", id:"CespedFrente"},
-		{src:"images/Fondo.png?1678904300640", id:"Fondo"},
-		{src:"images/Fondo_1.png?1678904300640", id:"Fondo_1"},
-		{src:"images/Fondo_1_1.png?1678904300640", id:"Fondo_1_1"},
-		{src:"images/Pantalla.png?1678904300640", id:"Pantalla"},
-		{src:"images/PortadaCuento2.png?1678904300640", id:"PortadaCuento2"},
-		{src:"images/index_atlas_1.png?1678904300481", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1678904300481", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1678904300482", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1678904300483", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1678904300483", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1678904300486", id:"index_atlas_6"},
-		{src:"sounds/intro.mp3?1678904300640", id:"intro"},
-		{src:"sounds/sound.mp3?1678904300640", id:"sound"}
+		{src:"images/CespedFrente.png?1679972353894", id:"CespedFrente"},
+		{src:"images/Fondo.png?1679972353894", id:"Fondo"},
+		{src:"images/Fondo_1.png?1679972353894", id:"Fondo_1"},
+		{src:"images/Fondo_1_1.png?1679972353894", id:"Fondo_1_1"},
+		{src:"images/Pantalla.png?1679972353894", id:"Pantalla"},
+		{src:"images/PortadaCuento2.png?1679972353894", id:"PortadaCuento2"},
+		{src:"images/index_atlas_1.png?1679972353750", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1679972353750", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1679972353751", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1679972353751", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1679972353751", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1679972353753", id:"index_atlas_6"},
+		{src:"sounds/intro.mp3?1679972353894", id:"intro"},
+		{src:"sounds/sound.mp3?1679972353894", id:"sound"}
 	],
 	preloads: []
 };
