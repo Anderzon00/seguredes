@@ -522,7 +522,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }
     
-  let puzzle = new Puzzle(16, 16, pick(wordLists), directions);
+  let puzzle = new Puzzle(15, 15, pick(wordLists), directions);
   puzzle.print();
 
   app = new PuzzleApp(document.getElementById("canvasContainer"), puzzle);

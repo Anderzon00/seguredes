@@ -15,9 +15,9 @@ li.outset {
   color:aliceblue;
   background-color: rgba(1, 151, 2205);
   
-  border-radius: 8px;  
+  border-radius: 23px;  
   border: solid  1px  rgb(209, 231, 12);   
-  padding: .1em .5em .1em 1em;
+  padding: .1em .3em .1em 1em;
   margin-bottom: 0.35em;
   text-shadow: 0 1px 0 rgb(17, 17, 17);  
   font-size:2vw

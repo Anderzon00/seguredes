@@ -1325,11 +1325,11 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1678604725783", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1678604725954", id:"audioLoop"},
-		{src:"sounds/SoundBoton.mp3?1678604725954", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1678604725954", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1678604725954", id:"retroalimentacion"}
+		{src:"images/index_atlas_1.png?1681769639046", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1681769639195", id:"audioLoop"},
+		{src:"sounds/SoundBoton.mp3?1681769639195", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1681769639195", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1681769639195", id:"retroalimentacion"}
 	],
 	preloads: []
 };
