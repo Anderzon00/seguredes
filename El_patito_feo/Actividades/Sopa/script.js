@@ -26,12 +26,7 @@
 *
 */
 
-let myAudio = new Audio();
-let myAudio2= new Audio();
  
- 
-   myAudio.src = 'sound.mp3';
-  myAudio2.src = 'sound2.mp3';
   
 
 
@@ -469,33 +464,37 @@ class PuzzleApp extends App {
 
       let elements = list.getElementsByTagName("li");
     
-      Array.prototype.some.call(elements, li => {
-        if (li.innerText == word) {
-          li.classList.add("found");
-          contador++; 
-          myAudio2.pause();
-          myAudio.play();
-        
-          element.innerHTML =contador ;
-
-          this.selections.push(this.selection.clone().fill());
-          return true;
-        }
-
-        else {
-
-          myAudio2.play();
-      
-        }
-
-
-        return false;
-      });
+      const myAudio = new Audio();
+Array.prototype.some.call(elements, li => {
+  if (li.innerText == word) {
+    li.classList.add("found");
+    contador++; 
+    myAudio.currentTime = 0;
+    myAudio.pause(); 
+    myAudio.src = 'sound.mp3'; // Cambiar la ruta del archivo de audio
+    myAudio.load();    
+    //Avoid the Promise Error
+    setTimeout(function () {      
+       myAudio.play();
+    }, 150)     
+    
+    element.innerHTML = contador;
+    this.selections.push(this.selection.clone().fill());
+    return true;
+  }
+  else {
+    myAudio.currentTime = 0;
+    myAudio.pause(); 
+    myAudio.src = 'sound2.mp3'; // Cambiar la ruta del archivo de audio
+    myAudio.load();    
+    //Avoid the Promise Error
+    setTimeout(function () {      
+       myAudio.play();
+    }, 150)    
+    return false;
+  }
+});      
     }
-
-
-    
-    
     this.selection = null;
   }
 }

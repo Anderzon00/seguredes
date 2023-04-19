@@ -1084,6 +1084,8 @@ if (reversed == null) { reversed = false; }
 		this.stop();
 		createjs.Sound.stop();
 		
+		contador=0;
+		
 		sound = createjs.Sound.play("sound", { volume: 0.3, loop: -1});
 		
 		var _this = this; 
@@ -1283,11 +1285,11 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1681915613239", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1681915613386", id:"audioLoop"},
-		{src:"sounds/SoundBoton.mp3?1681915613386", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1681915613386", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1681915613386", id:"retroalimentacion"}
+		{src:"images/index_atlas_1.png?1681922776995", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1681922777145", id:"audioLoop"},
+		{src:"sounds/SoundBoton.mp3?1681922777145", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1681922777145", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1681922777145", id:"retroalimentacion"}
 	],
 	preloads: []
 };
