@@ -2090,7 +2090,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.cuento2mc, new cjs.Rectangle(-861,-394,1565,897), null);
+}).prototype = getMCSymbolPrototype(lib.cuento2mc, new cjs.Rectangle(-861,-394,1487.5,826), null);
 
 
 (lib.cuento2 = function(mode,startPosition,loop,reversed) {
@@ -2493,20 +2493,20 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CespedFrente.png?1679972353894", id:"CespedFrente"},
-		{src:"images/Fondo.png?1679972353894", id:"Fondo"},
-		{src:"images/Fondo_1.png?1679972353894", id:"Fondo_1"},
-		{src:"images/Fondo_1_1.png?1679972353894", id:"Fondo_1_1"},
-		{src:"images/Pantalla.png?1679972353894", id:"Pantalla"},
-		{src:"images/PortadaCuento2.png?1679972353894", id:"PortadaCuento2"},
-		{src:"images/index_atlas_1.png?1679972353750", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1679972353750", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1679972353751", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1679972353751", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1679972353751", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1679972353753", id:"index_atlas_6"},
-		{src:"sounds/intro.mp3?1679972353894", id:"intro"},
-		{src:"sounds/sound.mp3?1679972353894", id:"sound"}
+		{src:"images/CespedFrente.png?1681134817691", id:"CespedFrente"},
+		{src:"images/Fondo.png?1681134817691", id:"Fondo"},
+		{src:"images/Fondo_1.png?1681134817691", id:"Fondo_1"},
+		{src:"images/Fondo_1_1.png?1681134817691", id:"Fondo_1_1"},
+		{src:"images/Pantalla.png?1681134817691", id:"Pantalla"},
+		{src:"images/PortadaCuento2.png?1681134817691", id:"PortadaCuento2"},
+		{src:"images/index_atlas_1.png?1681134817552", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1681134817552", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1681134817553", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1681134817553", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1681134817553", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1681134817555", id:"index_atlas_6"},
+		{src:"sounds/intro.mp3?1681134817691", id:"intro"},
+		{src:"sounds/sound.mp3?1681134817691", id:"sound"}
 	],
 	preloads: []
 };
