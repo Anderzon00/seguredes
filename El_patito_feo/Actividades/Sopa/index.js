@@ -1081,22 +1081,15 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,1];
 	// timeline functions:
 	this.frame_0 = function() {
-		stage.on('drawstart', initStage, this, true);
-		function initStage() {
-		stretchToFit();
-		}
+		this.stop();
+		createjs.Sound.stop();
 		
 		sound = createjs.Sound.play("sound", { volume: 0.3, loop: -1});
-		
-		
 		
 		var _this = this; 
 		
 		_this.on("click", function (e) {
-		
-		
 				if (e.target.name === "unmute")
-		
 				{
 				sound.muted = false;
 					_this.mute.visible = true;
@@ -1105,75 +1098,34 @@ if (reversed == null) { reversed = false; }
 				sound.muted = true;
 					_this.mute.visible = false;
 					_this.unmute.visible = true;
-				}		
-		
+				}	
 			});
 			
-		
-		
-		this.stop();
-		
-		
-		
-		
-		
-		
-		
-		var _this =this;
-		
-		var key;
-		contador=0;
+		stage.on('drawstart', initStage, this, true);
+		function initStage() {
+		stretchToFit();
+		} 
 		
 		var element = document.createElement('div');
-		canvas.parentNode.appendChild(element);
-		//height = 13.5*   Math.max(window.innerHeight )/16 ; 
-		//width = 27.85*(Math.max(window.innerWidth)/32) ;
-		width = window.innerWidth/1.5;
-		height = window.innerHeight/0.9 ; 
-		topElement= 0.3*Math.max(window.innerHeight )/16 +'px';
-		leftElement =7*Math.max(window.innerWidth)/32 +'px';
-		
-		
-		
-		element.innerHTML = '<iframe  id="video" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="border:none "   src="./source" width="'+ width+ '" height="'+height+'">';	 
-		 document.getElementById('video').style.display =  'block'; 
-		
-		  function embed (style){				
-		        for (key in style)
-			    element.style[key] = style[key];		
-		}	 
-		
-		 embed( {position: 'absolute', 	 top: topElement  ,	left: leftElement});
-		
-		window.addEventListener('resize', () =>{
-			
-		width = window.innerWidth/1.5;
-		height = window.innerHeight/0.9 ; 
-		topElement= 0.3*Math.max(window.innerHeight )/16 +'px';
-		leftElement =7*Math.max(window.innerWidth)/32 +'px';	
+		element.setAttribute('id', 'contenidos');
+		document.body.appendChild(element);
+		element.style.position = "absolute"; 
+		element.style.width = "60%"; 
+		element.style.height = "80%";   
+		element.style.left= "25%";  
+		element.style.top="1%";
 		 
-		embed( {position: 'absolute', 	 top:topElement   ,	left: leftElement});  
-		document.getElementById('video').style.width = width +'px'; 
-		document.getElementById('video').style.height = height +'px'; 
-		 
-		});
+		element.innerHTML = '  <iframe scrolling="no" frameBorder="0"  id="my_iframe"  src="sopa.html" style="width: 100%; height: 100%;">';
 		
-		
-		
-		function sayHello(){
-			
-			document.getElementById('video')
+		 function sayHello(){	
+			document.getElementById('my_iframe')
 		      .contentWindow
 		      .document
 		      .querySelectorAll("li.contador")
-		      .forEach(p => contador= p.textContent);
-			
-		 
+		      .forEach(p => contador= p.textContent); 
 			//14
-			 if (contador < 14) {	 		 
-				
-		    setTimeout(sayHello, 1000); 
-						
+			 if (contador < 14) {	
+		    setTimeout(sayHello, 1000); 				
 				} 
 				else
 					{		 
@@ -1192,6 +1144,12 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_1 = function() {
+		const elementdiv = document.getElementById('contenidos');
+		elementdiv?.remove();
+		
+		
+		
+		
 		createjs.Sound.stop();
 		createjs.Sound.play("retroalimentacion");
 		
@@ -1325,11 +1283,11 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1681769639046", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1681769639195", id:"audioLoop"},
-		{src:"sounds/SoundBoton.mp3?1681769639195", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1681769639195", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1681769639195", id:"retroalimentacion"}
+		{src:"images/index_atlas_1.png?1681915613239", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1681915613386", id:"audioLoop"},
+		{src:"sounds/SoundBoton.mp3?1681915613386", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1681915613386", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1681915613386", id:"retroalimentacion"}
 	],
 	preloads: []
 };
