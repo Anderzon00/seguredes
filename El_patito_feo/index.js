@@ -273,6 +273,36 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-35,-34.7,70,69.5);
 
 
+(lib.btn_amarillo = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_2
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#FFFF00").ss(15,1,1).p("AIDAAQAADViXCXQiWCXjWAAQjUAAiYiXQiWiXAAjVQAAjVCWiXQCYiWDUAAQDWAACWCWQCXCXAADVg");
+	this.shape.setTransform(-2.025,-1.975);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).to({_off:true},24).wait(24));
+
+	// Capa_1
+	this.instance = new lib.botonplay();
+	this.instance.setTransform(-75,-75,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(48));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-75,-75,150,150);
+
+
 (lib.btnVolverAcuento = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -323,29 +353,6 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(322,-21,276.5,45);
-
-
-(lib.btnPlay = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Capa_1
-	this.instance = new lib.botonplay();
-	this.instance.setTransform(-75,-75,0.5,0.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.5201,scaleY:0.5201,x:-78,y:-78},0).wait(1).to({scaleX:0.46,scaleY:0.46,x:-69,y:-69},0).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-78,-78,156,156);
 
 
 (lib.btnInicio = function(mode,startPosition,loop,reversed) {
@@ -566,6 +573,31 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-35,-34.7,70,74.5);
+
+
+(lib.btnPlay = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.btn_amarillo();
+
+	this.instance_1 = new lib.botonplay();
+	this.instance_1.setTransform(-78,-78,0.5201,0.5201);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1,p:{scaleX:0.5201,scaleY:0.5201,x:-78,y:-78}}]},1).to({state:[{t:this.instance_1,p:{scaleX:0.46,scaleY:0.46,x:-69,y:-69}}]},1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-78,-78,156,156);
 
 
 (lib.Simbologrupo = function(mode,startPosition,loop,reversed) {
@@ -864,7 +896,7 @@ if (reversed == null) { reversed = false; }
 
 	this.bntPlay = new lib.btnPlay();
 	this.bntPlay.name = "bntPlay";
-	this.bntPlay.setTransform(685,345);
+	this.bntPlay.setTransform(685,345,1.5,1.5);
 	this.bntPlay._off = true;
 	new cjs.ButtonHelper(this.bntPlay, 0, 1, 2);
 
@@ -879,8 +911,8 @@ if (reversed == null) { reversed = false; }
 	this.instance_4.setTransform(101,53,0.5016,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.button_popup},{t:this.instance}]}).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_2}]},10).to({state:[{t:this.bntPlay}]},1).to({state:[{t:this.bntPlay},{t:this.shape}]},1).to({state:[{t:this.bntPlay},{t:this.instance_3}]},1).to({state:[{t:this.bntPlay},{t:this.instance_4}]},1).to({state:[]},1).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({_off:false},0).to({regX:35.8,regY:32.3,scaleX:0.0028,scaleY:0.0031,x:683.1,y:352.4},10).to({_off:true,regX:0,regY:0,scaleX:1,scaleY:1,x:685,y:345},1).wait(5));
-	this.timeline.addTween(cjs.Tween.get(this.bntPlay).wait(11).to({_off:false},1).wait(2).to({scaleX:1.0011,x:685.6},0).wait(1).to({scaleX:1,x:685},0).to({_off:true},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({_off:false},0).to({regX:35.8,regY:32.3,scaleX:0.0028,scaleY:0.0031,x:683.1,y:352.4},10).to({_off:true,regX:0,regY:0,scaleX:1.5,scaleY:1.5,x:685,y:345},1).wait(5));
+	this.timeline.addTween(cjs.Tween.get(this.bntPlay).wait(11).to({_off:false},1).to({scaleX:1,scaleY:1},1).wait(1).to({scaleX:1.0011,x:685.6},0).wait(1).to({scaleX:1,x:685},0).to({_off:true},1).wait(1));
 
 	// Capa_3
 	this.btnInicio = new lib.btnInicio();
@@ -959,15 +991,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1679323095079", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1679323095079", id:"barraseguredes"},
-		{src:"images/fondo11.png?1679323095079", id:"fondo11"},
-		{src:"images/fondoMorado.png?1679323095079", id:"fondoMorado"},
-		{src:"images/Portada.png?1679323095079", id:"Portada"},
-		{src:"images/index_atlas_1.png?1679323095006", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1679323095079", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1679323095079", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1679323095079", id:"sound1"}
+		{src:"images/bannernegro1.png?1681796923111", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1681796923111", id:"barraseguredes"},
+		{src:"images/fondo11.png?1681796923111", id:"fondo11"},
+		{src:"images/fondoMorado.png?1681796923111", id:"fondoMorado"},
+		{src:"images/Portada.png?1681796923111", id:"Portada"},
+		{src:"images/index_atlas_1.png?1681796923032", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1681796923111", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1681796923111", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1681796923111", id:"sound1"}
 	],
 	preloads: []
 };
