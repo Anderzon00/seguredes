@@ -2346,6 +2346,22 @@ if (reversed == null) { reversed = false; }
 		_this.btnSalir.on('click', function(){
 			
 		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
+			
+			
+			
+				if (document.fullscreenElement) {
+		    document
+		      .exitFullscreen()
+		      .then(() => console.log("Document Exited from Full screen mode"))
+		      .catch((err) => console.error(err));
+		  } else {
+		    document.documentElement.requestFullscreen();
+		  }
+			
+			
+			
+			
+			
 		window.open('../../Menu', '_self');
 				 
 		                    }, this);
@@ -2431,10 +2447,54 @@ if (reversed == null) { reversed = false; }
 		return new Promise((resolve) => setTimeout(resolve, time));
 		}
 		
-		sleep(5000).then(() => {
+		sleep(8000).then(() => {
 		   _this.guia.visible = false;
 		});
 		
+		});
+		
+		     var element = document.body;    
+		function GoInFullscreen() {
+			if(element.requestFullscreen)
+				element.requestFullscreen();
+			else if(element.mozRequestFullScreen)
+				element.mozRequestFullScreen();
+			else if(element.webkitRequestFullscreen)
+				element.webkitRequestFullscreen();
+			else if(element.msRequestFullscreen)
+				element.msRequestFullscreen();
+		}
+		
+		/* Get out of full screen */
+		function GoOutFullscreen() {
+			if(document.exitFullscreen)
+				document.exitFullscreen();
+			else if(document.mozCancelFullScreen)
+				document.mozCancelFullScreen();
+			else if(document.webkitExitFullscreen)
+				document.webkitExitFullscreen();
+			else if(document.msExitFullscreen)
+				document.msExitFullscreen();
+		}
+		
+		function IsFullScreenCurrently() {
+			var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;
+			
+			if(full_screen_element === null)
+				return false;
+			else
+				return true;
+		}
+		
+		
+		
+		
+		_this.fullscreen.on('click', function(){ 
+		if(IsFullScreenCurrently())
+				GoOutFullscreen();
+			else
+				GoInFullscreen();
+			   
 		});
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
@@ -2598,54 +2658,29 @@ if (reversed == null) { reversed = false; }
 		
 		
 		var _this=this;
-		    var element = document.body;
-		
-		
-		
-		function GoInFullscreen() {
-			if(element.requestFullscreen)
-				element.requestFullscreen();
-			else if(element.mozRequestFullScreen)
-				element.mozRequestFullScreen();
-			else if(element.webkitRequestFullscreen)
-				element.webkitRequestFullscreen();
-			else if(element.msRequestFullscreen)
-				element.msRequestFullscreen();
-		}
-		
-		/* Get out of full screen */
-		function GoOutFullscreen() {
-			if(document.exitFullscreen)
-				document.exitFullscreen();
-			else if(document.mozCancelFullScreen)
-				document.mozCancelFullScreen();
-			else if(document.webkitExitFullscreen)
-				document.webkitExitFullscreen();
-			else if(document.msExitFullscreen)
-				document.msExitFullscreen();
-		}
-		
-		
-		function IsFullScreenCurrently() {
-			var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;
-			
-			if(full_screen_element === null)
-				return false;
-			else
-				return true;
-		}
-		
-		_this.fullscreen.on('click', function(){ 
-		if(IsFullScreenCurrently())
-				GoOutFullscreen();
-			else
-				GoInFullscreen();
-			   
-		});
 		var _this = this;
 		
 		_this.btnindice.on('click', function(){	
 			createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
+				
+				
+				if (document.fullscreenElement) {
+		    document
+		      .exitFullscreen()
+		      .then(() => console.log("Document Exited from Full screen mode"))
+		      .catch((err) => console.error(err));
+		  } else {
+		    document.documentElement.requestFullscreen();
+		  }
+				
+				
+				
+				
+				
+				
+				
+				
+				
 		    window.open('../../Menu', '_self');		 
 		   }, this);	
 		
@@ -2786,14 +2821,14 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1678596855644", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1678596855646", id:"index_atlas_P_2"},
-		{src:"sounds/drop.mp3?1678596855842", id:"drop"},
-		{src:"sounds/error.mp3?1678596855842", id:"error"},
-		{src:"sounds/win.mp3?1678596855842", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1678596855842", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1678596855842", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1678596855842", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1681916870498", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1681916870499", id:"index_atlas_P_2"},
+		{src:"sounds/drop.mp3?1681916870682", id:"drop"},
+		{src:"sounds/error.mp3?1681916870682", id:"error"},
+		{src:"sounds/win.mp3?1681916870682", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1681916870682", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1681916870682", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1681916870682", id:"retroalimentacion"}
 	],
 	preloads: []
 };

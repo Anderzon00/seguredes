@@ -2340,6 +2340,14 @@ if (reversed == null) { reversed = false; }
 		_this.btnSalir.on('click', function(){
 			
 		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
+				if (document.fullscreenElement) {
+		    document
+		      .exitFullscreen()
+		      .then(() => console.log("Document Exited from Full screen mode"))
+		      .catch((err) => console.error(err));
+		  } else {
+		    document.documentElement.requestFullscreen();
+		  }	
 		window.open('../../Menu', '_self');
 				 
 		                    }, this);
@@ -2415,20 +2423,14 @@ if (reversed == null) { reversed = false; }
 			this.isSingleFrame = true;
 		}
 		var _this = this;
-		
-		_this.btnMostrar.on('click', function(){
-			
-		_this.guia.visible = true;
-			
-		function sleep (time) {
-			
+		_this.btnMostrar.on('click', function(){	
+		_this.guia.visible = true;	
+		function sleep (time) {	
 		return new Promise((resolve) => setTimeout(resolve, time));
 		}
-		
-		sleep(5000).then(() => {
+		sleep(8000).then(() => {
 		   _this.guia.visible = false;
 		});
-		
 		});
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
@@ -2640,6 +2642,17 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnindice.on('click', function(){	
 			createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
+					if (document.fullscreenElement) {
+		    document
+		      .exitFullscreen()
+		      .then(() => console.log("Document Exited from Full screen mode"))
+		      .catch((err) => console.error(err));
+		  } else {
+		    document.documentElement.requestFullscreen();
+		  }
+				
+				
+				
 		    window.open('../../Menu', '_self');		 
 		   }, this);	
 		
@@ -2780,13 +2793,13 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1678596951461", id:"index_atlas_P_1"},
-		{src:"sounds/drop.mp3?1678596951642", id:"drop"},
-		{src:"sounds/error.mp3?1678596951642", id:"error"},
-		{src:"sounds/win.mp3?1678596951642", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1678596951642", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1678596951642", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1678596951642", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1681917249563", id:"index_atlas_P_1"},
+		{src:"sounds/drop.mp3?1681917249740", id:"drop"},
+		{src:"sounds/error.mp3?1681917249740", id:"error"},
+		{src:"sounds/win.mp3?1681917249740", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1681917249740", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1681917249740", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1681917249740", id:"retroalimentacion"}
 	],
 	preloads: []
 };
