@@ -1,53 +1,36 @@
- body
+td {
+  width: 40px;
+  height: 40px;
+}
 
- {
-  font-family: 'Patrick Hand', sans-serif;} 
+html, body {
+  width:  100%;
+  height: 100%;
+  margin: 0px;
+}
 
 ul {
-  display: inline-block;  
-  
-  list-style-type: none;
-  vertical-align:top;
+  display: inline-block;
+  font-size: 7vmin;
+  padding-left: 14vmin;
 }
-
-li.outset {
-
-  color:aliceblue;
-  background-color: rgba(1, 151, 2205);
-  
-  border-radius: 23px;  
-  border: solid  1px  rgb(209, 231, 12);   
-  padding: .1em .3em .1em 1em;
-  margin-bottom: 0.35em;
-  text-shadow: 0 1px 0 rgb(17, 17, 17);  
-  font-size:2vw
-  
-}
-li.contador
-{
-  list-style-type: none;
-  color : #008bba00;
-
-}
-
 
 li.found {
   text-decoration: line-through;
-  background-color: rgba(46, 182, 19, 0.877);
-  list-style: '👍';
-  
 }
 
-
 div#canvasContainer {
-  
-
-  font-family: 'Patrick Hand', sans-serif;
-
-
-  width: 60%;
+  width: 100%;
   display: inline-block;
 }
 
- 
- 
+ @media (min-aspect-ratio: 1/1) {
+   ul {
+    font-size: 4vmin;
+    padding-left: 7vmin;
+   }
+   
+   div#canvasContainer {
+    width: 50%;
+  }
+}
