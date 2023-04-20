@@ -288,14 +288,21 @@ class Puzzle {
       return copy;
   }
   
-  wordAt(position, direction, length) {
-    let word = new Array(length);
+  
+
+   wordAt(position, direction, length) {
+    let word = "";
     for (let i = 0; i < length; i++) {
-      word[i] = this.grid.get(position.x, position.y);
+      word += this.grid.get(position.x, position.y);
       position = position.add(direction);
     }
-    return word.join("");
+    return word;
   }
+  
+
+
+
+
   
   print() {
     this.grid.print();
