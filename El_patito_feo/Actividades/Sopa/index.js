@@ -1285,11 +1285,11 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1681922776995", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1681922777145", id:"audioLoop"},
-		{src:"sounds/SoundBoton.mp3?1681922777145", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1681922777145", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1681922777145", id:"retroalimentacion"}
+		{src:"images/index_atlas_1.png?1682005530848", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1682005530989", id:"audioLoop"},
+		{src:"sounds/SoundBoton.mp3?1682005530989", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1682005530989", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1682005530989", id:"retroalimentacion"}
 	],
 	preloads: []
 };
