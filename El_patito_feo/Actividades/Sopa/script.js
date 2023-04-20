@@ -1,4 +1,5 @@
-/*
+/**
+*
 * @source: https://english.fromatogra.com/games/word-search/js/index.js
 *
 * @licstart  The following is the entire license notice for the 
@@ -15,7 +16,7 @@
 * without even the implied warranty of MERCHANTABILITY or FITNESS
 * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
 *
-* As additional permission under GNU GPL version 3 section 7, yo
+* As additional permission under GNU GPL version 3 section 7, you
 * may distribute non-source (e.g., minimized or compacted) forms of
 * that code without the copy of the GNU GPL normally required by
 * section 4, provided you include this license notice and a URL
@@ -26,18 +27,6 @@
 *
 */
 
- 
-  
-
-
-
- 
-
-  var contador = 0;
-  var element = document.createElement('li');   
-  element.id = 'contador';
-  element.className="contador"
-  document.body.appendChild(element);
 class App {
   constructor(div) {
     this.div = div;
@@ -45,17 +34,21 @@ class App {
     this.ctx = canvas.getContext('2d');
     this.dirty = true;
     this.prev = +new Date();
+    this.prevPos = [0, 0];
     
     this.resize();
     
     window.addEventListener('resize', () => this.resize(), false);
     
     this.canvas.addEventListener("mousedown", (event) => {
-      this.touchdown(...App.getmousePos(event));
+      this.prevPos = App.getmousePos(event)
+      this.touchdown(...this.prevPos);
       event.preventDefault();
     }); 
     this.canvas.addEventListener("mousemove", (event) => {
-      this.touchmove(...App.getmousePos(event));
+      let curPos = App.getmousePos(event);
+      this.touchmove(...curPos, curPos[0]-this.prevPos[0], curPos[1]-this.prevPos[1]);
+      this.prevPos = curPos;
       event.preventDefault();
     });
     this.canvas.addEventListener("mouseup", (event) => {
@@ -63,41 +56,44 @@ class App {
       event.preventDefault();
     });
     this.canvas.addEventListener("touchstart", (event) => {
-      this.touchdown(...App.getmousePos(event));
+      this.prevPos = App.getmousePos(event)
+      this.touchdown(...this.prevPos);
       event.preventDefault();
     });
     this.canvas.addEventListener("touchmove", (event) => {
-      this.touchmove(App.getmousePos(event));
+      let curPos = App.getmousePos(event);
+      this.touchmove(...curPos, curPos[0]-this.prevPos[0], curPos[1]-this.prevPos[1]);
+      this.prevPos = curPos;
       event.preventDefault();
     });
     this.canvas.addEventListener("touchend", (event) => {
-      this.touchup(App.getmousePos(event));
+      this.touchup(...App.getmousePos(event));
       event.preventDefault();
     });
   }
   
   resize() {
     this.canvas.width  = this.div.clientWidth;
-    this.canvas.height = this.div.clientWidth;
-    this.draw();
+    this.canvas.height = this.div.clientHeight;
+    this.dirty = true;
   }
   
   loop() {
     let now = +new Date();
     let dt = now - this.prev;
     this.prev = now;
-    this.update()
+    this.update(dt/1000)
     if (this.dirty)
-      this.draw();
+      this.draw(this.ctx);
     window.requestAnimationFrame(() => this.loop());
   }
   
   update(dt) {}
   
-  draw() {
-    this.ctx.clearRect(0, 0, canvas.width, canvas.height);
-    this.ctx.rect(0, 0, 100, 100);
-    this.ctx.fill();
+  draw(ctx) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.rect(0, 0, 100, 100);
+    ctx.fill();
   }
   
   touchdown(x, y) { console.log("down", x, y); }
@@ -188,12 +184,12 @@ class Grid {
   }
   
   finalize() {
-    this.data = this.data.map(v => v == "_" ? String.fromCharCode(Math.floor(Math.random() * 26) + 65) : v);
+    this.data = this.data.map(v => v == "_" ? String.fromCharCode(Math.floor(Math.random() * 26) + 65)  : v);
   }
   
   print() {
     for (let i = 0; i < this.height; i++)
-      console.log( "");
+      console.log(this.data.slice(i*this.width, (i+1)*this.width).join(","));
   }
 }
 
@@ -288,21 +284,14 @@ class Puzzle {
       return copy;
   }
   
-  
-
-   wordAt(position, direction, length) {
-    let word = "";
+  wordAt(position, direction, length) {
+    let word = new Array(length);
     for (let i = 0; i < length; i++) {
-      word += this.grid.get(position.x, position.y);
+      word[i] = this.grid.get(position.x, position.y);
       position = position.add(direction);
     }
-    return word;
+    return word.join("");
   }
-  
-
-
-
-
   
   print() {
     this.grid.print();
@@ -316,6 +305,7 @@ class Selection {
     this.direction = new Vector(1, 0);
     this.length = 0;
     this.flength = 0;
+    this.isFinished = false;
   }
   
   clone() {
@@ -387,17 +377,11 @@ class PuzzleApp extends App {
   
   renderList(parent) {
     this.puzzle.words.forEach(word => {
-      let li = document.createElement( "li");
-      li.className= 'outset';
+      let li = document.createElement("li");
       let text = document.createTextNode(word);
       li.appendChild(text);
-      
-      parent.appendChild( li);
-
-     
+      parent.appendChild(li);
     });
-   
-
   }
   
   gridSize() {
@@ -413,38 +397,73 @@ class PuzzleApp extends App {
     return [x, y];
   }
   
-  draw() {
+  draw(ctx) {
     if (!this.puzzle)
       return;
     
-    this.ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     
     let [wsize, hsize] = this.gridSize();
     
-    this.selections.forEach(s => s.draw(this.ctx, wsize, hsize));
+    this.selections.forEach(s => s.draw(ctx, wsize, hsize));
     if (this.selection)
-      this.selection.draw(this.ctx, wsize, hsize);
+      this.selection.draw(ctx, wsize, hsize);
     
     let x = 0;
     let y = 0;
     
-    this.ctx.fillStyle = "black";
-    this.ctx.font = (wsize * 0.5) + 'px Patrick Hand';
-    this.ctx.textAlign = "center";
-    this.ctx.textBaseline = "middle";
+    ctx.fillStyle = "black";
+    ctx.font = (wsize * 0.5) + 'px sans-serif';
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
 
     for (let j = 0; j < this.puzzle.grid.height; j++) {
       for (let i = 0; i < this.puzzle.grid.width; i++) {
         let letter = this.puzzle.grid.get(i, j);
-        this.ctx.fillText(letter, x+wsize * 0.5, y+wsize * 0.5);
+        ctx.fillText(letter, x+wsize * 0.5, y+wsize * 0.5);
         x += wsize;
       }
       x = 0;
       y += wsize;
     }
+
+    // Draw back and finish button
+    if (this.isFinished) {
+      let min = this.canvas.width;
+      let size = wsize;
+
+      ctx.save();
+      
+      ctx.translate(min*0.5 - size * 1.5, min*0.5);
+      ctx.fillStyle = "purple";
+      ctx.beginPath();
+      ctx.arc(0, 0, size, 0 , 2*Math.PI);
+      ctx.fill();
+      ctx.stroke();
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle"; 
+      ctx.fillStyle = "white";
+      ctx.fillText("↺", 0, 0);
+      ctx.strokeText("↺", 0, 0);
+
+      ctx.translate(size * 3, 0);
+      ctx.fillStyle = "purple";
+      ctx.beginPath();
+      ctx.arc(0, 0, size, 0 , 2*Math.PI);
+      ctx.fill();
+      ctx.stroke();
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle"; 
+      ctx.fillStyle = "white";
+      ctx.fillText("☛", 0, 0);
+      ctx.strokeText("☛", 0, 0);
+      
+      ctx.restore();
+    }
   }
   
   touchdown(x, y) {
+    if (this.isFinished) { return; }
     [x, y] = this.clientToGrid(x, y);
     
     this.selection = new Selection(new Vector(x, y));
@@ -452,8 +471,8 @@ class PuzzleApp extends App {
   }
   
   touchmove(x, y) {
-    if (!this.selection)
-      return;
+    if (this.isFinished) { return; }
+    if (!this.selection) { return; }
     
     [x, y] = this.clientToGrid(x, y);
     
@@ -461,57 +480,57 @@ class PuzzleApp extends App {
   }
   
   touchup(x, y) {
-    if (!this.selection)
+    if (this.isFinished) {
+      let min = this.canvas.width;
+      let [wsize, hsize] = this.gridSize();
+      let size = wsize;
+
+      x -= min*0.5 - size * 1.5;
+      y -= min*0.5;
+      if (x*x+y*y < size*size*0.25) {
+          location.reload();
+      }
+
+      x -= size * 3;
+      if (x*x+y*y < size*size*0.25) {
+          window.location.href = 'https://english.fromatogra.com/games/index.html';
+      }
       return;
+    }
+
+    if (!this.selection) { return; }
     
     let word = this.puzzle.wordAt(this.selection.position, this.selection.direction, this.selection.length+1);
- 
+    console.log(word);
     if (word) {
       let list = document.getElementById("list");
-
       let elements = list.getElementsByTagName("li");
-    
-      const myAudio = new Audio();
-Array.prototype.some.call(elements, li => {
-  if (li.innerText == word) {
-    li.classList.add("found");
-    contador++; 
-    myAudio.currentTime = 0;
-    myAudio.pause(); 
-    myAudio.src = 'sound.mp3'; // Cambiar la ruta del archivo de audio
-    myAudio.load();    
-    //Avoid the Promise Error
-    setTimeout(function () {      
-       myAudio.play();
-    }, 150)     
-    
-    element.innerHTML = contador;
-    this.selections.push(this.selection.clone().fill());
-    return true;
-  }
-  else {
-    myAudio.currentTime = 0;
-    myAudio.pause(); 
-    myAudio.src = 'sound2.mp3'; // Cambiar la ruta del archivo de audio
-    myAudio.load();    
-    //Avoid the Promise Error
-    setTimeout(function () {      
-       myAudio.play();
-    }, 150)    
-    return false;
-  }
-});      
+      if (Array.prototype.some.call(elements, li => {
+        if (li.innerText == word) {
+          li.classList.add("found");
+          this.selections.push(this.selection.clone().fill());
+          return true;
+        }
+        return false;
+      })) {
+        if (Array.prototype.every.call(elements, li => li.classList.contains("found"))) {
+          this.isFinished = true;
+        }
+      }
     }
+    
     this.selection = null;
   }
 }
+
 let app = null;
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
   const wordLists = [
+     
     ["CIBERBULLYING", "CHAT", "EVIDENCIA", "DENUNCIA", "PROVOCACIÓN", "HOSTIGAMIENTO", "USUARIO","CATFISHING","PRIVACIDAD", "DESCONOCIDOS", "CIBERACOSADOR", "AGREDIR", "ACOSO" ,"FRAPING" ]
-  ]
+  ];
 
   const pick = (array) => array[Math.floor(Math.random() * (array.length))];
 
@@ -519,16 +538,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let directions = [new Vector(1,0), new Vector(0,1)];
   if (params.get("diagonal")) {
     directions.push(new Vector(1,1));
+    directions.push(new Vector(1,-1));
   }
   if (params.get("backwards")) {
     directions.push(new Vector(-1,0));
     directions.push(new Vector(0,-1));
     if (params.get("diagonal")) {
+      directions.push(new Vector(-1,1));
       directions.push(new Vector(-1,-1));
     }
   }
     
-  let puzzle = new Puzzle(15, 15, pick(wordLists), directions);
+  let puzzle = new Puzzle(14, 14, pick(wordLists), directions);
+
+
   puzzle.print();
 
   app = new PuzzleApp(document.getElementById("canvasContainer"), puzzle);
