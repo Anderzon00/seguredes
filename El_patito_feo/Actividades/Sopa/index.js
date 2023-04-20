@@ -484,6 +484,29 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.Símbolo26, new cjs.Rectangle(0,0,267,548), null);
 
 
+(lib.Símbolo4 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#F7D339").s().p("AlTG7IAAt1IKnAAIAAN1gAjiEvICqAAIAAjiIiqgDgAA/EiICqAAIAAjjIiqgDgABJgZICqAAIAAjjIiqgDgAjig0ICqAAIAAjjIiqgDg");
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-34,-44.2,68,88.5);
+
+
 (lib.Símbolo3 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1112,12 +1135,12 @@ if (reversed == null) { reversed = false; }
 		element.setAttribute('id', 'contenidos');
 		document.body.appendChild(element);
 		element.style.position = "absolute"; 
-		element.style.width = "60%"; 
+		element.style.width = "70%"; 
 		element.style.height = "80%";   
-		element.style.left= "25%";  
+		element.style.left= "22%";  
 		element.style.top="1%";
 		 
-		element.innerHTML = '  <iframe scrolling="no" frameBorder="0"  id="my_iframe"  src="sopa.html" style="width: 100%; height: 100%;">';
+		element.innerHTML = '  <iframe allow="fullscreen"  ; frameBorder="0"  id="my_iframe"  src="sopa.html" style="width: 100%; height: 100%;">';
 		
 		 function sayHello(){	
 			document.getElementById('my_iframe')
@@ -1136,7 +1159,58 @@ if (reversed == null) { reversed = false; }
 				} 
 		};
 		sayHello();
+		
+		 
+		var elem = document.getElementById("my_iframe");
+		
+		  function GoInFullscreen() {
+			if(element.requestFullscreen)
+				element.requestFullscreen();
+			else if(element.mozRequestFullScreen)
+				element.mozRequestFullScreen();
+			else if(element.webkitRequestFullscreen)
+				element.webkitRequestFullscreen();
+			else if(element.msRequestFullscreen)
+				element.msRequestFullscreen();
+		
+		}
+		 
+		 
+		
+		
+		/* Get out of full screen */
+		function GoOutFullscreen() {
+			if(document.exitFullscreen)
+				document.exitFullscreen();
+			else if(document.mozCancelFullScreen)
+				document.mozCancelFullScreen();
+			else if(document.webkitExitFullscreen)
+				document.webkitExitFullscreen();
+			else if(document.msExitFullscreen)
+				document.msExitFullscreen();
+		 	
+			 
+			
+		}
+		
+		function IsFullScreenCurrently() {
+			var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;	
+			if(full_screen_element === null)
+				return false;
+			else
+				return true;
+		}
+		
+		_this.btn.on('click', function(){ 
+		if(IsFullScreenCurrently())
+				GoOutFullscreen();
+			else
+				GoInFullscreen();	   
+		});
 		var _this = this;
+		
+		
+		this.stop();
 		
 		_this.btnindice.on('click', function(){
 		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
@@ -1177,6 +1251,14 @@ if (reversed == null) { reversed = false; }
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1));
+
+	// Capa_8
+	this.btn = new lib.Símbolo4();
+	this.btn.name = "btn";
+	this.btn.setTransform(1133.65,374.4,1,0.7288);
+	new cjs.ButtonHelper(this.btn, 0, 1, 1);
+
+	this.timeline.addTween(cjs.Tween.get(this.btn).to({_off:true},1).wait(1));
 
 	// navegacion
 	this.instance = new lib.LineasSeparadoras();
@@ -1285,11 +1367,11 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1682005530848", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1682005530989", id:"audioLoop"},
-		{src:"sounds/SoundBoton.mp3?1682005530989", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1682005530989", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1682005530989", id:"retroalimentacion"}
+		{src:"images/index_atlas_1.png?1682011421158", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1682011421309", id:"audioLoop"},
+		{src:"sounds/SoundBoton.mp3?1682011421309", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1682011421309", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1682011421309", id:"retroalimentacion"}
 	],
 	preloads: []
 };
