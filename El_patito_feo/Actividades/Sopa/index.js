@@ -1137,7 +1137,7 @@ if (reversed == null) { reversed = false; }
 		element.style.position = "absolute"; 
 		element.style.width = "70%"; 
 		element.style.height = "80%";   
-		element.style.left= "22%";  
+		element.style.left= "21.5%";  
 		element.style.top="1%";
 		 
 		element.innerHTML = '  <iframe allow="fullscreen"  ; frameBorder="0"  id="my_iframe"  src="sopa.html" style="width: 100%; height: 100%;">';
@@ -1367,11 +1367,11 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1682011421158", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1682011421309", id:"audioLoop"},
-		{src:"sounds/SoundBoton.mp3?1682011421309", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1682011421309", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1682011421309", id:"retroalimentacion"}
+		{src:"images/index_atlas_1.png?1682012042630", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1682012042781", id:"audioLoop"},
+		{src:"sounds/SoundBoton.mp3?1682012042781", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1682012042781", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1682012042781", id:"retroalimentacion"}
 	],
 	preloads: []
 };

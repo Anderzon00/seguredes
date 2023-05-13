@@ -2438,22 +2438,19 @@ if (reversed == null) { reversed = false; }
 		}
 		var _this = this;
 		
-		_this.btnMostrar.on('click', function(){
-			
-		_this.guia.visible = true;
-			
-		function sleep (time) {
-			
+		_this.btnMostrar.on('click', function(){	
+		_this.guia.visible = true;	
+		function sleep (time) {	
 		return new Promise((resolve) => setTimeout(resolve, time));
 		}
-		
 		sleep(8000).then(() => {
 		   _this.guia.visible = false;
 		});
 		
 		});
 		
-		     var element = document.body;    
+		     var element = document.body;  
+		
 		function GoInFullscreen() {
 			if(element.requestFullscreen)
 				element.requestFullscreen();
@@ -2478,23 +2475,18 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		function IsFullScreenCurrently() {
-			var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;
-			
+			var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;	
 			if(full_screen_element === null)
 				return false;
 			else
 				return true;
 		}
 		
-		
-		
-		
 		_this.fullscreen.on('click', function(){ 
 		if(IsFullScreenCurrently())
 				GoOutFullscreen();
 			else
-				GoInFullscreen();
-			   
+				GoInFullscreen();	   
 		});
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
@@ -2612,12 +2604,7 @@ if (reversed == null) { reversed = false; }
 						root.onWin();
 				}
 				else
-					{
-					root.onMiss();
-				
-						}
-						
-				
+					{root.onMiss();	}	
 				root.slot = null;
 			}
 			else
@@ -2631,19 +2618,13 @@ if (reversed == null) { reversed = false; }
 			createjs.Tween.get(pieces.target).to({x:root.slot.x, y:root.slot.y}, 350, createjs.Ease.backInOut);
 		};
 		
-		
-		
 		var _this= this
 		
 		root.onWin = function()
-		{
-			
-			createjs.Sound.stop();
-			
+		{	
+			createjs.Sound.stop();	
 			createjs.Sound.play("win");
 			createjs.Sound.play("retroalimentacion");
-		
-		
 			_this.mensaje.visible=true;
 			 
 		};
@@ -2655,35 +2636,18 @@ if (reversed == null) { reversed = false; }
 			};
 		
 		root.setup();
-		
-		
-		var _this=this;
 		var _this = this;
 		
 		_this.btnindice.on('click', function(){	
 			createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
-				
-				
-				if (document.fullscreenElement) {
+		if (document.fullscreenElement) {
 		    document
 		      .exitFullscreen()
 		      .then(() => console.log("Document Exited from Full screen mode"))
 		      .catch((err) => console.error(err));
-		  } else {
-		    document.documentElement.requestFullscreen();
-		  }
-				
-				
-				
-				
-				
-				
-				
-				
-				
+		  }  		
 		    window.open('../../Menu', '_self');		 
-		   }, this);	
-		
+		   }, this);
 		});
 		
 		sound =  createjs.Sound.play("sound", { volume: 0.3,loop:-1});
@@ -2693,7 +2657,6 @@ if (reversed == null) { reversed = false; }
 		
 		_this.on("click", function (e) {
 				if (e.target.name === "unmute")
-		
 				{		
 					 sound.muted = false;
 					_this.mute.visible = true;
@@ -2748,14 +2711,14 @@ if (reversed == null) { reversed = false; }
 	// pieces
 	this.pieces = new lib.Pieces();
 	this.pieces.name = "pieces";
-	this.pieces.setTransform(592.55,267.9,1,1,0,0,0,728.2,226.6);
+	this.pieces.setTransform(592.55,277.9,1,1,0,0,0,728.2,226.6);
 
 	this.timeline.addTween(cjs.Tween.get(this.pieces).wait(1));
 
 	// imagen_guia
 	this.guia = new lib.guia();
 	this.guia.name = "guia";
-	this.guia.setTransform(573.05,288,1.0361,1.0339,0,0,0,331.4,224.8);
+	this.guia.setTransform(573.05,298,1.0361,1.0339,0,0,0,331.4,224.8);
 	this.guia.alpha = 0.25;
 	this.guia.visible = false;
 
@@ -2764,7 +2727,7 @@ if (reversed == null) { reversed = false; }
 	// slots
 	this.slots = new lib.Slots();
 	this.slots.name = "slots";
-	this.slots.setTransform(582.4,291.95,1,1,0,0,0,702.6,250.8);
+	this.slots.setTransform(582.4,301.95,1,1,0,0,0,702.6,250.8);
 	this.slots.visible = false;
 
 	this.timeline.addTween(cjs.Tween.get(this.slots).wait(1));
@@ -2772,33 +2735,33 @@ if (reversed == null) { reversed = false; }
 	// botones
 	this.btnMostrar = new lib.btnMostrar();
 	this.btnMostrar.name = "btnMostrar";
-	this.btnMostrar.setTransform(870.35,26.75,0.5685,0.5809,0,0,0,34.5,28.1);
+	this.btnMostrar.setTransform(856.85,29.65,0.7213,1.0718,0,0,0,35.4,28);
 	new cjs.ButtonHelper(this.btnMostrar, 0, 1, 2);
 
 	this.restart = new lib.btnReinciar();
 	this.restart.name = "restart";
-	this.restart.setTransform(891.1,10.25,0.805,0.8335,0,0,0,0.4,0.3);
+	this.restart.setTransform(883.25,-0.85,1.0215,1.5379,0,0,0,1.2,0.2);
 	new cjs.ButtonHelper(this.restart, 0, 1, 2);
 
 	this.fullscreen = new lib.btnAmpliar();
 	this.fullscreen.name = "fullscreen";
-	this.fullscreen.setTransform(823,19.45,0.5728,0.5876,0,0,0,20.9,16.1);
+	this.fullscreen.setTransform(796.75,16.3,0.7268,1.0842,0,0,0,22,16.1);
 	new cjs.ButtonHelper(this.fullscreen, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.fullscreen},{t:this.restart},{t:this.btnMostrar}]}).wait(1));
 
 	// FONDO
 	this.instance_2 = new lib.Estrellas();
-	this.instance_2.setTransform(1569.25,8,0.6132,0.6159,0,0,180);
+	this.instance_2.setTransform(1569.25,18,0.6132,0.6159,0,0,180);
 
 	this.instance_3 = new lib.Estrellas();
-	this.instance_3.setTransform(780.75,-491,0.5409,0.5432,90);
+	this.instance_3.setTransform(780.75,-481,0.5409,0.5432,90);
 
 	this.instance_4 = new lib.Estrellas();
-	this.instance_4.setTransform(-402,10,0.6132,0.6159);
+	this.instance_4.setTransform(-402,20,0.6132,0.6159);
 
 	this.instance_5 = new lib.fondoimgRompecabezas();
-	this.instance_5.setTransform(221,45,0.5351,0.5383);
+	this.instance_5.setTransform(221,55,0.5351,0.5383);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2}]}).wait(1));
 
@@ -2811,7 +2774,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(192.5,-166.5,1376.8,819.1);
+p.nominalBounds = new cjs.Rectangle(192.5,-156.5,1376.8,809.1);
 // library properties:
 lib.properties = {
 	id: 'DCCA5A04F9E9EB49A3DF1304FD62D849',
@@ -2821,14 +2784,14 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1681916870498", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1681916870499", id:"index_atlas_P_2"},
-		{src:"sounds/drop.mp3?1681916870682", id:"drop"},
-		{src:"sounds/error.mp3?1681916870682", id:"error"},
-		{src:"sounds/win.mp3?1681916870682", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1681916870682", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1681916870682", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1681916870682", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1683732306144", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1683732306146", id:"index_atlas_P_2"},
+		{src:"sounds/drop.mp3?1683732306292", id:"drop"},
+		{src:"sounds/error.mp3?1683732306292", id:"error"},
+		{src:"sounds/win.mp3?1683732306292", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1683732306292", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1683732306292", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1683732306292", id:"retroalimentacion"}
 	],
 	preloads: []
 };
@@ -2927,21 +2890,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

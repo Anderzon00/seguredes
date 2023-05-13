@@ -989,13 +989,13 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnIngresar.on('click', function(){
 			 createjs.Sound.play("sound", { volume: 0.8}).on("complete", function () {                    
-				window.open("PantallaBienvenida", "_self");		 
+				window.open("PantallaBienvenida/index.html", "_self");		 
 		                    }, this);
 		});
 		
 		_this.manual.on('click', function(){
 			 createjs.Sound.play("sound2", { volume: 0.8}).on("complete", function () {                    
-				alert("MenuPrincipal");		 
+				alert("Manual");		 
 		                    }, this);
 		});
 	}
@@ -1085,12 +1085,12 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/fondoizq.png?1678904351296", id:"fondoizq"},
-		{src:"images/index_atlas_P_1.png?1678904351171", id:"index_atlas_P_1"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1678904351296", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1678904351296", id:"sound"},
-		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1678904351296", id:"notificationsound70621onlineaudioconvertercom"},
-		{src:"sounds/sound2.mp3?1678904351296", id:"sound2"}
+		{src:"images/fondoizq.png?1683925854312", id:"fondoizq"},
+		{src:"images/index_atlas_P_1.png?1683925854150", id:"index_atlas_P_1"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1683925854312", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/sound.mp3?1683925854312", id:"sound"},
+		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1683925854312", id:"notificationsound70621onlineaudioconvertercom"},
+		{src:"sounds/sound2.mp3?1683925854312", id:"sound2"}
 	],
 	preloads: []
 };
@@ -1189,21 +1189,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

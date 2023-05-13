@@ -673,7 +673,7 @@ if (reversed == null) { reversed = false; }
 		_this.btnInicio.on('click', function () {
 			createjs.Sound.play("sound2", {	volume: 0.5
 			}).on("complete", function () {
-				window.open("../../", "_self");
+				window.open("../../index.html", "_self");
 			}, this);
 		});
 		
@@ -682,7 +682,7 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.play("sound2", {
 				volume: 0.8
 			}).on("complete", function () {
-				window.open("../MenuPrincipal", "_self");
+				window.open("../MenuPrincipal/index.html", "_self");
 			}, this);
 		});
 		
@@ -754,16 +754,14 @@ if (reversed == null) { reversed = false; }
 		window.addEventListener('resize', () => {	
 		embed();
 		})
-		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(0);
-			}, this);
-		
+		this.btnVolverAcuento.on('click', () => {
+		    createjs.Sound.play("sound2", { volume: 0.8 })
+		        .on("complete", () => {
+		            this.gotoAndStop(0);
+		        });
 		});
 	}
 	this.frame_14 = function() {
@@ -878,21 +876,27 @@ if (reversed == null) { reversed = false; }
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(1).call(this.frame_14).wait(1).call(this.frame_15).wait(2));
 
+	// iframe
+	this.instance = new lib.mano();
+	this.instance.setTransform(666.85,93,1,1,0,0,0,-97,-564.9);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},1).wait(16));
+
 	// mensaje
-	this.instance = new lib.CARTA();
-	this.instance.setTransform(693,233.75);
+	this.instance_1 = new lib.CARTA();
+	this.instance_1.setTransform(693,233.75);
 
 	this.button_popup = new lib.btnAceptar();
 	this.button_popup.name = "button_popup";
 	this.button_popup.setTransform(689.75,476.75);
 	new cjs.ButtonHelper(this.button_popup, 0, 1, 2);
 
-	this.instance_1 = new lib.Mensaje();
-	this.instance_1.setTransform(513,180,0.5,0.5);
+	this.instance_2 = new lib.Mensaje();
+	this.instance_2.setTransform(513,180,0.5,0.5);
 
-	this.instance_2 = new lib.Simbologrupo();
-	this.instance_2.setTransform(689.95,341.75,1,1,0,0,0,0.2,0);
-	this.instance_2._off = true;
+	this.instance_3 = new lib.Simbologrupo();
+	this.instance_3.setTransform(689.95,341.75,1,1,0,0,0,0.2,0);
+	this.instance_3._off = true;
 
 	this.bntPlay = new lib.btnPlay();
 	this.bntPlay.name = "bntPlay";
@@ -904,14 +908,14 @@ if (reversed == null) { reversed = false; }
 	this.shape.graphics.f("#FFFFFF").s().p("Ehc7AsYMAAAhYvMC53AAAMAAABYvg");
 	this.shape.setTransform(696.6084,335.15,1.0019,1);
 
-	this.instance_3 = new lib.fondopapel1();
-	this.instance_3.setTransform(101,52,0.6535,0.5726);
+	this.instance_4 = new lib.fondopapel1();
+	this.instance_4.setTransform(101,52,0.6535,0.5726);
 
-	this.instance_4 = new lib.fondoMorado();
-	this.instance_4.setTransform(101,53,0.5016,0.5);
+	this.instance_5 = new lib.fondoMorado();
+	this.instance_5.setTransform(101,53,0.5016,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.button_popup},{t:this.instance}]}).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_2}]},10).to({state:[{t:this.bntPlay}]},1).to({state:[{t:this.bntPlay},{t:this.shape}]},1).to({state:[{t:this.bntPlay},{t:this.instance_3}]},1).to({state:[{t:this.bntPlay},{t:this.instance_4}]},1).to({state:[]},1).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({_off:false},0).to({regX:35.8,regY:32.3,scaleX:0.0028,scaleY:0.0031,x:683.1,y:352.4},10).to({_off:true,regX:0,regY:0,scaleX:1.5,scaleY:1.5,x:685,y:345},1).wait(5));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.button_popup},{t:this.instance_1}]}).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_3}]},10).to({state:[{t:this.bntPlay}]},1).to({state:[{t:this.bntPlay},{t:this.shape}]},1).to({state:[{t:this.bntPlay},{t:this.instance_4}]},1).to({state:[{t:this.bntPlay},{t:this.instance_5}]},1).to({state:[]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1).to({_off:false},0).to({regX:35.8,regY:32.3,scaleX:0.0028,scaleY:0.0031,x:683.1,y:352.4},10).to({_off:true,regX:0,regY:0,scaleX:1.5,scaleY:1.5,x:685,y:345},1).wait(5));
 	this.timeline.addTween(cjs.Tween.get(this.bntPlay).wait(11).to({_off:false},1).to({scaleX:1,scaleY:1},1).wait(1).to({scaleX:1.0011,x:685.6},0).wait(1).to({scaleX:1,x:685},0).to({_off:true},1).wait(1));
 
 	// Capa_3
@@ -920,10 +924,7 @@ if (reversed == null) { reversed = false; }
 	this.btnInicio.setTransform(113.15,741.25,1,1,0,0,0,-511.5,0.8);
 	new cjs.ButtonHelper(this.btnInicio, 0, 1, 2);
 
-	this.instance_5 = new lib.mano();
-	this.instance_5.setTransform(666.85,93,1,1,0,0,0,-97,-564.9);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5},{t:this.btnInicio}]}).to({state:[]},13).wait(4));
+	this.timeline.addTween(cjs.Tween.get(this.btnInicio).to({_off:true},13).wait(4));
 
 	// botones
 	this.btnAyuda = new lib.btnAyuda();
@@ -991,15 +992,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1681796923111", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1681796923111", id:"barraseguredes"},
-		{src:"images/fondo11.png?1681796923111", id:"fondo11"},
-		{src:"images/fondoMorado.png?1681796923111", id:"fondoMorado"},
-		{src:"images/Portada.png?1681796923111", id:"Portada"},
-		{src:"images/index_atlas_1.png?1681796923032", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1681796923111", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1681796923111", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1681796923111", id:"sound1"}
+		{src:"images/bannernegro1.png?1683671840463", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1683671840463", id:"barraseguredes"},
+		{src:"images/fondo11.png?1683671840463", id:"fondo11"},
+		{src:"images/fondoMorado.png?1683671840463", id:"fondoMorado"},
+		{src:"images/Portada.png?1683671840463", id:"Portada"},
+		{src:"images/index_atlas_1.png?1683671840399", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1683671840463", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1683671840463", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1683671840463", id:"sound1"}
 	],
 	preloads: []
 };
@@ -1098,21 +1099,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }
