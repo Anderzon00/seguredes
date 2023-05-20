@@ -817,7 +817,7 @@ if (reversed == null) { reversed = false; }
 		
 		
 		
-		element.innerHTML = '<iframe  id="video"  style="border:none "   src="indexpequeño.html" width="' + width + '" height="' + height + '">';
+		element.innerHTML = '<iframe  id="video"  style="border:none "   src="iframe.html" width="' + width + '" height="' + height + '">';
 		
 		
 		this.btnAtrasC.addEventListener("click", fl_ClickToGoToAndStopAtFrame_4.bind(this));
@@ -945,10 +945,10 @@ lib.properties = {
 	color: "#66FF00",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677699271990", id:"index_atlas_1"},
-		{src:"sounds/generales.mp3?1677699272066", id:"generales"},
-		{src:"sounds/indice.mp3?1677699272066", id:"indice"},
-		{src:"sounds/QuestionSoundEffect.mp3?1677699272066", id:"QuestionSoundEffect"}
+		{src:"images/index_atlas_1.png?1684019464678", id:"index_atlas_1"},
+		{src:"sounds/generales.mp3?1684019464751", id:"generales"},
+		{src:"sounds/indice.mp3?1684019464751", id:"indice"},
+		{src:"sounds/QuestionSoundEffect.mp3?1684019464751", id:"QuestionSoundEffect"}
 	],
 	preloads: []
 };
@@ -1047,21 +1047,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

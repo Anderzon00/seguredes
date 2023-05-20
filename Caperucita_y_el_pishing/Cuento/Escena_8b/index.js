@@ -1736,16 +1736,11 @@ if (reversed == null) { reversed = false; }
 
 	this.instance_1 = new lib.Símbolo6("synched",0);
 	this.instance_1.setTransform(-190,40,1,1,0,0,0,40,40);
-	var instance_1Filter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
-	this.instance_1.filters = [instance_1Filter_1];
+	this.instance_1.filters = [new cjs.ColorFilter(0.74, 0.74, 0.74, 1, 36.4, 13.78, 3.9, 0)];
 	this.instance_1.cache(-2,-2,84,84);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.shape}]},21).wait(20));
-	this.timeline.addTween(cjs.Tween.get(instance_1Filter_1).wait(21).to(new cjs.ColorFilter(0.74,0.74,0.74,1,36.4,13.78,3.9,0), 0).wait(20));
 
-	this.filterCacheList = [];
-	this.filterCacheList.push({instance: this.instance_1, startFrame:21, endFrame:21, x:-2, y:-2, w:84, h:84});
-	this.filterCacheList.push({instance: this.instance_1, startFrame:0, endFrame:0, x:-2, y:-2, w:84, h:84});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -1809,7 +1804,6 @@ if (reversed == null) { reversed = false; }
 	this.shape_2.setTransform(16,20);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.shape}]},1).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.instance_1}]},2).wait(1));
-	this.instance.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	this._renderFirstFrame();
 
@@ -2567,10 +2561,10 @@ if (reversed == null) { reversed = false; }
 
 	// lago fondo blanco
 	this.instance_15 = new lib.Símbolo9();
-	this.instance_15.setTransform(594.05,472.15,1.0135,1,0,0,0,592,151.2);
+	this.instance_15.setTransform(594,472.15,1.0135,1,0,0,0,591.9,151.2);
 	this.instance_15.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:596.1,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(39));
+	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:596.15,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(39));
 
 	// boca
 	this.instance_16 = new lib.boca2();
@@ -2607,14 +2601,18 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_20).wait(41));
 
 	// fondo
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("Aw0kDIAAIHAQ1kDIAAIHAARkDIAAIH");
+	this.shape.setTransform(172.35,604.725);
+
 	this.instance_21 = new lib.Fondopngcopia();
 	this.instance_21.setTransform(-11,-57,0.5052,0.5118);
 
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQwkDIAAIHAwvkDIAAIHAAAkDIAAIH");
-	this.shape.setTransform(154.85,529.725);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AQwkDIAAIHAwvkDIAAIHAAAkDIAAIH");
+	this.shape_1.setTransform(154.85,529.725);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_21}]}).wait(41));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.instance_21},{t:this.shape}]}).wait(41));
 
 	this._renderFirstFrame();
 
@@ -2629,27 +2627,27 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1673453672955", id:"index_atlas_P_1"},
-		{src:"sounds/Voice0.mp3?1673453673180", id:"Voice0"},
-		{src:"sounds/Voice9.mp3?1673453673180", id:"Voice9"},
-		{src:"sounds/Voice10.mp3?1673453673180", id:"Voice10"},
-		{src:"sounds/Voice11.mp3?1673453673180", id:"Voice11"},
-		{src:"sounds/Voice12.mp3?1673453673180", id:"Voice12"},
-		{src:"sounds/Voice13.mp3?1673453673180", id:"Voice13"},
-		{src:"sounds/Voice1.mp3?1673453673180", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1673453673180", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1673453673180", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1673453673180", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1673453673180", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1673453673180", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1673453673180", id:"Voice7"},
-		{src:"sounds/Voice8.mp3?1673453673180", id:"Voice8"},
-		{src:"sounds/Voice17.mp3?1673453673180", id:"Voice17"},
-		{src:"sounds/Voice16.mp3?1673453673180", id:"Voice16"},
-		{src:"sounds/Voice14.mp3?1673453673180", id:"Voice14"},
-		{src:"sounds/BGM.mp3?1673453673180", id:"BGM"},
-		{src:"sounds/Voice15.mp3?1673453673180", id:"Voice15"},
-		{src:"sounds/Message.mp3?1673453673180", id:"Message"}
+		{src:"images/index_atlas_P_1.png?1684596220626", id:"index_atlas_P_1"},
+		{src:"sounds/Voice0.mp3?1684596220800", id:"Voice0"},
+		{src:"sounds/Voice9.mp3?1684596220800", id:"Voice9"},
+		{src:"sounds/Voice10.mp3?1684596220800", id:"Voice10"},
+		{src:"sounds/Voice11.mp3?1684596220800", id:"Voice11"},
+		{src:"sounds/Voice12.mp3?1684596220800", id:"Voice12"},
+		{src:"sounds/Voice13.mp3?1684596220800", id:"Voice13"},
+		{src:"sounds/Voice1.mp3?1684596220800", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1684596220800", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1684596220800", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1684596220800", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1684596220800", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1684596220800", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1684596220800", id:"Voice7"},
+		{src:"sounds/Voice8.mp3?1684596220800", id:"Voice8"},
+		{src:"sounds/Voice17.mp3?1684596220800", id:"Voice17"},
+		{src:"sounds/Voice16.mp3?1684596220800", id:"Voice16"},
+		{src:"sounds/Voice14.mp3?1684596220800", id:"Voice14"},
+		{src:"sounds/BGM.mp3?1684596220800", id:"BGM"},
+		{src:"sounds/Voice15.mp3?1684596220800", id:"Voice15"},
+		{src:"sounds/Message.mp3?1684596220800", id:"Message"}
 	],
 	preloads: []
 };
@@ -2748,21 +2746,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

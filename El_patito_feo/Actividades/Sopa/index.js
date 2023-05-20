@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[3458,971,447,102],[658,1166,447,102],[658,1270,447,102],[1107,1270,238,101],[1346,1166,238,101],[1107,1166,237,102],[3733,550,296,89],[801,1545,296,89],[4002,0,87,87],[4002,89,87,87],[4002,178,87,87],[4002,267,87,87],[4024,801,61,63],[4002,484,61,62],[4002,419,61,63],[0,0,2376,1164],[3458,659,590,140],[3458,801,432,168],[801,1374,169,169],[4031,548,2,78],[658,1664,200,200],[4002,356,87,61],[3892,888,147,70],[3458,0,273,657],[0,1166,656,835],[3892,801,130,85],[972,1374,235,108],[658,1374,141,288],[972,1484,72,52],[860,1636,140,67],[3733,0,267,548],[2378,1080,1425,738],[2378,0,1078,1078]]}
+		{name:"index_atlas_1", frames: [[860,1729,115,90],[860,1636,115,91],[3458,971,447,102],[658,1166,447,102],[658,1270,447,102],[1107,1270,238,101],[1346,1166,238,101],[1107,1166,237,102],[3733,550,296,89],[801,1545,296,89],[4002,0,87,87],[4002,89,87,87],[4002,178,87,87],[4002,267,87,87],[4024,801,61,63],[4002,484,61,62],[4002,419,61,63],[0,0,2376,1164],[3458,659,590,140],[3458,801,432,168],[801,1374,169,169],[4031,548,2,78],[658,1664,200,200],[4002,356,87,61],[3892,888,147,70],[3458,0,273,657],[0,1166,656,835],[3892,801,130,85],[972,1374,235,108],[658,1374,141,288],[1099,1484,72,52],[977,1636,140,67],[3733,0,267,548],[2378,1080,1425,738],[2378,0,1078,1078]]}
 ];
 
 
@@ -27,233 +27,247 @@ lib.ssMetadata = [
 
 
 
-(lib.btnreintentarclic = function() {
+(lib.btnampliarclic = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnreintentarhover = function() {
+(lib.btnampliar = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnreintentar = function() {
+(lib.btnreintentarclic = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnsalirclic = function() {
+(lib.btnreintentarhover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnsalirhover = function() {
+(lib.btnreintentar = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnsalir = function() {
+(lib.btnsalirclic = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnMenuActividadesHover = function() {
+(lib.btnsalirhover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnMenuActividades = function() {
+(lib.btnsalir = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.BtnMutepngcopia = function() {
+(lib.btnMenuActividadesHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.BtnMuteHover = function() {
+(lib.btnMenuActividades = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.BtnVolumenActivado = function() {
+(lib.BtnMutepngcopia = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnVolumenActivoHover = function() {
+(lib.BtnMuteHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Emoji1 = function() {
+(lib.BtnVolumenActivado = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Emoji2 = function() {
+(lib.btnVolumenActivoHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Emoji3 = function() {
+(lib.Emoji1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.fondo = function() {
+(lib.Emoji2 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.FondoSopaLineaDer = function() {
+(lib.Emoji3 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.FOndoSopaLineaPunteadaIzq = function() {
+(lib.fondo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.imgsopaLetras = function() {
+(lib.FondoSopaLineaDer = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.LineasSeparadoras = function() {
+(lib.FOndoSopaLineaPunteadaIzq = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Lupafondo = function() {
+(lib.imgsopaLetras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PatoPicoAbajo = function() {
+(lib.LineasSeparadoras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PatoPicoArriba = function() {
+(lib.Lupafondo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PatoSilueta = function() {
+(lib.PatoPicoAbajo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.pato = function() {
+(lib.PatoPicoArriba = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PicoAbajo = function() {
+(lib.PatoSilueta = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.picoarriba = function() {
+(lib.pato = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Profesoraala = function() {
+(lib.PicoAbajo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ProfesoraPicoAbajo = function() {
+(lib.picoarriba = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(28);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ProfesoraPicoArriba = function() {
+(lib.Profesoraala = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(29);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ProfesoraSilueta_1 = function() {
+(lib.ProfesoraPicoAbajo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(30);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.RetroalimetaciónFinalSopaLetras = function() {
+(lib.ProfesoraPicoArriba = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(31);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.SopaFOndo = function() {
+(lib.ProfesoraSilueta_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(32);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.RetroalimetaciónFinalSopaLetras = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(33);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.SopaFOndo = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(34);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -482,29 +496,6 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = getMCSymbolPrototype(lib.Símbolo26, new cjs.Rectangle(0,0,267,548), null);
-
-
-(lib.Símbolo4 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Capa_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#F7D339").s().p("AlTG7IAAt1IKnAAIAAN1gAjiEvICqAAIAAjiIiqgDgAA/EiICqAAIAAjjIiqgDgABJgZICqAAIAAjjIiqgDgAjig0ICqAAIAAjjIiqgDg");
-
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-34,-44.2,68,88.5);
 
 
 (lib.Símbolo3 = function(mode,startPosition,loop,reversed) {
@@ -876,6 +867,32 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,223.5,51);
 
 
+(lib.btnAmpliar = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.btnampliarclic();
+	this.instance.setTransform(0,0,0.6835,0.6838);
+
+	this.instance_1 = new lib.btnampliar();
+	this.instance_1.setTransform(0,0,0.7,0.7);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance}]},1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,80.5,63.7);
+
+
 (lib.profesora = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1131,14 +1148,14 @@ if (reversed == null) { reversed = false; }
 		stretchToFit();
 		} 
 		
-		var element = document.createElement('div');
-		element.setAttribute('id', 'contenidos');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		element.style.width = "70%"; 
-		element.style.height = "80%";   
-		element.style.left= "21.5%";  
-		element.style.top="1%";
+			var element = document.createElement('div');
+				element.setAttribute('id', 'contenidos');
+				document.body.appendChild(element);
+				element.style.position = "absolute"; 
+				element.style.width = "70.3%"; 
+				element.style.height = "80%";   
+				element.style.left= "21.5%";  
+				element.style.top="1.5%";
 		 
 		element.innerHTML = '  <iframe allow="fullscreen"  ; frameBorder="0"  id="my_iframe"  src="sopa.html" style="width: 100%; height: 100%;">';
 		
@@ -1161,9 +1178,9 @@ if (reversed == null) { reversed = false; }
 		sayHello();
 		
 		 
-		var elem = document.getElementById("my_iframe");
+		 var element = document.body;  
 		
-		  function GoInFullscreen() {
+		function GoInFullscreen() {
 			if(element.requestFullscreen)
 				element.requestFullscreen();
 			else if(element.mozRequestFullScreen)
@@ -1172,11 +1189,7 @@ if (reversed == null) { reversed = false; }
 				element.webkitRequestFullscreen();
 			else if(element.msRequestFullscreen)
 				element.msRequestFullscreen();
-		
 		}
-		 
-		 
-		
 		
 		/* Get out of full screen */
 		function GoOutFullscreen() {
@@ -1188,9 +1201,6 @@ if (reversed == null) { reversed = false; }
 				document.webkitExitFullscreen();
 			else if(document.msExitFullscreen)
 				document.msExitFullscreen();
-		 	
-			 
-			
 		}
 		
 		function IsFullScreenCurrently() {
@@ -1214,6 +1224,13 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnindice.on('click', function(){
 		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
+			if (document.fullscreenElement) {
+		    document
+		      .exitFullscreen()
+		      .then(() => console.log("Document Exited from Full screen mode"))
+		      .catch((err) => console.error(err));
+		  }  		
+			
 		        
 		window.open('../Menu', '_self');		 
 		                    }, this);
@@ -1241,6 +1258,12 @@ if (reversed == null) { reversed = false; }
 		_this.btnSalir.on('click', function(){
 				
 		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
+			if (document.fullscreenElement) {
+		    document
+		      .exitFullscreen()
+		      .then(() => console.log("Document Exited from Full screen mode"))
+		      .catch((err) => console.error(err));
+		  }  		
 		   
 		window.open('../Menu', '_self');		 
 		                    }, this);
@@ -1253,10 +1276,10 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1));
 
 	// Capa_8
-	this.btn = new lib.Símbolo4();
+	this.btn = new lib.btnAmpliar();
 	this.btn.name = "btn";
-	this.btn.setTransform(1133.65,374.4,1,0.7288);
-	new cjs.ButtonHelper(this.btn, 0, 1, 1);
+	this.btn.setTransform(1129.2,12,0.7478,0.7478);
+	new cjs.ButtonHelper(this.btn, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get(this.btn).to({_off:true},1).wait(1));
 
@@ -1367,11 +1390,11 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1682012042630", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1682012042781", id:"audioLoop"},
-		{src:"sounds/SoundBoton.mp3?1682012042781", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1682012042781", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1682012042781", id:"retroalimentacion"}
+		{src:"images/index_atlas_1.png?1684197331646", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1684197331800", id:"audioLoop"},
+		{src:"sounds/SoundBoton.mp3?1684197331800", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1684197331800", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1684197331800", id:"retroalimentacion"}
 	],
 	preloads: []
 };
@@ -1470,21 +1493,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

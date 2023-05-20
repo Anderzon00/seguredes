@@ -1036,17 +1036,11 @@ if (reversed == null) { reversed = false; }
 	// Capa_1
 	this.instance = new lib.neon2();
 	this.instance.setTransform(418.4,71.5,1,1,0,0,0,418.4,71.5);
-	var instanceFilter_1 = new cjs.ColorFilter(0.86,0.86,0.86,1,9.8,35.7,35.7,0);
-	this.instance.filters = [instanceFilter_1];
+	this.instance.filters = [new cjs.ColorFilter(0.86, 0.86, 0.86, 1, 9.8, 35.7, 35.7, 0)];
 	this.instance.cache(-14,-11,833,169);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(50));
-	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.61,0.61,0.61,1,74.1,23.79,99.45,0), 24).to(new cjs.ColorFilter(0.86,0.86,0.86,1,9.8,35.7,35.7,0), 25).wait(1));
 
-	this.filterCacheList = [];
-	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:24, x:-14, y:-11, w:833, h:169});
-	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-14, y:-11, w:833, h:169});
-	this.filterCacheList.push({instance: this.instance, startFrame:25, endFrame:49, x:-14, y:-11, w:833, h:169});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -1520,7 +1514,6 @@ if (reversed == null) { reversed = false; }
 	this.instance_5.setTransform(612.05,99.55,1.0617,1.0617,0,0,0,418.6,71.7);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_5).to({_off:true},1).wait(2));
-	this.instance_5.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// niños
 	this.imput1 = new lib.an_TextInput({'id': 'imput1', 'value':'', 'disabled':false, 'visible':true, 'class':'ui-textinput'});
@@ -1607,14 +1600,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1678416452581", id:"index_atlas_1"},
-		{src:"sounds/play.mp3?1678416452679", id:"play"},
-		{src:"sounds/error41.mp3?1678416452679", id:"error41"},
-		{src:"sounds/sound.mp3?1678416452679", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1678416452679", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1678416452679", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1678416452679", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1678416452679", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1684385133134", id:"index_atlas_1"},
+		{src:"sounds/play.mp3?1684385133236", id:"play"},
+		{src:"sounds/error41.mp3?1684385133236", id:"error41"},
+		{src:"sounds/sound.mp3?1684385133236", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1684385133236", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1684385133236", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1684385133236", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1684385133236", id:"an.TextInput"}
 	],
 	preloads: []
 };
@@ -1763,21 +1756,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

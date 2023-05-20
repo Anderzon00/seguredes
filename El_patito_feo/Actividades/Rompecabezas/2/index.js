@@ -2390,14 +2390,14 @@ if (reversed == null) { reversed = false; }
 
 	// Capa_2
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("rgba(204,204,204,0.659)").s().p("EhciAyOMAAAhkcMC5FAAAMAAABkcg");
-	this.shape.setTransform(70.25,121.75);
+	this.shape.graphics.f("rgba(51,51,51,0.91)").s().p("EhdNAtWMAAAharMC6cAAAMAAABarg");
+	this.shape.setTransform(71.65,68.775);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.mensaje, new cjs.Rectangle(-522,-199.7,1184.6,642.9), null);
+}).prototype = getMCSymbolPrototype(lib.mensaje, new cjs.Rectangle(-525,-221.4,1193.3,580.4), null);
 
 
 // stage content:
@@ -2780,7 +2780,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(192.5,-159.5,1376.8,819.1);
+p.nominalBounds = new cjs.Rectangle(192.5,-159.5,1376.8,804.5);
 // library properties:
 lib.properties = {
 	id: 'DCCA5A04F9E9EB49A3DF1304FD62D849',
@@ -2790,13 +2790,13 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1683732294449", id:"index_atlas_P_1"},
-		{src:"sounds/drop.mp3?1683732294610", id:"drop"},
-		{src:"sounds/error.mp3?1683732294610", id:"error"},
-		{src:"sounds/win.mp3?1683732294610", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1683732294610", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1683732294610", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1683732294610", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1684194494640", id:"index_atlas_P_1"},
+		{src:"sounds/drop.mp3?1684194494794", id:"drop"},
+		{src:"sounds/error.mp3?1684194494794", id:"error"},
+		{src:"sounds/win.mp3?1684194494794", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1684194494794", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1684194494794", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1684194494794", id:"retroalimentacion"}
 	],
 	preloads: []
 };

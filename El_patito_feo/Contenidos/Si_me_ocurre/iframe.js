@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"indexpequeño_atlas_1", frames: [[0,0,1373,455],[1375,0,374,374],[1444,750,499,215],[1751,0,271,38],[1751,40,271,38],[1751,80,271,38],[1444,967,499,215],[0,1230,1435,355],[1404,376,372,372],[0,457,1402,397],[0,1587,1400,291],[0,856,1442,372]]}
+		{name:"iframe_atlas_1", frames: [[0,616,1373,455],[0,1073,1381,431],[1383,893,372,372],[1375,616,651,275],[1383,1267,546,216],[1684,0,271,38],[1684,40,271,38],[1684,80,271,38],[0,1506,1381,352],[0,0,1682,614]]}
 ];
 
 
@@ -28,85 +28,71 @@ lib.ssMetadata = [
 
 
 (lib.bordes = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.imggoogle = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+(lib.cai = function() {
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.imgsecurekids = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+(lib.logoicbf = function() {
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacionDOWN = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+(lib.logopolicia = function() {
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacionUP = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+(lib.logoteprotejo = function() {
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacion = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+(lib.masinformacionDOWN = function() {
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.metacomplianceimg = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+(lib.masinformacionUP = function() {
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Metacompliancetext = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+(lib.masinformacion = function() {
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.safetyimg = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+(lib.texto = function() {
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.safetytext = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+(lib.texto_1 = function() {
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(9);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.securekidstext = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
-	this.gotoAndStop(10);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.textphishingquizgoogle = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
-	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -125,6 +111,23 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	prototype.frameBounds = frameBounds;
 	return prototype;
 	}
+
+
+(lib.Interpolación3 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,0,0);
 
 
 (lib.btnMasInformacion = function(mode,startPosition,loop,reversed) {
@@ -184,23 +187,11 @@ if (reversed == null) { reversed = false; }
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.phishingquiz.on('click', function(){
+		_this.btnCAI.on('click', function(){
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://phishingquiz.withgoogle.com/', '_blank');
-		});
-		
-		
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.securekids.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('https://securekids.es/etiqueta/que-es-phishing/', '_blank');
+		window.open('https://caivirtual.policia.gov.co/', '_blank');
 		});
 		
 		
@@ -209,23 +200,24 @@ if (reversed == null) { reversed = false; }
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.metacompliance.on('click', function(){
+		_this.btnTeProtejo.on('click', function(){
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://www.metacompliance.com/es/lp/ultimate-guide-phishing', '_blank');
+		window.open('https://teprotejocolombia.org/categorias-de-reporte/ciberacoso/', '_blank');
 		});
+		
 		
 		
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.safety.on('click', function(){
+		_this.btn141.on('click', function(){
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://es.safetydetectives.com/blog/que-es-el-phishing-guia-sencilla-con-ejemplos/', '_blank');
+		window.open('https://www.icbf.gov.co/mis-manos-te-ensenan/recomendaciones-ninos-y-ninas-para-llamar-la-linea-141', '_blank');
 		});
 	}
 
@@ -233,95 +225,103 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Capa_1
-	this.safety = new lib.btnMasInformacion();
-	this.safety.name = "safety";
-	this.safety.setTransform(567.1,988.45);
-	new cjs.ButtonHelper(this.safety, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
+	this.instance = new lib.logoicbf();
+	this.instance.setTransform(789,589,0.5,0.4422);
 
-	this.instance = new lib.metacomplianceimg();
-	this.instance.setTransform(815,615,0.4332,0.5134);
+	this.instance_1 = new lib.logopolicia();
+	this.instance_1.setTransform(737,419,0.4214,0.4214);
 
-	this.instance_1 = new lib.Metacompliancetext();
-	this.instance_1.setTransform(20,522,0.5,0.5);
+	this.btn141 = new lib.btnMasInformacion();
+	this.btn141.name = "btn141";
+	this.btn141.setTransform(531.9,734.5);
+	new cjs.ButtonHelper(this.btn141, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance_2 = new lib.safetytext();
-	this.instance_2.setTransform(20,816,0.5,0.5);
+	this.instance_2 = new lib.cai();
+	this.instance_2.setTransform(-1,307,0.5,0.5);
+
+	this.btnCAI = new lib.btnMasInformacion();
+	this.btnCAI.name = "btnCAI";
+	this.btnCAI.setTransform(531.9,507.25);
+	new cjs.ButtonHelper(this.btnCAI, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
 	this.instance_3 = new lib.bordes();
-	this.instance_3.setTransform(-5,791,0.543,0.5);
+	this.instance_3.setTransform(0,535,0.5,0.5);
 
-	this.instance_4 = new lib.safetyimg();
-	this.instance_4.setTransform(830,833,0.5,0.5);
+	this.instance_4 = new lib.texto();
+	this.instance_4.setTransform(0,550,0.5,0.5);
 
-	this.instance_5 = new lib.imgsecurekids();
-	this.instance_5.setTransform(812,303,0.4439,0.5161);
+	this.instance_5 = new lib.bordes();
+	this.instance_5.setTransform(0,307,0.5,0.5);
 
-	this.metacompliance = new lib.btnMasInformacion();
-	this.metacompliance.name = "metacompliance";
-	this.metacompliance.setTransform(567.1,695.9);
-	new cjs.ButtonHelper(this.metacompliance, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
+	this.instance_6 = new lib.logoteprotejo();
+	this.instance_6.setTransform(737,199,0.5,0.5);
 
-	this.instance_6 = new lib.bordes();
-	this.instance_6.setTransform(0,498,0.543,0.5);
+	this.btnTeProtejo = new lib.btnMasInformacion();
+	this.btnTeProtejo.name = "btnTeProtejo";
+	this.btnTeProtejo.setTransform(531.9,278.05);
+	new cjs.ButtonHelper(this.btnTeProtejo, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.securekids = new lib.btnMasInformacion();
-	this.securekids.name = "securekids";
-	this.securekids.setTransform(567.1,427.35);
-	new cjs.ButtonHelper(this.securekids, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
+	this.instance_7 = new lib.texto_1();
+	this.instance_7.setTransform(0,0,0.5,0.5);
 
-	this.instance_7 = new lib.securekidstext();
-	this.instance_7.setTransform(16,268,0.543,0.5);
+	this.instance_8 = new lib.Interpolación3("synched",0);
+	this.instance_8.setTransform(545.15,465.75);
 
-	this.instance_8 = new lib.imggoogle();
-	this.instance_8.setTransform(829,19,0.5,0.5);
-
-	this.phishingquiz = new lib.btnMasInformacion();
-	this.phishingquiz.name = "phishingquiz";
-	this.phishingquiz.setTransform(567.1,182.8);
-	new cjs.ButtonHelper(this.phishingquiz, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
-
-	this.instance_9 = new lib.textphishingquizgoogle();
-	this.instance_9.setTransform(11,30,0.543,0.5);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9},{t:this.phishingquiz},{t:this.instance_8},{t:this.instance_7},{t:this.securekids},{t:this.instance_6},{t:this.metacompliance},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.safety}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.btnTeProtejo},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.btnCAI},{t:this.instance_2},{t:this.btn141},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Símbolo2, new cjs.Rectangle(-5,19,1038.6,1000), null);
+}).prototype = getMCSymbolPrototype(lib.Símbolo2, new cjs.Rectangle(-1,0,1012.4,762.5), null);
 
 
 // stage content:
-(lib.indexpequeño = function(mode,startPosition,loop,reversed) {
+(lib.iframe = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
 	props.mode = mode;
 	props.startPosition = startPosition;
-	props.labels = {};
+	props.labels = {"final":0};
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// titulo
+	this.actionFrames = [0];
+	this.isSingleFrame = false;
+	// timeline functions:
+	this.frame_0 = function() {
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
+		
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
+	// Capa_1
 	this.instance = new lib.Símbolo2();
-	this.instance.setTransform(546.1,378.65,1,1,0,0,0,528,392.6);
+	this.instance.setTransform(531.35,393.05,1,1,0,0,0,528,392.8);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(547.6,517.1,504.1,488);
+p.nominalBounds = new cjs.Rectangle(508.9,415.3,505.80000000000007,347.49999999999994);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
-	width: 1069,
-	height: 1024,
+	width: 1013,
+	height: 830,
 	fps: 25,
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/indexpequeño_atlas_1.png?1677602620306", id:"indexpequeño_atlas_1"}
+		{src:"images/iframe_atlas_1.png?1684019383275", id:"iframe_atlas_1"}
 	],
 	preloads: []
 };
@@ -420,21 +420,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

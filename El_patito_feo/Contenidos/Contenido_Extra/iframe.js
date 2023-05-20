@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"Extra_atlas_1", frames: [[0,0,1373,455],[1484,1136,499,215],[1375,0,384,384],[1484,762,372,372],[1761,0,271,38],[1761,40,271,38],[1761,80,271,38],[0,1169,1389,291],[0,1462,1402,287],[0,841,1482,326],[0,457,1482,382],[1484,386,374,374]]}
+		{name:"iframe_atlas_1", frames: [[0,0,1373,455],[1484,1136,499,215],[1375,0,384,384],[1484,762,372,372],[1761,0,271,38],[1761,40,271,38],[1761,80,271,38],[0,1169,1389,291],[0,1462,1402,287],[0,841,1482,326],[0,457,1482,382],[1484,386,374,374]]}
 ];
 
 
@@ -28,84 +28,84 @@ lib.ssMetadata = [
 
 
 (lib.bordes = function() {
-	this.initialize(ss["Extra_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.escuelainfluences = function() {
-	this.initialize(ss["Extra_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.logocyber = function() {
-	this.initialize(ss["Extra_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.logoicbf = function() {
-	this.initialize(ss["Extra_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.masinformacionDOWN = function() {
-	this.initialize(ss["Extra_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.masinformacionUP = function() {
-	this.initialize(ss["Extra_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.masinformacion = function() {
-	this.initialize(ss["Extra_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.textescuelainlfluen = function() {
-	this.initialize(ss["Extra_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.textunicef = function() {
-	this.initialize(ss["Extra_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.textocyber = function() {
-	this.initialize(ss["Extra_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.textomismanos = function() {
-	this.initialize(ss["Extra_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.unicef = function() {
-	this.initialize(ss["Extra_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -319,7 +319,7 @@ if (reversed == null) { reversed = false; }
 
 
 // stage content:
-(lib.Extra = function(mode,startPosition,loop,reversed) {
+(lib.iframe = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -349,7 +349,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Extra_atlas_1.png?1677467737003", id:"Extra_atlas_1"}
+		{src:"images/iframe_atlas_1.png?1684019560270", id:"iframe_atlas_1"}
 	],
 	preloads: []
 };
@@ -448,21 +448,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

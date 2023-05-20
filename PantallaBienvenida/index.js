@@ -586,9 +586,9 @@ lib.properties = {
 	color: "#235594",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Fondo_1.png?1678160696350", id:"Fondo_1"},
-		{src:"images/index_atlas_P_1.png?1678160696156", id:"index_atlas_P_1"},
-		{src:"sounds/sound.mp3?1678160696351", id:"sound"}
+		{src:"images/Fondo_1.png?1684021859808", id:"Fondo_1"},
+		{src:"images/index_atlas_P_1.png?1684021859725", id:"index_atlas_P_1"},
+		{src:"sounds/sound.mp3?1684021859808", id:"sound"}
 	],
 	preloads: []
 };
@@ -687,21 +687,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"indexpequeño_atlas_1", frames: [[0,987,465,343],[1698,1308,151,260],[467,987,323,218],[1290,535,441,440],[0,304,1251,248],[0,554,1225,248],[0,1332,1011,56],[1290,977,406,406],[1285,0,638,533],[792,987,237,236],[1733,535,263,443],[1031,1217,211,211],[1031,987,230,228],[1925,148,72,72],[1925,0,73,72],[1925,74,73,72],[1244,1385,213,137],[1698,980,327,326],[0,804,1288,181],[0,0,1283,302]]}
+		{name:"iframe_atlas_1", frames: [[0,987,465,343],[1698,1308,151,260],[467,987,323,218],[1290,535,441,440],[0,304,1251,248],[0,554,1225,248],[0,1332,1011,56],[1290,977,406,406],[1285,0,638,533],[792,987,237,236],[1733,535,263,443],[1031,1217,211,211],[1031,987,230,228],[1925,148,72,72],[1925,0,73,72],[1925,74,73,72],[1244,1385,213,137],[1698,980,327,326],[0,804,1288,181],[0,0,1283,302]]}
 ];
 
 
@@ -28,140 +28,140 @@ lib.ssMetadata = [
 
 
 (lib.Diapositivaimg1fondo = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva1img1lupa = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva1img1Pagina = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva1img2fondo = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva1texto1_1 = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Diapositiva1texto2 = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Diapositiva1textoCentral = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva2im2circle = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva2img1fondo = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva2img1mensaje = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva2img1phone = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva2img1reloj = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva2img1telefono = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva2img2emoji1 = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva2img2emoji2 = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva2img2emoji3 = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva2img2notificacion = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva2img2police = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva2text2 = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.diapositiva2texto1 = function() {
-	this.initialize(ss["indexpequeño_atlas_1"]);
+	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
@@ -490,7 +490,7 @@ p.nominalBounds = new cjs.Rectangle(-817,-386,1366,768);
 
 
 // stage content:
-(lib.indexpequeño = function(mode,startPosition,loop,reversed) {
+(lib.iframe = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -538,7 +538,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/indexpequeño_atlas_1.png?1677601469329", id:"indexpequeño_atlas_1"}
+		{src:"images/iframe_atlas_1.png?1684019711657", id:"iframe_atlas_1"}
 	],
 	preloads: []
 };
@@ -637,21 +637,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

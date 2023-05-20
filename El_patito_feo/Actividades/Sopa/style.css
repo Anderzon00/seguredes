@@ -1,10 +1,16 @@
  body
 
  {
-  font-family: 'Patrick Hand', sans-serif;} 
+  font-family: 'Patrick Hand', sans-serif;
+      
+
+
+}
+
 
   ul {
     display: inline-block;  
+
     
     list-style-type: none;
     vertical-align:top;
@@ -42,7 +48,7 @@ li.found {
 
 div#canvasContainer {
   
-
+background-color: beige;
   font-family: 'Patrick Hand', sans-serif;
 
 

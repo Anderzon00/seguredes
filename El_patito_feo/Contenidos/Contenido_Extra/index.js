@@ -209,7 +209,7 @@ if (reversed == null) { reversed = false; }
 		 element.style.position = "absolute";
 		
 		element.innerHTML = '<iframe  id="video"  style="border:none">';
-		document.getElementById("video").src= "Extra.html";
+		document.getElementById("video").src= "iframe.html";
 		 
 		function embed() {	
 		element.style.left = 2 * Math.max(window.innerWidth) / 32 + 'px';
@@ -266,9 +266,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677278652299", id:"index_atlas_1"},
-		{src:"sounds/generales.mp3?1677278652333", id:"generales"},
-		{src:"sounds/indice.mp3?1677278652333", id:"indice"}
+		{src:"images/index_atlas_1.png?1684019571937", id:"index_atlas_1"},
+		{src:"sounds/generales.mp3?1684019571968", id:"generales"},
+		{src:"sounds/indice.mp3?1684019571968", id:"indice"}
 	],
 	preloads: []
 };
@@ -367,21 +367,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }
