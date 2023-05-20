@@ -531,10 +531,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Capa_1
-	this.instance = new lib.SiguienteAtras();
+	this.instance = new lib.sobre_siguiente();
+	this.instance.setTransform(60,24,1,1,0,0,0,26,26);
 
-	this.instance_1 = new lib.sobre_siguiente();
-	this.instance_1.setTransform(60,24,1,1,0,0,0,26,26);
+	this.instance_1 = new lib.SiguienteAtras();
 
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f().s("rgba(0,197,255,0)").ss(1,1,1).p("AGVGVIspAAIAAspIDvAA");
@@ -544,7 +544,7 @@ if (reversed == null) { reversed = false; }
 	this.shape_1.graphics.f("#990066").s().p("AmUGVIAAsBIAAgoIMpAAIAAMpg");
 	this.shape_1.setTransform(44.5,56.6);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance,p:{scaleX:1,scaleY:1,x:0,y:0}}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance,p:{scaleX:0.9038,scaleY:0.9038,x:5,y:4}}]},1).to({state:[{t:this.shape_1},{t:this.shape}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1,p:{scaleX:1,scaleY:1,x:0,y:0}}]},1).to({state:[{t:this.instance_1,p:{scaleX:0.9038,scaleY:0.9038,x:5,y:4}}]},1).to({state:[{t:this.shape_1},{t:this.shape}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -744,10 +744,10 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677467768223", id:"index_atlas_1"},
-		{src:"sounds/fondo.mp3?1677467768271", id:"fondo"},
-		{src:"sounds/audio.mp3?1677467768271", id:"audio"},
-		{src:"sounds/principales.mp3?1677467768271", id:"principales"}
+		{src:"images/index_atlas_1.png?1684608802130", id:"index_atlas_1"},
+		{src:"sounds/fondo.mp3?1684608802181", id:"fondo"},
+		{src:"sounds/audio.mp3?1684608802181", id:"audio"},
+		{src:"sounds/principales.mp3?1684608802181", id:"principales"}
 	],
 	preloads: []
 };
@@ -846,21 +846,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }
