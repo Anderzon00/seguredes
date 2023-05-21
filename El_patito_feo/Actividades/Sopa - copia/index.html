@@ -21,8 +21,11 @@
 	top:0;bottom:0;
   }
 </style>
-<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1684709454576"></script>
+<script src="/createjs.min.js"></script>
+<script src="index.js?1684197331857"></script>
+<script>
+// Global Scripts
+	var contador= 0;</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -31,6 +34,7 @@ function init() {
 	dom_overlay_container = document.getElementById("dom_overlay_container");
 	var comp=AdobeAn.getComposition("7C1B920775F18E4C9C20E78B1DF9DE91");
 	var lib=comp.getLibrary();
+	createjs.MotionGuidePlugin.install();
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
@@ -64,7 +68,7 @@ function handleComplete(evt,comp) {
 		createjs.Ticker.addEventListener("tick", stage);
 	}	    
 	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(true,'both',false,2,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
+	AdobeAn.makeResponsive(false,'width',false,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
@@ -90,7 +94,7 @@ function playSound(id, loop, offset) {
 	}
 </script>
 </head>
-<body onload="init();" style="margin:0px;;background-color:rgba(34, 86, 147, 1.00);overflow:hidden;width:auto ;height:auto;">
+<body onload="init();" style="margin:0px; overflow:hidden;width:auto ;height:auto;">
 	<div id="animation_container" >
 		<canvas id="canvas"   display: none;  ></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none;   position: absolute; left: 0px; top: 0px;" display: none;>
@@ -105,5 +109,6 @@ function playSound(id, loop, offset) {
 <!-- 
 stage.on('drawstart', initStage, this, true);
 function initStage() {
-    stretchToFit();
-} -->
+stretchToFit();
+}
+-->
