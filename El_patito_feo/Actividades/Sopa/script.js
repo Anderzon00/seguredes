@@ -51,11 +51,14 @@ class App {
     window.addEventListener('resize', () => this.resize(), false);
     
     this.canvas.addEventListener("mousedown", (event) => {
-      this.touchdown(...App.getmousePos(event));
+      this.prevPos = App.getmousePos(event)
+      this.touchdown(...this.prevPos);
       event.preventDefault();
     }); 
     this.canvas.addEventListener("mousemove", (event) => {
-      this.touchmove(...App.getmousePos(event));
+      let curPos = App.getmousePos(event);
+      this.touchmove(...curPos, curPos[0]-this.prevPos[0], curPos[1]-this.prevPos[1]);
+      this.prevPos = curPos;
       event.preventDefault();
     });
     this.canvas.addEventListener("mouseup", (event) => {
@@ -63,15 +66,18 @@ class App {
       event.preventDefault();
     });
     this.canvas.addEventListener("touchstart", (event) => {
-      this.touchdown(...App.getmousePos(event));
+      this.prevPos = App.getmousePos(event)
+      this.touchdown(...this.prevPos);
       event.preventDefault();
     });
     this.canvas.addEventListener("touchmove", (event) => {
-      this.touchmove(App.getmousePos(event));
+      let curPos = App.getmousePos(event);
+      this.touchmove(...curPos, curPos[0]-this.prevPos[0], curPos[1]-this.prevPos[1]);
+      this.prevPos = curPos;
       event.preventDefault();
     });
     this.canvas.addEventListener("touchend", (event) => {
-      this.touchup(App.getmousePos(event));
+      this.touchup(...App.getmousePos(event));
       event.preventDefault();
     });
   }
