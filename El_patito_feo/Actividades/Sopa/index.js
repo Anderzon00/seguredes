@@ -1083,6 +1083,39 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 		
+		stage.on('drawstart', initStage, this, true);
+		function initStage() {
+			
+		stretchToFit();
+		}
+		
+			sound = createjs.Sound.play("sound", { volume: 0.3, loop: -1});
+		
+		sound.play();
+		
+		var _this = this; 
+		
+		_this.on("click", function (e) {
+		
+		
+				if (e.target.name === "unmute")
+		
+				{
+				sound.muted = false;
+					_this.mute.visible = true;
+					_this.unmute.visible = false;
+				} else if (e.target.name === "mute") {
+				sound.muted = true;
+					_this.mute.visible = false;
+					_this.unmute.visible = true;
+				}		
+		
+			});
+			
+		
+		
+		
+		
 		var element = document.createElement('div');
 		element.setAttribute('id', 'sopa');
 		document.body.appendChild(element);
@@ -1109,8 +1142,9 @@ if (reversed == null) { reversed = false; }
 		    .querySelectorAll("li.contador")
 		    .forEach(p => contador = p.textContent);
 		
-		  if (contador < 3) {
+		  if (contador < 14) {
 		    setTimeout(sayHello, 1000);
+			  
 		  } else {
 		    _this.gotoAndStop(_this.currentFrame + 1);
 		    element.innerHTML = '';
@@ -1118,14 +1152,6 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		sayHello();
-		var _this = this;
-		
-		_this.btnindice.on('click', function(){
-		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
-		        
-		window.open('../Menu', '_self');		 
-		                    }, this);
-		});
 	}
 	this.frame_1 = function() {
 		createjs.Sound.stop();
@@ -1150,6 +1176,14 @@ if (reversed == null) { reversed = false; }
 			 
 		});
 		createjs.Sound.play("audioLoop");
+		
+		
+		_this.btnindice.on('click', function(){
+		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
+		        
+		window.open('../Menu', '_self');		 
+		                    }, this);
+		});
 	}
 
 	// actions tween:
@@ -1262,11 +1296,11 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1684739332138", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1684739332261", id:"audioLoop"},
-		{src:"sounds/SoundBoton.mp3?1684739332261", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1684739332261", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1684739332261", id:"retroalimentacion"}
+		{src:"images/index_atlas_1.png?1684741526184", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1684741526479", id:"audioLoop"},
+		{src:"sounds/SoundBoton.mp3?1684741526479", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1684741526479", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1684741526479", id:"retroalimentacion"}
 	],
 	preloads: []
 };
