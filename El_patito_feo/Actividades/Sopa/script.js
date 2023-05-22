@@ -55,12 +55,14 @@ class App {
       this.touchdown(...this.prevPos);
       event.preventDefault();
     }); 
-    this.canvas.addEventListener("mousemove", (event) => {
-      let curPos = App.getmousePos(event);
-      this.touchmove(...curPos, curPos[0]-this.prevPos[0], curPos[1]-this.prevPos[1]);
-      this.prevPos = curPos;
-      event.preventDefault();
-    });
+    this.prevPos = [0, 0]; // Initialize prevPos with a default value
+
+this.canvas.addEventListener("mousemove", (event) => {
+  let curPos = App.getmousePos(event);
+  this.touchmove(...curPos, curPos[0] - this.prevPos[0], curPos[1] - this.prevPos[1]);
+  this.prevPos = curPos;
+  event.preventDefault();
+});
     this.canvas.addEventListener("mouseup", (event) => {
       this.touchup(...App.getmousePos(event));
       event.preventDefault();
