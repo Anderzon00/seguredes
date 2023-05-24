@@ -19,15 +19,15 @@
  
 li.outset {
 
-  color:aliceblue;
+  color:rgb(255, 255, 255);
   background-color: rgba(1, 151, 2205);
   
-  border-radius: 15px;  
-  border: solid  1px  rgb(209, 231, 12);   
-  padding: .1em .2em .1em 1em;
-  margin-bottom: 0.35em;
-  text-shadow: 0 1px 0 rgb(17, 17, 17);  
-  font-size:2vw
+  border-radius: 20px;  
+  border: solid  1px  rgb(248, 250, 250);   
+  padding:0em 1em 0em 1em;
+  margin-bottom: 6px;
+  text-shadow: 0 0.5px 0 rgb(5, 5, 5);  
+  font-size:1.9vw
   
 }
 li.contador
@@ -40,8 +40,8 @@ li.contador
 
 li.found {
   text-decoration: line-through;
-  background-color: rgba(46, 182, 19, 0.877);
-  list-style: '👍';
+  background-color: rgba(34, 214, 73, 0.877);
+  list-style: '✔️';
   
 }
 

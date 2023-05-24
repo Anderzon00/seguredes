@@ -1126,7 +1126,7 @@ if (reversed == null) { reversed = false; }
 		    .querySelectorAll("li.contador")
 		    .forEach(p => contador = p.textContent);
 		
-		  if (contador < 14) {
+		  if (contador < 2) {
 		    setTimeout(sayHello, 1000);
 		  } else {
 			 
@@ -1180,12 +1180,16 @@ if (reversed == null) { reversed = false; }
 		
 		// Función para iniciar el cronómetro
 		function iniciarCronometro() {
-		  var tiempo = 0;
+		 var tiempo = 601;
+			
 		
 		  function actualizarCronometro() {
-		    tiempo++;
+		    tiempo--;
 		   _this.text1.text=(formatearTiempo(tiempo));
+			  
 		    setTimeout(actualizarCronometro, 1000);
+			  if(tiempo==0)
+				  _this.gotoAndStop(1);
 		  }
 		
 		  actualizarCronometro();
@@ -1220,16 +1224,16 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1));
 
 	// Capa_1
-	this.text1 = new cjs.Text("00:00:00", "26px 'Algerian'");
+	this.text1 = new cjs.Text("00:00:00", "24px 'Algerian'");
 	this.text1.name = "text1";
-	this.text1.lineHeight = 31;
+	this.text1.lineHeight = 29;
 	this.text1.lineWidth = 110;
 	this.text1.parent = this;
-	this.text1.setTransform(31,349.45);
-	this.text1.shadow = new cjs.Shadow("rgba(204,204,204,1)",3,3,4);
+	this.text1.setTransform(1051.7,309.65);
+	this.text1.shadow = new cjs.Shadow("rgba(204,255,204,1)",3,3,4);
 
 	this.instance = new lib.Fondoreloj();
-	this.instance.setTransform(163,284,1,1,0,0,180);
+	this.instance.setTransform(1168,254,0.8726,0.8405,0,0,180);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.text1}]}).to({state:[]},1).wait(1));
 
@@ -1322,7 +1326,7 @@ if (reversed == null) { reversed = false; }
 
 	// Capa_2
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("rgba(0,197,255,0)").ss(1,1,1).p("Ehalg1DMC1LAAAMAAABqHMi1LAAAg");
+	this.shape.graphics.f().s("rgba(0,197,255,0)").ss(1,1,1).p("Ehalg1DMC1LAAAMAAABqHMi1LAAAUArBgDwgrBhmXg");
 	this.shape.setTransform(587.825,344.625);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(2));
@@ -1340,11 +1344,11 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1684827081960", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1684827082084", id:"audioLoop"},
-		{src:"sounds/SoundBoton.mp3?1684827082084", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1684827082084", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1684827082084", id:"retroalimentacion"}
+		{src:"images/index_atlas_1.png?1684957486014", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1684957486143", id:"audioLoop"},
+		{src:"sounds/SoundBoton.mp3?1684957486143", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1684957486143", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1684957486143", id:"retroalimentacion"}
 	],
 	preloads: []
 };
