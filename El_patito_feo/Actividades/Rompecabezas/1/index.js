@@ -2102,72 +2102,72 @@ if (reversed == null) { reversed = false; }
 	// pieces
 	this.p9 = new lib._9();
 	this.p9.name = "p9";
-	this.p9.setTransform(1202.35,374,1.3,1.3,0,0,0,57,72.2);
+	this.p9.setTransform(1143.35,421.8,1.3,1.3,0,0,0,57,72.2);
 	new cjs.ButtonHelper(this.p9, 0, 1, 1);
 
 	this.p21 = new lib._21();
 	this.p21.name = "p21";
-	this.p21.setTransform(253.5,409.9,1.3,1.3,0,0,0,430.2,243);
+	this.p21.setTransform(308.45,190.4,1.3,1.3,0,0,0,430.2,243);
 	new cjs.ButtonHelper(this.p21, 0, 1, 1);
 
 	this.p11 = new lib._11();
 	this.p11.name = "p11";
-	this.p11.setTransform(253.9,191.45,1.3,1.3,0,0,0,59.1,71.7);
+	this.p11.setTransform(274.75,435.15,1.3,1.3,0,0,0,59.1,71.7);
 	new cjs.ButtonHelper(this.p11, 0, 1, 1);
 
 	this.p15 = new lib._15();
 	this.p15.name = "p15";
-	this.p15.setTransform(257.6,85.8,1.3,1.3,0,0,0,62.4,59.3);
+	this.p15.setTransform(286.6,322.9,1.3,1.3,0,0,0,62.4,59.3);
 	new cjs.ButtonHelper(this.p15, 0, 1, 1);
 
 	this.p4 = new lib._4();
 	this.p4.name = "p4";
-	this.p4.setTransform(1208.6,190.75,1.3,1.3,0,0,0,62.8,48);
+	this.p4.setTransform(1239.35,205,1.3,1.3,0,0,0,62.8,48);
 	new cjs.ButtonHelper(this.p4, 0, 1, 1);
 
 	this.p14 = new lib._14();
 	this.p14.name = "p14";
-	this.p14.setTransform(255,82.35,1.3,1.3,0,0,0,61.4,61.9);
+	this.p14.setTransform(282.7,398.7,1.3,1.3,0,0,0,61.4,61.9);
 	new cjs.ButtonHelper(this.p14, 0, 1, 1);
 
 	this.p2 = new lib._2();
 	this.p2.name = "p2";
-	this.p2.setTransform(260.25,86.45,1.3,1.3,0,0,0,65.2,58.6);
+	this.p2.setTransform(298.55,12.5,1.3,1.3,0,0,0,65.2,58.6);
 	new cjs.ButtonHelper(this.p2, 0, 1, 1);
 
 	this.p12 = new lib._12();
 	this.p12.name = "p12";
-	this.p12.setTransform(1206.65,155.45,1.3,1.3,0,0,0,57.7,70);
+	this.p12.setTransform(1133.65,42.9,1.3,1.3,0,0,0,57.7,70);
 	new cjs.ButtonHelper(this.p12, 0, 1, 1);
 
 	this.p17 = new lib._17();
 	this.p17.name = "p17";
-	this.p17.setTransform(1205.25,314,1.3,1.3,0,0,0,71.6,48.1);
+	this.p17.setTransform(1264.5,418.8,1.3,1.3,0,0,0,71.6,48.1);
 	new cjs.ButtonHelper(this.p17, 0, 1, 1);
 
 	this.p22 = new lib._22();
 	this.p22.name = "p22";
-	this.p22.setTransform(255,81.3,1.3,1.3,0,0,0,50.4,44.8);
+	this.p22.setTransform(297,99.25,1.3,1.3,0,0,0,50.4,44.8);
 	new cjs.ButtonHelper(this.p22, 0, 1, 1);
 
 	this.p6 = new lib._6();
 	this.p6.name = "p6";
-	this.p6.setTransform(1205.75,143.8,1.3,1.3,0,0,0,45,45.6);
+	this.p6.setTransform(1256.75,143.8,1.3,1.3,0,0,0,45,45.6);
 	new cjs.ButtonHelper(this.p6, 0, 1, 1);
 
 	this.p5 = new lib._5();
 	this.p5.name = "p5";
-	this.p5.setTransform(1206.5,204.2,1.3,1.3,0,0,0,71.4,47.8);
+	this.p5.setTransform(1155.5,204.2,1.3,1.3,0,0,0,71.4,47.8);
 	new cjs.ButtonHelper(this.p5, 0, 1, 1);
 
 	this.p18 = new lib._18();
 	this.p18.name = "p18";
-	this.p18.setTransform(1207.05,272.9,1.3,1.3,0,0,0,46,60.8);
+	this.p18.setTransform(1258.05,288.9,1.3,1.3,0,0,0,46,60.8);
 	new cjs.ButtonHelper(this.p18, 0, 1, 1);
 
 	this.p3 = new lib._3();
 	this.p3.name = "p3";
-	this.p3.setTransform(1211.7,173.1,1.3,1.3,0,0,0,64,51.6);
+	this.p3.setTransform(1135.6,165.35,1.3,1.3,0,0,0,64,51.6);
 	new cjs.ButtonHelper(this.p3, 0, 1, 1);
 
 	this.p23 = new lib._23();
@@ -2177,7 +2177,7 @@ if (reversed == null) { reversed = false; }
 
 	this.p8 = new lib._8();
 	this.p8.name = "p8";
-	this.p8.setTransform(252.55,85.65,1.3,1.3,0,0,0,69.9,59.2);
+	this.p8.setTransform(194.1,271.75,1.3,1.3,0,0,0,69.9,59.2);
 	new cjs.ButtonHelper(this.p8, 0, 1, 1);
 
 	this.p24 = new lib._24();
@@ -2188,44 +2188,44 @@ if (reversed == null) { reversed = false; }
 
 	this.p16 = new lib._16();
 	this.p16.name = "p16";
-	this.p16.setTransform(1209.9,94.2,1.3,1.3,0,0,0,52,71);
+	this.p16.setTransform(1265.85,44.2,1.3,1.3,0,0,0,52,71);
 	new cjs.ButtonHelper(this.p16, 0, 1, 1);
 
 	this.p10 = new lib._10();
 	this.p10.name = "p10";
-	this.p10.setTransform(1215.65,349.15,1.3,1.3,0,0,0,55.6,63.7);
+	this.p10.setTransform(1149.4,323.55,1.3,1.3,0,0,0,55.6,63.7);
 	new cjs.ButtonHelper(this.p10, 0, 1, 1);
 
 	this.p20 = new lib._20();
 	this.p20.name = "p20";
-	this.p20.setTransform(253.5,275.4,1.3,1.3,0,0,0,71,47.2);
+	this.p20.setTransform(200.8,83.75,1.3,1.3,0,0,0,71,47.2);
 	new cjs.ButtonHelper(this.p20, 0, 1, 1);
 
 	this.p19 = new lib._19();
 	this.p19.name = "p19";
-	this.p19.setTransform(253.2,83.3,1.3,1.3,0,0,0,47.4,56.2);
+	this.p19.setTransform(201.3,167.05,1.3,1.3,0,0,0,47.4,56.2);
 	new cjs.ButtonHelper(this.p19, 0, 1, 1);
 
 	this.p13 = new lib._13();
 	this.p13.name = "p13";
-	this.p13.setTransform(252.45,100.35,1.3,1.3,0,0,0,56.8,52.4);
+	this.p13.setTransform(213.55,454.8,1.3,1.3,0,0,0,56.8,52.4);
 	new cjs.ButtonHelper(this.p13, 0, 1, 1);
 
 	this.p7 = new lib._7();
 	this.p7.name = "p7";
-	this.p7.setTransform(252.8,111.55,1.3,1.3,0,0,0,46.9,61);
+	this.p7.setTransform(195.4,346.65,1.3,1.3,0,0,0,46.9,61);
 	new cjs.ButtonHelper(this.p7, 0, 1, 1);
 
 	this.p1 = new lib._1();
 	this.p1.name = "p1";
-	this.p1.setTransform(254.8,106.5,1.3,1.3,0,0,0,48,57.1);
+	this.p1.setTransform(197.9,22.7,1.3,1.3,0,0,0,48,57.1);
 	new cjs.ButtonHelper(this.p1, 0, 1, 1);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.p1},{t:this.p7},{t:this.p13},{t:this.p19},{t:this.p20},{t:this.p10},{t:this.p16},{t:this.p24},{t:this.p8},{t:this.p23},{t:this.p3},{t:this.p18},{t:this.p5},{t:this.p6},{t:this.p22},{t:this.p17},{t:this.p12},{t:this.p2},{t:this.p14},{t:this.p4},{t:this.p15},{t:this.p11},{t:this.p21},{t:this.p9}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Pieces, new cjs.Rectangle(161.2,1.9,1134.5,463.40000000000003), null);
+}).prototype = getMCSymbolPrototype(lib.Pieces, new cjs.Rectangle(103.3,-63.7,1251.7,586.6), null);
 
 
 (lib.pato_1 = function(mode,startPosition,loop,reversed) {
@@ -2489,151 +2489,139 @@ if (reversed == null) { reversed = false; }
 				GoInFullscreen();	   
 		});
 		stage.on('drawstart', initStage, this, true);
+		
 		function initStage() {
 		    stretchToFit();
 		}
 		
-		var root = this;
-		var pieces = root.pieces;
-		var slots = root.slots;
-		var restart = root.restart;
-		var winMessage = root.winMessage;
-		var positions = [];
+		var root = this, pieces = root.pieces, slots = root.slots, restart = root.restart, positions = [];
 		
-		root.setup = function()
-		{
-			 
-			createjs.Touch.enable(stage);
-			stage.mouseMoveOutside = true;
-			root.drawStart = stage.on("drawstart", root.start, null, true);
+		root.setup = function() {
+		    createjs.Touch.enable(stage);
+		    stage.mouseMoveOutside = true;
+		    root.drawStart = stage.on("drawstart", root.start, null, true);
 		};
 		
-		root.start = function(e)
-		{
-			stage.off("drawstart", root.drawStart);	 
+		root.start = function(e) {
+		    stage.off("drawstart", root.drawStart);
+		    positions = pieces.children.map(function(child) {
+		        return {x: child.x, y: child.y};
+		    });
+		    slots.children.forEach(function(child) {
+		        child.mouseChildren = false;
+		    });
+		    root.restartHandler(null);
+		    restart.on("click", root.restartHandler);
+		    pieces.on("mousedown", root.mouseDownHandler);
+		};
+		
+		root.restartHandler = function(e) {
+		    pieces.count = 0;
+		    root.shuffle();
+		};
+		
+		root.mouseDownHandler = function(e) {
+		    e.currentTarget.setChildIndex(e.target, e.currentTarget.children.length - 1);
+		    e.target.offsetX = (e.stageX / stage.scaleX) - e.target.x;
+		    e.target.offsetY = (e.stageY / stage.scaleY) - e.target.y;
+		    pieces.target = e.target;   
+		 
+		    root.stageMouseMove = stage.on("stagemousemove", root.stageMouseMoveHandler);
+		    root.stageMouseUp = stage.on("stagemouseup", root.stageMouseUpHandler);
 			
-			pieces.children.forEach(function(child, index)
-			{
-				positions[index] = {x:child.x, y:child.y};
-			});
+		};
+		
+		root.stageMouseMoveHandler = function(e) {
+		    if (pieces.target) {
+		        pieces.target.x = (e.stageX / stage.scaleX) - pieces.target.offsetX;
+		        pieces.target.y = (e.stageY / stage.scaleY) - pieces.target.offsetY;	
+				pieces.target.scaleX = 1.30;
+		     pieces.target.scaleY = 1.30;
 			
-			slots.children.forEach(function(child, index)
-			{
-				child.mouseChildren = false;
-			});
-		
-			root.restartHandler(null);	
-			restart.on("click", root.restartHandler);
-			pieces.on("mousedown", root.mouseDownHandler);	
+		    }
 		};
 		
-		root.restartHandler = function(e)
-		{
-			pieces.count = 0;
-			 
-			root.shuffle();
-		};
-		
-		root.mouseDownHandler = function(e)
-		{
-			e.currentTarget.setChildIndex(e.target, e.currentTarget.children.length - 1);
-			e.target.offsetX = (e.stageX / stage.scaleX) - e.target.x;
-			e.target.offsetY = (e.stageY / stage.scaleY) - e.target.y;
-			pieces.target = e.target;
-			root.stageMouseMove = stage.on("stagemousemove", root.stageMouseMoveHandler);
-			root.stageMouseUp = stage.on("stagemouseup", root.stageMouseUpHandler);
-		};
-		
-		root.stageMouseMoveHandler = function(e)
-		{
-			if (pieces.target)
-			{
-				pieces.target.x = (e.stageX / stage.scaleX) - pieces.target.offsetX;
-				pieces.target.y = (e.stageY / stage.scaleY) - pieces.target.offsetY;
-			}	
-		};
-		
-		root.stageMouseUpHandler = function(e)
-		{
-			stage.off("stagemousemove", root.stageMouseMove);
-			stage.off("stagemouseup", root.stageMouseUp);
+		root.stageMouseUpHandler = function(e) {
+		    stage.off("stagemousemove", root.stageMouseMove);
+		    stage.off("stagemouseup", root.stageMouseUp);
 			
-			if (pieces.target)
-			{
-				root.check();
-				pieces.target = null;
-			}	
-		};
-		
-		root.shuffle = function()
-		{	
-			positions.sort(function(a, b)
-			{
-				return 0.5 - Math.random();
-			});
-			
-			pieces.children.forEach(function(child, index)
-			{
-				child.originalX = positions[index].x;
-				child.originalY = positions[index].y;		
-				child.mouseEnabled = true;		
-				createjs.Tween.get(child).to({x:child.originalX, y:child.originalY}, 10, createjs.Ease.backInOut);
-			});
-		};
-		
-		root.check = function()
-		{
-			var spot = slots.getObjectUnderPoint(pieces.target.x, pieces.target.y);
-			
-			if (!spot)
-			{
-				root.onMiss();
-				return;
-			}
-			
-			root.slot = spot.parent;
 				
-			if (root.slot)
-			{		
-				if (pieces.target.name === root.slot.name)
-				{
-					root.onMatch();
-					 createjs.Sound.play("drop");
+		    if (pieces.target) {
+		        root.check();
+		        pieces.target = null;
+				
+		    }
+			
+		
+		};
+		
+		root.shuffle = function() {
+		    positions.sort(function(a, b) {
+		        return 0.5 - Math.random();
+		    });
+		    pieces.children.forEach(function(child, index) {
+		        child.originalX = positions[index].x;
+		        child.originalY = positions[index].y;
+		        child.mouseEnabled = true;
+		        createjs.Tween.get(child).to({x: child.originalX, y: child.originalY}, 10, createjs.Ease.backInOut);
+				child.scaleX = 0.8;
+		    child.scaleY = 0.8;
+				 
+		    });
+		};
+		
+		root.check = function() {
+		    var spot = slots.getObjectUnderPoint(pieces.target.x, pieces.target.y);
+		
+		    if (!spot) {
 					
-					if (pieces.count === pieces.children.length)
-						root.onWin();
-				}
-				else
-					{root.onMiss();	}	
-				root.slot = null;
-			}
-			else
-				root.onMiss();
+		        root.onMiss();
+		        return;
+		    }
+		
+		    root.slot = spot.parent;
+		
+		    if (root.slot) {
+		        if (pieces.target.name === root.slot.name) {
+		            root.onMatch();
+		            createjs.Sound.play("drop");
+		            if (pieces.count === pieces.children.length)
+		                root.onWin();
+		        } else {
+		            root.onMiss();
+		            createjs.Sound.play("error");
+		        }
+		        root.slot = null;
+		    } else {
+		        root.onMiss();
+		    }
 		};
 		
-		root.onMatch = function()
-		{	
-			pieces.target.mouseEnabled = false;
-			pieces.count++;
-			createjs.Tween.get(pieces.target).to({x:root.slot.x, y:root.slot.y}, 350, createjs.Ease.backInOut);
+		root.onMatch = function() {
+		    pieces.target.mouseEnabled = false;
+		    pieces.count++;
+		    createjs.Tween.get(pieces.target).to({x: root.slot.x, y: root.slot.y}, 350, createjs.Ease.backInOut);
+		
+			
+			
 		};
 		
-		var _this= this
-		
-		root.onWin = function()
-		{	
-			createjs.Sound.stop();	
-			createjs.Sound.play("win");
-			createjs.Sound.play("retroalimentacion");
-			_this.mensaje.visible=true;
-			 
+		root.onWin = function() {
+		    createjs.Sound.stop();
+		    createjs.Sound.play("win");
+		    createjs.Sound.play("retroalimentacion");
+		    this.mensaje.visible = true;
 		};
 		
-		root.onMiss = function()
-		{	
-			createjs.Tween.get(pieces.target).to({x:pieces.target.originalX, y:pieces.target.originalY}, 350, createjs.Ease.backInOut);
-		createjs.Sound.play("error");
-			};
+		root.onMiss = function() {
+		    createjs.Tween.get(pieces.target).to({x: pieces.target.originalX, y: pieces.target.originalY}, 350, createjs.Ease.backInOut);
+		pieces.target.scaleX = 0.8;
+		     pieces.target.scaleY = 0.8;
+		
+				
+			
+		
+		};
 		
 		root.setup();
 		var _this = this;
@@ -2784,14 +2772,14 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1684194470830", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1684194470832", id:"index_atlas_P_2"},
-		{src:"sounds/drop.mp3?1684194470982", id:"drop"},
-		{src:"sounds/error.mp3?1684194470982", id:"error"},
-		{src:"sounds/win.mp3?1684194470982", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1684194470982", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1684194470982", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1684194470982", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1685061273046", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1685061273047", id:"index_atlas_P_2"},
+		{src:"sounds/drop.mp3?1685061273201", id:"drop"},
+		{src:"sounds/error.mp3?1685061273201", id:"error"},
+		{src:"sounds/win.mp3?1685061273201", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1685061273201", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1685061273201", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1685061273201", id:"retroalimentacion"}
 	],
 	preloads: []
 };
