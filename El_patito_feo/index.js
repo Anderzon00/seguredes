@@ -781,35 +781,6 @@ if (reversed == null) { reversed = false; }
 				_this.gotoAndStop(0);
 			}, this);
 		});
-		
-		/*var _this = this;
-		var iframe = document.getElementById('i_iframe');
-		
-		_this.pantalla.on('click', function(){
-		 if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
-		    // Entra en el modo de pantalla completa
-		    if (iframe.requestFullscreen) {
-		      iframe.requestFullscreen();
-		    } else if (iframe.mozRequestFullScreen) {
-		      iframe.mozRequestFullScreen();
-		    } else if (iframe.webkitRequestFullscreen) {
-		      iframe.webkitRequestFullscreen();
-		    } else if (iframe.msRequestFullscreen) {
-		      iframe.msRequestFullscreen();
-		    }
-		  } else {
-		    // Sale del modo de pantalla completa
-		    if (document.exitFullscreen) {
-		      document.exitFullscreen();
-		    } else if (document.mozCancelFullScreen) {
-		      document.mozCancelFullScreen();
-		    } else if (document.webkitExitFullscreen) {
-		      document.webkitExitFullscreen();
-		    } else if (document.msExitFullscreen) {
-		      document.msExitFullscreen();
-		    }
-		  }
-		});*/
 	}
 	this.frame_15 = function() {
 		document.getElementById('miIframe')?.remove();  
@@ -974,15 +945,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1684709497303", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1684709497303", id:"barraseguredes"},
-		{src:"images/fondo11.png?1684709497303", id:"fondo11"},
-		{src:"images/fondoMorado.png?1684709497303", id:"fondoMorado"},
-		{src:"images/Portada.png?1684709497303", id:"Portada"},
-		{src:"images/index_atlas_1.png?1684709497243", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1684709497303", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1684709497303", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1684709497303", id:"sound1"}
+		{src:"images/bannernegro1.png?1685313088173", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1685313088173", id:"barraseguredes"},
+		{src:"images/fondo11.png?1685313088173", id:"fondo11"},
+		{src:"images/fondoMorado.png?1685313088173", id:"fondoMorado"},
+		{src:"images/Portada.png?1685313088173", id:"Portada"},
+		{src:"images/index_atlas_1.png?1685313088107", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1685313088174", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1685313088174", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1685313088174", id:"sound1"}
 	],
 	preloads: []
 };

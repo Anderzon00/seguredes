@@ -2102,7 +2102,7 @@ if (reversed == null) { reversed = false; }
 	// pieces
 	this.p9 = new lib._9();
 	this.p9.name = "p9";
-	this.p9.setTransform(1143.35,421.8,1.3,1.3,0,0,0,57,72.2);
+	this.p9.setTransform(1143.35,427.8,1.3,1.3,0,0,0,57,72.2);
 	new cjs.ButtonHelper(this.p9, 0, 1, 1);
 
 	this.p21 = new lib._21();
@@ -2142,7 +2142,7 @@ if (reversed == null) { reversed = false; }
 
 	this.p17 = new lib._17();
 	this.p17.name = "p17";
-	this.p17.setTransform(1264.5,418.8,1.3,1.3,0,0,0,71.6,48.1);
+	this.p17.setTransform(1250.8,450.85,1.3,1.3,0,0,0,71.6,48.1);
 	new cjs.ButtonHelper(this.p17, 0, 1, 1);
 
 	this.p22 = new lib._22();
@@ -2157,12 +2157,12 @@ if (reversed == null) { reversed = false; }
 
 	this.p5 = new lib._5();
 	this.p5.name = "p5";
-	this.p5.setTransform(1155.5,204.2,1.3,1.3,0,0,0,71.4,47.8);
+	this.p5.setTransform(1145.2,233.2,1.3,1.3,0,0,0,71.4,47.8);
 	new cjs.ButtonHelper(this.p5, 0, 1, 1);
 
 	this.p18 = new lib._18();
 	this.p18.name = "p18";
-	this.p18.setTransform(1258.05,288.9,1.3,1.3,0,0,0,46,60.8);
+	this.p18.setTransform(1258.05,341.75,1.3,1.3,0,0,0,46,60.8);
 	new cjs.ButtonHelper(this.p18, 0, 1, 1);
 
 	this.p3 = new lib._3();
@@ -2225,7 +2225,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Pieces, new cjs.Rectangle(103.3,-63.7,1251.7,586.6), null);
+}).prototype = getMCSymbolPrototype(lib.Pieces, new cjs.Rectangle(103.3,-63.7,1238,586.6), null);
 
 
 (lib.pato_1 = function(mode,startPosition,loop,reversed) {
@@ -2534,12 +2534,16 @@ if (reversed == null) { reversed = false; }
 		root.stageMouseMoveHandler = function(e) {
 		    if (pieces.target) {
 		        pieces.target.x = (e.stageX / stage.scaleX) - pieces.target.offsetX;
-		        pieces.target.y = (e.stageY / stage.scaleY) - pieces.target.offsetY;	
-				pieces.target.scaleX = 1.30;
-		     pieces.target.scaleY = 1.30;
-			
-		    }
+		        pieces.target.y = (e.stageY / stage.scaleY) - pieces.target.offsetY;
+		        pieces.target.scaleX = 1.30;
+		        pieces.target.scaleY = 1.30;
+		        
+		        // Obtener el índice más alto de las piezas
+		  };     
 		};
+		
+		
+		
 		
 		root.stageMouseUpHandler = function(e) {
 		    stage.off("stagemousemove", root.stageMouseMove);
@@ -2564,8 +2568,8 @@ if (reversed == null) { reversed = false; }
 		        child.originalY = positions[index].y;
 		        child.mouseEnabled = true;
 		        createjs.Tween.get(child).to({x: child.originalX, y: child.originalY}, 10, createjs.Ease.backInOut);
-				child.scaleX = 0.8;
-		    child.scaleY = 0.8;
+				child.scaleX = 0.9;
+		    child.scaleY = 0.9;
 				 
 		    });
 		};
@@ -2607,16 +2611,25 @@ if (reversed == null) { reversed = false; }
 		};
 		
 		root.onWin = function() {
-		    createjs.Sound.stop();
+			
+			function sleep (time) {	
+		return new Promise((resolve) => setTimeout(resolve, time));
+		}
+		sleep(8000).then(() => {
+		   createjs.Sound.stop();
 		    createjs.Sound.play("win");
 		    createjs.Sound.play("retroalimentacion");
 		    this.mensaje.visible = true;
+		});
+			
+			
+		    
 		};
 		
 		root.onMiss = function() {
 		    createjs.Tween.get(pieces.target).to({x: pieces.target.originalX, y: pieces.target.originalY}, 350, createjs.Ease.backInOut);
-		pieces.target.scaleX = 0.8;
-		     pieces.target.scaleY = 0.8;
+		pieces.target.scaleX = 0.9;
+		     pieces.target.scaleY = 0.9;
 		
 				
 			
@@ -2772,14 +2785,14 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1685061273046", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1685061273047", id:"index_atlas_P_2"},
-		{src:"sounds/drop.mp3?1685061273201", id:"drop"},
-		{src:"sounds/error.mp3?1685061273201", id:"error"},
-		{src:"sounds/win.mp3?1685061273201", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1685061273201", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1685061273201", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1685061273201", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1685328956669", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1685328956670", id:"index_atlas_P_2"},
+		{src:"sounds/drop.mp3?1685328956814", id:"drop"},
+		{src:"sounds/error.mp3?1685328956814", id:"error"},
+		{src:"sounds/win.mp3?1685328956814", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1685328956814", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1685328956814", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1685328956814", id:"retroalimentacion"}
 	],
 	preloads: []
 };
