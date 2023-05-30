@@ -1491,7 +1491,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btnRompecabezas = new lib.btnRompecabezas();
 	this.btnRompecabezas.name = "btnRompecabezas";
-	this.btnRompecabezas.setTransform(337.3,489.3,1.0617,1.0617,0,0,0,24.4,24.4);
+	this.btnRompecabezas.setTransform(298.3,478.8,1.0617,1.0617,0,0,0,24.4,24.4);
 	new cjs.ButtonHelper(this.btnRompecabezas, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnRompecabezas},{t:this.btnEntrar1},{t:this.btnEntrar2}]}).to({state:[]},1).wait(1));
@@ -1566,13 +1566,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1685489434001", id:"index_atlas_1"},
-		{src:"sounds/entrar.mp3?1685489434094", id:"entrar"},
-		{src:"sounds/error.mp3?1685489434094", id:"error"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1685489434094", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1685489434094", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1685489434094", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1685489434094", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1685490677231", id:"index_atlas_1"},
+		{src:"sounds/entrar.mp3?1685490677319", id:"entrar"},
+		{src:"sounds/error.mp3?1685490677319", id:"error"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1685490677319", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1685490677319", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1685490677319", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1685490677319", id:"an.TextInput"}
 	],
 	preloads: []
 };
