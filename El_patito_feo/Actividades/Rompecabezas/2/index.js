@@ -1389,14 +1389,14 @@ if (reversed == null) { reversed = false; }
 
 	// Capa_1
 	this.instance = new lib.Imagen15();
-	this.instance.setTransform(0,0,0.4,0.4);
+	this.instance.setTransform(28,25,0.4,0.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,115.2,117.2);
+p.nominalBounds = new cjs.Rectangle(28,25,115.19999999999999,117.19999999999999);
 
 
 (lib._14 = function(mode,startPosition,loop,reversed) {
@@ -1596,14 +1596,14 @@ if (reversed == null) { reversed = false; }
 
 	// Capa_1
 	this.instance = new lib.Imagen6();
-	this.instance.setTransform(0,0,0.4,0.4);
+	this.instance.setTransform(-51,-79,0.4,0.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,90.4,90);
+p.nominalBounds = new cjs.Rectangle(-51,-79,90.4,90);
 
 
 (lib._5 = function(mode,startPosition,loop,reversed) {
@@ -2018,7 +2018,7 @@ if (reversed == null) { reversed = false; }
 
 	this.p15 = new lib.s15();
 	this.p15.name = "p15";
-	this.p15.setTransform(672,318.05,1.3,1.3,0,0,0,5.5,-34.4);
+	this.p15.setTransform(665.9,317,1.3,1.3,0,0,0,0.8,-35.2);
 
 	this.p14 = new lib.s14();
 	this.p14.name = "p14";
@@ -2097,113 +2097,113 @@ if (reversed == null) { reversed = false; }
 	// pieces
 	this.p9 = new lib._9();
 	this.p9.name = "p9";
-	this.p9.setTransform(1202.35,374,1.3,1.3,0,0,0,57,72.2);
+	this.p9.setTransform(1257.7,278.25,1.3,1.3,0,0,0,57,72.2);
 	new cjs.ButtonHelper(this.p9, 0, 1, 1);
 
 	this.p21 = new lib._21();
 	this.p21.name = "p21";
-	this.p21.setTransform(253.5,409.9,1.3,1.3,0,0,0,430.2,243);
+	this.p21.setTransform(287.5,458.7,1.3,1.3,0,0,0,430.2,243);
 	new cjs.ButtonHelper(this.p21, 0, 1, 1);
 
 	this.p11 = new lib._11();
 	this.p11.name = "p11";
-	this.p11.setTransform(253.9,191.45,1.3,1.3,0,0,0,59.1,71.7);
+	this.p11.setTransform(288.45,365.65,1.3,1.3,0,0,0,59.1,71.7);
 	new cjs.ButtonHelper(this.p11, 0, 1, 1);
 
 	this.p15 = new lib._15();
 	this.p15.name = "p15";
-	this.p15.setTransform(257.6,85.8,1.3,1.3,0,0,0,62.4,59.3);
+	this.p15.setTransform(217.25,443.2,1.3,1.3,0,0,0,85.6,83.7);
 	new cjs.ButtonHelper(this.p15, 0, 1, 1);
 
 	this.p4 = new lib._4();
 	this.p4.name = "p4";
-	this.p4.setTransform(1208.6,190.75,1.3,1.3,0,0,0,62.8,48);
+	this.p4.setTransform(1242.9,457.9,1.3,1.3,0,0,0,62.8,48);
 	new cjs.ButtonHelper(this.p4, 0, 1, 1);
 
 	this.p14 = new lib._14();
 	this.p14.name = "p14";
-	this.p14.setTransform(255,82.35,1.3,1.3,0,0,0,61.4,61.9);
+	this.p14.setTransform(287.75,293.45,1.3,1.3,0,0,0,61.4,61.9);
 	new cjs.ButtonHelper(this.p14, 0, 1, 1);
 
 	this.p2 = new lib._2();
 	this.p2.name = "p2";
-	this.p2.setTransform(260.25,86.45,1.3,1.3,0,0,0,65.2,58.6);
+	this.p2.setTransform(216.8,289.2,1.3,1.3,0,0,0,65.2,58.6);
 	new cjs.ButtonHelper(this.p2, 0, 1, 1);
 
 	this.p12 = new lib._12();
 	this.p12.name = "p12";
-	this.p12.setTransform(1206.65,155.45,1.3,1.3,0,0,0,57.7,70);
+	this.p12.setTransform(1241.95,138,1.3,1.3,0,0,0,57.7,70);
 	new cjs.ButtonHelper(this.p12, 0, 1, 1);
 
 	this.p17 = new lib._17();
 	this.p17.name = "p17";
-	this.p17.setTransform(1205.25,314,1.3,1.3,0,0,0,71.6,48.1);
+	this.p17.setTransform(1166.45,458.05,1.3,1.3,0,0,0,71.6,48.1);
 	new cjs.ButtonHelper(this.p17, 0, 1, 1);
 
 	this.p22 = new lib._22();
 	this.p22.name = "p22";
-	this.p22.setTransform(255,81.3,1.3,1.3,0,0,0,50.4,44.8);
+	this.p22.setTransform(302.05,136.3,1.3,1.3,0,0,0,50.4,44.8);
 	new cjs.ButtonHelper(this.p22, 0, 1, 1);
 
 	this.p6 = new lib._6();
 	this.p6.name = "p6";
-	this.p6.setTransform(1205.75,143.8,1.3,1.3,0,0,0,45,45.6);
+	this.p6.setTransform(1135.25,113.1,1.3,1.3,0,0,0,-5.8,-34);
 	new cjs.ButtonHelper(this.p6, 0, 1, 1);
 
 	this.p5 = new lib._5();
 	this.p5.name = "p5";
-	this.p5.setTransform(1206.5,204.2,1.3,1.3,0,0,0,71.4,47.8);
+	this.p5.setTransform(1166.15,201.95,1.3,1.3,0,0,0,71.4,47.8);
 	new cjs.ButtonHelper(this.p5, 0, 1, 1);
 
 	this.p18 = new lib._18();
 	this.p18.name = "p18";
-	this.p18.setTransform(1207.05,272.9,1.3,1.3,0,0,0,46,60.8);
+	this.p18.setTransform(1259,203.35,1.3,1.3,0,0,0,46,60.8);
 	new cjs.ButtonHelper(this.p18, 0, 1, 1);
 
 	this.p3 = new lib._3();
 	this.p3.name = "p3";
-	this.p3.setTransform(1211.7,173.1,1.3,1.3,0,0,0,64,51.6);
+	this.p3.setTransform(1156.55,46.25,1.3,1.3,0,0,0,64,51.6);
 	new cjs.ButtonHelper(this.p3, 0, 1, 1);
 
 	this.p23 = new lib._23();
 	this.p23.name = "p23";
-	this.p23.setTransform(1209.1,172.35,1.3,1.3,0,0,0,61.8,57);
+	this.p23.setTransform(1247.3,26.25,1.3,1.3,0,0,0,61.8,57);
 	new cjs.ButtonHelper(this.p23, 0, 1, 1);
 
 	this.p8 = new lib._8();
 	this.p8.name = "p8";
-	this.p8.setTransform(252.55,85.65,1.3,1.3,0,0,0,69.9,59.2);
+	this.p8.setTransform(226.95,170,1.3,1.3,0,0,0,69.9,59.2);
 	new cjs.ButtonHelper(this.p8, 0, 1, 1);
 
 	this.p24 = new lib._24();
 	this.p24.name = "p24";
-	this.p24.setTransform(1206.75,167.9,1.3,1.3,0,0,0,57,55.6);
+	this.p24.setTransform(1243.15,357.35,1.3,1.3,0,0,0,57,55.6);
 	this.p24.cache(-2,-2,117,116);
 	new cjs.ButtonHelper(this.p24, 0, 1, 1);
 
 	this.p16 = new lib._16();
 	this.p16.name = "p16";
-	this.p16.setTransform(1209.9,94.2,1.3,1.3,0,0,0,52,71);
+	this.p16.setTransform(1144.1,392.3,1.3,1.3,0,0,0,52,71);
 	new cjs.ButtonHelper(this.p16, 0, 1, 1);
 
 	this.p10 = new lib._10();
 	this.p10.name = "p10";
-	this.p10.setTransform(1215.65,349.15,1.3,1.3,0,0,0,55.6,63.7);
+	this.p10.setTransform(1154,290.05,1.3,1.3,0,0,0,55.6,63.7);
 	new cjs.ButtonHelper(this.p10, 0, 1, 1);
 
 	this.p20 = new lib._20();
 	this.p20.name = "p20";
-	this.p20.setTransform(253.5,275.4,1.3,1.3,0,0,0,71,47.2);
+	this.p20.setTransform(228.4,232.95,1.3,1.3,0,0,0,71,47.2);
 	new cjs.ButtonHelper(this.p20, 0, 1, 1);
 
 	this.p19 = new lib._19();
 	this.p19.name = "p19";
-	this.p19.setTransform(253.2,83.3,1.3,1.3,0,0,0,47.4,56.2);
+	this.p19.setTransform(298.15,25.2,1.3,1.3,0,0,0,47.4,56.2);
 	new cjs.ButtonHelper(this.p19, 0, 1, 1);
 
 	this.p13 = new lib._13();
 	this.p13.name = "p13";
-	this.p13.setTransform(252.45,100.35,1.3,1.3,0,0,0,56.8,52.4);
+	this.p13.setTransform(216.2,68.1,1.3,1.3,0,0,0,56.8,52.4);
 	new cjs.ButtonHelper(this.p13, 0, 1, 1);
 
 	this.p7 = new lib._7();
@@ -2220,7 +2220,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Pieces, new cjs.Rectangle(161.2,1.9,1134,467), null);
+}).prototype = getMCSymbolPrototype(lib.Pieces, new cjs.Rectangle(132.1,-47.8,1202.3000000000002,567.0999999999999), null);
 
 
 (lib.pato_1 = function(mode,startPosition,loop,reversed) {
@@ -2432,171 +2432,8 @@ if (reversed == null) { reversed = false; }
 		   _this.guia.visible = false;
 		});
 		});
-		stage.on('drawstart', initStage, this, true);
-		function initStage() {
-		    stretchToFit();
-		}
 		
-		var root = this;
-		var pieces = root.pieces;
-		var slots = root.slots;
-		var restart = root.restart;
-		var winMessage = root.winMessage;
-		var positions = [];
-		
-		root.setup = function()
-		{
-			 
-			createjs.Touch.enable(stage);
-			stage.mouseMoveOutside = true;
-			root.drawStart = stage.on("drawstart", root.start, null, true);
-		};
-		
-		root.start = function(e)
-		{
-			stage.off("drawstart", root.drawStart);	 
-			
-			pieces.children.forEach(function(child, index)
-			{
-				positions[index] = {x:child.x, y:child.y};
-			});
-			
-			slots.children.forEach(function(child, index)
-			{
-				child.mouseChildren = false;
-			});
-		
-			root.restartHandler(null);	
-			restart.on("click", root.restartHandler);
-			pieces.on("mousedown", root.mouseDownHandler);	
-		};
-		
-		root.restartHandler = function(e)
-		{
-			pieces.count = 0;
-			 
-			root.shuffle();
-		};
-		
-		root.mouseDownHandler = function(e)
-		{
-			e.currentTarget.setChildIndex(e.target, e.currentTarget.children.length - 1);
-			e.target.offsetX = (e.stageX / stage.scaleX) - e.target.x;
-			e.target.offsetY = (e.stageY / stage.scaleY) - e.target.y;
-			pieces.target = e.target;
-			root.stageMouseMove = stage.on("stagemousemove", root.stageMouseMoveHandler);
-			root.stageMouseUp = stage.on("stagemouseup", root.stageMouseUpHandler);
-		};
-		
-		root.stageMouseMoveHandler = function(e)
-		{
-			if (pieces.target)
-			{
-				pieces.target.x = (e.stageX / stage.scaleX) - pieces.target.offsetX;
-				pieces.target.y = (e.stageY / stage.scaleY) - pieces.target.offsetY;
-			}	
-		};
-		
-		root.stageMouseUpHandler = function(e)
-		{
-			stage.off("stagemousemove", root.stageMouseMove);
-			stage.off("stagemouseup", root.stageMouseUp);
-			
-			if (pieces.target)
-			{
-				root.check();
-				pieces.target = null;
-			}	
-		};
-		
-		root.shuffle = function()
-		{	
-			positions.sort(function(a, b)
-			{
-				return 0.5 - Math.random();
-			});
-			
-			pieces.children.forEach(function(child, index)
-			{
-				child.originalX = positions[index].x;
-				child.originalY = positions[index].y;		
-				child.mouseEnabled = true;		
-				createjs.Tween.get(child).to({x:child.originalX, y:child.originalY}, 10, createjs.Ease.backInOut);
-			});
-		};
-		
-		root.check = function()
-		{
-			var spot = slots.getObjectUnderPoint(pieces.target.x, pieces.target.y);
-			
-			if (!spot)
-			{
-				root.onMiss();
-				return;
-			}
-			
-			root.slot = spot.parent;
-				
-			if (root.slot)
-			{		
-				if (pieces.target.name === root.slot.name)
-				{
-					root.onMatch();
-					 createjs.Sound.play("drop");
-					
-					if (pieces.count === pieces.children.length)
-						root.onWin();
-				}
-				else
-					{
-					root.onMiss();
-				
-						}
-						
-				
-				root.slot = null;
-			}
-			else
-				root.onMiss();
-		};
-		
-		root.onMatch = function()
-		{	
-			pieces.target.mouseEnabled = false;
-			pieces.count++;
-			createjs.Tween.get(pieces.target).to({x:root.slot.x, y:root.slot.y}, 350, createjs.Ease.backInOut);
-		};
-		
-		
-		
-		var _this= this
-		
-		root.onWin = function()
-		{
-			
-			createjs.Sound.stop();
-			
-			createjs.Sound.play("win");
-			createjs.Sound.play("retroalimentacion");
-		
-		
-			_this.mensaje.visible=true;
-			 
-		};
-		
-		root.onMiss = function()
-		{	
-			createjs.Tween.get(pieces.target).to({x:pieces.target.originalX, y:pieces.target.originalY}, 350, createjs.Ease.backInOut);
-		createjs.Sound.play("error");
-			};
-		
-		root.setup();
-		
-		
-		var _this=this;
-		    var element = document.body;
-		
-		
+		var element = document.body;  
 		
 		function GoInFullscreen() {
 			if(element.requestFullscreen)
@@ -2621,10 +2458,8 @@ if (reversed == null) { reversed = false; }
 				document.msExitFullscreen();
 		}
 		
-		
 		function IsFullScreenCurrently() {
-			var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;
-			
+			var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;	
 			if(full_screen_element === null)
 				return false;
 			else
@@ -2635,9 +2470,157 @@ if (reversed == null) { reversed = false; }
 		if(IsFullScreenCurrently())
 				GoOutFullscreen();
 			else
-				GoInFullscreen();
-			   
+				GoInFullscreen();	   
 		});
+		stage.on('drawstart', initStage, this, true);
+		
+		function initStage() {
+		    stretchToFit();
+		}
+		
+		var root = this, pieces = root.pieces, slots = root.slots, restart = root.restart, positions = [];
+		
+		root.setup = function() {
+		    createjs.Touch.enable(stage);
+		    stage.mouseMoveOutside = true;
+		    root.drawStart = stage.on("drawstart", root.start, null, true);
+		};
+		
+		root.start = function(e) {
+		    stage.off("drawstart", root.drawStart);
+		    positions = pieces.children.map(function(child) {
+		        return {x: child.x, y: child.y};
+		    });
+		    slots.children.forEach(function(child) {
+		        child.mouseChildren = false;
+		    });
+		    root.restartHandler(null);
+		    restart.on("click", root.restartHandler);
+		    pieces.on("mousedown", root.mouseDownHandler);
+		};
+		
+		root.restartHandler = function(e) {
+		    pieces.count = 0;
+		    root.shuffle();
+		};
+		
+		root.mouseDownHandler = function(e) {
+		    e.currentTarget.setChildIndex(e.target, e.currentTarget.children.length - 1);
+		    e.target.offsetX = (e.stageX / stage.scaleX) - e.target.x;
+		    e.target.offsetY = (e.stageY / stage.scaleY) - e.target.y;
+		    pieces.target = e.target;   
+		 
+		    root.stageMouseMove = stage.on("stagemousemove", root.stageMouseMoveHandler);
+		    root.stageMouseUp = stage.on("stagemouseup", root.stageMouseUpHandler);
+			
+		};
+		
+		root.stageMouseMoveHandler = function(e) {
+		    if (pieces.target) {
+		        pieces.target.x = (e.stageX / stage.scaleX) - pieces.target.offsetX;
+		        pieces.target.y = (e.stageY / stage.scaleY) - pieces.target.offsetY;
+		        pieces.target.scaleX = 1.30;
+		        pieces.target.scaleY = 1.30;
+		        
+		        // Obtener el índice más alto de las piezas
+		  };     
+		};
+		
+		
+		
+		
+		root.stageMouseUpHandler = function(e) {
+		    stage.off("stagemousemove", root.stageMouseMove);
+		    stage.off("stagemouseup", root.stageMouseUp);
+			
+				
+		    if (pieces.target) {
+		        root.check();
+		        pieces.target = null;
+				
+		    }
+			
+		
+		};
+		
+		root.shuffle = function() {
+		    positions.sort(function(a, b) {
+		        return 0.5 - Math.random();
+		    });
+		    pieces.children.forEach(function(child, index) {
+		        child.originalX = positions[index].x;
+		        child.originalY = positions[index].y;
+		        child.mouseEnabled = true;
+		        createjs.Tween.get(child).to({x: child.originalX, y: child.originalY}, 10, createjs.Ease.backInOut);
+				child.scaleX = 0.9;
+		    child.scaleY = 0.9;
+				 
+		    });
+		};
+		
+		root.check = function() {
+		    var spot = slots.getObjectUnderPoint(pieces.target.x, pieces.target.y);
+		
+		    if (!spot) {
+					
+		        root.onMiss();
+		        return;
+		    }
+		
+		    root.slot = spot.parent;
+		
+		    if (root.slot) {
+		        if (pieces.target.name === root.slot.name) {
+		            root.onMatch();
+		            createjs.Sound.play("drop");
+		            if (pieces.count === pieces.children.length)
+		                root.onWin();
+		        } else {
+		            root.onMiss();
+		            createjs.Sound.play("error");
+		        }
+		        root.slot = null;
+		    } else {
+		        root.onMiss();
+		    }
+		};
+		
+		root.onMatch = function() {
+		    pieces.target.mouseEnabled = false;
+		    pieces.count++;
+		    createjs.Tween.get(pieces.target).to({x: root.slot.x, y: root.slot.y}, 350, createjs.Ease.backInOut);
+		
+			
+			
+		};
+		
+		root.onWin = function() {
+			
+			function sleep (time) {	
+		return new Promise((resolve) => setTimeout(resolve, time));
+		}
+		sleep(8000).then(() => {
+		   createjs.Sound.stop();
+		    createjs.Sound.play("win");
+		    createjs.Sound.play("retroalimentacion");
+		    this.mensaje.visible = true;
+		});
+			
+			
+		    
+		};
+		
+		root.onMiss = function() {
+		    createjs.Tween.get(pieces.target).to({x: pieces.target.originalX, y: pieces.target.originalY}, 350, createjs.Ease.backInOut);
+		pieces.target.scaleX = 0.9;
+		     pieces.target.scaleY = 0.9;
+		
+				
+			
+		
+		};
+		
+		root.setup();
 		var _this = this;
 		
 		_this.btnindice.on('click', function(){	
@@ -2790,13 +2773,13 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1684194494640", id:"index_atlas_P_1"},
-		{src:"sounds/drop.mp3?1684194494794", id:"drop"},
-		{src:"sounds/error.mp3?1684194494794", id:"error"},
-		{src:"sounds/win.mp3?1684194494794", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1684194494794", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1684194494794", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1684194494794", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1686095623406", id:"index_atlas_P_1"},
+		{src:"sounds/drop.mp3?1686095623557", id:"drop"},
+		{src:"sounds/error.mp3?1686095623557", id:"error"},
+		{src:"sounds/win.mp3?1686095623557", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1686095623557", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1686095623557", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1686095623557", id:"retroalimentacion"}
 	],
 	preloads: []
 };

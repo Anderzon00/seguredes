@@ -1130,14 +1130,14 @@ if (reversed == null) { reversed = false; }
 
 	// Capa_1
 	this.instance = new lib.Interpolación1("synched",0);
-	this.instance.setTransform(-1,0);
+	this.instance.setTransform(-1,7.2);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({y:-10},24).to({y:0},25).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({y:-2.8},24).to({y:7.2},25).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-100,-109,198,208);
+p.nominalBounds = new cjs.Rectangle(-100,-101.8,198,208);
 
 
 (lib.btnInteractivoB = function(mode,startPosition,loop,reversed) {
@@ -1566,13 +1566,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1685490677231", id:"index_atlas_1"},
-		{src:"sounds/entrar.mp3?1685490677319", id:"entrar"},
-		{src:"sounds/error.mp3?1685490677319", id:"error"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1685490677319", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1685490677319", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1685490677319", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1685490677319", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1686185791392", id:"index_atlas_1"},
+		{src:"sounds/entrar.mp3?1686185791479", id:"entrar"},
+		{src:"sounds/error.mp3?1686185791479", id:"error"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1686185791479", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1686185791479", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1686185791479", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1686185791479", id:"an.TextInput"}
 	],
 	preloads: []
 };

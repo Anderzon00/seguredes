@@ -14,36 +14,15 @@
 <title>index</title>
 <!-- write your code here -->
 <style>
-  #animation_container {
+  #animation_container, #_preload_div_ {
 	position:absolute;
 	margin:auto;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	 
+	left:0;right:0;
+	top:0;bottom:0;
   }
-  #_preload_div_ {
- 
-  top: 45%;
-  left: 45%;
-  position:absolute;
-	margin:auto;
- 
-	right:0;
-	 
-	bottom:0;
-   
-}
-
-body::-webkit-scrollbar{
-    display: none;
-  }
-
-
 </style>
-<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1684385133337"></script>
+<script src="libs/1.0.0/createjs.min.js"></script>
+<script src="index.js?1686185596502"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -100,6 +79,6 @@ function playSound(id, loop, offset) {
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1189px; height:642px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-    <div id='_preload_div_' >	<span ></span>	<img src=images/_preloader.gif?1684385133338 /></div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:642px; width: 1189px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1686185596503 style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
