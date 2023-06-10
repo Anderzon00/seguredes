@@ -1403,71 +1403,81 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		this.stop();
-		window.addEventListener("keydown", function(e){
-			 
-			 if( e.keyCode==13){
-				
-			 
-		if ($("#imput1").val()=="Estafa" || $("#imput1").val()=="estafa"  ) 
-			window.open('../PeligroNoPeligro', '_self'); 
-		else if ($("#imput2").val()=="Suplantación"  || $("#imput2").val()=="suplantación" ||$("#imput2").val()=="Suplantacion"  || $("#imput2").val()=="suplantacion") 
-				window.open('../ExplosionGlobos', '_self'); 
-			else 		 
-		_this.gotoAndStop(1);	 }
-		        });
+		
+		setTimeout(function()
+		
+		{    // dom_overlay_container is a global reference to a div element created by Animate CC. "txt" is the instance name of your component
+		    textInput = dom_overlay_container.children["imput1"];
+			textInput2 = dom_overlay_container.children["imput2"];
+		    textInput.style.fontSize = "20px";
+			textInput2.style.fontSize = "20px"; 
+		    textInput.style.fontFamily = "'Comic Sans MS', cursive, sans-serif";
+			textInput2.style.fontFamily = "'Comic Sans MS', cursive, sans-serif";	
+		}, 0);
+		
+		
+		
+		window.addEventListener("keydown", function (e) {
+		
+			if (e.keyCode == 13) {
+		
+		
+				if ($("#imput1").val() == "Estafa" || $("#imput1").val() == "estafa")
+					window.open('../PeligroNoPeligro', '_self');
+				else if ($("#imput2").val() == "Suplantación" || $("#imput2").val() == "suplantación" || $("#imput2").val() == "Suplantacion" || $("#imput2").val() == "suplantacion")
+					window.open('../ExplosionGlobos', '_self');
+				else
+					_this.gotoAndStop(1);
+			}
+		});
 		
 		var _this = this;
-				
-		_this.btnEntrar1.on('click', function(){	
-			
-		if ($("#imput1").val()=="Estafa" || $("#imput1").val()=="estafa"  ) 
-			
-		 { 	
-			createjs.Sound.play("play", {
-				volume: 0.5
-			}).on("complete", function () {
-			window.open('../PeligroNoPeligro', '_self'); 
-			}, this);
-			}
 		
-			else  		
-		_this.gotoAndStop(1);	
-			
+		_this.btnEntrar1.on('click', function () {
+		
+			if ($("#imput1").val() == "Estafa" || $("#imput1").val() == "estafa")
+		
+			{
+				createjs.Sound.play("play", {
+					volume: 0.5
+				}).on("complete", function () {
+					window.open('../PeligroNoPeligro', '_self');
+				}, this);
+			} else
+				_this.gotoAndStop(1);
+		
 		});
-			 
-		 
-		_this.btnEntrar2.on('click', function(){ 
-				
-		if ($("#imput2").val()=="Suplantación"  || $("#imput2").val()=="suplantación" ||$("#imput2").val()=="Suplantacion"  || $("#imput2").val()=="suplantacion") 
-			
-		
-		 { 	
-			createjs.Sound.play("play", {
-				volume: 0.5
-			}).on("complete", function () {
-			window.open('../ExplosionGlobos', '_self'); 
-			}, this);
-			}
 		
 		
-			else 		 
-		_this.gotoAndStop(1);  
+		_this.btnEntrar2.on('click', function () {
+		
+			if ($("#imput2").val() == "Suplantación" || $("#imput2").val() == "suplantación" || $("#imput2").val() == "Suplantacion" || $("#imput2").val() == "suplantacion")
+		
+		
+			{
+				createjs.Sound.play("play", {
+					volume: 0.5
+				}).on("complete", function () {
+					window.open('../ExplosionGlobos', '_self');
+				}, this);
+			} else
+				_this.gotoAndStop(1);
 		});
 		
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.AplastarYgolpear.on('click', function(){
+		_this.AplastarYgolpear.on('click', function () {
 		
-			 { 	
-			createjs.Sound.play("play", {
-				volume: 0.5
-			}).on("complete", function () {
-		   window.open('../AplastarGolpear', '_self');
-			}, this);
+			{
+				createjs.Sound.play("play", {
+					volume: 0.5
+				}).on("complete", function () {
+					window.open('../AplastarGolpear', '_self');
+				}, this);
 			}
-			
+		
 		});
 	}
 	this.frame_1 = function() {
@@ -1604,14 +1614,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1686185596363", id:"index_atlas_1"},
-		{src:"sounds/play.mp3?1686185596449", id:"play"},
-		{src:"sounds/error41.mp3?1686185596449", id:"error41"},
-		{src:"sounds/sound.mp3?1686185596449", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1686185596449", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1686185596450", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1686185596450", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1686185596450", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1686414205073", id:"index_atlas_1"},
+		{src:"sounds/play.mp3?1686414205169", id:"play"},
+		{src:"sounds/error41.mp3?1686414205169", id:"error41"},
+		{src:"sounds/sound.mp3?1686414205169", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1686414205169", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1686414205169", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1686414205169", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1686414205169", id:"an.TextInput"}
 	],
 	preloads: []
 };

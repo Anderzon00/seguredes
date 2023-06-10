@@ -1299,6 +1299,19 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 		
+		var textInput;
+		
+		setTimeout(function()
+		
+		{    // dom_overlay_container is a global reference to a div element created by Animate CC. "txt" is the instance name of your component
+		    textInput = dom_overlay_container.children["imput1"];
+			textInput2 = dom_overlay_container.children["imput2"];
+		    textInput.style.fontSize = "20px";
+			textInput2.style.fontSize = "20px"; 
+		    textInput.style.fontFamily = "'Comic Sans MS', cursive, sans-serif";
+			textInput2.style.fontFamily = "'Comic Sans MS', cursive, sans-serif";	
+		}, 0);
+		
 		var _this = this;
 		
 		_this.btnRompecabezas.on('click', function() {
@@ -1323,16 +1336,7 @@ if (reversed == null) { reversed = false; }
 		  }else if (window.parent.contador == 3) {  
 			 window.parent.miVariable1 = rnd;
 		    window.parent.contador = 1;
-		  } 
-		 
-		  
-			
-		 console.log("v1= "+window.parent.miVariable1)
-			 console.log("v2= "+window.parent.miVariable2)
-			console.log("contador= "+window.parent.contador)
-			console.log("random= "+rnd)
-		    
-			
+		  }   	
 		     
 		    if (rnd === 0) {
 		      window.open('../Rompecabezas/1', '_self');
@@ -1343,16 +1347,6 @@ if (reversed == null) { reversed = false; }
 		    }
 		  });
 		});
-		
-		 
-		
-		 
-		
-		 
-		
-		 
-		
-		
 		 
 		_this.btnEntrar1.on('click', function(){		
 		if ($("#imput1").val()=="Respeto" || $("#imput1").val()=="respeto"  ) { 	
@@ -1366,8 +1360,7 @@ if (reversed == null) { reversed = false; }
 			else  		
 		_this.gotoAndStop(1);	
 			
-		});
-			 
+		});	 
 		 
 		_this.btnEntrar2.on('click', function(){ 		
 		if ($("#imput2").val()=="Confianza"  || $("#imput2").val()=="confianza") { 	
@@ -1402,7 +1395,6 @@ if (reversed == null) { reversed = false; }
 		
 		_this.niña.play();
 		});
-		
 		
 		_this.BtnInteractivoA.on('click', function(){
 		
@@ -1452,7 +1444,7 @@ if (reversed == null) { reversed = false; }
 	this.imput1 = new lib.an_TextInput({'id': 'imput1', 'value':'', 'disabled':false, 'visible':true, 'class':'ui-textinput'});
 
 	this.imput1.name = "imput1";
-	this.imput1.setTransform(588,469.4,1.2866,0.7875,0,0,0,50.1,11.2);
+	this.imput1.setTransform(519.6,458.45,1.3401,1.0906,0,0,0,-1.1,-0.1);
 
 	this.BtnInteractivoB = new lib.btnInteractivoB();
 	this.BtnInteractivoB.name = "BtnInteractivoB";
@@ -1474,14 +1466,14 @@ if (reversed == null) { reversed = false; }
 	this.imput2 = new lib.an_TextInput({'id': 'imput2', 'value':'', 'disabled':false, 'visible':true, 'class':'ui-textinput'});
 
 	this.imput2.name = "imput2";
-	this.imput2.setTransform(868.45,468.9,1.2829,0.7949,0,0,0,50.1,11.1);
+	this.imput2.setTransform(802.3,458.65,1.34,1.0906,0,0,0,0.8,0.1);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.imput2},{t:this.text1},{t:this.niña},{t:this.niño},{t:this.BtnInteractivoB},{t:this.imput1}]}).to({state:[]},1).wait(1));
 
 	// btn
 	this.btnEntrar2 = new lib.btnEntrar();
 	this.btnEntrar2.name = "btnEntrar2";
-	this.btnEntrar2.setTransform(866.65,500.35,0.6987,0.6978,0,0,0,55.4,21.9);
+	this.btnEntrar2.setTransform(866.75,499.2,0.6987,0.6978,0,0,0,55.5,21.9);
 	new cjs.ButtonHelper(this.btnEntrar2, 0, 1, 2);
 
 	this.btnEntrar1 = new lib.btnEntrar();
@@ -1566,13 +1558,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1686185791392", id:"index_atlas_1"},
-		{src:"sounds/entrar.mp3?1686185791479", id:"entrar"},
-		{src:"sounds/error.mp3?1686185791479", id:"error"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1686185791479", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1686185791479", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1686185791479", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1686185791479", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1686413889237", id:"index_atlas_1"},
+		{src:"sounds/entrar.mp3?1686413889334", id:"entrar"},
+		{src:"sounds/error.mp3?1686413889334", id:"error"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1686413889334", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1686413889334", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1686413889334", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1686413889334", id:"an.TextInput"}
 	],
 	preloads: []
 };
