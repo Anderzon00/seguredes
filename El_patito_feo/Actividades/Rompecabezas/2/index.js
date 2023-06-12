@@ -2097,130 +2097,130 @@ if (reversed == null) { reversed = false; }
 	// pieces
 	this.p9 = new lib._9();
 	this.p9.name = "p9";
-	this.p9.setTransform(1257.7,278.25,1.3,1.3,0,0,0,57,72.2);
+	this.p9.setTransform(1142.05,383.4,1.3,1.3,0,0,0,57,72.2);
 	new cjs.ButtonHelper(this.p9, 0, 1, 1);
 
 	this.p21 = new lib._21();
 	this.p21.name = "p21";
-	this.p21.setTransform(287.5,458.7,1.3,1.3,0,0,0,430.2,243);
+	this.p21.setTransform(213,197.25,1.3,1.3,0,0,0,430.2,243);
 	new cjs.ButtonHelper(this.p21, 0, 1, 1);
 
 	this.p11 = new lib._11();
 	this.p11.name = "p11";
-	this.p11.setTransform(288.45,365.65,1.3,1.3,0,0,0,59.1,71.7);
+	this.p11.setTransform(210.9,426.8,1.3,1.3,0,0,0,59.1,71.7);
 	new cjs.ButtonHelper(this.p11, 0, 1, 1);
 
 	this.p15 = new lib._15();
 	this.p15.name = "p15";
-	this.p15.setTransform(217.25,443.2,1.3,1.3,0,0,0,85.6,83.7);
+	this.p15.setTransform(284.8,347.65,1.3,1.3,0,0,0,85.6,83.7);
 	new cjs.ButtonHelper(this.p15, 0, 1, 1);
 
 	this.p4 = new lib._4();
 	this.p4.name = "p4";
-	this.p4.setTransform(1242.9,457.9,1.3,1.3,0,0,0,62.8,48);
+	this.p4.setTransform(1249.95,326.95,1.3,1.3,0,0,0,62.8,48);
 	new cjs.ButtonHelper(this.p4, 0, 1, 1);
 
 	this.p14 = new lib._14();
 	this.p14.name = "p14";
-	this.p14.setTransform(287.75,293.45,1.3,1.3,0,0,0,61.4,61.9);
+	this.p14.setTransform(215.85,293.45,1.3,1.3,0,0,0,61.4,61.9);
 	new cjs.ButtonHelper(this.p14, 0, 1, 1);
 
 	this.p2 = new lib._2();
 	this.p2.name = "p2";
-	this.p2.setTransform(216.8,289.2,1.3,1.3,0,0,0,65.2,58.6);
+	this.p2.setTransform(205.8,29.3,1.3,1.3,0,0,0,65.2,58.6);
 	new cjs.ButtonHelper(this.p2, 0, 1, 1);
 
 	this.p12 = new lib._12();
 	this.p12.name = "p12";
-	this.p12.setTransform(1241.95,138,1.3,1.3,0,0,0,57.7,70);
+	this.p12.setTransform(1142.95,152.15,1.3,1.3,0,0,0,57.7,70);
 	new cjs.ButtonHelper(this.p12, 0, 1, 1);
 
 	this.p17 = new lib._17();
 	this.p17.name = "p17";
-	this.p17.setTransform(1166.45,458.05,1.3,1.3,0,0,0,71.6,48.1);
+	this.p17.setTransform(1161.05,341.4,1.3,1.3,0,0,0,71.6,48.1);
 	new cjs.ButtonHelper(this.p17, 0, 1, 1);
 
 	this.p22 = new lib._22();
 	this.p22.name = "p22";
-	this.p22.setTransform(302.05,136.3,1.3,1.3,0,0,0,50.4,44.8);
+	this.p22.setTransform(201.55,89.55,1.3,1.3,0,0,0,50.4,44.8);
 	new cjs.ButtonHelper(this.p22, 0, 1, 1);
 
 	this.p6 = new lib._6();
 	this.p6.name = "p6";
-	this.p6.setTransform(1135.25,113.1,1.3,1.3,0,0,0,-5.8,-34);
+	this.p6.setTransform(1258.25,423.85,1.3,1.3,0,0,0,-5.8,-34);
 	new cjs.ButtonHelper(this.p6, 0, 1, 1);
 
 	this.p5 = new lib._5();
 	this.p5.name = "p5";
-	this.p5.setTransform(1166.15,201.95,1.3,1.3,0,0,0,71.4,47.8);
+	this.p5.setTransform(1160.75,253,1.3,1.3,0,0,0,71.4,47.8);
 	new cjs.ButtonHelper(this.p5, 0, 1, 1);
 
 	this.p18 = new lib._18();
 	this.p18.name = "p18";
-	this.p18.setTransform(1259,203.35,1.3,1.3,0,0,0,46,60.8);
+	this.p18.setTransform(1265,140.2,1.3,1.3,0,0,0,46,60.8);
 	new cjs.ButtonHelper(this.p18, 0, 1, 1);
 
 	this.p3 = new lib._3();
 	this.p3.name = "p3";
-	this.p3.setTransform(1156.55,46.25,1.3,1.3,0,0,0,64,51.6);
+	this.p3.setTransform(1251.5,468.15,1.3,1.3,0,0,0,64,51.6);
 	new cjs.ButtonHelper(this.p3, 0, 1, 1);
 
 	this.p23 = new lib._23();
 	this.p23.name = "p23";
-	this.p23.setTransform(1247.3,26.25,1.3,1.3,0,0,0,61.8,57);
+	this.p23.setTransform(1148.3,26.25,1.3,1.3,0,0,0,61.8,57);
 	new cjs.ButtonHelper(this.p23, 0, 1, 1);
 
 	this.p8 = new lib._8();
 	this.p8.name = "p8";
-	this.p8.setTransform(226.95,170,1.3,1.3,0,0,0,69.9,59.2);
+	this.p8.setTransform(271.1,443.85,1.3,1.3,0,0,0,69.9,59.2);
 	new cjs.ButtonHelper(this.p8, 0, 1, 1);
 
 	this.p24 = new lib._24();
 	this.p24.name = "p24";
-	this.p24.setTransform(1243.15,357.35,1.3,1.3,0,0,0,57,55.6);
+	this.p24.setTransform(1249.15,24.45,1.3,1.3,0,0,0,57,55.6);
 	this.p24.cache(-2,-2,117,116);
 	new cjs.ButtonHelper(this.p24, 0, 1, 1);
 
 	this.p16 = new lib._16();
 	this.p16.name = "p16";
-	this.p16.setTransform(1144.1,392.3,1.3,1.3,0,0,0,52,71);
+	this.p16.setTransform(1267.1,252.5,1.3,1.3,0,0,0,52,71);
 	new cjs.ButtonHelper(this.p16, 0, 1, 1);
 
 	this.p10 = new lib._10();
 	this.p10.name = "p10";
-	this.p10.setTransform(1154,290.05,1.3,1.3,0,0,0,55.6,63.7);
+	this.p10.setTransform(1156.35,445,1.3,1.3,0,0,0,55.6,63.7);
 	new cjs.ButtonHelper(this.p10, 0, 1, 1);
 
 	this.p20 = new lib._20();
 	this.p20.name = "p20";
-	this.p20.setTransform(228.4,232.95,1.3,1.3,0,0,0,71,47.2);
+	this.p20.setTransform(272.05,92.65,1.3,1.3,0,0,0,71,47.2);
 	new cjs.ButtonHelper(this.p20, 0, 1, 1);
 
 	this.p19 = new lib._19();
 	this.p19.name = "p19";
-	this.p19.setTransform(298.15,25.2,1.3,1.3,0,0,0,47.4,56.2);
+	this.p19.setTransform(296.65,182.65,1.3,1.3,0,0,0,47.4,56.2);
 	new cjs.ButtonHelper(this.p19, 0, 1, 1);
 
 	this.p13 = new lib._13();
 	this.p13.name = "p13";
-	this.p13.setTransform(216.2,68.1,1.3,1.3,0,0,0,56.8,52.4);
+	this.p13.setTransform(297.9,21.2,1.3,1.3,0,0,0,56.8,52.4);
 	new cjs.ButtonHelper(this.p13, 0, 1, 1);
 
 	this.p7 = new lib._7();
 	this.p7.name = "p7";
-	this.p7.setTransform(252.8,111.55,1.3,1.3,0,0,0,46.9,61);
+	this.p7.setTransform(197,356.55,1.3,1.3,0,0,0,46.9,61);
 	new cjs.ButtonHelper(this.p7, 0, 1, 1);
 
 	this.p1 = new lib._1();
 	this.p1.name = "p1";
-	this.p1.setTransform(254.8,106.5,1.3,1.3,0,0,0,48,57.1);
+	this.p1.setTransform(304,281.5,1.3,1.3,0,0,0,48,57.1);
 	new cjs.ButtonHelper(this.p1, 0, 1, 1);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.p1},{t:this.p7},{t:this.p13},{t:this.p19},{t:this.p20},{t:this.p10},{t:this.p16},{t:this.p24},{t:this.p8},{t:this.p23},{t:this.p3},{t:this.p18},{t:this.p5},{t:this.p6},{t:this.p22},{t:this.p17},{t:this.p12},{t:this.p2},{t:this.p14},{t:this.p4},{t:this.p15},{t:this.p11},{t:this.p21},{t:this.p9}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Pieces, new cjs.Rectangle(132.1,-47.8,1202.3000000000002,567.0999999999999), null);
+}).prototype = getMCSymbolPrototype(lib.Pieces, new cjs.Rectangle(121.1,-47.8,1201.1000000000001,568), null);
 
 
 (lib.pato_1 = function(mode,startPosition,loop,reversed) {
@@ -2773,13 +2773,13 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1686095623406", id:"index_atlas_P_1"},
-		{src:"sounds/drop.mp3?1686095623557", id:"drop"},
-		{src:"sounds/error.mp3?1686095623557", id:"error"},
-		{src:"sounds/win.mp3?1686095623557", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1686095623557", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1686095623557", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1686095623557", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1686610685330", id:"index_atlas_P_1"},
+		{src:"sounds/drop.mp3?1686610685477", id:"drop"},
+		{src:"sounds/error.mp3?1686610685477", id:"error"},
+		{src:"sounds/win.mp3?1686610685477", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1686610685477", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1686610685477", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1686610685477", id:"retroalimentacion"}
 	],
 	preloads: []
 };

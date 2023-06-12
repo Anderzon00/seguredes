@@ -1150,12 +1150,37 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,1,2];
 	// timeline functions:
 	this.frame_0 = function() {
+		stage.on('drawstart', initStage, this, true);
+		function initStage() {
+		  stretchToFit();
+		}
 		this.stop();
 		var _this = this;
 		
 		_this.btnPlay.on('click', function(){
 		
 		_this.gotoAndStop(1);
+		});
+		
+		
+		
+		
+		_this.on("click", function (e) {
+		  if (e.target.name === "unmute") {
+		    sound.muted = false;
+		    _this.mute.visible = true;
+		    _this.unmute.visible = false;
+		  } else if (e.target.name === "mute") {
+		    sound.muted = true;
+		    _this.mute.visible = false;
+		    _this.unmute.visible = true;
+		  }
+		});
+		
+		_this.btnindice.on('click', function(){
+		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {        
+		window.open('../Menu', '_self');		 
+		                    }, this);
 		});
 	}
 	this.frame_1 = function() {
@@ -1207,10 +1232,6 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		sayHello();
-		stage.on('drawstart', initStage, this, true);
-		function initStage() {
-		  stretchToFit();
-		}
 		this.stop();
 		var _this = this;
 		createjs.Sound.stop();
@@ -1260,7 +1281,7 @@ if (reversed == null) { reversed = false; }
 			  
 		    setTimeout(actualizarCronometro, 1000);
 			  if(tiempo==0)
-				  _this.gotoAndStop(1);
+				  _this.gotoAndStop(2);
 		  }
 		
 		  actualizarCronometro();
@@ -1345,7 +1366,7 @@ if (reversed == null) { reversed = false; }
 	this.btnindice.setTransform(35.85,614.85);
 	new cjs.ButtonHelper(this.btnindice, 0, 1, 2, false, new lib.btnIndece(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnindice},{t:this.unmute},{t:this.mute},{t:this.instance_5},{t:this.instance_4}]},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnindice},{t:this.unmute},{t:this.mute},{t:this.instance_5},{t:this.instance_4}]}).wait(3));
 
 	// cuadro
 	this.instance_6 = new lib.SopaFOndo();
@@ -1428,14 +1449,14 @@ lib.properties = {
 	width: 1189,
 	height: 649,
 	fps: 25,
-	color: "#235594",
+	color: "#006600",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1686189288705", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1686189288838", id:"audioLoop"},
-		{src:"sounds/SoundBoton.mp3?1686189288838", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1686189288838", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1686189288838", id:"retroalimentacion"}
+		{src:"images/index_atlas_1.png?1686607904884", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1686607905019", id:"audioLoop"},
+		{src:"sounds/SoundBoton.mp3?1686607905019", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1686607905019", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1686607905019", id:"retroalimentacion"}
 	],
 	preloads: []
 };

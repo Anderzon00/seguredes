@@ -6566,18 +6566,18 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/FondoActividad.png?1678604459576", id:"FondoActividad"},
-		{src:"images/index_atlas_1.png?1678604459242", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1678604459242", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1678604459245", id:"index_atlas_3"},
-		{src:"sounds/audioG.mp3?1678604459576", id:"audioG"},
-		{src:"sounds/audioC.mp3?1678604459576", id:"audioC"},
-		{src:"sounds/correct.mp3?1678604459576", id:"correct"},
-		{src:"sounds/mal.mp3?1678604459576", id:"mal"},
-		{src:"sounds/final_corretas.mp3?1678604459576", id:"final_corretas"},
-		{src:"sounds/sound2.mp3?1678604459576", id:"sound2"},
-		{src:"sounds/sound.mp3?1678604459576", id:"sound"},
-		{src:"sounds/s_1.mp3?1678604459576", id:"s_1"}
+		{src:"images/FondoActividad.png?1686591458467", id:"FondoActividad"},
+		{src:"images/index_atlas_1.png?1686591458212", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1686591458212", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1686591458215", id:"index_atlas_3"},
+		{src:"sounds/audioG.mp3?1686591458467", id:"audioG"},
+		{src:"sounds/audioC.mp3?1686591458467", id:"audioC"},
+		{src:"sounds/correct.mp3?1686591458467", id:"correct"},
+		{src:"sounds/mal.mp3?1686591458467", id:"mal"},
+		{src:"sounds/final_corretas.mp3?1686591458467", id:"final_corretas"},
+		{src:"sounds/sound2.mp3?1686591458467", id:"sound2"},
+		{src:"sounds/sound.mp3?1686591458467", id:"sound"},
+		{src:"sounds/s_1.mp3?1686591458467", id:"s_1"}
 	],
 	preloads: []
 };
@@ -6676,21 +6676,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }
