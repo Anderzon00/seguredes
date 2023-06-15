@@ -896,10 +896,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1686587749632", id:"index_atlas_1"},
-		{src:"sounds/fondo.mp3?1686587749692", id:"fondo"},
-		{src:"sounds/audio.mp3?1686587749692", id:"audio"},
-		{src:"sounds/principales.mp3?1686587749692", id:"principales"}
+		{src:"images/index_atlas_1.png?1686855475191", id:"index_atlas_1"},
+		{src:"sounds/fondo.mp3?1686855475247", id:"fondo"},
+		{src:"sounds/audio.mp3?1686855475247", id:"audio"},
+		{src:"sounds/principales.mp3?1686855475247", id:"principales"}
 	],
 	preloads: []
 };

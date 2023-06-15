@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"iframe_atlas_1", frames: [[0,616,1373,455],[0,1073,1381,431],[1383,893,372,372],[1375,616,651,275],[1383,1267,546,216],[1684,0,271,38],[1684,40,271,38],[1684,80,271,38],[0,1506,1381,352],[0,0,1682,614]]}
+		{name:"iframe_atlas_1", frames: [[0,616,1373,455],[1957,0,63,63],[1957,65,60,60],[0,1073,1381,431],[1383,893,372,372],[1375,616,651,275],[1383,1267,546,216],[1684,0,271,38],[1684,40,271,38],[1684,80,271,38],[0,1506,1381,352],[0,0,1682,614]]}
 ];
 
 
@@ -34,65 +34,79 @@ lib.ssMetadata = [
 
 
 
-(lib.cai = function() {
+(lib.btnSonidoContenido = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.logoicbf = function() {
+(lib.BtnStopSonidoContenido = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.logopolicia = function() {
+(lib.cai = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.logoteprotejo = function() {
+(lib.logoicbf = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacionDOWN = function() {
+(lib.logopolicia = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacionUP = function() {
+(lib.logoteprotejo = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacion = function() {
+(lib.masinformacionDOWN = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.texto = function() {
+(lib.masinformacionUP = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.texto_1 = function() {
+(lib.masinformacion = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.texto = function() {
+	this.initialize(ss["iframe_atlas_1"]);
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.texto_1 = function() {
+	this.initialize(ss["iframe_atlas_1"]);
+	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -130,6 +144,29 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,0,0);
 
 
+(lib.btnStopSonido = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.BtnStopSonidoContenido();
+	this.instance.setTransform(0,0,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.5238,scaleY:0.5238,x:-1},0).wait(1).to({scaleX:0.5,scaleY:0.5,x:0},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-1,0,31.5,31.5);
+
+
 (lib.btnMasInformacion = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -161,6 +198,29 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-4.9,-11.9,145.5,33.5);
+
+
+(lib.btn_sonido = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.btnSonidoContenido();
+	this.instance.setTransform(0,0,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.5238,scaleY:0.5238,x:-1},0).wait(1).to({scaleX:0.5,scaleY:0.5,x:0},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-1,0,33,33);
 
 
 (lib.Símbolo2 = function(mode,startPosition,loop,reversed) {
@@ -296,17 +356,96 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
+		var _this = this;
+		/*
+		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
+		*/
+		_this.btn_sonido3.on('click', function(){
+			createjs.Sound.stop();
+			_this.btn_sonido3.visible=false;
+			_this.btn_sonido4.visible=true;
+			_this.btn_sonido5.visible=true;
+			createjs.Sound.play("audio1").on("complete", function () {                    
+			_this.btn_sonido3.visible=true; 
+		                    }, this);; 
+		});
 		
+		_this.btn_sonido4.on('click', function(){
+			createjs.Sound.stop();
+			_this.btn_sonido4.visible=false;
+			_this.btn_sonido3.visible=true;
+			_this.btn_sonido5.visible=true;
+			createjs.Sound.play("audio2").on("complete", function () {                    
+			_this.btn_sonido4.visible=true; 
+		                    }, this);; 
+		});
+		
+		
+		_this.btn_sonido5.on('click', function(){
+			createjs.Sound.stop();
+			_this.btn_sonido5.visible=false;
+			_this.btn_sonido3.visible=true;
+			_this.btn_sonido4.visible=true;
+			createjs.Sound.play("audio3").on("complete", function () {                    
+			_this.btn_sonido5.visible=true; 
+		                    }, this);; 
+		});
+		
+		 
+		_this.btnStopSonido3.on('click', function(){
+			_this.btn_sonido3.visible=true;
+			createjs.Sound.stop();
+		});
+		
+		_this.btnStopSonido4.on('click', function(){
+			_this.btn_sonido4.visible=true;
+			createjs.Sound.stop();
+		});
+		
+		_this.btnStopSonido5.on('click', function(){
+			_this.btn_sonido5.visible=true;
+			createjs.Sound.stop();
+		});
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Capa_1
+	this.btn_sonido5 = new lib.btn_sonido();
+	this.btn_sonido5.name = "btn_sonido5";
+	this.btn_sonido5.setTransform(578.25,657.45,1,1,0,0,0,15.8,15.8);
+	new cjs.ButtonHelper(this.btn_sonido5, 0, 1, 2);
+
+	this.btnStopSonido5 = new lib.btnStopSonido();
+	this.btnStopSonido5.name = "btnStopSonido5";
+	this.btnStopSonido5.setTransform(562.45,641.65);
+	new cjs.ButtonHelper(this.btnStopSonido5, 0, 1, 2);
+
+	this.btn_sonido4 = new lib.btn_sonido();
+	this.btn_sonido4.name = "btn_sonido4";
+	this.btn_sonido4.setTransform(178.3,497.5,1,1,0,0,0,15.8,15.8);
+	new cjs.ButtonHelper(this.btn_sonido4, 0, 1, 2);
+
+	this.btnStopSonido4 = new lib.btnStopSonido();
+	this.btnStopSonido4.name = "btnStopSonido4";
+	this.btnStopSonido4.setTransform(162.5,481.7);
+	new cjs.ButtonHelper(this.btnStopSonido4, 0, 1, 2);
+
+	this.btn_sonido3 = new lib.btn_sonido();
+	this.btn_sonido3.name = "btn_sonido3";
+	this.btn_sonido3.setTransform(604.25,226.55,1,1,0,0,0,15.8,15.8);
+	new cjs.ButtonHelper(this.btn_sonido3, 0, 1, 2);
+
+	this.btnStopSonido3 = new lib.btnStopSonido();
+	this.btnStopSonido3.name = "btnStopSonido3";
+	this.btnStopSonido3.setTransform(587.45,210.75);
+	new cjs.ButtonHelper(this.btnStopSonido3, 0, 1, 2);
+
 	this.instance = new lib.Símbolo2();
 	this.instance.setTransform(531.35,393.05,1,1,0,0,0,528,392.8);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.btnStopSonido3},{t:this.btn_sonido3},{t:this.btnStopSonido4},{t:this.btn_sonido4},{t:this.btnStopSonido5},{t:this.btn_sonido5}]}).wait(1));
 
 	this._renderFirstFrame();
 
@@ -321,7 +460,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1684019383275", id:"iframe_atlas_1"}
+		{src:"images/iframe_atlas_1.png?1686856354047", id:"iframe_atlas_1"},
+		{src:"sounds/audio1.mp3?1686856354079", id:"audio1"},
+		{src:"sounds/audio2.mp3?1686856354079", id:"audio2"},
+		{src:"sounds/audio3.mp3?1686856354079", id:"audio3"}
 	],
 	preloads: []
 };

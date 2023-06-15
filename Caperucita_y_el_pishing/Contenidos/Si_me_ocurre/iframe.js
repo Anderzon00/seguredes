@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"iframe_atlas_1", frames: [[0,987,465,343],[1698,1308,151,260],[467,987,323,218],[1290,535,441,440],[0,304,1251,248],[0,554,1225,248],[0,1332,1011,56],[1290,977,406,406],[1285,0,638,533],[792,987,237,236],[1733,535,263,443],[1031,1217,211,211],[1031,987,230,228],[1925,148,72,72],[1925,0,73,72],[1925,74,73,72],[1244,1385,213,137],[1698,980,327,326],[0,804,1288,181],[0,0,1283,302]]}
+		{name:"iframe_atlas_1", frames: [[1925,222,63,63],[1925,287,60,60],[0,987,465,343],[1698,1308,151,260],[467,987,323,218],[1290,535,441,440],[0,304,1251,248],[0,554,1225,248],[0,1332,1011,56],[1290,977,406,406],[1285,0,638,533],[792,987,237,236],[1733,535,263,443],[1031,1217,211,211],[1031,987,230,228],[1925,148,72,72],[1925,0,73,72],[1925,74,73,72],[1244,1385,213,137],[1698,980,327,326],[0,804,1288,181],[0,0,1283,302]]}
 ];
 
 
@@ -27,142 +27,156 @@ lib.ssMetadata = [
 
 
 
-(lib.Diapositivaimg1fondo = function() {
+(lib.btnSonidoContenido = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva1img1lupa = function() {
+(lib.BtnStopSonidoContenido = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva1img1Pagina = function() {
+(lib.Diapositivaimg1fondo = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva1img2fondo = function() {
+(lib.diapositiva1img1lupa = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva1texto1_1 = function() {
+(lib.diapositiva1img1Pagina = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Diapositiva1texto2 = function() {
+(lib.diapositiva1img2fondo = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Diapositiva1textoCentral = function() {
+(lib.diapositiva1texto1_1 = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2im2circle = function() {
+(lib.Diapositiva1texto2 = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2img1fondo = function() {
+(lib.Diapositiva1textoCentral = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2img1mensaje = function() {
+(lib.diapositiva2im2circle = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2img1phone = function() {
+(lib.diapositiva2img1fondo = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2img1reloj = function() {
+(lib.diapositiva2img1mensaje = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2img1telefono = function() {
+(lib.diapositiva2img1phone = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2img2emoji1 = function() {
+(lib.diapositiva2img1reloj = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2img2emoji2 = function() {
+(lib.diapositiva2img1telefono = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2img2emoji3 = function() {
+(lib.diapositiva2img2emoji1 = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2img2notificacion = function() {
+(lib.diapositiva2img2emoji2 = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2img2police = function() {
+(lib.diapositiva2img2emoji3 = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2text2 = function() {
+(lib.diapositiva2img2notificacion = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2texto1 = function() {
+(lib.diapositiva2img2police = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(19);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.diapositiva2text2 = function() {
+	this.initialize(ss["iframe_atlas_1"]);
+	this.gotoAndStop(20);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.diapositiva2texto1 = function() {
+	this.initialize(ss["iframe_atlas_1"]);
+	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -374,6 +388,52 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-53.2,-34.2,106.5,68.5);
 
 
+(lib.btnStopSonido = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.BtnStopSonidoContenido();
+	this.instance.setTransform(0,0,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.5238,scaleY:0.5238,x:-1},0).wait(1).to({scaleX:0.5,scaleY:0.5,x:0},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-1,0,31.5,31.5);
+
+
+(lib.btn_sonido = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.btnSonidoContenido();
+	this.instance.setTransform(0,0,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.5238,scaleY:0.5238,x:-1},0).wait(1).to({scaleX:0.5,scaleY:0.5,x:0},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-1,0,33,33);
+
+
 (lib._2 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -501,7 +561,134 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	this.actionFrames = [0];
+	this.isSingleFrame = false;
+	// timeline functions:
+	this.frame_0 = function() {
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
+		var _this = this;
+		createjs.Sound.stop();
+		/*
+		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
+		*/
+		_this.btn_sonido1.on('click', function(){
+			createjs.Sound.stop();
+			_this.btn_sonido1.visible=false;
+			_this.btn_sonido2.visible=true;
+			_this.btn_sonido3.visible=true;
+			_this.btn_sonido4.visible=true;
+			createjs.Sound.play("audio1").on("complete", function () {                    
+			_this.btn_sonido1.visible=true; 
+		                    }, this);; 
+		});
+		
+		_this.btn_sonido2.on('click', function(){
+			createjs.Sound.stop();
+			_this.btn_sonido2.visible=false;
+			_this.btn_sonido1.visible=true;
+			_this.btn_sonido3.visible=true;
+			_this.btn_sonido4.visible=true;
+			createjs.Sound.play("audio2").on("complete", function () {                    
+			_this.btn_sonido2.visible=true; 
+		                    }, this);; 
+		});
+		
+		
+		_this.btn_sonido3.on('click', function(){
+			createjs.Sound.stop();
+			_this.btn_sonido3.visible=false;
+			_this.btn_sonido1.visible=true;
+			_this.btn_sonido2.visible=true;
+			_this.btn_sonido4.visible=true;
+			createjs.Sound.play("audio3").on("complete", function () {                    
+			_this.btn_sonido3.visible=true; 
+		                    }, this);; 
+		});
+		
+		
+		_this.btn_sonido4.on('click', function(){
+			createjs.Sound.stop();
+			_this.btn_sonido4.visible=false;
+			_this.btn_sonido1.visible=true;
+			_this.btn_sonido2.visible=true;
+			_this.btn_sonido3.visible=true;
+			createjs.Sound.play("audio4").on("complete", function () {                    
+			_this.btn_sonido4.visible=true; 
+		                    }, this);; 
+		});
+		
+		
+		 
+		_this.btnStopSonido1.on('click', function(){
+			_this.btn_sonido1.visible=true;
+			createjs.Sound.stop();
+		});
+		
+		_this.btnStopSonido2.on('click', function(){
+			_this.btn_sonido2.visible=true;
+			createjs.Sound.stop();
+		});
+		
+		_this.btnStopSonido3.on('click', function(){
+			_this.btn_sonido3.visible=true;
+			createjs.Sound.stop();
+		});
+		
+		_this.btnStopSonido4.on('click', function(){
+			_this.btn_sonido4.visible=true;
+			createjs.Sound.stop();
+		});
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
 	// titulo
+	this.btn_sonido4 = new lib.btn_sonido();
+	this.btn_sonido4.name = "btn_sonido4";
+	this.btn_sonido4.setTransform(784.95,880.45,1,1,0,0,0,15.8,15.8);
+	new cjs.ButtonHelper(this.btn_sonido4, 0, 1, 2);
+
+	this.btnStopSonido4 = new lib.btnStopSonido();
+	this.btnStopSonido4.name = "btnStopSonido4";
+	this.btnStopSonido4.setTransform(770.85,864.65);
+	new cjs.ButtonHelper(this.btnStopSonido4, 0, 1, 2);
+
+	this.btn_sonido1 = new lib.btn_sonido();
+	this.btn_sonido1.name = "btn_sonido1";
+	this.btn_sonido1.setTransform(689.95,165.45,1,1,0,0,0,15.8,15.8);
+	new cjs.ButtonHelper(this.btn_sonido1, 0, 1, 2);
+
+	this.btnStopSonido1 = new lib.btnStopSonido();
+	this.btnStopSonido1.name = "btnStopSonido1";
+	this.btnStopSonido1.setTransform(675.85,149.65);
+	new cjs.ButtonHelper(this.btnStopSonido1, 0, 1, 2);
+
+	this.btn_sonido2 = new lib.btn_sonido();
+	this.btn_sonido2.name = "btn_sonido2";
+	this.btn_sonido2.setTransform(854.95,381.45,1,1,0,0,0,15.8,15.8);
+	new cjs.ButtonHelper(this.btn_sonido2, 0, 1, 2);
+
+	this.btnStopSonido2 = new lib.btnStopSonido();
+	this.btnStopSonido2.name = "btnStopSonido2";
+	this.btnStopSonido2.setTransform(840.85,365.65);
+	new cjs.ButtonHelper(this.btnStopSonido2, 0, 1, 2);
+
+	this.btn_sonido3 = new lib.btn_sonido();
+	this.btn_sonido3.name = "btn_sonido3";
+	this.btn_sonido3.setTransform(335.3,662.5,1,1,0,0,0,15.8,15.8);
+	new cjs.ButtonHelper(this.btn_sonido3, 0, 1, 2);
+
+	this.btnStopSonido3 = new lib.btnStopSonido();
+	this.btnStopSonido3.name = "btnStopSonido3";
+	this.btnStopSonido3.setTransform(320.2,646.7);
+	new cjs.ButtonHelper(this.btnStopSonido3, 0, 1, 2);
+
 	this.instance = new lib._2();
 	this.instance.setTransform(552.75,732.9,1,1,0,0,0,-178.5,-11);
 
@@ -523,7 +710,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_6 = new lib.diapositiva1texto1_1();
 	this.instance_6.setTransform(56,67,0.543,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.btnStopSonido3},{t:this.btn_sonido3},{t:this.btnStopSonido2},{t:this.btn_sonido2},{t:this.btnStopSonido1},{t:this.btn_sonido1},{t:this.btnStopSonido4},{t:this.btn_sonido4}]}).wait(1));
 
 	this._renderFirstFrame();
 
@@ -538,7 +725,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1684019711657", id:"iframe_atlas_1"}
+		{src:"images/iframe_atlas_1.png?1686858808885", id:"iframe_atlas_1"},
+		{src:"sounds/audio1.mp3?1686858808950", id:"audio1"},
+		{src:"sounds/audio2.mp3?1686858808950", id:"audio2"},
+		{src:"sounds/audio3.mp3?1686858808950", id:"audio3"},
+		{src:"sounds/audio4.mp3?1686858808950", id:"audio4"}
 	],
 	preloads: []
 };

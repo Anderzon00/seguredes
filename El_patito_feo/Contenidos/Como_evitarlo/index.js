@@ -1465,7 +1465,9 @@ if (reversed == null) { reversed = false; }
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 		    stretchToFit();
+			
 		}
+		createjs.Sound.stop();
 		
 		if(document.location.href.indexOf('#')>-1){
 		this.gotoAndStop(document.location.href.split('#')[1]);
@@ -1555,6 +1557,9 @@ if (reversed == null) { reversed = false; }
 		history.pushState("", document.title, window.location.pathname);
 		
 		this.stop();
+		
+		createjs.Sound.stop();
+		
 		 
 		this.btnindice.addEventListener("click", fl_ClickToGoToWebPage_12);
 		function fl_ClickToGoToWebPage_12() {	
@@ -1799,17 +1804,17 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1686775488653", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1686775488791", id:"sound2"},
-		{src:"sounds/sound1.mp3?1686775488791", id:"sound1"},
-		{src:"sounds/como1.mp3?1686775488791", id:"como1"},
-		{src:"sounds/como2.mp3?1686775488791", id:"como2"},
-		{src:"sounds/como3.mp3?1686775488791", id:"como3"},
-		{src:"sounds/como4.mp3?1686775488791", id:"como4"},
-		{src:"sounds/como5.mp3?1686775488791", id:"como5"},
-		{src:"sounds/como6.mp3?1686775488791", id:"como6"},
-		{src:"sounds/Scifidoorsoundeffect.mp3?1686775488791", id:"Scifidoorsoundeffect"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1686775488791", id:"y2matecomsonidodemagiaefectohadas"}
+		{src:"images/index_atlas_1.png?1686855678932", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1686855679053", id:"sound2"},
+		{src:"sounds/sound1.mp3?1686855679053", id:"sound1"},
+		{src:"sounds/como1.mp3?1686855679053", id:"como1"},
+		{src:"sounds/como2.mp3?1686855679053", id:"como2"},
+		{src:"sounds/como3.mp3?1686855679053", id:"como3"},
+		{src:"sounds/como4.mp3?1686855679053", id:"como4"},
+		{src:"sounds/como5.mp3?1686855679053", id:"como5"},
+		{src:"sounds/como6.mp3?1686855679053", id:"como6"},
+		{src:"sounds/Scifidoorsoundeffect.mp3?1686855679053", id:"Scifidoorsoundeffect"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1686855679053", id:"y2matecomsonidodemagiaefectohadas"}
 	],
 	preloads: []
 };
