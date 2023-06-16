@@ -2345,9 +2345,7 @@ if (reversed == null) { reversed = false; }
 		      .exitFullscreen()
 		      .then(() => console.log("Document Exited from Full screen mode"))
 		      .catch((err) => console.error(err));
-		  } else {
-		    document.documentElement.requestFullscreen();
-		  }	
+		  } 
 		window.open('../../Menu', '_self');
 				 
 		                    }, this);
@@ -2599,7 +2597,7 @@ if (reversed == null) { reversed = false; }
 			function sleep (time) {	
 		return new Promise((resolve) => setTimeout(resolve, time));
 		}
-		sleep(8000).then(() => {
+		sleep(4000).then(() => {
 		   createjs.Sound.stop();
 		    createjs.Sound.play("win");
 		    createjs.Sound.play("retroalimentacion");
@@ -2773,13 +2771,13 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1686610685330", id:"index_atlas_P_1"},
-		{src:"sounds/drop.mp3?1686610685477", id:"drop"},
-		{src:"sounds/error.mp3?1686610685477", id:"error"},
-		{src:"sounds/win.mp3?1686610685477", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1686610685477", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1686610685477", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1686610685477", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1686887371881", id:"index_atlas_P_1"},
+		{src:"sounds/drop.mp3?1686887372050", id:"drop"},
+		{src:"sounds/error.mp3?1686887372050", id:"error"},
+		{src:"sounds/win.mp3?1686887372050", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1686887372050", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1686887372050", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1686887372050", id:"retroalimentacion"}
 	],
 	preloads: []
 };

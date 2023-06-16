@@ -2343,28 +2343,17 @@ if (reversed == null) { reversed = false; }
 		
 		var _this = this;
 		
-		_this.btnSalir.on('click', function(){
-			
-		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
-			
-			
-			
-				if (document.fullscreenElement) {
+		_this.btnSalir.on('click', function(){	
+		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {		
+			if (document.fullscreenElement) {
 		    document
 		      .exitFullscreen()
 		      .then(() => console.log("Document Exited from Full screen mode"))
 		      .catch((err) => console.error(err));
-		  } else {
-		    document.documentElement.requestFullscreen();
-		  }
-			
-			
-			
-			
-			
-		window.open('../../Menu', '_self');
-				 
-		                    }, this);
+		  } 
+				
+		window.open('../../Menu', '_self');		 
+		}, this);
 		});
 	}
 
@@ -2615,7 +2604,7 @@ if (reversed == null) { reversed = false; }
 			function sleep (time) {	
 		return new Promise((resolve) => setTimeout(resolve, time));
 		}
-		sleep(8000).then(() => {
+		sleep(4000).then(() => {
 		   createjs.Sound.stop();
 		    createjs.Sound.play("win");
 		    createjs.Sound.play("retroalimentacion");
@@ -2785,14 +2774,14 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1685328956669", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1685328956670", id:"index_atlas_P_2"},
-		{src:"sounds/drop.mp3?1685328956814", id:"drop"},
-		{src:"sounds/error.mp3?1685328956814", id:"error"},
-		{src:"sounds/win.mp3?1685328956814", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1685328956814", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1685328956814", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1685328956814", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1686888129323", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1686888129324", id:"index_atlas_P_2"},
+		{src:"sounds/drop.mp3?1686888129503", id:"drop"},
+		{src:"sounds/error.mp3?1686888129503", id:"error"},
+		{src:"sounds/win.mp3?1686888129503", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1686888129503", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1686888129503", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1686888129503", id:"retroalimentacion"}
 	],
 	preloads: []
 };
