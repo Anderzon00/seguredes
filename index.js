@@ -1402,7 +1402,7 @@ if (reversed == null) { reversed = false; }
 		*/
 		_this.stop();
 	}
-	this.frame_25 = function() {
+	this.frame_24 = function() {
 		var _this = this;
 		/*
 		Detener un clip de película o un vídeo
@@ -1412,13 +1412,13 @@ if (reversed == null) { reversed = false; }
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(25).call(this.frame_25).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(24).call(this.frame_24).wait(1));
 
 	// letrero
 	this.instance = new lib.Interpolación3();
 	this.instance.setTransform(312.7,-372.65);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({y:194.9,mode:"synched",startPosition:0},25).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({y:194.9,mode:"synched",startPosition:0},14).to({y:176.9},5).to({y:194.9},5).wait(1));
 
 	// Capa_3
 	this.shape = new cjs.Shape();
@@ -1426,7 +1426,7 @@ if (reversed == null) { reversed = false; }
 	this.shape.setTransform(337.775,199.425);
 	this.shape._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1).to({_off:false},0).wait(25));
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1).to({_off:false},0).wait(24));
 
 	this._renderFirstFrame();
 
@@ -1534,13 +1534,13 @@ lib.properties = {
 	color: "#006699",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/fondoizq.png?1685488126876", id:"fondoizq"},
-		{src:"images/index_atlas_P_1.png?1685488126753", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1685488126754", id:"index_atlas_P_2"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1685488126876", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1685488126876", id:"sound"},
-		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1685488126876", id:"notificationsound70621onlineaudioconvertercom"},
-		{src:"sounds/sound2.mp3?1685488126876", id:"sound2"}
+		{src:"images/fondoizq.png?1687011096767", id:"fondoizq"},
+		{src:"images/index_atlas_P_1.png?1687011096660", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1687011096661", id:"index_atlas_P_2"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1687011096767", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/sound.mp3?1687011096767", id:"sound"},
+		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1687011096767", id:"notificationsound70621onlineaudioconvertercom"},
+		{src:"sounds/sound2.mp3?1687011096767", id:"sound2"}
 	],
 	preloads: []
 };
