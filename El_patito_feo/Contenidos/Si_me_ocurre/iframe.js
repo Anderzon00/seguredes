@@ -297,7 +297,7 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.btn141, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
 	this.instance_2 = new lib.cai();
-	this.instance_2.setTransform(-1,307,0.5,0.5);
+	this.instance_2.setTransform(-1,312,0.5,0.5);
 
 	this.btnCAI = new lib.btnMasInformacion();
 	this.btnCAI.name = "btnCAI";
@@ -460,10 +460,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1686856354047", id:"iframe_atlas_1"},
-		{src:"sounds/audio1.mp3?1686856354079", id:"audio1"},
-		{src:"sounds/audio2.mp3?1686856354079", id:"audio2"},
-		{src:"sounds/audio3.mp3?1686856354079", id:"audio3"}
+		{src:"images/iframe_atlas_1.png?1687392861878", id:"iframe_atlas_1"},
+		{src:"sounds/audio1.mp3?1687392861912", id:"audio1"},
+		{src:"sounds/audio2.mp3?1687392861912", id:"audio2"},
+		{src:"sounds/audio3.mp3?1687392861912", id:"audio3"}
 	],
 	preloads: []
 };

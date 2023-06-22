@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"iframe_atlas_1", frames: [[0,0,1373,455],[1751,120,63,63],[1816,120,60,60],[1375,0,374,374],[1444,750,499,215],[1751,0,271,38],[1751,40,271,38],[1751,80,271,38],[1444,967,499,215],[0,1230,1435,355],[1404,376,372,372],[0,457,1402,397],[0,1587,1400,291],[0,856,1442,372]]}
+		{name:"iframe_atlas_1", frames: [[0,399,1442,372],[1780,0,63,63],[1845,0,60,60],[1404,0,374,374],[1444,750,499,215],[1437,1184,271,38],[1710,1184,271,38],[1437,1224,271,38],[1444,967,499,215],[0,1147,1435,355],[1444,376,372,372],[0,0,1402,397],[0,1504,1400,291],[0,773,1442,372]]}
 ];
 
 
@@ -27,7 +27,7 @@ lib.ssMetadata = [
 
 
 
-(lib.bordes = function() {
+(lib.borde = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -293,61 +293,76 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Capa_1
+	this.instance = new lib.borde();
+	this.instance.setTransform(-7,802,0.5,0.5);
+
 	this.safety = new lib.btnMasInformacion();
 	this.safety.name = "safety";
-	this.safety.setTransform(567.1,988.45);
+	this.safety.setTransform(624.1,983.45);
 	new cjs.ButtonHelper(this.safety, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance = new lib.metacomplianceimg();
-	this.instance.setTransform(815,615,0.4332,0.5134);
-
-	this.instance_1 = new lib.Metacompliancetext();
-	this.instance_1.setTransform(20,522,0.5,0.5);
+	this.instance_1 = new lib.metacomplianceimg();
+	this.instance_1.setTransform(813,598,0.4332,0.5134);
 
 	this.instance_2 = new lib.safetytext();
-	this.instance_2.setTransform(20,816,0.5,0.5);
+	this.instance_2.setTransform(9,817,0.5,0.5);
 
-	this.instance_3 = new lib.bordes();
-	this.instance_3.setTransform(-5,791,0.543,0.5);
+	this.instance_3 = new lib.safetyimg();
+	this.instance_3.setTransform(828,834,0.5,0.5);
 
-	this.instance_4 = new lib.safetyimg();
-	this.instance_4.setTransform(830,833,0.5,0.5);
-
-	this.instance_5 = new lib.imgsecurekids();
-	this.instance_5.setTransform(812,303,0.4439,0.5161);
+	this.instance_4 = new lib.imgsecurekids();
+	this.instance_4.setTransform(810,345,0.4439,0.5161);
 
 	this.metacompliance = new lib.btnMasInformacion();
 	this.metacompliance.name = "metacompliance";
-	this.metacompliance.setTransform(567.1,695.9);
+	this.metacompliance.setTransform(624.1,680.5);
 	new cjs.ButtonHelper(this.metacompliance, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance_6 = new lib.bordes();
-	this.instance_6.setTransform(0,498,0.543,0.5);
+	this.instance_5 = new lib.Metacompliancetext();
+	this.instance_5.setTransform(9,522,0.5,0.5);
 
 	this.securekids = new lib.btnMasInformacion();
 	this.securekids.name = "securekids";
-	this.securekids.setTransform(567.1,427.35);
+	this.securekids.setTransform(624.1,427.35);
 	new cjs.ButtonHelper(this.securekids, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
+	this.instance_6 = new lib.borde();
+	this.instance_6.setTransform(-7,256,0.5,0.5);
+
 	this.instance_7 = new lib.securekidstext();
-	this.instance_7.setTransform(16,268,0.543,0.5);
+	this.instance_7.setTransform(9,268,0.543,0.5);
 
 	this.instance_8 = new lib.imggoogle();
-	this.instance_8.setTransform(829,19,0.5,0.5);
+	this.instance_8.setTransform(827,35,0.5,0.5);
 
 	this.phishingquiz = new lib.btnMasInformacion();
 	this.phishingquiz.name = "phishingquiz";
-	this.phishingquiz.setTransform(567.1,182.8);
+	this.phishingquiz.setTransform(624.1,182.8);
 	new cjs.ButtonHelper(this.phishingquiz, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
 	this.instance_9 = new lib.textphishingquizgoogle();
-	this.instance_9.setTransform(11,30,0.543,0.5);
+	this.instance_9.setTransform(-7,35,0.543,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9},{t:this.phishingquiz},{t:this.instance_8},{t:this.instance_7},{t:this.securekids},{t:this.instance_6},{t:this.metacompliance},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.safety}]}).wait(1));
+	this.instance_10 = new lib.borde();
+	this.instance_10.setTransform(776,1015,0.5,0.5,180);
+
+	this.instance_11 = new lib.borde();
+	this.instance_11.setTransform(776,710,0.5,0.5,180);
+
+	this.instance_12 = new lib.borde();
+	this.instance_12.setTransform(-7,509,0.5,0.5);
+
+	this.instance_13 = new lib.borde();
+	this.instance_13.setTransform(776,458,0.5,0.5,180);
+
+	this.instance_14 = new lib.borde();
+	this.instance_14.setTransform(776,213,0.5,0.5,180);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.phishingquiz},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.securekids},{t:this.instance_5},{t:this.metacompliance},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.safety},{t:this.instance}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Símbolo2, new cjs.Rectangle(-5,19,1038.6,1000), null);
+}).prototype = getMCSymbolPrototype(lib.Símbolo2, new cjs.Rectangle(-7,27,1038.6,993), null);
 
 
 // stage content:
@@ -497,7 +512,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(547.6,517.1,504.1,488);
+p.nominalBounds = new cjs.Rectangle(545.6,525.1,504.1,481);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -507,11 +522,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1686859160205", id:"iframe_atlas_1"},
-		{src:"sounds/audio3.mp3?1686859160242", id:"audio3"},
-		{src:"sounds/audio1.mp3?1686859160242", id:"audio1"},
-		{src:"sounds/audio4.mp3?1686859160242", id:"audio4"},
-		{src:"sounds/audio2.mp3?1686859160242", id:"audio2"}
+		{src:"images/iframe_atlas_1.png?1687399803887", id:"iframe_atlas_1"},
+		{src:"sounds/audio3.mp3?1687399803930", id:"audio3"},
+		{src:"sounds/audio1.mp3?1687399803930", id:"audio1"},
+		{src:"sounds/audio4.mp3?1687399803930", id:"audio4"},
+		{src:"sounds/audio2.mp3?1687399803930", id:"audio2"}
 	],
 	preloads: []
 };
