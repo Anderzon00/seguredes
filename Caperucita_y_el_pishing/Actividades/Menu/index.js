@@ -1740,7 +1740,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_9.setTransform(501,433,0.5091,0.5308);
 
 	this.instance_10 = new lib.Fondo2();
-	this.instance_10.setTransform(0,-27,0.5032,0.4887);
+	this.instance_10.setTransform(0,-24,0.5032,0.4887);
 
 	this.instance_11 = new lib.Símbolo1();
 	this.instance_11.setTransform(594.8,282.9,1,1,0,0,0,597.8,298.9);
@@ -1773,14 +1773,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1686585034635", id:"index_atlas_1"},
-		{src:"sounds/play.mp3?1686585034737", id:"play"},
-		{src:"sounds/error41.mp3?1686585034737", id:"error41"},
-		{src:"sounds/sound.mp3?1686585034737", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1686585034737", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1686585034737", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1686585034737", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1686585034737", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1687124599103", id:"index_atlas_1"},
+		{src:"sounds/play.mp3?1687124599244", id:"play"},
+		{src:"sounds/error41.mp3?1687124599244", id:"error41"},
+		{src:"sounds/sound.mp3?1687124599244", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1687124599244", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1687124599244", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1687124599244", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1687124599244", id:"an.TextInput"}
 	],
 	preloads: []
 };

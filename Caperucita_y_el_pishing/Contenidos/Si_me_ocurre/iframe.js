@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"iframe_atlas_1", frames: [[1925,222,63,63],[1925,287,60,60],[0,987,465,343],[1698,1308,151,260],[467,987,323,218],[1290,535,441,440],[0,304,1251,248],[0,554,1225,248],[0,1332,1011,56],[1290,977,406,406],[1285,0,638,533],[792,987,237,236],[1733,535,263,443],[1031,1217,211,211],[1031,987,230,228],[1925,148,72,72],[1925,0,73,72],[1925,74,73,72],[1244,1385,213,137],[1698,980,327,326],[0,804,1288,181],[0,0,1283,302]]}
+		{name:"iframe_atlas_1", frames: [[1925,222,63,63],[1925,287,60,60],[0,987,465,343],[1698,1308,151,260],[467,987,323,218],[1290,535,441,440],[0,304,1251,248],[0,554,1225,248],[0,1332,1011,56],[1290,977,406,406],[1285,0,638,533],[792,987,237,236],[1733,535,263,443],[1031,1217,211,211],[1031,987,230,228],[1925,148,72,72],[1925,0,73,72],[1925,74,73,72],[1244,1385,213,137],[1698,980,327,326],[0,0,1283,302],[0,804,1288,181],[467,1207,271,38],[740,1225,271,38],[467,1247,271,38]]}
 ];
 
 
@@ -167,16 +167,37 @@ lib.ssMetadata = [
 
 
 
-(lib.diapositiva2text2 = function() {
+(lib.diapositiva2text1 = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.diapositiva2texto1 = function() {
+(lib.diapositiva2text2 = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(21);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.masinformacionDOWN = function() {
+	this.initialize(ss["iframe_atlas_1"]);
+	this.gotoAndStop(22);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.masinformacionUP = function() {
+	this.initialize(ss["iframe_atlas_1"]);
+	this.gotoAndStop(23);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.masinformacion = function() {
+	this.initialize(ss["iframe_atlas_1"]);
+	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -411,6 +432,39 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-1,0,31.5,31.5);
 
 
+(lib.btnMasInformacion = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.masinformacion();
+	this.instance.setTransform(0,0,0.5,0.5);
+
+	this.instance_1 = new lib.masinformacionUP();
+	this.instance_1.setTransform(0,0,0.5,0.5);
+
+	this.instance_2 = new lib.masinformacionDOWN();
+	this.instance_2.setTransform(0,0,0.5,0.5);
+
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#000000").s().p("ArWCnIAAlOIWtAAIAAFOg");
+	this.shape.setTransform(67.825,4.8);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.shape}]},1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-4.9,-11.9,145.5,33.5);
+
+
 (lib.btn_sonido = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -643,12 +697,29 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido4.visible=true;
 			createjs.Sound.stop();
 		});
+		
+		
+		var _this = this;
+		/*
+		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
+		*/
+		_this.btnCAI.on('click', function(){
+		/*
+		Carga la URL en una ventana nueva del navegador.
+		*/
+		window.open('https://caivirtual.policia.gov.co/', '_blank');
+		});
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// titulo
+	this.btnCAI = new lib.btnMasInformacion();
+	this.btnCAI.name = "btnCAI";
+	this.btnCAI.setTransform(808.75,870.65);
+	new cjs.ButtonHelper(this.btnCAI, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
+
 	this.btn_sonido4 = new lib.btn_sonido();
 	this.btn_sonido4.name = "btn_sonido4";
 	this.btn_sonido4.setTransform(784.95,880.45,1,1,0,0,0,15.8,15.8);
@@ -698,7 +769,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_2 = new lib._1();
 	this.instance_2.setTransform(555.25,258,1,1,0,0,0,-118.2,20.5);
 
-	this.instance_3 = new lib.diapositiva2texto1();
+	this.instance_3 = new lib.diapositiva2text1();
 	this.instance_3.setTransform(56,535,0.5,0.5);
 
 	this.instance_4 = new lib.diapositiva2text2();
@@ -710,7 +781,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_6 = new lib.diapositiva1texto1_1();
 	this.instance_6.setTransform(56,67,0.543,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.btnStopSonido3},{t:this.btn_sonido3},{t:this.btnStopSonido2},{t:this.btn_sonido2},{t:this.btnStopSonido1},{t:this.btn_sonido1},{t:this.btnStopSonido4},{t:this.btn_sonido4}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.btnStopSonido3},{t:this.btn_sonido3},{t:this.btnStopSonido2},{t:this.btn_sonido2},{t:this.btnStopSonido1},{t:this.btn_sonido1},{t:this.btnStopSonido4},{t:this.btn_sonido4},{t:this.btnCAI}]}).wait(1));
 
 	this._renderFirstFrame();
 
@@ -725,11 +796,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1686858808885", id:"iframe_atlas_1"},
-		{src:"sounds/audio1.mp3?1686858808950", id:"audio1"},
-		{src:"sounds/audio2.mp3?1686858808950", id:"audio2"},
-		{src:"sounds/audio3.mp3?1686858808950", id:"audio3"},
-		{src:"sounds/audio4.mp3?1686858808950", id:"audio4"}
+		{src:"images/iframe_atlas_1.png?1687391451745", id:"iframe_atlas_1"},
+		{src:"sounds/audio1.mp3?1687391451805", id:"audio1"},
+		{src:"sounds/audio2.mp3?1687391451805", id:"audio2"},
+		{src:"sounds/audio3.mp3?1687391451805", id:"audio3"},
+		{src:"sounds/audio4.mp3?1687391451805", id:"audio4"}
 	],
 	preloads: []
 };

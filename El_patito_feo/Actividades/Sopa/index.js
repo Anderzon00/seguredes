@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[3458,2002,447,102],[2510,2849,447,102],[2959,2849,447,102],[3408,2849,447,102],[2510,2953,447,102],[2959,2953,447,102],[3791,2320,238,101],[2085,2404,238,101],[3791,2423,238,101],[2085,2507,238,101],[3791,2216,238,102],[2085,2300,237,102],[3458,1754,423,122],[3458,1878,423,122],[2085,2849,423,122],[3690,1521,296,89],[3690,1612,296,89],[3458,1029,87,87],[3871,1056,87,87],[3960,1056,87,87],[3458,1118,87,87],[4020,0,61,63],[4020,130,61,62],[4020,65,61,63],[4003,828,89,64],[0,1166,2362,1132],[3871,663,157,163],[0,0,2376,1164],[3458,1209,590,140],[3458,1351,432,168],[3458,1521,230,231],[3877,492,169,169],[4083,0,2,78],[3877,290,200,200],[3871,1145,87,61],[3871,915,147,70],[3602,0,273,657],[1427,2300,656,835],[3871,828,130,85],[3791,2106,235,108],[3877,0,141,288],[4020,194,72,52],[3871,987,140,67],[3602,659,267,548],[2364,2109,1425,738],[2378,1029,1078,1078],[2378,0,1222,1027],[0,2300,1425,738]]}
+		{name:"index_atlas_1", frames: [[3602,659,426,226],[3111,2973,447,102],[3560,2973,447,102],[2085,2991,447,102],[2534,3019,447,102],[0,3040,447,102],[449,3040,447,102],[1137,3040,238,101],[2983,3077,238,101],[3223,3077,238,101],[3463,3077,238,101],[2085,2643,238,102],[898,3040,237,102],[3602,887,423,122],[3111,2849,423,122],[3536,2849,423,122],[3791,2630,296,89],[3791,2721,296,89],[3964,1098,87,87],[3964,1187,87,87],[3964,1276,87,87],[3964,1365,87,87],[4020,0,61,63],[4020,130,61,62],[4020,65,61,63],[3964,1454,89,64],[0,1166,2362,1132],[3877,492,157,163],[0,0,2376,1164],[2085,2849,590,140],[2677,2849,432,168],[2085,2300,230,231],[3791,2459,169,169],[4083,0,2,78],[3877,290,200,200],[3964,1520,87,61],[3703,3077,147,70],[3602,0,273,657],[1427,2300,656,835],[3964,1011,130,85],[2085,2533,235,108],[2085,2747,153,90],[3458,1909,328,144],[3877,0,141,288],[4020,194,72,52],[3852,3077,140,67],[3791,1909,267,548],[2364,2109,1425,738],[3458,1029,504,878],[2378,1029,1078,1078],[2378,0,1222,1027],[0,2300,1425,738]]}
 ];
 
 
@@ -27,338 +27,366 @@ lib.ssMetadata = [
 
 
 
-(lib.btnreintentarclicrojo = function() {
+(lib.Alaatras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnreintentarclic = function() {
+(lib.btnreintentarclicrojo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnreintentarhoverrojo = function() {
+(lib.btnreintentarclic = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnreintentarhover = function() {
+(lib.btnreintentarhoverrojo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnreintentarnormal = function() {
+(lib.btnreintentarhover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnreintentar = function() {
+(lib.btnreintentarnormal = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnsalirclic = function() {
+(lib.btnreintentar = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnsalirclic_1 = function() {
+(lib.btnsalirclic = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnsalirhover = function() {
+(lib.btnsalirclic_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnsalirhover_1 = function() {
+(lib.btnsalirhover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnsalirnormal = function() {
+(lib.btnsalirhover_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnsalir = function() {
+(lib.btnsalirnormal = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.BtnEmpezar = function() {
+(lib.btnsalir = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.BtnEmpezarpngcopia = function() {
+(lib.BtnEmpezar = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.BtnEmpezarHover = function() {
+(lib.BtnEmpezarpngcopia = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnMenuActividadesHover = function() {
+(lib.BtnEmpezarHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnMenuActividades = function() {
+(lib.btnMenuActividadesHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.BtnMutepngcopia = function() {
+(lib.btnMenuActividades = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.BtnMuteHover = function() {
+(lib.BtnMutepngcopia = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.BtnVolumenActivado = function() {
+(lib.BtnMuteHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnVolumenActivoHover = function() {
+(lib.BtnVolumenActivado = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Emoji1 = function() {
+(lib.btnVolumenActivoHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Emoji2 = function() {
+(lib.Emoji1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Emoji3 = function() {
+(lib.Emoji2 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Emojis = function() {
+(lib.Emoji3 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.EstrellasFondoRompecabezas = function() {
+(lib.Emojis = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Fondoreloj = function() {
+(lib.EstrellasFondoRompecabezas = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.fondo = function() {
+(lib.Fondoreloj = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.FondoSopaLineaDer = function() {
+(lib.fondo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(28);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.FOndoSopaLineaPunteadaIzq = function() {
+(lib.FondoSopaLineaDer = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(29);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.IconMensaje = function() {
+(lib.FOndoSopaLineaPunteadaIzq = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(30);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.imgsopaLetras = function() {
+(lib.IconMensaje = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(31);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.LineasSeparadoras = function() {
+(lib.imgsopaLetras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(32);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Lupafondo = function() {
+(lib.LineasSeparadoras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(33);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PatoPicoAbajo = function() {
+(lib.Lupafondo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(34);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PatoPicoArriba = function() {
+(lib.PatoPicoAbajo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(35);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PatoSilueta = function() {
+(lib.PatoPicoArriba = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(36);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.pato = function() {
+(lib.PatoSilueta = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(37);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PicoAbajo = function() {
+(lib.pato = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(38);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.picoarriba = function() {
+(lib.PicoAbajo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(39);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Profesoraala = function() {
+(lib.picoarriba = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(40);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ProfesoraPicoAbajo = function() {
+(lib.PicoAbajo_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(41);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ProfesoraPicoArriba = function() {
+(lib.PicoArriba = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(42);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ProfesoraSilueta_1 = function() {
+(lib.Profesoraala = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(43);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.RetroalimetaciónFinalSopaLetras = function() {
+(lib.ProfesoraPicoAbajo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(44);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.SopaFOndo = function() {
+(lib.ProfesoraPicoArriba = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(45);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Ventana = function() {
+(lib.ProfesoraSilueta_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(46);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Ventanas = function() {
+(lib.RetroalimetaciónFinalSopaLetras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(47);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.SiluetaPato = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(48);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.SopaFOndo = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(49);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Ventana = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(50);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Ventanas = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(51);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -377,6 +405,90 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	prototype.frameBounds = frameBounds;
 	return prototype;
 	}
+
+
+(lib.Símbolo220 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.PicoAbajo_1();
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.Símbolo220, new cjs.Rectangle(0,0,153,90), null);
+
+
+(lib.Símbolo219 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.PicoArriba();
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.Símbolo219, new cjs.Rectangle(0,0,328,144), null);
+
+
+(lib.Símbolo218 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.SiluetaPato();
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.Símbolo218, new cjs.Rectangle(0,0,504,878), null);
+
+
+(lib.Símbolo217 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.Alaatras();
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.Símbolo217, new cjs.Rectangle(0,0,426,226), null);
 
 
 (lib.Símbolo85 = function(mode,startPosition,loop,reversed) {
@@ -1087,6 +1199,42 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,-256,267,548);
 
 
+(lib.pato2 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Esqueleto_15
+	this.ikNode_13 = new lib.Símbolo219();
+	this.ikNode_13.name = "ikNode_13";
+	this.ikNode_13.setTransform(579.3,219.8,0.5,0.5,0,0,0,233.2,58.4);
+
+	this.ikNode_15 = new lib.Símbolo220();
+	this.ikNode_15.name = "ikNode_15";
+	this.ikNode_15.setTransform(560.1,236.75,0.4999,0.4999,-5.9205,0,0,101,21.6);
+
+	this.ikNode_11 = new lib.Símbolo218();
+	this.ikNode_11.name = "ikNode_11";
+	this.ikNode_11.setTransform(568.95,335.95,0.4998,0.4998,-1.298,0,0,208.2,457);
+
+	this.ikNode_10 = new lib.Símbolo217();
+	this.ikNode_10.name = "ikNode_10";
+	this.ikNode_10.setTransform(554.1,314.25,0.4995,0.4995,-8.0633,0,0,392.1,31.8);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ikNode_10,p:{rotation:-8.0633,x:554.1,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.298,x:568.95,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4999,scaleY:0.4999,rotation:-5.9205,x:560.1,y:236.75,regY:21.6}},{t:this.ikNode_13,p:{rotation:0,x:579.3,y:219.8,regY:58.4,regX:233.2}}]}).to({state:[{t:this.ikNode_10,p:{rotation:-8.2516,x:554.25,y:314.3,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2946,x:568.9,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101.1,scaleX:0.4998,scaleY:0.4998,rotation:-6.2819,x:560.3,y:236.7,regY:21.6}},{t:this.ikNode_13,p:{rotation:0.1539,x:579.25,y:219.85,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-8.4393,x:554.25,y:314.35,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2946,x:568.9,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-6.6496,x:560.25,y:236.6,regY:21.4}},{t:this.ikNode_13,p:{rotation:0.3113,x:579.25,y:219.9,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-8.6287,x:554.3,y:314.35,regX:392.2,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2929,x:568.9,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-7.0144,x:560.15,y:236.65,regY:21.5}},{t:this.ikNode_13,p:{rotation:0.4686,x:579.25,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-8.8163,x:554.35,y:314.35,regX:392.2,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2929,x:568.9,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-7.3776,x:560.15,y:236.6,regY:21.4}},{t:this.ikNode_13,p:{rotation:0.626,x:579.25,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-9.0059,x:554.3,y:314.35,regX:392.2,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2911,x:568.9,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-7.7447,x:560.15,y:236.65,regY:21.5}},{t:this.ikNode_13,p:{rotation:0.7834,x:579.2,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-9.1938,x:554.3,y:314.35,regX:392.2,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2911,x:568.9,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-8.1083,x:560.15,y:236.75,regY:21.6}},{t:this.ikNode_13,p:{rotation:0.9408,x:579.2,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-9.3818,x:554.25,y:314.2,regX:392.2,regY:31.7}},{t:this.ikNode_11,p:{rotation:-1.2911,x:568.9,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-8.4762,x:560.2,y:236.7,regY:21.6}},{t:this.ikNode_13,p:{rotation:1.0982,x:579.2,y:219.85,regY:58.5,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-9.5699,x:554.2,y:314.3,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2894,x:568.85,y:336,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-8.8389,x:560.2,y:236.65,regY:21.5}},{t:this.ikNode_13,p:{rotation:1.2556,x:579.2,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-9.7581,x:554.25,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2894,x:568.85,y:336,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-9.2055,x:560.2,y:236.6,regY:21.4}},{t:this.ikNode_13,p:{rotation:1.413,x:579.2,y:219.85,regY:58.5,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-9.9481,x:554.2,y:314.3,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2894,x:568.85,y:336,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-9.569,x:560.2,y:236.6,regY:21.5}},{t:this.ikNode_13,p:{rotation:1.5705,x:579.2,y:219.85,regY:58.5,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-10.1365,x:554.25,y:314.4,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2876,x:568.9,y:336,regX:208.3,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-9.9362,x:560.15,y:236.7,regY:21.6}},{t:this.ikNode_13,p:{rotation:1.7279,x:579.1,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-10.3233,x:554.25,y:314.3,regX:392.2,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2876,x:568.9,y:336,regX:208.3,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-10.3006,x:560.15,y:236.5,regY:21.4}},{t:this.ikNode_13,p:{rotation:1.8853,x:579.15,y:219.85,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-10.5118,x:554.2,y:314.2,regX:392.1,regY:31.7}},{t:this.ikNode_11,p:{rotation:-1.2876,x:568.9,y:336,regX:208.3,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-10.6653,x:560.15,y:236.55,regY:21.4}},{t:this.ikNode_13,p:{rotation:2.0428,x:579.1,y:219.85,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-10.7006,x:554.25,y:314.3,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2859,x:568.9,y:336,regX:208.3,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-11.0303,x:560.15,y:236.6,regY:21.5}},{t:this.ikNode_13,p:{rotation:2.2003,x:579.15,y:219.85,regY:58.5,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-10.8894,x:554.2,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2859,x:568.9,y:336,regX:208.3,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-11.396,x:560.2,y:236.7,regY:21.6}},{t:this.ikNode_13,p:{rotation:2.3578,x:579.15,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-11.0786,x:554.2,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2841,x:568.8,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-11.7604,x:560.15,y:236.45,regY:21.4}},{t:this.ikNode_13,p:{rotation:2.5154,x:579.05,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-11.266,x:554.2,y:314.4,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2841,x:568.8,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-12.1268,x:560.2,y:236.6,regY:21.5}},{t:this.ikNode_13,p:{rotation:2.6729,x:579.1,y:219.75,regY:58.4,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-11.4551,x:554.2,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2841,x:568.8,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-12.4922,x:560.25,y:236.65,regY:21.6}},{t:this.ikNode_13,p:{rotation:2.8305,x:579,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-11.6429,x:554.2,y:314.3,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2824,x:568.8,y:336,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-12.858,x:560.15,y:236.6,regY:21.5}},{t:this.ikNode_13,p:{rotation:2.9881,x:579.1,y:219.8,regY:58.4,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-11.8324,x:554.2,y:314.3,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2824,x:568.8,y:336,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-13.2225,x:560.2,y:236.5,regY:21.4}},{t:this.ikNode_13,p:{rotation:3.1457,x:579,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-12.0202,x:554.2,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2824,x:568.8,y:336,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:100.9,scaleX:0.4998,scaleY:0.4998,rotation:-13.5874,x:560.05,y:236.6,regY:21.5}},{t:this.ikNode_13,p:{rotation:3.3033,x:579,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-12.208,x:554.15,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2806,x:568.8,y:336,regX:208.2,regY:456.9}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-13.9531,x:560.2,y:236.65,regY:21.6}},{t:this.ikNode_13,p:{rotation:3.4592,x:579,y:219.8,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-12.3961,x:554.25,y:314.2,regX:392.2,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2806,x:568.8,y:336,regX:208.2,regY:456.9}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-14.3209,x:560.2,y:236.45,regY:21.4}},{t:this.ikNode_13,p:{rotation:3.6169,x:578.95,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-12.5846,x:554.2,y:314.3,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2806,x:568.8,y:336,regX:208.2,regY:456.9}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-14.6824,x:560.15,y:236.55,regY:21.5}},{t:this.ikNode_13,p:{rotation:3.7746,x:579,y:219.9,regY:58.5,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-12.7745,x:554.15,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2789,x:568.8,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-15.0482,x:560.15,y:236.6,regY:21.6}},{t:this.ikNode_13,p:{rotation:3.9324,x:579,y:219.8,regY:58.5,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-12.963,x:554.15,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2789,x:568.8,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-15.4144,x:560.15,y:236.55,regY:21.5}},{t:this.ikNode_13,p:{rotation:4.0901,x:578.9,y:219.65,regY:58.3,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-13.1502,x:554.15,y:314.2,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2771,x:568.8,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-15.7794,x:560.2,y:236.45,regY:21.4}},{t:this.ikNode_13,p:{rotation:4.248,x:578.95,y:219.8,regY:58.4,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-13.3387,x:554.15,y:314.2,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2771,x:568.8,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-16.1448,x:560.15,y:236.45,regY:21.4}},{t:this.ikNode_13,p:{rotation:4.4039,x:578.9,y:219.7,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-13.5281,x:554.2,y:314.3,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2771,x:568.75,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-16.5096,x:560.2,y:236.5,regY:21.5}},{t:this.ikNode_13,p:{rotation:4.5618,x:578.9,y:219.75,regY:58.5,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-13.7153,x:554.15,y:314.2,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2754,x:568.8,y:336.1,regX:208.3,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-16.8748,x:560.15,y:236.55,regY:21.5}},{t:this.ikNode_13,p:{rotation:4.7198,x:578.9,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-13.9046,x:554.15,y:314.2,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2754,x:568.8,y:336.1,regX:208.3,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-17.2406,x:560.15,y:236.5,regY:21.5}},{t:this.ikNode_13,p:{rotation:4.8776,x:578.9,y:219.7,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-14.0923,x:554.15,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2754,x:568.8,y:336.1,regX:208.3,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-17.6057,x:560.1,y:236.55,regY:21.6}},{t:this.ikNode_13,p:{rotation:5.0339,x:578.9,y:219.8,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-14.2816,x:554.2,y:314.25,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2736,x:568.8,y:336.1,regX:208.3,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-17.9714,x:560.1,y:236.5,regY:21.5}},{t:this.ikNode_13,p:{rotation:5.1919,x:578.8,y:219.8,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-14.4697,x:554.2,y:314.2,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2736,x:568.8,y:336.1,regX:208.3,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-18.3354,x:560.15,y:236.4,regY:21.4}},{t:this.ikNode_13,p:{rotation:5.3499,x:578.85,y:219.6,regY:58.3,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-14.6573,x:554.05,y:314.25,regX:392,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2719,x:568.7,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-18.701,x:560.1,y:236.5,regY:21.5}},{t:this.ikNode_13,p:{rotation:5.5063,x:578.9,y:219.7,regY:58.4,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-14.8458,x:554.1,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2719,x:568.7,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-19.0667,x:560.1,y:236.4,regY:21.4}},{t:this.ikNode_13,p:{rotation:5.6645,x:578.8,y:219.7,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-15.0344,x:554.1,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2719,x:568.7,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-19.4318,x:560.1,y:236.5,regY:21.5}},{t:this.ikNode_13,p:{rotation:5.8209,x:578.8,y:219.75,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-15.2229,x:554.1,y:314.3,regX:392,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2701,x:568.7,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-19.7975,x:560.2,y:236.45,regY:21.5}},{t:this.ikNode_13,p:{rotation:5.9791,x:578.75,y:219.75,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-15.4114,x:554.1,y:314.2,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2701,x:568.7,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-20.1627,x:560.1,y:236.45,regY:21.6}},{t:this.ikNode_13,p:{rotation:6.1372,x:578.85,y:219.7,regY:58.4,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-15.6004,x:554.15,y:314.3,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2701,x:568.7,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-20.528,x:560.1,y:236.4,regY:21.4}},{t:this.ikNode_13,p:{rotation:6.2938,x:578.75,y:219.7,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-15.7894,x:554.1,y:314.15,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2684,x:568.7,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-20.8928,x:560.15,y:236.5,regY:21.6}},{t:this.ikNode_13,p:{rotation:6.4505,x:578.7,y:219.65,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-15.5898,x:554.1,y:314.15,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2701,x:568.7,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-20.5098,x:560.1,y:236.35,regY:21.4}},{t:this.ikNode_13,p:{rotation:6.2852,x:578.75,y:219.65,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-15.3914,x:554.1,y:314.15,regX:392.1,regY:31.7}},{t:this.ikNode_11,p:{rotation:-1.2701,x:568.7,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-20.1251,x:560.1,y:236.55,regY:21.6}},{t:this.ikNode_13,p:{rotation:6.1197,x:578.85,y:219.8,regY:58.5,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-15.1936,x:554.1,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2701,x:568.7,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-19.7416,x:560.15,y:236.45,regY:21.5}},{t:this.ikNode_13,p:{rotation:5.9544,x:578.75,y:219.75,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-14.9961,x:554.15,y:314.15,regX:392.2,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2719,x:568.7,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-19.3577,x:560.15,y:236.45,regY:21.5}},{t:this.ikNode_13,p:{rotation:5.7892,x:578.8,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-14.7987,x:554.15,y:314.25,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2719,x:568.7,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-18.9726,x:560.2,y:236.5,regY:21.5}},{t:this.ikNode_13,p:{rotation:5.6239,x:578.85,y:219.7,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-14.5996,x:554.1,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2719,x:568.7,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-18.5882,x:560.2,y:236.55,regY:21.6}},{t:this.ikNode_13,p:{rotation:5.4588,x:578.85,y:219.7,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-14.4009,x:554.15,y:314.3,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2736,x:568.8,y:336.1,regX:208.3,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-18.2048,x:560.1,y:236.5,regY:21.5}},{t:this.ikNode_13,p:{rotation:5.292,x:578.85,y:219.7,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-14.2022,x:554.15,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2736,x:568.8,y:336.1,regX:208.3,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-17.8204,x:560.15,y:236.55,regY:21.6}},{t:this.ikNode_13,p:{rotation:5.127,x:578.8,y:219.7,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-14.0057,x:554.15,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2736,x:568.8,y:336.1,regX:208.3,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-17.437,x:560.15,y:236.5,regY:21.4}},{t:this.ikNode_13,p:{rotation:4.9619,x:578.8,y:219.8,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-13.807,x:554.2,y:314.2,regX:392.2,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2754,x:568.8,y:336.1,regX:208.3,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-17.0524,x:560.15,y:236.45,regY:21.4}},{t:this.ikNode_13,p:{rotation:4.7969,x:578.85,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-13.6087,x:554.2,y:314.25,regX:392.2,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2754,x:568.8,y:336.1,regX:208.3,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-16.6701,x:560.15,y:236.5,regY:21.5}},{t:this.ikNode_13,p:{rotation:4.6303,x:578.9,y:219.7,regY:58.4,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-13.4109,x:554.15,y:314.25,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2754,x:568.8,y:336.1,regX:208.3,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-16.2854,x:560.1,y:236.45,regY:21.4}},{t:this.ikNode_13,p:{rotation:4.4654,x:578.9,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-13.2114,x:554.15,y:314.2,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2771,x:568.8,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-15.9012,x:560.2,y:236.5,regY:21.5}},{t:this.ikNode_13,p:{rotation:4.3005,x:578.85,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-13.0152,x:554.15,y:314.3,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2771,x:568.8,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-15.5158,x:560.1,y:236.55,regY:21.5}},{t:this.ikNode_13,p:{rotation:4.134,x:578.95,y:219.7,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-12.8161,x:554.1,y:314.2,regX:392,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2771,x:568.8,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-15.1313,x:560.15,y:236.45,regY:21.4}},{t:this.ikNode_13,p:{rotation:3.9691,x:579,y:219.75,regY:58.4,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-12.6186,x:554.15,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2789,x:568.8,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-14.7477,x:560.15,y:236.55,regY:21.5}},{t:this.ikNode_13,p:{rotation:3.8027,x:578.95,y:219.85,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-12.4195,x:554.15,y:314.2,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2789,x:568.8,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-14.3659,x:560.15,y:236.55,regY:21.5}},{t:this.ikNode_13,p:{rotation:3.638,x:579,y:219.75,regY:58.4,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-12.2207,x:554.15,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2789,x:568.8,y:336.1,regX:208.2,regY:457.1}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-13.9802,x:560.15,y:236.6,regY:21.6}},{t:this.ikNode_13,p:{rotation:3.4715,x:579.05,y:219.75,regY:58.4,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-12.0236,x:554.15,y:314.3,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2806,x:568.8,y:336,regX:208.2,regY:456.9}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-13.5963,x:560.15,y:236.65,regY:21.6}},{t:this.ikNode_13,p:{rotation:3.3068,x:578.95,y:219.8,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-11.8252,x:554.2,y:314.2,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2806,x:568.8,y:336,regX:208.2,regY:456.9}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-13.2132,x:560.15,y:236.5,regY:21.4}},{t:this.ikNode_13,p:{rotation:3.1404,x:578.95,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-11.6268,x:554.2,y:314.3,regX:392.2,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2806,x:568.8,y:336,regX:208.2,regY:456.9}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-12.8274,x:560.2,y:236.65,regY:21.6}},{t:this.ikNode_13,p:{rotation:2.9758,x:579,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-11.4284,x:554.2,y:314.2,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2824,x:568.8,y:336,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-12.4438,x:560.15,y:236.5,regY:21.4}},{t:this.ikNode_13,p:{rotation:2.8095,x:579,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-11.2303,x:554.2,y:314.3,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2824,x:568.8,y:336,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-12.0588,x:560.2,y:236.55,regY:21.4}},{t:this.ikNode_13,p:{rotation:2.6449,x:579,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-11.0322,x:554.25,y:314.2,regX:392.2,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2824,x:568.8,y:336,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-11.6746,x:560.2,y:236.6,regY:21.5}},{t:this.ikNode_13,p:{rotation:2.4785,x:579.05,y:219.75,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-10.8345,x:554.2,y:314.3,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2841,x:568.8,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-11.2907,x:560.2,y:236.6,regY:21.5}},{t:this.ikNode_13,p:{rotation:2.314,x:579,y:219.8,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-10.6364,x:554.3,y:314.2,regX:392.2,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2841,x:568.8,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-10.9075,x:560.15,y:236.6,regY:21.5}},{t:this.ikNode_13,p:{rotation:2.1478,x:579.1,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-10.4373,x:554.25,y:314.25,regX:392.2,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2841,x:568.8,y:335.9,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-10.5229,x:560.2,y:236.55,regY:21.5}},{t:this.ikNode_13,p:{rotation:1.9833,x:579.1,y:219.85,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-10.2399,x:554.15,y:314.35,regX:392,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2859,x:568.9,y:335.95,regX:208.3,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-10.139,x:560.2,y:236.65,regY:21.5}},{t:this.ikNode_13,p:{rotation:1.8171,x:579.1,y:219.85,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-10.0425,x:554.2,y:314.3,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2859,x:568.9,y:335.95,regX:208.3,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-9.7554,x:560.15,y:236.65,regY:21.5}},{t:this.ikNode_13,p:{rotation:1.6509,x:579.15,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-9.8433,x:554.2,y:314.3,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2859,x:568.9,y:335.95,regX:208.3,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-9.3703,x:560.15,y:236.7,regY:21.6}},{t:this.ikNode_13,p:{rotation:1.4865,x:579.15,y:219.85,regY:58.5,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-9.6462,x:554.2,y:314.3,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2876,x:568.9,y:335.95,regX:208.3,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-8.9875,x:560.15,y:236.55,regY:21.4}},{t:this.ikNode_13,p:{rotation:1.3203,x:579.2,y:219.85,regY:58.5,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-9.4474,x:554.25,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2876,x:568.9,y:335.95,regX:208.3,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-8.6036,x:560.2,y:236.55,regY:21.4}},{t:this.ikNode_13,p:{rotation:1.1542,x:579.15,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-9.2488,x:554.2,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2876,x:568.9,y:335.95,regX:208.3,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-8.2179,x:560.15,y:236.75,regY:21.6}},{t:this.ikNode_13,p:{rotation:0.9897,x:579.15,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-9.052,x:554.2,y:314.35,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2894,x:568.85,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-7.8347,x:560.15,y:236.6,regY:21.4}},{t:this.ikNode_13,p:{rotation:0.8236,x:579.25,y:219.9,regY:58.5,regX:233.3}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-8.8534,x:554.2,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2894,x:568.85,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-7.4498,x:560.2,y:236.65,regY:21.5}},{t:this.ikNode_13,p:{rotation:0.6592,x:579.2,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-8.6551,x:554.25,y:314.35,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2894,x:568.85,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-7.0656,x:560.15,y:236.65,regY:21.5}},{t:this.ikNode_13,p:{rotation:0.4931,x:579.2,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-8.4569,x:554.2,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2911,x:568.9,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-6.6813,x:560.2,y:236.7,regY:21.5}},{t:this.ikNode_13,p:{rotation:0.327,x:579.2,y:219.8,regY:58.4,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-8.2588,x:554.25,y:314.25,regX:392.1,regY:31.8}},{t:this.ikNode_11,p:{rotation:-1.2911,x:568.9,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-6.2977,x:560.2,y:236.7,regY:21.5}},{t:this.ikNode_13,p:{rotation:0.1626,x:579.2,y:219.9,regY:58.5,regX:233.2}}]},1).to({state:[{t:this.ikNode_10,p:{rotation:-8.0625,x:554.2,y:314.35,regX:392.1,regY:31.9}},{t:this.ikNode_11,p:{rotation:-1.2911,x:568.9,y:335.95,regX:208.2,regY:457}},{t:this.ikNode_15,p:{regX:101,scaleX:0.4998,scaleY:0.4998,rotation:-5.9158,x:560.1,y:236.7,regY:21.5}},{t:this.ikNode_13,p:{rotation:0,x:579.3,y:219.85,regY:58.4,regX:233.2}}]},1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(357.9,104.3,363.70000000000005,444.40000000000003);
+
+
 (lib.pato_1 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1117,7 +1265,7 @@ if (reversed == null) { reversed = false; }
 	this.ikNode_9.name = "ikNode_9";
 	this.ikNode_9.setTransform(75,-234,1,1,0,0,0,175,92);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ikNode_9,p:{x:75,y:-234}},{t:this.ikNode_11,p:{rotation:0,x:96.3,y:-190.4}},{t:this.ikNode_8,p:{regX:147,scaleX:1,scaleY:1,rotation:3.94,x:125.1,y:-210.95,regY:35}}]}).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:1.0687,x:96.25,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:3.6563,x:124.95,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:2.1403,x:96.3,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:3.3751,x:125,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:3.2118,x:96.3,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:3.0939,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:4.2827,x:96.35,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.8121,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:5.3534,x:96.3,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.5311,x:125,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:6.425,x:96.35,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.2494,x:125.05,y:-211.05,regY:34.9}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:7.4972,x:96.4,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:1.9676,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:8.5684,x:96.4,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:1.6868,x:125.1,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:9.6391,x:96.45,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:1.4052,x:125.1,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:10.7107,x:96.4,y:-190.35}},{t:this.ikNode_8,p:{regX:146.8,scaleX:1,scaleY:1,rotation:1.1245,x:124.95,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:11.7824,x:96.5,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:0.842,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:12.8538,x:96.4,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:0.5605,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:13.9253,x:96.45,y:-190.4}},{t:this.ikNode_8,p:{regX:147,scaleX:0.9999,scaleY:0.9999,rotation:0.2789,x:125.2,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75,y:-234}},{t:this.ikNode_11,p:{rotation:14.9964,x:96.4,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:0,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:13.4969,x:96.45,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:0.3987,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:11.9968,x:96.45,y:-190.4}},{t:this.ikNode_8,p:{regX:146.8,scaleX:0.9999,scaleY:0.9999,rotation:0.8,x:124.9,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:10.4963,x:96.4,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:1.2023,x:125,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:8.9967,x:96.35,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:1.602,x:125,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:7.4972,x:96.4,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.0035,x:125.05,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:5.9966,x:96.35,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:2.4042,x:125,y:-211,regY:34.9}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:4.4976,x:96.35,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.8051,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234.05}},{t:this.ikNode_11,p:{rotation:2.9973,x:96.3,y:-190.45}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:3.2069,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234.05}},{t:this.ikNode_11,p:{rotation:1.4972,x:96.25,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:3.6081,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234.05}},{t:this.ikNode_11,p:{rotation:0,x:96.25,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:4.0077,x:125.1,y:-211.05,regY:34.9}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ikNode_9,p:{x:75,y:-234}},{t:this.ikNode_11,p:{rotation:0,x:96.3,y:-190.4}},{t:this.ikNode_8,p:{regX:147,scaleX:1,scaleY:1,rotation:3.94,x:125.1,y:-210.95,regY:35}}]}).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:1.0687,x:96.25,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:3.6563,x:124.95,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:2.1403,x:96.3,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:3.3751,x:125,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:3.2118,x:96.3,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:3.0939,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:4.2827,x:96.35,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.8121,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:5.3534,x:96.3,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.5311,x:125,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:6.425,x:96.35,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.2494,x:125.05,y:-211.05,regY:34.9}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:7.4972,x:96.4,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:1.9676,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:8.5684,x:96.4,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:1.6868,x:125.1,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:9.6391,x:96.45,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:1.4052,x:125.1,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:10.7107,x:96.4,y:-190.35}},{t:this.ikNode_8,p:{regX:146.8,scaleX:1,scaleY:1,rotation:1.1245,x:124.95,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:11.7824,x:96.5,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:0.842,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:12.8538,x:96.4,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:0.5604,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:13.9253,x:96.45,y:-190.4}},{t:this.ikNode_8,p:{regX:147,scaleX:0.9999,scaleY:0.9999,rotation:0.2789,x:125.2,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75,y:-234}},{t:this.ikNode_11,p:{rotation:14.9964,x:96.4,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:0,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:13.4969,x:96.45,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:0.3987,x:125.05,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:11.9968,x:96.45,y:-190.4}},{t:this.ikNode_8,p:{regX:146.8,scaleX:0.9999,scaleY:0.9999,rotation:0.8,x:124.9,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:10.4963,x:96.4,y:-190.3}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:1.2023,x:125,y:-210.9,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:8.9967,x:96.35,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:1.602,x:125,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:7.4972,x:96.4,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.0035,x:125.05,y:-210.85,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:5.9966,x:96.35,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:2.4042,x:125,y:-211,regY:34.9}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234}},{t:this.ikNode_11,p:{rotation:4.4976,x:96.35,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:2.8051,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234.05}},{t:this.ikNode_11,p:{rotation:2.9973,x:96.3,y:-190.45}},{t:this.ikNode_8,p:{regX:146.9,scaleX:1,scaleY:1,rotation:3.2069,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234.05}},{t:this.ikNode_11,p:{rotation:1.4972,x:96.25,y:-190.4}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:3.6081,x:125,y:-210.95,regY:35}}]},1).to({state:[{t:this.ikNode_9,p:{x:75.05,y:-234.05}},{t:this.ikNode_11,p:{rotation:0,x:96.25,y:-190.35}},{t:this.ikNode_8,p:{regX:146.9,scaleX:0.9999,scaleY:0.9999,rotation:4.0077,x:125.1,y:-211.05,regY:34.9}}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1218,7 +1366,7 @@ if (reversed == null) { reversed = false; }
 	this.ikNode_2.name = "ikNode_2";
 	this.ikNode_2.setTransform(79.1,-275.5,1,1,0,0,0,483.1,198.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:1,scaleY:1,rotation:11.2199,x:16.6,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0,y:-292.45,x:-29.95,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]}).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:10.8893,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0.2465,y:-292.4,x:-29.95,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:10.5582,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0.4957,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:10.2292,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0.7449,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:9.8989,x:16.55,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:0.9941,y:-292.5,x:-29.9,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:9.569,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:1.2433,y:-292.5,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:9.2392,x:16.5,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:1.4917,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:8.9089,x:16.5,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:1.7409,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:8.579,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:1.9903,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:8.2484,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:2.2387,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:7.919,x:16.55,y:-243.05,regY:13}},{t:this.ikNode_1,p:{rotation:2.4881,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:7.589,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:2.7375,y:-292.4,x:-29.7,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:7.2583,x:16.5,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:2.9862,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:6.9287,x:16.65,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:3.2348,y:-292.4,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:6.5977,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:3.4844,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:6.2678,x:16.7,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:3.7333,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:5.9388,x:16.55,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:3.9821,y:-292.45,x:-29.7,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:5.6084,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:4.2311,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:5.2782,x:16.5,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:4.4801,y:-292.4,x:-29.8,regX:148.5,scaleX:0.9999,scaleY:0.9999,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:4.9481,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:4.7292,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:4.6181,x:16.55,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:4.9784,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:4.2884,x:16.55,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:5.2277,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:3.9579,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:5.4762,y:-292.6,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:3.6284,x:16.55,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:5.7257,y:-292.55,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:3.2981,x:16.5,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:5.9745,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:2.9681,x:16.65,y:-242.75,regY:13.1}},{t:this.ikNode_1,p:{rotation:6.2241,y:-292.45,x:-29.8,regX:148.5,scaleX:0.9999,scaleY:0.9999,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:2.6389,x:16.55,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:6.474,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:2.3081,x:16.65,y:-242.75,regY:13.1}},{t:this.ikNode_1,p:{rotation:6.7221,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:1.9782,x:16.55,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:6.9705,y:-292.45,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:1.6484,x:16.65,y:-242.75,regY:13.1}},{t:this.ikNode_1,p:{rotation:7.2207,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:1.3178,x:16.5,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:7.4693,y:-292.45,x:-29.65,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:0.9881,x:16.55,y:-242.85,regY:13}},{t:this.ikNode_1,p:{rotation:7.7179,y:-292.4,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:0.6575,x:16.6,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:7.9669,y:-292.4,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:0.3279,x:16.65,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:8.2159,y:-292.6,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:0,x:16.55,y:-242.85,regY:13}},{t:this.ikNode_1,p:{rotation:8.4652,y:-292.6,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:0.3253,x:16.65,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:8.2231,y:-292.45,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:0.6523,x:16.55,y:-242.8,regY:13}},{t:this.ikNode_1,p:{rotation:7.9811,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:0.9802,x:16.55,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:7.7391,y:-292.45,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:1.3073,x:16.5,y:-242.75,regY:13.1}},{t:this.ikNode_1,p:{rotation:7.4975,y:-292.4,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:1.6353,x:16.7,y:-242.85,regY:13}},{t:this.ikNode_1,p:{rotation:7.2559,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:1.9625,x:16.5,y:-242.85,regY:13}},{t:this.ikNode_1,p:{rotation:7.0136,y:-292.4,x:-29.65,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:2.2897,x:16.65,y:-242.85,regY:13}},{t:this.ikNode_1,p:{rotation:6.7714,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:2.617,x:16.55,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:6.5302,y:-292.45,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:2.9444,x:16.7,y:-242.75,regY:13.1}},{t:this.ikNode_1,p:{rotation:6.2875,y:-292.45,x:-29.75,regX:148.5,scaleX:0.9999,scaleY:0.9999,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:3.2719,x:16.55,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:6.0456,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:3.5995,x:16.6,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:5.8039,y:-292.55,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:3.9273,x:16.55,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:5.5623,y:-292.45,x:-29.7,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:4.2541,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:5.3199,y:-292.6,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:4.5813,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:5.0784,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:4.9094,x:16.55,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:4.8362,y:-292.6,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:5.2369,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:4.5941,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:5.5644,x:16.7,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:4.3521,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:5.8914,x:16.55,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:4.1101,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:6.2193,x:16.5,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:3.8682,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:6.5466,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:3.6264,y:-292.4,x:-29.7,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:6.8742,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:3.3845,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:7.2019,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:3.1428,y:-292.4,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:7.529,x:16.55,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:2.9013,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:7.8555,x:16.55,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:2.6587,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:8.184,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:2.4172,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:8.5108,x:16.65,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:2.1749,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:8.839,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:1.9334,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:9.1666,x:16.65,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:1.6911,y:-292.4,x:-29.7,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:9.4935,x:16.55,y:-243.05,regY:13}},{t:this.ikNode_1,p:{rotation:1.4497,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:9.8208,x:16.5,y:-243.05,regY:13}},{t:this.ikNode_1,p:{rotation:1.2075,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:10.1484,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0.9653,y:-292.45,x:-29.9,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:10.4762,x:16.65,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0.7239,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:10.8037,x:16.5,y:-243.05,regY:13}},{t:this.ikNode_1,p:{rotation:0.4817,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:11.1307,x:16.65,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:0.2396,y:-292.45,x:-29.9,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:11.4571,x:16.6,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0,y:-292.45,x:-29.95,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:1,scaleY:1,rotation:11.2199,x:16.6,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0,y:-292.45,x:-29.95,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]}).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:10.8893,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0.2465,y:-292.4,x:-29.95,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:10.5582,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0.4957,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:10.2292,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0.7449,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:9.8989,x:16.55,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:0.9941,y:-292.5,x:-29.9,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:9.569,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:1.2433,y:-292.5,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:9.2392,x:16.5,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:1.4917,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:8.9089,x:16.5,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:1.7409,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:8.579,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:1.9903,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:8.2484,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:2.2387,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:7.919,x:16.55,y:-243.05,regY:13}},{t:this.ikNode_1,p:{rotation:2.4881,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:7.589,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:2.7375,y:-292.4,x:-29.7,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:7.2583,x:16.5,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:2.9862,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:6.9287,x:16.65,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:3.2348,y:-292.4,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:6.5977,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:3.4844,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:6.2678,x:16.7,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:3.7333,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:5.9388,x:16.55,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:3.9821,y:-292.45,x:-29.7,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:5.6084,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:4.2311,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:5.2782,x:16.5,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:4.4801,y:-292.4,x:-29.8,regX:148.5,scaleX:0.9999,scaleY:0.9999,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:4.948,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:4.7292,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:4.6181,x:16.55,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:4.9784,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:4.2884,x:16.55,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:5.2277,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:3.9578,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:5.4762,y:-292.6,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:3.6284,x:16.55,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:5.7257,y:-292.55,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:3.2981,x:16.5,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:5.9745,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:2.9681,x:16.65,y:-242.75,regY:13.1}},{t:this.ikNode_1,p:{rotation:6.2241,y:-292.45,x:-29.8,regX:148.5,scaleX:0.9999,scaleY:0.9999,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:2.6389,x:16.55,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:6.474,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:2.3081,x:16.65,y:-242.75,regY:13.1}},{t:this.ikNode_1,p:{rotation:6.7221,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:1.9782,x:16.55,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:6.9705,y:-292.45,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:1.6484,x:16.65,y:-242.75,regY:13.1}},{t:this.ikNode_1,p:{rotation:7.2207,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:1.3178,x:16.5,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:7.4693,y:-292.45,x:-29.65,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:0.9881,x:16.55,y:-242.85,regY:13}},{t:this.ikNode_1,p:{rotation:7.7179,y:-292.4,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:0.6575,x:16.6,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:7.9669,y:-292.4,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:0.3279,x:16.65,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:8.2159,y:-292.6,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:0,x:16.55,y:-242.85,regY:13}},{t:this.ikNode_1,p:{rotation:8.4652,y:-292.6,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:0.3253,x:16.65,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:8.2231,y:-292.45,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:0.6523,x:16.55,y:-242.8,regY:13}},{t:this.ikNode_1,p:{rotation:7.9811,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:0.9802,x:16.55,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:7.7391,y:-292.45,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:1.3073,x:16.5,y:-242.75,regY:13.1}},{t:this.ikNode_1,p:{rotation:7.4975,y:-292.4,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:1.6353,x:16.7,y:-242.85,regY:13}},{t:this.ikNode_1,p:{rotation:7.2559,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:1.9625,x:16.5,y:-242.85,regY:13}},{t:this.ikNode_1,p:{rotation:7.0136,y:-292.4,x:-29.65,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:2.2897,x:16.65,y:-242.85,regY:13}},{t:this.ikNode_1,p:{rotation:6.7714,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:2.617,x:16.55,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:6.5302,y:-292.45,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:2.9444,x:16.7,y:-242.75,regY:13.1}},{t:this.ikNode_1,p:{rotation:6.2875,y:-292.45,x:-29.75,regX:148.5,scaleX:0.9999,scaleY:0.9999,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:3.2719,x:16.55,y:-242.9,regY:13}},{t:this.ikNode_1,p:{rotation:6.0456,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:3.5995,x:16.6,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:5.8039,y:-292.55,x:-29.75,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.15}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:3.9273,x:16.55,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:5.5623,y:-292.45,x:-29.7,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:4.2541,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:5.3199,y:-292.6,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:4.5813,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:5.0784,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:4.9094,x:16.55,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:4.8362,y:-292.6,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.4}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:5.2369,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:4.5941,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:5.5644,x:16.7,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:4.3521,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:5.8914,x:16.55,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:4.1101,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:6.2193,x:16.5,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:3.8682,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:6.5466,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:3.6264,y:-292.4,x:-29.7,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:6.8742,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:3.3845,y:-292.45,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:7.2019,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:3.1428,y:-292.4,x:-29.8,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:7.529,x:16.55,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:2.9013,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:7.8555,x:16.55,y:-242.85,regY:13.1}},{t:this.ikNode_1,p:{rotation:2.6587,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:8.184,x:16.5,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:2.4172,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:8.5108,x:16.65,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:2.1749,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:8.839,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:1.9334,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:9.1666,x:16.65,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:1.6911,y:-292.4,x:-29.7,regX:148.6,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:9.4935,x:16.55,y:-243.05,regY:13}},{t:this.ikNode_1,p:{rotation:1.4497,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:9.8208,x:16.5,y:-243.05,regY:13}},{t:this.ikNode_1,p:{rotation:1.2075,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:10.1484,x:16.55,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0.9653,y:-292.45,x:-29.9,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:10.4762,x:16.65,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0.7239,y:-292.4,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:10.8037,x:16.5,y:-243.05,regY:13}},{t:this.ikNode_1,p:{rotation:0.4817,y:-292.45,x:-29.85,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.45,x:79.1}},{t:this.ikNode_4,p:{regX:117.5,scaleX:0.9999,scaleY:0.9999,rotation:11.1307,x:16.65,y:-242.95,regY:13}},{t:this.ikNode_1,p:{rotation:0.2396,y:-292.45,x:-29.9,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).to({state:[{t:this.ikNode_2,p:{y:-275.5,x:79.1}},{t:this.ikNode_4,p:{regX:117.4,scaleX:0.9999,scaleY:0.9999,rotation:11.4571,x:16.6,y:-243,regY:13}},{t:this.ikNode_1,p:{rotation:0,y:-292.45,x:-29.95,regX:148.5,scaleX:1,scaleY:1,regY:7.5}}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1512,21 +1660,28 @@ if (reversed == null) { reversed = false; }
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1).call(this.frame_2).wait(1).call(this.frame_3).wait(1));
 
+	// Capa_8
+	this.instance = new lib.pato2();
+	this.instance.setTransform(953.6,364.85,0.8562,0.8562,0,0,0,529,357.2);
+	this.instance._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(3).to({_off:false},0).wait(1));
+
 	// Capa_1
 	this.btnPlay = new lib.btnPlay();
 	this.btnPlay.name = "btnPlay";
 	this.btnPlay.setTransform(594.9,471.75,0.8334,0.8334,0,0,0,31.2,-43.5);
 	new cjs.ButtonHelper(this.btnPlay, 0, 1, 2);
 
-	this.instance = new lib.mensaje();
-	this.instance.setTransform(586.15,131.95,0.8052,0.8052,0,0,0,57.5,57.8);
+	this.instance_1 = new lib.mensaje();
+	this.instance_1.setTransform(586.15,131.95,0.8052,0.8052,0,0,0,57.5,57.8);
 
-	this.instance_1 = new lib.Ventana();
-	this.instance_1.setTransform(313,43,0.4606,0.4661);
+	this.instance_2 = new lib.Ventana();
+	this.instance_2.setTransform(313,43,0.4606,0.4661);
 
-	this.instance_2 = new lib.Símbolo2();
-	this.instance_2.setTransform(593.5,284,1,1,0,0,0,590.5,283);
-	this.instance_2.alpha = 0.3516;
+	this.instance_3 = new lib.Símbolo2();
+	this.instance_3.setTransform(593.5,284,1,1,0,0,0,590.5,283);
+	this.instance_3.alpha = 0.3516;
 
 	this.text1 = new cjs.Text("00:00:00", "24px 'Algerian'");
 	this.text1.name = "text1";
@@ -1536,17 +1691,17 @@ if (reversed == null) { reversed = false; }
 	this.text1.setTransform(1051.7,309.65);
 	this.text1.shadow = new cjs.Shadow("rgba(204,255,204,1)",3,3,4);
 
-	this.instance_3 = new lib.Fondoreloj();
-	this.instance_3.setTransform(1168,254,0.8726,0.8405,0,0,180);
+	this.instance_4 = new lib.Fondoreloj();
+	this.instance_4.setTransform(1168,254,0.8726,0.8405,0,0,180);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.btnPlay}]}).to({state:[{t:this.instance_3},{t:this.text1}]},1).to({state:[]},1).to({state:[]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.btnPlay}]}).to({state:[{t:this.instance_4},{t:this.text1}]},1).to({state:[]},1).to({state:[]},1).wait(1));
 
 	// navegacion
-	this.instance_4 = new lib.LineasSeparadoras();
-	this.instance_4.setTransform(167,592,0.5,0.5);
-
 	this.instance_5 = new lib.LineasSeparadoras();
-	this.instance_5.setTransform(231,590,0.5,0.5);
+	this.instance_5.setTransform(167,592,0.5,0.5);
+
+	this.instance_6 = new lib.LineasSeparadoras();
+	this.instance_6.setTransform(231,590,0.5,0.5);
 
 	this.mute = new lib.btnSound();
 	this.mute.name = "mute";
@@ -1563,11 +1718,11 @@ if (reversed == null) { reversed = false; }
 	this.btnindice.setTransform(35.85,614.85);
 	new cjs.ButtonHelper(this.btnindice, 0, 1, 2, false, new lib.btnIndece(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnindice},{t:this.unmute},{t:this.mute},{t:this.instance_5},{t:this.instance_4}]}).wait(4));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnindice},{t:this.unmute},{t:this.mute},{t:this.instance_6},{t:this.instance_5}]}).wait(4));
 
 	// cuadro
-	this.instance_6 = new lib.SopaFOndo();
-	this.instance_6.setTransform(241,0,0.6566,0.5374);
+	this.instance_7 = new lib.SopaFOndo();
+	this.instance_7.setTransform(241,0,0.6566,0.5374);
 
 	this.btnReintentar = new lib.btnReintentar_1();
 	this.btnReintentar.name = "btnReintentar";
@@ -1579,70 +1734,70 @@ if (reversed == null) { reversed = false; }
 	this.btnSalir.setTransform(568.55,347.3);
 	new cjs.ButtonHelper(this.btnSalir, 0, 1, 2);
 
-	this.instance_7 = new lib.pato_2();
-	this.instance_7.setTransform(945.45,264.9,0.5,0.5,0,0,0,-80,-70.4);
+	this.instance_8 = new lib.pato_2();
+	this.instance_8.setTransform(945.45,264.9,0.5,0.5,0,0,0,-80,-70.4);
 
-	this.instance_8 = new lib.emojis();
-	this.instance_8.setTransform(578.15,136.9,1,1,0,0,0,-115.2,-48.2);
+	this.instance_9 = new lib.emojis();
+	this.instance_9.setTransform(578.15,136.9,1,1,0,0,0,-115.2,-48.2);
 
-	this.instance_9 = new lib.RetroalimetaciónFinalSopaLetras();
-	this.instance_9.setTransform(168,78,0.5,0.5);
+	this.instance_10 = new lib.RetroalimetaciónFinalSopaLetras();
+	this.instance_10.setTransform(168,78,0.5,0.5);
 
-	this.instance_10 = new lib.emoji();
-	this.instance_10.setTransform(609.2,76,1,1,0,0,0,22.2,16);
+	this.instance_11 = new lib.emoji();
+	this.instance_11.setTransform(601.2,139,1,1,0,0,0,22.2,16);
 
 	this.btnSalir2 = new lib.btnSalir();
 	this.btnSalir2.name = "btnSalir2";
-	this.btnSalir2.setTransform(706.5,322,1,1,0,0,0,59.5,25.5);
+	this.btnSalir2.setTransform(698.5,385,1,1,0,0,0,59.5,25.5);
 	new cjs.ButtonHelper(this.btnSalir2, 0, 1, 2);
 
 	this.btnReintentar2 = new lib.btnReintentar();
 	this.btnReintentar2.name = "btnReintentar2";
-	this.btnReintentar2.setTransform(399,296.5);
+	this.btnReintentar2.setTransform(391,359.5);
 	new cjs.ButtonHelper(this.btnReintentar2, 0, 1, 2);
 
-	this.instance_11 = new lib.Ventanas();
-	this.instance_11.setTransform(249,25,0.5,0.5);
+	this.instance_12 = new lib.Ventanas();
+	this.instance_12.setTransform(241,88,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_6}]},1).to({state:[{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.btnSalir},{t:this.btnReintentar}]},1).to({state:[{t:this.instance_11},{t:this.btnReintentar2},{t:this.btnSalir2},{t:this.instance_10}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_7}]},1).to({state:[{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.btnSalir},{t:this.btnReintentar}]},1).to({state:[{t:this.instance_12},{t:this.btnReintentar2},{t:this.btnSalir2},{t:this.instance_11}]},1).wait(1));
 
 	// patos
-	this.instance_12 = new lib.pato_1();
-	this.instance_12.setTransform(957.45,299.55,0.5485,0.5002,0,3.8186,3.1735,36.9,2.8);
+	this.instance_13 = new lib.pato_1();
+	this.instance_13.setTransform(957.45,299.55,0.5485,0.5002,0,3.8186,3.1735,36.9,2.8);
 
-	this.instance_13 = new lib.profesora();
-	this.instance_13.setTransform(192.8,310,0.5487,0.5,0,0,0,133.6,18);
+	this.instance_14 = new lib.profesora();
+	this.instance_14.setTransform(192.8,310,0.5487,0.5,0,0,0,133.6,18);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_13},{t:this.instance_12}]},1).to({state:[]},1).to({state:[]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_14},{t:this.instance_13}]},1).to({state:[]},1).to({state:[]},1).wait(1));
 
 	// lupas
-	this.instance_14 = new lib.lupas();
-	this.instance_14.setTransform(1035.1,136.5,0.4,0.4,0,0,180,56,-6);
+	this.instance_15 = new lib.lupas();
+	this.instance_15.setTransform(1035.1,136.5,0.4,0.4,0,0,180,56,-6);
 
-	this.instance_15 = new lib.Lupafondo();
-	this.instance_15.setTransform(1010,73,0.5,0.5);
+	this.instance_16 = new lib.Lupafondo();
+	this.instance_16.setTransform(1010,73,0.5,0.5);
 
-	this.instance_16 = new lib.lupas();
-	this.instance_16.setTransform(128.95,136.5,0.4,0.4,0,0,0,56.1,-6);
+	this.instance_17 = new lib.lupas();
+	this.instance_17.setTransform(128.95,136.5,0.4,0.4,0,0,0,56.1,-6);
 
-	this.instance_17 = new lib.Lupafondo();
-	this.instance_17.setTransform(63,73,0.5,0.5);
+	this.instance_18 = new lib.Lupafondo();
+	this.instance_18.setTransform(63,73,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.instance_14}]},1).to({state:[]},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_18},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15}]},1).to({state:[]},1).wait(2));
 
 	// FONDO
-	this.instance_18 = new lib.FondoSopaLineaDer();
-	this.instance_18.setTransform(894,501,0.5,0.5);
+	this.instance_19 = new lib.FondoSopaLineaDer();
+	this.instance_19.setTransform(894,501,0.5,0.5);
 
-	this.instance_19 = new lib.FOndoSopaLineaPunteadaIzq();
-	this.instance_19.setTransform(3,487,0.5,0.5);
+	this.instance_20 = new lib.FOndoSopaLineaPunteadaIzq();
+	this.instance_20.setTransform(3,487,0.5,0.5);
 
-	this.instance_20 = new lib.fondo2();
-	this.instance_20.setTransform(590.8,226.4,1,1,0,0,0,597.8,358.4);
-	this.instance_20.filters = [new cjs.BlurFilter(19, 19, 1)];
-	this.instance_20.cache(-2,-2,1200,721);
+	this.instance_21 = new lib.fondo2();
+	this.instance_21.setTransform(590.8,226.4,1,1,0,0,0,597.8,358.4);
+	this.instance_21.filters = [new cjs.BlurFilter(19, 19, 1)];
+	this.instance_21.cache(-2,-2,1200,721);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_19},{t:this.instance_18}]},1).to({state:[{t:this.instance_20}]},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_20},{t:this.instance_19}]},1).to({state:[{t:this.instance_21}]},1).wait(2));
 
 	this._renderFirstFrame();
 
@@ -1657,13 +1812,13 @@ lib.properties = {
 	color: "#006600",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1686891556690", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1686891556819", id:"audioLoop"},
-		{src:"sounds/Instrucciones.mp3?1686891556819", id:"Instrucciones"},
-		{src:"sounds/SoundBoton.mp3?1686891556819", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1686891556819", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1686891556819", id:"retroalimentacion"},
-		{src:"sounds/retroNegativa.mp3?1686891556819", id:"retroNegativa"}
+		{src:"images/index_atlas_1.png?1687123524448", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1687123524628", id:"audioLoop"},
+		{src:"sounds/Instrucciones.mp3?1687123524628", id:"Instrucciones"},
+		{src:"sounds/SoundBoton.mp3?1687123524628", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1687123524628", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1687123524628", id:"retroalimentacion"},
+		{src:"sounds/retroNegativa.mp3?1687123524628", id:"retroNegativa"}
 	],
 	preloads: []
 };

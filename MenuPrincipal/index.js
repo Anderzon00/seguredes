@@ -1917,13 +1917,13 @@ if (reversed == null) { reversed = false; }
 
 	// MergedLayer_1
 	this.instance = new lib.BtnEntrarCuento();
-	this.instance.setTransform(216,261,0.5681,0.5681);
+	this.instance.setTransform(233,261,0.5681,0.5681);
 
 	this.instance_1 = new lib.cuento4mc();
 	this.instance_1.setTransform(625.9,2.4,0.9869,0.9869,0,0,180);
 
 	this.instance_2 = new lib.BtnEntrarCuento_Hover();
-	this.instance_2.setTransform(199,255,0.6328,0.6328);
+	this.instance_2.setTransform(208,255,0.6328,0.6328);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1,p:{regX:0,regY:0,scaleX:0.9869,scaleY:0.9869,x:625.9,y:2.4}},{t:this.instance}]}).to({state:[{t:this.instance_1,p:{regX:-0.7,regY:0.1,scaleX:1.0001,scaleY:1,x:625.95,y:2.35}},{t:this.instance_2}]},1).to({state:[{t:this.instance_1,p:{regX:0,regY:0,scaleX:0.9869,scaleY:0.9869,x:625.9,y:2.4}},{t:this.instance}]},1).wait(1));
 
@@ -2420,7 +2420,7 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.Interpolación3();
 	this.instance.setTransform(2048.4,521.4,1.0208,1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({scaleX:1,x:1095.45,mode:"synched",startPosition:0},19).to({x:176},20).to({scaleX:1.0003,x:-149.65},7).to({scaleX:1.0009,x:-754.55},13).to({scaleX:1.0175,x:-1683.35},20).to({scaleX:1,x:-749.15},20).to({x:178.15},20).to({x:1096.95},20).to({x:2019.2},20).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({scaleX:1,x:1095.45,mode:"synched",startPosition:0},19).to({x:176},20).to({scaleX:1.0009,x:-754.55},20).to({scaleX:1.0175,x:-1683.35},20).to({scaleX:1,x:-749.15},20).to({x:178.15},20).to({x:1096.95},20).to({x:2019.2},20).wait(1));
 
 	this._renderFirstFrame();
 
@@ -2531,20 +2531,20 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CespedFrente.png?1685488012460", id:"CespedFrente"},
-		{src:"images/Fondo.png?1685488012460", id:"Fondo"},
-		{src:"images/Fondo_1.png?1685488012460", id:"Fondo_1"},
-		{src:"images/Fondo_1_1.png?1685488012460", id:"Fondo_1_1"},
-		{src:"images/Pantalla.png?1685488012460", id:"Pantalla"},
-		{src:"images/PortadaCuento2.png?1685488012460", id:"PortadaCuento2"},
-		{src:"images/index_atlas_1.png?1685488012332", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1685488012332", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1685488012332", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1685488012333", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1685488012333", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1685488012335", id:"index_atlas_6"},
-		{src:"sounds/intro.mp3?1685488012460", id:"intro"},
-		{src:"sounds/sound.mp3?1685488012460", id:"sound"}
+		{src:"images/CespedFrente.png?1687122501401", id:"CespedFrente"},
+		{src:"images/Fondo.png?1687122501401", id:"Fondo"},
+		{src:"images/Fondo_1.png?1687122501401", id:"Fondo_1"},
+		{src:"images/Fondo_1_1.png?1687122501401", id:"Fondo_1_1"},
+		{src:"images/Pantalla.png?1687122501401", id:"Pantalla"},
+		{src:"images/PortadaCuento2.png?1687122501401", id:"PortadaCuento2"},
+		{src:"images/index_atlas_1.png?1687122501268", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1687122501268", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1687122501268", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1687122501269", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1687122501269", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1687122501271", id:"index_atlas_6"},
+		{src:"sounds/intro.mp3?1687122501401", id:"intro"},
+		{src:"sounds/sound.mp3?1687122501401", id:"sound"}
 	],
 	preloads: []
 };

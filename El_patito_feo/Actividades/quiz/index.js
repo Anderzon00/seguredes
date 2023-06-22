@@ -5,7 +5,7 @@ var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"index_atlas_1", frames: [[797,288,84,77],[239,0,238,101],[479,0,238,101],[719,0,238,101],[239,103,238,101],[0,0,237,102],[387,206,87,87],[924,239,87,87],[476,249,87,87],[565,249,87,87],[0,293,66,57],[959,0,61,63],[959,65,61,63],[155,104,61,63],[68,293,55,57],[1022,0,2,78],[479,103,473,47],[479,152,381,47],[181,254,148,47],[0,196,193,47],[746,239,176,47],[654,288,141,47],[195,206,190,46],[0,245,179,46],[479,201,265,46],[0,104,153,90],[862,152,130,85],[195,169,25,26],[994,130,26,26],[994,158,26,26]]},
 		{name:"index_atlas_2", frames: [[1167,735,426,226],[1595,735,208,291],[0,0,1971,145],[0,147,1971,145],[1421,1028,502,115],[1510,1358,502,114],[1219,1145,502,115],[330,1618,447,102],[1340,1722,447,102],[0,1819,447,102],[449,1819,447,102],[898,1826,447,102],[1347,1826,447,102],[1540,1930,238,102],[1510,1474,423,122],[1136,1598,423,122],[1561,1598,423,122],[1136,1507,296,89],[779,1618,296,89],[1796,1722,206,202],[0,294,1971,145],[0,441,1971,145],[0,588,1970,145],[1864,1145,177,181],[1805,735,230,231],[846,1358,596,47],[0,1458,1508,47],[0,1770,980,47],[0,1569,1134,47],[0,968,1419,111],[0,1923,842,46],[0,1309,1862,47],[0,1971,707,46],[330,1722,1008,46],[0,1081,1217,112],[709,1979,687,46],[844,1930,694,47],[846,1407,592,47],[0,1195,1216,112],[0,1358,844,98],[0,1618,328,144],[1796,1926,235,108],[0,735,1165,231],[0,1507,946,60]]},
-		{name:"index_atlas_3", frames: [[0,1732,1971,145],[0,1879,1971,145],[0,993,1972,146],[0,1585,1972,145],[0,1141,1971,146],[0,1289,1971,146],[0,1437,1967,146],[0,198,1689,195],[0,0,1688,196],[0,696,1017,295],[0,395,1088,299]]},
+		{name:"index_atlas_3", frames: [[0,1731,1971,145],[0,1878,1971,145],[0,992,1972,146],[0,1584,1972,145],[0,1140,1971,146],[0,1288,1971,146],[0,1436,1967,146],[0,198,1689,195],[0,0,1688,196],[0,695,1017,295],[0,395,1087,298]]},
 		{name:"index_atlas_4", frames: [[0,1717,1795,219],[648,349,1181,289],[648,0,1217,347],[506,960,1110,301],[648,640,1052,318],[0,837,504,878],[0,0,646,835]]},
 		{name:"index_atlas_5", frames: [[0,0,1425,738],[0,740,1425,738]]},
 		{name:"index_atlas_6", frames: [[0,1029,1424,839],[0,0,1222,1027]]}
@@ -645,7 +645,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,2376,1136);
 
 
 
-(lib.RetroP7 = function() {
+(lib.Retrop7 = function() {
 	this.initialize(ss["index_atlas_3"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
@@ -1346,14 +1346,14 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Capa_1
-	this.instance = new lib.RetroP7();
+	this.instance = new lib.Retrop7();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.r7, new cjs.Rectangle(0,0,544,149.5), null);
+}).prototype = getMCSymbolPrototype(lib.r7, new cjs.Rectangle(0,0,543.5,149), null);
 
 
 (lib.r6 = function(mode,startPosition,loop,reversed) {
@@ -3635,23 +3635,23 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/EstrellasFondoRompecabezas.png?1686891805667", id:"EstrellasFondoRompecabezas"},
-		{src:"images/FondoselecciónMúltiple.png?1686891805667", id:"FondoselecciónMúltiple"},
-		{src:"images/Fondo2selecciónMúltiple.png?1686891805667", id:"Fondo2selecciónMúltiple"},
-		{src:"images/index_atlas_1.png?1686891805448", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1686891805449", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1686891805449", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1686891805450", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1686891805450", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1686891805450", id:"index_atlas_6"},
-		{src:"sounds/audio.mp3?1686891805667", id:"audio"},
-		{src:"sounds/Voice2.mp3?1686891805667", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1686891805667", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1686891805667", id:"Voice4"},
-		{src:"sounds/Voice1.mp3?1686891805667", id:"Voice1"},
-		{src:"sounds/SoundBoton.mp3?1686891805667", id:"SoundBoton"},
-		{src:"sounds/retroalimentacion.mp3?1686891805667", id:"retroalimentacion"},
-		{src:"sounds/BGM.mp3?1686891805667", id:"BGM"}
+		{src:"images/EstrellasFondoRompecabezas.png?1687131076113", id:"EstrellasFondoRompecabezas"},
+		{src:"images/FondoselecciónMúltiple.png?1687131076113", id:"FondoselecciónMúltiple"},
+		{src:"images/Fondo2selecciónMúltiple.png?1687131076113", id:"Fondo2selecciónMúltiple"},
+		{src:"images/index_atlas_1.png?1687131075901", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1687131075902", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1687131075903", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1687131075903", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1687131075904", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1687131075904", id:"index_atlas_6"},
+		{src:"sounds/audio.mp3?1687131076113", id:"audio"},
+		{src:"sounds/Voice2.mp3?1687131076113", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1687131076113", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1687131076113", id:"Voice4"},
+		{src:"sounds/Voice1.mp3?1687131076113", id:"Voice1"},
+		{src:"sounds/SoundBoton.mp3?1687131076113", id:"SoundBoton"},
+		{src:"sounds/retroalimentacion.mp3?1687131076113", id:"retroalimentacion"},
+		{src:"sounds/BGM.mp3?1687131076113", id:"BGM"}
 	],
 	preloads: []
 };

@@ -293,7 +293,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_1.setTransform(290,85,0.5,0.5);
 
 	this.instance_2 = new lib.formasuperiorder();
-	this.instance_2.setTransform(406,-284,0.5,0.5);
+	this.instance_2.setTransform(408,-283,0.5,0.5);
 
 	this.instance_3 = new lib.formasuperiorizq();
 	this.instance_3.setTransform(-597,-283,0.5,0.5);
@@ -302,7 +302,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Símbolo1, new cjs.Rectangle(-597,-284,1189,567.5), null);
+}).prototype = getMCSymbolPrototype(lib.Símbolo1, new cjs.Rectangle(-597,-283,1189,566.5), null);
 
 
 (lib.Interpolación24 = function(mode,startPosition,loop,reversed) {
@@ -1794,7 +1794,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(594.8,324.6,594.5,308.4);
+p.nominalBounds = new cjs.Rectangle(594.8,325.6,594.5,307.4);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -1804,17 +1804,17 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1686855678932", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1686855679053", id:"sound2"},
-		{src:"sounds/sound1.mp3?1686855679053", id:"sound1"},
-		{src:"sounds/como1.mp3?1686855679053", id:"como1"},
-		{src:"sounds/como2.mp3?1686855679053", id:"como2"},
-		{src:"sounds/como3.mp3?1686855679053", id:"como3"},
-		{src:"sounds/como4.mp3?1686855679053", id:"como4"},
-		{src:"sounds/como5.mp3?1686855679053", id:"como5"},
-		{src:"sounds/como6.mp3?1686855679053", id:"como6"},
-		{src:"sounds/Scifidoorsoundeffect.mp3?1686855679053", id:"Scifidoorsoundeffect"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1686855679053", id:"y2matecomsonidodemagiaefectohadas"}
+		{src:"images/index_atlas_1.png?1687124551494", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1687124551621", id:"sound2"},
+		{src:"sounds/sound1.mp3?1687124551621", id:"sound1"},
+		{src:"sounds/como1.mp3?1687124551621", id:"como1"},
+		{src:"sounds/como2.mp3?1687124551621", id:"como2"},
+		{src:"sounds/como3.mp3?1687124551621", id:"como3"},
+		{src:"sounds/como4.mp3?1687124551621", id:"como4"},
+		{src:"sounds/como5.mp3?1687124551621", id:"como5"},
+		{src:"sounds/como6.mp3?1687124551621", id:"como6"},
+		{src:"sounds/Scifidoorsoundeffect.mp3?1687124551621", id:"Scifidoorsoundeffect"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1687124551621", id:"y2matecomsonidodemagiaefectohadas"}
 	],
 	preloads: []
 };

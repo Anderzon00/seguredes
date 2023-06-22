@@ -160,7 +160,7 @@ lib.ssMetadata = [
 
 
 
-(lib.Diapositiva1text = function() {
+(lib.Diapositiva1text_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
@@ -3058,7 +3058,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(5));
 
 	// texto
-	this.instance_4 = new lib.Diapositiva1text();
+	this.instance_4 = new lib.Diapositiva1text_1();
 	this.instance_4.setTransform(91,158,0.5,0.5);
 
 	this.instance_5 = new lib.Dispositiva2texto();
@@ -3173,19 +3173,19 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1686861514879", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1686861515108", id:"audioG"},
-		{src:"sounds/audioC.mp3?1686861515108", id:"audioC"},
-		{src:"sounds/audio1.mp3?1686861515108", id:"audio1"},
-		{src:"sounds/audio2.mp3?1686861515108", id:"audio2"},
-		{src:"sounds/audio3.mp3?1686861515108", id:"audio3"},
-		{src:"sounds/audio4.mp3?1686861515108", id:"audio4"},
-		{src:"sounds/audio5.mp3?1686861515108", id:"audio5"},
-		{src:"sounds/audio6.mp3?1686861515108", id:"audio6"},
-		{src:"sounds/audio7.mp3?1686861515108", id:"audio7"},
-		{src:"sounds/audio8.mp3?1686861515108", id:"audio8"},
-		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1686861515108", id:"y2matecomFreesoundeffectKeyboardtyping"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1686861515108", id:"y2matecomsonidodemagiaefectohadas"}
+		{src:"images/index_atlas_1.png?1687391544503", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1687391544670", id:"audioG"},
+		{src:"sounds/audioC.mp3?1687391544670", id:"audioC"},
+		{src:"sounds/audio1.mp3?1687391544670", id:"audio1"},
+		{src:"sounds/audio2.mp3?1687391544670", id:"audio2"},
+		{src:"sounds/audio3.mp3?1687391544670", id:"audio3"},
+		{src:"sounds/audio4.mp3?1687391544670", id:"audio4"},
+		{src:"sounds/audio5.mp3?1687391544670", id:"audio5"},
+		{src:"sounds/audio6.mp3?1687391544670", id:"audio6"},
+		{src:"sounds/audio7.mp3?1687391544670", id:"audio7"},
+		{src:"sounds/audio8.mp3?1687391544670", id:"audio8"},
+		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1687391544670", id:"y2matecomFreesoundeffectKeyboardtyping"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1687391544670", id:"y2matecomsonidodemagiaefectohadas"}
 	],
 	preloads: []
 };

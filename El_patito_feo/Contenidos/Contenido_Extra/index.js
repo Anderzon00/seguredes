@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[1577,0,286,85],[1288,0,287,85],[1288,87,382,25],[1865,0,102,102],[0,0,1286,152]]}
+		{name:"index_atlas_1", frames: [[1412,87,286,85],[1412,0,287,85],[0,0,604,397],[606,0,434,339],[1042,0,368,243],[1042,245,440,137],[606,341,382,25],[1288,384,102,102],[0,399,1286,152]]}
 ];
 
 
@@ -41,23 +41,51 @@ lib.ssMetadata = [
 
 
 
-(lib.posicion = function() {
+(lib.formainferiorder = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.SiguienteAtras = function() {
+(lib.formainferiorizq = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.titulo = function() {
+(lib.formasuperiorder = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.formasuperiorizq = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.posicion = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.SiguienteAtras = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.titulo = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -228,14 +256,29 @@ if (reversed == null) { reversed = false; }
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
+	// actions
+	this.instance = new lib.formainferiorizq();
+	this.instance.setTransform(0,397,0.5,0.5);
+
+	this.instance_1 = new lib.formainferiorder();
+	this.instance_1.setTransform(885,368,0.5,0.5);
+
+	this.instance_2 = new lib.formasuperiorder();
+	this.instance_2.setTransform(1003,1,0.5,0.5);
+
+	this.instance_3 = new lib.formasuperiorizq();
+	this.instance_3.setTransform(0,0,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
 	// titulo
-	this.instance = new lib.posicion();
-	this.instance.setTransform(490,547,0.5,0.5);
+	this.instance_4 = new lib.posicion();
+	this.instance_4.setTransform(490,547,0.5,0.5);
 
-	this.instance_1 = new lib.titulo();
-	this.instance_1.setTransform(272,25,0.5,0.5);
+	this.instance_5 = new lib.titulo();
+	this.instance_5.setTransform(272,25,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5},{t:this.instance_4}]}).wait(1));
 
 	// flechas
 	this.btnAtras = new lib.btnSiguiente();
@@ -256,7 +299,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(603.5,349.5,311.5,281.5);
+p.nominalBounds = new cjs.Rectangle(593.5,324.5,593.5,306.5);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -266,9 +309,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1684019571937", id:"index_atlas_1"},
-		{src:"sounds/generales.mp3?1684019571968", id:"generales"},
-		{src:"sounds/indice.mp3?1684019571968", id:"indice"}
+		{src:"images/index_atlas_1.png?1687124538926", id:"index_atlas_1"},
+		{src:"sounds/generales.mp3?1687124538954", id:"generales"},
+		{src:"sounds/indice.mp3?1687124538954", id:"indice"}
 	],
 	preloads: []
 };

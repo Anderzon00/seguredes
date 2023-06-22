@@ -945,15 +945,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1686857620415", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1686857620415", id:"barraseguredes"},
-		{src:"images/fondo11.png?1686857620415", id:"fondo11"},
-		{src:"images/fondoMorado.png?1686857620415", id:"fondoMorado"},
-		{src:"images/Portada.png?1686857620415", id:"Portada"},
-		{src:"images/index_atlas_1.png?1686857620345", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1686857620415", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1686857620415", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1686857620415", id:"sound1"}
+		{src:"images/bannernegro1.png?1687124563244", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1687124563244", id:"barraseguredes"},
+		{src:"images/fondo11.png?1687124563244", id:"fondo11"},
+		{src:"images/fondoMorado.png?1687124563244", id:"fondoMorado"},
+		{src:"images/Portada.png?1687124563244", id:"Portada"},
+		{src:"images/index_atlas_1.png?1687124563181", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1687124563245", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1687124563245", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1687124563245", id:"sound1"}
 	],
 	preloads: []
 };
