@@ -641,7 +641,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [0,12,13,14,15];
+	this.actionFrames = [0,12,13,14,15,16];
 	// timeline functions:
 	this.frame_0 = function() {
 		this.stop(); 
@@ -687,7 +687,7 @@ if (reversed == null) { reversed = false; }
 		
 		this.btnAyuda.on('click', function () {		 
 		
-			
+			_this.gotoAndStop("Ayuda");
 			
 		});
 		
@@ -828,9 +828,44 @@ if (reversed == null) { reversed = false; }
 		_this.gotoAndPlay(0);
 		});
 	}
+	this.frame_16 = function() {
+		document.getElementById('miIframe')?.remove();  
+		  
+		var root = this;
+		var key;
+		var element = document.createElement('div');
+		element.setAttribute('id', 'miIframe');
+		document.body.appendChild(element);
+		element.style.position = "absolute"; 
+		 
+		element.innerHTML = '<iframe  src= "./turnjs4/index.html"  id="i_iframe"  style="overflow: hidden; border:none"  scrolling="no" allow="autoplay"  >';
+		
+		function embed() {	
+		document.getElementById('miIframe').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		document.getElementById('miIframe').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_iframe').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_iframe').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		}
+		
+		embed();
+		
+		window.addEventListener('resize', () => {	
+		embed();
+		}) 
+		 
+		
+		var _this=this;
+		_this.btnActividades.on('click', function () {
+		
+			var iframe = document.getElementById('i_iframe');
+		iframe.src = iframe.src;
+			
+				 
+		});
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(1).call(this.frame_14).wait(1).call(this.frame_15).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(1).call(this.frame_14).wait(1).call(this.frame_15).wait(1).call(this.frame_16).wait(1));
 
 	// Capa_3
 	this.instance = new lib.mano();
@@ -945,15 +980,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1687124563244", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1687124563244", id:"barraseguredes"},
-		{src:"images/fondo11.png?1687124563244", id:"fondo11"},
-		{src:"images/fondoMorado.png?1687124563244", id:"fondoMorado"},
-		{src:"images/Portada.png?1687124563244", id:"Portada"},
-		{src:"images/index_atlas_1.png?1687124563181", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1687124563245", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1687124563245", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1687124563245", id:"sound1"}
+		{src:"images/bannernegro1.png?1687641035154", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1687641035154", id:"barraseguredes"},
+		{src:"images/fondo11.png?1687641035154", id:"fondo11"},
+		{src:"images/fondoMorado.png?1687641035154", id:"fondoMorado"},
+		{src:"images/Portada.png?1687641035154", id:"Portada"},
+		{src:"images/index_atlas_1.png?1687641035085", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1687641035154", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1687641035154", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1687641035154", id:"sound1"}
 	],
 	preloads: []
 };
