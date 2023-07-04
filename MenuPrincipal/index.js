@@ -2364,7 +2364,7 @@ if (reversed == null) { reversed = false; }
 		
 		 
 		
-		this.btnAdelante.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_9.bind(this));
+		this.btnAdelante1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_9.bind(this));
 		 
 		function fl_ClickToGoToAndPlayFromFrame_9()
 		{
@@ -2372,15 +2372,15 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		
-		this.btnAtras.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_25.bind(this));
+		this.btnAtras1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_25.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_25()
 		{
-			this.gotoAndPlay(300);
+			this.gotoAndPlay(400);
 		}
 	}
 	this.frame_99 = function() {
-		this.btnAdelante.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_10.bind(this));
+		this.btnAdelante2.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_10.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_10(){
 			
@@ -2388,14 +2388,14 @@ if (reversed == null) { reversed = false; }
 			this.gotoAndPlay(175);
 		}
 		
-		this.btnAtras.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_30.bind(this));
+		this.btnAtras2.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_30.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_30(){
-			this.gotoAndPlay(0);
+			this.gotoAndPlay(460);
 		}
 	}
 	this.frame_199 = function() {
-		this.btnAdelante.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_11.bind(this));
+		this.btnAdelante3.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_11.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_11(){
 			this.gotoAndPlay(275);
@@ -2403,52 +2403,91 @@ if (reversed == null) { reversed = false; }
 		
 		
 		
-		this.btnAtras.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_29.bind(this));
+		this.btnAtras3.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_29.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_29()
 		{
-			this.gotoAndPlay(100);
+			this.gotoAndPlay(440);
 		}
 	}
 	this.frame_299 = function() {
-		this.btnAdelante.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_23.bind(this));
+		this.btnAdelante4.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_23.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_23(){
 			this.gotoAndPlay(375);
 		}
 		
 		
-		this.btnAtras.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_27.bind(this));
+		this.btnAtras4.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_27.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_27(){
-			this.gotoAndPlay(200);
+			this.gotoAndPlay(420);
 		}
 	}
 	this.frame_399 = function() {
 		this.gotoAndPlay(0);
 	}
+	this.frame_419 = function() {
+		this.gotoAndPlay(299);
+	}
+	this.frame_439 = function() {
+		this.gotoAndPlay(199);
+	}
+	this.frame_459 = function() {
+		this.gotoAndPlay(102);
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(99).call(this.frame_99).wait(100).call(this.frame_199).wait(100).call(this.frame_299).wait(100).call(this.frame_399).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(99).call(this.frame_99).wait(100).call(this.frame_199).wait(100).call(this.frame_299).wait(100).call(this.frame_399).wait(20).call(this.frame_419).wait(20).call(this.frame_439).wait(20).call(this.frame_459).wait(21));
 
 	// botones
-	this.btnAdelante = new lib.atras();
-	this.btnAdelante.name = "btnAdelante";
-	this.btnAdelante.setTransform(1047.35,535.15,0.962,0.9419,180,0,0,65,-0.1);
-	new cjs.ButtonHelper(this.btnAdelante, 0, 1, 2, false, new lib.atras(), 3);
+	this.btnAdelante1 = new lib.atras();
+	this.btnAdelante1.name = "btnAdelante1";
+	this.btnAdelante1.setTransform(1047.35,535.15,0.962,0.9419,180,0,0,65,-0.1);
+	new cjs.ButtonHelper(this.btnAdelante1, 0, 1, 2, false, new lib.atras(), 3);
 
-	this.btnAtras = new lib.atras();
-	this.btnAtras.name = "btnAtras";
-	this.btnAtras.setTransform(283.75,535.15,0.962,0.9419,0,180,0,39.4,-0.1);
-	new cjs.ButtonHelper(this.btnAtras, 0, 1, 2, false, new lib.atras(), 3);
+	this.btnAtras1 = new lib.atras();
+	this.btnAtras1.name = "btnAtras1";
+	this.btnAtras1.setTransform(283.75,535.15,0.962,0.9419,0,180,0,39.4,-0.1);
+	new cjs.ButtonHelper(this.btnAtras1, 0, 1, 2, false, new lib.atras(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnAtras},{t:this.btnAdelante}]}).to({state:[{t:this.btnAtras},{t:this.btnAdelante}]},99).to({state:[{t:this.btnAtras},{t:this.btnAdelante}]},100).to({state:[{t:this.btnAtras},{t:this.btnAdelante}]},100).wait(101));
+	this.btnAdelante2 = new lib.atras();
+	this.btnAdelante2.name = "btnAdelante2";
+	this.btnAdelante2.setTransform(1047.35,535.15,0.962,0.9419,180,0,0,65,-0.1);
+	new cjs.ButtonHelper(this.btnAdelante2, 0, 1, 2, false, new lib.atras(), 3);
+
+	this.btnAtras2 = new lib.atras();
+	this.btnAtras2.name = "btnAtras2";
+	this.btnAtras2.setTransform(283.75,535.15,0.962,0.9419,0,180,0,39.4,-0.1);
+	new cjs.ButtonHelper(this.btnAtras2, 0, 1, 2, false, new lib.atras(), 3);
+
+	this.btnAdelante3 = new lib.atras();
+	this.btnAdelante3.name = "btnAdelante3";
+	this.btnAdelante3.setTransform(1047.35,535.15,0.962,0.9419,180,0,0,65,-0.1);
+	new cjs.ButtonHelper(this.btnAdelante3, 0, 1, 2, false, new lib.atras(), 3);
+
+	this.btnAtras3 = new lib.atras();
+	this.btnAtras3.name = "btnAtras3";
+	this.btnAtras3.setTransform(283.75,535.15,0.962,0.9419,0,180,0,39.4,-0.1);
+	new cjs.ButtonHelper(this.btnAtras3, 0, 1, 2, false, new lib.atras(), 3);
+
+	this.btnAdelante4 = new lib.atras();
+	this.btnAdelante4.name = "btnAdelante4";
+	this.btnAdelante4.setTransform(1047.35,535.15,0.962,0.9419,180,0,0,65,-0.1);
+	new cjs.ButtonHelper(this.btnAdelante4, 0, 1, 2, false, new lib.atras(), 3);
+
+	this.btnAtras4 = new lib.atras();
+	this.btnAtras4.name = "btnAtras4";
+	this.btnAtras4.setTransform(283.75,535.15,0.962,0.9419,0,180,0,39.4,-0.1);
+	new cjs.ButtonHelper(this.btnAtras4, 0, 1, 2, false, new lib.atras(), 3);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnAtras1},{t:this.btnAdelante1}]}).to({state:[{t:this.btnAtras2},{t:this.btnAdelante2}]},99).to({state:[{t:this.btnAtras3},{t:this.btnAdelante3}]},100).to({state:[{t:this.btnAtras4},{t:this.btnAdelante4}]},100).wait(181));
 
 	// tarjetas
 	this.instance = new lib.Interpolación3();
 	this.instance.setTransform(2048.4,521.4,1.0208,1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(74).to({scaleX:1,x:1095.45,mode:"synched",startPosition:0},25).to({startPosition:0},75).to({x:176},25).to({startPosition:0},75).to({scaleX:1.0009,x:-754.55},25).to({startPosition:0},75).to({scaleX:1.0175,x:-1683.35},25).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(74).to({scaleX:1,x:1095.45,mode:"synched",startPosition:0},25).to({startPosition:0},75).to({x:176},25).to({startPosition:0},75).to({scaleX:1.0009,x:-754.55},25).to({startPosition:0},75).to({scaleX:1.0175,x:-1683.35},25).to({scaleX:1,x:-749.15},20).to({x:178.15},20).to({x:1096.95},20).to({x:2019.2},20).wait(1));
 
 	this._renderFirstFrame();
 
@@ -2559,20 +2598,20 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CespedFrente.png?1688502096838", id:"CespedFrente"},
-		{src:"images/Fondo.png?1688502096838", id:"Fondo"},
-		{src:"images/Fondo_1.png?1688502096838", id:"Fondo_1"},
-		{src:"images/Fondo_1_1.png?1688502096838", id:"Fondo_1_1"},
-		{src:"images/Pantalla.png?1688502096838", id:"Pantalla"},
-		{src:"images/PortadaCuento2.png?1688502096838", id:"PortadaCuento2"},
-		{src:"images/index_atlas_1.png?1688502096667", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1688502096667", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1688502096667", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1688502096667", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1688502096668", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1688502096669", id:"index_atlas_6"},
-		{src:"sounds/intro.mp3?1688502096838", id:"intro"},
-		{src:"sounds/sound.mp3?1688502096838", id:"sound"}
+		{src:"images/CespedFrente.png?1688503928556", id:"CespedFrente"},
+		{src:"images/Fondo.png?1688503928556", id:"Fondo"},
+		{src:"images/Fondo_1.png?1688503928556", id:"Fondo_1"},
+		{src:"images/Fondo_1_1.png?1688503928556", id:"Fondo_1_1"},
+		{src:"images/Pantalla.png?1688503928556", id:"Pantalla"},
+		{src:"images/PortadaCuento2.png?1688503928556", id:"PortadaCuento2"},
+		{src:"images/index_atlas_1.png?1688503928402", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1688503928402", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1688503928402", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1688503928403", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1688503928406", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1688503928408", id:"index_atlas_6"},
+		{src:"sounds/intro.mp3?1688503928556", id:"intro"},
+		{src:"sounds/sound.mp3?1688503928556", id:"sound"}
 	],
 	preloads: []
 };
