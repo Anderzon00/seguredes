@@ -709,7 +709,31 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-40.9,-12.7,81.9,25.5);
 
 
-(lib.sobre_siguiente = function(mode,startPosition,loop,reversed) {
+(lib.Interpolación12 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#FDCE3C").ss(8,1,1).p("Al0gPILpL5AlUgwIKnq5");
+	this.shape.setTransform(0.025,0.025);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-41.3,-78.6,82.69999999999999,157.3);
+
+
+(lib.Interpolación6 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -722,21 +746,14 @@ if (reversed == null) { reversed = false; }
 
 	// Capa_1
 	this.instance = new lib.btnflecha();
-	this.instance.setTransform(89,-62);
+	this.instance.setTransform(-95.5,-86.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(39));
-
-	// Capa_2
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#FDCE3C").ss(8,1,1).p("Al0gPILpL5AlUgwIKnq5");
-	this.shape.setTransform(116.175,22.075);
-
-	this.timeline.addTween(cjs.Tween.get(this.shape).to({_off:true},13).wait(26));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(74.9,-62,205.1,173);
+p.nominalBounds = new cjs.Rectangle(-95.5,-86.5,191,173);
 
 
 (lib.risa = function(mode,startPosition,loop,reversed) {
@@ -1338,6 +1355,36 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.zorro, new cjs.Rectangle(0,0,103,112.5), null);
 
 
+(lib.sobre_siguiente = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.Interpolación6("synched",0);
+	this.instance.setTransform(184.5,24.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({scaleX:1.2068,scaleY:1.2068,x:185.55},12).to({scaleX:1,scaleY:1,x:184.5},12).wait(1));
+
+	// Capa_2
+	this.instance_1 = new lib.Interpolación12("synched",0);
+	this.instance_1.setTransform(116.15,22.05);
+	this.instance_1._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(12).to({_off:false},0).to({scaleX:1.2068,scaleY:1.2068,x:103.1,y:21.55},12).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(53.3,-79.8,247.5,208.7);
+
+
 (lib.mano = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1725,7 +1772,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-5.5,-47,107.3,92);
+p.nominalBounds = new cjs.Rectangle(-2.3,-47,104.1,92);
 
 
 (lib.ala = function(mode,startPosition,loop,reversed) {
@@ -1985,7 +2032,7 @@ if (reversed == null) { reversed = false; }
 
 	// zorro
 	this.instance_8 = new lib.zorro();
-	this.instance_8.setTransform(-12.5,472.2,1,1,0,0,0,51.5,56.2);
+	this.instance_8.setTransform(189.5,495.2,1,1,0,0,0,51.5,56.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(1));
 
@@ -2315,15 +2362,13 @@ if (reversed == null) { reversed = false; }
 		    stretchToFit();
 		}
 		
-		
-		this.stop();
-		
+		 
 		
 		this.btnAdelante.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_9.bind(this));
 		 
 		function fl_ClickToGoToAndPlayFromFrame_9()
 		{
-			this.gotoAndPlay(1);
+			this.gotoAndPlay(74);
 		}
 		
 		
@@ -2331,35 +2376,29 @@ if (reversed == null) { reversed = false; }
 		
 		function fl_ClickToGoToAndPlayFromFrame_25()
 		{
-			this.gotoAndPlay(81);
+			this.gotoAndPlay(400);
 		}
 	}
-	this.frame_19 = function() {
-		this.stop();
-		
-		
+	this.frame_99 = function() {
 		this.btnAdelante.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_10.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_10(){
 			
 			
-			this.gotoAndPlay(21);
+			this.gotoAndPlay(174);
 		}
 		
 		this.btnAtras.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_30.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_30(){
-			this.gotoAndPlay(141);
+			this.gotoAndPlay(470);
 		}
 	}
-	this.frame_39 = function() {
-		this.stop();
-		
-		
+	this.frame_199 = function() {
 		this.btnAdelante.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_11.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_11(){
-			this.gotoAndPlay(41);
+			this.gotoAndPlay(274);
 		}
 		
 		
@@ -2368,59 +2407,57 @@ if (reversed == null) { reversed = false; }
 		
 		function fl_ClickToGoToAndPlayFromFrame_29()
 		{
-			this.gotoAndPlay(121);
+			this.gotoAndPlay(440);
 		}
 	}
-	this.frame_59 = function() {
-		this.stop();
-		
+	this.frame_299 = function() {
 		this.btnAdelante.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_23.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_23(){
-			this.gotoAndPlay(61);
+			this.gotoAndPlay(375);
 		}
 		
 		
 		this.btnAtras.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_27.bind(this));
 		
 		function fl_ClickToGoToAndPlayFromFrame_27(){
-			this.gotoAndPlay(101);
+			this.gotoAndPlay(420);
 		}
 	}
-	this.frame_79 = function() {
+	this.frame_399 = function() {
 		this.gotoAndPlay(0);
 	}
-	this.frame_99 = function() {
-		this.gotoAndStop(59);
+	this.frame_419 = function() {
+		this.gotoAndPlay(299);
 	}
-	this.frame_119 = function() {
-		this.gotoAndStop(39);
+	this.frame_439 = function() {
+		this.gotoAndPlay(199);
 	}
-	this.frame_139 = function() {
-		this.gotoAndPlay(19);
+	this.frame_459 = function() {
+		this.gotoAndPlay(100);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(20).call(this.frame_39).wait(20).call(this.frame_59).wait(20).call(this.frame_79).wait(20).call(this.frame_99).wait(20).call(this.frame_119).wait(20).call(this.frame_139).wait(21));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(99).call(this.frame_99).wait(100).call(this.frame_199).wait(100).call(this.frame_299).wait(100).call(this.frame_399).wait(20).call(this.frame_419).wait(20).call(this.frame_439).wait(20).call(this.frame_459).wait(21));
 
 	// botones
 	this.btnAdelante = new lib.atras();
 	this.btnAdelante.name = "btnAdelante";
-	this.btnAdelante.setTransform(1061.95,400.05,1,1,180,0,0,65,0);
+	this.btnAdelante.setTransform(1047.35,535.15,0.962,0.9419,180,0,0,65,-0.1);
 	new cjs.ButtonHelper(this.btnAdelante, 0, 1, 2, false, new lib.atras(), 3);
 
 	this.btnAtras = new lib.atras();
 	this.btnAtras.name = "btnAtras";
-	this.btnAtras.setTransform(268,400.05,1,1,0,180,0,39.2,0);
+	this.btnAtras.setTransform(283.75,535.15,0.962,0.9419,0,180,0,39.4,-0.1);
 	new cjs.ButtonHelper(this.btnAtras, 0, 1, 2, false, new lib.atras(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnAtras},{t:this.btnAdelante}]}).wait(160));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnAtras},{t:this.btnAdelante}]}).wait(480));
 
 	// tarjetas
 	this.instance = new lib.Interpolación3();
 	this.instance.setTransform(2048.4,521.4,1.0208,1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({scaleX:1,x:1095.45,mode:"synched",startPosition:0},19).to({x:176},20).to({scaleX:1.0009,x:-754.55},20).to({scaleX:1.0175,x:-1683.35},20).to({scaleX:1,x:-749.15},20).to({x:178.15},20).to({x:1096.95},20).to({x:2019.2},20).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(74).to({scaleX:1,x:1095.45,mode:"synched",startPosition:0},25).to({startPosition:0},75).to({x:176},25).to({startPosition:0},75).to({scaleX:1.0009,x:-754.55},25).to({startPosition:0},75).to({scaleX:1.0175,x:-1683.35},25).to({scaleX:1,x:-749.15},20).to({x:178.15},20).to({x:1096.95},20).to({x:2019.2},20).wait(1));
 
 	this._renderFirstFrame();
 
@@ -2472,7 +2509,7 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.btnInicio, 0, 1, 2);
 
 	this.instance = new lib.mano();
-	this.instance.setTransform(792.85,647.45,0.5523,0.5523,0,0,0,0.1,0.1);
+	this.instance.setTransform(792.85,608.7,0.6805,0.6805,0,0,0,0.1,-70);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.btnInicio}]}).wait(1));
 
@@ -2531,20 +2568,20 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CespedFrente.png?1687122501401", id:"CespedFrente"},
-		{src:"images/Fondo.png?1687122501401", id:"Fondo"},
-		{src:"images/Fondo_1.png?1687122501401", id:"Fondo_1"},
-		{src:"images/Fondo_1_1.png?1687122501401", id:"Fondo_1_1"},
-		{src:"images/Pantalla.png?1687122501401", id:"Pantalla"},
-		{src:"images/PortadaCuento2.png?1687122501401", id:"PortadaCuento2"},
-		{src:"images/index_atlas_1.png?1687122501268", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1687122501268", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1687122501268", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1687122501269", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1687122501269", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1687122501271", id:"index_atlas_6"},
-		{src:"sounds/intro.mp3?1687122501401", id:"intro"},
-		{src:"sounds/sound.mp3?1687122501401", id:"sound"}
+		{src:"images/CespedFrente.png?1688499002220", id:"CespedFrente"},
+		{src:"images/Fondo.png?1688499002220", id:"Fondo"},
+		{src:"images/Fondo_1.png?1688499002220", id:"Fondo_1"},
+		{src:"images/Fondo_1_1.png?1688499002220", id:"Fondo_1_1"},
+		{src:"images/Pantalla.png?1688499002220", id:"Pantalla"},
+		{src:"images/PortadaCuento2.png?1688499002220", id:"PortadaCuento2"},
+		{src:"images/index_atlas_1.png?1688499002079", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1688499002079", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1688499002080", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1688499002080", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1688499002080", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1688499002082", id:"index_atlas_6"},
+		{src:"sounds/intro.mp3?1688499002220", id:"intro"},
+		{src:"sounds/sound.mp3?1688499002220", id:"sound"}
 	],
 	preloads: []
 };
