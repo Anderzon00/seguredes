@@ -1757,16 +1757,11 @@ if (reversed == null) { reversed = false; }
 
 	this.instance_1 = new lib.Símbolo6("synched",0);
 	this.instance_1.setTransform(-190,40,1,1,0,0,0,40,40);
-	var instance_1Filter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
-	this.instance_1.filters = [instance_1Filter_1];
+	this.instance_1.filters = [new cjs.ColorFilter(0.74, 0.74, 0.74, 1, 36.4, 13.78, 3.9, 0)];
 	this.instance_1.cache(-2,-2,84,84);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.shape}]},21).wait(20));
-	this.timeline.addTween(cjs.Tween.get(instance_1Filter_1).wait(21).to(new cjs.ColorFilter(0.74,0.74,0.74,1,36.4,13.78,3.9,0), 0).wait(20));
 
-	this.filterCacheList = [];
-	this.filterCacheList.push({instance: this.instance_1, startFrame:21, endFrame:21, x:-2, y:-2, w:84, h:84});
-	this.filterCacheList.push({instance: this.instance_1, startFrame:0, endFrame:0, x:-2, y:-2, w:84, h:84});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -1804,7 +1799,6 @@ if (reversed == null) { reversed = false; }
 	this.shape_2.setTransform(16,20);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.shape}]},1).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.instance_1}]},2).wait(1));
-	this.instance.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	this._renderFirstFrame();
 
@@ -2467,11 +2461,11 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
 	this.shape.setTransform(176.35,604.725);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
 	this.shape_1.setTransform(176.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).to({state:[{t:this.shape_1},{t:this.prevEscena}]},8).wait(1));
@@ -2535,10 +2529,10 @@ if (reversed == null) { reversed = false; }
 
 	// lago fondo blanco
 	this.instance_9 = new lib.Símbolo9();
-	this.instance_9.setTransform(593.95,472.15,1.0135,1,0,0,0,593.2,151.2);
+	this.instance_9.setTransform(593.9,472.15,1.0135,1,0,0,0,593.1,151.2);
 	this.instance_9.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:594.8,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(7));
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:594.85,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(7));
 
 	// personajes
 	this.personaje = new lib.personaje();
@@ -2566,17 +2560,17 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/fondo_1.png?1673471249952", id:"fondo_1"},
-		{src:"images/FormaMensaje.png?1673471249952", id:"FormaMensaje"},
-		{src:"images/index_atlas_P_1.png?1673471249756", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1673471249757", id:"index_atlas_P_2"},
-		{src:"sounds/Voice0.mp3?1673471249952", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1673471249952", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1673471249952", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1673471249952", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1673471249952", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1673471249952", id:"Voice5"},
-		{src:"sounds/BGM.mp3?1673471249952", id:"BGM"}
+		{src:"images/fondo_1.png?1688517395482", id:"fondo_1"},
+		{src:"images/FormaMensaje.png?1688517395482", id:"FormaMensaje"},
+		{src:"images/index_atlas_P_1.png?1688517395324", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1688517395325", id:"index_atlas_P_2"},
+		{src:"sounds/Voice0.mp3?1688517395482", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1688517395482", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1688517395482", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1688517395482", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1688517395482", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1688517395482", id:"Voice5"},
+		{src:"sounds/BGM.mp3?1688517395482", id:"BGM"}
 	],
 	preloads: []
 };
@@ -2675,21 +2669,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

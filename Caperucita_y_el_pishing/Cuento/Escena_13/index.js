@@ -2166,16 +2166,11 @@ if (reversed == null) { reversed = false; }
 
 	this.instance_1 = new lib.Símbolo6("synched",0);
 	this.instance_1.setTransform(-190,40,1,1,0,0,0,40,40);
-	var instance_1Filter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
-	this.instance_1.filters = [instance_1Filter_1];
+	this.instance_1.filters = [new cjs.ColorFilter(0.74, 0.74, 0.74, 1, 36.4, 13.78, 3.9, 0)];
 	this.instance_1.cache(-2,-2,84,84);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.shape}]},21).wait(20));
-	this.timeline.addTween(cjs.Tween.get(instance_1Filter_1).wait(21).to(new cjs.ColorFilter(0.74,0.74,0.74,1,36.4,13.78,3.9,0), 0).wait(20));
 
-	this.filterCacheList = [];
-	this.filterCacheList.push({instance: this.instance_1, startFrame:21, endFrame:21, x:-2, y:-2, w:84, h:84});
-	this.filterCacheList.push({instance: this.instance_1, startFrame:0, endFrame:0, x:-2, y:-2, w:84, h:84});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -2239,7 +2234,6 @@ if (reversed == null) { reversed = false; }
 	this.shape_2.setTransform(16,20);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.shape}]},1).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.instance_1}]},2).wait(1));
-	this.instance.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	this._renderFirstFrame();
 
@@ -2321,37 +2315,35 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(131).call(this.frame_132).wait(1));
 
 	// Capa_12
-	this.instance = new lib.boca();
-	this.instance.setTransform(424,-81.45,0.5,0.5,0,0,0,2,20);
+	this.instance = new lib.boca2();
+	this.instance.setTransform(423.35,-83.2,0.4999,0.4938,0,0,0,-159.8,50.3);
+	this.instance._off = true;
 
-	this.instance_1 = new lib.boca2();
-	this.instance_1.setTransform(424.05,-81.3,0.5,0.4938,0,0,0,-159.9,50.1);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},1).to({state:[{t:this.instance_1}]},1).wait(131));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).wait(132));
 
 	// Cazador-ojos.png
-	this.instance_2 = new lib.ojos();
-	this.instance_2.setTransform(414.85,-97.85,0.5686,0.5686,0,0,0,11.8,7.9);
+	this.instance_1 = new lib.ojos();
+	this.instance_1.setTransform(414.85,-97.85,0.5686,0.5686,0,0,0,11.8,7.9);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(133));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(133));
 
 	// Cazador-BrazoIzq.png
-	this.instance_3 = new lib.brazoizq();
-	this.instance_3.setTransform(447.5,-47.15,1,1,-62.2275,0,0,159.4,15.2);
+	this.instance_2 = new lib.brazoizq();
+	this.instance_2.setTransform(447.5,-47.15,1,1,-62.2275,0,0,159.4,15.2);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({rotation:-62.2267},1).to({regY:15,scaleX:0.9999,scaleY:0.9999,rotation:-39.7523,x:447.7,y:-47.2},28).to({regX:159.3,regY:14.9,rotation:-59.7939,x:447.55},30).to({regY:15.1,rotation:-45.74,y:-47.15},30).to({regX:159.4,regY:15.2,scaleX:1,scaleY:1,rotation:-62.2275,x:447.5},43).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({regY:15,scaleX:0.9999,scaleY:0.9999,rotation:-39.7523,x:447.7,y:-47.2},28).to({regX:159.3,regY:14.9,rotation:-59.7939,x:447.55},30).to({regY:15.1,rotation:-45.74,y:-47.15},30).to({regX:159.4,regY:15.2,scaleX:1,scaleY:1,rotation:-62.2275,x:447.5},43).wait(1));
 
 	// Cazador-Silueta.png
-	this.instance_4 = new lib.CazadorSiluetapngcopia();
-	this.instance_4.setTransform(391,-145,0.5,0.5);
+	this.instance_3 = new lib.CazadorSiluetapngcopia();
+	this.instance_3.setTransform(391,-145,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(133));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(133));
 
 	// Cazador-MangaDer.png
-	this.instance_5 = new lib.brazoder();
-	this.instance_5.setTransform(431.5,-52.25,0.9999,0.9999,-53.2613,0,0,148.1,100.8);
+	this.instance_4 = new lib.brazoder();
+	this.instance_4.setTransform(431.5,-52.25,0.9999,0.9999,-53.2613,0,0,148.1,100.8);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1).to({regY:100.7,rotation:30.1855,y:-52.2},28).to({regY:100.6,rotation:16.6374,x:431.65,y:-52.25},30).to({regY:100.7,rotation:45.1849,x:431.55},30).to({regY:100.8,rotation:-53.2613,x:431.5},43).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1).to({regY:100.7,rotation:30.1855,y:-52.2},28).to({regY:100.6,rotation:16.6374,x:431.65,y:-52.25},30).to({regY:100.7,rotation:45.1849,x:431.55},30).to({regY:100.8,rotation:-53.2613,x:431.5},43).wait(1));
 
 	this._renderFirstFrame();
 
@@ -2808,11 +2800,11 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
 	this.shape.setTransform(176.35,604.725);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
 	this.shape_1.setTransform(176.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).to({state:[{t:this.shape_1},{t:this.prevEscena}]},11).wait(1));
@@ -2857,10 +2849,10 @@ if (reversed == null) { reversed = false; }
 
 	// lago fondo blanco
 	this.instance_6 = new lib.Símbolo9();
-	this.instance_6.setTransform(594,472.15,1.0135,1,0,0,0,593.3,151.2);
+	this.instance_6.setTransform(593.9,472.15,1.0135,1,0,0,0,593.2,151.2);
 	this.instance_6.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:594.7,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(10));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:594.75,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(10));
 
 	// Capa_3 (mask)
 	var mask = new cjs.Shape();
@@ -2927,7 +2919,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(438,219.5,762.5999999999999,432);
+p.nominalBounds = new cjs.Rectangle(438,219.5,762.7,432);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -2937,18 +2929,18 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Fondo.png?1678492381359", id:"Fondo"},
-		{src:"images/index_atlas_P_1.png?1678492381165", id:"index_atlas_P_1"},
-		{src:"sounds/Voice0.mp3?1678492381359", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1678492381359", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1678492381360", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1678492381360", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1678492381360", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1678492381360", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1678492381360", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1678492381360", id:"Voice7"},
-		{src:"sounds/Voice8.mp3?1678492381360", id:"Voice8"},
-		{src:"sounds/BGM.mp3?1678492381360", id:"BGM"}
+		{src:"images/Fondo.png?1688514250182", id:"Fondo"},
+		{src:"images/index_atlas_P_1.png?1688514249985", id:"index_atlas_P_1"},
+		{src:"sounds/Voice0.mp3?1688514250182", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1688514250182", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1688514250182", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1688514250182", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1688514250182", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1688514250182", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1688514250182", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1688514250182", id:"Voice7"},
+		{src:"sounds/Voice8.mp3?1688514250182", id:"Voice8"},
+		{src:"sounds/BGM.mp3?1688514250182", id:"BGM"}
 	],
 	preloads: []
 };
@@ -3047,21 +3039,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

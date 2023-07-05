@@ -1634,20 +1634,37 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// Capa_6 (mask)
+	var mask = new cjs.Shape();
+	mask._off = true;
+	var mask_graphics_0 = new cjs.Graphics().p("AN9QiI74AAIm4AAMAAAghEIG4AAIb4AAIG3AAMAAAAhEg");
+	var mask_graphics_23 = new cjs.Graphics().p("AN9QiI74AAIm4AAMAAAghEIG4AAIb4AAIG3AAMAAAAhEg");
+
+	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:mask_graphics_0,x:-8.775,y:-32.1}).wait(23).to({graphics:mask_graphics_23,x:-8.775,y:-32.1}).wait(1).to({graphics:null,x:0,y:0}).wait(30));
+
 	// Capa_1
 	this.instance = new lib.LoboSilueta();
-	this.instance.setTransform(-54.5,-139.25,0.5,0.5);
+	this.instance.setTransform(-55,-134,0.5,0.5);
 
 	this.instance_1 = new lib.Interpolación2("synched",0);
-	this.instance_1.setTransform(69.75,22.45,1,1,0,0,0,-14,12.2);
+	this.instance_1.setTransform(69.75,27.45,1,1,0,0,0,-14,12.2);
 
 	this.instance_2 = new lib.Interpolación5("synched",0);
-	this.instance_2.setTransform(-42.25,15.3,1,1,0,0,0,25.5,5.8);
+	this.instance_2.setTransform(-42.25,20.3,1,1,0,0,0,25.5,5.8);
 
+	var maskedShapeInstanceList = [this.instance,this.instance_1,this.instance_2];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]},23).to({state:[]},1).wait(30));
+
+	// Lobo-ventana-llamada.png
 	this.instance_3 = new lib.Loboventanallamada();
 	this.instance_3.setTransform(-171.5,-141.25,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]},24).to({state:[]},1).wait(29));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(23).to({_off:true},1).wait(30));
 
 	this._renderFirstFrame();
 
@@ -2005,7 +2022,7 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		contador=0;
 	}
-	this.frame_48 = function() {
+	this.frame_46 = function() {
 		var _this = this;
 		/*
 		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
@@ -2026,7 +2043,7 @@ if (reversed == null) { reversed = false; }
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(48).call(this.frame_48).wait(41).call(this.frame_89).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(46).call(this.frame_46).wait(43).call(this.frame_89).wait(1));
 
 	// Capa_7 (mask)
 	var mask = new cjs.Shape();
@@ -2070,17 +2087,17 @@ if (reversed == null) { reversed = false; }
 
 	// Lobo-Silueta.png
 	this.instance_2 = new lib.LoboSilueta();
-	this.instance_2.setTransform(117,3,0.5,0.5);
+	this.instance_2.setTransform(117,4,0.5,0.5);
 	this.instance_2._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(49).to({_off:false},0).wait(41));
 
 	// Lobo-BrazoIzq.png
 	this.instance_3 = new lib.Interpolación2("synched",0);
-	this.instance_3.setTransform(241.25,164.7,1,1,0,0,0,-14,12.2);
+	this.instance_3.setTransform(241.25,165.7,1,1,0,0,0,-14,12.2);
 	this.instance_3._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(49).to({_off:false},0).to({regY:12.3,rotation:-18.0006,y:164.85},20).to({regY:12.2,rotation:0,y:164.7},20).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(49).to({_off:false},0).to({regY:12.3,rotation:-18.0006,y:165.85},20).to({regY:12.2,rotation:0,y:165.7},20).wait(1));
 
 	// Lobo-BrazoDer.png
 	this.shape_3 = new cjs.Shape();
@@ -2096,11 +2113,11 @@ if (reversed == null) { reversed = false; }
 	this.shape_5.setTransform(181.5144,71.6441);
 
 	this.instance_4 = new lib.Interpolación5("synched",0);
-	this.instance_4.setTransform(129.25,157.55,1,1,0,0,0,25.5,5.8);
+	this.instance_4.setTransform(129.25,158.55,1,1,0,0,0,25.5,5.8);
 	this.instance_4._off = true;
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3}]}).to({state:[{t:this.shape_4}]},2).to({state:[{t:this.shape_5}]},2).to({state:[]},2).to({state:[{t:this.instance_4}]},43).to({state:[{t:this.instance_4}]},20).to({state:[{t:this.instance_4}]},20).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(49).to({_off:false},0).to({regX:25.6,rotation:16.985,x:129.3,y:157.6},20).to({regX:25.5,rotation:0,x:129.25,y:157.55},20).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(49).to({_off:false},0).to({regX:25.6,rotation:16.985,x:129.3,y:158.6},20).to({regX:25.5,rotation:0,x:129.25,y:158.55},20).wait(1));
 
 	// Lobo-ventana-llamada.png
 	this.instance_5 = new lib.Interpolación7("synched",0);
@@ -2109,13 +2126,13 @@ if (reversed == null) { reversed = false; }
 	this.instance_6 = new lib.Interpolación8("synched",0);
 	this.instance_6.setTransform(171.5,142.25);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5}]}).to({state:[{t:this.instance_5}]},24).to({state:[{t:this.instance_6}]},25).wait(41));
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).to({y:139.05},24).to({_off:true,y:142.25},25).wait(41));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5}]}).to({state:[{t:this.instance_5}]},24).to({state:[{t:this.instance_5}]},24).to({state:[{t:this.instance_6}]},1).wait(41));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).to({y:132.25},24).to({y:142.25},24).to({_off:true},1).wait(41));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,-2.2,343,285.7);
+p.nominalBounds = new cjs.Rectangle(0,-9,343,292.5);
 
 
 // stage content:
@@ -2561,10 +2578,10 @@ if (reversed == null) { reversed = false; }
 
 	// lago fondo blanco
 	this.instance_15 = new lib.Símbolo9();
-	this.instance_15.setTransform(594,472.15,1.0135,1,0,0,0,591.9,151.2);
+	this.instance_15.setTransform(594.05,472.15,1.0135,1,0,0,0,591.9,151.2);
 	this.instance_15.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:596.15,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(39));
+	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:596.2,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(39));
 
 	// boca
 	this.instance_16 = new lib.boca2();
@@ -2601,18 +2618,14 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_20).wait(41));
 
 	// fondo
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("Aw0kDIAAIHAQ1kDIAAIHAARkDIAAIH");
-	this.shape.setTransform(172.35,604.725);
-
 	this.instance_21 = new lib.Fondopngcopia();
 	this.instance_21.setTransform(-11,-57,0.5052,0.5118);
 
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AQwkDIAAIHAwvkDIAAIHAAAkDIAAIH");
-	this.shape_1.setTransform(154.85,529.725);
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("APWp6IAAIIAyJp6IAAIIAhZp6IAAIIAvfBzIAAIIASKBzIAAIIABnBzIAAII");
+	this.shape.setTransform(163.85,567.225);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.instance_21},{t:this.shape}]}).wait(41));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_21}]}).wait(41));
 
 	this._renderFirstFrame();
 
@@ -2627,27 +2640,27 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1684596220626", id:"index_atlas_P_1"},
-		{src:"sounds/Voice0.mp3?1684596220800", id:"Voice0"},
-		{src:"sounds/Voice9.mp3?1684596220800", id:"Voice9"},
-		{src:"sounds/Voice10.mp3?1684596220800", id:"Voice10"},
-		{src:"sounds/Voice11.mp3?1684596220800", id:"Voice11"},
-		{src:"sounds/Voice12.mp3?1684596220800", id:"Voice12"},
-		{src:"sounds/Voice13.mp3?1684596220800", id:"Voice13"},
-		{src:"sounds/Voice1.mp3?1684596220800", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1684596220800", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1684596220800", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1684596220800", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1684596220800", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1684596220800", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1684596220800", id:"Voice7"},
-		{src:"sounds/Voice8.mp3?1684596220800", id:"Voice8"},
-		{src:"sounds/Voice17.mp3?1684596220800", id:"Voice17"},
-		{src:"sounds/Voice16.mp3?1684596220800", id:"Voice16"},
-		{src:"sounds/Voice14.mp3?1684596220800", id:"Voice14"},
-		{src:"sounds/BGM.mp3?1684596220800", id:"BGM"},
-		{src:"sounds/Voice15.mp3?1684596220800", id:"Voice15"},
-		{src:"sounds/Message.mp3?1684596220800", id:"Message"}
+		{src:"images/index_atlas_P_1.png?1688513052121", id:"index_atlas_P_1"},
+		{src:"sounds/Voice0.mp3?1688513052384", id:"Voice0"},
+		{src:"sounds/Voice9.mp3?1688513052384", id:"Voice9"},
+		{src:"sounds/Voice10.mp3?1688513052384", id:"Voice10"},
+		{src:"sounds/Voice11.mp3?1688513052384", id:"Voice11"},
+		{src:"sounds/Voice12.mp3?1688513052384", id:"Voice12"},
+		{src:"sounds/Voice13.mp3?1688513052384", id:"Voice13"},
+		{src:"sounds/Voice1.mp3?1688513052384", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1688513052384", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1688513052384", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1688513052384", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1688513052384", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1688513052384", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1688513052384", id:"Voice7"},
+		{src:"sounds/Voice8.mp3?1688513052384", id:"Voice8"},
+		{src:"sounds/Voice17.mp3?1688513052384", id:"Voice17"},
+		{src:"sounds/Voice16.mp3?1688513052384", id:"Voice16"},
+		{src:"sounds/Voice14.mp3?1688513052384", id:"Voice14"},
+		{src:"sounds/BGM.mp3?1688513052384", id:"BGM"},
+		{src:"sounds/Voice15.mp3?1688513052384", id:"Voice15"},
+		{src:"sounds/Message.mp3?1688513052384", id:"Message"}
 	],
 	preloads: []
 };

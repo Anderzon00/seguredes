@@ -1920,7 +1920,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(82.1,-80.4,466.6,353.79999999999995);
+p.nominalBounds = new cjs.Rectangle(82.1,-80.4,466.6,353.9);
 
 
 (lib.playintermitente = function(mode,startPosition,loop,reversed) {
@@ -1944,16 +1944,11 @@ if (reversed == null) { reversed = false; }
 
 	this.instance_1 = new lib.Símbolo6("synched",0);
 	this.instance_1.setTransform(-190,40,1,1,0,0,0,40,40);
-	var instance_1Filter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
-	this.instance_1.filters = [instance_1Filter_1];
+	this.instance_1.filters = [new cjs.ColorFilter(0.74, 0.74, 0.74, 1, 36.4, 13.78, 3.9, 0)];
 	this.instance_1.cache(-2,-2,84,84);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.shape}]},21).wait(20));
-	this.timeline.addTween(cjs.Tween.get(instance_1Filter_1).wait(21).to(new cjs.ColorFilter(0.74,0.74,0.74,1,36.4,13.78,3.9,0), 0).wait(20));
 
-	this.filterCacheList = [];
-	this.filterCacheList.push({instance: this.instance_1, startFrame:21, endFrame:21, x:-2, y:-2, w:84, h:84});
-	this.filterCacheList.push({instance: this.instance_1, startFrame:0, endFrame:0, x:-2, y:-2, w:84, h:84});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -1991,7 +1986,6 @@ if (reversed == null) { reversed = false; }
 	this.shape_2.setTransform(16,20);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.shape}]},1).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.instance_1}]},2).wait(1));
-	this.instance.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	this._renderFirstFrame();
 
@@ -2449,7 +2443,7 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.prevEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AtKj9IAAIHADyj9IAAIHANLkJIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("ANLkJIAAIHADyj9IAAIHAtKj9IAAIH");
 	this.shape.setTransform(154.925,604.125);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.prevEscena}]}).wait(15));
@@ -2494,10 +2488,10 @@ if (reversed == null) { reversed = false; }
 
 	// lago fondo blanco
 	this.instance_12 = new lib.Símbolo9();
-	this.instance_12.setTransform(593.8,472.15,1.0135,1,0,0,0,592.8,151.2);
+	this.instance_12.setTransform(593.65,472.15,1.0135,1,0,0,0,592.6,151.2);
 	this.instance_12.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:595.05,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(13));
+	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:595.1,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(13));
 
 	// cosas
 	this.instance_13 = new lib.tip1();
@@ -2566,22 +2560,22 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1673455221840", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1673455221840", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1673455221841", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1673455222029", id:"Voice0"},
-		{src:"sounds/Voice9.mp3?1673455222030", id:"Voice9"},
-		{src:"sounds/Voice1.mp3?1673455222030", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1673455222030", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1673455222030", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1673455222030", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1673455222030", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1673455222030", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1673455222030", id:"Voice7"},
-		{src:"sounds/Voice8.mp3?1673455222030", id:"Voice8"},
-		{src:"sounds/Fin.mp3?1673455222030", id:"Fin"},
-		{src:"sounds/Voice10.mp3?1673455222030", id:"Voice10"},
-		{src:"sounds/BGM.mp3?1673455222030", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1688514532309", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1688514532310", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1688514532312", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1688514532490", id:"Voice0"},
+		{src:"sounds/Voice9.mp3?1688514532490", id:"Voice9"},
+		{src:"sounds/Voice1.mp3?1688514532490", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1688514532490", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1688514532490", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1688514532490", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1688514532490", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1688514532490", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1688514532490", id:"Voice7"},
+		{src:"sounds/Voice8.mp3?1688514532490", id:"Voice8"},
+		{src:"sounds/Fin.mp3?1688514532490", id:"Fin"},
+		{src:"sounds/Voice10.mp3?1688514532490", id:"Voice10"},
+		{src:"sounds/BGM.mp3?1688514532490", id:"BGM"}
 	],
 	preloads: []
 };
@@ -2680,21 +2674,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }
