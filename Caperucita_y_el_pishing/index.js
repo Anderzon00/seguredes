@@ -3,8 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[710,1563,466,90],[710,1655,466,90],[0,1672,708,106],[0,1563,707,107],[1690,1528,300,300],[555,1846,552,90],[555,1938,552,90],[0,1846,553,90],[0,1938,553,90],[0,0,1824,992],[1188,1528,500,500],[1188,994,707,532],[0,1780,802,64],[0,994,1186,567]]},
-		{name:"index_atlas_2", frames: [[459,92,315,90],[0,92,457,90],[468,0,315,90],[0,184,457,90],[0,0,466,90],[459,184,315,90],[0,276,457,90],[368,368,365,91],[0,368,366,91],[735,276,140,139]]}
+		{name:"index_atlas_1", frames: [[459,92,315,90],[0,92,457,90],[468,0,315,90],[0,184,457,90],[0,0,466,90],[459,184,315,90],[0,276,457,90],[368,368,365,91],[0,368,366,91],[735,276,140,139]]},
+		{name:"index_atlas_2", frames: [[710,1563,466,90],[710,1655,466,90],[0,1672,708,106],[0,1563,707,107],[1690,1528,300,300],[555,1846,552,90],[555,1938,552,90],[0,1846,553,90],[0,1938,553,90],[0,0,1824,992],[1188,1528,500,500],[1188,994,707,532],[0,1780,802,64],[0,994,1186,567]]}
 ];
 
 
@@ -29,63 +29,63 @@ lib.ssMetadata = [
 
 
 (lib._1ActividadesNORMAL = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1AyudaNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1ContenidosNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib._2actividadesSOBRE = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._2ayudaSOBRE = function() {
+(lib._2actividadesSOBRE = function() {
 	this.initialize(ss["index_atlas_2"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._2ayudaSOBRE = function() {
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2contenidosSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3actividadesDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3ayudaDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3contenidosDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
@@ -98,70 +98,70 @@ p.nominalBounds = new cjs.Rectangle(0,0,2372,153);
 
 
 (lib.botonaceptar2 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Botonaceptar = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.botonplay = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.BtnInicioCuentoHover = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicio = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioCuento = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentos = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentosHover = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.fondopapel1 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
@@ -180,35 +180,35 @@ p.nominalBounds = new cjs.Rectangle(0,0,2376,1136);
 
 
 (lib.icono = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.mano2 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Mensaje = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.tituloCaperucitacuiento = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.VentanaPortadaReproduccion = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -880,36 +880,36 @@ if (reversed == null) { reversed = false; }
 	// Capa_3
 	this.btnInicio = new lib.btnInicio();
 	this.btnInicio.name = "btnInicio";
-	this.btnInicio.setTransform(113.15,741.25,1,1,0,0,0,-511.5,0.8);
+	this.btnInicio.setTransform(113.15,738.55,1,1,0,0,0,-511.5,0.8);
 	new cjs.ButtonHelper(this.btnInicio, 0, 1, 2);
 
 	this.instance_5 = new lib.mano();
 	this.instance_5.setTransform(666.85,93,1,1,0,0,0,-97,-564.9);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5},{t:this.btnInicio}]}).to({state:[]},12).wait(5));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5},{t:this.btnInicio}]}).to({state:[]},13).wait(4));
 
 	// botones
 	this.btnAyuda = new lib.btnAyuda();
 	this.btnAyuda.name = "btnAyuda";
-	this.btnAyuda.setTransform(1214.85,32.5);
+	this.btnAyuda.setTransform(1214.85,33.85);
 	new cjs.ButtonHelper(this.btnAyuda, 0, 1, 2);
 
 	this.btnActividades = new lib.btnActividades();
 	this.btnActividades.name = "btnActividades";
-	this.btnActividades.setTransform(1019.5,32.5);
+	this.btnActividades.setTransform(1019.5,33.85);
 	new cjs.ButtonHelper(this.btnActividades, 0, 1, 2);
 
 	this.btnContenidos = new lib.btnContenidos();
 	this.btnContenidos.name = "btnContenidos";
-	this.btnContenidos.setTransform(790.25,32.45,1,0.9778);
+	this.btnContenidos.setTransform(790.25,33.8,1,0.9778);
 	new cjs.ButtonHelper(this.btnContenidos, 0, 1, 2, false, new lib.btnContenidos(), 3);
 
 	this.btnVolver = new lib.btnVolver();
 	this.btnVolver.name = "btnVolver";
-	this.btnVolver.setTransform(1205.7,741.45,1,1,0,0,0,460.2,1.5);
+	this.btnVolver.setTransform(1205.7,738.75,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolver, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver},{t:this.btnContenidos,p:{scaleY:0.9778,y:32.45}},{t:this.btnActividades},{t:this.btnAyuda}]}).to({state:[{t:this.btnVolver},{t:this.btnContenidos,p:{scaleY:1,y:32.5}},{t:this.btnActividades},{t:this.btnAyuda}]},13).to({state:[{t:this.btnVolver},{t:this.btnContenidos,p:{scaleY:1,y:32.5}},{t:this.btnActividades},{t:this.btnAyuda}]},1).to({state:[{t:this.btnVolver},{t:this.btnContenidos,p:{scaleY:1,y:32.5}},{t:this.btnActividades},{t:this.btnAyuda}]},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver},{t:this.btnContenidos,p:{scaleY:0.9778,y:33.8}},{t:this.btnActividades,p:{y:33.85}},{t:this.btnAyuda,p:{y:33.85}}]}).to({state:[{t:this.btnVolver},{t:this.btnContenidos,p:{scaleY:1,y:29.8}},{t:this.btnActividades,p:{y:29.8}},{t:this.btnAyuda,p:{y:29.8}}]},13).to({state:[{t:this.btnVolver},{t:this.btnContenidos,p:{scaleY:1,y:29.8}},{t:this.btnActividades,p:{y:29.8}},{t:this.btnAyuda,p:{y:29.8}}]},1).to({state:[{t:this.btnVolver},{t:this.btnContenidos,p:{scaleY:1,y:29.8}},{t:this.btnActividades,p:{y:29.8}},{t:this.btnAyuda,p:{y:29.8}}]},1).wait(2));
 
 	// tarjeta
 	this.instance_6 = new lib.VentanaPortadaReproduccion();
@@ -917,7 +917,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btnVolverAcuento = new lib.btnVolverAcuento();
 	this.btnVolverAcuento.name = "btnVolverAcuento";
-	this.btnVolverAcuento.setTransform(149.8,741.45,1,1,0,0,0,460.2,1.5);
+	this.btnVolverAcuento.setTransform(157.9,738.75,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolverAcuento, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6}]}).to({state:[{t:this.btnVolverAcuento}]},13).wait(4));
@@ -959,14 +959,14 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1687124612772", id:"bannernegro1"},
-		{src:"images/fondo1111.png?1687124612772", id:"fondo1111"},
-		{src:"images/fondoMorado.png?1687124612772", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1687124612714", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1687124612715", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1687124612772", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1687124612772", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1687124612772", id:"sound1"}
+		{src:"images/bannernegro1.png?1688520955513", id:"bannernegro1"},
+		{src:"images/fondo1111.png?1688520955513", id:"fondo1111"},
+		{src:"images/fondoMorado.png?1688520955513", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1688520955447", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1688520955447", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1688520955513", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1688520955513", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1688520955513", id:"sound1"}
 	],
 	preloads: []
 };

@@ -1752,7 +1752,7 @@ if (reversed == null) { reversed = false; }
 	this.shape_1.graphics.f("#33CC00").s().p("AjZDZIAAmyIGyAAIAAGyg");
 	this.shape_1.setTransform(21.75,21.75);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.shape_1},{t:this.shape}]},2).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance}]},1).to({state:[{t:this.shape_1},{t:this.shape}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1786,7 +1786,7 @@ if (reversed == null) { reversed = false; }
 	this.shape_1.graphics.f("#33CC00").s().p("AjZDZIAAmyIGyAAIAAGyg");
 	this.shape_1.setTransform(21.75,21.75);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.shape_1},{t:this.shape}]},2).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance}]},1).to({state:[{t:this.shape_1},{t:this.shape}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -2644,7 +2644,7 @@ if (reversed == null) { reversed = false; }
 		sound.play();
 		
 		var _this = this; 
-		
+		_this.unmute.visible = false;
 		_this.on("click", function (e) {
 				if (e.target.name === "unmute")
 				{		
@@ -2671,7 +2671,7 @@ if (reversed == null) { reversed = false; }
 
 	this.mute = new lib.btnSound();
 	this.mute.name = "mute";
-	this.mute.setTransform(176.9,585.85);
+	this.mute.setTransform(177.5,585.85);
 	new cjs.ButtonHelper(this.mute, 0, 1, 2, false, new lib.btnSound(), 3);
 
 	this.unmute = new lib.btnMute();
@@ -2774,14 +2774,14 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1687014973167", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1687014973168", id:"index_atlas_P_2"},
-		{src:"sounds/drop.mp3?1687014973306", id:"drop"},
-		{src:"sounds/error.mp3?1687014973306", id:"error"},
-		{src:"sounds/win.mp3?1687014973306", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1687014973306", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1687014973306", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1687014973306", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1688314600604", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1688314600605", id:"index_atlas_P_2"},
+		{src:"sounds/drop.mp3?1688314600775", id:"drop"},
+		{src:"sounds/error.mp3?1688314600775", id:"error"},
+		{src:"sounds/win.mp3?1688314600775", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1688314600775", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1688314600775", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1688314600775", id:"retroalimentacion"}
 	],
 	preloads: []
 };

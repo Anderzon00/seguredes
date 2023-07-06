@@ -2640,7 +2640,7 @@ if (reversed == null) { reversed = false; }
 		sound.play();
 		
 		var _this = this; 
-		
+		_this.unmute.visible = false;
 		_this.on("click", function (e) {
 				if (e.target.name === "unmute")
 		
@@ -2771,13 +2771,13 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1686887371881", id:"index_atlas_P_1"},
-		{src:"sounds/drop.mp3?1686887372050", id:"drop"},
-		{src:"sounds/error.mp3?1686887372050", id:"error"},
-		{src:"sounds/win.mp3?1686887372050", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1686887372050", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1686887372050", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1686887372050", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1688314625268", id:"index_atlas_P_1"},
+		{src:"sounds/drop.mp3?1688314625423", id:"drop"},
+		{src:"sounds/error.mp3?1688314625423", id:"error"},
+		{src:"sounds/win.mp3?1688314625423", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1688314625423", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1688314625423", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1688314625423", id:"retroalimentacion"}
 	],
 	preloads: []
 };

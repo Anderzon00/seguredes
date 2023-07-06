@@ -96,12 +96,6 @@ lib.ssMetadata = [
 p.nominalBounds = new cjs.Rectangle(0,0,2372,153);
 
 
-(lib.barraseguredes = function() {
-	this.initialize(img.barraseguredes);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,2373,154);
-
-
 (lib.botonaceptar2 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(9);
@@ -838,7 +832,7 @@ if (reversed == null) { reversed = false; }
 		document.body.appendChild(element);
 		element.style.position = "absolute"; 
 		 
-		element.innerHTML = '<iframe  src= "./turnjs4/index.html"  id="i_iframe"  style="overflow: hidden; border:none"  scrolling="no" allow="autoplay"  >';
+		element.innerHTML = '<iframe  src= "./dearflip/index.html"  id="i_iframe"  style="overflow: hidden; border:none"  scrolling="no" allow="autoplay"  >';
 		
 		function embed() {	
 		document.getElementById('miIframe').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
@@ -912,7 +906,7 @@ if (reversed == null) { reversed = false; }
 	// botones
 	this.btnInicio = new lib.btnInicio();
 	this.btnInicio.name = "btnInicio";
-	this.btnInicio.setTransform(113.15,741.25,1,1,0,0,0,-511.5,0.8);
+	this.btnInicio.setTransform(113.15,738.55,1,1,0,0,0,-511.5,0.8);
 	new cjs.ButtonHelper(this.btnInicio, 0, 1, 2);
 
 	this.btnAyuda = new lib.btnAyuda();
@@ -932,40 +926,34 @@ if (reversed == null) { reversed = false; }
 
 	this.btnVolver = new lib.btnVolver();
 	this.btnVolver.name = "btnVolver";
-	this.btnVolver.setTransform(1205.7,741.45,1,1,0,0,0,460.2,1.5);
+	this.btnVolver.setTransform(1205.7,738.75,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolver, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda},{t:this.btnInicio}]}).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]},13).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]},1).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]},1).wait(2));
 
-	// barra
-	this.instance_6 = new lib.barraseguredes();
-	this.instance_6.setTransform(101,622,0.5,0.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(17));
-
 	// tarjeta
-	this.instance_7 = new lib.Portada();
-	this.instance_7.setTransform(101,50,0.5021,0.5009);
+	this.instance_6 = new lib.Portada();
+	this.instance_6.setTransform(101,50,0.5021,0.5009);
 
 	this.btnVolverAcuento = new lib.btnVolverAcuento();
 	this.btnVolverAcuento.name = "btnVolverAcuento";
-	this.btnVolverAcuento.setTransform(149.8,741.45,1,1,0,0,0,460.2,1.5);
+	this.btnVolverAcuento.setTransform(156.55,737.4,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolverAcuento, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_7}]}).to({state:[{t:this.btnVolverAcuento}]},13).wait(4));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6}]}).to({state:[{t:this.btnVolverAcuento}]},13).wait(4));
 
 	// fondo
 	this.shape_1 = new cjs.Shape();
 	this.shape_1.graphics.f("#FFFFFF").s().p("Ehc8AsYMAAAhYvMC54AAAMAAABYvg");
 	this.shape_1.setTransform(696.9086,337,1.0019,1);
 
-	this.instance_8 = new lib.bannernegro1();
-	this.instance_8.setTransform(101,621,0.5025,0.5);
+	this.instance_7 = new lib.bannernegro1();
+	this.instance_7.setTransform(101,621,0.5025,0.5);
 
-	this.instance_9 = new lib.fondo11();
-	this.instance_9.setTransform(-37,-37,0.5,0.5);
+	this.instance_8 = new lib.fondo11();
+	this.instance_8.setTransform(-37,-37,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9},{t:this.instance_8},{t:this.shape_1}]}).wait(17));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.shape_1}]}).wait(17));
 
 	this._renderFirstFrame();
 
@@ -980,15 +968,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1687641035154", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1687641035154", id:"barraseguredes"},
-		{src:"images/fondo11.png?1687641035154", id:"fondo11"},
-		{src:"images/fondoMorado.png?1687641035154", id:"fondoMorado"},
-		{src:"images/Portada.png?1687641035154", id:"Portada"},
-		{src:"images/index_atlas_1.png?1687641035085", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1687641035154", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1687641035154", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1687641035154", id:"sound1"}
+		{src:"images/bannernegro1.png?1688519877705", id:"bannernegro1"},
+		{src:"images/fondo11.png?1688519877705", id:"fondo11"},
+		{src:"images/fondoMorado.png?1688519877705", id:"fondoMorado"},
+		{src:"images/Portada.png?1688519877705", id:"Portada"},
+		{src:"images/index_atlas_1.png?1688519877641", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1688519877705", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1688519877705", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1688519877705", id:"sound1"}
 	],
 	preloads: []
 };

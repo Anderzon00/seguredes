@@ -1630,16 +1630,11 @@ if (reversed == null) { reversed = false; }
 
 	this.instance_1 = new lib.Símbolo6("synched",0);
 	this.instance_1.setTransform(-190,40,1,1,0,0,0,40,40);
-	var instance_1Filter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
-	this.instance_1.filters = [instance_1Filter_1];
+	this.instance_1.filters = [new cjs.ColorFilter(0.74, 0.74, 0.74, 1, 36.4, 13.78, 3.9, 0)];
 	this.instance_1.cache(-2,-2,84,84);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.shape}]},21).wait(20));
-	this.timeline.addTween(cjs.Tween.get(instance_1Filter_1).wait(21).to(new cjs.ColorFilter(0.74,0.74,0.74,1,36.4,13.78,3.9,0), 0).wait(20));
 
-	this.filterCacheList = [];
-	this.filterCacheList.push({instance: this.instance_1, startFrame:21, endFrame:21, x:-2, y:-2, w:84, h:84});
-	this.filterCacheList.push({instance: this.instance_1, startFrame:0, endFrame:0, x:-2, y:-2, w:84, h:84});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -1677,7 +1672,6 @@ if (reversed == null) { reversed = false; }
 	this.shape_2.setTransform(16,20);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.shape}]},1).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.instance_1}]},2).wait(1));
-	this.instance.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	this._renderFirstFrame();
 
@@ -2046,7 +2040,7 @@ if (reversed == null) { reversed = false; }
 	// interacción
 	this.btnInteraccion = new lib.btnInteractivo();
 	this.btnInteraccion.name = "btnInteraccion";
-	this.btnInteraccion.setTransform(672.6,393.95,1,1,0,0,0,-21.1,7.5);
+	this.btnInteraccion.setTransform(426.65,378.95,1,1,0,0,0,-21.1,7.5);
 	this.btnInteraccion._off = true;
 	new cjs.ButtonHelper(this.btnInteraccion, 0, 1, 2, false, new lib.btnInteractivo(), 3);
 
@@ -2181,13 +2175,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1666762670717", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1666762670718", id:"index_atlas_P_2"},
-		{src:"sounds/Voice0.mp3?1666762670871", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1666762670871", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1666762670871", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1666762670871", id:"Voice3"},
-		{src:"sounds/BGM.mp3?1666762670871", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1688655675906", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1688655675907", id:"index_atlas_P_2"},
+		{src:"sounds/Voice0.mp3?1688655676075", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1688655676075", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1688655676075", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1688655676075", id:"Voice3"},
+		{src:"sounds/BGM.mp3?1688655676075", id:"BGM"}
 	],
 	preloads: []
 };
@@ -2286,21 +2280,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

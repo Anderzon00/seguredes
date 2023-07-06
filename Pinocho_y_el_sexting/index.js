@@ -317,7 +317,7 @@ if (reversed == null) { reversed = false; }
 
 	// Capa_2
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#FFFF00").ss(15,1,1).p("AIDAAQAADViXCXQiWCXjWAAQjUAAiYiXQiWiXAAjVQAAjVCWiXQCYiWDUAAQDWAACWCWQCXCXAADVg");
+	this.shape.graphics.f().s("#F7D339").ss(15,1,1).p("AIDAAQAADViXCXQiWCXjWAAQjUAAiYiXQiWiXAAjVQAAjVCWiXQCYiWDUAAQDWAACWCWQCXCXAADVg");
 	this.shape.setTransform(-2.025,-1.975);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).to({_off:true},24).wait(24));
@@ -915,13 +915,13 @@ if (reversed == null) { reversed = false; }
 	// Capa_3
 	this.btnInicio = new lib.btnInicio();
 	this.btnInicio.name = "btnInicio";
-	this.btnInicio.setTransform(113.15,741.25,1,1,0,0,0,-511.5,0.8);
+	this.btnInicio.setTransform(116.5,737.5,1,1,0,0,0,-511.5,0.8);
 	new cjs.ButtonHelper(this.btnInicio, 0, 1, 2);
 
 	this.instance_3 = new lib.mano();
 	this.instance_3.setTransform(666.85,93,1,1,0,0,0,-97,-564.9);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.btnInicio}]}).to({state:[{t:this.btnInicio}]},12).to({state:[]},1).wait(4));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.btnInicio}]}).to({state:[]},13).wait(4));
 
 	// botones
 	this.btnAyuda = new lib.btnAyuda();
@@ -941,10 +941,10 @@ if (reversed == null) { reversed = false; }
 
 	this.btnVolver = new lib.btnVolver();
 	this.btnVolver.name = "btnVolver";
-	this.btnVolver.setTransform(1205.7,741.45,1,1,0,0,0,460.2,1.5);
+	this.btnVolver.setTransform(1205.7,737.7,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolver, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]}).wait(17));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver,p:{y:737.7}},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]}).to({state:[{t:this.btnVolver,p:{y:737.45}},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]},11).wait(6));
 
 	// barra
 	this.instance_4 = new lib.barraseguredes();
@@ -958,7 +958,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btnVolverAcuento = new lib.btnVolverAcuento();
 	this.btnVolverAcuento.name = "btnVolverAcuento";
-	this.btnVolverAcuento.setTransform(149.8,741.45,1,1,0,0,0,460.2,1.5);
+	this.btnVolverAcuento.setTransform(163.8,737.45,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolverAcuento, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5}]}).to({state:[{t:this.btnVolverAcuento}]},13).wait(4));
@@ -988,15 +988,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1681796984135", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1681796984135", id:"barraseguredes"},
-		{src:"images/fondo11.png?1681796984135", id:"fondo11"},
-		{src:"images/fondoMorado.png?1681796984135", id:"fondoMorado"},
-		{src:"images/FondoOscuro.png?1681796984135", id:"FondoOscuro"},
-		{src:"images/index_atlas_1.png?1681796984044", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1681796984135", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1681796984135", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1681796984135", id:"sound1"}
+		{src:"images/bannernegro1.png?1688520570830", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1688520570830", id:"barraseguredes"},
+		{src:"images/fondo11.png?1688520570830", id:"fondo11"},
+		{src:"images/fondoMorado.png?1688520570830", id:"fondoMorado"},
+		{src:"images/FondoOscuro.png?1688520570830", id:"FondoOscuro"},
+		{src:"images/index_atlas_1.png?1688520570761", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1688520570830", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1688520570830", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1688520570830", id:"sound1"}
 	],
 	preloads: []
 };
@@ -1095,21 +1095,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

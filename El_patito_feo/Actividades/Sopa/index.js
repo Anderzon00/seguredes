@@ -1468,10 +1468,6 @@ if (reversed == null) { reversed = false; }
 		this.stop();
 		var _this = this;
 		
-		
-		
-		
-		
 		_this.btnPlay.on('click', function(){
 				
 		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
@@ -1481,8 +1477,7 @@ if (reversed == null) { reversed = false; }
 			 
 		});
 		
-		
-		
+		_this.unmute.visible = false;
 		_this.on("click", function (e) {
 		  if (e.target.name === "unmute") {
 		    sound.muted = false;
@@ -1812,13 +1807,13 @@ lib.properties = {
 	color: "#006600",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1687123524448", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1687123524628", id:"audioLoop"},
-		{src:"sounds/Instrucciones.mp3?1687123524628", id:"Instrucciones"},
-		{src:"sounds/SoundBoton.mp3?1687123524628", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1687123524628", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1687123524628", id:"retroalimentacion"},
-		{src:"sounds/retroNegativa.mp3?1687123524628", id:"retroNegativa"}
+		{src:"images/index_atlas_1.png?1688315247878", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1688315248067", id:"audioLoop"},
+		{src:"sounds/Instrucciones.mp3?1688315248067", id:"Instrucciones"},
+		{src:"sounds/SoundBoton.mp3?1688315248067", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1688315248067", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1688315248067", id:"retroalimentacion"},
+		{src:"sounds/retroNegativa.mp3?1688315248067", id:"retroNegativa"}
 	],
 	preloads: []
 };
