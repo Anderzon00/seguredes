@@ -2391,14 +2391,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1688326307824", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1688326307825", id:"index_atlas_P_2"},
-		{src:"sounds/Voice0.mp3?1688326307953", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1688326307953", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1688326307953", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1688326307953", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1688326307953", id:"Voice4"},
-		{src:"sounds/BGM.mp3?1688326307953", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1688659059470", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1688659059472", id:"index_atlas_P_2"},
+		{src:"sounds/Voice0.mp3?1688659059607", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1688659059607", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1688659059607", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1688659059607", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1688659059607", id:"Voice4"},
+		{src:"sounds/BGM.mp3?1688659059607", id:"BGM"}
 	],
 	preloads: []
 };

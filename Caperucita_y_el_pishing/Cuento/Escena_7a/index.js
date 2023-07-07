@@ -2177,7 +2177,7 @@ if (reversed == null) { reversed = false; }
 	// interacción
 	this.btnInteraccion = new lib.btnInteractivo();
 	this.btnInteraccion.name = "btnInteraccion";
-	this.btnInteraccion.setTransform(525.9,357.6,1,1,0,0,0,-21.1,7.5);
+	this.btnInteraccion.setTransform(670.9,321.6,1,1,0,0,0,-21.1,7.5);
 	new cjs.ButtonHelper(this.btnInteraccion, 0, 1, 2, false, new lib.btnInteractivo(), 3);
 
 	this.nextEscenaFinal = new lib.nextscene();
@@ -2185,7 +2185,7 @@ if (reversed == null) { reversed = false; }
 	this.nextEscenaFinal.setTransform(235.1,590.4);
 	new cjs.ButtonHelper(this.nextEscenaFinal, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion,p:{x:525.9,y:357.6}}]},5).to({state:[{t:this.btnInteraccion,p:{x:525.95,y:357.65}},{t:this.nextEscenaFinal}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion,p:{x:670.9,y:321.6}}]},5).to({state:[{t:this.btnInteraccion,p:{x:669.95,y:322.65}},{t:this.nextEscenaFinal}]},1).wait(1));
 
 	// textos copia
 	this.instance = new lib._1();
@@ -2205,10 +2205,10 @@ if (reversed == null) { reversed = false; }
 
 	// lago fondo blanco
 	this.instance_3 = new lib.Símbolo9();
-	this.instance_3.setTransform(595.7,472.2,1.0139,1,0,0,0,593.6,151.2);
+	this.instance_3.setTransform(595.65,472.2,1.0139,1,0,0,0,593.5,151.2);
 	this.instance_3.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1).to({regX:594,regY:219.8,scaleX:1.0181,x:594.5,y:540.8,alpha:0.5},0).wait(1).to({scaleX:1.0223,x:592.85,alpha:1},0).wait(5));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1).to({regX:594,regY:219.8,scaleX:1.0181,x:594.55,y:540.8,alpha:0.5},0).wait(1).to({scaleX:1.0223,x:592.9,alpha:1},0).wait(5));
 
 	// Capa_1
 	this.prevEscena = new lib.Símbolo3();
@@ -2222,11 +2222,11 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
 	this.shape.setTransform(176.35,604.725);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
 	this.shape_1.setTransform(176.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).to({state:[{t:this.shape_1},{t:this.prevEscena}]},6).wait(1));
@@ -2313,13 +2313,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Fondo.png?1688511507801", id:"Fondo"},
-		{src:"images/index_atlas_P_1.png?1688511507676", id:"index_atlas_P_1"},
-		{src:"sounds/Voice0.mp3?1688511507801", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1688511507801", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1688511507801", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1688511507801", id:"Voice3"},
-		{src:"sounds/BGM.mp3?1688511507801", id:"BGM"}
+		{src:"images/Fondo.png?1688657698875", id:"Fondo"},
+		{src:"images/index_atlas_P_1.png?1688657698726", id:"index_atlas_P_1"},
+		{src:"sounds/Voice0.mp3?1688657698875", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1688657698875", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1688657698875", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1688657698875", id:"Voice3"},
+		{src:"sounds/BGM.mp3?1688657698875", id:"BGM"}
 	],
 	preloads: []
 };

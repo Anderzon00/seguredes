@@ -1297,7 +1297,7 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_1 = function() {
-		this.playSound("BGM", "voice", true);
+		this.playSound("intro", "voice", true);
 	}
 	this.frame_2 = function() {
 		this.playSound("Voice0", "voice", true);  
@@ -1472,7 +1472,7 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AAbkNIAAIHAQhkNIAAIHAwgkNIAAIb");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkNIAAIbAQhkNIAAIHAAbkNIAAIH");
 	this.shape.setTransform(176.35,605.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).wait(14));
@@ -1560,21 +1560,22 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/fondo1.png?1688416688864", id:"fondo1"},
-		{src:"images/manocelular.png?1688416688864", id:"manocelular"},
-		{src:"images/index_atlas_P_1.png?1688416688738", id:"index_atlas_P_1"},
-		{src:"sounds/Voice10.mp3?1688416688864", id:"Voice10"},
-		{src:"sounds/BGM.mp3?1688416688864", id:"BGM"},
-		{src:"sounds/Voice0.mp3?1688416688864", id:"Voice0"},
-		{src:"sounds/Voice9.mp3?1688416688864", id:"Voice9"},
-		{src:"sounds/Voice1.mp3?1688416688864", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1688416688864", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1688416688864", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1688416688864", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1688416688864", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1688416688864", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1688416688864", id:"Voice7"},
-		{src:"sounds/Voice8.mp3?1688416688864", id:"Voice8"}
+		{src:"images/fondo1.png?1688745890125", id:"fondo1"},
+		{src:"images/manocelular.png?1688745890125", id:"manocelular"},
+		{src:"images/index_atlas_P_1.png?1688745890007", id:"index_atlas_P_1"},
+		{src:"sounds/Voice10.mp3?1688745890125", id:"Voice10"},
+		{src:"sounds/BGM.mp3?1688745890125", id:"BGM"},
+		{src:"sounds/intro.mp3?1688745890125", id:"intro"},
+		{src:"sounds/Voice0.mp3?1688745890125", id:"Voice0"},
+		{src:"sounds/Voice9.mp3?1688745890125", id:"Voice9"},
+		{src:"sounds/Voice1.mp3?1688745890125", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1688745890125", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1688745890125", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1688745890125", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1688745890125", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1688745890125", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1688745890125", id:"Voice7"},
+		{src:"sounds/Voice8.mp3?1688745890125", id:"Voice8"}
 	],
 	preloads: []
 };

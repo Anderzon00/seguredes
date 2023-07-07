@@ -2180,16 +2180,11 @@ if (reversed == null) { reversed = false; }
 
 	this.instance_2 = new lib.Símbolo6("synched",0);
 	this.instance_2.setTransform(-190,40,1,1,0,0,0,40,40);
-	var instance_2Filter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
-	this.instance_2.filters = [instance_2Filter_1];
+	this.instance_2.filters = [new cjs.ColorFilter(0.74, 0.74, 0.74, 1, 36.4, 13.78, 3.9, 0)];
 	this.instance_2.cache(-2,-2,84,84);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1}]}).to({state:[{t:this.instance_2},{t:this.shape}]},21).wait(20));
-	this.timeline.addTween(cjs.Tween.get(instance_2Filter_1).wait(21).to(new cjs.ColorFilter(0.74,0.74,0.74,1,36.4,13.78,3.9,0), 0).wait(20));
 
-	this.filterCacheList = [];
-	this.filterCacheList.push({instance: this.instance_2, startFrame:21, endFrame:21, x:-2, y:-2, w:84, h:84});
-	this.filterCacheList.push({instance: this.instance_2, startFrame:0, endFrame:0, x:-2, y:-2, w:84, h:84});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -2341,7 +2336,6 @@ if (reversed == null) { reversed = false; }
 	this.shape_2.setTransform(16,20);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.shape}]},1).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.instance_1}]},2).wait(1));
-	this.instance.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	this._renderFirstFrame();
 
@@ -2673,10 +2667,10 @@ if (reversed == null) { reversed = false; }
 
 	// lago fondo blanco
 	this.instance_5 = new lib.Símbolo9();
-	this.instance_5.setTransform(594,472.2,1.0083,1,0,0,0,593.2,151.2);
+	this.instance_5.setTransform(593.95,472.2,1.0083,1,0,0,0,593.1,151.2);
 	this.instance_5.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1).to({regX:594,regY:219.8,scaleX:1.0042,x:594.8,y:540.8,alpha:0.5},0).wait(1).to({scaleX:1,x:594.75,alpha:1},0).wait(6));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1).to({regX:594,regY:219.8,scaleX:1.0042,x:594.85,y:540.8,alpha:0.5},0).wait(1).to({scaleX:1,x:594.8,alpha:1},0).wait(6));
 
 	// Capa_1
 	this.btnInteraccion = new lib.btnInteractivo();
@@ -2720,7 +2714,7 @@ if (reversed == null) { reversed = false; }
 
 	// btns_nav
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AARkDIAAIHAQ1kDIAAIHAw0kDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("Aw0kDIAAIHAQ1kDIAAIHAARkDIAAIH");
 	this.shape.setTransform(172.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(8));
@@ -2738,7 +2732,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(572,321.5,621.7,358.1);
+p.nominalBounds = new cjs.Rectangle(572,321.5,621.8,358.1);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -2748,13 +2742,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1679413830946", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1679413830946", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1679413830948", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1679413831280", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1679413831280", id:"Voice1"},
-		{src:"sounds/BGM.mp3?1679413831280", id:"BGM"},
-		{src:"sounds/Voice2.mp3?1679413831280", id:"Voice2"}
+		{src:"images/index_atlas_P_1.png?1688654955393", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1688654955393", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1688654955394", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1688654955540", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1688654955540", id:"Voice1"},
+		{src:"sounds/BGM.mp3?1688654955540", id:"BGM"},
+		{src:"sounds/Voice2.mp3?1688654955540", id:"Voice2"}
 	],
 	preloads: []
 };
@@ -2853,21 +2847,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

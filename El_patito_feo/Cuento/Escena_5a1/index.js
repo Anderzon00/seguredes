@@ -1947,7 +1947,7 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_1 = function() {
-		this.playSound("BGM", "voice", true);
+		this.playSound("intro", "voice", true);
 	}
 	this.frame_2 = function() {
 		this.playSound("Voice0", "voice", true);  
@@ -2124,7 +2124,7 @@ if (reversed == null) { reversed = false; }
 
 	// btns_nav
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("Aw0kDIAAIHAQ1kDIAAIHAARkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AARkDIAAIHAQ1kDIAAIHAw0kDIAAIH");
 	this.shape.setTransform(172.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(7));
@@ -2175,13 +2175,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1688655675906", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1688655675907", id:"index_atlas_P_2"},
-		{src:"sounds/Voice0.mp3?1688655676075", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1688655676075", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1688655676075", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1688655676075", id:"Voice3"},
-		{src:"sounds/BGM.mp3?1688655676075", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1688745554069", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1688745554070", id:"index_atlas_P_2"},
+		{src:"sounds/Voice0.mp3?1688745554204", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1688745554204", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1688745554204", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1688745554204", id:"Voice3"},
+		{src:"sounds/intro.mp3?1688745554204", id:"intro"},
+		{src:"sounds/BGM.mp3?1688745554204", id:"BGM"}
 	],
 	preloads: []
 };

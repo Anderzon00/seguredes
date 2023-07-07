@@ -3336,7 +3336,7 @@ if (reversed == null) { reversed = false; }
 	// interacción
 	this.btnInteraccion = new lib.btnInteractivo();
 	this.btnInteraccion.name = "btnInteraccion";
-	this.btnInteraccion.setTransform(845.1,252.15,1,1,0,0,0,-21.1,7.5);
+	this.btnInteraccion.setTransform(798.1,367.1,1,1,0,0,0,-21.1,7.5);
 	new cjs.ButtonHelper(this.btnInteraccion, 0, 1, 2, false, new lib.btnInteractivo(), 3);
 
 	this.nextEscenaFinal = new lib.nextscene();
@@ -3344,7 +3344,7 @@ if (reversed == null) { reversed = false; }
 	this.nextEscenaFinal.setTransform(235.1,589.6);
 	new cjs.ButtonHelper(this.nextEscenaFinal, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion,p:{x:845.1,y:252.15}}]},9).to({state:[{t:this.btnInteraccion,p:{x:843.65,y:252.05}},{t:this.nextEscenaFinal}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion,p:{x:798.1,y:367.1}}]},9).to({state:[{t:this.btnInteraccion,p:{x:798.65,y:368.05}},{t:this.nextEscenaFinal}]},1).wait(1));
 
 	// textos copia
 	this.instance = new lib._1pngcopia();
@@ -3385,15 +3385,15 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
 	this.shape.setTransform(176.35,604.725);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
 	this.shape_1.setTransform(176.35,604.725);
 
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
+	this.shape_2.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
 	this.shape_2.setTransform(176.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).to({state:[{t:this.shape_1},{t:this.nextEscena},{t:this.prevEscena}]},8).to({state:[{t:this.shape_2},{t:this.prevEscena}]},2).wait(1));
@@ -3457,10 +3457,10 @@ if (reversed == null) { reversed = false; }
 
 	// lago fondo blanco
 	this.instance_11 = new lib.Símbolo9();
-	this.instance_11.setTransform(594.05,472.15,1.0135,1,0,0,0,593.4,151.2);
+	this.instance_11.setTransform(594,472.15,1.0135,1,0,0,0,593.3,151.2);
 	this.instance_11.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:594.65,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(9));
+	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(1).to({regX:594,regY:219.8,scaleX:1.0168,x:594.7,y:540.75,alpha:0.5},0).wait(1).to({scaleX:1.0201,alpha:1},0).wait(9));
 
 	// boca casador
 	this.instance_12 = new lib.boca();
@@ -3501,18 +3501,18 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/fondo_1.png?1688513124777", id:"fondo_1"},
-		{src:"images/index_atlas_P_1.png?1688513124557", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1688513124559", id:"index_atlas_P_2"},
-		{src:"sounds/Voice0.mp3?1688513124777", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1688513124777", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1688513124777", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1688513124777", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1688513124777", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1688513124777", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1688513124777", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1688513124777", id:"Voice7"},
-		{src:"sounds/BGM.mp3?1688513124777", id:"BGM"}
+		{src:"images/fondo_1.png?1688657796508", id:"fondo_1"},
+		{src:"images/index_atlas_P_1.png?1688657796289", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1688657796290", id:"index_atlas_P_2"},
+		{src:"sounds/Voice0.mp3?1688657796508", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1688657796508", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1688657796508", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1688657796508", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1688657796508", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1688657796508", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1688657796508", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1688657796508", id:"Voice7"},
+		{src:"sounds/BGM.mp3?1688657796508", id:"BGM"}
 	],
 	preloads: []
 };
