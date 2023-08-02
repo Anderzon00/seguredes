@@ -2188,7 +2188,7 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_1 = function() {
-		this.playSound("BGM", "voice", true);
+		this.playSound("intro", "voice", true);
 	}
 	this.frame_2 = function() {
 		this.playSound("Voice0", "voice", true);  
@@ -2368,10 +2368,10 @@ if (reversed == null) { reversed = false; }
 
 	// lago fondo blanco
 	this.instance_5 = new lib.Símbolo9();
-	this.instance_5.setTransform(594,472.2,1.0101,1,0,0,0,593.7,151.2);
+	this.instance_5.setTransform(594,472.2,1.0101,1,0,0,0,593.5,151.2);
 	this.instance_5.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1).to({regX:594,regY:219.8,scaleX:1.0072,x:595.3,y:540.8,alpha:0.5},0).wait(1).to({scaleX:1.0042,x:596.3,alpha:1},0).wait(7));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1).to({regX:594,regY:219.8,scaleX:1.0072,x:595.5,y:540.8,alpha:0.5},0).wait(1).to({scaleX:1.0042,x:596.5,alpha:1},0).wait(7));
 
 	// relog
 	this.instance_6 = new lib.caperucita();
@@ -2412,16 +2412,17 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/fondo.png?1688511148940", id:"fondo"},
-		{src:"images/Lovepik_com401570081firewoodburning.png?1688511148940", id:"Lovepik_com401570081firewoodburning"},
-		{src:"images/index_atlas_P_1.png?1688511148801", id:"index_atlas_P_1"},
-		{src:"sounds/Voice0.mp3?1688511148940", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1688511148940", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1688511148940", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1688511148940", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1688511148940", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1688511148940", id:"Voice5"},
-		{src:"sounds/BGM.mp3?1688511148940", id:"BGM"}
+		{src:"images/fondo.png?1689887285869", id:"fondo"},
+		{src:"images/Lovepik_com401570081firewoodburning.png?1689887285869", id:"Lovepik_com401570081firewoodburning"},
+		{src:"images/index_atlas_P_1.png?1689887285737", id:"index_atlas_P_1"},
+		{src:"sounds/Voice0.mp3?1689887285869", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1689887285869", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1689887285869", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1689887285869", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1689887285869", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1689887285869", id:"Voice5"},
+		{src:"sounds/BGM.mp3?1689887285869", id:"BGM"},
+		{src:"sounds/intro.mp3?1689887285869", id:"intro"}
 	],
 	preloads: []
 };
