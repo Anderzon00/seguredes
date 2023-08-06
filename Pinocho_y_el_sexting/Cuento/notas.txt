@@ -1,0 +1,18 @@
+Tomar final de caperucita para Escena 14AA
+
+contador1=0;
+this.stop();
+
+contador1++;
+console.log(contador1);
+var _this = this;
+if (contador1== 5)
+
+_this.gotoAndPlay(1);
+else 
+	
+_this.gotoAndPlay(0);
+
+
+esta audios hasta8aa enlaces tambien
+ 

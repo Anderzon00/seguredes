@@ -1944,7 +1944,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('../Escena_2', '_self');
+		window.open('../E3AA', '_self');
 		});
 		
 		
@@ -1958,7 +1958,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('../Escena_5', '_self');
+		window.open('../E5AA', '_self');
 		});
 	}
 	this.frame_1 = function() {
@@ -2035,7 +2035,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('../Escena_5', '_self');
+		window.open('../E5AA', '_self');
 		});
 	}
 
@@ -2091,11 +2091,11 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
 	this.shape.setTransform(176.35,604.725);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
 	this.shape_1.setTransform(176.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).to({state:[{t:this.shape_1},{t:this.prevEscena}]},9).wait(1));
@@ -2208,7 +2208,11 @@ if (reversed == null) { reversed = false; }
 	this.instance_16 = new lib.Fondo();
 	this.instance_16.setTransform(0,-3,0.505,0.5013);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_16).wait(10));
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
+	this.shape_2.setTransform(176.35,604.725);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.instance_16}]}).wait(10));
 
 	this._renderFirstFrame();
 
@@ -2223,18 +2227,18 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1690840648682", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1690840648682", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1690840648684", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1690840648859", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1690840648859", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1690840648859", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1690840648859", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1690840648859", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1690840648859", id:"Voice5"},
-		{src:"sounds/interaccion.mp3?1690840648859", id:"interaccion"},
-		{src:"sounds/intro.mp3?1690840648859", id:"intro"},
-		{src:"sounds/BGM.mp3?1690840648859", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1691015406703", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1691015406703", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1691015406704", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1691015406845", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1691015406845", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1691015406845", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1691015406845", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1691015406845", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1691015406845", id:"Voice5"},
+		{src:"sounds/interaccion.mp3?1691015406845", id:"interaccion"},
+		{src:"sounds/intro.mp3?1691015406845", id:"intro"},
+		{src:"sounds/BGM.mp3?1691015406845", id:"BGM"}
 	],
 	preloads: []
 };

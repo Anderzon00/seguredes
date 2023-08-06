@@ -2955,7 +2955,11 @@ if (reversed == null) { reversed = false; }
 	this.instance_12 = new lib.fondoescena();
 	this.instance_12.setTransform(0,-3,0.505,0.5013);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(32));
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
+	this.shape.setTransform(176.35,604.725);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_12}]}).wait(32));
 
 	this._renderFirstFrame();
 
@@ -2970,19 +2974,19 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1690844759927", id:"index_atlas_P_1"},
-		{src:"sounds/BGM.mp3?1690844760151", id:"BGM"},
-		{src:"sounds/Voice9.mp3?1690844760151", id:"Voice9"},
-		{src:"sounds/Voice8.mp3?1690844760151", id:"Voice8"},
-		{src:"sounds/interaccion.mp3?1690844760151", id:"interaccion"},
-		{src:"sounds/intro.mp3?1690844760151", id:"intro"},
-		{src:"sounds/Voice0.mp3?1690844760151", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1690844760151", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1690844760151", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1690844760151", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1690844760151", id:"Voice4"},
-		{src:"sounds/Voice10.mp3?1690844760151", id:"Voice10"},
-		{src:"sounds/Voice7.mp3?1690844760151", id:"Voice7"}
+		{src:"images/index_atlas_P_1.png?1691017305873", id:"index_atlas_P_1"},
+		{src:"sounds/BGM.mp3?1691017306109", id:"BGM"},
+		{src:"sounds/Voice9.mp3?1691017306109", id:"Voice9"},
+		{src:"sounds/Voice8.mp3?1691017306109", id:"Voice8"},
+		{src:"sounds/interaccion.mp3?1691017306109", id:"interaccion"},
+		{src:"sounds/intro.mp3?1691017306109", id:"intro"},
+		{src:"sounds/Voice0.mp3?1691017306109", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1691017306109", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1691017306109", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1691017306109", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1691017306109", id:"Voice4"},
+		{src:"sounds/Voice10.mp3?1691017306109", id:"Voice10"},
+		{src:"sounds/Voice7.mp3?1691017306109", id:"Voice7"}
 	],
 	preloads: []
 };

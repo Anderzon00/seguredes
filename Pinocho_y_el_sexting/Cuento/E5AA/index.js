@@ -2338,6 +2338,10 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1).call(this.frame_2).wait(1).call(this.frame_3).wait(1).call(this.frame_4).wait(1).call(this.frame_5).wait(1).call(this.frame_6).wait(1).call(this.frame_7).wait(1).call(this.frame_8).wait(1).call(this.frame_9).wait(1).call(this.frame_10).wait(1).call(this.frame_11).wait(1).call(this.frame_12).wait(1).call(this.frame_13).wait(20).call(this.frame_33).wait(1).call(this.frame_34).wait(1).call(this.frame_35).wait(1));
 
 	// btns _escena
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
+	this.shape.setTransform(176.35,604.725);
+
 	this.atrasEscena = new lib.presscene();
 	this.atrasEscena.name = "atrasEscena";
 	this.atrasEscena.setTransform(203.65,607.1,1,1,0,0,0,20.2,20);
@@ -2348,7 +2352,7 @@ if (reversed == null) { reversed = false; }
 	this.adelanteEscena.setTransform(251.15,607.1,1,1,0,0,0,20.2,20);
 	new cjs.ButtonHelper(this.adelanteEscena, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.adelanteEscena},{t:this.atrasEscena}]}).wait(36));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.adelanteEscena},{t:this.atrasEscena},{t:this.shape}]}).wait(36));
 
 	// btns_media
 	this.pressToStart = new lib.btnPlayanimado();
@@ -2538,23 +2542,23 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1690839725865", id:"index_atlas_P_1"},
-		{src:"sounds/Voice6.mp3?1690839726015", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1690839726015", id:"Voice7"},
-		{src:"sounds/Voice8.mp3?1690839726015", id:"Voice8"},
-		{src:"sounds/BGM.mp3?1690839726015", id:"BGM"},
-		{src:"sounds/Voice11.mp3?1690839726015", id:"Voice11"},
-		{src:"sounds/Voice10.mp3?1690839726015", id:"Voice10"},
-		{src:"sounds/interaccion.mp3?1690839726015", id:"interaccion"},
-		{src:"sounds/intro.mp3?1690839726015", id:"intro"},
-		{src:"sounds/Voice0.mp3?1690839726015", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1690839726015", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1690839726015", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1690839726015", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1690839726015", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1690839726015", id:"Voice5"},
-		{src:"sounds/Voicem.mp3?1690839726015", id:"Voicem"},
-		{src:"sounds/Voice9.mp3?1690839726015", id:"Voice9"}
+		{src:"images/index_atlas_P_1.png?1691016323133", id:"index_atlas_P_1"},
+		{src:"sounds/Voice6.mp3?1691016323296", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1691016323296", id:"Voice7"},
+		{src:"sounds/Voice8.mp3?1691016323296", id:"Voice8"},
+		{src:"sounds/BGM.mp3?1691016323296", id:"BGM"},
+		{src:"sounds/Voice11.mp3?1691016323296", id:"Voice11"},
+		{src:"sounds/Voice10.mp3?1691016323296", id:"Voice10"},
+		{src:"sounds/interaccion.mp3?1691016323296", id:"interaccion"},
+		{src:"sounds/intro.mp3?1691016323296", id:"intro"},
+		{src:"sounds/Voice0.mp3?1691016323296", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1691016323296", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1691016323296", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1691016323296", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1691016323296", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1691016323296", id:"Voice5"},
+		{src:"sounds/Voicem.mp3?1691016323296", id:"Voicem"},
+		{src:"sounds/Voice9.mp3?1691016323296", id:"Voice9"}
 	],
 	preloads: []
 };
