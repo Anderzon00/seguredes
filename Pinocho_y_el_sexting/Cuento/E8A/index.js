@@ -2887,10 +2887,15 @@ if (reversed == null) { reversed = false; }
 	this.instance_3 = new lib._3();
 	this.instance_3.setTransform(-6,507,0.5,0.5);
 
+	this.adelanteEscena_1 = new lib.nextscene();
+	this.adelanteEscena_1.name = "adelanteEscena_1";
+	this.adelanteEscena_1.setTransform(251.15,607.1,1,1,0,0,0,20.2,20);
+	new cjs.ButtonHelper(this.adelanteEscena_1, 0, 1, 1);
+
 	this.instance_4 = new lib._5();
 	this.instance_4.setTransform(-1,507,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_2}]},2).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},2).wait(26));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_2}]},2).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4},{t:this.adelanteEscena_1}]},2).wait(26));
 
 	// texto 2
 	this.instance_5 = new lib._28aa();
@@ -2964,7 +2969,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(494.5,272.5,793.5,443.5);
+p.nominalBounds = new cjs.Rectangle(587.5,315.5,700.5,316.20000000000005);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -2974,19 +2979,19 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1691017305873", id:"index_atlas_P_1"},
-		{src:"sounds/BGM.mp3?1691017306109", id:"BGM"},
-		{src:"sounds/Voice9.mp3?1691017306109", id:"Voice9"},
-		{src:"sounds/Voice8.mp3?1691017306109", id:"Voice8"},
-		{src:"sounds/interaccion.mp3?1691017306109", id:"interaccion"},
-		{src:"sounds/intro.mp3?1691017306109", id:"intro"},
-		{src:"sounds/Voice0.mp3?1691017306109", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1691017306109", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1691017306109", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1691017306109", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1691017306109", id:"Voice4"},
-		{src:"sounds/Voice10.mp3?1691017306109", id:"Voice10"},
-		{src:"sounds/Voice7.mp3?1691017306109", id:"Voice7"}
+		{src:"images/index_atlas_P_1.png?1692051125490", id:"index_atlas_P_1"},
+		{src:"sounds/BGM.mp3?1692051125705", id:"BGM"},
+		{src:"sounds/Voice9.mp3?1692051125705", id:"Voice9"},
+		{src:"sounds/Voice8.mp3?1692051125705", id:"Voice8"},
+		{src:"sounds/interaccion.mp3?1692051125705", id:"interaccion"},
+		{src:"sounds/intro.mp3?1692051125705", id:"intro"},
+		{src:"sounds/Voice0.mp3?1692051125705", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1692051125705", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1692051125705", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1692051125705", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1692051125705", id:"Voice4"},
+		{src:"sounds/Voice10.mp3?1692051125705", id:"Voice10"},
+		{src:"sounds/Voice7.mp3?1692051125705", id:"Voice7"}
 	],
 	preloads: []
 };

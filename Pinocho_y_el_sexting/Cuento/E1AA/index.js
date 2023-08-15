@@ -2450,10 +2450,6 @@ if (reversed == null) { reversed = false; }
 				}
 				
 				
-				 
-				
-		
-		
 		
 			});
 			
@@ -2462,15 +2458,10 @@ if (reversed == null) { reversed = false; }
 		};
 		
 		
-		
-			
-			
 			
 		root.on("click", function (e) {
 		
 		
-		
-		 
 				
 				if (e.target.name === "prev")
 		
@@ -2489,21 +2480,7 @@ if (reversed == null) { reversed = false; }
 			else if (e.target.name == "adelanteEscena")
 		
 				window.open('../E2AA', '_self');
-		
-				
-		
-		
-		
 			});
-			
-			
-			
-			
-			
-			
-			
-		
-		
 		
 		
 		if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) // chrome requires a initial user interaction to play audio
@@ -2667,10 +2644,10 @@ if (reversed == null) { reversed = false; }
 
 	// lago fondo blanco
 	this.instance_5 = new lib.Símbolo9();
-	this.instance_5.setTransform(594.05,472.2,1.0083,1,0,0,0,593,151.2);
+	this.instance_5.setTransform(594.05,472.2,1.0083,1,0,0,0,592.9,151.2);
 	this.instance_5.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1).to({regX:594,regY:219.8,scaleX:1.0042,x:595.05,y:540.8,alpha:0.5},0).wait(1).to({scaleX:1,x:595,alpha:1},0).wait(6));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1).to({regX:594,regY:219.8,scaleX:1.0042,x:595.15,y:540.8,alpha:0.5},0).wait(1).to({scaleX:1,x:595.1,alpha:1},0).wait(6));
 
 	// Capa_1
 	this.btnInteraccion = new lib.btnInteractivo();
@@ -2732,7 +2709,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(572,321.5,622,358.1);
+p.nominalBounds = new cjs.Rectangle(572,321.5,622.0999999999999,358.1);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -2742,17 +2719,17 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1690840421200", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1690840421200", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1690840421201", id:"index_atlas_P_3"},
-		{src:"sounds/Voice3.mp3?1690840421399", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1690840421406", id:"Voice4"},
-		{src:"sounds/BGM.mp3?1690840421407", id:"BGM"},
-		{src:"sounds/Voice0.mp3?1690840421407", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1690840421407", id:"Voice1"},
-		{src:"sounds/interaccion.mp3?1690840421407", id:"interaccion"},
-		{src:"sounds/Voice2.mp3?1690840421407", id:"Voice2"},
-		{src:"sounds/intro.mp3?1690840421407", id:"intro"}
+		{src:"images/index_atlas_P_1.png?1692051195818", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1692051195818", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1692051195819", id:"index_atlas_P_3"},
+		{src:"sounds/Voice3.mp3?1692051195979", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1692051195979", id:"Voice4"},
+		{src:"sounds/BGM.mp3?1692051195979", id:"BGM"},
+		{src:"sounds/Voice0.mp3?1692051195979", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1692051195979", id:"Voice1"},
+		{src:"sounds/interaccion.mp3?1692051195979", id:"interaccion"},
+		{src:"sounds/Voice2.mp3?1692051195979", id:"Voice2"},
+		{src:"sounds/intro.mp3?1692051195979", id:"intro"}
 	],
 	preloads: []
 };
