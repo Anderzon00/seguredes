@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[1577,0,286,85],[1288,0,287,85],[1288,87,382,25],[1865,0,102,102],[0,0,1286,152]]}
+		{name:"index_atlas_1", frames: [[1412,87,286,85],[1412,0,287,85],[0,0,604,397],[606,0,434,339],[1042,0,368,243],[1042,245,440,137],[606,341,382,25],[1288,384,102,102],[0,399,1286,152]]}
 ];
 
 
@@ -41,25 +41,100 @@ lib.ssMetadata = [
 
 
 
-(lib.posicion = function() {
+(lib.formainferiorder = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.SiguienteAtras = function() {
+(lib.formainferiorizq = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.titulo = function() {
+(lib.formasuperiorder = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
+
+
+(lib.formasuperiorizq = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.posicion = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.SiguienteAtras = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.titulo = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+// helper functions:
+
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
+
+
+(lib.Símbolo1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.formainferiorizq();
+	this.instance.setTransform(-597,114,0.5,0.5);
+
+	this.instance_1 = new lib.formainferiorder();
+	this.instance_1.setTransform(288,85,0.5,0.5);
+
+	this.instance_2 = new lib.formasuperiorder();
+	this.instance_2.setTransform(406,-284,0.5,0.5);
+
+	this.instance_3 = new lib.formasuperiorizq();
+	this.instance_3.setTransform(-597,-284,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.Símbolo1, new cjs.Rectangle(-597,-284,1187,567.5), null);
 
 
 (lib.btnIndece = function(mode,startPosition,loop,reversed) {
@@ -78,18 +153,18 @@ if (reversed == null) { reversed = false; }
 	this.instance.setTransform(-31,-25,0.5,0.5);
 
 	this.instance_1 = new lib.btnIndiceContenidosHover();
-	this.instance_1.setTransform(-30,-25,0.5198,0.5201);
+	this.instance_1.setTransform(-29,-25,0.5198,0.5201);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#3399FF").s().p("ArHDuIAAnbIWQAAIAAHbg");
-	this.shape.setTransform(41.25,0.8);
+	this.shape.graphics.f("#3399FF").s().p("Ap4DuIAAnbITxAAIAAHbg");
+	this.shape.setTransform(-29.95,0.8,1.166,1,0,0,0,-63.2,0);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance}]},1).to({state:[{t:this.shape}]},1).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-31,-25,149.7,49.6);
+p.nominalBounds = new cjs.Rectangle(-31,-25,150.7,49.6);
 
 
 (lib.sobre_siguiente = function(mode,startPosition,loop,reversed) {
@@ -178,6 +253,48 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
+		var root = this;
+		var key;
+		
+		var element = document.createElement('div');
+		canvas.parentNode.appendChild(element);
+		height = 9 * Math.max(window.innerHeight) / 16;
+		width = 27.85 * (Math.max(window.innerWidth) / 32);
+		topElement = 3.3 * Math.max(window.innerHeight) / 16 + 'px';
+		leftElement = 2 * Math.max(window.innerWidth) / 32 + 'px';
+		
+		element.innerHTML = '<iframe  id="video"  style="border:none "   src="iframe.html" width="' + width + '" height="' + height + '">';
+		
+		
+		 
+		
+		
+		
+		function embed(style) {
+			for (key in style)
+				element.style[key] = style[key];
+		}
+		
+		embed({
+			position: 'absolute',
+			top: topElement,
+			left: leftElement
+		});
+		
+		window.addEventListener('resize', () => {
+			topElement = 4 * Math.max(window.innerHeight) / 16 + 'px';
+			leftElement = 3.3 * Math.max(window.innerWidth) / 32 + 'px';
+			height = 9* Math.max(window.innerHeight) / 16;
+			width = 27.85 * (Math.max(window.innerWidth) / 32);
+			embed({
+				position: 'absolute',
+				top: topElement,
+				left: leftElement
+			});
+			document.getElementById('video').style.width = width + 'px';
+			document.getElementById('video').style.height = height + 'px';
+		
+		})
 		if(document.location.href.indexOf('#')>-1){
 		this.gotoAndStop(document.location.href.split('#')[1]);
 		}
@@ -188,41 +305,32 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		this.btnAtras.addEventListener("click", fl_ClickToGoToWebPage_19);
+		
 		 function fl_ClickToGoToWebPage_19() {
-			 createjs.Sound.play("generales", { volume: 0.8}).on("complete", function () {                    
+			 createjs.Sound.play("audioG", { volume: 0.8}).on("complete", function () {
+		                    
+			
 			window.open("../Si_me_ocurre/index.html#final", "_self");
+				 
 		                    }, this);
+		
+			 
+			 
 		}	 
 		
 		this.btnIndice.addEventListener("click", fl_ClickToGoToWebPage_20);
 		function fl_ClickToGoToWebPage_20() {
-			createjs.Sound.play("indice", { volume: 0.8}).on("complete", function () {                    
+			
+			createjs.Sound.play("audioC", { volume: 0.8}).on("complete", function () {
+		                    
+			
 			window.open("../", "_self");
+				 
 		                    }, this);
+		
+			
+			
 		}
-		
-		
-		var root = this;
-		var key;
-		var element = document.createElement('div');
-		 document.body.appendChild(element);
-		 element.style.position = "absolute";
-		
-		element.innerHTML = '<iframe  id="video"  style="border:none">';
-		document.getElementById("video").src= "iframe.html";
-		 
-		function embed() {	
-		element.style.left = 2 * Math.max(window.innerWidth) / 32 + 'px';
-		element.style.top =  3.3 * Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('video').style.width =27.85 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('video').style.height = 9 * Math.max(window.innerHeight) / 16+ 'px';
-		}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		})
 	}
 
 	// actions tween:
@@ -253,10 +361,17 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.btnIndice).wait(1));
 
+	// Capa_2
+	this.movieClip_9 = new lib.Símbolo1();
+	this.movieClip_9.name = "movieClip_9";
+	this.movieClip_9.setTransform(597.5,284.9);
+
+	this.timeline.addTween(cjs.Tween.get(this.movieClip_9).wait(1));
+
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(603.5,349.5,311.5,281.5);
+p.nominalBounds = new cjs.Rectangle(594,325.4,593.5,305.6);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -266,9 +381,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1684019571937", id:"index_atlas_1"},
-		{src:"sounds/generales.mp3?1684019571968", id:"generales"},
-		{src:"sounds/indice.mp3?1684019571968", id:"indice"}
+		{src:"images/index_atlas_1.png?1684019838631", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1684019838658", id:"audioG"},
+		{src:"sounds/audioC.mp3?1684019838658", id:"audioC"}
 	],
 	preloads: []
 };

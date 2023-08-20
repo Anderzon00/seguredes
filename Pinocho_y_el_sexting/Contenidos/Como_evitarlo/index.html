@@ -21,11 +21,11 @@
 	top:0;bottom:0;
   }
 </style>
-<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1677276906642"></script>
+<script src="libs/1.0.0/createjs.min.js"></script>
+<script src="index.js?1692477616495"></script>
 <script>
 // Global Scripts
-	</script>
+	var contador=0</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -34,7 +34,6 @@ function init() {
 	dom_overlay_container = document.getElementById("dom_overlay_container");
 	var comp=AdobeAn.getComposition("7C1B920775F18E4C9C20E78B1DF9DE91");
 	var lib=comp.getLibrary();
-	createjs.MotionGuidePlugin.install();
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});

@@ -22,7 +22,7 @@
   }
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1686413238428"></script>
+<script src="index.js?1692241918214"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -53,7 +53,7 @@ function handleComplete(evt,comp) {
 	}
 	var preloaderDiv = document.getElementById("_preload_div_");
 	preloaderDiv.style.display = 'none';
-	dom_overlay_container.style.display = canvas.style.display = 'block';
+	canvas.style.display = 'block';
 	exportRoot = new lib.index();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	

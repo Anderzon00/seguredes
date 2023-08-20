@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"iframe_atlas_1", frames: [[0,0,1373,455],[1484,1136,499,215],[1375,0,384,384],[1484,762,372,372],[1761,0,271,38],[1761,40,271,38],[1761,80,271,38],[0,1169,1389,291],[0,1462,1402,287],[0,841,1482,326],[0,457,1482,382],[1484,386,374,374]]}
+		{name:"iframe_atlas_1", frames: [[1743,1122,63,63],[1470,1162,60,60],[1462,1292,499,215],[1484,376,435,215],[1470,865,499,215],[1470,1082,271,38],[1743,1082,271,38],[1470,1122,271,38],[0,865,1468,425],[0,1292,1460,387],[0,442,1482,421],[0,0,1468,440],[1470,0,374,374]]}
 ];
 
 
@@ -27,86 +27,93 @@ lib.ssMetadata = [
 
 
 
-(lib.bordes = function() {
+(lib.btnSonidoContenido = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.escuelainfluences = function() {
+(lib.BtnStopSonidoContenido = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.logocyber = function() {
+(lib.Icono123TIC = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.logoicbf = function() {
+(lib.IconoAlcaldiaBogota = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacionDOWN = function() {
+(lib.IconoSextingMensajesComprometedores = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacionUP = function() {
+(lib.masinformacionDOWN = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacion = function() {
+(lib.masinformacionUP = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.textescuelainlfluen = function() {
+(lib.masinformacion = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.textunicef = function() {
+(lib.TextSextingMensajesComprometedores = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.textocyber = function() {
+(lib.Text123xTiC = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.textomismanos = function() {
+(lib.TextArtBogota = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.unicef = function() {
+(lib.TextGuiaSensibilizaciónsobreConvivencia = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.unicef = function() {
+	this.initialize(ss["iframe_atlas_1"]);
+	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -125,6 +132,29 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	prototype.frameBounds = frameBounds;
 	return prototype;
 	}
+
+
+(lib.btnStopSonido = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.BtnStopSonidoContenido();
+	this.instance.setTransform(0,0,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.5238,scaleY:0.5238,x:-1},0).wait(1).to({scaleX:0.5,scaleY:0.5,x:0},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-1,0,31.5,31.5);
 
 
 (lib.btnMasInformacion = function(mode,startPosition,loop,reversed) {
@@ -160,6 +190,29 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-4.9,-11.9,145.5,33.5);
 
 
+(lib.btn_sonido = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.btnSonidoContenido();
+	this.instance.setTransform(0,0,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.5238,scaleY:0.5238,x:-1},0).wait(1).to({scaleX:0.5,scaleY:0.5,x:0},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-1,0,33,33);
+
+
 (lib.Símbolo2 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -184,11 +237,11 @@ if (reversed == null) { reversed = false; }
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.btnCyber.on('click', function(){
+		_this.sexting.on('click', function(){
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://play.google.com/store/apps/details?id=cyber.escudo.com&hl=es-419', '_blank');
+		window.open('https://www.gob.pe/institucion/pcm/informes-publicaciones/2732742-cartilla-informativa-sobre-sexting', '_blank');
 		});
 		
 		
@@ -196,11 +249,11 @@ if (reversed == null) { reversed = false; }
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.btnMismanos.on('click', function(){
+		_this.xtic.on('click', function(){
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://www.icbf.gov.co/mis-manos-te-ensenan/como-evitar-el-ciberbullying#:~:text=En%20Mis%20Manos%20Te%20Ense%C3%B1an%20hemos%20recopilado%20algunos%20consejos%20y,en%20la%20prevenci%C3%B3n%20del%20ciberbullying%3F', '_blank');
+		window.open('https://123portic.com/sexting/Informate.html','_blank');
 		});
 		
 		
@@ -209,11 +262,11 @@ if (reversed == null) { reversed = false; }
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.btnunicef.on('click', function(){
+		_this.bogota.on('click', function(){
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://www.unicef.org/es/end-violence/ciberacoso-que-es-y-como-detenerlo', '_blank');
+		window.open('https://bogota.gov.co/mi-ciudad/educacion/sexting-delito-cibernetico-en-ascenso', '_blank');
 		});
 		
 		
@@ -221,11 +274,11 @@ if (reversed == null) { reversed = false; }
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.btnEscuela.on('click', function(){
+		_this.unicef.on('click', function(){
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://ciberconscientes.com/ciberbullying-2/', '_blank');
+		window.open('https://www.unicef.org/argentina/sites/unicef.org.argentina/files/2018-04/COM-Guia_ConvivenciaDigital_ABRIL2017.pdf', '_blank');
 		});
 	}
 
@@ -233,89 +286,66 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Capa_1
-	this.btnEscuela = new lib.btnMasInformacion();
-	this.btnEscuela.name = "btnEscuela";
-	this.btnEscuela.setTransform(567.1,988.45);
-	new cjs.ButtonHelper(this.btnEscuela, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
+	this.unicef = new lib.btnMasInformacion();
+	this.unicef.name = "unicef";
+	this.unicef.setTransform(603.85,984.8);
+	new cjs.ButtonHelper(this.unicef, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance = new lib.unicef();
-	this.instance.setTransform(794,534,0.5134,0.5134);
+	this.instance = new lib.TextGuiaSensibilizaciónsobreConvivencia();
+	this.instance.setTransform(16,793,0.5,0.5);
 
-	this.instance_1 = new lib.textunicef();
-	this.instance_1.setTransform(20,522,0.5,0.5);
+	this.instance_1 = new lib.IconoAlcaldiaBogota();
+	this.instance_1.setTransform(827,598,0.4332,0.5134);
 
-	this.instance_2 = new lib.textescuelainlfluen();
-	this.instance_2.setTransform(20,816,0.5,0.5);
+	this.instance_2 = new lib.unicef();
+	this.instance_2.setTransform(827,817,0.5,0.5);
 
-	this.instance_3 = new lib.bordes();
-	this.instance_3.setTransform(-5,791,0.543,0.5);
+	this.instance_3 = new lib.Icono123TIC();
+	this.instance_3.setTransform(810,345,0.4439,0.5161);
 
-	this.instance_4 = new lib.escuelainfluences();
-	this.instance_4.setTransform(767,911,0.5,0.5);
+	this.bogota = new lib.btnMasInformacion();
+	this.bogota.name = "bogota";
+	this.bogota.setTransform(603.5,704.3);
+	new cjs.ButtonHelper(this.bogota, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance_5 = new lib.logoicbf();
-	this.instance_5.setTransform(794,273,0.5161,0.5161);
+	this.instance_4 = new lib.TextArtBogota();
+	this.instance_4.setTransform(9,525,0.5,0.5);
 
-	this.btnunicef = new lib.btnMasInformacion();
-	this.btnunicef.name = "btnunicef";
-	this.btnunicef.setTransform(567.1,695.9);
-	new cjs.ButtonHelper(this.btnunicef, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
+	this.xtic = new lib.btnMasInformacion();
+	this.xtic.name = "xtic";
+	this.xtic.setTransform(590.8,427.35);
+	new cjs.ButtonHelper(this.xtic, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance_6 = new lib.bordes();
-	this.instance_6.setTransform(0,498,0.543,0.5);
+	this.instance_5 = new lib.Text123xTiC();
+	this.instance_5.setTransform(9,268,0.5,0.5);
 
-	this.btnMismanos = new lib.btnMasInformacion();
-	this.btnMismanos.name = "btnMismanos";
-	this.btnMismanos.setTransform(567.1,427.35);
-	new cjs.ButtonHelper(this.btnMismanos, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
+	this.instance_6 = new lib.IconoSextingMensajesComprometedores();
+	this.instance_6.setTransform(823,141,0.3932,0.3932);
 
-	this.instance_7 = new lib.bordes();
-	this.instance_7.setTransform(-5,226,0.543,0.5);
+	this.sexting = new lib.btnMasInformacion();
+	this.sexting.name = "sexting";
+	this.sexting.setTransform(655.1,217.8);
+	new cjs.ButtonHelper(this.sexting, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance_8 = new lib.textomismanos();
-	this.instance_8.setTransform(0,249,0.5,0.5);
+	this.instance_7 = new lib.TextSextingMensajesComprometedores();
+	this.instance_7.setTransform(9,41,0.543,0.5);
 
-	this.instance_9 = new lib.logocyber();
-	this.instance_9.setTransform(794,34,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_7},{t:this.sexting},{t:this.instance_6},{t:this.instance_5},{t:this.xtic},{t:this.instance_4},{t:this.bogota},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.unicef}]}).wait(1));
 
-	this.btnCyber = new lib.btnMasInformacion();
-	this.btnCyber.name = "btnCyber";
-	this.btnCyber.setTransform(567.1,182.8);
-	new cjs.ButtonHelper(this.btnCyber, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
+	// BORRAR LUEGO
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#000000").ss(1,1,1).p("EhddhWlMC67AAAMAAACtLMi67AAAg");
+	this.shape.setTransform(566.15,546.15);
 
-	this.instance_10 = new lib.bordes();
-	this.instance_10.setTransform(0,-13,0.543,0.5);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#FFFFFF").s().p("EhddBWmMAAAitLMC67AAAMAAACtLg");
+	this.shape_1.setTransform(566.15,546.15);
 
-	this.instance_11 = new lib.textocyber();
-	this.instance_11.setTransform(0,0,0.5,0.5);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_11},{t:this.instance_10},{t:this.btnCyber},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.btnMismanos},{t:this.instance_6},{t:this.btnunicef},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.btnEscuela}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.Símbolo2, new cjs.Rectangle(-5,-13,1021.5,1031.5), null);
-
-
-(lib.Símbolo1 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// anim
-	this.instance = new lib.Símbolo2();
-	this.instance.setTransform(0.1,165.8,1,1,0,0,0,528,392.8);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Símbolo1, new cjs.Rectangle(-532.9,-240,1021.5,1031.5), null);
+}).prototype = getMCSymbolPrototype(lib.Símbolo2, new cjs.Rectangle(-33,-9,1198.3,1110.3), null);
 
 
 // stage content:
@@ -330,26 +360,156 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// imagen_1
-	this.instance = new lib.Símbolo1();
-	this.instance.setTransform(525.05,452.7,1,1,0,0,0,-13.6,196.2);
+	this.actionFrames = [0];
+	this.isSingleFrame = false;
+	// timeline functions:
+	this.frame_0 = function() {
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
+		var _this = this;
+		createjs.Sound.stop();
+		
+		
+		this.btn_sonido1.on('click', function(){
+			createjs.Sound.stop();
+			_this.btn_sonido1.visible=false;
+			_this.btn_sonido2.visible=true;
+			_this.btn_sonido3.visible=true;
+			_this.btn_sonido4.visible=true;
+			createjs.Sound.play("audio1").on("complete", function () {                    
+			_this.btn_sonido1.visible=true; 
+		                    }, this);; 
+		});
+		
+		_this.btn_sonido2.on('click', function(){
+			createjs.Sound.stop();
+			_this.btn_sonido2.visible=false;
+			_this.btn_sonido1.visible=true;
+			_this.btn_sonido3.visible=true;
+			_this.btn_sonido4.visible=true;
+			createjs.Sound.play("audio2").on("complete", function () {                    
+			_this.btn_sonido2.visible=true; 
+		                    }, this);; 
+		});
+		
+		
+		_this.btn_sonido3.on('click', function(){
+			createjs.Sound.stop();
+			_this.btn_sonido3.visible=false;
+			_this.btn_sonido1.visible=true;
+			_this.btn_sonido2.visible=true;
+			_this.btn_sonido4.visible=true;
+			createjs.Sound.play("audio3").on("complete", function () {                    
+			_this.btn_sonido3.visible=true; 
+		                    }, this);; 
+		});
+		
+		
+		_this.btn_sonido4.on('click', function(){
+			createjs.Sound.stop();
+			_this.btn_sonido4.visible=false;
+			_this.btn_sonido1.visible=true;
+			_this.btn_sonido2.visible=true;
+			_this.btn_sonido3.visible=true;
+			createjs.Sound.play("audio4").on("complete", function () {                    
+			_this.btn_sonido4.visible=true; 
+		                    }, this);; 
+		});
+		
+		
+		 
+		_this.btnStopSonido1.on('click', function(){
+			_this.btn_sonido1.visible=true;
+			createjs.Sound.stop();
+		});
+		
+		_this.btnStopSonido2.on('click', function(){
+			_this.btn_sonido2.visible=true;
+			createjs.Sound.stop();
+		});
+		
+		_this.btnStopSonido3.on('click', function(){
+			_this.btn_sonido3.visible=true;
+			createjs.Sound.stop();
+		});
+		
+		_this.btnStopSonido4.on('click', function(){
+			_this.btn_sonido4.visible=true;
+			createjs.Sound.stop();
+		});
+	}
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
+	// titulo
+	this.btn_sonido4 = new lib.btn_sonido();
+	this.btn_sonido4.name = "btn_sonido4";
+	this.btn_sonido4.setTransform(520.6,949.75,1,1,0,0,0,15.8,15.8);
+	new cjs.ButtonHelper(this.btn_sonido4, 0, 1, 2);
+
+	this.btnStopSonido4 = new lib.btnStopSonido();
+	this.btnStopSonido4.name = "btnStopSonido4";
+	this.btnStopSonido4.setTransform(504.8,933.95);
+	new cjs.ButtonHelper(this.btnStopSonido4, 0, 1, 2);
+
+	this.btn_sonido1 = new lib.btn_sonido();
+	this.btn_sonido1.name = "btn_sonido1";
+	this.btn_sonido1.setTransform(609.35,178.4,1,1,0,0,0,15.8,15.8);
+	new cjs.ButtonHelper(this.btn_sonido1, 0, 1, 2);
+
+	this.btnStopSonido1 = new lib.btnStopSonido();
+	this.btnStopSonido1.name = "btnStopSonido1";
+	this.btnStopSonido1.setTransform(593.55,162.6);
+	new cjs.ButtonHelper(this.btnStopSonido1, 0, 1, 2);
+
+	this.btn_sonido2 = new lib.btn_sonido();
+	this.btn_sonido2.name = "btn_sonido2";
+	this.btn_sonido2.setTransform(246.35,397.15,1,1,0,0,0,15.8,15.8);
+	new cjs.ButtonHelper(this.btn_sonido2, 0, 1, 2);
+
+	this.btnStopSonido2 = new lib.btnStopSonido();
+	this.btnStopSonido2.name = "btnStopSonido2";
+	this.btnStopSonido2.setTransform(230.55,381.35);
+	new cjs.ButtonHelper(this.btnStopSonido2, 0, 1, 2);
+
+	this.btn_sonido3 = new lib.btn_sonido();
+	this.btn_sonido3.name = "btn_sonido3";
+	this.btn_sonido3.setTransform(591,698.15,1,1,0,0,0,15.8,15.8);
+	new cjs.ButtonHelper(this.btn_sonido3, 0, 1, 2);
+
+	this.btnStopSonido3 = new lib.btnStopSonido();
+	this.btnStopSonido3.name = "btnStopSonido3";
+	this.btnStopSonido3.setTransform(575.2,682.35);
+	new cjs.ButtonHelper(this.btnStopSonido3, 0, 1, 2);
+
+	this.instance = new lib.Símbolo2();
+	this.instance.setTransform(546.1,378.65,1,1,0,0,0,528,392.6);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.btnStopSonido3},{t:this.btn_sonido3},{t:this.btnStopSonido2},{t:this.btn_sonido2},{t:this.btnStopSonido1},{t:this.btn_sonido1},{t:this.btnStopSonido4},{t:this.btn_sonido4}]}).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(521.8,545.5,505.5,502.5);
+p.nominalBounds = new cjs.Rectangle(520.1,489.6,662.8000000000001,597.3000000000001);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
-	width: 1032,
-	height: 1058,
+	width: 1069,
+	height: 1024,
 	fps: 25,
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1684019560270", id:"iframe_atlas_1"}
+		{src:"images/iframe_atlas_1.png?1692484540444", id:"iframe_atlas_1"},
+		{src:"sounds/audio3.mp3?1692484540484", id:"audio3"},
+		{src:"sounds/audio1.mp3?1692484540484", id:"audio1"},
+		{src:"sounds/audio4.mp3?1692484540484", id:"audio4"},
+		{src:"sounds/audio2.mp3?1692484540484", id:"audio2"}
 	],
 	preloads: []
 };
