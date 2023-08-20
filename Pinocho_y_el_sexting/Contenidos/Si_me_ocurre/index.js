@@ -1616,12 +1616,12 @@ if (reversed == null) { reversed = false; }
 	// actions
 	this.btn_sonido3 = new lib.btn_sonido();
 	this.btn_sonido3.name = "btn_sonido3";
-	this.btn_sonido3.setTransform(523.45,485.45,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido3.setTransform(523.45,486.45,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido3, 0, 1, 2);
 
 	this.btnStopSonido3 = new lib.btnStopSonido();
 	this.btnStopSonido3.name = "btnStopSonido3";
-	this.btnStopSonido3.setTransform(508.15,470.15);
+	this.btnStopSonido3.setTransform(508.15,471.15);
 	new cjs.ButtonHelper(this.btnStopSonido3, 0, 1, 2);
 
 	this.btn_sonido2 = new lib.btn_sonido();
@@ -1636,32 +1636,32 @@ if (reversed == null) { reversed = false; }
 
 	this.btn_sonido1 = new lib.btn_sonido();
 	this.btn_sonido1.name = "btn_sonido1";
-	this.btn_sonido1.setTransform(480.5,206,1,1,0,0,0,15.5,16.5);
+	this.btn_sonido1.setTransform(500.65,205.5,1,1,0,0,0,15.5,16.5);
 	new cjs.ButtonHelper(this.btn_sonido1, 0, 1, 2);
 
 	this.btnStopSonido1 = new lib.btnStopSonido();
 	this.btnStopSonido1.name = "btnStopSonido1";
-	this.btnStopSonido1.setTransform(466,190.5);
+	this.btnStopSonido1.setTransform(486,190.5);
 	new cjs.ButtonHelper(this.btnStopSonido1, 0, 1, 2);
 
 	this.btn_sonido4 = new lib.btn_sonido();
 	this.btn_sonido4.name = "btn_sonido4";
-	this.btn_sonido4.setTransform(574.95,241.95,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido4.setTransform(574.95,243.95,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido4, 0, 1, 2);
 
 	this.btnStopSonido4 = new lib.btnStopSonido();
 	this.btnStopSonido4.name = "btnStopSonido4";
-	this.btnStopSonido4.setTransform(559.15,226.15);
+	this.btnStopSonido4.setTransform(559.15,228.15);
 	new cjs.ButtonHelper(this.btnStopSonido4, 0, 1, 2);
 
 	this.btn_sonido5 = new lib.btn_sonido();
 	this.btn_sonido5.name = "btn_sonido5";
-	this.btn_sonido5.setTransform(961.95,464.35,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido5.setTransform(961.95,466.35,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido5, 0, 1, 2);
 
 	this.btnStopSonido5 = new lib.btnStopSonido();
 	this.btnStopSonido5.name = "btnStopSonido5";
-	this.btnStopSonido5.setTransform(946.65,448.05);
+	this.btnStopSonido5.setTransform(946.65,450.05);
 	new cjs.ButtonHelper(this.btnStopSonido5, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnStopSonido1},{t:this.btn_sonido1},{t:this.btnStopSonido2},{t:this.btn_sonido2},{t:this.btnStopSonido3},{t:this.btn_sonido3}]}).to({state:[{t:this.btnStopSonido5},{t:this.btn_sonido5},{t:this.btnStopSonido4},{t:this.btn_sonido4}]},1).wait(1));
@@ -1740,17 +1740,6 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.btnIndice).wait(2));
 
-	// Capa_2
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("rgba(102,102,102,0.659)").ss(1,1,1).p("EhXLgmCMCuXAAAMAAABMFMiuXAAAg");
-	this.shape.setTransform(560.0382,275.5683,1.1236,1.6597);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#FFFFFF").s().p("EhXKAmDMAAAhMFMCuWAAAMAAABMFg");
-	this.shape_1.setTransform(560.0382,275.5683,1.1236,1.6597);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(2));
-
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
@@ -1764,15 +1753,15 @@ lib.properties = {
 	color: "#66FF00",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1692482049045", id:"index_atlas_1"},
-		{src:"sounds/audio1.mp3?1692482049160", id:"audio1"},
-		{src:"sounds/audio2.mp3?1692482049160", id:"audio2"},
-		{src:"sounds/audio3.mp3?1692482049160", id:"audio3"},
-		{src:"sounds/audio4.mp3?1692482049160", id:"audio4"},
-		{src:"sounds/audio5.mp3?1692482049160", id:"audio5"},
-		{src:"sounds/generales.mp3?1692482049160", id:"generales"},
-		{src:"sounds/indice.mp3?1692482049160", id:"indice"},
-		{src:"sounds/QuestionSoundEffect.mp3?1692482049160", id:"QuestionSoundEffect"}
+		{src:"images/index_atlas_1.png?1692542013027", id:"index_atlas_1"},
+		{src:"sounds/audio1.mp3?1692542013131", id:"audio1"},
+		{src:"sounds/audio2.mp3?1692542013131", id:"audio2"},
+		{src:"sounds/audio3.mp3?1692542013131", id:"audio3"},
+		{src:"sounds/audio4.mp3?1692542013131", id:"audio4"},
+		{src:"sounds/audio5.mp3?1692542013131", id:"audio5"},
+		{src:"sounds/generales.mp3?1692542013131", id:"generales"},
+		{src:"sounds/indice.mp3?1692542013131", id:"indice"},
+		{src:"sounds/QuestionSoundEffect.mp3?1692542013131", id:"QuestionSoundEffect"}
 	],
 	preloads: []
 };

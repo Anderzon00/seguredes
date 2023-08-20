@@ -3013,7 +3013,7 @@ if (reversed == null) { reversed = false; }
 	// Capa_4
 	this.btn_sonido2 = new lib.btn_sonido();
 	this.btn_sonido2.name = "btn_sonido2";
-	this.btn_sonido2.setTransform(688.35,465.9,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido2.setTransform(585.35,465.9,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido2, 0, 1, 2);
 
 	this.btnStopSonido2 = new lib.btnStopSonido();
@@ -3023,7 +3023,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btn_sonido1 = new lib.btn_sonido();
 	this.btn_sonido1.name = "btn_sonido1";
-	this.btn_sonido1.setTransform(291.4,259.5,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido1.setTransform(237.4,259.5,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido1, 0, 1, 2);
 
 	this.btnStopSonido1 = new lib.btnStopSonido();
@@ -3033,7 +3033,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btn_sonido4 = new lib.btn_sonido();
 	this.btn_sonido4.name = "btn_sonido4";
-	this.btn_sonido4.setTransform(272.6,446.8,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido4.setTransform(237.6,446.8,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido4, 0, 1, 2);
 
 	this.btnStopSonido4 = new lib.btnStopSonido();
@@ -3048,12 +3048,12 @@ if (reversed == null) { reversed = false; }
 
 	this.btnStopSonido3 = new lib.btnStopSonido();
 	this.btnStopSonido3.name = "btnStopSonido3";
-	this.btnStopSonido3.setTransform(635.45,254.05,1,1,0,0,0,14.7,15.7);
+	this.btnStopSonido3.setTransform(597.45,254.05,1,1,0,0,0,14.7,15.7);
 	new cjs.ButtonHelper(this.btnStopSonido3, 0, 1, 2);
 
 	this.btn_sonido6 = new lib.btn_sonido();
 	this.btn_sonido6.name = "btn_sonido6";
-	this.btn_sonido6.setTransform(633.55,454.9,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido6.setTransform(591.55,454.9,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido6, 0, 1, 2);
 
 	this.btnStopSonido6 = new lib.btnStopSonido();
@@ -3063,7 +3063,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btn_sonido5 = new lib.btn_sonido();
 	this.btn_sonido5.name = "btn_sonido5";
-	this.btn_sonido5.setTransform(416.55,283.25,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido5.setTransform(364.55,283.25,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido5, 0, 1, 2);
 
 	this.btnStopSonido5 = new lib.btnStopSonido();
@@ -3073,7 +3073,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btn_sonido7 = new lib.btn_sonido();
 	this.btn_sonido7.name = "btn_sonido7";
-	this.btn_sonido7.setTransform(592.75,259.3,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido7.setTransform(551.75,259.3,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido7, 0, 1, 2);
 
 	this.btnStopSonido7 = new lib.btnStopSonido();
@@ -3182,17 +3182,6 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.btnindice).wait(4));
 
-	// BORRAR LUEGO
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#000000").ss(1,1,1).p("EhdPgzIMC6fAAAMAAABmRMi6fAAAg");
-	this.shape_2.setTransform(594.8,326.45);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#FFFFFF").s().p("EhdPAzJMAAAhmRMC6fAAAMAAABmRg");
-	this.shape_3.setTransform(594.8,326.45);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2}]}).to({state:[{t:this.shape_3},{t:this.shape_2}]},3).wait(1));
-
 	// indicador de página
 	this.instance_11 = new lib.posición();
 	this.instance_11.setTransform(490,547,0.5,0.5);
@@ -3200,15 +3189,15 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(4));
 
 	// stageBackground
-	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f().s("rgba(0,0,0,0)").ss(1,1,1,3,true).p("Ehecg0QMC85AAAMAAABohMi85AAAg");
-	this.shape_4.setTransform(594.5,324.5);
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("rgba(0,0,0,0)").ss(1,1,1,3,true).p("Ehecg0QMC85AAAMAAABohMi85AAAg");
+	this.shape_2.setTransform(594.5,324.5);
 
-	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("rgba(255,255,255,0)").s().p("EhecA0RMAAAhohMC85AAAMAAABohg");
-	this.shape_5.setTransform(594.5,324.5);
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("rgba(255,255,255,0)").s().p("EhecA0RMAAAhohMC85AAAMAAABohg");
+	this.shape_3.setTransform(594.5,324.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_5},{t:this.shape_4}]}).wait(4));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2}]}).wait(4));
 
 	this._renderFirstFrame();
 
@@ -3223,18 +3212,18 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1692477616168", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1692477616369", id:"audioG"},
-		{src:"sounds/audioC.mp3?1692477616369", id:"audioC"},
-		{src:"sounds/audio1.mp3?1692477616369", id:"audio1"},
-		{src:"sounds/audio2.mp3?1692477616369", id:"audio2"},
-		{src:"sounds/audio3.mp3?1692477616369", id:"audio3"},
-		{src:"sounds/audio4.mp3?1692477616369", id:"audio4"},
-		{src:"sounds/audio5.mp3?1692477616369", id:"audio5"},
-		{src:"sounds/audio6.mp3?1692477616369", id:"audio6"},
-		{src:"sounds/audio7.mp3?1692477616369", id:"audio7"},
-		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1692477616369", id:"y2matecomFreesoundeffectKeyboardtyping"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1692477616369", id:"y2matecomsonidodemagiaefectohadas"}
+		{src:"images/index_atlas_1.png?1692542131832", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1692542132030", id:"audioG"},
+		{src:"sounds/audioC.mp3?1692542132030", id:"audioC"},
+		{src:"sounds/audio1.mp3?1692542132030", id:"audio1"},
+		{src:"sounds/audio2.mp3?1692542132030", id:"audio2"},
+		{src:"sounds/audio3.mp3?1692542132030", id:"audio3"},
+		{src:"sounds/audio4.mp3?1692542132030", id:"audio4"},
+		{src:"sounds/audio5.mp3?1692542132030", id:"audio5"},
+		{src:"sounds/audio6.mp3?1692542132030", id:"audio6"},
+		{src:"sounds/audio7.mp3?1692542132030", id:"audio7"},
+		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1692542132030", id:"y2matecomFreesoundeffectKeyboardtyping"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1692542132030", id:"y2matecomsonidodemagiaefectohadas"}
 	],
 	preloads: []
 };
