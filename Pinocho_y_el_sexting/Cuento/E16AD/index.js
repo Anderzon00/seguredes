@@ -2728,7 +2728,7 @@ if (reversed == null) { reversed = false; }
 			 
 			  else if (e.target.name == "atrasEscena")
 				
-		 	window.open('../E16AD', '_self');
+		 	window.open('../E15AD', '_self');
 			 
 			
 			
