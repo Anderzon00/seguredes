@@ -406,6 +406,26 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido5.visible=true;
 			createjs.Sound.stop();
 		});
+		
+		
+		
+		    // Function to scroll vertically
+		        function scrollPage(direction) {
+		            const scrollSpeed = 10; // Adjust scroll speed as needed
+		            window.scrollBy(0, direction * scrollSpeed);
+		        }
+		
+		        // Add event listener for keydown
+		        window.addEventListener('keydown', function(event) {
+		            switch(event.key) {
+		                case 'ArrowUp':
+		                    scrollPage(-1); // Scroll up when the 'Up' arrow key is pressed
+		                    break;
+		                case 'ArrowDown':
+		                    scrollPage(1); // Scroll down when the 'Down' arrow key is pressed
+		                    break;
+		            }
+		        });
 	}
 
 	// actions tween:
@@ -460,10 +480,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1687392861878", id:"iframe_atlas_1"},
-		{src:"sounds/audio1.mp3?1687392861912", id:"audio1"},
-		{src:"sounds/audio2.mp3?1687392861912", id:"audio2"},
-		{src:"sounds/audio3.mp3?1687392861912", id:"audio3"}
+		{src:"images/iframe_atlas_1.png?1692652494039", id:"iframe_atlas_1"},
+		{src:"sounds/audio1.mp3?1692652494076", id:"audio1"},
+		{src:"sounds/audio2.mp3?1692652494076", id:"audio2"},
+		{src:"sounds/audio3.mp3?1692652494076", id:"audio3"}
 	],
 	preloads: []
 };

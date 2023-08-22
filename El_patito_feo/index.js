@@ -1081,3 +1081,24 @@ an.handleSoundStreamOnTick = function(event) {
 
 })(createjs = createjs||{}, AdobeAn = AdobeAn||{});
 var createjs, AdobeAn;
+
+
+var scrollAmount;
+
+
+document.addEventListener('keydown', e => {
+    if (e.keyCode == 87) {
+        scrollAmount = -30
+    } 
+    else if (e.keyCode == 83) {
+        scrollAmount = 30
+    }
+});
+
+document.addEventListener('keyup', e => {
+ scrollAmount = 0;
+});
+
+setInterval (function() {
+     window.scrollBy({ top: scrollAmount});
+},10)

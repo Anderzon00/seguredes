@@ -821,6 +821,9 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,1];
 	// timeline functions:
 	this.frame_0 = function() {
+		document.getElementById('miIframe')?.remove(); 
+		
+		
 		if(document.location.href.indexOf('#')>-1){
 		this.gotoAndStop(document.location.href.split('#')[1]);
 		}
@@ -896,15 +899,20 @@ if (reversed == null) { reversed = false; }
 		
 		this.btnAadelanteC.addEventListener("click", fl_ClickToGoToWebPage_16);
 		function fl_ClickToGoToWebPage_16() {
+			
 			createjs.Sound.play("generales", { volume: 0.8}).on("complete", function () {                    
 			window.open("../Contenido_Extra", "_self");
 		                    }, this);
 		}
 		
+		document.getElementById('miIframe')?.remove(); 
+		
 		 var root = this;
 		var key;
 		
 		var element = document.createElement('div');
+		element.setAttribute('id', 'miIframe');
+		
 		canvas.parentNode.appendChild(element);
 		height = 9 * Math.max(window.innerHeight) / 16;
 		width = 27.85 * (Math.max(window.innerWidth) / 32);
@@ -926,19 +934,7 @@ if (reversed == null) { reversed = false; }
 			element.innerHTML = '<iframe  id="video"  style="border:none "   src="" width="' + width + '" height="' + height + '">';
 		
 			this.gotoAndStop(0);	 
-		                    }, this);
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+		                    }, this); 
 			
 		}
 		 
@@ -970,6 +966,16 @@ if (reversed == null) { reversed = false; }
 			document.getElementById('video').style.height = height + 'px';
 		
 		})
+		
+		
+		
+		const iframe = document.getElementById('video');
+		
+		        // Add an event listener to the iframe's load event
+		        iframe.addEventListener('load', function() {
+		            // Focus on the iframe when it has loaded
+		            iframe.contentWindow.focus();
+		        });
 	}
 
 	// actions tween:
@@ -1064,12 +1070,12 @@ lib.properties = {
 	color: "#66FF00",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1686857635721", id:"index_atlas_1"},
-		{src:"sounds/generales.mp3?1686857635817", id:"generales"},
-		{src:"sounds/indice.mp3?1686857635817", id:"indice"},
-		{src:"sounds/QuestionSoundEffect.mp3?1686857635817", id:"QuestionSoundEffect"},
-		{src:"sounds/audio4.mp3?1686857635817", id:"audio4"},
-		{src:"sounds/audio5.mp3?1686857635817", id:"audio5"}
+		{src:"images/index_atlas_1.png?1692652692154", id:"index_atlas_1"},
+		{src:"sounds/generales.mp3?1692652692242", id:"generales"},
+		{src:"sounds/indice.mp3?1692652692242", id:"indice"},
+		{src:"sounds/QuestionSoundEffect.mp3?1692652692242", id:"QuestionSoundEffect"},
+		{src:"sounds/audio4.mp3?1692652692242", id:"audio4"},
+		{src:"sounds/audio5.mp3?1692652692242", id:"audio5"}
 	],
 	preloads: []
 };

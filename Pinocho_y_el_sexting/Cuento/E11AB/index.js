@@ -2452,24 +2452,55 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(1).to({regY:219.8,x:594,y:537.65,alpha:0.5},0).wait(1).to({y:537.8,alpha:1},0).wait(10));
 
+	// mascara marionetas (mask)
+	var mask = new cjs.Shape();
+	mask._off = true;
+	mask.graphics.p("EA98AhDI57AAItwAAMAAAhCFINwAAIZ7AAIBRAAMAAABCFgEAzdgZ0QgeADgXAVQgYAVgGAeQgGAcAOA0QAJAiAIAUQALAcARATQAGAIAMAKIATAQIAUAUQAMAMAKAGIAfARQATAKAJALQAHAIAGAPIAMAYQASAcAhAMQAjAMAfgMQAfgLATgfQARgfgEghQgEgggggsQgegpgfgYQgIgGgigVQgagQgNgOQgLgLgGgMQgGgMgGgXQgFgZgFgKQgMgbgbgQQgXgOgZAAIgJABgEAl+gYoIA5AMQAxALAZgFQAdgGAUgWQAVgWADgcQAdgEATgKQAbgPAVggQALgRAHgFQAHgFAKgCIATgCQAngGAegXQAKgHAWgWQAUgTANgJQAKgFAcgOQAXgLANgKQASgPAOgZQAIgQANgfQAOglADgUQAEgigNgXQgKgRgQgFIgMgCIgLgBIgbABIgugBIgFAAQgMABgGACQgOAFgJAQQgFAJgIAXQgGAQgIAGQgEADgRAGQgPAGgRAQIgcAdQgRASgPAGQgIADgMACIgUADQgdAGgbAQQgZARgTAZQgHAKgEAEQgIAHgIgBQgGgBgGgGIgJgMQgkg1g3gSQgdgJgeAEQgeAEgYAQQgYAQgOAcQgNAcAEAdIADAOQgvACgbARQgaARgMAfQgMAfAIAdQAJAeAZAUQAbAUAfABIAegCIALgBQAnAABBAPgEg/NAgvMAAAhA/MAr6AAAMAAABA/gEgw6geYQgYAPgRAgQgKAUgNAoIhJDlQgOAQgJAbQgEANgJApQgoABgjAYQglAbgNAoIgGATQgDAMgEAHIgSAbQgMAUgBAYQgBAYALAUQAJAVAUAOQAQALASAEQgEAaAFAUQAFAaAVATQATAUAaAFQAaAGAagKQAagKAPgVQAKgNAHgUIANgkQAFgRANgdIATguQAJgXATg+IALgpIAQgqIBHjeQAOAPAYAKQAOAFAfAJIBUAVQAcAIAMAIQAIAGAOAOQA0AvBjAgQApAOA5ANQA8AOAigNQAYgJARgVQAQgVADgaQACgZgLgYQgLgYgWgPQgQgLgYgGQgLgDghgGIgagGIACgGQAKgagGgaQgHgfgjgoQgWgagdgaIgZgXIgYgYIgdggQgSgWgKgLQgogngvgNQgZgHgZACQgaACgWALQgXAMgQAVQgKANgFAOQgYgHgfAAQg0AAgeAUgEg80gWrQgoAUgPAfQgJASAAAXQABAXAKAUQAMAVASANQATANAXADQAXADAVgIIAZgJQAMgDASABIAfABQAZgBAWgQQAWgPALgXQAKgXgDgbQgDgagQgVQgPgWgXgJQgSgHghgBIgOAAQhFAAgtAVg");
+	mask.setTransform(595.55,207.525);
+
+	// cuerdas
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#000000").ss(1,1,1).p("EAqyADOIBlnyIAIANEAoXABTID5lyEAv1ABMIjWljEAyAADLIlhniEgt0gEQIgYgpIACgKEgt0gEQIgWgzEguNgE8IgFgHEguOgErIACgOIgBgDIADgHEgvxAFEIBjpvEgx/ADCIDyn+EgqsAChIjinMEgodAE1IlXpF");
+	this.shape.setTransform(600.275,40.125);
+
+	var maskedShapeInstanceList = [this.shape];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(12));
+
 	// marioneta2
 	this.instance_10 = new lib.marioneta2();
 	this.instance_10.setTransform(866.2,287.2,1,1,0,0,0,52.2,120.2);
 
+	var maskedShapeInstanceList = [this.instance_10];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
 	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(12));
-
-	// Símbolo 1
-	this.aurora = new lib.Símbolo1_1();
-	this.aurora.name = "aurora";
-	this.aurora.setTransform(619.15,177);
-
-	this.timeline.addTween(cjs.Tween.get(this.aurora).wait(12));
 
 	// marioneta1
 	this.instance_11 = new lib.marioneta1();
 	this.instance_11.setTransform(406.75,200.5,1,1,0,0,0,68.8,171.5);
 
+	var maskedShapeInstanceList = [this.instance_11];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
 	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(12));
+
+	// aurora
+	this.aurora = new lib.Símbolo1_1();
+	this.aurora.name = "aurora";
+	this.aurora.setTransform(619.15,177);
+
+	this.timeline.addTween(cjs.Tween.get(this.aurora).wait(12));
 
 	// boca1.png
 	this.instance_12 = new lib.boca2();
@@ -2506,15 +2537,15 @@ if (reversed == null) { reversed = false; }
 	this.instance_17 = new lib.Fondo_1();
 	this.instance_17.setTransform(0,-8,0.5008,0.5053);
 
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQwkEIAAIHAAMkCIAAIHAwvkEIAAIH");
-	this.shape.setTransform(171.85,605.975);
-
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#FF0000").s().p("AgNAAIAAgBIABgCIAEgGIADgBQAFgBACAAIAEAAIACABIADAEIACACIAAADQABAEgDAHIgRADQgEgIgDgFg");
-	this.shape_1.setTransform(354.8,377.7);
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AQwkEIAAIHAAMkCIAAIHAwvkEIAAIH");
+	this.shape_1.setTransform(171.85,605.975);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape},{t:this.instance_17},{t:this.instance_16}]}).wait(12));
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#FF0000").s().p("AgNAAIAAgBIABgCIAEgGIADgBQAFgBACAAIAEAAIACABIADAEIACACIAAADQABAEgDAHIgRADQgEgIgDgFg");
+	this.shape_2.setTransform(354.8,377.7);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.instance_17},{t:this.instance_16}]}).wait(12));
 
 	this._renderFirstFrame();
 
@@ -2529,20 +2560,20 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1692058057809", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1692058057809", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1692058057810", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1692058058054", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1692058058054", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1692058058054", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1692058058054", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1692058058054", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1692058058054", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1692058058054", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1692058058054", id:"Voice7"},
-		{src:"sounds/interaccion.mp3?1692058058054", id:"interaccion"},
-		{src:"sounds/intro.mp3?1692058058054", id:"intro"},
-		{src:"sounds/BGM.mp3?1692058058054", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1692143480168", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1692143480168", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1692143480170", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1692143480429", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1692143480429", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1692143480429", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1692143480429", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1692143480429", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1692143480429", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1692143480429", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1692143480429", id:"Voice7"},
+		{src:"sounds/interaccion.mp3?1692143480429", id:"interaccion"},
+		{src:"sounds/intro.mp3?1692143480429", id:"intro"},
+		{src:"sounds/BGM.mp3?1692143480429", id:"BGM"}
 	],
 	preloads: []
 };

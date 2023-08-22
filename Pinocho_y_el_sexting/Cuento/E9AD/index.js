@@ -2499,7 +2499,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_20.setTransform(0,-7,0.5008,0.5053);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwvkEIAAIHAAMkCIAAIHAQwkEIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQwkEIAAIHAAMkCIAAIHAwvkEIAAIH");
 	this.shape.setTransform(171.85,605.975);
 
 	this.shape_1 = new cjs.Shape();
@@ -2521,21 +2521,21 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1692065526467", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1692065526467", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1692065526468", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1692065526665", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1692065526665", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1692065526665", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1692065526665", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1692065526665", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1692065526665", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1692065526665", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1692065526665", id:"Voice7"},
-		{src:"sounds/Voice8.mp3?1692065526665", id:"Voice8"},
-		{src:"sounds/interaccion.mp3?1692065526665", id:"interaccion"},
-		{src:"sounds/intro.mp3?1692065526665", id:"intro"},
-		{src:"sounds/BGM.mp3?1692065526665", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1692145108147", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1692145108148", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1692145108149", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1692145108337", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1692145108337", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1692145108337", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1692145108337", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1692145108337", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1692145108337", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1692145108337", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1692145108337", id:"Voice7"},
+		{src:"sounds/Voice8.mp3?1692145108337", id:"Voice8"},
+		{src:"sounds/interaccion.mp3?1692145108337", id:"interaccion"},
+		{src:"sounds/intro.mp3?1692145108337", id:"intro"},
+		{src:"sounds/BGM.mp3?1692145108337", id:"BGM"}
 	],
 	preloads: []
 };

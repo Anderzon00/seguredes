@@ -891,25 +891,25 @@ if (reversed == null) { reversed = false; }
 	// botones
 	this.btnAyuda = new lib.btnAyuda();
 	this.btnAyuda.name = "btnAyuda";
-	this.btnAyuda.setTransform(1214.85,33.85);
+	this.btnAyuda.setTransform(1214.85,32.85);
 	new cjs.ButtonHelper(this.btnAyuda, 0, 1, 2);
 
 	this.btnActividades = new lib.btnActividades();
 	this.btnActividades.name = "btnActividades";
-	this.btnActividades.setTransform(1019.5,33.85);
+	this.btnActividades.setTransform(1019.5,32.85);
 	new cjs.ButtonHelper(this.btnActividades, 0, 1, 2);
 
 	this.btnContenidos = new lib.btnContenidos();
 	this.btnContenidos.name = "btnContenidos";
-	this.btnContenidos.setTransform(790.25,33.8,1,0.9778);
+	this.btnContenidos.setTransform(790.25,32.8,1,0.9778);
 	new cjs.ButtonHelper(this.btnContenidos, 0, 1, 2, false, new lib.btnContenidos(), 3);
 
 	this.btnVolver = new lib.btnVolver();
 	this.btnVolver.name = "btnVolver";
-	this.btnVolver.setTransform(1205.7,738.75,1,1,0,0,0,460.2,1.5);
+	this.btnVolver.setTransform(1205.7,737.75,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolver, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver},{t:this.btnContenidos,p:{scaleY:0.9778,y:33.8}},{t:this.btnActividades,p:{y:33.85}},{t:this.btnAyuda,p:{y:33.85}}]}).to({state:[{t:this.btnVolver},{t:this.btnContenidos,p:{scaleY:1,y:29.8}},{t:this.btnActividades,p:{y:29.8}},{t:this.btnAyuda,p:{y:29.8}}]},13).to({state:[{t:this.btnVolver},{t:this.btnContenidos,p:{scaleY:1,y:29.8}},{t:this.btnActividades,p:{y:29.8}},{t:this.btnAyuda,p:{y:29.8}}]},1).to({state:[{t:this.btnVolver},{t:this.btnContenidos,p:{scaleY:1,y:29.8}},{t:this.btnActividades,p:{y:29.8}},{t:this.btnAyuda,p:{y:29.8}}]},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver,p:{y:737.75}},{t:this.btnContenidos,p:{scaleY:0.9778}},{t:this.btnActividades,p:{y:32.85}},{t:this.btnAyuda,p:{y:32.85}}]}).to({state:[{t:this.btnVolver,p:{y:738.75}},{t:this.btnContenidos,p:{scaleY:1}},{t:this.btnActividades,p:{y:32.8}},{t:this.btnAyuda,p:{y:32.8}}]},13).to({state:[{t:this.btnVolver,p:{y:741.75}},{t:this.btnContenidos,p:{scaleY:1}},{t:this.btnActividades,p:{y:32.8}},{t:this.btnAyuda,p:{y:32.8}}]},1).to({state:[{t:this.btnVolver,p:{y:738.75}},{t:this.btnContenidos,p:{scaleY:1}},{t:this.btnActividades,p:{y:32.8}},{t:this.btnAyuda,p:{y:32.8}}]},1).wait(2));
 
 	// tarjeta
 	this.instance_6 = new lib.VentanaPortadaReproduccion();
@@ -959,14 +959,14 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1688754700791", id:"bannernegro1"},
-		{src:"images/fondo1111.png?1688754700791", id:"fondo1111"},
-		{src:"images/fondoMorado.png?1688754700791", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1688754700728", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1688754700729", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1688754700791", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1688754700792", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1688754700792", id:"sound1"}
+		{src:"images/bannernegro1.png?1692136894367", id:"bannernegro1"},
+		{src:"images/fondo1111.png?1692136894367", id:"fondo1111"},
+		{src:"images/fondoMorado.png?1692136894367", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1692136894309", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1692136894309", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1692136894367", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1692136894367", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1692136894367", id:"sound1"}
 	],
 	preloads: []
 };

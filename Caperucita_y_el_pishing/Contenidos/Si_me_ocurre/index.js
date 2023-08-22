@@ -328,6 +328,15 @@ if (reversed == null) { reversed = false; }
 			document.getElementById('video').style.height = height + 'px';
 		
 		})
+		
+		
+		const iframe = document.getElementById('video');
+		
+		        // Add an event listener to the iframe's load event
+		        iframe.addEventListener('load', function() {
+		            // Focus on the iframe when it has loaded
+		            iframe.contentWindow.focus();
+		        });
 	}
 
 	// actions tween:
@@ -383,9 +392,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1684019684928", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1684019684957", id:"audioG"},
-		{src:"sounds/audioC.mp3?1684019684957", id:"audioC"}
+		{src:"images/index_atlas_1.png?1692652944157", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1692652944190", id:"audioG"},
+		{src:"sounds/audioC.mp3?1692652944190", id:"audioC"}
 	],
 	preloads: []
 };

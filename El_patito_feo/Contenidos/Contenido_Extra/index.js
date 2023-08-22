@@ -251,6 +251,15 @@ if (reversed == null) { reversed = false; }
 		window.addEventListener('resize', () => {	
 		embed();
 		})
+		
+		
+		const iframe = document.getElementById('video');
+		
+		        // Add an event listener to the iframe's load event
+		        iframe.addEventListener('load', function() {
+		            // Focus on the iframe when it has loaded
+		            iframe.contentWindow.focus();
+		        });
 	}
 
 	// actions tween:
@@ -309,9 +318,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1687124538926", id:"index_atlas_1"},
-		{src:"sounds/generales.mp3?1687124538954", id:"generales"},
-		{src:"sounds/indice.mp3?1687124538954", id:"indice"}
+		{src:"images/index_atlas_1.png?1692652757229", id:"index_atlas_1"},
+		{src:"sounds/generales.mp3?1692652757258", id:"generales"},
+		{src:"sounds/indice.mp3?1692652757258", id:"indice"}
 	],
 	preloads: []
 };

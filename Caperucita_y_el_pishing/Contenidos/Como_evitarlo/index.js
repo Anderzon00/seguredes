@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[3237,0,176,176],[3237,474,131,85],[930,752,45,56],[3299,1773,286,85],[2844,1591,287,85],[3389,322,63,63],[3986,1143,60,60],[3389,387,52,71],[930,810,43,43],[697,752,231,170],[2807,1773,490,65],[818,1676,230,170],[3986,1005,72,70],[0,1780,490,65],[3317,1411,439,305],[3437,0,2,29],[3389,460,60,4],[0,1323,471,375],[3758,1411,334,377],[0,0,985,750],[1555,1773,649,78],[2206,1773,599,78],[3986,1077,64,64],[3370,474,76,76],[3317,1081,118,118],[2885,1081,430,508],[3986,823,95,95],[3986,920,103,83],[3454,719,530,690],[1925,1487,274,198],[0,938,1057,383],[2279,938,128,129],[3237,322,150,150],[473,1323,343,455],[1555,1335,257,131],[1830,938,447,547],[2451,573,1001,506],[2230,0,1005,571],[1254,1335,299,467],[1050,1676,143,149],[492,1780,255,84],[1059,938,769,395],[3237,178,212,142],[987,0,1241,567],[1925,1718,1644,53],[3415,0,20,32],[3454,0,628,717],[987,573,1462,363],[2279,1081,604,397],[818,1335,434,339],[1555,1487,368,243],[0,752,440,137],[3317,1201,117,94],[442,752,253,169],[0,891,382,25],[3986,719,102,102],[2279,1480,563,201]]}
+		{name:"index_atlas_1", frames: [[3237,344,176,176],[3939,1126,131,85],[4022,338,45,56],[2753,1567,286,85],[2753,1480,287,85],[4022,138,63,63],[4022,276,60,60],[4022,203,52,71],[3415,344,43,43],[3237,0,231,170],[2188,1763,490,65],[3237,172,230,170],[4022,0,72,70],[301,1780,490,65],[1411,1478,439,305],[3470,0,2,29],[3415,389,60,4],[3498,1241,471,375],[1852,1478,334,377],[0,0,985,750],[2188,1683,649,78],[2839,1751,599,78],[4022,72,64,64],[885,849,76,76],[3280,1081,118,118],[3066,1241,430,508],[885,752,95,95],[3971,1413,103,83],[3490,0,530,690],[301,1471,274,198],[630,938,1057,383],[3939,995,128,129],[3939,692,150,150],[630,1323,343,455],[2131,938,257,131],[3490,692,447,547],[2451,573,1037,506],[2230,0,1005,571],[0,1471,299,467],[3939,844,143,149],[1411,1323,255,84],[1689,1081,769,395],[3066,1081,212,142],[987,0,1241,567],[301,1857,1644,53],[4076,203,20,32],[0,752,628,717],[987,573,1462,363],[2460,1081,604,397],[975,1323,434,339],[3498,1618,368,243],[1689,938,440,137],[3971,1213,117,94],[630,752,253,169],[975,1664,382,25],[3971,1309,102,102],[2188,1480,563,201]]}
 ];
 
 
@@ -2966,6 +2966,9 @@ if (reversed == null) { reversed = false; }
 	this.btnStopSonido1.setTransform(535,275.2);
 	new cjs.ButtonHelper(this.btnStopSonido1, 0, 1, 2);
 
+	this.instance = new lib.candado();
+	this.instance.setTransform(233,150,0.3904,0.3904);
+
 	this.btn_sonido3 = new lib.btn_sonido();
 	this.btn_sonido3.name = "btn_sonido3";
 	this.btn_sonido3.setTransform(820.8,274.45,1,1,0,0,0,15.8,15.8);
@@ -2986,24 +2989,27 @@ if (reversed == null) { reversed = false; }
 	this.btnStopSonido4.setTransform(319.3,383.5);
 	new cjs.ButtonHelper(this.btnStopSonido4, 0, 1, 2);
 
+	this.instance_1 = new lib.candado();
+	this.instance_1.setTransform(109,357,0.3904,0.3904);
+
 	this.btn_sonido6 = new lib.btn_sonido();
 	this.btn_sonido6.name = "btn_sonido6";
-	this.btn_sonido6.setTransform(441.8,409.85,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido6.setTransform(445.85,409.85,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido6, 0, 1, 2);
 
 	this.btnStopSonido6 = new lib.btnStopSonido();
 	this.btnStopSonido6.name = "btnStopSonido6";
-	this.btnStopSonido6.setTransform(426,394.05);
+	this.btnStopSonido6.setTransform(428.7,394.05);
 	new cjs.ButtonHelper(this.btnStopSonido6, 0, 1, 2);
 
 	this.btn_sonido5 = new lib.btn_sonido();
 	this.btn_sonido5.name = "btn_sonido5";
-	this.btn_sonido5.setTransform(477.3,291.45,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido5.setTransform(480,291.45,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido5, 0, 1, 2);
 
 	this.btnStopSonido5 = new lib.btnStopSonido();
 	this.btnStopSonido5.name = "btnStopSonido5";
-	this.btnStopSonido5.setTransform(461.5,275.65);
+	this.btnStopSonido5.setTransform(464.2,275.65);
 	new cjs.ButtonHelper(this.btnStopSonido5, 0, 1, 2);
 
 	this.btn_sonido8 = new lib.btn_sonido();
@@ -3026,7 +3032,7 @@ if (reversed == null) { reversed = false; }
 	this.btnStopSonido7.setTransform(281.05,274.5);
 	new cjs.ButtonHelper(this.btnStopSonido7, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnStopSonido1},{t:this.btn_sonido1},{t:this.btnStopSonido2},{t:this.btn_sonido2}]}).to({state:[{t:this.btnStopSonido3},{t:this.btn_sonido3}]},1).to({state:[{t:this.btnStopSonido4},{t:this.btn_sonido4}]},1).to({state:[{t:this.btnStopSonido5},{t:this.btn_sonido5},{t:this.btnStopSonido6},{t:this.btn_sonido6}]},1).to({state:[{t:this.btnStopSonido7},{t:this.btn_sonido7},{t:this.btnStopSonido8},{t:this.btn_sonido8}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnStopSonido1},{t:this.btn_sonido1},{t:this.btnStopSonido2},{t:this.btn_sonido2}]}).to({state:[{t:this.btnStopSonido3},{t:this.btn_sonido3},{t:this.instance,p:{x:233,y:150}}]},1).to({state:[{t:this.btnStopSonido4},{t:this.btn_sonido4},{t:this.instance,p:{x:120,y:245}}]},1).to({state:[{t:this.btnStopSonido5},{t:this.btn_sonido5},{t:this.btnStopSonido6},{t:this.btn_sonido6},{t:this.instance_1},{t:this.instance,p:{x:108,y:208}}]},1).to({state:[{t:this.btnStopSonido7},{t:this.btn_sonido7},{t:this.btnStopSonido8},{t:this.btn_sonido8}]},1).wait(1));
 
 	// Capa_3
 	this.movieClip_9 = new lib.Símbolo1();
@@ -3036,56 +3042,56 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.movieClip_9).wait(5));
 
 	// interactivos
-	this.instance = new lib.candado_1();
-	this.instance.setTransform(636,198,0.5,0.5);
+	this.instance_2 = new lib.candado_1();
+	this.instance_2.setTransform(636,198,0.5,0.5);
 
 	this.niños1 = new lib.niños1();
 	this.niños1.name = "niños1";
 	this.niños1.setTransform(797.95,315,1,1,0,0,0,-424.2,71.5);
 
-	this.instance_1 = new lib.niiños2();
-	this.instance_1.setTransform(668,405.8,1,1,0,0,0,-195,-93);
+	this.instance_3 = new lib.niiños2();
+	this.instance_3.setTransform(668,405.8,1,1,0,0,0,-195,-93);
 
-	this.instance_2 = new lib.niños3();
-	this.instance_2.setTransform(636,367.5,0.9167,0.9167,0,0,0,549,87);
+	this.instance_4 = new lib.niños3();
+	this.instance_4.setTransform(636,367.5,0.9167,0.9167,0,0,0,549,87);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.niños1},{t:this.instance,p:{x:636,y:198}}]}).to({state:[{t:this.instance_1},{t:this.instance,p:{x:162,y:368}}]},1).to({state:[{t:this.instance_2}]},1).to({state:[]},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.niños1},{t:this.instance_2,p:{x:636,y:198}}]}).to({state:[{t:this.instance_3},{t:this.instance_2,p:{x:162,y:368}}]},1).to({state:[{t:this.instance_4}]},1).to({state:[]},1).wait(2));
 
 	// Capa_1
-	this.instance_3 = new lib.titulo();
-	this.instance_3.setTransform(442,19,0.5,0.5);
+	this.instance_5 = new lib.titulo();
+	this.instance_5.setTransform(442,19,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(5));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(5));
 
 	// texto
-	this.instance_4 = new lib.Diapositiva1text_1();
-	this.instance_4.setTransform(91,158,0.5,0.5);
+	this.instance_6 = new lib.candado();
+	this.instance_6.setTransform(99,385,0.3904,0.3904);
 
-	this.instance_5 = new lib.Dispositiva2texto();
-	this.instance_5.setTransform(229,138,0.5,0.5);
+	this.instance_7 = new lib.candado();
+	this.instance_7.setTransform(94,205,0.3904,0.3904);
 
-	this.instance_6 = new lib.diapositiva3texto();
-	this.instance_6.setTransform(114,230,0.5,0.5);
+	this.instance_8 = new lib.Diapositiva1text_1();
+	this.instance_8.setTransform(91,158,0.5,0.5);
 
-	this.instance_7 = new lib.niños4();
-	this.instance_7.setTransform(636.05,346,0.884,0.884,0,0,0,-153,-28);
+	this.instance_9 = new lib.Dispositiva2texto();
+	this.instance_9.setTransform(229,138,0.5,0.5);
 
-	this.instance_8 = new lib.Diapositiva4texto();
-	this.instance_8.setTransform(107,191,0.5,0.5);
+	this.instance_10 = new lib.diapositiva3texto();
+	this.instance_10.setTransform(114,230,0.5,0.5);
 
-	this.instance_9 = new lib.candado();
-	this.instance_9.setTransform(49,356,0.3904,0.3904);
+	this.instance_11 = new lib.niños4();
+	this.instance_11.setTransform(636.05,346,0.884,0.884,0,0,0,-153,-28);
 
-	this.instance_10 = new lib.niños5();
-	this.instance_10.setTransform(611.55,337.7,1,1,0,0,0,-7.2,-24.8);
+	this.instance_12 = new lib.Diapositiva4texto();
+	this.instance_12.setTransform(107,191,0.5,0.5);
 
-	this.instance_11 = new lib.candado();
-	this.instance_11.setTransform(49,205,0.3904,0.3904);
+	this.instance_13 = new lib.niños5();
+	this.instance_13.setTransform(611.55,337.7,1,1,0,0,0,-7.2,-24.8);
 
-	this.instance_12 = new lib.Diapositiva5texto();
-	this.instance_12.setTransform(44,177,0.5,0.5);
+	this.instance_14 = new lib.Diapositiva5texto();
+	this.instance_14.setTransform(44,177,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4}]}).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).to({state:[{t:this.instance_8},{t:this.instance_7}]},1).to({state:[{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7,p:{x:94}},{t:this.instance_6,p:{x:99,y:385}}]}).to({state:[{t:this.instance_9}]},1).to({state:[{t:this.instance_10}]},1).to({state:[{t:this.instance_12},{t:this.instance_11}]},1).to({state:[{t:this.instance_14},{t:this.instance_7,p:{x:48}},{t:this.instance_13},{t:this.instance_6,p:{x:48,y:356}}]},1).wait(1));
 
 	// btns_nav
 	this.btnAtras = new lib.btnSiguiente();
@@ -3144,10 +3150,10 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.btnindice).wait(5));
 
 	// indicador de página
-	this.instance_13 = new lib.posición();
-	this.instance_13.setTransform(490,547,0.5,0.5);
+	this.instance_15 = new lib.posición();
+	this.instance_15.setTransform(490,547,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(5));
+	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(5));
 
 	// stageBackground
 	this.shape = new cjs.Shape();
@@ -3173,19 +3179,19 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1687391544503", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1687391544670", id:"audioG"},
-		{src:"sounds/audioC.mp3?1687391544670", id:"audioC"},
-		{src:"sounds/audio1.mp3?1687391544670", id:"audio1"},
-		{src:"sounds/audio2.mp3?1687391544670", id:"audio2"},
-		{src:"sounds/audio3.mp3?1687391544670", id:"audio3"},
-		{src:"sounds/audio4.mp3?1687391544670", id:"audio4"},
-		{src:"sounds/audio5.mp3?1687391544670", id:"audio5"},
-		{src:"sounds/audio6.mp3?1687391544670", id:"audio6"},
-		{src:"sounds/audio7.mp3?1687391544670", id:"audio7"},
-		{src:"sounds/audio8.mp3?1687391544670", id:"audio8"},
-		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1687391544670", id:"y2matecomFreesoundeffectKeyboardtyping"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1687391544670", id:"y2matecomsonidodemagiaefectohadas"}
+		{src:"images/index_atlas_1.png?1692233598194", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1692233598396", id:"audioG"},
+		{src:"sounds/audioC.mp3?1692233598396", id:"audioC"},
+		{src:"sounds/audio1.mp3?1692233598396", id:"audio1"},
+		{src:"sounds/audio2.mp3?1692233598396", id:"audio2"},
+		{src:"sounds/audio3.mp3?1692233598396", id:"audio3"},
+		{src:"sounds/audio4.mp3?1692233598396", id:"audio4"},
+		{src:"sounds/audio5.mp3?1692233598396", id:"audio5"},
+		{src:"sounds/audio6.mp3?1692233598396", id:"audio6"},
+		{src:"sounds/audio7.mp3?1692233598396", id:"audio7"},
+		{src:"sounds/audio8.mp3?1692233598396", id:"audio8"},
+		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1692233598396", id:"y2matecomFreesoundeffectKeyboardtyping"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1692233598396", id:"y2matecomsonidodemagiaefectohadas"}
 	],
 	preloads: []
 };

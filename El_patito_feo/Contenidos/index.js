@@ -600,7 +600,7 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.Interpolación1("synched",0);
 	this.instance.setTransform(-47.15,103.6,0.4984,0.4983,0,0,0,-248,56.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-247.9,regY:56.7,scaleX:0.4595,scaleY:0.4595,y:103.7},27).to({regX:-248,regY:56.5,scaleX:0.4984,scaleY:0.4983,y:103.6},27).to({startPosition:0},20).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-247.9,regY:56.7,scaleX:0.4595,scaleY:0.4595,y:103.7},19).to({regX:-248,regY:56.5,scaleX:0.4984,scaleY:0.4983,y:103.6},20).to({startPosition:0},20).wait(1));
 
 	this._renderFirstFrame();
 
@@ -667,14 +667,14 @@ if (reversed == null) { reversed = false; }
 
 	// Capa_1
 	this.instance = new lib.Interpolación2("synched",0);
-	this.instance.setTransform(28.85,29.95);
+	this.instance.setTransform(28.85,25.95);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({y:22.35},27).to({y:29.95},27).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({y:23.3},9).to({y:25.95},10).to({y:23.3},10).to({y:29.95},10).to({startPosition:0},15).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,-7.6,57.8,67.6);
+p.nominalBounds = new cjs.Rectangle(0,-6.6,57.8,66.6);
 
 
 (lib.btnSiguiente = function(mode,startPosition,loop,reversed) {
@@ -896,10 +896,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1686855475191", id:"index_atlas_1"},
-		{src:"sounds/fondo.mp3?1686855475247", id:"fondo"},
-		{src:"sounds/audio.mp3?1686855475247", id:"audio"},
-		{src:"sounds/principales.mp3?1686855475247", id:"principales"}
+		{src:"images/index_atlas_1.png?1692665812008", id:"index_atlas_1"},
+		{src:"sounds/fondo.mp3?1692665812068", id:"fondo"},
+		{src:"sounds/audio.mp3?1692665812068", id:"audio"},
+		{src:"sounds/principales.mp3?1692665812068", id:"principales"}
 	],
 	preloads: []
 };

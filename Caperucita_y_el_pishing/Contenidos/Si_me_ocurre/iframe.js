@@ -709,6 +709,27 @@ if (reversed == null) { reversed = false; }
 		*/
 		window.open('https://caivirtual.policia.gov.co/', '_blank');
 		});
+		
+		
+		
+		
+		   // Function to scroll vertically
+		        function scrollPage(direction) {
+		            const scrollSpeed = 10; // Adjust scroll speed as needed
+		            window.scrollBy(0, direction * scrollSpeed);
+		        }
+		
+		        // Add event listener for keydown
+		        window.addEventListener('keydown', function(event) {
+		            switch(event.key) {
+		                case 'ArrowUp':
+		                    scrollPage(-1); // Scroll up when the 'Up' arrow key is pressed
+		                    break;
+		                case 'ArrowDown':
+		                    scrollPage(1); // Scroll down when the 'Down' arrow key is pressed
+		                    break;
+		            }
+		        });
 	}
 
 	// actions tween:
@@ -796,11 +817,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1687399897602", id:"iframe_atlas_1"},
-		{src:"sounds/audio1.mp3?1687399897683", id:"audio1"},
-		{src:"sounds/audio2.mp3?1687399897683", id:"audio2"},
-		{src:"sounds/audio3.mp3?1687399897683", id:"audio3"},
-		{src:"sounds/audio4.mp3?1687399897683", id:"audio4"}
+		{src:"images/iframe_atlas_1.png?1692652859215", id:"iframe_atlas_1"},
+		{src:"sounds/audio1.mp3?1692652859276", id:"audio1"},
+		{src:"sounds/audio2.mp3?1692652859276", id:"audio2"},
+		{src:"sounds/audio3.mp3?1692652859276", id:"audio3"},
+		{src:"sounds/audio4.mp3?1692652859276", id:"audio4"}
 	],
 	preloads: []
 };
