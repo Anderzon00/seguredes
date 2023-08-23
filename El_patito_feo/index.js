@@ -709,8 +709,7 @@ if (reversed == null) { reversed = false; }
 	this.frame_13 = function() {
 		document.getElementById('miIframe')?.remove();  
 		    
-		var root = this;
-		var key;
+		
 		var element = document.createElement('div');
 		element.setAttribute('id', 'miIframe');
 		document.body.appendChild(element);
@@ -744,8 +743,7 @@ if (reversed == null) { reversed = false; }
 	this.frame_14 = function() {
 		document.getElementById('miIframe')?.remove();  
 		  
-		var root = this;
-		var key;
+		
 		var element = document.createElement('div');
 		element.setAttribute('id', 'miIframe');
 		document.body.appendChild(element);
@@ -764,7 +762,17 @@ if (reversed == null) { reversed = false; }
 		
 		window.addEventListener('resize', () => {	
 		embed();
-		})
+		}) 
+		 
+		
+		var _this=this;
+		_this.btnContenidos.on('click', function () {
+		
+			var iframe = document.getElementById('i_iframe');
+		iframe.src = iframe.src;
+			
+				 
+		});
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -779,8 +787,7 @@ if (reversed == null) { reversed = false; }
 	this.frame_15 = function() {
 		document.getElementById('miIframe')?.remove();  
 		  
-		var root = this;
-		var key;
+		
 		var element = document.createElement('div');
 		element.setAttribute('id', 'miIframe');
 		document.body.appendChild(element);
@@ -836,7 +843,7 @@ if (reversed == null) { reversed = false; }
 		
 		function embed() {	
 		document.getElementById('miIframe').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('miIframe').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('miIframe').style.top =   0.5* Math.max(window.innerHeight) / 16 + 'px';
 		document.getElementById('i_iframe').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
 		document.getElementById('i_iframe').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
@@ -849,7 +856,7 @@ if (reversed == null) { reversed = false; }
 		 
 		
 		var _this=this;
-		_this.btnActividades.on('click', function () {
+		_this.btnAyuda.on('click', function () {
 		
 			var iframe = document.getElementById('i_iframe');
 		iframe.src = iframe.src;
@@ -968,14 +975,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1688519877705", id:"bannernegro1"},
-		{src:"images/fondo11.png?1688519877705", id:"fondo11"},
-		{src:"images/fondoMorado.png?1688519877705", id:"fondoMorado"},
-		{src:"images/Portada.png?1688519877705", id:"Portada"},
-		{src:"images/index_atlas_1.png?1688519877641", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1688519877705", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1688519877705", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1688519877705", id:"sound1"}
+		{src:"images/bannernegro1.png?1692770565787", id:"bannernegro1"},
+		{src:"images/fondo11.png?1692770565787", id:"fondo11"},
+		{src:"images/fondoMorado.png?1692770565787", id:"fondoMorado"},
+		{src:"images/Portada.png?1692770565787", id:"Portada"},
+		{src:"images/index_atlas_1.png?1692770565723", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1692770565787", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1692770565787", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1692770565787", id:"sound1"}
 	],
 	preloads: []
 };
@@ -1081,24 +1088,3 @@ an.handleSoundStreamOnTick = function(event) {
 
 })(createjs = createjs||{}, AdobeAn = AdobeAn||{});
 var createjs, AdobeAn;
-
-
-var scrollAmount;
-
-
-document.addEventListener('keydown', e => {
-    if (e.keyCode == 87) {
-        scrollAmount = -30
-    } 
-    else if (e.keyCode == 83) {
-        scrollAmount = 30
-    }
-});
-
-document.addEventListener('keyup', e => {
- scrollAmount = 0;
-});
-
-setInterval (function() {
-     window.scrollBy({ top: scrollAmount});
-},10)

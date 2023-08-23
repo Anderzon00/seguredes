@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[1690,289,206,226],[1690,778,286,85],[1690,691,287,85],[1690,517,223,172],[0,0,1688,1004],[0,1006,604,397],[606,1006,434,339],[1042,1006,368,243],[1412,1006,440,137],[1412,1145,382,25],[1898,289,102,102],[1690,0,273,287]]}
+		{name:"index_atlas_1", frames: [[1690,289,206,226],[1690,778,286,85],[1690,691,287,85],[1690,517,223,172],[0,0,1688,1004],[0,1006,382,25],[1898,289,102,102],[1690,0,273,287]]}
 ];
 
 
@@ -62,100 +62,25 @@ lib.ssMetadata = [
 
 
 
-(lib.formainferiorder = function() {
+(lib.posición = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.formainferiorizq = function() {
+(lib.SiguienteAtras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.formasuperiorder = function() {
+(lib.video = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
-
-
-(lib.formasuperiorizq = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(8);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.posición = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(9);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.SiguienteAtras = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(10);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.video = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(11);
-}).prototype = p = new cjs.Sprite();
-// helper functions:
-
-function mc_symbol_clone() {
-	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
-	clone.gotoAndStop(this.currentFrame);
-	clone.paused = this.paused;
-	clone.framerate = this.framerate;
-	return clone;
-}
-
-function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
-	var prototype = cjs.extend(symbol, cjs.MovieClip);
-	prototype.clone = mc_symbol_clone;
-	prototype.nominalBounds = nominalBounds;
-	prototype.frameBounds = frameBounds;
-	return prototype;
-	}
-
-
-(lib.Símbolo1 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Capa_1
-	this.instance = new lib.formainferiorizq();
-	this.instance.setTransform(-599,114,0.5,0.5);
-
-	this.instance_1 = new lib.formainferiorder();
-	this.instance_1.setTransform(288,85,0.5,0.5);
-
-	this.instance_2 = new lib.formasuperiorder();
-	this.instance_2.setTransform(406,-284,0.5,0.5);
-
-	this.instance_3 = new lib.formasuperiorizq();
-	this.instance_3.setTransform(-600,-284,0.5,0.5);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.Símbolo1, new cjs.Rectangle(-600,-284,1190,567.5), null);
 
 
 (lib.btnIndece = function(mode,startPosition,loop,reversed) {
@@ -350,17 +275,17 @@ if (reversed == null) { reversed = false; }
 		
 			
 		});
+		 
+		
+		function carga (){
+		    window.parent.funcionVisible();
+		};
+		
+		carga();
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
-
-	// Capa_1
-	this.movieClip_9 = new lib.Símbolo1();
-	this.movieClip_9.name = "movieClip_9";
-	this.movieClip_9.setTransform(598,284.15);
-
-	this.timeline.addTween(cjs.Tween.get(this.movieClip_9).wait(1));
 
 	// navegación
 	this.btnindice = new lib.btnIndece();
@@ -400,7 +325,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_5.setTransform(71,58,0.5,0.5);
 
 	this.instance_6 = new lib.accion();
-	this.instance_6.setTransform(80,423,0.5,0.5);
+	this.instance_6.setTransform(80,414,0.5,0.5);
 
 	this.instance_7 = new lib.posición();
 	this.instance_7.setTransform(490,547,0.5,0.5);
@@ -420,9 +345,9 @@ lib.properties = {
 	color: "#0066CC",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1677681593521", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1677681593561", id:"audioG"},
-		{src:"sounds/audioC.mp3?1677681593561", id:"audioC"}
+		{src:"images/index_atlas_1.png?1692824350209", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1692824350238", id:"audioG"},
+		{src:"sounds/audioC.mp3?1692824350238", id:"audioC"}
 	],
 	preloads: []
 };
@@ -521,21 +446,6 @@ an.handleSoundStreamOnTick = function(event) {
 		var stageChild = stage.getChildAt(0);
 		if(!stageChild.paused || stageChild.ignorePause){
 			stageChild.syncStreamSounds();
-		}
-	}
-}
-an.handleFilterCache = function(event) {
-	if(!event.paused){
-		var target = event.target;
-		if(target){
-			if(target.filterCacheList){
-				for(var index = 0; index < target.filterCacheList.length ; index++){
-					var cacheInst = target.filterCacheList[index];
-					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
-						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
-					}
-				}
-			}
 		}
 	}
 }

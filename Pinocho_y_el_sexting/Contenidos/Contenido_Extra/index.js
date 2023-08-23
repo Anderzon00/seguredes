@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[1412,87,286,85],[1412,0,287,85],[0,0,604,397],[606,0,434,339],[1042,0,368,243],[1042,245,440,137],[606,341,382,25],[1288,384,102,102],[0,399,1286,152]]}
+		{name:"index_atlas_1", frames: [[1577,0,286,85],[1288,0,287,85],[1288,87,382,25],[1865,0,102,102],[0,0,1286,152]]}
 ];
 
 
@@ -41,100 +41,25 @@ lib.ssMetadata = [
 
 
 
-(lib.formainferiorder = function() {
+(lib.posicion = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.formainferiorizq = function() {
+(lib.SiguienteAtras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.formasuperiorder = function() {
+(lib.titulo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
-
-
-(lib.formasuperiorizq = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(5);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.posicion = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(6);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.SiguienteAtras = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(7);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.titulo = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(8);
-}).prototype = p = new cjs.Sprite();
-// helper functions:
-
-function mc_symbol_clone() {
-	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
-	clone.gotoAndStop(this.currentFrame);
-	clone.paused = this.paused;
-	clone.framerate = this.framerate;
-	return clone;
-}
-
-function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
-	var prototype = cjs.extend(symbol, cjs.MovieClip);
-	prototype.clone = mc_symbol_clone;
-	prototype.nominalBounds = nominalBounds;
-	prototype.frameBounds = frameBounds;
-	return prototype;
-	}
-
-
-(lib.Símbolo1 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Capa_1
-	this.instance = new lib.formainferiorizq();
-	this.instance.setTransform(-597,114,0.5,0.5);
-
-	this.instance_1 = new lib.formainferiorder();
-	this.instance_1.setTransform(288,85,0.5,0.5);
-
-	this.instance_2 = new lib.formasuperiorder();
-	this.instance_2.setTransform(406,-284,0.5,0.5);
-
-	this.instance_3 = new lib.formasuperiorizq();
-	this.instance_3.setTransform(-597,-284,0.5,0.5);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.Símbolo1, new cjs.Rectangle(-597,-284,1187,567.5), null);
 
 
 (lib.btnIndece = function(mode,startPosition,loop,reversed) {
@@ -305,6 +230,13 @@ if (reversed == null) { reversed = false; }
 		            // Focus on the iframe when it has loaded
 		            iframe.contentWindow.focus();
 		        });
+			
+		
+			function carga (){
+		    window.parent.funcionVisible();
+		};
+		
+		carga();
 		if(document.location.href.indexOf('#')>-1){
 		this.gotoAndStop(document.location.href.split('#')[1]);
 		}
@@ -371,17 +303,10 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.btnIndice).wait(1));
 
-	// Capa_2
-	this.movieClip_9 = new lib.Símbolo1();
-	this.movieClip_9.name = "movieClip_9";
-	this.movieClip_9.setTransform(597.5,284.9);
-
-	this.timeline.addTween(cjs.Tween.get(this.movieClip_9).wait(1));
-
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(594,325.4,593.5,305.6);
+p.nominalBounds = new cjs.Rectangle(603.5,349.5,311.5,281.5);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -391,9 +316,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1692653124161", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1692653124194", id:"audioG"},
-		{src:"sounds/audioC.mp3?1692653124194", id:"audioC"}
+		{src:"images/index_atlas_1.png?1692824840420", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1692824840461", id:"audioG"},
+		{src:"sounds/audioC.mp3?1692824840461", id:"audioC"}
 	],
 	preloads: []
 };

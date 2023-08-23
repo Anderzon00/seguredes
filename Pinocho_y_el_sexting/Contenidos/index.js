@@ -1003,56 +1003,46 @@ if (reversed == null) { reversed = false; }
 		}
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
+		
 		    stretchToFit();
 		}
+		 
+		
+		
 		
 		this.siguiente.addEventListener("click", fl_ClickToGoToWebPage_12);
 		function fl_ClickToGoToWebPage_12() {
 			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
-				window.open("Que_es", "_self");
-				 
+		     		window.open("Que_es", "_self");		 
 		                    }, this);
 			
 		}
 		
 		this.btnQueEs.addEventListener("click", fl_ClickToGoToWebPage_13);
 		function fl_ClickToGoToWebPage_13() {
-			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
-			window.open("Que_es", "_self");
-				 
-		                    }, this);
-			
+			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {                  
+			window.open("Que_es", "_self");		 
+		                    }, this);	
 		}
 		
 		this.btnComoOcurre.addEventListener("click", fl_ClickToGoToWebPage_14);
 		function fl_ClickToGoToWebPage_14() {
-		createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
-		window.open("Como_ocurre", "_self");
-				 
-		                    }, this);
-			
-			
+		createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {                   
+		window.open("Como_ocurre", "_self");		 
+		                    }, this);	
 		}
 		
 		this.btnComoEvitarlo.addEventListener("click", fl_ClickToGoToWebPage_15);
 		function fl_ClickToGoToWebPage_15() {
-			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
-			window.open("Como_evitarlo/index.html", "_self");
-				 
-		                    }, this);
-			
+			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {                  
+			window.open("Como_evitarlo/index.html", "_self");		 
+		                    }, this);	
 		}
 		
 		this.btnSiMeOcurre.addEventListener("click", fl_ClickToGoToWebPage_16);
 		function fl_ClickToGoToWebPage_16() {
-			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
-		window.open("Si_me_ocurre", "_self");
-				 
+			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {                    
+		window.open("Si_me_ocurre", "_self");		 
 		                    }, this);
 			
 		}
@@ -1060,13 +1050,17 @@ if (reversed == null) { reversed = false; }
 		
 		this.btnContenidoExtra.addEventListener("click", fl_ClickToGoToWebPage_17);
 		function fl_ClickToGoToWebPage_17() {
-			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
-			window.open("Contenido_Extra", "_self");
-				 
+			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {                  
+			window.open("Contenido_Extra", "_self");		 
 		                    }, this);
 		
 		}
+		
+		function carga (){
+		    window.parent.funcionInvisible();
+		};
+		
+		carga();
 	}
 
 	// actions tween:
@@ -1153,8 +1147,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1692241918081", id:"index_atlas_1"},
-		{src:"sounds/sound.mp3?1692241918160", id:"sound"}
+		{src:"images/index_atlas_1.png?1692823979590", id:"index_atlas_1"},
+		{src:"sounds/sound.mp3?1692823979652", id:"sound"}
 	],
 	preloads: []
 };
