@@ -739,9 +739,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Fondo_111.png?1692665276525", id:"Fondo_111"},
-		{src:"images/index_atlas_P_1.png?1692665276442", id:"index_atlas_P_1"},
-		{src:"sounds/sound.mp3?1692665276525", id:"sound"}
+		{src:"images/Fondo_111.png?1692929640271", id:"Fondo_111"},
+		{src:"images/index_atlas_P_1.png?1692929640184", id:"index_atlas_P_1"},
+		{src:"sounds/sound.mp3?1692929640271", id:"sound"}
 	],
 	preloads: []
 };
