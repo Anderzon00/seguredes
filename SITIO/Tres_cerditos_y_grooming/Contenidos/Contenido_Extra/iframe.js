@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"iframe_atlas_1", frames: [[1743,1122,63,63],[1470,1162,60,60],[1462,1292,499,215],[1484,376,435,215],[1470,865,499,215],[1470,1082,271,38],[1743,1082,271,38],[1470,1122,271,38],[0,865,1468,425],[0,1292,1460,387],[0,442,1482,421],[0,0,1468,440],[1470,0,374,374]]}
+		{name:"iframe_atlas_1", frames: [[0,1292,1460,387],[1846,0,63,63],[1911,0,60,60],[0,0,1468,440],[1484,376,372,372],[1484,750,499,215],[1470,967,499,215],[1470,1184,271,38],[1743,1184,271,38],[1470,1224,271,38],[0,865,1468,425],[1470,0,374,374],[0,442,1482,421]]}
 ];
 
 
@@ -27,91 +27,91 @@ lib.ssMetadata = [
 
 
 
-(lib.btnSonidoContenido = function() {
+(lib.BienestarFamiliar = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.BtnStopSonidoContenido = function() {
+(lib.btnSonidoContenido = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Icono123TIC = function() {
+(lib.BtnStopSonidoContenido = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.IconoAlcaldiaBogota = function() {
+(lib.GuiaSensibilizaciónGrooming = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.IconoSextingMensajesComprometedores = function() {
+(lib.logoicbd = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacionDOWN = function() {
+(lib.LogoGuiaSencibilización = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacionUP = function() {
+(lib.LogoSaveTheChildren = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacion = function() {
+(lib.masinformacionDOWN = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.TextSextingMensajesComprometedores = function() {
+(lib.masinformacionUP = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Text123xTiC = function() {
+(lib.masinformacion = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.TextArtBogota = function() {
+(lib.SavetheChildren = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.TextGuiaSensibilizaciónsobreConvivencia = function() {
+(lib.unicef = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.unicef = function() {
+(lib.Unicef2 = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
@@ -237,11 +237,11 @@ if (reversed == null) { reversed = false; }
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.sexting.on('click', function(){
+		_this.guia.on('click', function(){
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://www.gob.pe/institucion/pcm/informes-publicaciones/2732742-cartilla-informativa-sobre-sexting', '_blank');
+		window.open('https://cdn.www.gob.pe/uploads/document/file/2806946/Cartilla%20informativa%20sobre%20grooming.pdf', '_blank');
 		});
 		
 		
@@ -249,11 +249,11 @@ if (reversed == null) { reversed = false; }
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.xtic.on('click', function(){
+		_this.save.on('click', function(){
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://123portic.com/sexting/Informate.html','_blank');
+		window.open('https://www.savethechildren.es/actualidad/grooming-que-es-como-detectarlo-y-prevenirlo','_blank');
 		});
 		
 		
@@ -262,11 +262,11 @@ if (reversed == null) { reversed = false; }
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
 		*/
-		_this.bogota.on('click', function(){
+		_this.icbf.on('click', function(){
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://bogota.gov.co/mi-ciudad/educacion/sexting-delito-cibernetico-en-ascenso', '_blank');
+		window.open('https://www.icbf.gov.co/mis-manos-te-ensenan/el-grooming-que-es-y-en-que-consiste-esta-practica-de-acoso-digital', '_blank');
 		});
 		
 		
@@ -278,7 +278,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://www.unicef.org/argentina/sites/unicef.org.argentina/files/2018-04/COM-Guia_ConvivenciaDigital_ABRIL2017.pdf', '_blank');
+		window.open('https://www.unicef.org/chile/media/3096/file/lacro-en-linea.pdf', '_blank');
 		});
 	}
 
@@ -288,49 +288,49 @@ if (reversed == null) { reversed = false; }
 	// Capa_1
 	this.unicef = new lib.btnMasInformacion();
 	this.unicef.name = "unicef";
-	this.unicef.setTransform(603.85,984.8);
+	this.unicef.setTransform(608.85,977.8);
 	new cjs.ButtonHelper(this.unicef, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance = new lib.TextGuiaSensibilizaciónsobreConvivencia();
+	this.instance = new lib.Unicef2();
 	this.instance.setTransform(16,793,0.5,0.5);
 
-	this.instance_1 = new lib.IconoAlcaldiaBogota();
-	this.instance_1.setTransform(827,598,0.4332,0.5134);
+	this.instance_1 = new lib.logoicbd();
+	this.instance_1.setTransform(847,566,0.4332,0.4112);
 
 	this.instance_2 = new lib.unicef();
-	this.instance_2.setTransform(827,817,0.5,0.5);
+	this.instance_2.setTransform(835,817,0.5,0.5);
 
-	this.instance_3 = new lib.Icono123TIC();
-	this.instance_3.setTransform(810,345,0.4439,0.5161);
+	this.instance_3 = new lib.LogoSaveTheChildren();
+	this.instance_3.setTransform(816,345,0.4439,0.5161);
 
-	this.bogota = new lib.btnMasInformacion();
-	this.bogota.name = "bogota";
-	this.bogota.setTransform(603.5,704.3);
-	new cjs.ButtonHelper(this.bogota, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
+	this.icbf = new lib.btnMasInformacion();
+	this.icbf.name = "icbf";
+	this.icbf.setTransform(593.5,693.3);
+	new cjs.ButtonHelper(this.icbf, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance_4 = new lib.TextArtBogota();
+	this.instance_4 = new lib.BienestarFamiliar();
 	this.instance_4.setTransform(9,525,0.5,0.5);
 
-	this.xtic = new lib.btnMasInformacion();
-	this.xtic.name = "xtic";
-	this.xtic.setTransform(590.8,427.35);
-	new cjs.ButtonHelper(this.xtic, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
+	this.save = new lib.btnMasInformacion();
+	this.save.name = "save";
+	this.save.setTransform(595.8,456.35);
+	new cjs.ButtonHelper(this.save, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance_5 = new lib.Text123xTiC();
+	this.instance_5 = new lib.SavetheChildren();
 	this.instance_5.setTransform(9,268,0.5,0.5);
 
-	this.instance_6 = new lib.IconoSextingMensajesComprometedores();
-	this.instance_6.setTransform(823,141,0.3932,0.3932);
+	this.instance_6 = new lib.LogoGuiaSencibilización();
+	this.instance_6.setTransform(812,142,0.4509,0.451);
 
-	this.sexting = new lib.btnMasInformacion();
-	this.sexting.name = "sexting";
-	this.sexting.setTransform(655.1,217.8);
-	new cjs.ButtonHelper(this.sexting, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
+	this.guia = new lib.btnMasInformacion();
+	this.guia.name = "guia";
+	this.guia.setTransform(664.1,234.8);
+	new cjs.ButtonHelper(this.guia, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance_7 = new lib.TextSextingMensajesComprometedores();
+	this.instance_7 = new lib.GuiaSensibilizaciónGrooming();
 	this.instance_7.setTransform(9,41,0.543,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_7},{t:this.sexting},{t:this.instance_6},{t:this.instance_5},{t:this.xtic},{t:this.instance_4},{t:this.bogota},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.unicef}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_7},{t:this.guia},{t:this.instance_6},{t:this.instance_5},{t:this.save},{t:this.instance_4},{t:this.icbf},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.unicef}]}).wait(1));
 
 	this._renderFirstFrame();
 
@@ -457,42 +457,42 @@ if (reversed == null) { reversed = false; }
 	// titulo
 	this.btn_sonido4 = new lib.btn_sonido();
 	this.btn_sonido4.name = "btn_sonido4";
-	this.btn_sonido4.setTransform(520.6,949.75,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido4.setTransform(163.2,815.8,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido4, 0, 1, 2);
 
 	this.btnStopSonido4 = new lib.btnStopSonido();
 	this.btnStopSonido4.name = "btnStopSonido4";
-	this.btnStopSonido4.setTransform(504.8,933.95);
+	this.btnStopSonido4.setTransform(147.4,801.5);
 	new cjs.ButtonHelper(this.btnStopSonido4, 0, 1, 2);
 
 	this.btn_sonido1 = new lib.btn_sonido();
 	this.btn_sonido1.name = "btn_sonido1";
-	this.btn_sonido1.setTransform(609.35,178.4,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido1.setTransform(540.35,50.95,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido1, 0, 1, 2);
 
 	this.btnStopSonido1 = new lib.btnStopSonido();
 	this.btnStopSonido1.name = "btnStopSonido1";
-	this.btnStopSonido1.setTransform(593.55,162.6);
+	this.btnStopSonido1.setTransform(524.55,35.15);
 	new cjs.ButtonHelper(this.btnStopSonido1, 0, 1, 2);
 
 	this.btn_sonido2 = new lib.btn_sonido();
 	this.btn_sonido2.name = "btn_sonido2";
-	this.btn_sonido2.setTransform(246.35,397.15,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido2.setTransform(276.35,291.2,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido2, 0, 1, 2);
 
 	this.btnStopSonido2 = new lib.btnStopSonido();
 	this.btnStopSonido2.name = "btnStopSonido2";
-	this.btnStopSonido2.setTransform(230.55,381.35);
+	this.btnStopSonido2.setTransform(260.55,276.9);
 	new cjs.ButtonHelper(this.btnStopSonido2, 0, 1, 2);
 
 	this.btn_sonido3 = new lib.btn_sonido();
 	this.btn_sonido3.name = "btn_sonido3";
-	this.btn_sonido3.setTransform(591,698.15,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido3.setTransform(293.6,540.65,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido3, 0, 1, 2);
 
 	this.btnStopSonido3 = new lib.btnStopSonido();
 	this.btnStopSonido3.name = "btnStopSonido3";
-	this.btnStopSonido3.setTransform(575.2,682.35);
+	this.btnStopSonido3.setTransform(277.8,524.85);
 	new cjs.ButtonHelper(this.btnStopSonido3, 0, 1, 2);
 
 	this.instance = new lib.Símbolo2();
@@ -503,7 +503,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(561.6,539.1,488.1,460);
+p.nominalBounds = new cjs.Rectangle(561.6,539.1,494.1,451);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -513,11 +513,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1692653204216", id:"iframe_atlas_1"},
-		{src:"sounds/audio3.mp3?1692653204257", id:"audio3"},
-		{src:"sounds/audio1.mp3?1692653204257", id:"audio1"},
-		{src:"sounds/audio4.mp3?1692653204257", id:"audio4"},
-		{src:"sounds/audio2.mp3?1692653204257", id:"audio2"}
+		{src:"images/iframe_atlas_1.png?1693770128799", id:"iframe_atlas_1"},
+		{src:"sounds/audio3.mp3?1693770128832", id:"audio3"},
+		{src:"sounds/audio1.mp3?1693770128832", id:"audio1"},
+		{src:"sounds/audio4.mp3?1693770128832", id:"audio4"},
+		{src:"sounds/audio2.mp3?1693770128832", id:"audio2"}
 	],
 	preloads: []
 };

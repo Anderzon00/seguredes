@@ -3153,7 +3153,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(402.2,257.1,864.8,459.9);
+p.nominalBounds = new cjs.Rectangle(605.5,343.5,542.8,289.5);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -3163,18 +3163,18 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1692830720944", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1692830721155", id:"audioG"},
-		{src:"sounds/audioC.mp3?1692830721155", id:"audioC"},
-		{src:"sounds/audio1.mp3?1692830721155", id:"audio1"},
-		{src:"sounds/audio2.mp3?1692830721155", id:"audio2"},
-		{src:"sounds/audio3.mp3?1692830721155", id:"audio3"},
-		{src:"sounds/audio4.mp3?1692830721155", id:"audio4"},
-		{src:"sounds/audio5.mp3?1692830721155", id:"audio5"},
-		{src:"sounds/audio6.mp3?1692830721155", id:"audio6"},
-		{src:"sounds/audio7.mp3?1692830721155", id:"audio7"},
-		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1692830721155", id:"y2matecomFreesoundeffectKeyboardtyping"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1692830721155", id:"y2matecomsonidodemagiaefectohadas"}
+		{src:"images/index_atlas_1.png?1693713696772", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1693713696970", id:"audioG"},
+		{src:"sounds/audioC.mp3?1693713696970", id:"audioC"},
+		{src:"sounds/audio1.mp3?1693713696970", id:"audio1"},
+		{src:"sounds/audio2.mp3?1693713696970", id:"audio2"},
+		{src:"sounds/audio3.mp3?1693713696970", id:"audio3"},
+		{src:"sounds/audio4.mp3?1693713696970", id:"audio4"},
+		{src:"sounds/audio5.mp3?1693713696970", id:"audio5"},
+		{src:"sounds/audio6.mp3?1693713696970", id:"audio6"},
+		{src:"sounds/audio7.mp3?1693713696970", id:"audio7"},
+		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1693713696970", id:"y2matecomFreesoundeffectKeyboardtyping"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1693713696970", id:"y2matecomsonidodemagiaefectohadas"}
 	],
 	preloads: []
 };

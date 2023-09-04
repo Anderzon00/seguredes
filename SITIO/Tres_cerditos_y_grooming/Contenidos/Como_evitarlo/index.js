@@ -356,7 +356,7 @@ lib.ssMetadata = [
 
 
 
-(lib.Texto7 = function() {
+(lib.Texto7_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(47);
 }).prototype = p = new cjs.Sprite();
@@ -1431,7 +1431,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_2.compositeOperation = "darken";
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#999999").ss(1,1,1).p("AkIC0IAAlnAEJizIAAFn");
+	this.shape.graphics.f().s("#999999").ss(1,1,1).p("AEJizIAAFnAkIC0IAAln");
 	this.shape.setTransform(-18.45,5.05);
 
 	this.shape_1 = new cjs.Shape();
@@ -2137,16 +2137,21 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		carga();
+		if(document.location.href.indexOf('#')>-1){
+		this.gotoAndStop(document.location.href.split('#')[1]);
+		}
+		
+		
+		this.stop();
+		
+		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 		    stretchToFit();
 		}
 		
-		if(document.location.href.indexOf('#')>-1){
-		this.gotoAndStop(document.location.href.split('#')[1]);
-		}
 		
-		this.stop();
+		
 		  
 		this.btnindice.addEventListener("click", fl_ClickToGoToWebPage_13);
 		function fl_ClickToGoToWebPage_13() {	
@@ -2449,17 +2454,17 @@ if (reversed == null) { reversed = false; }
 
 	// interactivos
 	this.instance = new lib.img2();
-	this.instance.setTransform(875.6,431.5,1,1,0,0,0,-380.6,133);
+	this.instance.setTransform(875.6,421.5,1,1,0,0,0,-380.6,133);
 
 	this.img1 = new lib.img1();
 	this.img1.name = "img1";
-	this.img1.setTransform(750.9,211,1,1,0,0,0,-380.6,133);
+	this.img1.setTransform(750.9,208,1,1,0,0,0,-380.6,133);
 
 	this.instance_1 = new lib.img4();
-	this.instance_1.setTransform(875.9,419.95,0.9373,0.9373,0,0,0,-380.6,133.1);
+	this.instance_1.setTransform(875.9,404.95,0.9373,0.9373,0,0,0,-380.6,133.1);
 
 	this.instance_2 = new lib.img3();
-	this.instance_2.setTransform(833.15,237.55,0.8681,0.8681,0,0,0,-380.5,133.1);
+	this.instance_2.setTransform(833.15,215.55,0.8681,0.8681,0,0,0,-380.5,133.1);
 
 	this.instance_3 = new lib.img6();
 	this.instance_3.setTransform(750.65,412.35,1,1,0,0,0,-380.6,133);
@@ -2497,7 +2502,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_12 = new lib.Texto5();
 	this.instance_12.setTransform(96,149,0.5,0.5);
 
-	this.instance_13 = new lib.Texto7();
+	this.instance_13 = new lib.Texto7_1();
 	this.instance_13.setTransform(121,120,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7}]}).to({state:[{t:this.instance_10},{t:this.instance_9}]},1).to({state:[{t:this.instance_12},{t:this.instance_11}]},1).to({state:[{t:this.instance_13}]},1).wait(1));
@@ -2578,17 +2583,17 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1693673861978", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1693673862115", id:"audioG"},
-		{src:"sounds/audioC.mp3?1693673862115", id:"audioC"},
-		{src:"sounds/audio1.mp3?1693673862115", id:"audio1"},
-		{src:"sounds/audio2.mp3?1693673862115", id:"audio2"},
-		{src:"sounds/audio3.mp3?1693673862115", id:"audio3"},
-		{src:"sounds/audio4.mp3?1693673862115", id:"audio4"},
-		{src:"sounds/audio5.mp3?1693673862115", id:"audio5"},
-		{src:"sounds/audio6.mp3?1693673862115", id:"audio6"},
-		{src:"sounds/audio7.mp3?1693673862115", id:"audio7"},
-		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1693673862115", id:"y2matecomFreesoundeffectKeyboardtyping"}
+		{src:"images/index_atlas_1.png?1693785529175", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1693785529327", id:"audioG"},
+		{src:"sounds/audioC.mp3?1693785529327", id:"audioC"},
+		{src:"sounds/audio1.mp3?1693785529327", id:"audio1"},
+		{src:"sounds/audio2.mp3?1693785529327", id:"audio2"},
+		{src:"sounds/audio3.mp3?1693785529327", id:"audio3"},
+		{src:"sounds/audio4.mp3?1693785529327", id:"audio4"},
+		{src:"sounds/audio5.mp3?1693785529327", id:"audio5"},
+		{src:"sounds/audio6.mp3?1693785529327", id:"audio6"},
+		{src:"sounds/audio7.mp3?1693785529327", id:"audio7"},
+		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1693785529327", id:"y2matecomFreesoundeffectKeyboardtyping"}
 	],
 	preloads: []
 };
