@@ -935,7 +935,7 @@ if (reversed == null) { reversed = false; }
 
 	// Capa_2
 	this.instance_2 = new lib.imagen();
-	this.instance_2.setTransform(689.4,351.45,0.853,0.853,0,0,0,-94,154.1);
+	this.instance_2.setTransform(689.4,332.45,0.853,0.853,0,0,0,-94,154.1);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
 
@@ -958,8 +958,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1693771399876", id:"index_atlas_1"},
-		{src:"sounds/sound.mp3?1693771399932", id:"sound"}
+		{src:"images/index_atlas_1.png?1693794209786", id:"index_atlas_1"},
+		{src:"sounds/sound.mp3?1693794209841", id:"sound"}
 	],
 	preloads: []
 };

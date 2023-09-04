@@ -801,17 +801,11 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
 
-	// Capa_2
-	this.instance_3 = new lib.FrasePhishing();
-	this.instance_3.setTransform(-63,312,0.5,0.5);
+	// computador
+	this.instance_3 = new lib.computador_1();
+	this.instance_3.setTransform(205.75,110.5,1,1,0,0,0,226,189.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1));
-
-	// computador
-	this.instance_4 = new lib.computador_1();
-	this.instance_4.setTransform(205.75,110.5,1,1,0,0,0,226,189.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1));
 
 	this._renderFirstFrame();
 
@@ -957,21 +951,24 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
 	// imagen
-	this.instance_2 = new lib.imagen();
-	this.instance_2.setTransform(594.9,284.1,1,1,0,0,0,-94,154);
+	this.instance_2 = new lib.FrasePhishing();
+	this.instance_2.setTransform(547,421,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
+	this.instance_3 = new lib.imagen();
+	this.instance_3.setTransform(600.8,274.7,0.8178,0.8178,0,0,0,-94,154);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2}]}).wait(1));
 
 	// Capa_1
-	this.instance_3 = new lib.posición();
-	this.instance_3.setTransform(492,547,0.5,0.5);
+	this.instance_4 = new lib.posición();
+	this.instance_4.setTransform(492,547,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(663.7,200.6,558.2,418.29999999999995);
+p.nominalBounds = new cjs.Rectangle(663.7,264.9,450.79999999999995,354);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -981,8 +978,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1693791697628", id:"index_atlas_1"},
-		{src:"sounds/sound.mp3?1693791697690", id:"sound"}
+		{src:"images/index_atlas_1.png?1693793908407", id:"index_atlas_1"},
+		{src:"sounds/sound.mp3?1693793908465", id:"sound"}
 	],
 	preloads: []
 };

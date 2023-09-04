@@ -185,7 +185,23 @@ lib.ssMetadata = [
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
+// helper functions:
 
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
 
 
 (lib.Interpolación6 = function(mode,startPosition,loop,reversed) {
@@ -717,6 +733,46 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-20.9,0,122.9,102.1);
 
 
+(lib.Símbolo1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.mano();
+	this.instance.setTransform(354.1,151.85,0.82,0.82,0,0,0,45.1,41.5);
+
+	this.instance_1 = new lib.emote();
+	this.instance_1.setTransform(367.1,275.7,1,1,0,0,0,23.8,23.7);
+
+	this.instance_2 = new lib.signos();
+	this.instance_2.setTransform(70.7,284.95,0.82,0.82,0,0,0,77.5,92.8);
+
+	this.instance_3 = new lib.cara();
+	this.instance_3.setTransform(37.3,184.15,0.82,0.82,0,0,0,28.9,30);
+
+	this.instance_4 = new lib.niños();
+	this.instance_4.setTransform(188.85,219.65,0.41,0.41,0,0,0,329,565.2);
+
+	this.instance_5 = new lib.sol();
+	this.instance_5.setTransform(247.15,43.15,0.82,0.82,0,0,0,-47.1,103.6);
+
+	this.instance_6 = new lib.Niña();
+	this.instance_6.setTransform(0,0,0.3974,0.3974);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.Símbolo1, new cjs.Rectangle(0,0,390.9,379.6), null);
+
+
 // stage content:
 (lib.index = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
@@ -817,33 +873,15 @@ if (reversed == null) { reversed = false; }
 
 	// Capa_3
 	this.instance = new lib.FraseCiberbulllying();
-	this.instance.setTransform(573,433,0.5,0.5);
+	this.instance.setTransform(558,425,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	// imagen
-	this.instance_1 = new lib.mano();
-	this.instance_1.setTransform(972.1,196.85,0.82,0.82,0,0,0,45.1,41.5);
+	this.instance_1 = new lib.Símbolo1();
+	this.instance_1.setTransform(845.5,221.35,0.9335,0.9335,0,0,0,195.5,189.8);
 
-	this.instance_2 = new lib.emote();
-	this.instance_2.setTransform(985.1,320.7,1,1,0,0,0,23.8,23.7);
-
-	this.instance_3 = new lib.signos();
-	this.instance_3.setTransform(688.7,329.95,0.82,0.82,0,0,0,77.5,92.8);
-
-	this.instance_4 = new lib.cara();
-	this.instance_4.setTransform(655.3,229.15,0.82,0.82,0,0,0,28.9,30);
-
-	this.instance_5 = new lib.niños();
-	this.instance_5.setTransform(806.85,264.65,0.41,0.41,0,0,0,329,565.2);
-
-	this.instance_6 = new lib.sol();
-	this.instance_6.setTransform(865.15,88.15,0.82,0.82,0,0,0,-47.1,103.6);
-
-	this.instance_7 = new lib.Niña();
-	this.instance_7.setTransform(612,39,0.41,0.41);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
 	// numeracion
 	this.btnContenidoExtra = new lib.contenidoExtra();
@@ -871,16 +909,16 @@ if (reversed == null) { reversed = false; }
 	this.btnQueEs.setTransform(189.15,167.75);
 	new cjs.ButtonHelper(this.btnQueEs, 0, 1, 2, false, new lib.queES(), 3);
 
-	this.instance_8 = new lib.Tituloindicecontenidos();
-	this.instance_8.setTransform(86,39,0.5,0.5);
+	this.instance_2 = new lib.Tituloindicecontenidos();
+	this.instance_2.setTransform(86,39,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.btnQueEs},{t:this.btnComoOcurre},{t:this.btnComoEvitarlo},{t:this.btnSiMeOcurre},{t:this.btnContenidoExtra}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.btnQueEs},{t:this.btnComoOcurre},{t:this.btnComoEvitarlo},{t:this.btnSiMeOcurre},{t:this.btnContenidoExtra}]}).wait(1));
 
 	// enumeracion contenidos.png
-	this.instance_9 = new lib.BarraContenidos();
-	this.instance_9.setTransform(136,133,0.5,0.5);
+	this.instance_3 = new lib.BarraContenidos();
+	this.instance_3.setTransform(136,133,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1));
 
 	// btns_nav
 	this.siguiente = new lib.btnSiguiente();
@@ -891,10 +929,10 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.siguiente).wait(1));
 
 	// Capa_1
-	this.instance_10 = new lib.posición();
-	this.instance_10.setTransform(490,549,0.5,0.5);
+	this.instance_4 = new lib.posición();
+	this.instance_4.setTransform(490,549,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1));
 
 	this._renderFirstFrame();
 
@@ -909,10 +947,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1693791870244", id:"index_atlas_1"},
-		{src:"sounds/fondo.mp3?1693791870308", id:"fondo"},
-		{src:"sounds/audio.mp3?1693791870308", id:"audio"},
-		{src:"sounds/principales.mp3?1693791870308", id:"principales"}
+		{src:"images/index_atlas_1.png?1693794074693", id:"index_atlas_1"},
+		{src:"sounds/fondo.mp3?1693794074755", id:"fondo"},
+		{src:"sounds/audio.mp3?1693794074755", id:"audio"},
+		{src:"sounds/principales.mp3?1693794074755", id:"principales"}
 	],
 	preloads: []
 };
