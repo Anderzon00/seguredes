@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"iframe_atlas_1", frames: [[0,0,1325,651],[3876,458,63,63],[3941,458,60,60],[3603,0,456,456],[0,653,651,275],[653,653,546,216],[3603,458,271,38],[3554,498,271,38],[3554,538,271,38],[1327,486,1080,353],[2472,0,1129,489],[1327,0,1143,484],[2409,491,1143,326]]}
+		{name:"iframe_atlas_1", frames: [[0,0,1325,651],[1145,653,63,63],[1210,653,60,60],[3603,0,456,456],[2409,491,651,275],[3062,491,546,216],[2409,768,271,38],[2682,768,271,38],[3610,458,271,38],[1327,0,1143,484],[2472,0,1129,489],[1145,841,1727,121],[1327,486,1080,353],[0,653,1143,326]]}
 ];
 
 
@@ -90,30 +90,37 @@ lib.ssMetadata = [
 
 
 
-(lib.Texto5 = function() {
+(lib.phishing = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Texto6 = function() {
+(lib.Teprotejo = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Texto7 = function() {
+(lib.Texto1_1 = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Texto8_1 = function() {
+(lib.Texto5 = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(12);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Texto8_1 = function() {
+	this.initialize(ss["iframe_atlas_1"]);
+	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -157,6 +164,29 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-1,0,31.5,31.5);
 
 
+(lib.btn_sonido = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.btnSonidoContenido();
+	this.instance.setTransform(0,0,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.5238,scaleY:0.5238,x:-1},0).wait(1).to({scaleX:0.5,scaleY:0.5,x:0},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-1,0,33,33);
+
+
 (lib.btnMasInformacion = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -190,29 +220,6 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-4.9,-11.9,145.5,33.5);
 
 
-(lib.btn_sonido = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Capa_1
-	this.instance = new lib.btnSonidoContenido();
-	this.instance.setTransform(0,0,0.5,0.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.5238,scaleY:0.5238,x:-1},0).wait(1).to({scaleX:0.5,scaleY:0.5,x:0},0).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-1,0,33,33);
-
-
 (lib._2 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -226,13 +233,13 @@ if (reversed == null) { reversed = false; }
 
 	// diapositiva2-img1-fondo.png
 	this.instance = new lib.bannerweb021();
-	this.instance.setTransform(13,-651,0.1914,0.1914);
+	this.instance.setTransform(4,-338,0.1914,0.1914);
 
 	this.instance_1 = new lib.logopolicia();
 	this.instance_1.setTransform(-23,-35,0.5,0.5);
 
 	this.instance_2 = new lib.logoteprotejo();
-	this.instance_2.setTransform(-3,-356,0.5238,0.5238);
+	this.instance_2.setTransform(-3,-649,0.5238,0.5238);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
@@ -244,7 +251,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib._2, new cjs.Rectangle(-23,-651,325.5,1047), null);
+}).prototype = getMCSymbolPrototype(lib._2, new cjs.Rectangle(-23,-649,325.5,1045), null);
 
 
 // stage content:
@@ -280,7 +287,8 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido2.visible=true;
 			_this.btn_sonido3.visible=true;
 			_this.btn_sonido4.visible=true;
-			createjs.Sound.play("audio1").on("complete", function () {                    
+			_this.btn_sonido6.visible=true;
+			createjs.Sound.play("audio1a").on("complete", function () {                    
 			_this.btn_sonido1.visible=true; 
 		                    }, this);; 
 		});
@@ -291,7 +299,8 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido1.visible=true;
 			_this.btn_sonido3.visible=true;
 			_this.btn_sonido4.visible=true;
-			createjs.Sound.play("audio2").on("complete", function () {                    
+			_this.btn_sonido6.visible=true;
+			createjs.Sound.play("audio2a").on("complete", function () {                    
 			_this.btn_sonido2.visible=true; 
 		                    }, this);; 
 		});
@@ -303,7 +312,8 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido1.visible=true;
 			_this.btn_sonido2.visible=true;
 			_this.btn_sonido4.visible=true;
-			createjs.Sound.play("audio3").on("complete", function () {                    
+			_this.btn_sonido6.visible=true;
+			createjs.Sound.play("audio3a").on("complete", function () {                    
 			_this.btn_sonido3.visible=true; 
 		                    }, this);; 
 		});
@@ -315,10 +325,24 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido1.visible=true;
 			_this.btn_sonido2.visible=true;
 			_this.btn_sonido3.visible=true;
-			createjs.Sound.play("audio4").on("complete", function () {                    
+			_this.btn_sonido6.visible=true;
+			createjs.Sound.play("audio4a").on("complete", function () {                    
 			_this.btn_sonido4.visible=true; 
 		                    }, this);; 
 		});
+		
+		_this.btn_sonido6.on('click', function(){
+			createjs.Sound.stop();
+			_this.btn_sonido6.visible=false;
+			_this.btn_sonido1.visible=true;
+			_this.btn_sonido2.visible=true;
+			_this.btn_sonido3.visible=true;
+			_this.btn_sonido4.visible=true;
+			createjs.Sound.play("audio5a").on("complete", function () {                    
+			_this.btn_sonido6.visible=true; 
+		                    }, this);; 
+		});
+		
 		
 		
 		 
@@ -342,6 +366,19 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.stop();
 		});
 		
+		_this.btnStopSonido6.on('click', function(){
+			_this.btn_sonido6.visible=true;
+			createjs.Sound.stop();
+		});
+		
+		
+		
+		
+		
+		
+		 
+		
+		 
 		
 		
 		var _this = this;
@@ -408,96 +445,110 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// titulo
+	this.btn_sonido6 = new lib.btn_sonido();
+	this.btn_sonido6.name = "btn_sonido6";
+	this.btn_sonido6.setTransform(880.95,71,1,1,0,0,0,15.5,16.5);
+	new cjs.ButtonHelper(this.btn_sonido6, 0, 1, 2);
+
+	this.btnStopSonido6 = new lib.btnStopSonido();
+	this.btnStopSonido6.name = "btnStopSonido6";
+	this.btnStopSonido6.setTransform(864.45,56);
+	new cjs.ButtonHelper(this.btnStopSonido6, 0, 1, 2);
+
+	this.instance = new lib.Texto1_1();
+	this.instance.setTransform(124,27,0.5,0.5);
+
 	this.btnTeProtejo = new lib.btnMasInformacion();
 	this.btnTeProtejo.name = "btnTeProtejo";
-	this.btnTeProtejo.setTransform(555.4,513.6);
+	this.btnTeProtejo.setTransform(555.4,372.6);
 	new cjs.ButtonHelper(this.btnTeProtejo, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
 	this.btnCAI = new lib.btnMasInformacion();
 	this.btnCAI.name = "btnCAI";
-	this.btnCAI.setTransform(514.7,833.7);
+	this.btnCAI.setTransform(514.7,978.7);
 	new cjs.ButtonHelper(this.btnCAI, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
 	this.btnAdenunciar = new lib.btnMasInformacion();
 	this.btnAdenunciar.name = "btnAdenunciar";
-	this.btnAdenunciar.setTransform(514.7,1086.7);
+	this.btnAdenunciar.setTransform(514.7,1231.7);
 	new cjs.ButtonHelper(this.btnAdenunciar, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
 	this.btn_sonido4 = new lib.btn_sonido();
 	this.btn_sonido4.name = "btn_sonido4";
-	this.btn_sonido4.setTransform(285.3,988.5,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido4.setTransform(271.3,1138.5,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido4, 0, 1, 2);
 
 	this.btnStopSonido4 = new lib.btnStopSonido();
 	this.btnStopSonido4.name = "btnStopSonido4";
-	this.btnStopSonido4.setTransform(269.5,972.7);
+	this.btnStopSonido4.setTransform(255.5,1122.7);
 	new cjs.ButtonHelper(this.btnStopSonido4, 0, 1, 2);
 
 	this.btn_sonido1 = new lib.btn_sonido();
 	this.btn_sonido1.name = "btn_sonido1";
-	this.btn_sonido1.setTransform(253.8,67.4,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido1.setTransform(253.35,532.3,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido1, 0, 1, 2);
 
 	this.btnStopSonido1 = new lib.btnStopSonido();
 	this.btnStopSonido1.name = "btnStopSonido1";
-	this.btnStopSonido1.setTransform(238,51.6);
+	this.btnStopSonido1.setTransform(238,516.5);
 	new cjs.ButtonHelper(this.btnStopSonido1, 0, 1, 2);
 
 	this.btn_sonido2 = new lib.btn_sonido();
 	this.btn_sonido2.name = "btn_sonido2";
-	this.btn_sonido2.setTransform(272.85,335.45,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido2.setTransform(275.8,191.45,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido2, 0, 1, 2);
 
 	this.btnStopSonido2 = new lib.btnStopSonido();
 	this.btnStopSonido2.name = "btnStopSonido2";
-	this.btnStopSonido2.setTransform(257.05,319.65);
+	this.btnStopSonido2.setTransform(261.05,177.65);
 	new cjs.ButtonHelper(this.btnStopSonido2, 0, 1, 2);
 
 	this.btn_sonido3 = new lib.btn_sonido();
 	this.btn_sonido3.name = "btn_sonido3";
-	this.btn_sonido3.setTransform(271.35,662.5,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido3.setTransform(259.35,804.5,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido3, 0, 1, 2);
 
 	this.btnStopSonido3 = new lib.btnStopSonido();
 	this.btnStopSonido3.name = "btnStopSonido3";
-	this.btnStopSonido3.setTransform(255.55,646.7);
+	this.btnStopSonido3.setTransform(244.55,788.7);
 	new cjs.ButtonHelper(this.btnStopSonido3, 0, 1, 2);
 
-	this.instance = new lib._2();
-	this.instance.setTransform(552.75,732.9,1,1,0,0,0,-178.5,-11);
+	this.instance_1 = new lib._2();
+	this.instance_1.setTransform(572.75,877.9,1,1,0,0,0,-178.5,-11);
 
-	this.instance_1 = new lib.Texto7();
-	this.instance_1.setTransform(89,621,0.5,0.5);
+	this.instance_2 = new lib.phishing();
+	this.instance_2.setTransform(89,766,0.5,0.5);
 
-	this.instance_2 = new lib.Texto8_1();
-	this.instance_2.setTransform(89,956,0.5,0.5);
+	this.instance_3 = new lib.Texto8_1();
+	this.instance_3.setTransform(89,1101,0.5,0.5);
 
-	this.instance_3 = new lib.Texto6();
-	this.instance_3.setTransform(89,300,0.543,0.5);
+	this.instance_4 = new lib.Teprotejo();
+	this.instance_4.setTransform(89,159,0.543,0.5);
 
-	this.instance_4 = new lib.Texto5();
-	this.instance_4.setTransform(89,38,0.543,0.5);
+	this.instance_5 = new lib.Texto5();
+	this.instance_5.setTransform(89,503,0.543,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.btnStopSonido3},{t:this.btn_sonido3},{t:this.btnStopSonido2},{t:this.btn_sonido2},{t:this.btnStopSonido1},{t:this.btn_sonido1},{t:this.btnStopSonido4},{t:this.btn_sonido4},{t:this.btnAdenunciar},{t:this.btnCAI},{t:this.btnTeProtejo}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.btnStopSonido3},{t:this.btn_sonido3},{t:this.btnStopSonido2},{t:this.btn_sonido2},{t:this.btnStopSonido1},{t:this.btn_sonido1},{t:this.btnStopSonido4},{t:this.btn_sonido4},{t:this.btnAdenunciar},{t:this.btnCAI},{t:this.btnTeProtejo},{t:this.instance},{t:this.btnStopSonido6},{t:this.btn_sonido6}]}).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(619,624,414.79999999999995,515.9000000000001);
+p.nominalBounds = new cjs.Rectangle(619,695.5,434.79999999999995,589.4000000000001);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
 	width: 1060,
-	height: 1172,
+	height: 1337,
 	fps: 25,
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1693790644262", id:"iframe_atlas_1"},
-		{src:"sounds/audio1.mp3?1693790644302", id:"audio1"},
-		{src:"sounds/audio2.mp3?1693790644302", id:"audio2"},
-		{src:"sounds/audio3.mp3?1693790644302", id:"audio3"},
-		{src:"sounds/audio4.mp3?1693790644302", id:"audio4"}
+		{src:"images/iframe_atlas_1.png?1693929334108", id:"iframe_atlas_1"},
+		{src:"sounds/audio5a.mp3?1693929334149", id:"audio5a"},
+		{src:"sounds/audio1a.mp3?1693929334149", id:"audio1a"},
+		{src:"sounds/audio2a.mp3?1693929334149", id:"audio2a"},
+		{src:"sounds/audio3a.mp3?1693929334149", id:"audio3a"},
+		{src:"sounds/audio4a.mp3?1693929334149", id:"audio4a"}
 	],
 	preloads: []
 };

@@ -1952,7 +1952,7 @@ if (reversed == null) { reversed = false; }
 	// Capa_23
 	this.btnInteracccionB = new lib.btnInteractivoA();
 	this.btnInteracccionB.name = "btnInteracccionB";
-	this.btnInteracccionB.setTransform(-380.6,133,1,1,0,0,0,-21.1,7.5);
+	this.btnInteracccionB.setTransform(-337.6,108,1,1,0,0,0,-21.1,7.5);
 	new cjs.ButtonHelper(this.btnInteracccionB, 0, 1, 2, false, new lib.btnInteractivoA(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.btnInteracccionB).wait(50));
@@ -2053,7 +2053,7 @@ if (reversed == null) { reversed = false; }
 	// Capa_23
 	this.btnInteracccionA = new lib.btnInteractivoA();
 	this.btnInteracccionA.name = "btnInteracccionA";
-	this.btnInteracccionA.setTransform(-380.6,133,1,1,0,0,0,-21.1,7.5);
+	this.btnInteracccionA.setTransform(-195.6,164,1,1,0,0,0,-21.1,7.5);
 	new cjs.ButtonHelper(this.btnInteracccionA, 0, 1, 2, false, new lib.btnInteractivoA(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.btnInteracccionA).wait(50));
@@ -2109,7 +2109,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-405,-30,309.5,226.5);
+p.nominalBounds = new cjs.Rectangle(-393.8,-30,298.3,226.5);
 
 
 // stage content:
@@ -2137,6 +2137,14 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		carga();
+		var _this = this;
+		/*
+		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y detiene la película.
+		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
+		*/
+		_this.img1.gotoAndStop(0);
+		
+		_this.img2.gotoAndStop(0);
 		if(document.location.href.indexOf('#')>-1){
 		this.gotoAndStop(document.location.href.split('#')[1]);
 		}
@@ -2215,6 +2223,14 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_1 = function() {
+		var _this = this;
+		/*
+		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y detiene la película.
+		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
+		*/
+		_this.img3.gotoAndStop(0);
+		
+		_this.img4.gotoAndStop(0);
 		this.btnSiguienteA.addEventListener("click", fl_ClickToGoToAndStopAtFrame_2.bind(this));
 		function fl_ClickToGoToAndStopAtFrame_2(){	
 			createjs.Sound.play("audioG", { volume: 0.8}).on("complete", function () {                    	
@@ -2265,6 +2281,14 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_2 = function() {
+		var _this = this;
+		/*
+		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y detiene la película.
+		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
+		*/
+		_this.img5.gotoAndStop(0);
+		
+		_this.img6.gotoAndStop(0);
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -2324,6 +2348,12 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		carga();
+		var _this = this;
+		/*
+		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y detiene la película.
+		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
+		*/
+		_this.img7.gotoAndStop(0);
 		history.pushState("", document.title, window.location.pathname);
 		
 		this.stop();
@@ -2382,32 +2412,32 @@ if (reversed == null) { reversed = false; }
 	// Capa_4
 	this.btn_sonido2 = new lib.btn_sonido();
 	this.btn_sonido2.name = "btn_sonido2";
-	this.btn_sonido2.setTransform(210.45,488.1,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido2.setTransform(210.45,499.1,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido2, 0, 1, 2);
 
 	this.btnStopSonido2 = new lib.btnStopSonido();
 	this.btnStopSonido2.name = "btnStopSonido2";
-	this.btnStopSonido2.setTransform(195.65,472.3);
+	this.btnStopSonido2.setTransform(195.65,483.3);
 	new cjs.ButtonHelper(this.btnStopSonido2, 0, 1, 2);
 
 	this.btn_sonido1 = new lib.btn_sonido();
 	this.btn_sonido1.name = "btn_sonido1";
-	this.btn_sonido1.setTransform(336.15,211.5,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido1.setTransform(336.15,239.5,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido1, 0, 1, 2);
 
 	this.btnStopSonido1 = new lib.btnStopSonido();
 	this.btnStopSonido1.name = "btnStopSonido1";
-	this.btnStopSonido1.setTransform(321.35,195.7);
+	this.btnStopSonido1.setTransform(321.35,223.7);
 	new cjs.ButtonHelper(this.btnStopSonido1, 0, 1, 2);
 
 	this.btn_sonido4 = new lib.btn_sonido();
 	this.btn_sonido4.name = "btn_sonido4";
-	this.btn_sonido4.setTransform(614.1,432.05,1,1,0,0,0,15.5,15.7);
+	this.btn_sonido4.setTransform(586.1,440.05,1,1,0,0,0,15.5,15.7);
 	new cjs.ButtonHelper(this.btn_sonido4, 0, 1, 2);
 
 	this.btnStopSonido4 = new lib.btnStopSonido();
 	this.btnStopSonido4.name = "btnStopSonido4";
-	this.btnStopSonido4.setTransform(613.3,432.05,1,1,0,0,0,14.7,15.7);
+	this.btnStopSonido4.setTransform(585.3,441.05,1,1,0,0,0,14.7,15.7);
 	new cjs.ButtonHelper(this.btnStopSonido4, 0, 1, 2);
 
 	this.btn_sonido3 = new lib.btn_sonido();
@@ -2422,12 +2452,12 @@ if (reversed == null) { reversed = false; }
 
 	this.btn_sonido6 = new lib.btn_sonido();
 	this.btn_sonido6.name = "btn_sonido6";
-	this.btn_sonido6.setTransform(378.05,415.8,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido6.setTransform(378.05,471.8,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido6, 0, 1, 2);
 
 	this.btnStopSonido6 = new lib.btnStopSonido();
 	this.btnStopSonido6.name = "btnStopSonido6";
-	this.btnStopSonido6.setTransform(362.25,400);
+	this.btnStopSonido6.setTransform(362.25,456);
 	new cjs.ButtonHelper(this.btnStopSonido6, 0, 1, 2);
 
 	this.btn_sonido5 = new lib.btn_sonido();
@@ -2453,59 +2483,65 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnStopSonido1},{t:this.btn_sonido1},{t:this.btnStopSonido2},{t:this.btn_sonido2}]}).to({state:[{t:this.btnStopSonido3},{t:this.btn_sonido3},{t:this.btnStopSonido4},{t:this.btn_sonido4}]},1).to({state:[{t:this.btnStopSonido5},{t:this.btn_sonido5},{t:this.btnStopSonido6},{t:this.btn_sonido6}]},1).to({state:[{t:this.btnStopSonido7},{t:this.btn_sonido7}]},1).wait(1));
 
 	// interactivos
-	this.instance = new lib.img2();
-	this.instance.setTransform(875.6,421.5,1,1,0,0,0,-380.6,133);
+	this.img2 = new lib.img2();
+	this.img2.name = "img2";
+	this.img2.setTransform(875.6,412.5,1,1,0,0,0,-380.6,133);
 
 	this.img1 = new lib.img1();
 	this.img1.name = "img1";
-	this.img1.setTransform(750.9,208,1,1,0,0,0,-380.6,133);
+	this.img1.setTransform(750.9,214,1,1,0,0,0,-380.6,133);
 
-	this.instance_1 = new lib.img4();
-	this.instance_1.setTransform(875.9,404.95,0.9373,0.9373,0,0,0,-380.6,133.1);
+	this.img4 = new lib.img4();
+	this.img4.name = "img4";
+	this.img4.setTransform(875.9,404.95,0.9373,0.9373,0,0,0,-380.6,133.1);
 
-	this.instance_2 = new lib.img3();
-	this.instance_2.setTransform(833.15,215.55,0.8681,0.8681,0,0,0,-380.5,133.1);
+	this.img3 = new lib.img3();
+	this.img3.name = "img3";
+	this.img3.setTransform(833.15,215.55,0.8681,0.8681,0,0,0,-380.5,133.1);
 
-	this.instance_3 = new lib.img6();
-	this.instance_3.setTransform(750.65,412.35,1,1,0,0,0,-380.6,133);
+	this.img6 = new lib.img6();
+	this.img6.name = "img6";
+	this.img6.setTransform(750.65,425.35,1,1,0,0,0,-380.6,133);
 
-	this.instance_4 = new lib.img5();
-	this.instance_4.setTransform(780.65,213.4,1,1,0,0,0,-380.6,133);
+	this.img5 = new lib.img5();
+	this.img5.name = "img5";
+	this.img5.setTransform(792.65,213.4,1,1,0,0,0,-380.6,133);
 
-	this.instance_5 = new lib.img7();
-	this.instance_5.setTransform(599.4,390.4,0.8065,0.8065,0,0,0,-769.9,146.7);
+	this.img7 = new lib.img7();
+	this.img7.name = "img7";
+	this.img7.setTransform(599.4,390.4,0.8065,0.8065,0,0,0,-769.9,146.7);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.img1},{t:this.instance}]}).to({state:[{t:this.instance_2},{t:this.instance_1}]},1).to({state:[{t:this.instance_4},{t:this.instance_3}]},1).to({state:[{t:this.instance_5}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.img1},{t:this.img2}]}).to({state:[{t:this.img3},{t:this.img4}]},1).to({state:[{t:this.img5},{t:this.img6}]},1).to({state:[{t:this.img7}]},1).wait(1));
 
 	// Capa_1
-	this.instance_6 = new lib.titulo();
-	this.instance_6.setTransform(442,19,0.5,0.5);
+	this.instance = new lib.titulo();
+	this.instance.setTransform(442,19,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(4));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(4));
 
 	// texto
-	this.instance_7 = new lib.Texto2();
-	this.instance_7.setTransform(103,311,0.5,0.5);
+	this.instance_1 = new lib.Texto2();
+	this.instance_1.setTransform(103,321,0.5,0.5);
 
-	this.instance_8 = new lib.Texto1();
-	this.instance_8.setTransform(103,144,0.5,0.5);
+	this.instance_2 = new lib.Texto1();
+	this.instance_2.setTransform(103,172,0.5,0.5);
 
-	this.instance_9 = new lib.Texto4();
-	this.instance_9.setTransform(113,364,0.5,0.5);
+	this.instance_3 = new lib.Texto4();
+	this.instance_3.setTransform(92,375,0.5,0.5);
 
-	this.instance_10 = new lib.Texto3();
-	this.instance_10.setTransform(92,153,0.5,0.5);
+	this.instance_4 = new lib.Texto3();
+	this.instance_4.setTransform(92,153,0.5,0.5);
 
-	this.instance_11 = new lib.Texto6();
-	this.instance_11.setTransform(93,319,0.5,0.5);
+	this.instance_5 = new lib.Texto6();
+	this.instance_5.setTransform(93,375,0.5,0.5);
 
-	this.instance_12 = new lib.Texto5();
-	this.instance_12.setTransform(96,149,0.5,0.5);
+	this.instance_6 = new lib.Texto5();
+	this.instance_6.setTransform(96,149,0.5,0.5);
 
-	this.instance_13 = new lib.Texto7_1();
-	this.instance_13.setTransform(121,120,0.5,0.5);
+	this.instance_7 = new lib.Texto7_1();
+	this.instance_7.setTransform(121,120,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7}]}).to({state:[{t:this.instance_10},{t:this.instance_9}]},1).to({state:[{t:this.instance_12},{t:this.instance_11}]},1).to({state:[{t:this.instance_13}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1}]}).to({state:[{t:this.instance_4},{t:this.instance_3}]},1).to({state:[{t:this.instance_6},{t:this.instance_5}]},1).to({state:[{t:this.instance_7}]},1).wait(1));
 
 	// btns_nav
 	this.btnAtras = new lib.btnSiguiente();
@@ -2554,10 +2590,10 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.btnindice).wait(4));
 
 	// indicador de página
-	this.instance_14 = new lib.posición();
-	this.instance_14.setTransform(490,547,0.5,0.5);
+	this.instance_8 = new lib.posición();
+	this.instance_8.setTransform(490,547,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(4));
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(4));
 
 	// stageBackground
 	this.shape = new cjs.Shape();
@@ -2583,17 +2619,17 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1693785529175", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1693785529327", id:"audioG"},
-		{src:"sounds/audioC.mp3?1693785529327", id:"audioC"},
-		{src:"sounds/audio1.mp3?1693785529327", id:"audio1"},
-		{src:"sounds/audio2.mp3?1693785529327", id:"audio2"},
-		{src:"sounds/audio3.mp3?1693785529327", id:"audio3"},
-		{src:"sounds/audio4.mp3?1693785529327", id:"audio4"},
-		{src:"sounds/audio5.mp3?1693785529327", id:"audio5"},
-		{src:"sounds/audio6.mp3?1693785529327", id:"audio6"},
-		{src:"sounds/audio7.mp3?1693785529327", id:"audio7"},
-		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1693785529327", id:"y2matecomFreesoundeffectKeyboardtyping"}
+		{src:"images/index_atlas_1.png?1693928432627", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1693928432766", id:"audioG"},
+		{src:"sounds/audioC.mp3?1693928432766", id:"audioC"},
+		{src:"sounds/audio1.mp3?1693928432766", id:"audio1"},
+		{src:"sounds/audio2.mp3?1693928432766", id:"audio2"},
+		{src:"sounds/audio3.mp3?1693928432766", id:"audio3"},
+		{src:"sounds/audio4.mp3?1693928432766", id:"audio4"},
+		{src:"sounds/audio5.mp3?1693928432766", id:"audio5"},
+		{src:"sounds/audio6.mp3?1693928432766", id:"audio6"},
+		{src:"sounds/audio7.mp3?1693928432766", id:"audio7"},
+		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1693928432766", id:"y2matecomFreesoundeffectKeyboardtyping"}
 	],
 	preloads: []
 };

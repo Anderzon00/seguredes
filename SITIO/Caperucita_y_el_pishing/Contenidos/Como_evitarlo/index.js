@@ -954,17 +954,17 @@ if (reversed == null) { reversed = false; }
 
 	// Capa_1
 	this.instance = new lib.diapositivaincorrecto();
-	this.instance.setTransform(36.25,10.5,0.5,0.5);
+	this.instance.setTransform(44,27,0.429,0.429);
 
 	this.instance_1 = new lib.diapositiva1check();
-	this.instance_1.setTransform(-151.75,-95.5,0.5,0.5);
+	this.instance_1.setTransform(-144,-82,0.4287,0.4287);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-151.7,-95.5,303.5,191);
+p.nominalBounds = new cjs.Rectangle(-144,-82,287.1,182);
 
 
 (lib.Interpolación16 = function(mode,startPosition,loop,reversed) {
@@ -2167,7 +2167,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-742,-399,1366,768);
+p.nominalBounds = new cjs.Rectangle(-471,-221,927.5,392.5);
 
 
 (lib.niños4 = function(mode,startPosition,loop,reversed) {
@@ -2367,28 +2367,28 @@ if (reversed == null) { reversed = false; }
 
 	// Diapositiva1-circuloRojo.png
 	this.instance_2 = new lib.Interpolación1("synched",0);
-	this.instance_2.setTransform(-540.5,-13.15);
+	this.instance_2.setTransform(-540.5,-7.15);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({rotation:-120.0016,x:-540.45,y:-13.1},24).to({rotation:0,x:-540.5,y:-13.15},26).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({rotation:-120.0016,x:-540.45,y:-7.1},24).to({rotation:0,x:-540.5,y:-7.15},26).wait(1));
 
 	// Diapositiva1-circuloRojo.png
 	this.instance_3 = new lib.Interpolación2("synched",0);
-	this.instance_3.setTransform(-688.5,-120.15);
+	this.instance_3.setTransform(-688.5,-99.15);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({rotation:90},24).to({rotation:0},26).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({rotation:90},24).to({rotation:0,y:-100.15},26).wait(1));
 
 	// diapositiva-incorrecto.png
 	this.instance_4 = new lib.Interpolación19("synched",0);
-	this.instance_4.setTransform(-260.25,-102.5);
+	this.instance_4.setTransform(-259.75,-59.5,0.8534,0.8534);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).to({y:-112.4},24).to({y:-102.5},26).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).to({y:-74.5},24).to({y:-59.5},26).wait(1));
 
 	// diapositiva2-busquedaCorrecta.png
 	this.instance_5 = new lib.diapositiva2busquedaincorrecta();
-	this.instance_5.setTransform(-564,-31,0.5,0.5);
+	this.instance_5.setTransform(-564,-25,0.5,0.5);
 
 	this.instance_6 = new lib.diapositiva2busquedaCorrecta();
-	this.instance_6.setTransform(-712,-137,0.5,0.5);
+	this.instance_6.setTransform(-712,-118,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6},{t:this.instance_5}]}).wait(51));
 
@@ -2419,7 +2419,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-946,-530,1366,768);
+p.nominalBounds = new cjs.Rectangle(-721.2,-181,904.9000000000001,255);
 
 
 (lib.niños1 = function(mode,startPosition,loop,reversed) {
@@ -2467,7 +2467,7 @@ if (reversed == null) { reversed = false; }
 	// Capa_23
 	this.btnInteracccionA = new lib.btnInteractivo();
 	this.btnInteracccionA.name = "btnInteracccionA";
-	this.btnInteracccionA.setTransform(-380.6,133,1,1,0,0,0,-21.1,7.5);
+	this.btnInteracccionA.setTransform(-432.6,245.6,1.5443,1.5443,0,0,0,-21.2,7.5);
 	new cjs.ButtonHelper(this.btnInteracccionA, 0, 1, 2, false, new lib.btnInteractivo(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.btnInteracccionA).wait(50));
@@ -2756,6 +2756,15 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido2.visible=true;
 			createjs.Sound.stop();
 		});
+		
+		 
+		 
+		var _this = this;
+		/*
+		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y detiene la película.
+		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
+		*/
+		_this.niños1.gotoAndStop(0);
 	}
 	this.frame_1 = function() {
 		this.btnSiguienteA.addEventListener("click", fl_ClickToGoToAndStopAtFrame_2.bind(this));
@@ -2789,6 +2798,14 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido3.visible=true;
 			createjs.Sound.stop();
 		});
+		
+		
+		var _this = this;
+		/*
+		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y detiene la película.
+		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
+		*/
+		_this.niña.gotoAndStop(0);
 	}
 	this.frame_2 = function() {
 		var _this = this;
@@ -2822,6 +2839,12 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido4.visible=true;
 			createjs.Sound.stop();
 		});
+		var _this = this;
+		/*
+		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y detiene la película.
+		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
+		*/
+		_this.hombre.gotoAndStop(0);
 	}
 	this.frame_3 = function() {
 		var _this = this;
@@ -2876,6 +2899,14 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido6.visible = true;
 			createjs.Sound.stop();
 		});
+		
+		
+		var _this = this;
+		/*
+		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y detiene la película.
+		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
+		*/
+		_this.carta.gotoAndStop(0);
 	}
 	this.frame_4 = function() {
 		history.pushState("", document.title, window.location.pathname);
@@ -2940,6 +2971,15 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido8.visible = true;
 			createjs.Sound.stop();
 		});
+		
+		
+		
+		var _this = this;
+		/*
+		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y detiene la película.
+		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
+		*/
+		_this.ladron.gotoAndStop(0);
 	}
 
 	// actions tween:
@@ -2967,26 +3007,26 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.btnStopSonido1, 0, 1, 2);
 
 	this.instance = new lib.candado();
-	this.instance.setTransform(233,150,0.3904,0.3904);
+	this.instance.setTransform(233,135,0.3904,0.3904);
 
 	this.btn_sonido3 = new lib.btn_sonido();
 	this.btn_sonido3.name = "btn_sonido3";
-	this.btn_sonido3.setTransform(820.8,274.45,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido3.setTransform(820.8,265.45,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido3, 0, 1, 2);
 
 	this.btnStopSonido3 = new lib.btnStopSonido();
 	this.btnStopSonido3.name = "btnStopSonido3";
-	this.btnStopSonido3.setTransform(805,258.65);
+	this.btnStopSonido3.setTransform(805,250.65);
 	new cjs.ButtonHelper(this.btnStopSonido3, 0, 1, 2);
 
 	this.btn_sonido4 = new lib.btn_sonido();
 	this.btn_sonido4.name = "btn_sonido4";
-	this.btn_sonido4.setTransform(335.1,399.3,1,1,0,0,0,15.8,15.8);
+	this.btn_sonido4.setTransform(335.1,379.3,1,1,0,0,0,15.8,15.8);
 	new cjs.ButtonHelper(this.btn_sonido4, 0, 1, 2);
 
 	this.btnStopSonido4 = new lib.btnStopSonido();
 	this.btnStopSonido4.name = "btnStopSonido4";
-	this.btnStopSonido4.setTransform(319.3,383.5);
+	this.btnStopSonido4.setTransform(319.3,365.5);
 	new cjs.ButtonHelper(this.btnStopSonido4, 0, 1, 2);
 
 	this.instance_1 = new lib.candado();
@@ -3032,7 +3072,7 @@ if (reversed == null) { reversed = false; }
 	this.btnStopSonido7.setTransform(281.05,274.5);
 	new cjs.ButtonHelper(this.btnStopSonido7, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnStopSonido1},{t:this.btn_sonido1},{t:this.btnStopSonido2},{t:this.btn_sonido2}]}).to({state:[{t:this.btnStopSonido3},{t:this.btn_sonido3},{t:this.instance,p:{x:233,y:150}}]},1).to({state:[{t:this.btnStopSonido4},{t:this.btn_sonido4},{t:this.instance,p:{x:120,y:245}}]},1).to({state:[{t:this.btnStopSonido5},{t:this.btn_sonido5},{t:this.btnStopSonido6},{t:this.btn_sonido6},{t:this.instance_1},{t:this.instance,p:{x:108,y:208}}]},1).to({state:[{t:this.btnStopSonido7},{t:this.btn_sonido7},{t:this.btnStopSonido8},{t:this.btn_sonido8}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnStopSonido1},{t:this.btn_sonido1},{t:this.btnStopSonido2},{t:this.btn_sonido2}]}).to({state:[{t:this.btnStopSonido3},{t:this.btn_sonido3},{t:this.instance,p:{x:233,y:135}}]},1).to({state:[{t:this.btnStopSonido4},{t:this.btn_sonido4},{t:this.instance,p:{x:120,y:245}}]},1).to({state:[{t:this.btnStopSonido5},{t:this.btn_sonido5},{t:this.btnStopSonido6},{t:this.btn_sonido6},{t:this.instance_1},{t:this.instance,p:{x:108,y:208}}]},1).to({state:[{t:this.btnStopSonido7},{t:this.btn_sonido7},{t:this.btnStopSonido8},{t:this.btn_sonido8}]},1).wait(1));
 
 	// Capa_3
 	this.movieClip_9 = new lib.Símbolo1();
@@ -3047,51 +3087,55 @@ if (reversed == null) { reversed = false; }
 
 	this.niños1 = new lib.niños1();
 	this.niños1.name = "niños1";
-	this.niños1.setTransform(797.95,315,1,1,0,0,0,-424.2,71.5);
+	this.niños1.setTransform(797.95,335.05,0.7858,0.7858,0,0,0,-424.2,71.5);
 
-	this.instance_3 = new lib.niiños2();
-	this.instance_3.setTransform(668,405.8,1,1,0,0,0,-195,-93);
+	this.niña = new lib.niiños2();
+	this.niña.name = "niña";
+	this.niña.setTransform(668,405.8,1,1,0,0,0,-195,-93);
 
-	this.instance_4 = new lib.niños3();
-	this.instance_4.setTransform(636,367.5,0.9167,0.9167,0,0,0,549,87);
+	this.hombre = new lib.niños3();
+	this.hombre.name = "hombre";
+	this.hombre.setTransform(636,343.5,0.9167,0.9167,0,0,0,549,87);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.niños1},{t:this.instance_2,p:{x:636,y:198}}]}).to({state:[{t:this.instance_3},{t:this.instance_2,p:{x:162,y:368}}]},1).to({state:[{t:this.instance_4}]},1).to({state:[]},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.niños1},{t:this.instance_2,p:{x:636,y:198}}]}).to({state:[{t:this.niña},{t:this.instance_2,p:{x:162,y:390}}]},1).to({state:[{t:this.hombre}]},1).to({state:[]},1).wait(2));
 
 	// Capa_1
-	this.instance_5 = new lib.titulo();
-	this.instance_5.setTransform(442,19,0.5,0.5);
+	this.instance_3 = new lib.titulo();
+	this.instance_3.setTransform(442,19,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(5));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1).to({y:11},0).wait(4));
 
 	// texto
-	this.instance_6 = new lib.candado();
-	this.instance_6.setTransform(99,385,0.3904,0.3904);
+	this.instance_4 = new lib.candado();
+	this.instance_4.setTransform(99,385,0.3904,0.3904);
 
-	this.instance_7 = new lib.candado();
-	this.instance_7.setTransform(94,205,0.3904,0.3904);
+	this.instance_5 = new lib.candado();
+	this.instance_5.setTransform(94,205,0.3904,0.3904);
 
-	this.instance_8 = new lib.Diapositiva1text_1();
-	this.instance_8.setTransform(91,158,0.5,0.5);
+	this.instance_6 = new lib.Diapositiva1text_1();
+	this.instance_6.setTransform(91,158,0.5,0.5);
 
-	this.instance_9 = new lib.Dispositiva2texto();
-	this.instance_9.setTransform(229,138,0.5,0.5);
+	this.instance_7 = new lib.Dispositiva2texto();
+	this.instance_7.setTransform(229,125,0.5,0.5);
 
-	this.instance_10 = new lib.diapositiva3texto();
-	this.instance_10.setTransform(114,230,0.5,0.5);
+	this.instance_8 = new lib.diapositiva3texto();
+	this.instance_8.setTransform(114,208,0.5,0.5);
 
-	this.instance_11 = new lib.niños4();
-	this.instance_11.setTransform(636.05,346,0.884,0.884,0,0,0,-153,-28);
+	this.carta = new lib.niños4();
+	this.carta.name = "carta";
+	this.carta.setTransform(636.05,346,0.884,0.884,0,0,0,-153,-28);
 
-	this.instance_12 = new lib.Diapositiva4texto();
-	this.instance_12.setTransform(107,191,0.5,0.5);
+	this.instance_9 = new lib.Diapositiva4texto();
+	this.instance_9.setTransform(107,191,0.5,0.5);
 
-	this.instance_13 = new lib.niños5();
-	this.instance_13.setTransform(611.55,337.7,1,1,0,0,0,-7.2,-24.8);
+	this.ladron = new lib.niños5();
+	this.ladron.name = "ladron";
+	this.ladron.setTransform(628.55,337.7,1,1,0,0,0,-7.2,-24.8);
 
-	this.instance_14 = new lib.Diapositiva5texto();
-	this.instance_14.setTransform(44,177,0.5,0.5);
+	this.instance_10 = new lib.Diapositiva5texto();
+	this.instance_10.setTransform(44,177,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7,p:{x:94}},{t:this.instance_6,p:{x:99,y:385}}]}).to({state:[{t:this.instance_9}]},1).to({state:[{t:this.instance_10}]},1).to({state:[{t:this.instance_12},{t:this.instance_11}]},1).to({state:[{t:this.instance_14},{t:this.instance_7,p:{x:48}},{t:this.instance_13},{t:this.instance_6,p:{x:48,y:356}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6},{t:this.instance_5,p:{x:94}},{t:this.instance_4,p:{x:99,y:385}}]}).to({state:[{t:this.instance_7}]},1).to({state:[{t:this.instance_8}]},1).to({state:[{t:this.instance_9},{t:this.carta}]},1).to({state:[{t:this.instance_10},{t:this.instance_5,p:{x:48}},{t:this.ladron},{t:this.instance_4,p:{x:48,y:356}}]},1).wait(1));
 
 	// btns_nav
 	this.btnAtras = new lib.btnSiguiente();
@@ -3150,10 +3194,10 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.btnindice).wait(5));
 
 	// indicador de página
-	this.instance_15 = new lib.posición();
-	this.instance_15.setTransform(490,547,0.5,0.5);
+	this.instance_11 = new lib.posición();
+	this.instance_11.setTransform(490,547,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(5));
+	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(5));
 
 	// stageBackground
 	this.shape = new cjs.Shape();
@@ -3179,19 +3223,19 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1692233598194", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1692233598396", id:"audioG"},
-		{src:"sounds/audioC.mp3?1692233598396", id:"audioC"},
-		{src:"sounds/audio1.mp3?1692233598396", id:"audio1"},
-		{src:"sounds/audio2.mp3?1692233598396", id:"audio2"},
-		{src:"sounds/audio3.mp3?1692233598396", id:"audio3"},
-		{src:"sounds/audio4.mp3?1692233598396", id:"audio4"},
-		{src:"sounds/audio5.mp3?1692233598396", id:"audio5"},
-		{src:"sounds/audio6.mp3?1692233598396", id:"audio6"},
-		{src:"sounds/audio7.mp3?1692233598396", id:"audio7"},
-		{src:"sounds/audio8.mp3?1692233598396", id:"audio8"},
-		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1692233598396", id:"y2matecomFreesoundeffectKeyboardtyping"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1692233598396", id:"y2matecomsonidodemagiaefectohadas"}
+		{src:"images/index_atlas_1.png?1693926743521", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1693926743707", id:"audioG"},
+		{src:"sounds/audioC.mp3?1693926743707", id:"audioC"},
+		{src:"sounds/audio1.mp3?1693926743707", id:"audio1"},
+		{src:"sounds/audio2.mp3?1693926743707", id:"audio2"},
+		{src:"sounds/audio3.mp3?1693926743707", id:"audio3"},
+		{src:"sounds/audio4.mp3?1693926743707", id:"audio4"},
+		{src:"sounds/audio5.mp3?1693926743707", id:"audio5"},
+		{src:"sounds/audio6.mp3?1693926743707", id:"audio6"},
+		{src:"sounds/audio7.mp3?1693926743707", id:"audio7"},
+		{src:"sounds/audio8.mp3?1693926743707", id:"audio8"},
+		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1693926743707", id:"y2matecomFreesoundeffectKeyboardtyping"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1693926743707", id:"y2matecomsonidodemagiaefectohadas"}
 	],
 	preloads: []
 };

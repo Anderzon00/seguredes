@@ -1588,6 +1588,15 @@ if (reversed == null) { reversed = false; }
 		window.open(' https://www.minjusticia.gov.co/programas-co/LegalApp/Paginas/Que-debo-hacer-si-comparti-fotos-o-v%C3%ADdeos-por-internet-y-los-est%C3%A1n-usando-sin-mi-consentimiento.aspx', '_blank');
 		});
 		
+		var _this = this;
+		/*
+		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y detiene la película.
+		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
+		*/
+		_this.mc2.gotoAndStop(0);
+		
+		_this.mc1.gotoAndStop(0);
+		
 		
 		
 		function carga (){
@@ -1660,6 +1669,17 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.stop();
 		});
 		
+		var _this = this;
+		/*
+		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y detiene la película.
+		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
+		*/
+		_this.mc3.gotoAndStop(0);
+		
+		_this.mc4.gotoAndStop(0);
+		
+		
+		
 		 
 		 function carga (){
 		    window.parent.funcionVisible();
@@ -1730,43 +1750,47 @@ if (reversed == null) { reversed = false; }
 	this.btnMasInf.setTransform(438.1,328.9);
 	new cjs.ButtonHelper(this.btnMasInf, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance = new lib.MC2();
-	this.instance.setTransform(922.9,310.15,1,1,0,0,0,339.2,-61);
+	this.mc2 = new lib.MC2();
+	this.mc2.name = "mc2";
+	this.mc2.setTransform(922.9,310.15,1,1,0,0,0,339.2,-61);
 
-	this.instance_1 = new lib.Parrafo1();
-	this.instance_1.setTransform(71,124,0.5,0.5);
+	this.instance = new lib.Parrafo1();
+	this.instance.setTransform(71,124,0.5,0.5);
 
-	this.instance_2 = new lib.Parrafo3();
-	this.instance_2.setTransform(397,399,0.5,0.5);
+	this.instance_1 = new lib.Parrafo3();
+	this.instance_1.setTransform(397,399,0.5,0.5);
 
-	this.instance_3 = new lib.MC1();
-	this.instance_3.setTransform(234.1,468.5,1,1,0,0,0,-326.8,70);
+	this.mc1 = new lib.MC1();
+	this.mc1.name = "mc1";
+	this.mc1.setTransform(234.1,468.5,1,1,0,0,0,-326.8,70);
 
-	this.instance_4 = new lib.Parrafo2();
-	this.instance_4.setTransform(131,236,0.5,0.5);
+	this.instance_2 = new lib.Parrafo2();
+	this.instance_2.setTransform(131,236,0.5,0.5);
 
-	this.instance_5 = new lib.MC3();
-	this.instance_5.setTransform(254,344.8,1,1,0,0,0,46.2,-18.4);
+	this.mc3 = new lib.MC3();
+	this.mc3.name = "mc3";
+	this.mc3.setTransform(254,344.8,1,1,0,0,0,46.2,-18.4);
 
-	this.instance_6 = new lib.Parrafo1_1();
-	this.instance_6.setTransform(119,151,0.5,0.5);
+	this.instance_3 = new lib.Parrafo1_1();
+	this.instance_3.setTransform(119,151,0.5,0.5);
 
-	this.instance_7 = new lib.Parrafo2_1();
-	this.instance_7.setTransform(426,369,0.5,0.5);
+	this.instance_4 = new lib.Parrafo2_1();
+	this.instance_4.setTransform(426,369,0.5,0.5);
 
-	this.instance_8 = new lib.MC4();
-	this.instance_8.setTransform(875.7,297.85,1,1,0,0,0,328.2,-8.2);
+	this.mc4 = new lib.MC4();
+	this.mc4.name = "mc4";
+	this.mc4.setTransform(875.7,297.85,1,1,0,0,0,328.2,-8.2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.btnMasInf}]}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.mc1},{t:this.instance_1},{t:this.instance},{t:this.mc2},{t:this.btnMasInf}]}).to({state:[{t:this.mc4},{t:this.instance_4},{t:this.instance_3},{t:this.mc3}]},1).wait(1));
 
 	// titulo
-	this.instance_9 = new lib.posicion();
-	this.instance_9.setTransform(490,547,0.5,0.5);
+	this.instance_5 = new lib.posicion();
+	this.instance_5.setTransform(490,547,0.5,0.5);
 
-	this.instance_10 = new lib.titulo();
-	this.instance_10.setTransform(387,7,0.4197,0.4197);
+	this.instance_6 = new lib.titulo();
+	this.instance_6.setTransform(387,7,0.4197,0.4197);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_10},{t:this.instance_9}]}).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6},{t:this.instance_5}]}).wait(2));
 
 	// flechas
 	this.btnAdelabnteA = new lib.btnSiguiente();
@@ -1812,15 +1836,15 @@ lib.properties = {
 	color: "#66FF00",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1693713728502", id:"index_atlas_1"},
-		{src:"sounds/audio1.mp3?1693713728613", id:"audio1"},
-		{src:"sounds/audio2.mp3?1693713728613", id:"audio2"},
-		{src:"sounds/audio3.mp3?1693713728613", id:"audio3"},
-		{src:"sounds/audio4.mp3?1693713728613", id:"audio4"},
-		{src:"sounds/audio5.mp3?1693713728613", id:"audio5"},
-		{src:"sounds/generales.mp3?1693713728613", id:"generales"},
-		{src:"sounds/indice.mp3?1693713728613", id:"indice"},
-		{src:"sounds/QuestionSoundEffect.mp3?1693713728613", id:"QuestionSoundEffect"}
+		{src:"images/index_atlas_1.png?1693927354268", id:"index_atlas_1"},
+		{src:"sounds/audio1.mp3?1693927354380", id:"audio1"},
+		{src:"sounds/audio2.mp3?1693927354380", id:"audio2"},
+		{src:"sounds/audio3.mp3?1693927354380", id:"audio3"},
+		{src:"sounds/audio4.mp3?1693927354380", id:"audio4"},
+		{src:"sounds/audio5.mp3?1693927354381", id:"audio5"},
+		{src:"sounds/generales.mp3?1693927354381", id:"generales"},
+		{src:"sounds/indice.mp3?1693927354381", id:"indice"},
+		{src:"sounds/QuestionSoundEffect.mp3?1693927354381", id:"QuestionSoundEffect"}
 	],
 	preloads: []
 };
