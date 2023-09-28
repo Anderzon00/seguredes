@@ -1374,9 +1374,13 @@ if (reversed == null) { reversed = false; }
 							console.log(contador);
 		
 							if (contador == 2) {
-								contador = 0;
-								_this.parent.gotoAndStop(6);
-							}
+		        contador = 0;
+		        
+		        // Espera 3 segundos antes de cambiar al siguiente iframe
+		        setTimeout(function() {
+		            _this.parent.gotoAndStop(6);
+		        }, 2500); // 3000 milisegundos = 3 segundos
+		    }
 						} else {
 							respuesta.x = posicionInicial.x;
 							respuesta.y = posicionInicial.y;
@@ -1506,9 +1510,13 @@ if (reversed == null) { reversed = false; }
 							console.log(contador);
 		
 							if (contador == 2) {
-								contador = 0;
-								_this.parent.gotoAndStop(6);
-							}
+		        contador = 0;
+		        
+		        // Espera 3 segundos antes de cambiar al siguiente iframe
+		        setTimeout(function() {
+		            _this.parent.gotoAndStop(6);
+		        }, 2500); // 3000 milisegundos = 3 segundos
+		    }
 						} else {
 							respuesta.x = posicionInicial.x;
 							respuesta.y = posicionInicial.y;
@@ -1638,9 +1646,13 @@ if (reversed == null) { reversed = false; }
 							console.log(contador);
 		
 							if (contador == 2) {
-								contador = 0;
-								_this.parent.gotoAndStop(5);
-							}
+		        contador = 0;
+		        
+		        // Espera 3 segundos antes de cambiar al siguiente iframe
+		        setTimeout(function() {
+		            _this.parent.gotoAndStop(5);
+		        }, 2500); // 3000 milisegundos = 3 segundos
+		    }
 						} else {
 							respuesta.x = posicionInicial.x;
 							respuesta.y = posicionInicial.y;
@@ -1770,9 +1782,13 @@ if (reversed == null) { reversed = false; }
 							console.log(contador);
 		
 							if (contador == 2) {
-								contador = 0;
-								_this.parent.gotoAndStop(5);
-							}
+		        contador = 0;
+		        
+		        // Espera 3 segundos antes de cambiar al siguiente iframe
+		        setTimeout(function() {
+		            _this.parent.gotoAndStop(5);
+		        }, 2500); // 3000 milisegundos = 3 segundos
+		    }
 						} else {
 							respuesta.x = posicionInicial.x;
 							respuesta.y = posicionInicial.y;
@@ -1902,9 +1918,13 @@ if (reversed == null) { reversed = false; }
 							console.log(contador);
 		
 							if (contador == 2) {
-								contador = 0;
-								_this.parent.gotoAndStop(4);
-							}
+		        contador = 0;
+		        
+		        // Espera 3 segundos antes de cambiar al siguiente iframe
+		        setTimeout(function() {
+		            _this.parent.gotoAndStop(4);
+		        }, 2500); // 3000 milisegundos = 3 segundos
+		    }
 						} else {
 							respuesta.x = posicionInicial.x;
 							respuesta.y = posicionInicial.y;
@@ -2035,9 +2055,13 @@ if (reversed == null) { reversed = false; }
 							console.log(contador);
 		
 							if (contador == 2) {
-								contador = 0;
-								_this.parent.gotoAndStop(4);
-							}
+		        contador = 0;
+		        
+		        // Espera 3 segundos antes de cambiar al siguiente iframe
+		        setTimeout(function() {
+		            _this.parent.gotoAndStop(4);
+		        }, 2500); // 3000 milisegundos = 3 segundos
+		    }
 						} else {
 							respuesta.x = posicionInicial.x;
 							respuesta.y = posicionInicial.y;
@@ -2167,9 +2191,13 @@ if (reversed == null) { reversed = false; }
 							console.log(contador);
 		
 							if (contador == 2) {
-								contador = 0;
-								_this.parent.gotoAndStop(3);
-							}
+		        contador = 0;
+		        
+		        // Espera 3 segundos antes de cambiar al siguiente iframe
+		        setTimeout(function() {
+		            _this.parent.gotoAndStop(3);
+		        }, 2500); // 3000 milisegundos = 3 segundos
+		    }
 						} else {
 							respuesta.x = posicionInicial.x;
 							respuesta.y = posicionInicial.y;
@@ -2299,12 +2327,14 @@ if (reversed == null) { reversed = false; }
 					  contador++;
 					  console.log(contador);
 		            verificarRespuesta(respuesta);
-					  if (contador == 2) {	
-						  contador = 0;
-							
-								_this.parent.gotoAndStop(3);
-								
-							}
+					 if (contador == 2) {
+		        contador = 0;
+		        
+		        // Espera 3 segundos antes de cambiar al siguiente iframe
+		        setTimeout(function() {
+		            _this.parent.gotoAndStop(3);
+		        }, 2500); // 3000 milisegundos = 3 segundos
+		    }
 					  
 					  
 		          } else {
@@ -2434,12 +2464,14 @@ if (reversed == null) { reversed = false; }
 		            verificarRespuesta(respuesta);		 
 					  contador++;
 					  console.log(contador);	
-							if (contador == 2) {	
-								contador = 0;
-								
-								_this.parent.gotoAndStop(2);
-								
-							}
+							if (contador == 2) {
+		        contador = 0;
+		        
+		        // Espera 3 segundos antes de cambiar al siguiente iframe
+		        setTimeout(function() {
+		            _this.parent.gotoAndStop(2);
+		        }, 2500); // 3000 milisegundos = 3 segundos
+		    }
 					  
 		          } else {
 		            respuesta.x = posicionInicial.x;
@@ -2587,11 +2619,13 @@ if (reversed == null) { reversed = false; }
 												console.log(contador);					 
 		
 							if (contador == 2) {
-								contador = 0;
-							 
-								_this.parent.gotoAndStop(2);
-								
-							}
+		        contador = 0;
+		        
+		        // Espera 3 segundos antes de cambiar al siguiente iframe
+		        setTimeout(function() {
+		            _this.parent.gotoAndStop(2);
+		        }, 2500); // 3000 milisegundos = 3 segundos
+		    }
 							respuesta.rotation = 25;
 							verificarRespuesta(respuesta);
 		
@@ -3412,21 +3446,21 @@ lib.properties = {
 	color: "#0000FF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/FondoselecciónMúltiple.png?1695778529296", id:"FondoselecciónMúltiple"},
-		{src:"images/index_atlas_1.png?1695778529156", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1695778529157", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1695778529157", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1695778529157", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1695778529157", id:"index_atlas_5"},
-		{src:"sounds/audio.mp3?1695778529296", id:"audio"},
-		{src:"sounds/incorrect.mp3?1695778529296", id:"incorrect"},
-		{src:"sounds/correct.mp3?1695778529296", id:"correct"},
-		{src:"sounds/Voice3.mp3?1695778529296", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1695778529302", id:"Voice4"},
-		{src:"sounds/Voice1.mp3?1695778529302", id:"Voice1"},
-		{src:"sounds/SoundBoton.mp3?1695778529302", id:"SoundBoton"},
-		{src:"sounds/retroalimentacion.mp3?1695778529302", id:"retroalimentacion"},
-		{src:"sounds/BGM.mp3?1695778529302", id:"BGM"}
+		{src:"images/FondoselecciónMúltiple.png?1695780471283", id:"FondoselecciónMúltiple"},
+		{src:"images/index_atlas_1.png?1695780471132", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1695780471132", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1695780471132", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1695780471132", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1695780471133", id:"index_atlas_5"},
+		{src:"sounds/audio.mp3?1695780471283", id:"audio"},
+		{src:"sounds/incorrect.mp3?1695780471283", id:"incorrect"},
+		{src:"sounds/correct.mp3?1695780471283", id:"correct"},
+		{src:"sounds/Voice3.mp3?1695780471283", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1695780471283", id:"Voice4"},
+		{src:"sounds/Voice1.mp3?1695780471283", id:"Voice1"},
+		{src:"sounds/SoundBoton.mp3?1695780471283", id:"SoundBoton"},
+		{src:"sounds/retroalimentacion.mp3?1695780471283", id:"retroalimentacion"},
+		{src:"sounds/BGM.mp3?1695780471283", id:"BGM"}
 	],
 	preloads: []
 };
