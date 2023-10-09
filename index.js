@@ -47,114 +47,62 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
-		const newElement = document.createElement('button');
-		newElement.setAttribute('id', 'miBoton');
-		 
-		const image = new Image();
-		            image.src = 'BtnCerrar.png';  
-		            image.style.maxWidth = '95%';   
-		         
+		const b=document.createElement('button');b.id='BotonPantallacompleta';const i=new Image();
+		i.src='BtnCerrar.png';i.style.maxWidth='95%';
+		b.appendChild(i);document.body.appendChild(b);
+		b.style.cssText=`position:absolute;top:0.1%;left:95%;z-index:3;
+		background-color:transparent;border:none`;
+		b.addEventListener('click',()=>{b.style.transform='scale(0.7)'});
+		b.addEventListener('mouseover',()=>{b.style.transform='scale(1.1)'});
+		b.addEventListener('mouseout',()=>{b.style.transform='scale(1.0)'});
+		window.addEventListener('resize',()=>{b.style.left='95%';c()});
+		b.addEventListener('click',()=>{const f=document.getElementById('i_creditos');
+		!document.fullscreenElement?f.requestFullscreen().catch(e=>{
+		console.error(`Error al habilitar pantalla completa: ${e.message}`)}):
+		document.exitFullscreen()});
+		const d=document.getElementById('creditos');
+		d&&d.remove();const e=document.createElement('div');e.id='creditos';
+		e.style.cssText='position:absolute;';document.body.appendChild(e);
+		e.innerHTML=`<iframe src="./SITIO/index.html" id="i_creditos"
+		style="border:none;" allow="autoplay"></iframe>`;
+		function c(){const d=document.getElementById('creditos');
+		const f=document.getElementById('i_creditos');d.style.left='0px';
+		d.style.top='0px';f.style.width=`${Math.max(window.innerWidth)}px`;
+		f.style.height=`${Math.max(window.innerHeight)}px`}c();
+		const f=document.getElementById('i_creditos');f.addEventListener('load',()=>{
+		f.contentWindow.focus();
+		const u=f.contentWindow.location.href;
+		u.endsWith('index1.html')?i.src='NewImage.png':i.src='BtnCerrar.png'});
+		window.addEventListener('resize',c);
 		
-		newElement.appendChild(image);
-		document.body.appendChild(newElement);
-		
-		
-		const boton = document.getElementById('miBoton');
-		
-		function embed1() {	
-		 boton.style.position = 'absolute';
-		boton.style.top = '0.1%'; // Ajusta la posición vertical según tus necesidades
-		boton.style.left = '95%'; // Ajusta la posición horizontal según tus necesidades
-		boton.style.zIndex = '3'	
-		boton.style.backgroundColor = 'transparent'
-		boton.style.border = 'none'
-		 
-		// Agregar un manejador de evento para el evento "click"
-		  boton.addEventListener("click", function() {
-		    // Cambiar el tamaño del botón cuando se hace clic
-		    boton.style.transform = "scale(0.7)"; // Puedes ajustar el valor (0.7) según tus necesidades
-		  });
-		
-		  // Agregar manejadores de eventos para hover
-		  boton.addEventListener("mouseover", function() {
-		    boton.style.transform = "scale(1.1)"; // Ajusta el tamaño cuando el cursor está sobre el botón
-		  });
-		
-		  boton.addEventListener("mouseout", function() {
-		    boton.style.transform = "scale(1.0)"; // Vuelve al tamaño original cuando el cursor se va
-		  });
-			
-			
-			
 		  
-			
-		}
 		
-		embed1();
+		const url = "/SITIO/MenuPrincipal";
+		const request = new Request(url);
 		
-		window.addEventListener('resize', () => {	
-		embed1();
-		}) 
-				
-		
-		
-		
-		
-		
-		
-		
-		
-		var _this= this;
-		
-		 
-		boton.addEventListener('click', function() {
-		    if (!document.fullscreenElement) {
-		                iframe.requestFullscreen().catch(err => {
-		                    console.error(`Error attempting to enable fullscreen: ${err.message}`);
-		                });
-		            } else {
-		                document.exitFullscreen();
-		            }
+		fetch(request).then((response) => {
+		  // La página web se ha precargado
 		});
 		
+		// Precarga los recursos CSS y JavaScript que se necesitan para la página web
+		const resources = [
+		  {
+		    url: "/SITIO/MenuPrincipal/index.html",
+		    type: "document",
+		  },
+		  {
+		    url: "/SITIO/MenuPrincipal/index.js",
+		    type: "script",
+		  },
+		];
 		
+		resources.forEach((resource) => {
+		  const request = new Request(resource.url);
 		
-		const elementdiv1 = document.getElementById('creditos');
-		elementdiv1?.remove();
-				 
-		var element = document.createElement('div');
-		element.setAttribute('id', 'creditos');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		
-		
-		
-		
-		 
-		element.innerHTML = '<iframe  src= "./SITIO/index.html" id="i_creditos"   style="border:none" allow="autoplay"  >';
-		
-		function embed() {	
-		document.getElementById('creditos').style.left =  0 +'px';
-		document.getElementById('creditos').style.top =   0 + 'px';
-		document.getElementById('i_creditos').style.width =  Math.max(window.innerWidth)+'px';
-		document.getElementById('i_creditos').style.height = Math.max(window.innerHeight)+ 'px';
-		}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-				 
-				 
-		
-		const iframe = document.getElementById('i_creditos');
-		
-		        // Add an event listener to the iframe's load event
-		        iframe.addEventListener('load', function() {
-		            // Focus on the iframe when it has loaded
-		            iframe.contentWindow.focus();
-		        });
+		  fetch(request).then((response) => {
+		    // El recurso se ha precargado
+		  });
+		});
 	}
 
 	// actions tween:

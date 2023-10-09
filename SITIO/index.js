@@ -1171,7 +1171,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnIngresar.on('click', function(){
 			 createjs.Sound.play("sound", { volume: 0.8}).on("complete", function () {                    
-				window.open("PantallaBienvenida/index.html", "_self");		 
+				window.open("PantallaBienvenida/index1.html", "_self");		 
 		                    }, this);
 		});
 	}
@@ -1337,7 +1337,7 @@ if (reversed == null) { reversed = false; }
 		*/
 		_this.btnDescarga2.on('click', function(){
 		createjs.Sound.play("sound2", { volume: 0.8}).on("complete", function () {                    
-		window.open(' https://liveudenaredu-my.sharepoint.com/:u:/g/personal/anarsa55_udenar_edu_co/ESCVDrqAH7ZOmgtKTKTRV80BtkBsvVp7uPS2ZpFEQTgw4A?e=SyMnRS')
+		window.open(' https://liveudenaredu-my.sharepoint.com/:u:/g/personal/anarsa55_udenar_edu_co/Ec5DqTJgaHdJnr-YgAwvleEB4SkpbtLCOIpd9z-eCPW-wA?e=4Sk7pW')
 		_this.parent.parent.letrero.gotoAndStop(0);                 }, this);
 		
 		 
@@ -1534,13 +1534,13 @@ lib.properties = {
 	color: "#006699",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/fondoizq.png?1691015426784", id:"fondoizq"},
-		{src:"images/index_atlas_P_1.png?1691015426656", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1691015426656", id:"index_atlas_P_2"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1691015426784", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1691015426784", id:"sound"},
-		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1691015426784", id:"notificationsound70621onlineaudioconvertercom"},
-		{src:"sounds/sound2.mp3?1691015426784", id:"sound2"}
+		{src:"images/fondoizq.png?1695618270140", id:"fondoizq"},
+		{src:"images/index_atlas_P_1.png?1695618270016", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1695618270017", id:"index_atlas_P_2"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1695618270140", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/sound.mp3?1695618270140", id:"sound"},
+		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1695618270140", id:"notificationsound70621onlineaudioconvertercom"},
+		{src:"sounds/sound2.mp3?1695618270140", id:"sound2"}
 	],
 	preloads: []
 };

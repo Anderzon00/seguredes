@@ -1459,7 +1459,10 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		createjs.Sound.stop();
-		createjs.Sound.play("Instrucciones");
+		 
+		
+		sound0 = createjs.Sound.play("Instrucciones", { volume: 0.3, loop: -1 }); 
+		
 		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
@@ -1480,11 +1483,11 @@ if (reversed == null) { reversed = false; }
 		_this.unmute.visible = false;
 		_this.on("click", function (e) {
 		  if (e.target.name === "unmute") {
-		    sound.muted = false;
+		    sound0.muted = false;
 		    _this.mute.visible = true;
 		    _this.unmute.visible = false;
 		  } else if (e.target.name === "mute") {
-		    sound.muted = true;
+		    sound0.muted = true;
 		    _this.mute.visible = false;
 		    _this.unmute.visible = true;
 		  }
@@ -1507,6 +1510,10 @@ if (reversed == null) { reversed = false; }
 		
 		sound = createjs.Sound.play("sound", { volume: 0.3, loop: -1 }); 
 		
+		if(_this.unmute.visible){
+			console.log("visible");
+			sound.muted = true;
+		}
 		var element = document.createElement('div');
 		
 		canvas.parentNode.appendChild(element);
@@ -1807,13 +1814,13 @@ lib.properties = {
 	color: "#006600",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1688315247878", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1688315248067", id:"audioLoop"},
-		{src:"sounds/Instrucciones.mp3?1688315248067", id:"Instrucciones"},
-		{src:"sounds/SoundBoton.mp3?1688315248067", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1688315248067", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1688315248067", id:"retroalimentacion"},
-		{src:"sounds/retroNegativa.mp3?1688315248067", id:"retroNegativa"}
+		{src:"images/index_atlas_1.png?1695439217658", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1695439217885", id:"audioLoop"},
+		{src:"sounds/Instrucciones.mp3?1695439217885", id:"Instrucciones"},
+		{src:"sounds/SoundBoton.mp3?1695439217885", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1695439217885", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1695439217885", id:"retroalimentacion"},
+		{src:"sounds/retroNegativa.mp3?1695439217885", id:"retroNegativa"}
 	],
 	preloads: []
 };

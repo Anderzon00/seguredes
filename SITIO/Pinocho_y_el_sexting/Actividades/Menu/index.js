@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[1825,2524,708,106],[1116,2524,707,107],[603,3134,97,97],[608,2928,97,97],[608,3027,97,97],[1116,2985,184,69],[1116,3056,184,69],[1481,2954,150,150],[1116,2801,182,182],[1116,2633,314,166],[1432,2633,314,166],[1825,2632,315,166],[0,0,2381,1260],[2142,2632,320,159],[2464,2632,320,159],[0,1262,2381,1260],[1481,2801,151,151],[402,2928,204,204],[1300,2801,179,178],[402,3134,199,199],[0,2524,707,402],[709,2524,405,609],[0,2928,400,479],[2142,2793,186,186]]}
+		{name:"index_atlas_1", frames: [[1825,2524,708,106],[1116,2524,707,107],[603,3134,97,97],[608,2928,97,97],[608,3027,97,97],[1116,2985,184,69],[1116,3056,184,69],[1481,2954,150,150],[1116,2801,182,182],[1116,2633,314,166],[1432,2633,314,166],[1825,2632,315,166],[0,0,2381,1260],[0,1262,2381,1260],[2142,2632,320,159],[2464,2632,320,159],[1481,2801,151,151],[402,2928,204,204],[1300,2801,179,178],[402,3134,199,199],[0,2524,707,402],[709,2524,405,609],[0,2928,400,479],[2142,2793,186,186]]}
 ];
 
 
@@ -118,21 +118,21 @@ lib.ssMetadata = [
 
 
 
-(lib.FondoContraseña = function() {
+(lib.Fondo_2 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.FondoContraseñapngcopia = function() {
+(lib.FondoContraseña = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.FondoMenuActividades = function() {
+(lib.FondoContraseñapngcopia = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
@@ -1593,7 +1593,7 @@ if (reversed == null) { reversed = false; }
 	this.imput1 = new lib.an_TextInput({'id': 'imput1', 'value':'', 'disabled':false, 'visible':true, 'class':'ui-textinput'});
 
 	this.imput1.name = "imput1";
-	this.imput1.setTransform(584.4,467.35,1.3702,0.916,0,0,0,50.2,0.2);
+	this.imput1.setTransform(584.4,475.35,1.3702,0.916,0,0,0,50.2,0.2);
 
 	this.text1 = new lib.Símbolo3();
 	this.text1.name = "text1";
@@ -1602,7 +1602,7 @@ if (reversed == null) { reversed = false; }
 	this.imput2 = new lib.an_TextInput({'id': 'imput2', 'value':'', 'disabled':false, 'visible':true, 'class':'ui-textinput'});
 
 	this.imput2.name = "imput2";
-	this.imput2.setTransform(795.7,463.2,1.3902,0.9623,0,0,0,-0.1,0.1);
+	this.imput2.setTransform(795.7,471.2,1.3902,0.9623,0,0,0,-0.1,0.1);
 
 	this.instance_4 = new lib.niños();
 	this.instance_4.setTransform(611.4,599.15,1.0046,1.0046,0,0,0,-0.4,-0.5);
@@ -1612,17 +1612,17 @@ if (reversed == null) { reversed = false; }
 	// btn
 	this.btnEntrar2 = new lib.btnEntrar();
 	this.btnEntrar2.name = "btnEntrar2";
-	this.btnEntrar2.setTransform(866.45,502.95,0.9235,0.9235,0,0,0,55.4,21.8);
+	this.btnEntrar2.setTransform(866.45,510.95,0.9235,0.9235,0,0,0,55.4,21.8);
 	new cjs.ButtonHelper(this.btnEntrar2, 0, 1, 2);
 
 	this.btnEntrar1 = new lib.btnEntrar();
 	this.btnEntrar1.name = "btnEntrar1";
-	this.btnEntrar1.setTransform(583.9,505.3,0.9235,0.9235,0,0,0,55.5,21.8);
+	this.btnEntrar1.setTransform(583.9,513.3,0.9235,0.9235,0,0,0,55.5,21.8);
 	new cjs.ButtonHelper(this.btnEntrar1, 0, 1, 2);
 
 	this.Act1 = new lib.btnRompecabezas();
 	this.Act1.name = "Act1";
-	this.Act1.setTransform(301.3,481.7,1.0617,1.0617,0,0,0,24.4,24.4);
+	this.Act1.setTransform(301.3,502.7,1.0617,1.0617,0,0,0,24.4,24.4);
 	new cjs.ButtonHelper(this.Act1, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.Act1},{t:this.btnEntrar1},{t:this.btnEntrar2}]}).to({state:[]},1).wait(1));
@@ -1641,13 +1641,13 @@ if (reversed == null) { reversed = false; }
 
 	// FONDO
 	this.instance_8 = new lib.FondoContraseñapngcopia();
-	this.instance_8.setTransform(785,436,0.5054,0.5308);
+	this.instance_8.setTransform(785,444,0.5054,0.5308);
 
 	this.instance_9 = new lib.FondoContraseña();
-	this.instance_9.setTransform(501,440,0.5091,0.5308);
+	this.instance_9.setTransform(501,448,0.5091,0.5308);
 
-	this.instance_10 = new lib.FondoMenuActividades();
-	this.instance_10.setTransform(0,-24,0.5032,0.4887);
+	this.instance_10 = new lib.Fondo_2();
+	this.instance_10.setTransform(0,-27,0.5032,0.4887);
 
 	this.instance_11 = new lib.Símbolo1();
 	this.instance_11.setTransform(594.8,282.9,1,1,0,0,0,597.8,298.9);
@@ -1680,14 +1680,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1695601758934", id:"index_atlas_1"},
-		{src:"sounds/play.mp3?1695601759085", id:"play"},
-		{src:"sounds/error41.mp3?1695601759085", id:"error41"},
-		{src:"sounds/sound.mp3?1695601759085", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1695601759085", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1695601759085", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1695601759085", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1695601759085", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1696717793941", id:"index_atlas_1"},
+		{src:"sounds/play.mp3?1696717794035", id:"play"},
+		{src:"sounds/error41.mp3?1696717794035", id:"error41"},
+		{src:"sounds/sound.mp3?1696717794035", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1696717794035", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1696717794035", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1696717794035", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1696717794035", id:"an.TextInput"}
 	],
 	preloads: []
 };

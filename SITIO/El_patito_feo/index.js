@@ -640,13 +640,14 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop(); 
 		
+		document.getElementById('divi')?.remove();  
+		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 			stretchToFit();
 		}
 		
-		document.getElementById('miIframe')?.remove();  
-		 
+		  
 		 
 		
 		var _this = this;
@@ -689,10 +690,47 @@ if (reversed == null) { reversed = false; }
 		_this.button_popup.on('click', function () {
 			_this.gotoAndPlay(1);
 		});
+		
+		
+		
+		var element = document.createElement('div');
+		element.setAttribute('id', 'divi');
+		document.body.appendChild(element);
+		element.style.position = "absolute"; 
+		 
+		element.innerHTML = '<iframe  src= "./Contenidos/index.html"  id="i_cuento1"   style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		
+		function embed() {	
+		document.getElementById('divi').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		document.getElementById('divi').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento1').style.width = 1+'px';
+		document.getElementById('i_cuento1').style.height = 1 +'px';
+		}
+		
+		embed();
+		 
+		window.addEventListener('resize', () => {	
+		embed();
+		})
 	}
 	this.frame_12 = function() {
 		this.stop();
-		document.getElementById('miIframe')?.remove();  
+		
+		function embed() {	
+		document.getElementById('i_cuento1').src=  "";	
+		document.getElementById('i_cuento1').style.width = 0 +'px';
+		document.getElementById('i_cuento1').style.height = 0 + 'px';	
+			
+			
+			}
+		
+		embed();
+		
+		window.addEventListener('resize', () => {	
+		embed();
+		}) 
+		
+		
 		
 		var _this = this;
 		 
@@ -707,22 +745,19 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_13 = function() {
-		document.getElementById('miIframe')?.remove();  
-		    
+		var _this = this;
 		
-		var element = document.createElement('div');
-		element.setAttribute('id', 'miIframe');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		 
-		element.innerHTML = '<iframe  src= "./Cuento/Escena_1/index.html" id="i_iframe"   style="border:none" allow="autoplay"  >';
+		_this.stop();
+		
 		
 		function embed() {	
-		document.getElementById('miIframe').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('miIframe').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_iframe').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_iframe').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
+		document.getElementById('i_cuento1').src=  "./Cuento/Escena_1/index.html" ;	
+		document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';	
+			
+			
+			}
+		
 		embed();
 		
 		window.addEventListener('resize', () => {	
@@ -741,21 +776,10 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_14 = function() {
-		document.getElementById('miIframe')?.remove();  
-		  
-		
-		var element = document.createElement('div');
-		element.setAttribute('id', 'miIframe');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		 
-		element.innerHTML = '<iframe  src= "./Contenidos/index.html"  id="i_iframe"   style="border:none" allow="autoplay"  >';
-		
 		function embed() {	
-		document.getElementById('miIframe').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('miIframe').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_iframe').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_iframe').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento1').src=  "./Contenidos/index.html";
+		document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		embed();
@@ -763,14 +787,14 @@ if (reversed == null) { reversed = false; }
 		window.addEventListener('resize', () => {	
 		embed();
 		}) 
-		 
 		
+		
+		 
 		var _this=this;
 		_this.btnContenidos.on('click', function () {
 		
-			var iframe = document.getElementById('i_iframe');
-		iframe.src = iframe.src;
-			
+		document.getElementById('i_cuento1').src=  "./Contenidos/index.html";
+		
 				 
 		});
 		var _this = this;
@@ -785,21 +809,10 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_15 = function() {
-		document.getElementById('miIframe')?.remove();  
-		  
-		
-		var element = document.createElement('div');
-		element.setAttribute('id', 'miIframe');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		 
-		element.innerHTML = '<iframe  src= "./Actividades/Menu/index.html"  id="i_iframe"  style="overflow: hidden; border:none"  scrolling="no" allow="autoplay"  >';
-		
 		function embed() {	
-		document.getElementById('miIframe').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('miIframe').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_iframe').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_iframe').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento1').src=  "./Actividades/Menu/index.html";
+		document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		embed();
@@ -807,15 +820,12 @@ if (reversed == null) { reversed = false; }
 		window.addEventListener('resize', () => {	
 		embed();
 		}) 
-		 
 		
-		var _this=this;
-		_this.btnActividades.on('click', function () {
+		var _this = this;
 		
-			var iframe = document.getElementById('i_iframe');
-		iframe.src = iframe.src;
-			
-				 
+		_this.btnActividades.on('click', function () {	 	
+		document.getElementById('i_cuento1').src=  "./Actividades/Menu/index.html";
+				 		 
 		});
 		var _this = this;
 		/*
@@ -830,22 +840,10 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_16 = function() {
-		document.getElementById('miIframe')?.remove();  
-		  
-		var root = this;
-		var key;
-		var element = document.createElement('div');
-		element.setAttribute('id', 'miIframe');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		 
-		element.innerHTML = '<iframe  src= "./dearflip/index.html"  id="i_iframe"  style="overflow: hidden; border:none"  scrolling="no" allow="autoplay"  >';
-		
 		function embed() {	
-		document.getElementById('miIframe').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('miIframe').style.top =   0.7* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_iframe').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_iframe').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento1').src=  "./dearflip/index.html";
+		document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		embed();
@@ -853,15 +851,13 @@ if (reversed == null) { reversed = false; }
 		window.addEventListener('resize', () => {	
 		embed();
 		}) 
-		 
 		
-		var _this=this;
-		_this.btnAyuda.on('click', function () {
+		var _this = this;
 		
-			var iframe = document.getElementById('i_iframe');
-		iframe.src = iframe.src;
+		this.btnAyuda.on('click', function () {		 
+		
+		document.getElementById('i_cuento1').src=  "./dearflip/index.html";
 			
-				 
 		});
 		var _this = this;
 		/*
@@ -986,14 +982,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1693710445958", id:"bannernegro1"},
-		{src:"images/fondo11.png?1693710445958", id:"fondo11"},
-		{src:"images/fondoMorado.png?1693710445958", id:"fondoMorado"},
-		{src:"images/Portada.png?1693710445958", id:"Portada"},
-		{src:"images/index_atlas_1.png?1693710445888", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1693710445958", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1693710445958", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1693710445958", id:"sound1"}
+		{src:"images/bannernegro1.png?1695865617011", id:"bannernegro1"},
+		{src:"images/fondo11.png?1695865617011", id:"fondo11"},
+		{src:"images/fondoMorado.png?1695865617011", id:"fondoMorado"},
+		{src:"images/Portada.png?1695865617011", id:"Portada"},
+		{src:"images/index_atlas_1.png?1695865616919", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1695865617011", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1695865617011", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1695865617011", id:"sound1"}
 	],
 	preloads: []
 };

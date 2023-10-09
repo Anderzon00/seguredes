@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_P_1", frames: [[1037,932,186,121],[1037,1055,274,80],[1225,932,274,80],[1441,0,276,98],[1441,100,276,98],[1198,1137,220,98],[1313,1014,220,98],[0,0,1439,755],[1441,200,86,286],[1529,200,86,286],[1617,479,88,276],[1617,200,88,277],[0,757,1035,395],[0,1154,1196,224],[1037,757,600,173]]}
+		{name:"index1_atlas_P_1", frames: [[1037,932,186,121],[1037,1055,274,80],[1225,932,274,80],[1441,0,276,98],[1441,100,276,98],[1198,1137,220,98],[1313,1014,220,98],[0,0,1439,755],[1441,200,86,286],[1529,200,86,286],[1617,479,88,276],[1617,200,88,277],[0,757,1035,395],[0,1154,1196,224],[1037,757,600,173]]}
 ];
 
 
@@ -28,56 +28,56 @@ lib.ssMetadata = [
 
 
 (lib.amarillo = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.botonvamos = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.botonVamosClic = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.BtnCreditos = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnCreditosHover = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnInicio = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnInicioHover = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Fondo = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
@@ -90,49 +90,49 @@ p.nominalBounds = new cjs.Rectangle(0,0,2888,1680);
 
 
 (lib.globorojoderecha = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.globorojoizquierda = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.globoverdederecha = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.globoverdeizquierda = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Seguredes = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.texto = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.tituloBienvenida = function() {
-	this.initialize(ss["index_atlas_P_1"]);
+	this.initialize(ss["index1_atlas_P_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -476,7 +476,7 @@ if (reversed == null) { reversed = false; }
 
 
 // stage content:
-(lib.index = function(mode,startPosition,loop,reversed) {
+(lib.index1 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -739,9 +739,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Fondo_111.png?1692929640271", id:"Fondo_111"},
-		{src:"images/index_atlas_P_1.png?1692929640184", id:"index_atlas_P_1"},
-		{src:"sounds/sound.mp3?1692929640271", id:"sound"}
+		{src:"images/Fondo_111.png?1695618253711", id:"Fondo_111"},
+		{src:"images/index1_atlas_P_1.png?1695618253623", id:"index1_atlas_P_1"},
+		{src:"sounds/sound.mp3?1695618253711", id:"sound"}
 	],
 	preloads: []
 };

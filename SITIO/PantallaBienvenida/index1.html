@@ -22,20 +22,14 @@
   }
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1688315576873"></script>
-<script>
-// Global Scripts
-	var correctas =0;
-var incorrectas =0;
-console.log("correctas" + correctas);
-console.log("incorrectas" + incorrectas);</script>
+<script src="index1.js?1695618253752"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("DCCA5A04F9E9EB49A3DF1304FD62D849");
+	var comp=AdobeAn.getComposition("7C1B920775F18E4C9C20E78B1DF9DE91");
 	var lib=comp.getLibrary();
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
@@ -60,7 +54,7 @@ function handleComplete(evt,comp) {
 	var preloaderDiv = document.getElementById("_preload_div_");
 	preloaderDiv.style.display = 'none';
 	canvas.style.display = 'block';
-	exportRoot = new lib.index();
+	exportRoot = new lib.index1();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
@@ -70,7 +64,7 @@ function handleComplete(evt,comp) {
 		createjs.Ticker.addEventListener("tick", stage);
 	}	    
 	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(false,'both',false,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
+	AdobeAn.makeResponsive(true,'both',false,2,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
@@ -96,7 +90,7 @@ function playSound(id, loop, offset) {
 	}
 </script>
 </head>
-<body onload="init();" style="margin:0px; overflow:hidden;width:auto ;height:auto;">
+<body onload="init();" style="margin:0px;;background-color:rgba(34, 86, 147, 1.00);overflow:hidden;width:auto ;height:auto;">
 	<div id="animation_container" >
 		<canvas id="canvas"   display: none;  ></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none;   position: absolute; left: 0px; top: 0px;" display: none;>

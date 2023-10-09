@@ -551,7 +551,7 @@ if (reversed == null) { reversed = false; }
 	this.instance.setTransform(-165.5,-9,0.5,0.5);
 
 	this.instance_1 = new lib.Btn_ContenidoExtra_Hover();
-	this.instance_1.setTransform(-166,-12,0.5524,0.5524);
+	this.instance_1.setTransform(-171,-12,0.5524,0.5524);
 
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#000000").s().p("EgiXAC+IAAl7MBEvAAAIAAF7g");
@@ -562,7 +562,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-166,-12,471.8,69.1);
+p.nominalBounds = new cjs.Rectangle(-171,-12,474,69.1);
 
 
 (lib.comoOcurre = function(mode,startPosition,loop,reversed) {
@@ -1083,7 +1083,7 @@ if (reversed == null) { reversed = false; }
 
 	// numeracion
 	this.instance = new lib.FraseSexting();
-	this.instance.setTransform(539,431,0.5,0.5);
+	this.instance.setTransform(572,433,0.4537,0.4537);
 
 	this.btnContenidoExtra = new lib.contenidoExtra();
 	this.btnContenidoExtra.name = "btnContenidoExtra";
@@ -1147,7 +1147,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(679.7,356.9,485.29999999999995,262);
+p.nominalBounds = new cjs.Rectangle(677.2,356.9,462.79999999999995,262);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -1157,8 +1157,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1693792225320", id:"index_atlas_1"},
-		{src:"sounds/sound.mp3?1693792225407", id:"sound"}
+		{src:"images/index_atlas_1.png?1695865845464", id:"index_atlas_1"},
+		{src:"sounds/sound.mp3?1695865845540", id:"sound"}
 	],
 	preloads: []
 };

@@ -3,8 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[0,0,1824,992],[0,994,1373,637]]},
-		{name:"index_atlas_2", frames: [[370,1009,466,90],[370,720,315,90],[1306,1040,457,90],[838,1040,466,90],[1647,0,315,90],[1522,818,457,90],[0,1101,466,90],[1647,92,315,90],[1522,910,457,90],[370,901,708,106],[1211,341,707,107],[0,534,300,300],[1315,634,552,90],[302,627,365,91],[1315,726,552,90],[302,534,366,91],[1315,450,553,90],[1315,542,553,90],[709,502,604,397],[1211,0,434,339],[0,836,368,243],[1080,901,440,137],[1869,634,140,139],[709,0,500,500],[0,0,707,532],[468,1132,708,48]]}
+		{name:"index_atlas_1", frames: [[370,1009,466,90],[370,720,315,90],[1306,1040,457,90],[838,1040,466,90],[1647,0,315,90],[1522,818,457,90],[0,1101,466,90],[1647,92,315,90],[1522,910,457,90],[370,901,708,106],[1211,341,707,107],[0,534,300,300],[1315,634,552,90],[302,627,365,91],[1315,726,552,90],[302,534,366,91],[1315,450,553,90],[1315,542,553,90],[709,502,604,397],[1211,0,434,339],[0,836,368,243],[1080,901,440,137],[1869,634,140,139],[709,0,500,500],[0,0,707,532],[468,1132,708,48]]},
+		{name:"index_atlas_2", frames: [[0,0,1824,992],[0,994,1373,637]]}
 ];
 
 
@@ -29,63 +29,63 @@ lib.ssMetadata = [
 
 
 (lib._1ActividadesNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1AyudaNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1ContenidosNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2actividadesSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2ayudaSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2contenidosSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3actividadesDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3ayudaDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3contenidosDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
@@ -104,70 +104,70 @@ p.nominalBounds = new cjs.Rectangle(0,0,2373,154);
 
 
 (lib.botonaceptar2 = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Botonaceptar = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.botonplay = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.BtnInicioCuentoHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicio = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioCuento = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentos = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentosHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.fondopapel1 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -186,63 +186,63 @@ p.nominalBounds = new cjs.Rectangle(0,0,2376,1136);
 
 
 (lib.formainferiorder = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formainferiorizq = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorder = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorizq = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.icono = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.index_atlas_2 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.mano2 = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Notificacion = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.TITULOGROOMING = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -758,26 +758,14 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		this.stop(); 
-		
+		document.getElementById('divi')?.remove();  
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 			stretchToFit();
 		}
 		
 		
-		const elementdiv = document.getElementById('cuento');
-		elementdiv?.remove();
-		
-		
-		const elementdiv1 = document.getElementById('contenidos');
-		elementdiv1?.remove();
-		
-		
-		  
-		const elementdiv3 = document.getElementById('actividades');
-		elementdiv3?.remove();
-		
-		
+		 
 		
 		 var _this=this;
 		
@@ -822,25 +810,39 @@ if (reversed == null) { reversed = false; }
 			_this.gotoAndPlay(1);
 		});
 		
+		
+		var element = document.createElement('div');
+		element.setAttribute('id', 'divi');
+		document.body.appendChild(element);
+		element.style.position = "absolute"; 
+		 
+		element.innerHTML = '<iframe  src= "./Contenidos/index.html"  id="i_cuento4"   style="border:none" allow="autoplay"  >';
+		
+		function embed() {	
+		document.getElementById('divi').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		document.getElementById('divi').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento4').style.width = 1+'px';
+		document.getElementById('i_cuento4').style.height = 1 +'px';
+		}
+		
+		embed();
+		 
+		window.addEventListener('resize', () => {	
+		embed();
+		})
+		
 	}
 	this.frame_12 = function() {
 		this.stop();
-		const elementdiv = document.getElementById('cuento');
-		elementdiv?.remove();
 		
 		
-		const elementdiv1 = document.getElementById('contenidos');
-		elementdiv1?.remove();
+		function embed() {	
+		document.getElementById('i_cuento4').src=  "";	
+		document.getElementById('i_cuento4').style.width = 0 +'px';
+		document.getElementById('i_cuento4').style.height = 0 + 'px';		
+			}
 		
-		
-		  
-		const elementdiv2 = document.getElementById('actividades');
-		elementdiv2?.remove();
-		
-		const elementdiv3 = document.getElementById('ayuda');
-		elementdiv3?.remove();
-		
-		
+		embed();
 		
 		var _this = this;
 		 
@@ -855,37 +857,14 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_13 = function() {
-		const elementdiv = document.getElementById('cuento');
-		elementdiv?.remove();
-		
-		const elementdiv1 = document.getElementById('contenidos');
-		elementdiv1?.remove();
-		  
-		const elementdiv2 = document.getElementById('actividades');
-		elementdiv2?.remove();  
-		
-		const elementdiv3 = document.getElementById('ayuda');
-		elementdiv3?.remove();
-		  
-		  
-		var root = this;
-		var key;
-		var element = document.createElement('div');
-		element.setAttribute('id', 'cuento');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		 
-		element.innerHTML = '<iframe  src= "./Cuento/E1AA/index.html" id="i_cuento"   style="border:none" allow="autoplay"  >';
-		
+		var _this = this;
+		_this.stop();
 		function embed() {	
-		document.getElementById('cuento').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('cuento').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_cuento').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento4').src= "./Cuento/E1AA/index.html" ;	
+		document.getElementById('i_cuento4').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_cuento4').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';	
 		}
-		
 		embed();
-		
 		window.addEventListener('resize', () => {	
 		embed();
 		})
@@ -902,49 +881,27 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_14 = function() {
-		const elementdiv = document.getElementById('cuento');
-		elementdiv?.remove();
-		
-		const elementdiv1 = document.getElementById('contenidos');
-		elementdiv1?.remove();
-		  
-		const elementdiv2 = document.getElementById('actividades');
-		elementdiv2?.remove();
-		
-		const elementdiv3 = document.getElementById('ayuda');
-		elementdiv3?.remove();
-		
-		
-		var root = this;
-		var key;
-		var element = document.createElement('div');
-		element.setAttribute('id', 'contenidos');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		 
-		element.innerHTML = '<iframe  src= "./Contenidos/index.html"  id="i_contenidos"   style="border:none" allow="autoplay"  >';
-		
-		var _this = this;
-		
-		_this.btnContenidos.on('click', function () {
-		
-			var iframe = document.getElementById('i_contenidos');
-		iframe.src = iframe.src;	
-				 
-		});
-		
 		function embed() {	
-		document.getElementById('contenidos').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('contenidos').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_contenidos').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_contenidos').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento4').src=  "./Contenidos/index.html";
+		document.getElementById('i_cuento4').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_cuento4').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		embed();
 		
 		window.addEventListener('resize', () => {	
 		embed();
-		})
+		}) 
+		
+		
+		 
+		var _this=this;
+		_this.btnContenidos.on('click', function () {
+		
+		document.getElementById('i_cuento4').src=  "./Contenidos/index.html";
+		
+				 
+		});
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -957,53 +914,24 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_15 = function() {
-		const elementdiv = document.getElementById('cuento');
-		elementdiv?.remove();
-		
-		const elementdiv1 = document.getElementById('contenidos');
-		elementdiv1?.remove();
-		  
-		const elementdiv2 = document.getElementById('actividades');
-		elementdiv2?.remove();
-		
-		const elementdiv3 = document.getElementById('ayuda');
-		elementdiv3?.remove();
-		    
-		var root = this;
-		var key;
-		var element = document.createElement('div');
-		element.setAttribute('id', 'actividades');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		 
-		element.innerHTML = '<iframe  src= "./Actividades/Menu/index.html" id="i_actividades"   style="border:none" allow="autoplay"  >';
-		
-		var _this = this;
-		
-		
-		
-		_this.btnActividades.on('click', function () {
-		
-			var iframe = document.getElementById('i_actividades');
-		iframe.src = iframe.src;
-			
-				 
-		});
-		
-		
-		
 		function embed() {	
-		document.getElementById('actividades').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('actividades').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_actividades').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_actividades').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento4').src=  "./Actividades/Menu/index.html";
+		document.getElementById('i_cuento4').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_cuento4').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		embed();
 		
 		window.addEventListener('resize', () => {	
 		embed();
-		})
+		}) 
+		
+		var _this = this;
+		
+		_this.btnActividades.on('click', function () {	 	
+		document.getElementById('i_cuento4').src=  "./Actividades/Menu/index.html";
+				 		 
+		});
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -1017,17 +945,6 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_16 = function() {
-		const elementdiv = document.getElementById('cuento');
-		elementdiv?.remove();
-		
-		const elementdiv1 = document.getElementById('contenidos');
-		elementdiv1?.remove();
-		  
-		const elementdiv2 = document.getElementById('actividades');
-		elementdiv2?.remove();
-		
-		const elementdiv3 = document.getElementById('ayuda');
-		elementdiv3?.remove();
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -1151,15 +1068,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1693924852932", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1693924852932", id:"barraseguredes"},
-		{src:"images/fondo111111111.png?1693924852932", id:"fondo111111111"},
-		{src:"images/fondoMorado.png?1693924852932", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1693924852855", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1693924852856", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1693924852932", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1693924852932", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1693924852932", id:"sound1"}
+		{src:"images/bannernegro1.png?1695863630962", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1695863630962", id:"barraseguredes"},
+		{src:"images/fondo111111111.png?1695863630962", id:"fondo111111111"},
+		{src:"images/fondoMorado.png?1695863630962", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1695863630900", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1695863630900", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1695863630962", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1695863630962", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1695863630962", id:"sound1"}
 	],
 	preloads: []
 };

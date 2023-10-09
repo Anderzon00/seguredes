@@ -3,8 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[459,0,315,90],[0,0,457,90],[459,92,315,90],[0,92,457,90],[459,184,315,90],[0,184,457,90],[368,276,365,91],[0,276,366,91],[735,276,140,139]]},
-		{name:"index_atlas_2", frames: [[1550,1745,466,90],[1515,994,466,90],[1515,1086,466,90],[1211,1637,708,106],[502,1927,707,107],[1108,1335,300,300],[1410,1397,552,90],[1410,1489,552,90],[1211,1884,553,90],[1410,1305,553,90],[0,0,1824,992],[502,1528,604,397],[709,994,434,339],[1145,994,368,243],[1108,1745,440,137],[0,1528,500,500],[1145,1239,803,64],[0,994,707,532]]}
+		{name:"index_atlas_1", frames: [[1550,1745,466,90],[1515,994,466,90],[1515,1086,466,90],[1211,1637,708,106],[502,1927,707,107],[1108,1335,300,300],[1410,1397,552,90],[1410,1489,552,90],[1211,1884,553,90],[1410,1305,553,90],[0,0,1824,992],[502,1528,604,397],[709,994,434,339],[1145,994,368,243],[1108,1745,440,137],[0,1528,500,500],[1145,1239,803,64],[0,994,707,532]]},
+		{name:"index_atlas_2", frames: [[459,0,315,90],[0,0,457,90],[459,92,315,90],[0,92,457,90],[459,184,315,90],[0,184,457,90],[368,276,365,91],[0,276,366,91],[776,0,87,87],[776,89,87,87],[776,178,87,87],[865,0,87,87],[735,276,140,139]]}
 ];
 
 
@@ -29,63 +29,63 @@ lib.ssMetadata = [
 
 
 (lib._1ActividadesNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1AyudaNORMAL = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1ContenidosNORMAL = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2actividadesSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2ayudaSOBRE = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(2);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib._2contenidosSOBRE = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(3);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib._3actividadesDOWN = function() {
 	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._3ayudaDOWN = function() {
+(lib._2contenidosSOBRE = function() {
+	this.initialize(ss["index_atlas_2"]);
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._3actividadesDOWN = function() {
 	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._3ayudaDOWN = function() {
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3contenidosDOWN = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
@@ -104,70 +104,98 @@ p.nominalBounds = new cjs.Rectangle(0,0,2373,154);
 
 
 (lib.botonaceptar2 = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Botonaceptar = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.botonplay = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.BtnInicioCuentoHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicio = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioCuento = function() {
-	this.initialize(ss["index_atlas_2"]);
-	this.gotoAndStop(7);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.btnIrInicioHover = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnMenuCuentos = function() {
+(lib.btnIrInicioHover = function() {
 	this.initialize(ss["index_atlas_2"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.btnMenuCuentos = function() {
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentosHover = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.BtnMutepngcopia = function() {
+	this.initialize(ss["index_atlas_2"]);
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.BtnMuteHover = function() {
 	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.fondopapel1 = function() {
+(lib.BtnVolumenActivado = function() {
 	this.initialize(ss["index_atlas_2"]);
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.btnVolumenActivoHover = function() {
+	this.initialize(ss["index_atlas_2"]);
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.fondopapel1 = function() {
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
@@ -192,56 +220,56 @@ p.nominalBounds = new cjs.Rectangle(0,0,2377,1137);
 
 
 (lib.formainferiorder = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formainferiorizq = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorder = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorizq = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.icono = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(8);
+	this.initialize(ss["index_atlas_2"]);
+	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.mano2 = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.NombreCuento = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Notificacion = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -263,7 +291,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	}
 
 
-(lib.Símbolo37 = function(mode,startPosition,loop,reversed) {
+(lib.Símbolo41 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -331,6 +359,74 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-35,-34.7,70,69.5);
+
+
+(lib.btnSound = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.BtnVolumenActivado();
+	this.instance.setTransform(0,0,0.5,0.5);
+
+	this.instance_1 = new lib.btnVolumenActivoHover();
+	this.instance_1.setTransform(0,0,0.5,0.5);
+
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("rgba(0,197,255,0)").ss(1,1,1).p("AjZjZIGzAAIAAGzImzAAg");
+	this.shape.setTransform(21.75,21.75);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#33CC00").s().p("AjZDZIAAmyIGyAAIAAGyg");
+	this.shape_1.setTransform(21.75,21.75);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.shape_1},{t:this.shape}]},2).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-1,-1,45.5,45.5);
+
+
+(lib.btnMute = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.BtnMutepngcopia();
+	this.instance.setTransform(0,0,0.5,0.5);
+
+	this.instance_1 = new lib.BtnMuteHover();
+	this.instance_1.setTransform(0,0,0.5,0.5);
+
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("rgba(0,197,255,0)").ss(1,1,1).p("AjZjZIGzAAIAAGzImzAAg");
+	this.shape.setTransform(21.75,21.75);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#33CC00").s().p("AjZDZIAAmyIGyAAIAAGyg");
+	this.shape_1.setTransform(21.75,21.75);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.shape_1},{t:this.shape}]},2).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-1,-1,45.5,45.5);
 
 
 (lib.Símbolo1 = function(mode,startPosition,loop,reversed) {
@@ -757,30 +853,12 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		this.stop(); 
-		
+		document.getElementById('divi')?.remove();  
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 			stretchToFit();
 		}
-		
-		
-		const elementdiv = document.getElementById('cuento');
-		elementdiv?.remove();
-		
-		
-		const elementdiv1 = document.getElementById('contenidos');
-		elementdiv1?.remove();
-		
-		
-		  
-		const elementdiv3 = document.getElementById('actividades');
-		elementdiv3?.remove();
-		
-		
-		
 		 var _this=this;
-		
-		
 		
 		_this.btnInicio.on('click', function () {
 			createjs.Sound.play("sound2", {	volume: 0.5
@@ -788,7 +866,6 @@ if (reversed == null) { reversed = false; }
 				window.open("../../", "_self");
 			}, this);
 		});
-		
 		
 		_this.btnVolver.on('click', function () {
 			createjs.Sound.play("sound2", {
@@ -798,51 +875,63 @@ if (reversed == null) { reversed = false; }
 			}, this);
 		});
 		
-		
 		_this.btnContenidos.on('click', function () {		
-				_this.gotoAndStop("Contenidos");
-				 
+				_this.gotoAndStop("Contenidos");		 
 		});
 		
-		
 		_this.btnActividades.on('click', function () {	 	
-				_this.gotoAndStop("Actividades");
-				 		 
+				_this.gotoAndStop("Actividades");		 		 
 		});
 		
 		this.btnAyuda.on('click', function () {		 
 		alert("ayuda");	
-			_this.gotoAndStop("Ayuda");
-			
+			_this.gotoAndStop("Ayuda");	
 		});
-		
 		
 		_this.popup.button_popup.on('click', function () {
 			_this.gotoAndPlay(1);
-		});
+		});  
+		 
+		var element = document.createElement('div');
+		element.setAttribute('id', 'divi');
+		document.body.appendChild(element);
+		element.style.position = "absolute"; 
+		 
+		element.innerHTML = '<iframe  src= "./Contenidos/index.html"  id="i_cuento"   style="border:none" allow="autoplay"  >';
 		
-	}
-	this.frame_12 = function() {
-		this.stop();
-		const elementdiv = document.getElementById('cuento');
-		elementdiv?.remove();
+		function embed() {	
+		document.getElementById('divi').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		document.getElementById('divi').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento').style.width = 0 +'px';
+		document.getElementById('i_cuento').style.height = 0 +'px';
+		}
 		
-		
-		const elementdiv1 = document.getElementById('contenidos');
-		elementdiv1?.remove();
-		
-		
-		  
-		const elementdiv2 = document.getElementById('actividades');
-		elementdiv2?.remove();
-		
-		const elementdiv3 = document.getElementById('ayuda');
-		elementdiv3?.remove();
-		
-		
+		embed();
+		 
+		window.addEventListener('resize', () => {	
+		embed();
+		}) 
 		
 		var _this = this;
+		_this.unmute.visible = false;
 		 
+		 _this.on("click", function (e) {
+				if (e.target.name === "unmute")
+				{
+					createjs.Sound.setMute(false);
+					_this.mute.visible = true;
+					_this.unmute.visible = false;
+				} else if (e.target.name === "mute") {
+					createjs.Sound.setMute(true);
+					_this.mute.visible = false;
+					_this.unmute.visible = true;
+				}
+			});
+	}
+	this.frame_12 = function() {
+		var _this = this; 
+		
+		
 		 
 		_this.bntPlay.on('click', function(){
 		 
@@ -852,36 +941,38 @@ if (reversed == null) { reversed = false; }
 			}, this);
 			
 		});
-	}
-	this.frame_13 = function() {
-		const elementdiv = document.getElementById('cuento');
-		elementdiv?.remove();
-		
-		const elementdiv1 = document.getElementById('contenidos');
-		elementdiv1?.remove();
-		  
-		const elementdiv2 = document.getElementById('actividades');
-		elementdiv2?.remove();  
-		
-		const elementdiv3 = document.getElementById('ayuda');
-		elementdiv3?.remove();
-		  
-		  
-		var root = this;
-		var key;
-		var element = document.createElement('div');
-		element.setAttribute('id', 'cuento');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		 
-		element.innerHTML = '<iframe  src= "./Cuento/E1AA/index.html" id="i_cuento"   style="border:none" allow="autoplay"  >';
 		
 		function embed() {	
-		document.getElementById('cuento').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('cuento').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento').src=  "";	
+		document.getElementById('i_cuento').style.width = 0 +'px';
+		document.getElementById('i_cuento').style.height = 0 + 'px';	
+				}
+		
+		embed();
+		
+		window.addEventListener('resize', () => {	
+		embed();
+		}) 
+		
+		/*
+		Detener un clip de película o un vídeo
+		Detiene el clip de película o el vídeo especificado.
+		*/
+		_this.stop();
+	}
+	this.frame_13 = function() {
+		var _this = this;
+		
+		_this.stop();
+		
+		
+		function embed() {	
+		document.getElementById('i_cuento').src=  "./Cuento/E1AA/index.html";	
 		document.getElementById('i_cuento').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
+		document.getElementById('i_cuento').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';	
+			
+			
+			}
 		
 		embed();
 		
@@ -901,49 +992,22 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_14 = function() {
-		const elementdiv = document.getElementById('cuento');
-		elementdiv?.remove();
-		
-		const elementdiv1 = document.getElementById('contenidos');
-		elementdiv1?.remove();
-		  
-		const elementdiv2 = document.getElementById('actividades');
-		elementdiv2?.remove();
-		
-		const elementdiv3 = document.getElementById('ayuda');
-		elementdiv3?.remove();
-		
-		
-		var root = this;
-		var key;
-		var element = document.createElement('div');
-		element.setAttribute('id', 'contenidos');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		 
-		element.innerHTML = '<iframe  src= "./Contenidos/index.html"  id="i_contenidos"   style="border:none" allow="autoplay"  >';
-		
-		var _this = this;
-		
-		_this.btnContenidos.on('click', function () {
-		
-			var iframe = document.getElementById('i_contenidos');
-		iframe.src = iframe.src;	
-				 
-		});
-		
 		function embed() {	
-		document.getElementById('contenidos').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('contenidos').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_contenidos').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_contenidos').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento').src=  "./Contenidos/index.html";
+		document.getElementById('i_cuento').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_cuento').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		embed();
 		
 		window.addEventListener('resize', () => {	
 		embed();
-		})
+		}) 
+		 var _this=this;
+		
+		_this.btnContenidos.on('click', function () {		
+				document.getElementById('i_cuento').src=  "./Contenidos/index.html";	 
+		});
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -956,53 +1020,22 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_15 = function() {
-		const elementdiv = document.getElementById('cuento');
-		elementdiv?.remove();
-		
-		const elementdiv1 = document.getElementById('contenidos');
-		elementdiv1?.remove();
-		  
-		const elementdiv2 = document.getElementById('actividades');
-		elementdiv2?.remove();
-		
-		const elementdiv3 = document.getElementById('ayuda');
-		elementdiv3?.remove();
-		    
-		var root = this;
-		var key;
-		var element = document.createElement('div');
-		element.setAttribute('id', 'actividades');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		 
-		element.innerHTML = '<iframe  src= "./Actividades/Menu/index.html" id="i_actividades"   style="border:none" allow="autoplay"  >';
-		
-		var _this = this;
-		
-		
-		
-		_this.btnActividades.on('click', function () {
-		
-			var iframe = document.getElementById('i_actividades');
-		iframe.src = iframe.src;
-			
-				 
-		});
-		
-		
-		
 		function embed() {	
-		document.getElementById('actividades').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('actividades').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_actividades').style.width = 27.93 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_actividades').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento').src=  "./Actividades/Menu/index.html";
+		document.getElementById('i_cuento').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_cuento').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		embed();
 		
 		window.addEventListener('resize', () => {	
 		embed();
-		})
+		}) 
+		
+		 var _this=this;
+		_this.btnActividades.on('click', function () {	 	
+				document.getElementById('i_cuento').src=  "./Actividades/Menu/index.html";	 		 
+		});
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -1016,17 +1049,7 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_16 = function() {
-		const elementdiv = document.getElementById('cuento');
-		elementdiv?.remove();
 		
-		const elementdiv1 = document.getElementById('contenidos');
-		elementdiv1?.remove();
-		  
-		const elementdiv2 = document.getElementById('actividades');
-		elementdiv2?.remove();
-		
-		const elementdiv3 = document.getElementById('ayuda');
-		elementdiv3?.remove();
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -1044,11 +1067,21 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(1).call(this.frame_14).wait(1).call(this.frame_15).wait(1).call(this.frame_16).wait(1));
 
 	// Capa_1
+	this.mute = new lib.btnSound();
+	this.mute.name = "mute";
+	this.mute.setTransform(680.45,711.6);
+	new cjs.ButtonHelper(this.mute, 0, 1, 2, false, new lib.btnSound(), 3);
+
+	this.unmute = new lib.btnMute();
+	this.unmute.name = "unmute";
+	this.unmute.setTransform(564.9,716.45);
+	new cjs.ButtonHelper(this.unmute, 0, 1, 2, false, new lib.btnMute(), 3);
+
 	this.botones = new lib.Símbolo2();
 	this.botones.name = "botones";
 	this.botones.setTransform(629.1,469.25,1,1,0,0,0,505.4,164);
 
-	this.timeline.addTween(cjs.Tween.get(this.botones).wait(17));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.botones},{t:this.unmute},{t:this.mute}]}).wait(17));
 
 	// mensaje
 	this.popup = new lib.Simbologrupo();
@@ -1061,7 +1094,7 @@ if (reversed == null) { reversed = false; }
 	this.bntPlay._off = true;
 	new cjs.ButtonHelper(this.bntPlay, 0, 1, 2);
 
-	this.instance = new lib.Símbolo37("synched",0);
+	this.instance = new lib.Símbolo41("synched",0);
 	this.instance.setTransform(697.05,337.05,1.0019,1,0,0,0,726.6,709.8);
 
 	this.instance_1 = new lib.fondopapel1();
@@ -1106,7 +1139,7 @@ if (reversed == null) { reversed = false; }
 	this.btnVolver.setTransform(1205.7,737.7,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolver, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver,p:{y:737.7}},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]}).to({state:[{t:this.btnVolver,p:{y:737.45}},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]},11).wait(6));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]}).wait(17));
 
 	// barra
 	this.instance_4 = new lib.barraseguredes();
@@ -1150,16 +1183,16 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1693664837658", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1693664837658", id:"barraseguredes"},
-		{src:"images/fondo11.png?1693664837658", id:"fondo11"},
-		{src:"images/fondoMorado.png?1693664837658", id:"fondoMorado"},
-		{src:"images/FondoOscuro.png?1693664837658", id:"FondoOscuro"},
-		{src:"images/index_atlas_1.png?1693664837584", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1693664837585", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1693664837658", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1693664837658", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1693664837658", id:"sound1"}
+		{src:"images/bannernegro1.png?1695863571495", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1695863571495", id:"barraseguredes"},
+		{src:"images/fondo11.png?1695863571495", id:"fondo11"},
+		{src:"images/fondoMorado.png?1695863571495", id:"fondoMorado"},
+		{src:"images/FondoOscuro.png?1695863571495", id:"FondoOscuro"},
+		{src:"images/index_atlas_1.png?1695863571422", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1695863571422", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1695863571495", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1695863571495", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1695863571495", id:"sound1"}
 	],
 	preloads: []
 };

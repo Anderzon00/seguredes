@@ -1577,6 +1577,7 @@ if (reversed == null) { reversed = false; }
 				if ($("#imput1").val() == "Estafa" || $("#imput1").val() == "estafa")
 					window.open('../PeligroNoPeligro', '_self');
 				else if ($("#imput2").val() == "Suplantación" || $("#imput2").val() == "suplantación" || $("#imput2").val() == "Suplantacion" || $("#imput2").val() == "suplantacion")
+		
 					window.open('../ExplosionGlobos', '_self');
 				else
 					_this.gotoAndStop(1);
@@ -1766,14 +1767,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1694459451166", id:"index_atlas_1"},
-		{src:"sounds/play.mp3?1694459451332", id:"play"},
-		{src:"sounds/error41.mp3?1694459451332", id:"error41"},
-		{src:"sounds/sound.mp3?1694459451332", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1694459451332", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1694459451332", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1694459451332", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1694459451332", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1694727827034", id:"index_atlas_1"},
+		{src:"sounds/play.mp3?1694727827140", id:"play"},
+		{src:"sounds/error41.mp3?1694727827140", id:"error41"},
+		{src:"sounds/sound.mp3?1694727827140", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1694727827140", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1694727827140", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1694727827140", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1694727827140", id:"an.TextInput"}
 	],
 	preloads: []
 };

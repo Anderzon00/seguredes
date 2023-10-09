@@ -2774,14 +2774,14 @@ lib.properties = {
 	color: "#372360",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1688314648341", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1688314648343", id:"index_atlas_P_2"},
-		{src:"sounds/drop.mp3?1688314648503", id:"drop"},
-		{src:"sounds/error.mp3?1688314648503", id:"error"},
-		{src:"sounds/win.mp3?1688314648503", id:"win"},
-		{src:"sounds/SoundBoton.mp3?1688314648503", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1688314648503", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1688314648503", id:"retroalimentacion"}
+		{src:"images/index_atlas_P_1.png?1695177362020", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1695177362023", id:"index_atlas_P_2"},
+		{src:"sounds/drop.mp3?1695177362195", id:"drop"},
+		{src:"sounds/error.mp3?1695177362195", id:"error"},
+		{src:"sounds/win.mp3?1695177362195", id:"win"},
+		{src:"sounds/SoundBoton.mp3?1695177362195", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1695177362195", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1695177362195", id:"retroalimentacion"}
 	],
 	preloads: []
 };
