@@ -1337,7 +1337,7 @@ if (reversed == null) { reversed = false; }
 		*/
 		_this.btnDescarga2.on('click', function(){
 		createjs.Sound.play("sound2", { volume: 0.8}).on("complete", function () {                    
-		window.open('https://liveudenaredu-my.sharepoint.com/:f:/g/personal/anarsa55_udenar_edu_co/EuFRSZ4LEJ1DgtadegURv2EBcsJ8tIKtYhPXS-0ljwOkwQ?e=7A0H95')
+		window.open(' https://liveudenaredu-my.sharepoint.com/:f:/g/personal/anarsa55_udenar_edu_co/EuFRSZ4LEJ1DgtadegURv2EBcsJ8tIKtYhPXS-0ljwOkwQ?e=7A0H95')
 		_this.parent.parent.letrero.gotoAndStop(0);                 }, this);
 		
 		 
@@ -1534,13 +1534,13 @@ lib.properties = {
 	color: "#006699",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/fondoizq.png?1695618270140", id:"fondoizq"},
-		{src:"images/index_atlas_P_1.png?1695618270016", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1695618270017", id:"index_atlas_P_2"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1695618270140", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1695618270140", id:"sound"},
-		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1695618270140", id:"notificationsound70621onlineaudioconvertercom"},
-		{src:"sounds/sound2.mp3?1695618270140", id:"sound2"}
+		{src:"images/fondoizq.png?1696890677358", id:"fondoizq"},
+		{src:"images/index_atlas_P_1.png?1696890677242", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1696890677243", id:"index_atlas_P_2"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1696890677358", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/sound.mp3?1696890677358", id:"sound"},
+		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1696890677358", id:"notificationsound70621onlineaudioconvertercom"},
+		{src:"sounds/sound2.mp3?1696890677358", id:"sound2"}
 	],
 	preloads: []
 };
