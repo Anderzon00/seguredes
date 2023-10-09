@@ -1337,7 +1337,7 @@ if (reversed == null) { reversed = false; }
 		*/
 		_this.btnDescarga2.on('click', function(){
 		createjs.Sound.play("sound2", { volume: 0.8}).on("complete", function () {                    
-		window.open(' https://liveudenaredu-my.sharepoint.com/:u:/g/personal/anarsa55_udenar_edu_co/Ec5DqTJgaHdJnr-YgAwvleEB4SkpbtLCOIpd9z-eCPW-wA?e=4Sk7pW')
+		window.open('https://liveudenaredu-my.sharepoint.com/:f:/g/personal/anarsa55_udenar_edu_co/EuFRSZ4LEJ1DgtadegURv2EBcsJ8tIKtYhPXS-0ljwOkwQ?e=7A0H95')
 		_this.parent.parent.letrero.gotoAndStop(0);                 }, this);
 		
 		 
