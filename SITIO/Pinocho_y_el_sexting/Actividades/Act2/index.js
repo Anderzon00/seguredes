@@ -3456,7 +3456,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.on("click", function (e) {
 		    if (e.target === letrero1) {
-		        if (_this.currentFrame === 0 || _this.currentFrame === 3 || _this.currentFrame === 5) {
+		        if (_this.currentFrame === 0 || _this.currentFrame === 1 || _this.currentFrame === 3 || _this.currentFrame === 5) {
 		            contadorRespuestasCorrectas++;
 		        } else {
 		            contadorRespuestasIncorrectas++;
@@ -4041,7 +4041,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_6 = new lib.Símbolo2();
 	this.instance_6.setTransform(485.3,258.25,1,1,0,0,0,356.2,229.8);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.btnPlay},{t:this.instance}]}).to({state:[]},1).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.correctas,p:{x:465.35,y:303.8}},{t:this.incorrectas,p:{x:468.35,y:335.6}},{t:this.btnReintentar},{t:this.btnSalir}]},1).to({state:[{t:this.instance_5},{t:this.correctas,p:{x:489.8,y:306.4}},{t:this.incorrectas,p:{x:522.8,y:348.1}},{t:this.btnReintentarVerde,p:{x:421.55,y:421.9}},{t:this.btnSalirVerde,p:{x:600.45,y:421.9}},{t:this.instance_4,p:{x:495.5,y:61.45}}]},1).to({state:[{t:this.instance_6},{t:this.correctas,p:{x:477.45,y:302.4}},{t:this.incorrectas,p:{x:509.75,y:343.65}},{t:this.btnReintentarVerde,p:{x:423.8,y:412.15}},{t:this.btnSalirVerde,p:{x:608.4,y:412.15}},{t:this.instance_4,p:{x:474.65,y:46.65}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.btnPlay},{t:this.instance}]}).to({state:[]},1).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.correctas,p:{x:465.35,y:303.8}},{t:this.incorrectas,p:{x:468.35,y:335.6}},{t:this.btnReintentar},{t:this.btnSalir}]},1).to({state:[{t:this.instance_5},{t:this.correctas,p:{x:489.8,y:308.4}},{t:this.incorrectas,p:{x:522.8,y:350.1}},{t:this.btnReintentarVerde,p:{x:421.55,y:421.9}},{t:this.btnSalirVerde,p:{x:600.45,y:421.9}},{t:this.instance_4,p:{x:495.5,y:61.45}}]},1).to({state:[{t:this.instance_6},{t:this.correctas,p:{x:477.45,y:308.4}},{t:this.incorrectas,p:{x:509.75,y:349.65}},{t:this.btnReintentarVerde,p:{x:423.8,y:412.15}},{t:this.btnSalirVerde,p:{x:608.4,y:412.15}},{t:this.instance_4,p:{x:474.65,y:46.65}}]},1).wait(1));
 
 	// contenedor
 	this.instance_7 = new lib.contenedor();
@@ -4108,24 +4108,24 @@ lib.properties = {
 	color: "#0000FF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Barco.png?1697250444605", id:"Barco"},
-		{src:"images/FondoCielo.png?1697250444605", id:"FondoCielo"},
-		{src:"images/FondoMar.png?1697250444605", id:"FondoMar"},
-		{src:"images/PiedrasFondoHorizonte.png?1697250444605", id:"PiedrasFondoHorizonte"},
-		{src:"images/index_atlas_1.png?1697250444360", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1697250444362", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1697250444362", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1697250444363", id:"index_atlas_4"},
-		{src:"sounds/audio.mp3?1697250444605", id:"audio"},
-		{src:"sounds/cannonSound.mp3?1697250444605", id:"cannonSound"},
-		{src:"sounds/incorrect.mp3?1697250444605", id:"incorrect"},
-		{src:"sounds/correct.mp3?1697250444605", id:"correct"},
-		{src:"sounds/Voice3.mp3?1697250444605", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1697250444605", id:"Voice4"},
-		{src:"sounds/Voice1.mp3?1697250444605", id:"Voice1"},
-		{src:"sounds/SoundBoton.mp3?1697250444605", id:"SoundBoton"},
-		{src:"sounds/Voice5.mp3?1697250444605", id:"Voice5"},
-		{src:"sounds/BGM.mp3?1697250444605", id:"BGM"}
+		{src:"images/Barco.png?1697252980209", id:"Barco"},
+		{src:"images/FondoCielo.png?1697252980209", id:"FondoCielo"},
+		{src:"images/FondoMar.png?1697252980209", id:"FondoMar"},
+		{src:"images/PiedrasFondoHorizonte.png?1697252980209", id:"PiedrasFondoHorizonte"},
+		{src:"images/index_atlas_1.png?1697252979953", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1697252979955", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1697252979955", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1697252979955", id:"index_atlas_4"},
+		{src:"sounds/audio.mp3?1697252980209", id:"audio"},
+		{src:"sounds/cannonSound.mp3?1697252980209", id:"cannonSound"},
+		{src:"sounds/incorrect.mp3?1697252980209", id:"incorrect"},
+		{src:"sounds/correct.mp3?1697252980209", id:"correct"},
+		{src:"sounds/Voice3.mp3?1697252980209", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1697252980209", id:"Voice4"},
+		{src:"sounds/Voice1.mp3?1697252980209", id:"Voice1"},
+		{src:"sounds/SoundBoton.mp3?1697252980209", id:"SoundBoton"},
+		{src:"sounds/Voice5.mp3?1697252980209", id:"Voice5"},
+		{src:"sounds/BGM.mp3?1697252980209", id:"BGM"}
 	],
 	preloads: []
 };
