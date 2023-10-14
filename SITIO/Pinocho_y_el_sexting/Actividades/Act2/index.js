@@ -841,23 +841,23 @@ if (reversed == null) { reversed = false; }
 	this.instance_2.setTransform(31,-1,0.7045,0.7045);
 
 	this.instance_3 = new lib.i8();
-	this.instance_3.setTransform(0,-8,0.56,0.56);
+	this.instance_3.setTransform(-5,-8,0.56,0.56);
 
 	this.instance_4 = new lib._10();
-	this.instance_4.setTransform(0,0,0.56,0.56);
+	this.instance_4.setTransform(-2,-6,0.56,0.56);
 
 	this.instance_5 = new lib.i12();
 	this.instance_5.setTransform(7,0,0.56,0.56);
 
 	this.instance_6 = new lib._14();
-	this.instance_6.setTransform(-22,-4,0.5119,0.5119);
+	this.instance_6.setTransform(-21,-15,0.483,0.8246);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-22,-8,169.5,46.7);
+p.nominalBounds = new cjs.Rectangle(-21,-15,159.9,66);
 
 
 (lib.palabras3 = function(mode,startPosition,loop,reversed) {
@@ -895,13 +895,13 @@ if (reversed == null) { reversed = false; }
 	this.instance_2.setTransform(9,-4,0.4613,0.4613);
 
 	this.instance_3 = new lib._8();
-	this.instance_3.setTransform(-12,-5,0.4678,0.4678);
+	this.instance_3.setTransform(-9,-14,0.4514,0.7146);
 
 	this.instance_4 = new lib.i10();
-	this.instance_4.setTransform(-2,0,0.431,0.4934);
+	this.instance_4.setTransform(-3,1,0.4096,0.4934);
 
 	this.instance_5 = new lib._12();
-	this.instance_5.setTransform(-3,-2,0.4316,0.3989);
+	this.instance_5.setTransform(-1,-14,0.4062,0.6953);
 
 	this.instance_6 = new lib.i14();
 	this.instance_6.setTransform(0,0,0.56,0.56);
@@ -911,7 +911,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-12,-5,157.2,35.3);
+p.nominalBounds = new cjs.Rectangle(-9,-14,151.7,56.3);
 
 
 (lib.palabras2 = function(mode,startPosition,loop,reversed) {
@@ -943,7 +943,7 @@ if (reversed == null) { reversed = false; }
 	this.instance.setTransform(0,0,0.56,0.56);
 
 	this.instance_1 = new lib.i3();
-	this.instance_1.setTransform(-19,3,0.5139,0.5139);
+	this.instance_1.setTransform(-17,-1,0.4924,0.4924);
 
 	this.instance_2 = new lib._5();
 	this.instance_2.setTransform(-17,-2,0.4897,0.4897);
@@ -955,17 +955,17 @@ if (reversed == null) { reversed = false; }
 	this.instance_4.setTransform(0,0,0.56,0.56);
 
 	this.instance_5 = new lib.i11();
-	this.instance_5.setTransform(-4,-5,0.56,0.56);
+	this.instance_5.setTransform(-13,-10,0.56,0.56);
 
 	this.instance_6 = new lib._13();
-	this.instance_6.setTransform(-22,0,0.4224,0.4224);
+	this.instance_6.setTransform(-20,-9,0.4059,0.5468);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-22,-5,141.1,47.6);
+p.nominalBounds = new cjs.Rectangle(-20,-10,135.7,47.6);
 
 
 (lib.palabras1 = function(mode,startPosition,loop,reversed) {
@@ -1009,7 +1009,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_4.setTransform(0,0,0.56,0.56);
 
 	this.instance_5 = new lib._11();
-	this.instance_5.setTransform(0,0,0.56,0.56);
+	this.instance_5.setTransform(-2,-4,0.56,0.56);
 
 	this.instance_6 = new lib.i13();
 	this.instance_6.setTransform(-3,-6,0.5316,0.5316);
@@ -1019,7 +1019,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-34,-6,199.1,44.1);
+p.nominalBounds = new cjs.Rectangle(-34,-6,199.1,40.1);
 
 
 (lib.punto6 = function(mode,startPosition,loop,reversed) {
@@ -1630,28 +1630,6 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = getMCSymbolPrototype(lib.bolaPiso, new cjs.Rectangle(0,0,70,51), null);
-
-
-(lib.bola = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Capa_1
-	this.instance = new lib.BombraDisparada();
-	this.instance.setTransform(0,0,0.3919,0.3919);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.bola, new cjs.Rectangle(0,0,43.5,42.3), null);
 
 
 (lib.bocaCaperucita = function(mode,startPosition,loop,reversed) {
@@ -3243,6 +3221,37 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-21.4,-14.1,226,177);
 
 
+(lib.bola = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.BombraDisparada();
+	this.instance.setTransform(0,0,0.3919,0.3919);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	// Capa_2
+	this.instance_1 = new lib.naranja();
+	this.instance_1.setTransform(48.85,49.05,1.9013,0.9194,-165.3113,0,0,26.8,22.8);
+
+	this.instance_2 = new lib.amarillas();
+	this.instance_2.setTransform(47.05,42.05,1,1,0,0,0,23.9,29.6);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.bola, new cjs.Rectangle(0,0,103.4,71.7), null);
+
+
 (lib.letreroRojo = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -3302,11 +3311,11 @@ if (reversed == null) { reversed = false; }
 		var letrero2 = this.letrero2; // Asigna letrero2 a una variable
 		var letrero3 = this.letrero3; // Asigna letrero3 a una variable
 		var letrero4 = this.letrero4; // Asigna letrero4 a una variable
-		  var _this = this; 
-		 _this.stop();
-		 
+		var _this = this;
+		_this.stop();
 		
-		    
+		
+		
 		var maxDistance = 100; // Define la distancia máxima para activar el desplazamiento
 		
 		stage.enableMouseOver(); // Habilita el seguimiento del mouse en el escenario
@@ -3317,179 +3326,196 @@ if (reversed == null) { reversed = false; }
 		
 		
 		function seguirRaton(event) {
-			
-			 if (_this.currentFrame === 7) {
-		        return;
-		    }
-			
-		    var dx = stage.mouseX - canon.x;
-		    var dy = stage.mouseY - (canon.y + canon.getBounds().height / 2); // La mitad de la altura del cañón
 		
-		    var radians = Math.atan2(dy, dx);
-		    var degrees = radians * (180 / Math.PI) + 144;
+			if (_this.currentFrame === 7) {
+				return;
+			}
 		
-			
-			canon.rotation = degrees;	
-		    movieClip.rotation = degrees;
+			var dx = stage.mouseX - canon.x;
+			var dy = stage.mouseY - (canon.y + canon.getBounds().height / 2); // La mitad de la altura del cañón
+		
+			var radians = Math.atan2(dy, dx);
+			var degrees = radians * (180 / Math.PI) + 144;
+		
+		
+			canon.rotation = degrees;
+			movieClip.rotation = degrees;
 		}
 		
-		function dispararMovieClip(event) { 
-			 if (_this.currentFrame === 7) {
-		        return;
-		    }
-			
-		        var targetX = stage.mouseX;
-		        var targetY = stage.mouseY;
-			
-			
-			 if (  _this.currentFrame < 7  ) {
-		createjs.Sound.play("cannonSound");       
-				 }
-			
+		function dispararMovieClip(event) {
+			if (_this.currentFrame === 7) {
+				return;
+			}
+		
+			var targetX = stage.mouseX;
+			var targetY = stage.mouseY;
+		
+		
+			if (_this.currentFrame < 7) {
+				createjs.Sound.play("cannonSound");
+			}
 		
 		
 		
-			
-				
-			
-			
 		
-		        createjs.Tween.get(movieClip).to({ x: targetX, y: targetY }, 600).call(animacionCompleta);
-		    
-				 
-				
-				
-				
+		
+		
+		
+		
+		
+			createjs.Tween.get(movieClip).to({
+				x: targetX,
+				y: targetY
+			}, 600).call(animacionCompleta);
+		
+		
+		
+		
+		
 		}
 		
 		function animacionCompleta() {
-			
+		
 			movieClip.x = canon.x;
 			movieClip.y = canon.y;
-			
+		
 		}
 		
 		
 		
 		letrero1.on("click", function (e) {
-		     
-		        
 		
-		        setTimeout(function () {
-						letrero1.visible=false; 
-		            _this.explosion1.gotoAndPlay(1);
-					palabrasClicadas.letrero1 = true;
-					verificarPalabrasClicadas()
-				
-					// Usar la referencia global de _this
-		        }, 800); // 1000 milisegundos (1 segundo) de espera
-		    
+		
+		
+			setTimeout(function () {
+				letrero1.visible = false;
+				_this.explosion1.gotoAndPlay(1);
+				palabrasClicadas.letrero1 = true;
+				verificarPalabrasClicadas()
+		
+				// Usar la referencia global de _this
+			}, 800); // 1000 milisegundos (1 segundo) de espera
+		
 		});
 		
-		letrero2.on("click", function (e) {  
-		        setTimeout(function () {
-					letrero2.visible=false; 
-		            _this.explosion2.gotoAndPlay(1);
-					palabrasClicadas.letrero2 = true;
-					verificarPalabrasClicadas()			
-		        }, 600);
-		     
+		letrero2.on("click", function (e) {
+			setTimeout(function () {
+				letrero2.visible = false;
+				_this.explosion2.gotoAndPlay(1);
+				palabrasClicadas.letrero2 = true;
+				verificarPalabrasClicadas()
+			}, 600);
+		
 		});
 		
 		letrero3.on("click", function (e) {
-		        setTimeout(function () {
-				letrero3.visible=false; 
-		            _this.explosion3.gotoAndPlay(1);
-					palabrasClicadas.letrero3 = true;
-					verificarPalabrasClicadas()			
-		        }, 600);
-		     
+			setTimeout(function () {
+				letrero3.visible = false;
+				_this.explosion3.gotoAndPlay(1);
+				palabrasClicadas.letrero3 = true;
+				verificarPalabrasClicadas()
+			}, 600);
+		
 		});
 		
 		letrero4.on("click", function (e) {
-		        setTimeout(function () {
-					letrero4.visible=false; 
-		            _this.explosion4.gotoAndPlay(1);
-					  palabrasClicadas.letrero4 = true;
-					verificarPalabrasClicadas()
-					
-		        }, 700);
-		     
+			setTimeout(function () {
+				letrero4.visible = false;
+				_this.explosion4.gotoAndPlay(1);
+				palabrasClicadas.letrero4 = true;
+				verificarPalabrasClicadas()
+		
+			}, 700);
+		
 		});
 		
 		
 		let palabrasClicadas = {
-		    letrero1: false,
-		    letrero2: false,
-		    letrero3: false,
-		    letrero4: false
+			letrero1: false,
+			letrero2: false,
+			letrero3: false,
+			letrero4: false
 		};
 		
 		
 		function verificarPalabrasClicadas() {
-		    var palabrasClicadasCount = 0;
-		    if (palabrasClicadas.letrero1) palabrasClicadasCount++;
-		    if (palabrasClicadas.letrero2) palabrasClicadasCount++;
-		    if (palabrasClicadas.letrero3) palabrasClicadasCount++;
-		    if (palabrasClicadas.letrero4) palabrasClicadasCount++;
+			var palabrasClicadasCount = 0;
+			if (palabrasClicadas.letrero1) palabrasClicadasCount++;
+			if (palabrasClicadas.letrero2) palabrasClicadasCount++;
+			if (palabrasClicadas.letrero3) palabrasClicadasCount++;
+			if (palabrasClicadas.letrero4) palabrasClicadasCount++;
 		
-		    if (palabrasClicadasCount >= 2) {
-				letrero1.visible=false;
-				letrero2.visible=false;
-				letrero3.visible=false;
-				letrero4.visible=false;
-		        palabrasClicadas.letrero1 = false;
-		        palabrasClicadas.letrero2 = false;
-		        palabrasClicadas.letrero3 = false;
-		        palabrasClicadas.letrero4 = false;				
-				
-					
-		        // Avanzar al siguiente cuadro después de un retraso de 2 segundos
-		        setTimeout(function () {
-					 palabrasClicadasCount = 0;
-				
-		            _this.gotoAndStop(_this.currentFrame + 1);
-		        }, 2000);
-		    }
+			if (palabrasClicadasCount >= 2) {
+				letrero1.visible = false;
+				letrero2.visible = false;
+				letrero3.visible = false;
+				letrero4.visible = false;
+				palabrasClicadas.letrero1 = false;
+				palabrasClicadas.letrero2 = false;
+				palabrasClicadas.letrero3 = false;
+				palabrasClicadas.letrero4 = false;
+		
+		
+				// Avanzar al siguiente cuadro después de un retraso de 2 segundos
+				setTimeout(function () {
+					palabrasClicadasCount = 0;
+		
+					_this.gotoAndStop(_this.currentFrame + 1);
+				}, 2000);
+			}
 		}
 		
 		
 		_this.on("click", function (e) {
-		    if (e.target === letrero1) {
-		        if (_this.currentFrame === 0 || _this.currentFrame === 1 || _this.currentFrame === 3 || _this.currentFrame === 5) {
-		            contadorRespuestasCorrectas++;
-		        } else {
-		            contadorRespuestasIncorrectas++;
-		        }
-		    } else if (e.target === letrero2) {
-		        if (_this.currentFrame === 2 || _this.currentFrame === 4 || _this.currentFrame === 6) {
-		            contadorRespuestasCorrectas++;
-		        } else {
-		            contadorRespuestasIncorrectas++;
-		        }
-		    } else if (e.target === letrero3) {
-		        if (_this.currentFrame === 0 || _this.currentFrame === 2 || _this.currentFrame === 3 || _this.currentFrame === 5) {
-		            contadorRespuestasCorrectas++;
-		        } else {
-		            contadorRespuestasIncorrectas++;
-		        }
-		    } else if (e.target === letrero4) {
-		        if (_this.currentFrame === 1 || _this.currentFrame === 4 || _this.currentFrame === 6) {
-		            contadorRespuestasCorrectas++;
-		        } else {
-		            contadorRespuestasIncorrectas++;
-		        }
-		    }
+			if (e.target === letrero1) {
+				if (_this.currentFrame === 0 || _this.currentFrame === 1 || _this.currentFrame === 3 || _this.currentFrame === 5) {
+					correctas();
+				} else {
+					icorrectas();
+				}
+			} else if (e.target === letrero2) {
+				if (_this.currentFrame === 2 || _this.currentFrame === 4 || _this.currentFrame === 6) {
+					correctas()
+				} else {
+				icorrectas();
+				}
+			} else if (e.target === letrero3) {
+				if (_this.currentFrame === 0 || _this.currentFrame === 2 || _this.currentFrame === 3 || _this.currentFrame === 5) {
+					correctas()
+				} else {
+					icorrectas()
+				}
+			} else if (e.target === letrero4) {
+				if (_this.currentFrame === 1 || _this.currentFrame === 4 || _this.currentFrame === 6) {
+					correctas()
+				} else {
+					icorrectas()
+				}
+			}
 		
 			setTimeout(function () {
-					
-				
-		    _this.texto.text = contadorRespuestasCorrectas;
-		    _this.texto2.text = contadorRespuestasIncorrectas;
-		        }, 1000);
-			
-			
+		
+		
+				_this.texto.text = contadorRespuestasCorrectas;
+				_this.texto2.text = contadorRespuestasIncorrectas;
+			}, 1000);
+		
+		
 		});
+		
+		function correctas() {
+			setTimeout(function () {
+				contadorRespuestasCorrectas++;
+					createjs.Sound.play("correct");
+			}, 1000);
+		}
+		
+		function icorrectas() {
+			setTimeout(function () {
+						contadorRespuestasIncorrectas++;
+					createjs.Sound.play("incorrect");
+			}, 1000);
+		}
 	}
 	this.frame_1 = function() {
 		var _this = this;
@@ -3799,6 +3825,8 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,1,2,3,4];
 	// timeline functions:
 	this.frame_0 = function() {
+		//https://alkakrab.itch.io/free-pirate-game-music-pack
+		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 		    stretchToFit();
@@ -4041,7 +4069,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_6 = new lib.Símbolo2();
 	this.instance_6.setTransform(485.3,258.25,1,1,0,0,0,356.2,229.8);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.btnPlay},{t:this.instance}]}).to({state:[]},1).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.correctas,p:{x:465.35,y:303.8}},{t:this.incorrectas,p:{x:468.35,y:335.6}},{t:this.btnReintentar},{t:this.btnSalir}]},1).to({state:[{t:this.instance_5},{t:this.correctas,p:{x:489.8,y:308.4}},{t:this.incorrectas,p:{x:522.8,y:350.1}},{t:this.btnReintentarVerde,p:{x:421.55,y:421.9}},{t:this.btnSalirVerde,p:{x:600.45,y:421.9}},{t:this.instance_4,p:{x:495.5,y:61.45}}]},1).to({state:[{t:this.instance_6},{t:this.correctas,p:{x:477.45,y:308.4}},{t:this.incorrectas,p:{x:509.75,y:349.65}},{t:this.btnReintentarVerde,p:{x:423.8,y:412.15}},{t:this.btnSalirVerde,p:{x:608.4,y:412.15}},{t:this.instance_4,p:{x:474.65,y:46.65}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.btnPlay},{t:this.instance}]}).to({state:[]},1).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.correctas,p:{x:465.35,y:303.8}},{t:this.incorrectas,p:{x:468.35,y:335.6}},{t:this.btnReintentar},{t:this.btnSalir}]},1).to({state:[{t:this.instance_5},{t:this.correctas,p:{x:489.8,y:310.4}},{t:this.incorrectas,p:{x:522.8,y:350.1}},{t:this.btnReintentarVerde,p:{x:421.55,y:421.9}},{t:this.btnSalirVerde,p:{x:600.45,y:421.9}},{t:this.instance_4,p:{x:495.5,y:61.45}}]},1).to({state:[{t:this.instance_6},{t:this.correctas,p:{x:477.45,y:308.4}},{t:this.incorrectas,p:{x:509.75,y:349.65}},{t:this.btnReintentarVerde,p:{x:423.8,y:412.15}},{t:this.btnSalirVerde,p:{x:608.4,y:412.15}},{t:this.instance_4,p:{x:474.65,y:46.65}}]},1).wait(1));
 
 	// contenedor
 	this.instance_7 = new lib.contenedor();
@@ -4108,24 +4136,24 @@ lib.properties = {
 	color: "#0000FF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Barco.png?1697252980209", id:"Barco"},
-		{src:"images/FondoCielo.png?1697252980209", id:"FondoCielo"},
-		{src:"images/FondoMar.png?1697252980209", id:"FondoMar"},
-		{src:"images/PiedrasFondoHorizonte.png?1697252980209", id:"PiedrasFondoHorizonte"},
-		{src:"images/index_atlas_1.png?1697252979953", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1697252979955", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1697252979955", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1697252979955", id:"index_atlas_4"},
-		{src:"sounds/audio.mp3?1697252980209", id:"audio"},
-		{src:"sounds/cannonSound.mp3?1697252980209", id:"cannonSound"},
-		{src:"sounds/incorrect.mp3?1697252980209", id:"incorrect"},
-		{src:"sounds/correct.mp3?1697252980209", id:"correct"},
-		{src:"sounds/Voice3.mp3?1697252980209", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1697252980209", id:"Voice4"},
-		{src:"sounds/Voice1.mp3?1697252980209", id:"Voice1"},
-		{src:"sounds/SoundBoton.mp3?1697252980209", id:"SoundBoton"},
-		{src:"sounds/Voice5.mp3?1697252980209", id:"Voice5"},
-		{src:"sounds/BGM.mp3?1697252980209", id:"BGM"}
+		{src:"images/Barco.png?1697319344689", id:"Barco"},
+		{src:"images/FondoCielo.png?1697319344689", id:"FondoCielo"},
+		{src:"images/FondoMar.png?1697319344689", id:"FondoMar"},
+		{src:"images/PiedrasFondoHorizonte.png?1697319344689", id:"PiedrasFondoHorizonte"},
+		{src:"images/index_atlas_1.png?1697319344453", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1697319344455", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1697319344455", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1697319344456", id:"index_atlas_4"},
+		{src:"sounds/audio.mp3?1697319344689", id:"audio"},
+		{src:"sounds/cannonSound.mp3?1697319344689", id:"cannonSound"},
+		{src:"sounds/incorrect.mp3?1697319344689", id:"incorrect"},
+		{src:"sounds/correct.mp3?1697319344689", id:"correct"},
+		{src:"sounds/Voice3.mp3?1697319344689", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1697319344689", id:"Voice4"},
+		{src:"sounds/Voice1.mp3?1697319344689", id:"Voice1"},
+		{src:"sounds/SoundBoton.mp3?1697319344689", id:"SoundBoton"},
+		{src:"sounds/Voice5.mp3?1697319344689", id:"Voice5"},
+		{src:"sounds/BGM.mp3?1697319344689", id:"BGM"}
 	],
 	preloads: []
 };
