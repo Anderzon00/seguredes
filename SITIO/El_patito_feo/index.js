@@ -698,13 +698,13 @@ if (reversed == null) { reversed = false; }
 		document.body.appendChild(element);
 		element.style.position = "absolute"; 
 		 
-		element.innerHTML = '<iframe  src= "./Contenidos/index.html"  id="i_cuento1"   style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		element.innerHTML = '<iframe   id="i_cuento1"   style="border:none; overflow: hidden"  ; allow="autoplay"  >';
 		
 		function embed() {	
 		document.getElementById('divi').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
 		document.getElementById('divi').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_cuento1').style.width = 1+'px';
-		document.getElementById('i_cuento1').style.height = 1 +'px';
+		document.getElementById('i_cuento1').style.width = 0+'px';
+		document.getElementById('i_cuento1').style.height = 0 +'px';
 		}
 		
 		embed();
@@ -982,14 +982,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1695865617011", id:"bannernegro1"},
-		{src:"images/fondo11.png?1695865617011", id:"fondo11"},
-		{src:"images/fondoMorado.png?1695865617011", id:"fondoMorado"},
-		{src:"images/Portada.png?1695865617011", id:"Portada"},
-		{src:"images/index_atlas_1.png?1695865616919", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1695865617011", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1695865617011", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1695865617011", id:"sound1"}
+		{src:"images/bannernegro1.png?1697324150892", id:"bannernegro1"},
+		{src:"images/fondo11.png?1697324150892", id:"fondo11"},
+		{src:"images/fondoMorado.png?1697324150892", id:"fondoMorado"},
+		{src:"images/Portada.png?1697324150892", id:"Portada"},
+		{src:"images/index_atlas_1.png?1697324150803", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1697324150892", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1697324150892", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1697324150892", id:"sound1"}
 	],
 	preloads: []
 };

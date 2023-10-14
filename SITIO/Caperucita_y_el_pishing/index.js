@@ -702,7 +702,7 @@ if (reversed == null) { reversed = false; }
 		document.body.appendChild(element);
 		element.style.position = "absolute"; 
 		 
-		element.innerHTML = '<iframe  src= "./Contenidos/index.html"  id="i_cuento2"   style="border:none" allow="autoplay"  >';
+		element.innerHTML = '<iframe    id="i_cuento2"   style="border:none" allow="autoplay"  >';
 		
 		function embed() {	
 		document.getElementById('divi').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
@@ -968,14 +968,14 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1695863549979", id:"bannernegro1"},
-		{src:"images/fondo1111.png?1695863549979", id:"fondo1111"},
-		{src:"images/fondoMorado.png?1695863549979", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1695863549922", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1695863549923", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1695863549979", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1695863549979", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1695863549979", id:"sound1"}
+		{src:"images/bannernegro1.png?1697324173516", id:"bannernegro1"},
+		{src:"images/fondo1111.png?1697324173516", id:"fondo1111"},
+		{src:"images/fondoMorado.png?1697324173516", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1697324173447", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1697324173447", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1697324173516", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1697324173516", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1697324173516", id:"sound1"}
 	],
 	preloads: []
 };
