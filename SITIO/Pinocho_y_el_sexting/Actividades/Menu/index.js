@@ -1508,7 +1508,7 @@ if (reversed == null) { reversed = false; }
 				createjs.Sound.play("play", {
 					volume: 0.5
 				}).on("complete", function () {
-					window.open('../Act1', '_self');
+					window.open('../Act2', '_self');
 				}, this);
 			} else
 				_this.gotoAndStop(1);
@@ -1524,7 +1524,7 @@ if (reversed == null) { reversed = false; }
 				createjs.Sound.play("play", {
 					volume: 0.5
 				}).on("complete", function () {
-					window.open('../Act2', '_self');
+					window.open('../Act3', '_self');
 				}, this);
 			} else
 				_this.gotoAndStop(1);
@@ -1680,14 +1680,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1697321974692", id:"index_atlas_1"},
-		{src:"sounds/play.mp3?1697321974802", id:"play"},
-		{src:"sounds/error41.mp3?1697321974802", id:"error41"},
-		{src:"sounds/sound.mp3?1697321974802", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1697321974802", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1697321974802", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1697321974802", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1697321974802", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1697332623847", id:"index_atlas_1"},
+		{src:"sounds/play.mp3?1697332623946", id:"play"},
+		{src:"sounds/error41.mp3?1697332623946", id:"error41"},
+		{src:"sounds/sound.mp3?1697332623946", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1697332623946", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1697332623946", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1697332623946", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1697332623946", id:"an.TextInput"}
 	],
 	preloads: []
 };
