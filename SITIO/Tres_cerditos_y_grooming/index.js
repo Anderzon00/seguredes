@@ -3,8 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[0,0,1824,992],[0,994,1373,637]]},
-		{name:"index_atlas_2", frames: [[370,1009,466,90],[370,720,315,90],[1306,1040,457,90],[838,1040,466,90],[1647,0,315,90],[1522,818,457,90],[0,1101,466,90],[1647,92,315,90],[1522,910,457,90],[370,901,708,106],[1211,341,707,107],[0,534,300,300],[1315,634,552,90],[302,627,365,91],[1315,726,552,90],[302,534,366,91],[1315,450,553,90],[1315,542,553,90],[709,502,604,397],[1211,0,434,339],[0,836,368,243],[1080,901,440,137],[1869,634,140,139],[709,0,500,500],[0,0,707,532],[468,1132,708,48]]}
+		{name:"index_atlas_1", frames: [[370,1009,466,90],[370,720,315,90],[1306,1040,457,90],[838,1040,466,90],[1647,0,315,90],[1522,818,457,90],[0,1101,466,90],[1647,92,315,90],[1522,910,457,90],[370,901,708,106],[1211,341,707,107],[0,534,300,300],[1315,634,552,90],[302,627,365,91],[1315,726,552,90],[302,534,366,91],[1315,450,553,90],[1315,542,553,90],[709,502,604,397],[1211,0,434,339],[0,836,368,243],[1080,901,440,137],[1869,634,140,139],[709,0,500,500],[0,0,707,532],[468,1132,708,48]]},
+		{name:"index_atlas_2", frames: [[0,0,1824,992],[0,994,1373,637]]}
 ];
 
 
@@ -29,63 +29,63 @@ lib.ssMetadata = [
 
 
 (lib._1ActividadesNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1AyudaNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1ContenidosNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2actividadesSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2ayudaSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2contenidosSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3actividadesDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3ayudaDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3contenidosDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
@@ -104,70 +104,70 @@ p.nominalBounds = new cjs.Rectangle(0,0,2373,154);
 
 
 (lib.botonaceptar2 = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Botonaceptar = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.botonplay = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.BtnInicioCuentoHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicio = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioCuento = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentos = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentosHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.fondopapel1 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -186,63 +186,63 @@ p.nominalBounds = new cjs.Rectangle(0,0,2376,1136);
 
 
 (lib.formainferiorder = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formainferiorizq = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorder = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorizq = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.icono = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.index_atlas_2 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.mano2 = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Notificacion = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.TITULOGROOMING = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -264,7 +264,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	}
 
 
-(lib.Símbolo37 = function(mode,startPosition,loop,reversed) {
+(lib.Símbolo35 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -829,15 +829,27 @@ if (reversed == null) { reversed = false; }
 		 
 		window.addEventListener('resize', () => {	
 		embed();
-		})
+		}) 
+		
+		 
+		
+		
+		 
+		
+		
+		var _this = this;
+		/*
+		Hace que el objeto especificado sea visible o invisible.
+		*/
+		_this.botones.visible = false;
 		
 	}
 	this.frame_12 = function() {
 		this.stop();
 		
+		document.getElementById('i_cuento4').src=  "";	
 		
 		function embed() {	
-		document.getElementById('i_cuento4').src=  "";	
 		document.getElementById('i_cuento4').style.width = 0 +'px';
 		document.getElementById('i_cuento4').style.height = 0 + 'px';		
 			}
@@ -855,19 +867,26 @@ if (reversed == null) { reversed = false; }
 			}, this);
 			
 		});
+		
+		
+		 
+		_this.botones.visible = false;
 	}
 	this.frame_13 = function() {
 		var _this = this;
 		_this.stop();
-		function embed() {	
 		document.getElementById('i_cuento4').src= "./Cuento/E1AA/index.html" ;	
+		
+		function embed() {	
 		document.getElementById('i_cuento4').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
 		document.getElementById('i_cuento4').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';	
 		}
 		embed();
 		window.addEventListener('resize', () => {	
 		embed();
-		})
+		}) 
+		
+		_this.botones.visible = false;
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -881,8 +900,10 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_14 = function() {
-		function embed() {	
 		document.getElementById('i_cuento4').src=  "./Contenidos/index.html";
+		
+		
+		function embed() {	
 		document.getElementById('i_cuento4').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
 		document.getElementById('i_cuento4').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
@@ -902,6 +923,9 @@ if (reversed == null) { reversed = false; }
 		
 				 
 		});
+		
+		
+		_this.botones.visible = true;
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -914,8 +938,9 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_15 = function() {
-		function embed() {	
 		document.getElementById('i_cuento4').src=  "./Actividades/Menu/index.html";
+		
+		function embed() {	
 		document.getElementById('i_cuento4').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
 		document.getElementById('i_cuento4').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
@@ -932,6 +957,9 @@ if (reversed == null) { reversed = false; }
 		document.getElementById('i_cuento4').src=  "./Actividades/Menu/index.html";
 				 		 
 		});
+		
+		
+		_this.botones.visible = false;
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -979,7 +1007,7 @@ if (reversed == null) { reversed = false; }
 	this.bntPlay._off = true;
 	new cjs.ButtonHelper(this.bntPlay, 0, 1, 2);
 
-	this.instance = new lib.Símbolo37("synched",0);
+	this.instance = new lib.Símbolo35("synched",0);
 	this.instance.setTransform(697.05,337.05,1.0019,1,0,0,0,726.6,709.8);
 
 	this.instance_1 = new lib.fondopapel1();
@@ -1068,15 +1096,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1697324247333", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1697324247333", id:"barraseguredes"},
-		{src:"images/fondo111111111.png?1697324247333", id:"fondo111111111"},
-		{src:"images/fondoMorado.png?1697324247333", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1697324247265", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1697324247266", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1697324247333", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1697324247333", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1697324247333", id:"sound1"}
+		{src:"images/bannernegro1.png?1698462227965", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1698462227965", id:"barraseguredes"},
+		{src:"images/fondo111111111.png?1698462227965", id:"fondo111111111"},
+		{src:"images/fondoMorado.png?1698462227965", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1698462227883", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1698462227883", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1698462227965", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1698462227965", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1698462227965", id:"sound1"}
 	],
 	preloads: []
 };

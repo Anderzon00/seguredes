@@ -883,6 +883,13 @@ if (reversed == null) { reversed = false; }
 		                    }, this);
 		
 		}
+		
+		
+		function carga (){
+		    window.parent.funcionInvisible();
+		};
+		
+		carga();
 	}
 
 	// actions tween:
@@ -958,8 +965,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1693794209786", id:"index_atlas_1"},
-		{src:"sounds/sound.mp3?1693794209841", id:"sound"}
+		{src:"images/index_atlas_1.png?1698462091304", id:"index_atlas_1"},
+		{src:"sounds/sound.mp3?1698462091364", id:"sound"}
 	],
 	preloads: []
 };
