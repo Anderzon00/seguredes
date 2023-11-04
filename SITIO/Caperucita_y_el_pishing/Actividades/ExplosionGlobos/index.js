@@ -6566,18 +6566,18 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/FondoActividad.png?1688314792418", id:"FondoActividad"},
-		{src:"images/index_atlas_1.png?1688314792138", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1688314792139", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1688314792141", id:"index_atlas_3"},
-		{src:"sounds/audioG.mp3?1688314792418", id:"audioG"},
-		{src:"sounds/audioC.mp3?1688314792418", id:"audioC"},
-		{src:"sounds/correct.mp3?1688314792418", id:"correct"},
-		{src:"sounds/mal.mp3?1688314792418", id:"mal"},
-		{src:"sounds/final_corretas.mp3?1688314792418", id:"final_corretas"},
-		{src:"sounds/sound2.mp3?1688314792418", id:"sound2"},
-		{src:"sounds/sound.mp3?1688314792418", id:"sound"},
-		{src:"sounds/s_1.mp3?1688314792418", id:"s_1"}
+		{src:"images/FondoActividad.png?1699024909210", id:"FondoActividad"},
+		{src:"images/index_atlas_1.png?1699024908903", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1699024908903", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1699024908906", id:"index_atlas_3"},
+		{src:"sounds/audioG.mp3?1699024909211", id:"audioG"},
+		{src:"sounds/audioC.mp3?1699024909211", id:"audioC"},
+		{src:"sounds/correct.mp3?1699024909211", id:"correct"},
+		{src:"sounds/mal.mp3?1699024909211", id:"mal"},
+		{src:"sounds/final_corretas.mp3?1699024909211", id:"final_corretas"},
+		{src:"sounds/sound2.mp3?1699024909211", id:"sound2"},
+		{src:"sounds/sound.mp3?1699024909211", id:"sound"},
+		{src:"sounds/s_1.mp3?1699024909211", id:"s_1"}
 	],
 	preloads: []
 };

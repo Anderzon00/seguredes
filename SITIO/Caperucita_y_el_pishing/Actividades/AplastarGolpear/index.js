@@ -28,14 +28,14 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_2 = function() {
+(lib.CachedBmp_4 = function() {
 	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_1 = function() {
+(lib.CachedBmp_3 = function() {
 	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -833,10 +833,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Capa_2
-	this.instance = new lib.CachedBmp_1();
+	this.instance = new lib.CachedBmp_3();
 	this.instance.setTransform(-3.1,-2.95,0.3333,0.3333);
 
-	this.instance_1 = new lib.CachedBmp_2();
+	this.instance_1 = new lib.CachedBmp_4();
 	this.instance_1.setTransform(-3.55,-4.2,0.3333,0.3333);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},14).wait(23));
@@ -5161,16 +5161,16 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/FondoActividad.png?1688314719150", id:"FondoActividad"},
-		{src:"images/index_atlas_1.png?1688314718927", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1688314718929", id:"index_atlas_2"},
-		{src:"sounds/audioG.mp3?1688314719151", id:"audioG"},
-		{src:"sounds/audioC.mp3?1688314719151", id:"audioC"},
-		{src:"sounds/sound1.mp3?1688314719151", id:"sound1"},
-		{src:"sounds/Voice2.mp3?1688314719151", id:"Voice2"},
-		{src:"sounds/sound2.mp3?1688314719151", id:"sound2"},
-		{src:"sounds/mixkitelectricpop2365wav.mp3?1688314719151", id:"mixkitelectricpop2365wav"},
-		{src:"sounds/sound.mp3?1688314719151", id:"sound"}
+		{src:"images/FondoActividad.png?1699024831928", id:"FondoActividad"},
+		{src:"images/index_atlas_1.png?1699024831677", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1699024831679", id:"index_atlas_2"},
+		{src:"sounds/audioG.mp3?1699024831928", id:"audioG"},
+		{src:"sounds/audioC.mp3?1699024831928", id:"audioC"},
+		{src:"sounds/sound1.mp3?1699024831928", id:"sound1"},
+		{src:"sounds/Voice2.mp3?1699024831928", id:"Voice2"},
+		{src:"sounds/sound2.mp3?1699024831928", id:"sound2"},
+		{src:"sounds/mixkitelectricpop2365wav.mp3?1699024831928", id:"mixkitelectricpop2365wav"},
+		{src:"sounds/sound.mp3?1699024831928", id:"sound"}
 	],
 	preloads: []
 };
