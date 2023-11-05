@@ -640,16 +640,10 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop(); 
 		
-		document.getElementById('divi')?.remove();  
-		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 			stretchToFit();
 		}
-		
-		  
-		 
-		
 		var _this = this;
 		
 		_this.btnInicio.on('click', function () {
@@ -670,22 +664,32 @@ if (reversed == null) { reversed = false; }
 		
 		
 		_this.btnContenidos.on('click', function () {	
-		 		_this.gotoAndStop("Contenidos");
-			  document.getElementById('i_cuento1').src = "./Contenidos/index.html";
+		_this.gotoAndStop("Contenidos");
+		document.getElementById('contenidos').style.display = 'block';
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
 		
 				 
 		});
 		
 		
 		_this.btnActividades.on('click', function () {	
-		 		_this.gotoAndStop("Actividades");
-			document.getElementById('i_cuento1').src=  "./Actividades/Menu/index.html";
-				 		 
+		_this.gotoAndStop("Actividades");	
+		document.getElementById('actividades').style.display = 'block';
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		 			 		 
 		});
 		
-		this.btnAyuda.on('click', function () {	
-		 
-			_this.gotoAndStop("Ayuda");
+		this.btnAyuda.on('click', function () {		
+		_this.gotoAndStop("Ayuda");
+		document.getElementById('ayuda').style.display = 'block';
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
+			
 			
 		});
 		
@@ -696,40 +700,105 @@ if (reversed == null) { reversed = false; }
 		
 		
 		
-		var element = document.createElement('div');
-		element.setAttribute('id', 'divi');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
+		/////////////////
+		
+		var elementCuento = document.createElement('div');
+		elementCuento.setAttribute('id', 'cuento');
+		document.body.appendChild(elementCuento);
+		elementCuento.style.position = "absolute"; 
+		
+		elementCuento.innerHTML = '<iframe  src="./Cuento/Escena_1/index.html" id="i_cuento1"   style="border:none; overflow: hidden"  ; allow="autoplay"  >';
 		 
-		element.innerHTML = '<iframe   id="i_cuento1"   style="border:none; overflow: hidden"  ; allow="autoplay"  >';
-		
-		function embed() {	
-		document.getElementById('divi').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('divi').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_cuento1').style.width = 0+'px';
-		document.getElementById('i_cuento1').style.height = 0 +'px';
+		function embed1() {	
+		document.getElementById('cuento').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		document.getElementById('cuento').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
-		
-		embed();
+		 
+		embed1();
 		 
 		window.addEventListener('resize', () => {	
-		embed();
-		})
+		embed1();
+		})  
+		
+		
+		
+		var elementContenidos = document.createElement('div');
+		elementContenidos.setAttribute('id', 'contenidos');
+		document.body.appendChild(elementContenidos);
+		elementContenidos.style.position = "absolute"; 
+		
+		elementContenidos.innerHTML = '<iframe  src=  "./Contenidos/index.html" id="i_contenidos"   style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		 
+		function embed2() {	
+		document.getElementById('contenidos').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		document.getElementById('contenidos').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_contenidos').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_contenidos').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		}
+		  
+		embed2();
+		
+		
+		window.addEventListener('resize', () => {	
+		embed2();
+		})  
+		
+		
+		var elementActividades = document.createElement('div');
+		elementActividades.setAttribute('id', 'actividades');
+		document.body.appendChild(elementActividades);
+		elementActividades.style.position = "absolute"; 
+		
+		elementActividades.innerHTML = '<iframe  src=  "./Actividades/Menu/index.html" id="i_actividades"   style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		 
+		function embed3() {	
+		document.getElementById('actividades').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		document.getElementById('actividades').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_actividades').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_actividades').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		}
+		  
+		embed3();
+		 
+		window.addEventListener('resize', () => {	
+		embed3();
+		})  
+		
+		
+		var elementAyuda = document.createElement('div');
+		elementAyuda.setAttribute('id', 'ayuda');
+		document.body.appendChild(elementAyuda);
+		elementAyuda.style.position = "absolute"; 
+		
+		elementAyuda.innerHTML = '<iframe  src= "./dearflip/index.html" id="i_ayuda"   style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		 
+		function embed4() {	
+		document.getElementById('ayuda').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		document.getElementById('ayuda').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
+		document.getElementById('i_ayuda').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
+		document.getElementById('i_ayuda').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		}
+		  
+		embed4();
+		 
+		window.addEventListener('resize', () => {	
+		embed4();
+		})  
+		  
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
 	}
 	this.frame_12 = function() {
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
+		
 		this.stop();
-		document.getElementById('i_cuento1').src=  "";	
-		
-		function embed() {	
-		document.getElementById('i_cuento1').style.width = 0 +'px';
-		document.getElementById('i_cuento1').style.height = 0 + 'px';	
-			}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
 		
 		var _this = this;
 		
@@ -743,25 +812,12 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_13 = function() {
-		document.getElementById('i_cuento1').src=  "";	
-		
+		document.getElementById('cuento').style.display = 'block';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
 		var _this = this;
 		_this.stop();
-		
-		
-		
-		function embed() {	
-		document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';	
-			}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		
-		document.getElementById('i_cuento1').src=  "./Cuento/Escena_1/index.html" ;
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -775,16 +831,6 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_14 = function() {
-		function embed() {    
-		  document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32) + 'px';
-		  document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {    
-		  embed();
-		});
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -797,16 +843,6 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_15 = function() {
-		function embed() {    
-		  document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32) + 'px';
-		  document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {    
-		  embed();
-		});
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -820,27 +856,6 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_16 = function() {
-		document.getElementById('i_cuento1').src=  "./dearflip/index.html";
-		
-		
-		function embed() {	
-		document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		
-		var _this = this;
-		
-		this.btnAyuda.on('click', function () {		 
-		
-		document.getElementById('i_cuento1').src=  "./dearflip/index.html";
-			
-		});
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -964,14 +979,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1699154484955", id:"bannernegro1"},
-		{src:"images/fondo11.png?1699154484955", id:"fondo11"},
-		{src:"images/fondoMorado.png?1699154484955", id:"fondoMorado"},
-		{src:"images/Portada.png?1699154484956", id:"Portada"},
-		{src:"images/index_atlas_1.png?1699154484890", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1699154484956", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1699154484956", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1699154484956", id:"sound1"}
+		{src:"images/bannernegro1.png?1699165268489", id:"bannernegro1"},
+		{src:"images/fondo11.png?1699165268489", id:"fondo11"},
+		{src:"images/fondoMorado.png?1699165268489", id:"fondoMorado"},
+		{src:"images/Portada.png?1699165268489", id:"Portada"},
+		{src:"images/index_atlas_1.png?1699165268427", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1699165268489", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1699165268489", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1699165268489", id:"sound1"}
 	],
 	preloads: []
 };
