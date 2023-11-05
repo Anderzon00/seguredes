@@ -780,17 +780,14 @@ if (reversed == null) { reversed = false; }
 		});
 		
 		_this.btnContenidos.on('click', function () {	
-			document.getElementById('i_cuento').src=  "";	
-				_this.gotoAndStop("Contenidos");		 
+		 		_this.gotoAndStop("Contenidos");		 
 		});
 		
 		_this.btnActividades.on('click', function () {	 
-			document.getElementById('i_cuento').src=  "";	
-				_this.gotoAndStop("Actividades");		 		 
+		 		_this.gotoAndStop("Actividades");		 		 
 		});
 		
 		this.btnAyuda.on('click', function () {		 
-			document.getElementById('i_cuento').src=  "";	
 		alert("ayuda");	
 			_this.gotoAndStop("Ayuda");	
 		});
@@ -829,8 +826,6 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_12 = function() {
 		var _this = this; 
-		
-		
 		 
 		_this.bntPlay.on('click', function(){
 		 
@@ -853,16 +848,9 @@ if (reversed == null) { reversed = false; }
 		embed();
 		}) 
 		
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
 		_this.stop();
 		
 		var _this = this;
-		/*
-		Hace que el objeto especificado sea visible o invisible.
-		*/
 		_this.botones.visible = false;
 	}
 	this.frame_13 = function() {
@@ -903,7 +891,7 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_14 = function() {
-		document.getElementById('i_cuento').src=  "./Contenidos/index.html";
+		document.getElementById('i_cuento').src=  "";
 		
 		function embed() {	
 		document.getElementById('i_cuento').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
@@ -918,14 +906,13 @@ if (reversed == null) { reversed = false; }
 		 var _this=this;
 		
 		_this.btnContenidos.on('click', function () {		
-				document.getElementById('i_cuento').src=  "./Contenidos/index.html";	 
+			document.getElementById('i_cuento').src=  "./Contenidos/index.html";	 
 		});
 		
-		var _this = this;
-		/*
-		Hace que el objeto especificado sea visible o invisible.
-		*/
+		var _this = this; 
 		_this.botones.visible = true;
+		
+		 document.getElementById('i_cuento').src=  "./Contenidos/index.html";
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -938,10 +925,8 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_15 = function() {
-		document.getElementById('i_cuento').src=  "./Actividades/Menu/index.html";
+		document.getElementById('i_cuento').src=  "";	
 		
-		
-		 
 		function embed() {	
 		document.getElementById('i_cuento').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
 		document.getElementById('i_cuento').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
@@ -959,10 +944,10 @@ if (reversed == null) { reversed = false; }
 		});
 		
 		var _this = this;
-		/*
-		Hace que el objeto especificado sea visible o invisible.
-		*/
+		 
 		_this.botones.visible = false;
+		
+		 document.getElementById('i_cuento').src=  "./Actividades/Menu/index.html";
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -1104,16 +1089,16 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1699145705613", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1699145705613", id:"barraseguredes"},
-		{src:"images/fondo11.png?1699145705613", id:"fondo11"},
-		{src:"images/fondoMorado.png?1699145705613", id:"fondoMorado"},
-		{src:"images/FondoOscuro.png?1699145705613", id:"FondoOscuro"},
-		{src:"images/index_atlas_1.png?1699145705547", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1699145705548", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1699145705613", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1699145705613", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1699145705613", id:"sound1"}
+		{src:"images/bannernegro1.png?1699148667192", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1699148667192", id:"barraseguredes"},
+		{src:"images/fondo11.png?1699148667192", id:"fondo11"},
+		{src:"images/fondoMorado.png?1699148667192", id:"fondoMorado"},
+		{src:"images/FondoOscuro.png?1699148667192", id:"FondoOscuro"},
+		{src:"images/index_atlas_1.png?1699148667124", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1699148667124", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1699148667192", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1699148667192", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1699148667192", id:"sound1"}
 	],
 	preloads: []
 };

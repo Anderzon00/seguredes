@@ -762,14 +762,8 @@ if (reversed == null) { reversed = false; }
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 			stretchToFit();
-		}
-		
-		
-		 
-		
+		} 
 		 var _this=this;
-		
-		
 		
 		_this.btnInicio.on('click', function () {
 			createjs.Sound.play("sound2", {	volume: 0.5
@@ -777,43 +771,29 @@ if (reversed == null) { reversed = false; }
 				window.open("../../", "_self");
 			}, this);
 		});
-		
-		
 		_this.btnVolver.on('click', function () {
 			createjs.Sound.play("sound2", {
 				volume: 0.8
 			}).on("complete", function () {
 				window.open("../MenuPrincipal", "_self");
 			}, this);
-		});
-		
+		}); 
 		
 		_this.btnContenidos.on('click', function () {	
-			document.getElementById('i_cuento4').src=  "";	
-				_this.gotoAndStop("Contenidos");
-				 
-		});
-		
-		
+				_this.gotoAndStop("Contenidos");		 
+		}); 
 		_this.btnActividades.on('click', function () {
-			document.getElementById('i_cuento4').src=  "";	
-				_this.gotoAndStop("Actividades");
-				 		 
+		 		_this.gotoAndStop("Actividades");		 		 
 		});
 		
 		this.btnAyuda.on('click', function () {	
-			document.getElementById('i_cuento4').src=  "";	
-		alert("ayuda");	
+		 alert("ayuda");	
 			_this.gotoAndStop("Ayuda");
 			
-		});
-		
-		
+		}); 
 		_this.popup.button_popup.on('click', function () {
 			_this.gotoAndPlay(1);
-		});
-		
-		
+		}); 
 		var element = document.createElement('div');
 		element.setAttribute('id', 'divi');
 		document.body.appendChild(element);
@@ -833,17 +813,9 @@ if (reversed == null) { reversed = false; }
 		window.addEventListener('resize', () => {	
 		embed();
 		}) 
-		
 		 
-		
-		
-		 
-		
-		
 		var _this = this;
-		/*
-		Hace que el objeto especificado sea visible o invisible.
-		*/
+		 
 		_this.botones.visible = false;
 		
 	}
@@ -876,6 +848,8 @@ if (reversed == null) { reversed = false; }
 		_this.botones.visible = false;
 	}
 	this.frame_13 = function() {
+		document.getElementById('i_cuento4').src=  "";	
+		
 		var _this = this;
 		_this.stop();
 		document.getElementById('i_cuento4').src= "./Cuento/E1AA/index.html" ;	
@@ -903,8 +877,7 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_14 = function() {
-		document.getElementById('i_cuento4').src=  "./Contenidos/index.html";
-		
+		document.getElementById('i_cuento4').src=  "";	
 		
 		function embed() {	
 		document.getElementById('i_cuento4').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
@@ -917,18 +890,14 @@ if (reversed == null) { reversed = false; }
 		embed();
 		}) 
 		
-		
-		 
 		var _this=this;
 		_this.btnContenidos.on('click', function () {
-		
-		document.getElementById('i_cuento4').src=  "./Contenidos/index.html";
-		
-				 
+		document.getElementById('i_cuento4').src=  "./Contenidos/index.html";		 
 		});
 		
-		
 		_this.botones.visible = true;
+		
+		 document.getElementById('i_cuento4').src=  "./Contenidos/index.html";
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -941,7 +910,7 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_15 = function() {
-		document.getElementById('i_cuento4').src=  "./Actividades/Menu/index.html";
+		document.getElementById('i_cuento4').src=  "";	
 		
 		function embed() {	
 		document.getElementById('i_cuento4').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
@@ -955,14 +924,12 @@ if (reversed == null) { reversed = false; }
 		}) 
 		
 		var _this = this;
-		
 		_this.btnActividades.on('click', function () {	 	
-		document.getElementById('i_cuento4').src=  "./Actividades/Menu/index.html";
-				 		 
+		document.getElementById('i_cuento4').src=  "./Actividades/Menu/index.html";	 		 
 		});
 		
-		
 		_this.botones.visible = false;
+		 document.getElementById('i_cuento4').src=  "./Actividades/Menu/index.html";
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -1099,15 +1066,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1699145782807", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1699145782807", id:"barraseguredes"},
-		{src:"images/fondo111111111.png?1699145782807", id:"fondo111111111"},
-		{src:"images/fondoMorado.png?1699145782807", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1699145782730", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1699145782731", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1699145782807", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1699145782807", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1699145782807", id:"sound1"}
+		{src:"images/bannernegro1.png?1699148879231", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1699148879231", id:"barraseguredes"},
+		{src:"images/fondo111111111.png?1699148879231", id:"fondo111111111"},
+		{src:"images/fondoMorado.png?1699148879231", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1699148879168", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1699148879169", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1699148879231", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1699148879231", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1699148879231", id:"sound1"}
 	],
 	preloads: []
 };

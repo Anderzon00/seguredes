@@ -723,8 +723,6 @@ if (reversed == null) { reversed = false; }
 		function embed() {	
 		document.getElementById('i_cuento1').style.width = 0 +'px';
 		document.getElementById('i_cuento1').style.height = 0 + 'px';	
-			
-			
 			}
 		
 		embed();
@@ -733,11 +731,8 @@ if (reversed == null) { reversed = false; }
 		embed();
 		}) 
 		
-		
-		
 		var _this = this;
-		 
-		 
+		
 		_this.bntPlay.on('click', function(){
 		 
 		createjs.Sound.play("SoundPlay", {	volume: 0.8
@@ -748,10 +743,11 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_13 = function() {
-		var _this = this;
+		document.getElementById('i_cuento1').src=  "";	
 		
+		var _this = this;
 		_this.stop();
-		document.getElementById('i_cuento1').src=  "./Cuento/Escena_1/index.html" ;	
+		
 		
 		
 		function embed() {	
@@ -763,7 +759,9 @@ if (reversed == null) { reversed = false; }
 		
 		window.addEventListener('resize', () => {	
 		embed();
-		})
+		}) 
+		
+		document.getElementById('i_cuento1').src=  "./Cuento/Escena_1/index.html" ;
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -777,8 +775,8 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_14 = function() {
-		document.getElementById('i_cuento1').src=  "./Contenidos/index.html";
-		
+		document.getElementById('i_cuento1').src=  "";	
+		 
 		function embed() {	
 		document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
 		document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
@@ -790,7 +788,6 @@ if (reversed == null) { reversed = false; }
 		embed();
 		}) 
 		
-		
 		 
 		var _this=this;
 		_this.btnContenidos.on('click', function () {
@@ -799,6 +796,8 @@ if (reversed == null) { reversed = false; }
 		
 				 
 		});
+		
+		document.getElementById('i_cuento1').src=  "./Contenidos/index.html";
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -811,9 +810,8 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_15 = function() {
-		document.getElementById('i_cuento1').src=  "./Actividades/Menu/index.html";
-		
-		 
+		document.getElementById('i_cuento1').src=  "";	
+		  
 		function embed() {	
 		document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
 		document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
@@ -831,6 +829,8 @@ if (reversed == null) { reversed = false; }
 		document.getElementById('i_cuento1').src=  "./Actividades/Menu/index.html";
 				 		 
 		});
+		
+		document.getElementById('i_cuento1').src=  "./Actividades/Menu/index.html";
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -988,14 +988,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1699144977644", id:"bannernegro1"},
-		{src:"images/fondo11.png?1699144977644", id:"fondo11"},
-		{src:"images/fondoMorado.png?1699144977644", id:"fondoMorado"},
-		{src:"images/Portada.png?1699144977644", id:"Portada"},
-		{src:"images/index_atlas_1.png?1699144977577", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1699144977644", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1699144977644", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1699144977644", id:"sound1"}
+		{src:"images/bannernegro1.png?1699148190294", id:"bannernegro1"},
+		{src:"images/fondo11.png?1699148190294", id:"fondo11"},
+		{src:"images/fondoMorado.png?1699148190294", id:"fondoMorado"},
+		{src:"images/Portada.png?1699148190294", id:"Portada"},
+		{src:"images/index_atlas_1.png?1699148190234", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1699148190294", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1699148190294", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1699148190294", id:"sound1"}
 	],
 	preloads: []
 };
