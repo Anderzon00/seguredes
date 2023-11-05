@@ -670,21 +670,21 @@ if (reversed == null) { reversed = false; }
 		
 		
 		_this.btnContenidos.on('click', function () {	
-			document.getElementById('i_cuento1').src=  "";	
-				_this.gotoAndStop("Contenidos");
+		 		_this.gotoAndStop("Contenidos");
+			  document.getElementById('i_cuento1').src = "./Contenidos/index.html";
+		
 				 
 		});
 		
 		
 		_this.btnActividades.on('click', function () {	
-		 	document.getElementById('i_cuento1').src=  "";	
-				_this.gotoAndStop("Actividades");
+		 		_this.gotoAndStop("Actividades");
+			document.getElementById('i_cuento1').src=  "./Actividades/Menu/index.html";
 				 		 
 		});
 		
 		this.btnAyuda.on('click', function () {	
-			document.getElementById('i_cuento1').src=  "";	
-		
+		 
 			_this.gotoAndStop("Ayuda");
 			
 		});
@@ -775,29 +775,16 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_14 = function() {
-		document.getElementById('i_cuento1').src=  "";	
-		 
-		function embed() {	
-		document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		function embed() {    
+		  document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32) + 'px';
+		  document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		embed();
 		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		
-		 
-		var _this=this;
-		_this.btnContenidos.on('click', function () {
-		
-		document.getElementById('i_cuento1').src=  "./Contenidos/index.html";
-		
-				 
+		window.addEventListener('resize', () => {    
+		  embed();
 		});
-		
-		document.getElementById('i_cuento1').src=  "./Contenidos/index.html";
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -810,27 +797,16 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_15 = function() {
-		document.getElementById('i_cuento1').src=  "";	
-		  
-		function embed() {	
-		document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		function embed() {    
+		  document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32) + 'px';
+		  document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		embed();
 		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		
-		var _this = this;
-		
-		_this.btnActividades.on('click', function () {	 	
-		document.getElementById('i_cuento1').src=  "./Actividades/Menu/index.html";
-				 		 
+		window.addEventListener('resize', () => {    
+		  embed();
 		});
-		
-		document.getElementById('i_cuento1').src=  "./Actividades/Menu/index.html";
 		var _this = this;
 		/*
 		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
@@ -988,14 +964,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1699148190294", id:"bannernegro1"},
-		{src:"images/fondo11.png?1699148190294", id:"fondo11"},
-		{src:"images/fondoMorado.png?1699148190294", id:"fondoMorado"},
-		{src:"images/Portada.png?1699148190294", id:"Portada"},
-		{src:"images/index_atlas_1.png?1699148190234", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1699148190294", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1699148190294", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1699148190294", id:"sound1"}
+		{src:"images/bannernegro1.png?1699154484955", id:"bannernegro1"},
+		{src:"images/fondo11.png?1699154484955", id:"fondo11"},
+		{src:"images/fondoMorado.png?1699154484955", id:"fondoMorado"},
+		{src:"images/Portada.png?1699154484956", id:"Portada"},
+		{src:"images/index_atlas_1.png?1699154484890", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1699154484956", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1699154484956", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1699154484956", id:"sound1"}
 	],
 	preloads: []
 };
