@@ -669,18 +669,21 @@ if (reversed == null) { reversed = false; }
 		});
 		
 		
-		_this.btnContenidos.on('click', function () {		
+		_this.btnContenidos.on('click', function () {	
+			document.getElementById('i_cuento1').src=  "";	
 				_this.gotoAndStop("Contenidos");
 				 
 		});
 		
 		
-		_this.btnActividades.on('click', function () {	 	
+		_this.btnActividades.on('click', function () {	
+		 	document.getElementById('i_cuento1').src=  "";	
 				_this.gotoAndStop("Actividades");
 				 		 
 		});
 		
-		this.btnAyuda.on('click', function () {		 
+		this.btnAyuda.on('click', function () {	
+			document.getElementById('i_cuento1').src=  "";	
 		
 			_this.gotoAndStop("Ayuda");
 			
@@ -985,14 +988,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1698434487269", id:"bannernegro1"},
-		{src:"images/fondo11.png?1698434487269", id:"fondo11"},
-		{src:"images/fondoMorado.png?1698434487269", id:"fondoMorado"},
-		{src:"images/Portada.png?1698434487269", id:"Portada"},
-		{src:"images/index_atlas_1.png?1698434487205", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1698434487269", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1698434487269", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1698434487269", id:"sound1"}
+		{src:"images/bannernegro1.png?1699144977644", id:"bannernegro1"},
+		{src:"images/fondo11.png?1699144977644", id:"fondo11"},
+		{src:"images/fondoMorado.png?1699144977644", id:"fondoMorado"},
+		{src:"images/Portada.png?1699144977644", id:"Portada"},
+		{src:"images/index_atlas_1.png?1699144977577", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1699144977644", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1699144977644", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1699144977644", id:"sound1"}
 	],
 	preloads: []
 };
