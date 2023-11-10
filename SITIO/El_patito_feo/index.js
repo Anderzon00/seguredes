@@ -635,33 +635,25 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [0,12,13,14,15,16];
+	this.actionFrames = [0,12,13];
 	// timeline functions:
 	this.frame_0 = function() {
 		this.stop(); 
 		
 		stage.on('drawstart', initStage, this, true);
-		function initStage() {
-			stretchToFit();
-		}
-		var _this = this;
+		function initStage() {	stretchToFit();}
 		
+		var _this = this;
 		_this.btnInicio.on('click', function () {
-			createjs.Sound.play("sound2", {	volume: 0.5
-			}).on("complete", function () {
-				window.open("../../", "_self");
-			}, this);
+			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
+				window.open("../../", "_self");}, this);
 		});
 		
-		
 		_this.btnVolver.on('click', function () {
-			createjs.Sound.play("sound2", {
-				volume: 0.8
-			}).on("complete", function () {
+			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
 				window.open("../MenuPrincipal", "_self");
 			}, this);
 		});
-		
 		
 		_this.btnContenidos.on('click', function () {	
 		_this.gotoAndStop("Contenidos");
@@ -669,10 +661,11 @@ if (reversed == null) { reversed = false; }
 		document.getElementById('cuento').style.display = 'none';
 		document.getElementById('ayuda').style.display = 'none';
 		document.getElementById('actividades').style.display = 'none';
-		
-				 
+			document.getElementById('i_cuento').src = 'about:blank';
+			document.getElementById('i_contenidos').src=  "./Contenidos/index.html" 
+		    document.getElementById('i_actividades').src=  'about:blank';
+		    document.getElementById('i_ayuda').src = 'about:blank'; 		 
 		});
-		
 		
 		_this.btnActividades.on('click', function () {	
 		_this.gotoAndStop("Actividades");	
@@ -680,7 +673,10 @@ if (reversed == null) { reversed = false; }
 		document.getElementById('cuento').style.display = 'none';
 		document.getElementById('contenidos').style.display = 'none';
 		document.getElementById('ayuda').style.display = 'none';
-		 			 		 
+		document.getElementById('i_cuento').src = 'about:blank';
+		document.getElementById('i_contenidos').src =  'about:blank';
+		document.getElementById('i_actividades').src=  "./Actividades/Menu/index.html"
+		document.getElementById('i_ayuda').src = 'about:blank'; 			 		 
 		});
 		
 		this.btnAyuda.on('click', function () {		
@@ -689,121 +685,94 @@ if (reversed == null) { reversed = false; }
 		document.getElementById('cuento').style.display = 'none';
 		document.getElementById('contenidos').style.display = 'none';
 		document.getElementById('actividades').style.display = 'none';
-			
-			
+		document.getElementById('i_contenidos').src =  'about:blank';
+		document.getElementById('i_cuento').src = 'about:blank';
+		document.getElementById('i_actividades').src=  'about:blank';
+		document.getElementById('i_ayuda').src= "./dearflip/index.html"	
 		});
-		
 		
 		_this.button_popup.on('click', function () {
 			_this.gotoAndPlay(1);
 		});
 		
-		
-		
-		/////////////////
-		
 		var elementCuento = document.createElement('div');
 		elementCuento.setAttribute('id', 'cuento');
 		document.body.appendChild(elementCuento);
 		elementCuento.style.position = "absolute"; 
-		
-		elementCuento.innerHTML = '<iframe  src="./Cuento/Escena_1/index.html" id="i_cuento1"   style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		elementCuento.innerHTML = '<iframe id="i_cuento" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
 		 
-		function embed1() {	
-		document.getElementById('cuento').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('cuento').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_cuento1').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento1').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		 
-		embed1();
-		 
-		window.addEventListener('resize', () => {	
-		embed1();
-		})  
-		
-		
-		
 		var elementContenidos = document.createElement('div');
 		elementContenidos.setAttribute('id', 'contenidos');
 		document.body.appendChild(elementContenidos);
 		elementContenidos.style.position = "absolute"; 
-		
-		elementContenidos.innerHTML = '<iframe  src=  "./Contenidos/index.html" id="i_contenidos"   style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		elementContenidos.innerHTML = '<iframe id="i_contenidos" style="border:none; overflow: hidden"; allow="autoplay"  >';
 		 
-		function embed2() {	
-		document.getElementById('contenidos').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('contenidos').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_contenidos').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_contenidos').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		  
-		embed2();
-		
-		
-		window.addEventListener('resize', () => {	
-		embed2();
-		})  
-		
-		
 		var elementActividades = document.createElement('div');
 		elementActividades.setAttribute('id', 'actividades');
 		document.body.appendChild(elementActividades);
 		elementActividades.style.position = "absolute"; 
-		
-		elementActividades.innerHTML = '<iframe  src=  "./Actividades/Menu/index.html" id="i_actividades"   style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		elementActividades.innerHTML = '<iframe   id="i_actividades" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
 		 
-		function embed3() {	
-		document.getElementById('actividades').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('actividades').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_actividades').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_actividades').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		  
-		embed3();
-		 
-		window.addEventListener('resize', () => {	
-		embed3();
-		})  
-		
-		
 		var elementAyuda = document.createElement('div');
 		elementAyuda.setAttribute('id', 'ayuda');
 		document.body.appendChild(elementAyuda);
 		elementAyuda.style.position = "absolute"; 
-		
-		elementAyuda.innerHTML = '<iframe  src= "./dearflip/index.html" id="i_ayuda"   style="border:none; overflow: hidden"  ; allow="autoplay"  >';
-		 
-		function embed4() {	
-		document.getElementById('ayuda').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('ayuda').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_ayuda').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_ayuda').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+		elementAyuda.innerHTML = '<iframe   id="i_ayuda" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		   
+		function embed(id) {
+		  var element = document.getElementById(id);
+		  element.style.left = 2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		  element.style.top = 1.059 * Math.max(window.innerHeight) / 16 + 'px'; 
+		  element.querySelector(`#i_${id}`).style.width = 27.9250 * (Math.max(window.innerWidth) / 32) + 'px';
+		  element.querySelector(`#i_${id}`).style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
-		  
-		embed4();
-		 
-		window.addEventListener('resize', () => {	
-		embed4();
-		})  
-		  
+		
+		function handleResize() {
+		  actions.forEach((action) => {
+		    embed(action);
+		  });
+		}
+		
+		window.addEventListener('resize', handleResize);
+		
+		const actions = ["cuento", "contenidos", "actividades", "ayuda"];
+		
+		actions.forEach((action) => {
+		  embed(action);
+		});
+		
+		
 		document.getElementById('cuento').style.display = 'none';
 		document.getElementById('contenidos').style.display = 'none';
 		document.getElementById('ayuda').style.display = 'none';
 		document.getElementById('actividades').style.display = 'none';
+		var _this = this;
+		
+		_this.btnVolverAcuento.on('click', function(){
+		createjs.Sound.play("sound2", {	volume: 0.8
+			}).on("complete", function () {
+				irCuento()
+			}, this);
+		});
 	}
 	this.frame_12 = function() {
+		this.stop();
+		
 		document.getElementById('cuento').style.display = 'none';
 		document.getElementById('contenidos').style.display = 'none';
 		document.getElementById('ayuda').style.display = 'none';
 		document.getElementById('actividades').style.display = 'none';
+		document.getElementById('i_cuento').src="./Cuento/Escena_1/index.html";
+		document.getElementById('i_contenidos').src =  'about:blank';
+		document.getElementById('i_actividades').src=  'about:blank';
+		document.getElementById('i_ayuda').src = 'about:blank'; 		
 		
-		this.stop();
+		
+		
 		
 		var _this = this;
 		
-		_this.bntPlay.on('click', function(){
-		 
+		_this.bntPlay.on('click', function(){ 
 		createjs.Sound.play("SoundPlay", {	volume: 0.8
 			}).on("complete", function () {
 				_this.gotoAndStop("Cuento");
@@ -816,61 +785,10 @@ if (reversed == null) { reversed = false; }
 		document.getElementById('contenidos').style.display = 'none';
 		document.getElementById('ayuda').style.display = 'none';
 		document.getElementById('actividades').style.display = 'none';
-		var _this = this;
-		_this.stop();
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		
-		});
-	}
-	this.frame_14 = function() {
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		});
-	}
-	this.frame_15 = function() {
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		 
-		});
-	}
-	this.frame_16 = function() {
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		 
-		});
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(1).call(this.frame_14).wait(1).call(this.frame_15).wait(1).call(this.frame_16).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(4));
 
 	// Capa_3
 	this.instance = new lib.mano();
@@ -922,17 +840,17 @@ if (reversed == null) { reversed = false; }
 
 	this.btnAyuda = new lib.btnAyuda();
 	this.btnAyuda.name = "btnAyuda";
-	this.btnAyuda.setTransform(1214.85,32.5);
+	this.btnAyuda.setTransform(1214.85,32.95);
 	new cjs.ButtonHelper(this.btnAyuda, 0, 1, 2);
 
 	this.btnActividades = new lib.btnActividades();
 	this.btnActividades.name = "btnActividades";
-	this.btnActividades.setTransform(1019.5,32.5);
+	this.btnActividades.setTransform(1019.5,32.95);
 	new cjs.ButtonHelper(this.btnActividades, 0, 1, 2);
 
 	this.btnContenidos = new lib.btnContenidos();
 	this.btnContenidos.name = "btnContenidos";
-	this.btnContenidos.setTransform(790.25,32.5);
+	this.btnContenidos.setTransform(790.25,33.1);
 	new cjs.ButtonHelper(this.btnContenidos, 0, 1, 2, false, new lib.btnContenidos(), 3);
 
 	this.btnVolver = new lib.btnVolver();
@@ -940,7 +858,7 @@ if (reversed == null) { reversed = false; }
 	this.btnVolver.setTransform(1205.7,738.75,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolver, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda},{t:this.btnInicio}]}).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]},13).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]},1).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda},{t:this.btnInicio}]}).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]},13).wait(4));
 
 	// tarjeta
 	this.instance_6 = new lib.Portada();
@@ -962,14 +880,14 @@ if (reversed == null) { reversed = false; }
 	this.instance_7.setTransform(101,621,0.5025,0.5);
 
 	this.instance_8 = new lib.fondo11();
-	this.instance_8.setTransform(-37,-37,0.5,0.5);
+	this.instance_8.setTransform(-38,-37,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.shape_1}]}).wait(17));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(646,347,761,456);
+p.nominalBounds = new cjs.Rectangle(645,347,761,456);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -979,14 +897,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1699165268489", id:"bannernegro1"},
-		{src:"images/fondo11.png?1699165268489", id:"fondo11"},
-		{src:"images/fondoMorado.png?1699165268489", id:"fondoMorado"},
-		{src:"images/Portada.png?1699165268489", id:"Portada"},
-		{src:"images/index_atlas_1.png?1699165268427", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1699165268489", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1699165268489", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1699165268489", id:"sound1"}
+		{src:"images/bannernegro1.png?1699299905440", id:"bannernegro1"},
+		{src:"images/fondo11.png?1699299905440", id:"fondo11"},
+		{src:"images/fondoMorado.png?1699299905440", id:"fondoMorado"},
+		{src:"images/Portada.png?1699299905440", id:"Portada"},
+		{src:"images/index_atlas_1.png?1699299905382", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1699299905440", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1699299905440", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1699299905440", id:"sound1"}
 	],
 	preloads: []
 };

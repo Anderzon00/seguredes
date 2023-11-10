@@ -3,8 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[1550,1745,466,90],[1515,994,466,90],[1515,1086,466,90],[1211,1637,708,106],[502,1927,707,107],[1108,1335,300,300],[1410,1397,552,90],[1410,1489,552,90],[1211,1884,553,90],[1410,1305,553,90],[0,0,1824,992],[502,1528,604,397],[709,994,434,339],[1145,994,368,243],[1108,1745,440,137],[0,1528,500,500],[1145,1239,803,64],[0,994,707,532]]},
-		{name:"index_atlas_2", frames: [[459,0,315,90],[0,0,457,90],[459,92,315,90],[0,92,457,90],[459,184,315,90],[0,184,457,90],[368,276,365,91],[0,276,366,91],[735,276,140,139]]}
+		{name:"index_atlas_1", frames: [[459,0,315,90],[0,0,457,90],[459,92,315,90],[0,92,457,90],[459,184,315,90],[0,184,457,90],[368,276,365,91],[0,276,366,91],[735,276,140,139]]},
+		{name:"index_atlas_2", frames: [[1550,1745,466,90],[1515,994,466,90],[1515,1086,466,90],[1211,1637,708,106],[502,1927,707,107],[1108,1335,300,300],[1410,1397,552,90],[1410,1489,552,90],[1211,1884,553,90],[1410,1305,553,90],[0,0,1824,992],[502,1528,604,397],[709,994,434,339],[1145,994,368,243],[1108,1745,440,137],[0,1528,500,500],[1145,1239,803,64],[0,994,707,532]]}
 ];
 
 
@@ -29,63 +29,63 @@ lib.ssMetadata = [
 
 
 (lib._1ActividadesNORMAL = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1AyudaNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1ContenidosNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2actividadesSOBRE = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2ayudaSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
-	this.gotoAndStop(2);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib._2contenidosSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
-	this.gotoAndStop(3);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib._3actividadesDOWN = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._3ayudaDOWN = function() {
+(lib._2contenidosSOBRE = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._3actividadesDOWN = function() {
 	this.initialize(ss["index_atlas_2"]);
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._3ayudaDOWN = function() {
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3contenidosDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
@@ -104,70 +104,70 @@ p.nominalBounds = new cjs.Rectangle(0,0,2373,154);
 
 
 (lib.botonaceptar2 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Botonaceptar = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.botonplay = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.BtnInicioCuentoHover = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicio = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioCuento = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(7);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.btnIrInicioHover = function() {
 	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnMenuCuentos = function() {
+(lib.btnIrInicioHover = function() {
 	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.btnMenuCuentos = function() {
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentosHover = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.fondopapel1 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
@@ -192,56 +192,56 @@ p.nominalBounds = new cjs.Rectangle(0,0,2377,1137);
 
 
 (lib.formainferiorder = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formainferiorizq = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorder = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorizq = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.icono = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.mano2 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.NombreCuento = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Notificacion = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -756,227 +756,166 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,12,13,14,15,16];
 	// timeline functions:
 	this.frame_0 = function() {
-		this.stop(); 
-		document.getElementById('divi')?.remove();  
-		stage.on('drawstart', initStage, this, true);
-		function initStage() {
-			stretchToFit();
-		}
-		 var _this=this;
+		var _this = this;
 		
-		_this.btnInicio.on('click', function () {
-			createjs.Sound.play("sound2", {	volume: 0.5
+		_this.btnVolverAcuento.on('click', function(){
+		createjs.Sound.play("sound2", {	volume: 0.8
 			}).on("complete", function () {
-				window.open("../../", "_self");
+				irCuento()
 			}, this);
+		});
+		this.stop(); 
+		
+		stage.on('drawstart', initStage, this, true);
+		function initStage() {	stretchToFit();}
+		
+		var _this = this;
+		_this.btnInicio.on('click', function () {
+			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
+				window.open("../../", "_self");}, this);
 		});
 		
 		_this.btnVolver.on('click', function () {
-			createjs.Sound.play("sound2", {
-				volume: 0.8
-			}).on("complete", function () {
+			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
 				window.open("../MenuPrincipal", "_self");
 			}, this);
 		});
 		
 		_this.btnContenidos.on('click', function () {	
-		 		_this.gotoAndStop("Contenidos");		 
+		_this.gotoAndStop("Contenidos");
+		document.getElementById('contenidos').style.display = 'block';
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
+			document.getElementById('i_cuento').src = 'about:blank';
+			document.getElementById('i_contenidos').src=  "./ContenidosPinocho/index.html" 
+		    document.getElementById('i_actividades').src=  'about:blank';
+		    document.getElementById('i_ayuda').src = 'about:blank'; 		 
 		});
 		
-		_this.btnActividades.on('click', function () {	 
-		 		_this.gotoAndStop("Actividades");		 		 
+		_this.btnActividades.on('click', function () {	
+		_this.gotoAndStop("Actividades");	
+		document.getElementById('actividades').style.display = 'block';
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('i_cuento').src = 'about:blank';
+		document.getElementById('i_contenidos').src =  'about:blank';
+		document.getElementById('i_actividades').src=  "./ActividadesPinocho/Menu/index.html"
+		document.getElementById('i_ayuda').src = 'about:blank'; 			 		 
 		});
 		
-		this.btnAyuda.on('click', function () {		 
-		alert("ayuda");	
-			_this.gotoAndStop("Ayuda");	
+		this.btnAyuda.on('click', function () {		
+		_this.gotoAndStop("Ayuda");
+		document.getElementById('ayuda').style.display = 'block';
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
+		document.getElementById('i_contenidos').src =  'about:blank';
+		document.getElementById('i_cuento').src = 'about:blank';
+		document.getElementById('i_actividades').src=  'about:blank';
+		document.getElementById('i_ayuda').src= "./dearflip/index.html"	
 		});
 		
-		_this.popup.button_popup.on('click', function () {
+		_this.popup.on('click', function () {
 			_this.gotoAndPlay(1);
-		});  
-		 
-		var element = document.createElement('div');
-		element.setAttribute('id', 'divi');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		 
-		element.innerHTML = '<iframe     id="i_cuento"   style="border:none" allow="autoplay"  >';
+		});
 		
-		function embed() {	
-		document.getElementById('divi').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('divi').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_cuento').style.width = 0 +'px';
-		document.getElementById('i_cuento').style.height = 0 +'px';
+		var elementCuento = document.createElement('div');
+		elementCuento.setAttribute('id', 'cuento');
+		document.body.appendChild(elementCuento);
+		elementCuento.style.position = "absolute"; 
+		elementCuento.innerHTML = '<iframe id="i_cuento" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		 
+		var elementContenidos = document.createElement('div');
+		elementContenidos.setAttribute('id', 'contenidos');
+		document.body.appendChild(elementContenidos);
+		elementContenidos.style.position = "absolute"; 
+		elementContenidos.innerHTML = '<iframe id="i_contenidos" style="border:none; overflow: hidden"; allow="autoplay"  >';
+		 
+		var elementActividades = document.createElement('div');
+		elementActividades.setAttribute('id', 'actividades');
+		document.body.appendChild(elementActividades);
+		elementActividades.style.position = "absolute"; 
+		elementActividades.innerHTML = '<iframe   id="i_actividades" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		 
+		var elementAyuda = document.createElement('div');
+		elementAyuda.setAttribute('id', 'ayuda');
+		document.body.appendChild(elementAyuda);
+		elementAyuda.style.position = "absolute"; 
+		elementAyuda.innerHTML = '<iframe   id="i_ayuda" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		   
+		function embed(id) {
+		  var element = document.getElementById(id);
+		  element.style.left = 2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		  element.style.top = 1.059 * Math.max(window.innerHeight) / 16 + 'px'; 
+		  element.querySelector(`#i_${id}`).style.width = 27.9250 * (Math.max(window.innerWidth) / 32) + 'px';
+		  element.querySelector(`#i_${id}`).style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
-		embed();
-		 
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
+		function handleResize() {
+		  actions.forEach((action) => {
+		    embed(action);
+		  });
+		}
+		
+		window.addEventListener('resize', handleResize);
+		
+		const actions = ["cuento", "contenidos", "actividades", "ayuda"];
+		
+		actions.forEach((action) => {
+		  embed(action);
+		});
 		
 		
-		
-		var _this = this;
-		/*
-		Hace que el objeto especificado sea visible o invisible.
-		*/
-		_this.botones.visible = false;
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
 	}
 	this.frame_12 = function() {
-		var _this = this; 
-		 
-		_this.bntPlay.on('click', function(){
-		 
+		this.stop();
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
+		document.getElementById('i_cuento').src="./CuentoPinocho/E1AA/index.html";	;
+		document.getElementById('i_contenidos').src =  'about:blank';
+		document.getElementById('i_actividades').src=  'about:blank';
+		document.getElementById('i_ayuda').src = 'about:blank'; 		
+		var _this = this;
+		
+		_this.bntPlay.on('click', function(){ 
 		createjs.Sound.play("SoundPlay", {	volume: 0.8
 			}).on("complete", function () {
 				_this.gotoAndStop("Cuento");
 			}, this);
 			
 		});
-		document.getElementById('i_cuento').src=  "";	
 		
-		function embed() {	
-		document.getElementById('i_cuento').style.width = 0 +'px';
-		document.getElementById('i_cuento').style.height = 0 + 'px';	
-				}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		
-		_this.stop();
+		var _this = this;
+		_this.botones.visible = false;
 		
 		var _this = this;
 		_this.botones.visible = false;
 	}
 	this.frame_13 = function() {
-		var _this = this;
-		
-		_this.stop();
-		
-		document.getElementById('i_cuento').src=  "./Cuento/E1AA/index.html";	
-		
-		function embed() {	
-		document.getElementById('i_cuento').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';	
-			
-			
-			}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		
-		var _this = this;
-		/*
-		Hace que el objeto especificado sea visible o invisible.
-		*/
-		_this.botones.visible = false;
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		
-		});
+		document.getElementById('cuento').style.display = 'block';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
 	}
 	this.frame_14 = function() {
-		document.getElementById('i_cuento').src=  "";
-		
-		function embed() {	
-		document.getElementById('i_cuento').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		 var _this=this;
-		
-		_this.btnContenidos.on('click', function () {		
-			document.getElementById('i_cuento').src=  "./Contenidos/index.html";	 
-		});
-		
 		var _this = this; 
 		_this.botones.visible = true;
-		
-		 document.getElementById('i_cuento').src=  "./Contenidos/index.html";
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		});
 	}
 	this.frame_15 = function() {
-		document.getElementById('i_cuento').src=  "";	
-		
-		function embed() {	
-		document.getElementById('i_cuento').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		
-		 var _this=this;
-		_this.btnActividades.on('click', function () {	 	
-				document.getElementById('i_cuento').src=  "./Actividades/Menu/index.html";	 		 
-		});
-		
-		var _this = this;
-		 
+		var _this = this; 
 		_this.botones.visible = false;
-		
-		 document.getElementById('i_cuento').src=  "./Actividades/Menu/index.html";
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		 
-		});
 	}
 	this.frame_16 = function() {
 		var _this = this;
-		/*
-		Hace que el objeto especificado sea visible o invisible.
-		*/
 		_this.botones.visible = false;
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		 
-		});
 	}
 
 	// actions tween:
@@ -1089,16 +1028,16 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1699148667192", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1699148667192", id:"barraseguredes"},
-		{src:"images/fondo11.png?1699148667192", id:"fondo11"},
-		{src:"images/fondoMorado.png?1699148667192", id:"fondoMorado"},
-		{src:"images/FondoOscuro.png?1699148667192", id:"FondoOscuro"},
-		{src:"images/index_atlas_1.png?1699148667124", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1699148667124", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1699148667192", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1699148667192", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1699148667192", id:"sound1"}
+		{src:"images/bannernegro1.png?1699211187819", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1699211187819", id:"barraseguredes"},
+		{src:"images/fondo11.png?1699211187819", id:"fondo11"},
+		{src:"images/fondoMorado.png?1699211187819", id:"fondoMorado"},
+		{src:"images/FondoOscuro.png?1699211187819", id:"FondoOscuro"},
+		{src:"images/index_atlas_1.png?1699211187750", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1699211187751", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1699211187819", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1699211187819", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1699211187819", id:"sound1"}
 	],
 	preloads: []
 };

@@ -111,7 +111,7 @@ lib.ssMetadata = [
 
 
 
-(lib.FOndo = function() {
+(lib.FOndo11111111111 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
@@ -1424,7 +1424,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_7 = new lib.img_act1();
 	this.instance_7.setTransform(334.2,263.25,0.5308,0.5308,0,0,0,-0.8,0.1);
 
-	this.instance_8 = new lib.FOndo();
+	this.instance_8 = new lib.FOndo11111111111();
 	this.instance_8.setTransform(0,0,0.5032,0.4887);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.btnRompecabezas},{t:this.btnEntrar1},{t:this.btnEntrar2},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -1588,7 +1588,7 @@ if (reversed == null) { reversed = false; }
 
 	// Capa_3
 	this.instance_3 = new lib.neon();
-	this.instance_3.setTransform(612.05,99.55,1.0617,1.0617,0,0,0,418.6,71.7);
+	this.instance_3.setTransform(612.05,103.55,1.0617,1.0617,0,0,0,418.6,71.7);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({_off:true},1).wait(1));
 
@@ -1664,8 +1664,8 @@ if (reversed == null) { reversed = false; }
 	this.BtnInteractivoA.setTransform(153.5,239.95,1,1,0,0,0,-21.1,7.5);
 	new cjs.ButtonHelper(this.BtnInteractivoA, 0, 1, 2, false, new lib.btnInteractivoB(), 3);
 
-	this.instance_9 = new lib.FOndo();
-	this.instance_9.setTransform(-4,-28,0.5032,0.4887);
+	this.instance_9 = new lib.FOndo11111111111();
+	this.instance_9.setTransform(-4,-29,0.5032,0.4887);
 
 	this.niño_1 = new lib.niño();
 	this.niño_1.name = "niño_1";
@@ -1710,13 +1710,13 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1694459312287", id:"index_atlas_1"},
-		{src:"sounds/entrar.mp3?1694459312425", id:"entrar"},
-		{src:"sounds/error.mp3?1694459312425", id:"error"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1694459312425", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1694459312425", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1694459312425", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1694459312425", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1699307417945", id:"index_atlas_1"},
+		{src:"sounds/entrar.mp3?1699307418071", id:"entrar"},
+		{src:"sounds/error.mp3?1699307418071", id:"error"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1699307418071", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1699307418071", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1699307418071", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1699307418071", id:"an.TextInput"}
 	],
 	preloads: []
 };

@@ -3,8 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[0,0,1824,992],[0,994,1373,637]]},
-		{name:"index_atlas_2", frames: [[370,1009,466,90],[370,720,315,90],[1306,1040,457,90],[838,1040,466,90],[1647,0,315,90],[1522,818,457,90],[0,1101,466,90],[1647,92,315,90],[1522,910,457,90],[370,901,708,106],[1211,341,707,107],[0,534,300,300],[1315,634,552,90],[302,627,365,91],[1315,726,552,90],[302,534,366,91],[1315,450,553,90],[1315,542,553,90],[709,502,604,397],[1211,0,434,339],[0,836,368,243],[1080,901,440,137],[1869,634,140,139],[709,0,500,500],[0,0,707,532],[468,1132,708,48]]}
+		{name:"index_atlas_1", frames: [[370,1009,466,90],[370,720,315,90],[1306,1040,457,90],[838,1040,466,90],[1647,0,315,90],[1522,818,457,90],[0,1101,466,90],[1647,92,315,90],[1522,910,457,90],[370,901,708,106],[1211,341,707,107],[0,534,300,300],[1315,634,552,90],[302,627,365,91],[1315,726,552,90],[302,534,366,91],[1315,450,553,90],[1315,542,553,90],[709,502,604,397],[1211,0,434,339],[0,836,368,243],[1080,901,440,137],[1869,634,140,139],[709,0,500,500],[0,0,707,532],[468,1132,708,48]]},
+		{name:"index_atlas_2", frames: [[0,0,1824,992],[0,994,1373,637]]}
 ];
 
 
@@ -29,63 +29,63 @@ lib.ssMetadata = [
 
 
 (lib._1ActividadesNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1AyudaNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1ContenidosNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2actividadesSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2ayudaSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2contenidosSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3actividadesDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3ayudaDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3contenidosDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
@@ -104,70 +104,70 @@ p.nominalBounds = new cjs.Rectangle(0,0,2373,154);
 
 
 (lib.botonaceptar2 = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Botonaceptar = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.botonplay = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.BtnInicioCuentoHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicio = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioCuento = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentos = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentosHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.fondopapel1 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -186,63 +186,63 @@ p.nominalBounds = new cjs.Rectangle(0,0,2376,1136);
 
 
 (lib.formainferiorder = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formainferiorizq = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorder = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorizq = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.icono = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.index_atlas_2 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.mano2 = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Notificacion = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.TITULOGROOMING = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -754,88 +754,147 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [0,12,13,14,15,16];
+	this.actionFrames = [0,12,13,14,15];
 	// timeline functions:
 	this.frame_0 = function() {
 		this.stop(); 
-		document.getElementById('divi')?.remove();  
-		stage.on('drawstart', initStage, this, true);
-		function initStage() {
-			stretchToFit();
-		} 
-		 var _this=this;
 		
+		stage.on('drawstart', initStage, this, true);
+		function initStage() {	stretchToFit();}
+		
+		var _this = this;
 		_this.btnInicio.on('click', function () {
-			createjs.Sound.play("sound2", {	volume: 0.5
-			}).on("complete", function () {
-				window.open("../../", "_self");
-			}, this);
+			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
+				window.open("../../", "_self");}, this);
 		});
+		
 		_this.btnVolver.on('click', function () {
-			createjs.Sound.play("sound2", {
-				volume: 0.8
-			}).on("complete", function () {
+			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
 				window.open("../MenuPrincipal", "_self");
 			}, this);
-		}); 
-		
-		_this.btnContenidos.on('click', function () {	
-				_this.gotoAndStop("Contenidos");		 
-		}); 
-		_this.btnActividades.on('click', function () {
-		 		_this.gotoAndStop("Actividades");		 		 
 		});
 		
-		this.btnAyuda.on('click', function () {	
-		 alert("ayuda");	
-			_this.gotoAndStop("Ayuda");
-			
-		}); 
-		_this.popup.button_popup.on('click', function () {
-			_this.gotoAndPlay(1);
-		}); 
-		var element = document.createElement('div');
-		element.setAttribute('id', 'divi');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
-		 
-		element.innerHTML = '<iframe     id="i_cuento4"   style="border:none" allow="autoplay"  >';
+		_this.btnContenidos.on('click', function () {	
+		_this.gotoAndStop("Contenidos");
+		document.getElementById('contenidos').style.display = 'block';
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
+			document.getElementById('i_cuento').src = 'about:blank';
+			document.getElementById('i_contenidos').src=  "./ContenidosCerditos/index.html" 
+		    document.getElementById('i_actividades').src=  'about:blank';
+		    document.getElementById('i_ayuda').src = 'about:blank'; 		 
+		});
 		
-		function embed() {	
-		document.getElementById('divi').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('divi').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_cuento4').style.width = 1+'px';
-		document.getElementById('i_cuento4').style.height = 1 +'px';
+		_this.btnActividades.on('click', function () {	
+		_this.gotoAndStop("Actividades");	
+		document.getElementById('actividades').style.display = 'block';
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('i_cuento').src = 'about:blank';
+		document.getElementById('i_contenidos').src =  'about:blank';
+		document.getElementById('i_actividades').src=  "./ActividadesCerditos/Menu/index.html"
+		document.getElementById('i_ayuda').src = 'about:blank'; 			 		 
+		});
+		
+		this.btnAyuda.on('click', function () {		
+		_this.gotoAndStop("Ayuda");
+		document.getElementById('ayuda').style.display = 'block';
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
+		document.getElementById('i_contenidos').src =  'about:blank';
+		document.getElementById('i_cuento').src = 'about:blank';
+		document.getElementById('i_actividades').src=  'about:blank';
+		document.getElementById('i_ayuda').src= "./dearflip/index.html"	
+		});
+		
+		_this.popup.on('click', function () {
+			_this.gotoAndPlay(1);
+		});
+		
+		var elementCuento = document.createElement('div');
+		elementCuento.setAttribute('id', 'cuento');
+		document.body.appendChild(elementCuento);
+		elementCuento.style.position = "absolute"; 
+		elementCuento.innerHTML = '<iframe id="i_cuento" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		 
+		var elementContenidos = document.createElement('div');
+		elementContenidos.setAttribute('id', 'contenidos');
+		document.body.appendChild(elementContenidos);
+		elementContenidos.style.position = "absolute"; 
+		elementContenidos.innerHTML = '<iframe id="i_contenidos" style="border:none; overflow: hidden"; allow="autoplay"  >';
+		 
+		var elementActividades = document.createElement('div');
+		elementActividades.setAttribute('id', 'actividades');
+		document.body.appendChild(elementActividades);
+		elementActividades.style.position = "absolute"; 
+		elementActividades.innerHTML = '<iframe   id="i_actividades" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		 
+		var elementAyuda = document.createElement('div');
+		elementAyuda.setAttribute('id', 'ayuda');
+		document.body.appendChild(elementAyuda);
+		elementAyuda.style.position = "absolute"; 
+		elementAyuda.innerHTML = '<iframe   id="i_ayuda" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		   
+		function embed(id) {
+		  var element = document.getElementById(id);
+		  element.style.left = 2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		  element.style.top = 1.059 * Math.max(window.innerHeight) / 16 + 'px'; 
+		  element.querySelector(`#i_${id}`).style.width = 27.9250 * (Math.max(window.innerWidth) / 32) + 'px';
+		  element.querySelector(`#i_${id}`).style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
-		embed();
-		 
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
+		function handleResize() {
+		  actions.forEach((action) => {
+		    embed(action);
+		  });
+		}
+		
+		window.addEventListener('resize', handleResize);
+		
+		const actions = ["cuento", "contenidos", "actividades", "ayuda"];
+		
+		actions.forEach((action) => {
+		  embed(action);
+		});
+		
+		
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
 		 
 		var _this = this;
 		 
-		_this.botones.visible = false;
+		_this.botones.visible = false; 
 		
+		var _this = this;
+		/*
+		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
+		*/
+		_this.btnVolverAcuento.on('click', function(){
+		createjs.Sound.play("sound2", {	volume: 0.8
+			}).on("complete", function () {
+				_this.gotoAndStop(12);
+			}, this);
+		 
+		});
 	}
 	this.frame_12 = function() {
 		this.stop();
-		
-		document.getElementById('i_cuento4').src=  "";	
-		
-		function embed() {	
-		document.getElementById('i_cuento4').style.width = 0 +'px';
-		document.getElementById('i_cuento4').style.height = 0 + 'px';		
-			}
-		
-		embed();
-		
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
+		document.getElementById('i_cuento').src= "./CuentoCerditos/E1AA/index.html" ;
+		document.getElementById('i_contenidos').src =  'about:blank';
+		document.getElementById('i_actividades').src=  'about:blank';
+		document.getElementById('i_ayuda').src = 'about:blank'; 		
 		var _this = this;
-		 
-		 
-		_this.bntPlay.on('click', function(){
-		 
+		
+		_this.bntPlay.on('click', function(){ 
 		createjs.Sound.play("SoundPlay", {	volume: 0.8
 			}).on("complete", function () {
 				_this.gotoAndStop("Cuento");
@@ -843,121 +902,29 @@ if (reversed == null) { reversed = false; }
 			
 		});
 		
-		
-		 
+		var _this = this;
 		_this.botones.visible = false;
 	}
 	this.frame_13 = function() {
-		document.getElementById('i_cuento4').src=  "";	
+		document.getElementById('cuento').style.display = 'block';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
 		
 		var _this = this;
-		_this.stop();
-		document.getElementById('i_cuento4').src= "./Cuento/E1AA/index.html" ;	
-		
-		function embed() {	
-		document.getElementById('i_cuento4').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento4').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';	
-		}
-		embed();
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		
 		_this.botones.visible = false;
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		
-		});
 	}
 	this.frame_14 = function() {
-		document.getElementById('i_cuento4').src=  "";	
-		
-		function embed() {	
-		document.getElementById('i_cuento4').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento4').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		
-		var _this=this;
-		_this.btnContenidos.on('click', function () {
-		document.getElementById('i_cuento4').src=  "./Contenidos/index.html";		 
-		});
-		
+		var _this=this; 
 		_this.botones.visible = true;
-		
-		 document.getElementById('i_cuento4').src=  "./Contenidos/index.html";
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		});
 	}
 	this.frame_15 = function() {
-		document.getElementById('i_cuento4').src=  "";	
-		
-		function embed() {	
-		document.getElementById('i_cuento4').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento4').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		
-		var _this = this;
-		_this.btnActividades.on('click', function () {	 	
-		document.getElementById('i_cuento4').src=  "./Actividades/Menu/index.html";	 		 
-		});
-		
+		var _this = this;  
 		_this.botones.visible = false;
-		 document.getElementById('i_cuento4').src=  "./Actividades/Menu/index.html";
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		 
-		});
-	}
-	this.frame_16 = function() {
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		 
-		});
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(1).call(this.frame_14).wait(1).call(this.frame_15).wait(1).call(this.frame_16).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(1).call(this.frame_14).wait(1).call(this.frame_15).wait(2));
 
 	// Capa_1
 	this.botones = new lib.Símbolo2();
@@ -1066,15 +1033,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1699148879231", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1699148879231", id:"barraseguredes"},
-		{src:"images/fondo111111111.png?1699148879231", id:"fondo111111111"},
-		{src:"images/fondoMorado.png?1699148879231", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1699148879168", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1699148879169", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1699148879231", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1699148879231", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1699148879231", id:"sound1"}
+		{src:"images/bannernegro1.png?1699211696733", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1699211696733", id:"barraseguredes"},
+		{src:"images/fondo111111111.png?1699211696733", id:"fondo111111111"},
+		{src:"images/fondoMorado.png?1699211696733", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1699211696665", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1699211696665", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1699211696733", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1699211696733", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1699211696733", id:"sound1"}
 	],
 	preloads: []
 };

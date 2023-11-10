@@ -3,8 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[1690,1528,300,300],[0,0,1824,992],[0,1563,604,397],[606,1563,434,339],[1188,1528,500,500],[1188,994,707,532],[0,994,1186,567]]},
-		{name:"index_atlas_2", frames: [[1521,108,466,90],[1653,431,315,90],[1490,339,457,90],[554,339,466,90],[0,495,315,90],[0,403,457,90],[1022,339,466,90],[317,523,315,90],[459,431,457,90],[1079,0,708,106],[370,0,707,107],[1359,247,552,90],[1286,431,365,91],[0,311,552,90],[918,431,366,91],[370,109,553,90],[804,247,553,90],[0,0,368,243],[1079,108,440,137],[634,523,140,139],[0,245,802,64]]}
+		{name:"index_atlas_1", frames: [[1521,108,466,90],[1653,431,315,90],[1490,339,457,90],[554,339,466,90],[0,495,315,90],[0,403,457,90],[1022,339,466,90],[317,523,315,90],[459,431,457,90],[1079,0,708,106],[370,0,707,107],[1359,247,552,90],[1286,431,365,91],[0,311,552,90],[918,431,366,91],[370,109,553,90],[804,247,553,90],[0,0,368,243],[1079,108,440,137],[634,523,140,139],[0,245,802,64]]},
+		{name:"index_atlas_2", frames: [[1690,1528,300,300],[0,0,1824,992],[0,1563,604,397],[606,1563,434,339],[1188,1528,500,500],[1188,994,707,532],[0,994,1186,567]]}
 ];
 
 
@@ -29,63 +29,63 @@ lib.ssMetadata = [
 
 
 (lib._1ActividadesNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1AyudaNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1ContenidosNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2actividadesSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2ayudaSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2contenidosSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3actividadesDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3ayudaDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3contenidosDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
@@ -98,70 +98,70 @@ p.nominalBounds = new cjs.Rectangle(0,0,2372,153);
 
 
 (lib.botonaceptar2 = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Botonaceptar = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.botonplay = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.BtnInicioCuentoHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicio = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioCuento = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentos = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentosHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.fondopapel1 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
@@ -180,63 +180,63 @@ p.nominalBounds = new cjs.Rectangle(0,0,2376,1136);
 
 
 (lib.formainferiorder = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formainferiorizq = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorder = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorizq = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.icono = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.mano2 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Mensaje = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.tituloCaperucitacuiento = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.VentanaPortadaReproduccion = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -608,10 +608,6 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
 		_this.stop();
 	}
 
@@ -741,88 +737,139 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [0,12,13,14,15,16];
+	this.actionFrames = [0,12,13];
 	// timeline functions:
 	this.frame_0 = function() {
-		document.getElementById('divi')?.remove();   
-		
 		this.stop(); 
+		
 		stage.on('drawstart', initStage, this, true);
-		function initStage() {
-			stretchToFit();
-		}
-		 
+		function initStage() {	stretchToFit();}
 		
 		var _this = this;
-		
 		_this.btnInicio.on('click', function () {
-			createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				window.open("../../", "_self");
-			}, this);
+			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
+				window.open("../../", "_self");}, this);
 		});
 		
-		
 		_this.btnVolver.on('click', function () {
-			createjs.Sound.play("sound2", {
-				volume: 0.8
-			}).on("complete", function () {
+			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
 				window.open("../MenuPrincipal", "_self");
 			}, this);
 		});
 		
-		
 		_this.btnContenidos.on('click', function () {	
-		 		_this.gotoAndStop("Contenidos");
-				 
+		_this.gotoAndStop("Contenidos");
+		document.getElementById('contenidos').style.display = 'block';
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
+			document.getElementById('i_cuento').src = 'about:blank';
+			document.getElementById('i_contenidos').src=  "./ContenidosCaperucita/index.html" 
+		    document.getElementById('i_actividades').src=  'about:blank';
+		    document.getElementById('i_ayuda').src = 'about:blank'; 		 
 		});
 		
-		
-		_this.btnActividades.on('click', function () {
-		 		_this.gotoAndStop("Actividades");
-				 		 
+		_this.btnActividades.on('click', function () {	
+		_this.gotoAndStop("Actividades");	
+		document.getElementById('actividades').style.display = 'block';
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('i_cuento').src = 'about:blank';
+		document.getElementById('i_contenidos').src =  'about:blank';
+		document.getElementById('i_actividades').src=  "./ActividadesCaperucita/Menu/index.html"
+		document.getElementById('i_ayuda').src = 'about:blank'; 			 		 
 		});
 		
 		this.btnAyuda.on('click', function () {		
-		alert("ayuda");	
-			_this.gotoAndStop("Ayuda");
+		_this.gotoAndStop("Ayuda");
+		document.getElementById('ayuda').style.display = 'block';
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
+		document.getElementById('i_contenidos').src =  'about:blank';
+		document.getElementById('i_cuento').src = 'about:blank';
+		document.getElementById('i_actividades').src=  'about:blank';
+		document.getElementById('i_ayuda').src= "./dearflip/index.html"	
 		});
-		
 		
 		_this.button_popup.on('click', function () {
 			_this.gotoAndPlay(1);
 		});
 		
-		
-		var element = document.createElement('div');
-		element.setAttribute('id', 'divi');
-		document.body.appendChild(element);
-		element.style.position = "absolute"; 
+		var elementCuento = document.createElement('div');
+		elementCuento.setAttribute('id', 'cuento');
+		document.body.appendChild(elementCuento);
+		elementCuento.style.position = "absolute"; 
+		elementCuento.innerHTML = '<iframe id="i_cuento" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
 		 
-		element.innerHTML = '<iframe    id="i_cuento2"   style="border:none" allow="autoplay"  >';
-		
-		function embed() {	
-		document.getElementById('divi').style.left =  2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		document.getElementById('divi').style.top =   1.059* Math.max(window.innerHeight) / 16 + 'px';
-		document.getElementById('i_cuento2').style.width = 1+'px';
-		document.getElementById('i_cuento2').style.height = 1 +'px';
+		var elementContenidos = document.createElement('div');
+		elementContenidos.setAttribute('id', 'contenidos');
+		document.body.appendChild(elementContenidos);
+		elementContenidos.style.position = "absolute"; 
+		elementContenidos.innerHTML = '<iframe id="i_contenidos" style="border:none; overflow: hidden"; allow="autoplay"  >';
+		 
+		var elementActividades = document.createElement('div');
+		elementActividades.setAttribute('id', 'actividades');
+		document.body.appendChild(elementActividades);
+		elementActividades.style.position = "absolute"; 
+		elementActividades.innerHTML = '<iframe   id="i_actividades" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		 
+		var elementAyuda = document.createElement('div');
+		elementAyuda.setAttribute('id', 'ayuda');
+		document.body.appendChild(elementAyuda);
+		elementAyuda.style.position = "absolute"; 
+		elementAyuda.innerHTML = '<iframe   id="i_ayuda" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
+		   
+		function embed(id) {
+		  var element = document.getElementById(id);
+		  element.style.left = 2.360 * Math.max(window.innerWidth) / 32 + 'px';
+		  element.style.top = 1.059 * Math.max(window.innerHeight) / 16 + 'px'; 
+		  element.querySelector(`#i_${id}`).style.width = 27.9250 * (Math.max(window.innerWidth) / 32) + 'px';
+		  element.querySelector(`#i_${id}`).style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
-		embed();
-		 
-		window.addEventListener('resize', () => {	
-		embed();
-		})
+		function handleResize() {
+		  actions.forEach((action) => {
+		    embed(action);
+		  });
+		}
+		
+		window.addEventListener('resize', handleResize);
+		
+		const actions = ["cuento", "contenidos", "actividades", "ayuda"];
+		
+		actions.forEach((action) => {
+		  embed(action);
+		});
+		
+		
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
+		var _this = this;
+		
+		_this.btnVolverAcuento.on('click', function(){
+		createjs.Sound.play("sound2", {	volume: 0.8
+			}).on("complete", function () {
+				irCuento()
+			}, this);
+		});
 	}
 	this.frame_12 = function() {
 		this.stop();
-		 
-		
+		document.getElementById('cuento').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
+		document.getElementById('i_cuento').src="./CuentoCaperucita/Escena_1/index.html";
+		document.getElementById('i_contenidos').src =  'about:blank';
+		document.getElementById('i_actividades').src=  'about:blank';
+		document.getElementById('i_ayuda').src = 'about:blank'; 		
 		var _this = this;
-		 
-		 
-		_this.bntPlay.on('click', function(){
-		 
+		
+		_this.bntPlay.on('click', function(){ 
 		createjs.Sound.play("SoundPlay", {	volume: 0.8
 			}).on("complete", function () {
 				_this.gotoAndStop("Cuento");
@@ -830,135 +877,18 @@ if (reversed == null) { reversed = false; }
 			
 		});
 		
-		
-		 document.getElementById('i_cuento2').src=  "";	
-		
-		
-		
-		function embed() {	
-		document.getElementById('i_cuento2').style.width = 0 +'px';
-		document.getElementById('i_cuento2').style.height = 0 + 'px';	
-			
-			
-			}
-		
-		embed();
+		var _this = this;
+		_this.botones.visible = false;
 	}
 	this.frame_13 = function() {
-		document.getElementById('i_cuento2').src=  "";	
-		
-		
-		var _this = this;
-		
-		_this.stop();
-		
-		
-		function embed() {	
-		document.getElementById('i_cuento2').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento2').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';	
-		}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		
-		document.getElementById('i_cuento2').src=  "./Cuento/Escena_1/index.html" ;
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				document.getElementById('i_cuento2').src=  "";	
-				_this.gotoAndStop(12);
-			}, this);
-		
-		});
-	}
-	this.frame_14 = function() {
-		document.getElementById('i_cuento2').src=  "./Cuento/Escena_1/index.html" ;	
-		
-		function embed() {	
-		document.getElementById('i_cuento2').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento2').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		 
-		var _this=this;
-		_this.btnContenidos.on('click', function () {
-		document.getElementById('i_cuento2').src=  "./Contenidosa/index.html";		 
-		});
-		
-		document.getElementById('i_cuento2').src=  "./Contenidosa/index.html";
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		
-		});
-	}
-	this.frame_15 = function() {
-		document.getElementById('i_cuento2').src=  "";	
-		
-		function embed() {	
-		document.getElementById('i_cuento2').style.width = 27.9250 * (Math.max(window.innerWidth) / 32)+'px';
-		document.getElementById('i_cuento2').style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		
-		embed();
-		
-		window.addEventListener('resize', () => {	
-		embed();
-		}) 
-		
-		var _this = this;
-		
-		_this.btnActividades.on('click', function () {	 	
-		document.getElementById('i_cuento2').src=  "./Actividades/Menu/index.html";		 		 
-		});
-		
-		document.getElementById('i_cuento2').src=  "./Actividades/Menu/index.html";
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		
-		});
-	}
-	this.frame_16 = function() {
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				_this.gotoAndStop(12);
-			}, this);
-		
-		});
+		document.getElementById('cuento').style.display = 'block';
+		document.getElementById('contenidos').style.display = 'none';
+		document.getElementById('ayuda').style.display = 'none';
+		document.getElementById('actividades').style.display = 'none';
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(1).call(this.frame_14).wait(1).call(this.frame_15).wait(1).call(this.frame_16).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(4));
 
 	// Capa_1
 	this.botones = new lib.Símbolo2();
@@ -1085,14 +1015,14 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1699148495883", id:"bannernegro1"},
-		{src:"images/fondo1111.png?1699148495883", id:"fondo1111"},
-		{src:"images/fondoMorado.png?1699148495883", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1699148495824", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1699148495825", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1699148495883", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1699148495883", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1699148495883", id:"sound1"}
+		{src:"images/bannernegro1.png?1699210649821", id:"bannernegro1"},
+		{src:"images/fondo1111.png?1699210649821", id:"fondo1111"},
+		{src:"images/fondoMorado.png?1699210649821", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1699210649758", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1699210649758", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1699210649821", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1699210649821", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1699210649821", id:"sound1"}
 	],
 	preloads: []
 };
