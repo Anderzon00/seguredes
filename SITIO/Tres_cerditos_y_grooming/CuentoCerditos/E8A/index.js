@@ -5,7 +5,7 @@ var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"index_atlas_P_1", frames: [[0,0,2383,1136]]},
 		{name:"index_atlas_P_2", frames: [[0,786,2377,76],[0,549,2377,77],[0,864,2377,76],[0,628,2377,77],[0,942,2377,76],[0,707,2377,77],[0,131,2377,80],[0,0,2376,129],[0,213,560,334],[2379,390,431,373],[2379,0,477,388],[562,213,500,329],[1064,213,500,329],[1566,213,508,243],[2379,765,476,301]]},
-		{name:"index_atlas_P_3", frames: [[581,605,80,80],[663,605,80,80],[235,566,81,80],[318,566,81,80],[915,106,81,81],[401,566,80,81],[826,617,79,79],[745,615,79,80],[949,473,73,35],[356,649,72,35],[299,648,55,64],[503,551,76,119],[581,551,128,52],[157,508,76,145],[907,617,83,72],[915,0,109,104],[235,648,62,68],[503,350,243,199],[949,350,57,121],[748,532,117,81],[251,252,166,82],[867,532,112,83],[458,204,523,144],[0,0,456,250],[458,0,455,202],[748,350,199,180],[251,350,250,214],[0,252,249,254],[0,508,155,204],[998,106,14,28]]}
+		{name:"index_atlas_P_3", frames: [[581,605,80,80],[663,605,80,80],[235,566,81,80],[318,566,81,80],[915,106,81,81],[401,566,80,81],[826,617,79,79],[745,615,79,80],[949,473,73,35],[414,649,72,35],[357,649,55,64],[503,551,76,119],[581,551,128,52],[157,508,76,145],[907,617,83,72],[915,0,109,104],[235,648,62,68],[503,350,243,199],[949,350,57,121],[748,532,117,81],[251,252,166,82],[867,532,112,83],[299,648,56,74],[458,204,523,144],[0,0,456,250],[458,0,455,202],[748,350,199,180],[251,350,250,214],[0,252,249,254],[0,508,155,204],[998,106,14,28]]}
 ];
 
 
@@ -260,6 +260,13 @@ lib.ssMetadata = [
 
 
 
+(lib.PhoneCerdaMenor = function() {
+	this.initialize(ss["index_atlas_P_3"]);
+	this.gotoAndStop(22);
+}).prototype = p = new cjs.Sprite();
+
+
+
 (lib.Recurso1 = function() {
 	this.initialize(ss["index_atlas_P_2"]);
 	this.gotoAndStop(10);
@@ -283,7 +290,7 @@ lib.ssMetadata = [
 
 (lib.Recurso5 = function() {
 	this.initialize(ss["index_atlas_P_3"]);
-	this.gotoAndStop(22);
+	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -304,49 +311,49 @@ lib.ssMetadata = [
 
 (lib.Recurso8 = function() {
 	this.initialize(ss["index_atlas_P_3"]);
-	this.gotoAndStop(23);
+	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Recurso9 = function() {
 	this.initialize(ss["index_atlas_P_3"]);
-	this.gotoAndStop(24);
+	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.RostroFelipe = function() {
 	this.initialize(ss["index_atlas_P_3"]);
-	this.gotoAndStop(25);
+	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.RostroFlor = function() {
 	this.initialize(ss["index_atlas_P_3"]);
-	this.gotoAndStop(26);
+	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Silueta_1 = function() {
 	this.initialize(ss["index_atlas_P_3"]);
-	this.gotoAndStop(27);
+	this.gotoAndStop(28);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.TorsoMAlo = function() {
 	this.initialize(ss["index_atlas_P_3"]);
-	this.gotoAndStop(28);
+	this.gotoAndStop(29);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.VelaLlamaBlanca = function() {
 	this.initialize(ss["index_atlas_P_3"]);
-	this.gotoAndStop(29);
+	this.gotoAndStop(30);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -407,11 +414,14 @@ if (reversed == null) { reversed = false; }
 	this.instance_1 = new lib.Brazo_9();
 	this.instance_1.setTransform(31,46.05,0.544,0.544);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this.instance_2 = new lib.PhoneCerdaMenor();
+	this.instance_2.setTransform(101.2,79.85,0.7127,0.7127,0,44.9983,-135.0017);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Símbolo4, new cjs.Rectangle(0,0,79.7,110.8), null);
+}).prototype = getMCSymbolPrototype(lib.Símbolo4, new cjs.Rectangle(0,0,101.2,117.2), null);
 
 
 (lib.Símbolo1 = function(mode,startPosition,loop,reversed) {
@@ -1175,10 +1185,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Capa_1
-	this.instance_2 = new lib._4btncambioAudioRight();
-	this.instance_2.setTransform(0,0,0.5,0.5);
+	this.instance_3 = new lib._4btncambioAudioRight();
+	this.instance_3.setTransform(0,0,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1366,7 +1376,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-2.8,-9.9,108.5,122.60000000000001);
+p.nominalBounds = new cjs.Rectangle(-2.8,-9.9,137.60000000000002,127.10000000000001);
 
 
 (lib.Símbolo2_1 = function(mode,startPosition,loop,reversed) {
@@ -2462,19 +2472,19 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1708019746613", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1708019746614", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1708019746615", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1708019746780", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1708019746780", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1708019746780", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1708019746780", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1708019746780", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1708019746780", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1708019746780", id:"Voice6"},
-		{src:"sounds/interaccion.mp3?1708019746780", id:"interaccion"},
-		{src:"sounds/intro.mp3?1708019746780", id:"intro"},
-		{src:"sounds/BGM.mp3?1708019746780", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1708130419249", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1708130419250", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1708130419252", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1708130419506", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1708130419506", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1708130419506", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1708130419506", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1708130419506", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1708130419506", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1708130419506", id:"Voice6"},
+		{src:"sounds/interaccion.mp3?1708130419506", id:"interaccion"},
+		{src:"sounds/intro.mp3?1708130419506", id:"intro"},
+		{src:"sounds/BGM.mp3?1708130419506", id:"BGM"}
 	],
 	preloads: []
 };
