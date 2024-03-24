@@ -2104,10 +2104,7 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		 
 		_this.stop();
 	}
 
@@ -2357,18 +2354,12 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		
 		_this.stop();
 	}
 	this.frame_271 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		 
 		_this.stop();
 	}
 
@@ -2480,13 +2471,9 @@ if (reversed == null) { reversed = false; }
 			
 			if(root.currentFrame < root.totalFrames-1)	
 			root[type].on("complete", function () {
-		                       root.gotoAndStop(root.currentFrame + 1);
-				
+		                       root.gotoAndStop(root.currentFrame + 1);		
 				
 		                    }, this);
-			
-			
-			
 			root.on("click", function(e)
 		    {
 			if (e.target.name === "unmuteMC")
@@ -2520,9 +2507,7 @@ if (reversed == null) { reversed = false; }
 					 	if (root.currentFrame < root.totalFrames - 1)
 						root[type].on("complete", function () {
 							root.gotoAndStop(root.currentFrame + 1);
-						}, this);;
-					 
-				
+						}, this);;		
 					 
 		         root.pause.visible = true;
 		         root.playaudio.visible = false;
@@ -2552,28 +2537,16 @@ if (reversed == null) { reversed = false; }
 		else
 			root.gotoAndStop(0);
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		
 		_this.prevEscena.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('../E3AA', '_self');
+		
+		window.open('../E3AI', '_self');
 		});
-		
-		
-		
-		
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		
 		_this.nextEscena.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('../E5AA', '_self');
+		
+		window.open('../E5AI2', '_self');
 		});
 	}
 	this.frame_1 = function() {
@@ -2585,27 +2558,15 @@ if (reversed == null) { reversed = false; }
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		 
-		
 		this.prev.alpha = 0.5;
 		this.prev.mouseEnabled = false;
 		
-		
-		
-		 
-		 
-		  
-		
-		
 		var _this = this;
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		
 		_this.cerdo2.gotoAndPlay(1);
 	}
 	this.frame_3 = function() {
-		this.playSound("Voice1", "voice", true);  
-		 
+		this.playSound("Voice1", "voice", true); 
 		 
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
@@ -2621,8 +2582,7 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_6 = function() {
 		this.playSound("Voice4", "voice", true);  
-		 
-		 
+		  
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		
@@ -2643,25 +2603,17 @@ if (reversed == null) { reversed = false; }
 			_this.cerdo2.circulos.gotoAndPlay(1);
 		 	_this.playSound("interaccion", "voice", true);
 		
-		 
-		
 		});
-		
-		
 		this.next.alpha = 0.5;
 		this.next.mouseEnabled = false;
 	}
 	this.frame_8 = function() {
 		this.playSound("BGM", "voice", true, { volume: 0.2, loop: -1 });
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		
 		_this.nextEscenaFinal.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('../E5AA', '_self');
+		
+		window.open('../E5AI2', '_self');
 		});
 	}
 
@@ -2671,7 +2623,7 @@ if (reversed == null) { reversed = false; }
 	// interacción
 	this.btnInteraccion = new lib.btnInteractivo();
 	this.btnInteraccion.name = "btnInteraccion";
-	this.btnInteraccion.setTransform(800.6,346.15,1,1,0,0,0,-21.1,7.5);
+	this.btnInteraccion.setTransform(258.5,448.15,1,1,0,0,0,-21.1,7.5);
 	new cjs.ButtonHelper(this.btnInteraccion, 0, 1, 2, false, new lib.btnInteractivo(), 3);
 
 	this.nextEscenaFinal = new lib.nextscene();
@@ -2679,7 +2631,7 @@ if (reversed == null) { reversed = false; }
 	this.nextEscenaFinal.setTransform(235.1,589.6);
 	new cjs.ButtonHelper(this.nextEscenaFinal, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion,p:{x:800.6,y:346.15}}]},7).to({state:[{t:this.btnInteraccion,p:{x:801.6,y:347.15}},{t:this.nextEscenaFinal}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion,p:{y:448.15}}]},7).to({state:[{t:this.btnInteraccion,p:{y:447.15}},{t:this.nextEscenaFinal}]},1).wait(1));
 
 	// textos 1
 	this.instance = new lib._1();
@@ -2714,11 +2666,11 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
 	this.shape.setTransform(176.35,604.725);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
 	this.shape_1.setTransform(176.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).to({state:[{t:this.shape_1},{t:this.prevEscena}]},8).wait(1));
@@ -2834,17 +2786,17 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1707929379706", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1707929379706", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1707929379708", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1707929379867", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1707929379867", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1707929379867", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1707929379867", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1707929379867", id:"Voice4"},
-		{src:"sounds/interaccion.mp3?1707929379867", id:"interaccion"},
-		{src:"sounds/intro.mp3?1707929379867", id:"intro"},
-		{src:"sounds/BGM.mp3?1707929379867", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1711297593572", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1711297593573", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1711297593574", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1711297593742", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1711297593742", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1711297593742", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1711297593742", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1711297593742", id:"Voice4"},
+		{src:"sounds/interaccion.mp3?1711297593742", id:"interaccion"},
+		{src:"sounds/intro.mp3?1711297593742", id:"intro"},
+		{src:"sounds/BGM.mp3?1711297593742", id:"BGM"}
 	],
 	preloads: []
 };

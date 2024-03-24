@@ -2182,11 +2182,11 @@ if (reversed == null) { reversed = false; }
 			
 			 else if (e.target.name == "adelanteEscena")
 				
-		 	window.open('../E10AA', '_self');
+		 	window.open('../E9A', '_self');
 			 
 			  else if (e.target.name == "atrasEscena")
 				
-		 	window.open('../E8A', '_self');
+		 	window.open('../E7A', '_self');
 			 
 			
 			
@@ -2203,20 +2203,15 @@ if (reversed == null) { reversed = false; }
 	this.frame_2 = function() {
 		this.playSound("Voice0", "voice", true);  
 		 
-		 
-		
-		
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		 
-		
 		this.prev.alpha = 0.5;
 		this.prev.mouseEnabled = false;
 	}
 	this.frame_3 = function() {
 		this.playSound("Voice1", "voice", true);  
-		 
-		 
+		  
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		
@@ -2236,25 +2231,18 @@ if (reversed == null) { reversed = false; }
 		this.playSound("Voice4", "voice", true);  
 		
 		var _this = this;
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		
 		_this.cerdita.cerdita2.gotoAndPlay(1);
 	}
 	this.frame_7 = function() {
 		this.playSound("Voice5", "voice", true);  
 		var _this = this;
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		
 		_this.cerdita.cerdita2.gotoAndPlay(70);
 	}
 	this.frame_8 = function() {
 		this.playSound("Voice6", "voice", true);  
-		 
-		 
+		  
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		
@@ -2265,10 +2253,7 @@ if (reversed == null) { reversed = false; }
 		_this.cerdita.cerdo2.cerdo3.gotoAndStop(0);
 		
 		var _this = this;
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		
 		_this.cerdita.cerdita2.gotoAndStop(0);
 	}
 	this.frame_9 = function() {
@@ -2276,10 +2261,8 @@ if (reversed == null) { reversed = false; }
 		
 		var _this = this
 		
-		
 		_this.btnInteraccion.on('click', function(){
-			
-			 
+				 
 		  _this.cerdita.cerdo2.gotoAndPlay(1);
 			
 		 _this.cerdita.cerdo2.cerdo3.gotoAndPlay(1);
@@ -2287,10 +2270,8 @@ if (reversed == null) { reversed = false; }
 		_this.playSound("interaccion", "voice", true);	
 		 if(_this.currentFrame <this.totalFrames)
 		 _this.gotoAndStop(_this.currentFrame + 1);
-		
 		   
 		});
-		
 		
 		this.next.alpha = 0.5;
 		this.next.mouseEnabled = false;
@@ -2298,16 +2279,11 @@ if (reversed == null) { reversed = false; }
 	this.frame_10 = function() {
 		this.playSound("BGM", "voice", true, { volume: 0.2, loop: -1 });
 		 
-		 
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		 var _this = this;
+		
 		_this.nextescene.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('../E10AA', '_self');
+		
+		window.open('../E9A', '_self');
 		});
 	}
 
@@ -2472,19 +2448,19 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1708130419249", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1708130419250", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1708130419252", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1708130419506", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1708130419506", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1708130419506", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1708130419506", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1708130419506", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1708130419506", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1708130419506", id:"Voice6"},
-		{src:"sounds/interaccion.mp3?1708130419506", id:"interaccion"},
-		{src:"sounds/intro.mp3?1708130419506", id:"intro"},
-		{src:"sounds/BGM.mp3?1708130419506", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1711299847161", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1711299847162", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1711299847164", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1711299847327", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1711299847327", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1711299847327", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1711299847327", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1711299847327", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1711299847327", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1711299847327", id:"Voice6"},
+		{src:"sounds/interaccion.mp3?1711299847327", id:"interaccion"},
+		{src:"sounds/intro.mp3?1711299847327", id:"intro"},
+		{src:"sounds/BGM.mp3?1711299847327", id:"BGM"}
 	],
 	preloads: []
 };

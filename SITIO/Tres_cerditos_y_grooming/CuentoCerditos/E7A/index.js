@@ -1963,27 +1963,16 @@ if (reversed == null) { reversed = false; }
 		else
 			root.gotoAndStop(0);
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		
 		_this.prevEscena.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('../E6AA', '_self');
+		
+		window.open('../E5AI2', '_self');
 		});
 		
-		
-		
-		
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		
 		_this.nextEscena.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
+		
 		window.open('../E8A', '_self');
 		});
 	}
@@ -1993,58 +1982,34 @@ if (reversed == null) { reversed = false; }
 	this.frame_2 = function() {
 		this.playSound("Voice0", "voice", true);  
 		 
-		 
-		
-		
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		 
-		
 		this.prev.alpha = 0.5;
 		this.prev.mouseEnabled = false;
-		
-		
-		
 		 
 		var _this = this;
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		
 		_this.flor.cara.gotoAndStop(0);
 	}
 	this.frame_3 = function() {
 		this.playSound("Voice1", "voice", true);  
-		 
-		 
+		  
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		
 		this.prev.alpha = 1;
 		this.prev.mouseEnabled = true;
 		
-		
-		
-		 
-		
 		var _this = this;
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		
 		_this.flor.cara.gotoAndPlay(1);
 	}
 	this.frame_4 = function() {
 		this.playSound("Voice2", "voice", true);  
 		 
-		 
-		
-		
 		var _this = this;
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		
 		_this.flor.cara.gotoAndStop(0);
 	}
 	this.frame_5 = function() {
@@ -2059,19 +2024,14 @@ if (reversed == null) { reversed = false; }
 	this.frame_8 = function() {
 		this.playSound("Voice6", "voice", true);  
 		 
-		 
-		this.next.alpha = 1;
+		 this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		
 		this.prev.alpha = 1;
 		this.prev.mouseEnabled = true;
-		    	
 		 
-		var _this = this;
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		 var _this = this;
+		
 		_this.idea.gotoAndPlay(1);
 	}
 	this.frame_9 = function() {
@@ -2087,11 +2047,7 @@ if (reversed == null) { reversed = false; }
 			_this.cerdo2.gotoAndPlay(1);
 			 _this.cerdo2.cerdo3.gotoAndPlay(1);
 			_this.playSound("interaccion", "voice", true);
-		
-		 
-		
 		});
-		
 		
 		this.next.alpha = 0.5;
 		this.next.mouseEnabled = false;
@@ -2116,15 +2072,15 @@ if (reversed == null) { reversed = false; }
 	// interacción
 	this.btnInteraccion = new lib.btnInteractivo();
 	this.btnInteraccion.name = "btnInteraccion";
-	this.btnInteraccion.setTransform(589.1,394.65,1,1,0,0,0,-21.1,7.5);
+	this.btnInteraccion.setTransform(674.1,317.65,1,1,0,0,0,-21.1,7.5);
 	new cjs.ButtonHelper(this.btnInteraccion, 0, 1, 2, false, new lib.btnInteractivo(), 3);
 
 	this.nextEscenaFinal = new lib.nextscene();
 	this.nextEscenaFinal.name = "nextEscenaFinal";
-	this.nextEscenaFinal.setTransform(235.3,589.45);
+	this.nextEscenaFinal.setTransform(318.3,513.45);
 	new cjs.ButtonHelper(this.nextEscenaFinal, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion,p:{x:589.1,y:394.65}}]},9).to({state:[{t:this.btnInteraccion,p:{x:588.9,y:394.8}},{t:this.nextEscenaFinal}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion,p:{x:674.1,y:317.65}}]},9).to({state:[{t:this.btnInteraccion,p:{x:671.9,y:318.8}},{t:this.nextEscenaFinal}]},1).wait(1));
 
 	// textos 1
 	this.instance = new lib._1();
@@ -2225,9 +2181,9 @@ if (reversed == null) { reversed = false; }
 
 	// reloj
 	this.instance_8 = new lib.reloj();
-	this.instance_8.setTransform(194.15,161.5,1,1,0,0,0,80,141.5);
+	this.instance_8.setTransform(96,161.5,1,1,0,0,0,80,141.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(10).to({x:96},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(11));
 
 	// mariposa
 	this.instance_9 = new lib.Mesa();
@@ -2271,19 +2227,19 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1707940621318", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1707940621319", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1707940621320", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1707940621470", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1707940621470", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1707940621470", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1707940621470", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1707940621470", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1707940621470", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1707940621470", id:"Voice6"},
-		{src:"sounds/interaccion.mp3?1707940621470", id:"interaccion"},
-		{src:"sounds/intro.mp3?1707940621470", id:"intro"},
-		{src:"sounds/BGM.mp3?1707940621470", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1711299520207", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1711299520207", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1711299520208", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1711299520352", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1711299520352", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1711299520352", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1711299520352", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1711299520352", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1711299520352", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1711299520352", id:"Voice6"},
+		{src:"sounds/interaccion.mp3?1711299520352", id:"interaccion"},
+		{src:"sounds/intro.mp3?1711299520352", id:"intro"},
+		{src:"sounds/BGM.mp3?1711299520352", id:"BGM"}
 	],
 	preloads: []
 };

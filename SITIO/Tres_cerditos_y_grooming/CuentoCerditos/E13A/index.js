@@ -2386,7 +2386,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('../E6AA', '_self');
+		window.open('../E12ABDB', '_self');
 		});
 		
 		
@@ -2400,7 +2400,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('../E8A', '_self');
+		window.open('../E13AB', '_self');
 		});
 	}
 	this.frame_1 = function() {
@@ -2409,26 +2409,20 @@ if (reversed == null) { reversed = false; }
 	this.frame_2 = function() {
 		this.playSound("Voice0", "voice", true);  
 		 
-		 
-		
-		
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		 
-		
 		this.prev.alpha = 0.5;
 		this.prev.mouseEnabled = false;
 	}
 	this.frame_3 = function() {
 		this.playSound("Voice1", "voice", true);  
 		 
-		 
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		
 		this.prev.alpha = 1;
 		this.prev.mouseEnabled = true;
-		
 		
 		var _this = this;
 		 
@@ -2437,15 +2431,12 @@ if (reversed == null) { reversed = false; }
 	this.frame_4 = function() {
 		this.playSound("Voice2", "voice", true);  
 		 
-		 
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		
 		this.prev.alpha = 1;
 		this.prev.mouseEnabled = true;
-		    	
 		 
-		
 		var _this = this;
 		 
 		_this.lobo.gotoAndPlay(1);
@@ -2461,31 +2452,22 @@ if (reversed == null) { reversed = false; }
 		
 		var _this = this
 		
-		
-		
-		
 		_this.btnInteraccion.on('click', function () {
 		
 			_this.flor.gotoAndPlay(1);
 			_this.felipe.gotoAndPlay(1);
 			_this.lobo.gotoAndPlay(114);
 		 	_this.playSound("interaccion", "voice", true);
-		
 		 
-		
 		});
 	}
 	this.frame_6 = function() {
 		this.playSound("BGM", "voice", true, { volume: 0.2, loop: -1 });
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		
 		_this.nextEscenaFinal.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('../E8A', '_self');
+		
+		window.open('../E13AB', '_self');
 		});
 	}
 
@@ -2495,7 +2477,7 @@ if (reversed == null) { reversed = false; }
 	// interacción
 	this.btnInteraccion = new lib.btnInteractivo();
 	this.btnInteraccion.name = "btnInteraccion";
-	this.btnInteraccion.setTransform(668.4,411.05,1,1,0,0,0,-21.1,7.5);
+	this.btnInteraccion.setTransform(192.35,314.9,1,1,0,0,0,-21.1,7.5);
 	new cjs.ButtonHelper(this.btnInteraccion, 0, 1, 2, false, new lib.btnInteractivo(), 3);
 
 	this.nextEscenaFinal = new lib.nextscene();
@@ -2667,16 +2649,16 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1708217721121", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1708217721122", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1708217721124", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1708217721320", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1708217721320", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1708217721320", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1708217721320", id:"Voice3"},
-		{src:"sounds/interaccion.mp3?1708217721320", id:"interaccion"},
-		{src:"sounds/intro.mp3?1708217721320", id:"intro"},
-		{src:"sounds/BGM.mp3?1708217721320", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1711314679555", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1711314679555", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1711314679558", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1711314679764", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1711314679764", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1711314679764", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1711314679764", id:"Voice3"},
+		{src:"sounds/interaccion.mp3?1711314679764", id:"interaccion"},
+		{src:"sounds/intro.mp3?1711314679764", id:"intro"},
+		{src:"sounds/BGM.mp3?1711314679764", id:"BGM"}
 	],
 	preloads: []
 };

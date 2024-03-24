@@ -2227,12 +2227,9 @@ if (reversed == null) { reversed = false; }
 			
 			if(root.currentFrame < root.totalFrames-1)	
 			root[type].on("complete", function () {
-		                       root.gotoAndStop(root.currentFrame + 1);
+		                       root.gotoAndStop(root.currentFrame + 1);	
 				
-				
-		                    }, this);;
-			
-			
+		                    }, this);;	
 			
 			root.on("click", function(e)
 		    {
@@ -2268,15 +2265,11 @@ if (reversed == null) { reversed = false; }
 						root[type].on("complete", function () {
 							root.gotoAndStop(root.currentFrame + 1);
 						}, this);;
-					 
-				
-					 
+					 			 
 		         root.pause.visible = true;
 		         root.playaudio.visible = false;
-		         }
-				 
-		    });
-			
+		         }		 
+		    });	
 		};
 		
 		root.on("click", function(e)
@@ -2299,28 +2292,17 @@ if (reversed == null) { reversed = false; }
 		else
 			root.gotoAndStop(0);
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		
 		_this.prevEscena.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('../E6AA', '_self');
+		
+		window.open('../E8A', '_self');
 		});
 		
-		
-		
-		
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		
 		_this.nextEscena.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('../E8A', '_self');
+		
+		window.open('../E10ABI3', '_self');
 		});
 	}
 	this.frame_1 = function() {
@@ -2329,26 +2311,20 @@ if (reversed == null) { reversed = false; }
 	this.frame_2 = function() {
 		this.playSound("Voice0", "voice", true);  
 		 
-		 
-		
-		
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		 
-		
 		this.prev.alpha = 0.5;
 		this.prev.mouseEnabled = false;
 	}
 	this.frame_3 = function() {
 		this.playSound("Voice1", "voice", true);  
-		 
-		 
+		  
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		
 		this.prev.alpha = 1;
 		this.prev.mouseEnabled = true;
-		
 		
 		var _this= this; 
 		_this.flor.cabezaflor.gotoAndStop(0);
@@ -2356,72 +2332,50 @@ if (reversed == null) { reversed = false; }
 	this.frame_4 = function() {
 		this.playSound("Voice2", "voice", true);  
 		 
-		 
-		
-		
 		var _this = this;
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		
 		_this.flor.cabezaflor.gotoAndPlay(2);
 	}
 	this.frame_5 = function() {
 		this.playSound("Voice3", "voice", true);  
-		 
 		 
 		var _this= this; 
 		_this.flor.cabezaflor.gotoAndPlay(2);
 	}
 	this.frame_6 = function() {
 		this.playSound("Voice4", "voice", true);  
-		 
-		 
+		  
 		var _this= this; 
 		_this.flor.cabezaflor.gotoAndPlay(2);
 		 
-		
 		_this.felipe.cabezafelipe.gotoAndStop(0);
 	}
 	this.frame_7 = function() {
 		this.playSound("Voice5", "voice", true);  
 		 
-		 
-		
 		var _this= this; 
 		_this.flor.cabezaflor.gotoAndStop(0);
-		
-		
 		 
 		_this.felipe.cabezafelipe.gotoAndPlay(2);
 	}
 	this.frame_8 = function() {
 		this.playSound("Voice6", "voice", true);  
-		 
-		 
+		  
 		 var _this= this; 
-		 
-		
-		
-		 
+		  
 		_this.felipe.cabezafelipe.gotoAndPlay(70);
 	}
 	this.frame_9 = function() {
 		this.playSound("Voice7", "voice", true);  
-		 
-		 
+		  
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		
 		this.prev.alpha = 1;
 		this.prev.mouseEnabled = true;
-		    	
-		 
+		     
 		  var _this= this; 
-		 
-		
-		
-		 
+		  
 		_this.felipe.cabezafelipe.gotoAndPlay(70);
 	}
 	this.frame_10 = function() {
@@ -2440,30 +2394,21 @@ if (reversed == null) { reversed = false; }
 			_this.felipe.amigos.gotoAndPlay(1);
 			 _this.cerdo.gotoAndPlay(1);
 			_this.playSound("interaccion", "voice", true);
-		
 		 
-		
 		});
-		
 		
 		this.next.alpha = 0.5;
 		this.next.mouseEnabled = false;
-		
-		
 		
 		 var _this= this;
 	}
 	this.frame_11 = function() {
 		this.playSound("BGM", "voice", true, { volume: 0.2, loop: -1 });
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		
 		_this.nextEscenaFinal.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('../E8A', '_self');
+		
+		window.open('../1OABI3', '_self');
 		});
 	}
 
@@ -2473,7 +2418,7 @@ if (reversed == null) { reversed = false; }
 	// interacción
 	this.btnInteraccion = new lib.btnInteractivo();
 	this.btnInteraccion.name = "btnInteraccion";
-	this.btnInteraccion.setTransform(589.1,394.65,1,1,0,0,0,-21.1,7.5);
+	this.btnInteraccion.setTransform(643.1,293.65,1,1,0,0,0,-21.1,7.5);
 	new cjs.ButtonHelper(this.btnInteraccion, 0, 1, 2, false, new lib.btnInteractivo(), 3);
 
 	this.nextEscenaFinal = new lib.nextscene();
@@ -2481,7 +2426,7 @@ if (reversed == null) { reversed = false; }
 	this.nextEscenaFinal.setTransform(235.3,589.45);
 	new cjs.ButtonHelper(this.nextEscenaFinal, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion,p:{x:589.1,y:394.65}}]},10).to({state:[{t:this.btnInteraccion,p:{x:588.9,y:394.8}},{t:this.nextEscenaFinal}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnInteraccion,p:{x:643.1,y:293.65}}]},10).to({state:[{t:this.btnInteraccion,p:{x:642.9,y:293.8}},{t:this.nextEscenaFinal}]},1).wait(1));
 
 	// textos 1
 	this.instance = new lib._1();
@@ -2637,20 +2582,20 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1708053560885", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1708053560885", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1708053560888", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1708053561085", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1708053561085", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1708053561085", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1708053561085", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1708053561085", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1708053561085", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1708053561085", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1708053561085", id:"Voice7"},
-		{src:"sounds/interaccion.mp3?1708053561085", id:"interaccion"},
-		{src:"sounds/intro.mp3?1708053561085", id:"intro"},
-		{src:"sounds/BGM.mp3?1708053561085", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1711300097777", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1711300097777", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1711300097779", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1711300097939", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1711300097939", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1711300097939", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1711300097939", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1711300097939", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1711300097939", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1711300097939", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1711300097939", id:"Voice7"},
+		{src:"sounds/interaccion.mp3?1711300097939", id:"interaccion"},
+		{src:"sounds/intro.mp3?1711300097939", id:"intro"},
+		{src:"sounds/BGM.mp3?1711300097939", id:"BGM"}
 	],
 	preloads: []
 };

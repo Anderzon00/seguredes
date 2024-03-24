@@ -1358,10 +1358,7 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		
 		_this.stop();
 	}
 
@@ -1401,10 +1398,7 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		
 		_this.stop();
 	}
 
@@ -1444,10 +1438,7 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		
 		_this.stop();
 	}
 
@@ -1487,10 +1478,7 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		
 		_this.stop();
 	}
 
@@ -2031,7 +2019,6 @@ if (reversed == null) { reversed = false; }
 		root.unmuteMC.visible = false;
 		 root.playaudio.visible = true;
 		
-		
 		root.playSound = function(linkage, type, stopPrevious, props)
 		{	
 			if (!props)
@@ -2044,12 +2031,8 @@ if (reversed == null) { reversed = false; }
 			
 			if(root.currentFrame < root.totalFrames-1)	
 			root[type].on("complete", function () {
-		                       root.gotoAndStop(root.currentFrame + 1);
-				
-				
-		                    }, this);;
-			
-			
+		                       root.gotoAndStop(root.currentFrame + 1);		
+		                    }, this);;	
 			
 			root.on("click", function(e)
 		    {
@@ -2090,17 +2073,13 @@ if (reversed == null) { reversed = false; }
 					 
 		         root.pause.visible = true;
 		         root.playaudio.visible = false;
-		         }
-				 
-		    });
-			
+		         }		 
+		    });	
 		};
 		
 		root.on("click", function(e)
 		{
-			if (e.target.name === "prev")
-				
-			
+			if (e.target.name === "prev")	
 				
 			if(root.currentFrame=== this.totalFrames-1)
 				root.gotoAndStop(root.currentFrame - 2);
@@ -2114,13 +2093,11 @@ if (reversed == null) { reversed = false; }
 			
 			 else if (e.target.name == "adelanteEscena")
 				
-		 	window.open('../E3AA', '_self');
+		 	window.open('../E3AI', '_self');
 			 
 			  else if (e.target.name == "atrasEscena")
 				
-		 	window.open('../E1AA', '_self');
-			 
-			
+		 	window.open('../E1A', '_self');	
 			
 		});
 		
@@ -2134,13 +2111,9 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_2 = function() {
 		this.playSound("Voice0", "voice", true);  
-		 
-		 
-		
 		
 		this.next.alpha = 1;
-		this.next.mouseEnabled = true;
-		 
+		this.next.mouseEnabled = true; 
 		
 		this.prev.alpha = 0.5;
 		this.prev.mouseEnabled = false;
@@ -2149,15 +2122,12 @@ if (reversed == null) { reversed = false; }
 		_this.flor.bocaflor.gotoAndStop(0);
 	}
 	this.frame_3 = function() {
-		this.playSound("Voice1", "voice", true);  
-		 
-		 
+		this.playSound("Voice1", "voice", true);   
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
 		
 		this.prev.alpha = 1;
-		this.prev.mouseEnabled = true;
-		    
+		this.prev.mouseEnabled = true;    
 		
 		var _this= this;
 		_this.flor.bocaflor.gotoAndStop(0);
@@ -2166,37 +2136,26 @@ if (reversed == null) { reversed = false; }
 		this.playSound("Voice2", "voice", true);  
 		
 		var _this = this;
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		
 		_this.flor.bocaflor.gotoAndPlay(1);
 	}
 	this.frame_5 = function() {
 		this.playSound("Voice3", "voice", true);  
 		var _this = this;
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		
 		_this.flor.bocaflor.gotoAndPlay(80);
 	}
 	this.frame_6 = function() {
 		this.playSound("Voice4", "voice", true);  
 		var _this = this;
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		
 		_this.flor.bocaflor.gotoAndPlay(150);
 	}
 	this.frame_7 = function() {
 		this.playSound("Voice5", "voice", true);  
-		
 		var _this = this;
 		
-		_this.flor.bocaflor.gotoAndStop(0);
-		 
+		_this.flor.bocaflor.gotoAndStop(0); 
 		
 		_this.felipe.bocafelipe.gotoAndStop(0);
 	}
@@ -2221,10 +2180,6 @@ if (reversed == null) { reversed = false; }
 	this.frame_11 = function() {
 		this.playSound("Voice9", "voice", true);  
 		var _this = this;
-		
-		 
-		 
-		
 		_this.felipe.bocafelipe.gotoAndStop(0);
 	}
 	this.frame_12 = function() {
@@ -2234,7 +2189,6 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_13 = function() {
 		this.playSound("Voice11", "voice", true);  
-		 
 		 
 		this.next.alpha = 1;
 		this.next.mouseEnabled = true;
@@ -2250,42 +2204,29 @@ if (reversed == null) { reversed = false; }
 		
 		var _this = this
 		
-		
 		_this.btnInteraccion.on('click', function(){
-			
-			 
+				 
 		 _this.mensajes.gotoAndPlay(1);
 			
-			 
-		_this.playSound("interaccion", "voice", true);	
+		 _this.playSound("interaccion", "voice", true);	
 		 if(_this.currentFrame <this.totalFrames)
 		 _this.gotoAndStop(_this.currentFrame + 1);
-		
-		   
-		});
-		
+		   });
 		
 		this.next.alpha = 0.5;
 		this.next.mouseEnabled = false;
 		
-		
-		
-		  var _this= this;
+		var _this= this;
 		_this.cristi.bocacristi.gotoAndStop(0);
 	}
 	this.frame_15 = function() {
 		this.playSound("intro", "voice", true, { volume: 0.2, loop: -1 });
 		 
-		 
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		
 		_this.nextescene.on('click', function(){
-		/*
-		Carga la URL en una ventana nueva del navegador.
-		*/
-		window.open('../E3AA', '_self');
+		
+		window.open('../E3A', '_self');
 		});
 	}
 
@@ -2295,7 +2236,7 @@ if (reversed == null) { reversed = false; }
 	// interacción
 	this.btnInteraccion = new lib.btnInteractivo();
 	this.btnInteraccion.name = "btnInteraccion";
-	this.btnInteraccion.setTransform(817.6,354.15,1,1,0,0,0,-21.1,7.5);
+	this.btnInteraccion.setTransform(580.4,429.45,1,1,0,0,0,-21.1,7.5);
 	this.btnInteraccion._off = true;
 	new cjs.ButtonHelper(this.btnInteraccion, 0, 1, 2, false, new lib.btnInteractivo(), 3);
 
@@ -2489,24 +2430,24 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1707872848243", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1707872848244", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1707872848245", id:"index_atlas_P_3"},
-		{src:"sounds/Voice9.mp3?1707872848443", id:"Voice9"},
-		{src:"sounds/Voice10.mp3?1707872848443", id:"Voice10"},
-		{src:"sounds/Voice11.mp3?1707872848443", id:"Voice11"},
-		{src:"sounds/Voice2.mp3?1707872848443", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1707872848443", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1707872848443", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1707872848443", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1707872848443", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1707872848443", id:"Voice7"},
-		{src:"sounds/Voice8.mp3?1707872848443", id:"Voice8"},
-		{src:"sounds/Voice0.mp3?1707872848443", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1707872848443", id:"Voice1"},
-		{src:"sounds/interaccion.mp3?1707872848443", id:"interaccion"},
-		{src:"sounds/intro.mp3?1707872848443", id:"intro"},
-		{src:"sounds/BGM.mp3?1707872848443", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1711313840830", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1711313840830", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1711313840831", id:"index_atlas_P_3"},
+		{src:"sounds/Voice9.mp3?1711313841007", id:"Voice9"},
+		{src:"sounds/Voice10.mp3?1711313841007", id:"Voice10"},
+		{src:"sounds/Voice11.mp3?1711313841007", id:"Voice11"},
+		{src:"sounds/Voice2.mp3?1711313841007", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1711313841007", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1711313841007", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1711313841007", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1711313841007", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1711313841007", id:"Voice7"},
+		{src:"sounds/Voice8.mp3?1711313841007", id:"Voice8"},
+		{src:"sounds/Voice0.mp3?1711313841007", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1711313841007", id:"Voice1"},
+		{src:"sounds/interaccion.mp3?1711313841007", id:"interaccion"},
+		{src:"sounds/intro.mp3?1711313841007", id:"intro"},
+		{src:"sounds/BGM.mp3?1711313841007", id:"BGM"}
 	],
 	preloads: []
 };
