@@ -817,6 +817,44 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-146.2,-192,67.39999999999999,67.2);
 
 
+(lib.ojo_1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_2
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFFFF").s().p("AgLBqIgDgCQgSgGgMgWQgMgYgCggIgBgrIACgHQADgWADgLQAEgPAJgRIACgBQAFgEAMgEIARgFQAJgBAHAFQAFAFgBAIQgBAFgEADIADAEQAFADAKAFQAOAJAGARQAFALACAUQACAVAAAfIgCASQgCAHgFAIIgMAUQgIALgGADQgHAFgMABIgDAAQgIAAgGgEg");
+	this.shape.setTransform(7.775,16.7423);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#FFFFFF").s().p("AAaAcQgUgFgXABIgSACQgNACgHADIAFgZQADgOAKgRIABgBQAFgEAMgEIARgFQAKgBAGAFQAGAFgBAIQgBAFgEAEIADADQAEADALAFQANAIAHARQACAHACAKQgMgIgSgEg");
+	this.shape_1.setTransform(7.725,9.7214);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#FFFFFF").s().p("AAkBAIgQgFQgSgEgpADQgMABgHADIAAgFIgBgsIACgHQADgVADgLQAEgOAJgSIACgBQAFgEAMgEIARgFQAJgBAHAFQAFAFgBAIQgBAFgEAEIADADQAFADAKAFQAOAJAGARQAFAKACAUQACAWAAAeQgJgEgPgFg");
+	this.shape_2.setTransform(7.775,13.0089);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape}]}).to({state:[]},4).to({state:[{t:this.shape_1}]},38).to({state:[{t:this.shape_2}]},4).wait(4));
+
+	// Capa_1
+	this.instance = new lib.ojo();
+	this.instance.setTransform(0,0,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(50));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,18.5,29);
+
+
 (lib.Interpolación18 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1444,8 +1482,8 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(104));
 
 	// pato
-	this.instance_2 = new lib.ojo();
-	this.instance_2.setTransform(375,-27,0.5,0.5);
+	this.instance_2 = new lib.ojo_1();
+	this.instance_2.setTransform(384.2,-12.5,1,1,0,0,0,9.2,14.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(104));
 
@@ -2283,7 +2321,7 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AAbkNIAAIHAQhkNIAAIHAwgkNIAAIb");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkNIAAIbAQhkNIAAIHAAbkNIAAIH");
 	this.shape.setTransform(176.35,605.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).wait(19));
@@ -2371,45 +2409,45 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/A.png?1688752511836", id:"A"},
-		{src:"images/B.png?1688752511836", id:"B"},
-		{src:"images/Dibujos.png?1688752511836", id:"Dibujos"},
-		{src:"images/fondo1.png?1688752511836", id:"fondo1"},
-		{src:"images/fondoGUion.png?1688752511836", id:"fondoGUion"},
-		{src:"images/Recomendacion3Texto.png?1688752511836", id:"Recomendacion3Texto"},
-		{src:"images/Recomendacion4texto.png?1688752511836", id:"Recomendacion4texto"},
-		{src:"images/Recomendacion5texto.png?1688752511836", id:"Recomendacion5texto"},
-		{src:"images/Recomendacion6texto.png?1688752511836", id:"Recomendacion6texto"},
-		{src:"images/Recomendación2Texto.png?1688752511836", id:"Recomendación2Texto"},
-		{src:"images/Recomentadacion1Texto.png?1688752511836", id:"Recomentadacion1Texto"},
-		{src:"images/text1.png?1688752511836", id:"text1"},
-		{src:"images/text2.png?1688752511836", id:"text2"},
-		{src:"images/text3.png?1688752511836", id:"text3"},
-		{src:"images/texto4.png?1688752511836", id:"texto4"},
-		{src:"images/texto5.png?1688752511836", id:"texto5"},
-		{src:"images/texto6.png?1688752511836", id:"texto6"},
-		{src:"images/texto7.png?1688752511836", id:"texto7"},
-		{src:"images/index_atlas_P_1.png?1688752511512", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1688752511513", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1688752511513", id:"index_atlas_P_3"},
-		{src:"sounds/Voice15.mp3?1688752511836", id:"Voice15"},
-		{src:"sounds/Voice13.mp3?1688752511836", id:"Voice13"},
-		{src:"sounds/Voice14.mp3?1688752511836", id:"Voice14"},
-		{src:"sounds/Voice7.mp3?1688752511836", id:"Voice7"},
-		{src:"sounds/Voice8.mp3?1688752511836", id:"Voice8"},
-		{src:"sounds/Voice9.mp3?1688752511836", id:"Voice9"},
-		{src:"sounds/Voice10.mp3?1688752511836", id:"Voice10"},
-		{src:"sounds/Voice11.mp3?1688752511836", id:"Voice11"},
-		{src:"sounds/Voice12.mp3?1688752511836", id:"Voice12"},
-		{src:"sounds/Voice17.mp3?1688752511836", id:"Voice17"},
-		{src:"sounds/BGM.mp3?1688752511836", id:"BGM"},
-		{src:"sounds/Voice0.mp3?1688752511836", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1688752511836", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1688752511836", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1688752511836", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1688752511836", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1688752511836", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1688752511836", id:"Voice6"}
+		{src:"images/A.png?1711321827155", id:"A"},
+		{src:"images/B.png?1711321827155", id:"B"},
+		{src:"images/Dibujos.png?1711321827155", id:"Dibujos"},
+		{src:"images/fondo1.png?1711321827155", id:"fondo1"},
+		{src:"images/fondoGUion.png?1711321827155", id:"fondoGUion"},
+		{src:"images/Recomendacion3Texto.png?1711321827155", id:"Recomendacion3Texto"},
+		{src:"images/Recomendacion4texto.png?1711321827155", id:"Recomendacion4texto"},
+		{src:"images/Recomendacion5texto.png?1711321827155", id:"Recomendacion5texto"},
+		{src:"images/Recomendacion6texto.png?1711321827155", id:"Recomendacion6texto"},
+		{src:"images/Recomendación2Texto.png?1711321827155", id:"Recomendación2Texto"},
+		{src:"images/Recomentadacion1Texto.png?1711321827155", id:"Recomentadacion1Texto"},
+		{src:"images/text1.png?1711321827155", id:"text1"},
+		{src:"images/text2.png?1711321827155", id:"text2"},
+		{src:"images/text3.png?1711321827155", id:"text3"},
+		{src:"images/texto4.png?1711321827155", id:"texto4"},
+		{src:"images/texto5.png?1711321827155", id:"texto5"},
+		{src:"images/texto6.png?1711321827155", id:"texto6"},
+		{src:"images/texto7.png?1711321827155", id:"texto7"},
+		{src:"images/index_atlas_P_1.png?1711321826787", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1711321826787", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1711321826788", id:"index_atlas_P_3"},
+		{src:"sounds/Voice15.mp3?1711321827155", id:"Voice15"},
+		{src:"sounds/Voice13.mp3?1711321827155", id:"Voice13"},
+		{src:"sounds/Voice14.mp3?1711321827155", id:"Voice14"},
+		{src:"sounds/Voice7.mp3?1711321827155", id:"Voice7"},
+		{src:"sounds/Voice8.mp3?1711321827155", id:"Voice8"},
+		{src:"sounds/Voice9.mp3?1711321827155", id:"Voice9"},
+		{src:"sounds/Voice10.mp3?1711321827155", id:"Voice10"},
+		{src:"sounds/Voice11.mp3?1711321827155", id:"Voice11"},
+		{src:"sounds/Voice12.mp3?1711321827155", id:"Voice12"},
+		{src:"sounds/Voice17.mp3?1711321827155", id:"Voice17"},
+		{src:"sounds/BGM.mp3?1711321827155", id:"BGM"},
+		{src:"sounds/Voice0.mp3?1711321827155", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1711321827155", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1711321827155", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1711321827155", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1711321827155", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1711321827155", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1711321827155", id:"Voice6"}
 	],
 	preloads: []
 };

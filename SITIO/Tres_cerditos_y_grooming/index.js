@@ -3,8 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[1700,1528,300,300],[0,0,1824,992],[0,1551,604,397],[606,1551,434,339],[0,994,1196,555],[1198,1528,500,500],[1198,994,707,532]]},
-		{name:"index_atlas_2", frames: [[1521,108,466,90],[0,477,315,90],[936,339,457,90],[0,293,466,90],[317,481,315,90],[1395,339,457,90],[468,339,466,90],[634,481,315,90],[0,385,457,90],[1079,0,708,106],[370,0,707,107],[925,247,552,90],[1537,431,365,91],[1479,247,552,90],[1169,431,366,91],[370,109,553,90],[370,201,553,90],[0,0,368,243],[1079,108,440,137],[1904,339,140,139],[459,431,708,48]]}
+		{name:"index_atlas_1", frames: [[1521,108,466,90],[0,477,315,90],[936,339,457,90],[0,293,466,90],[317,481,315,90],[1395,339,457,90],[468,339,466,90],[634,481,315,90],[0,385,457,90],[1079,0,708,106],[370,0,707,107],[925,247,552,90],[1537,431,365,91],[1479,247,552,90],[1169,431,366,91],[370,109,553,90],[370,201,553,90],[0,0,368,243],[1079,108,440,137],[1904,339,140,139],[459,431,708,48]]},
+		{name:"index_atlas_2", frames: [[1686,1528,300,300],[0,0,1824,992],[0,1570,604,397],[606,1570,434,339],[0,994,1182,574],[1184,1528,500,500],[1184,994,707,532]]}
 ];
 
 
@@ -29,63 +29,63 @@ lib.ssMetadata = [
 
 
 (lib._1ActividadesNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1AyudaNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._1ContenidosNORMAL = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2actividadesSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2ayudaSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._2contenidosSOBRE = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3actividadesDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3ayudaDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib._3contenidosDOWN = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
@@ -104,70 +104,70 @@ p.nominalBounds = new cjs.Rectangle(0,0,2373,154);
 
 
 (lib.botonaceptar2 = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Botonaceptar = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.botonplay = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.BtnInicioCuentoHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicio = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioCuento = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnIrInicioHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentos = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.btnMenuCuentosHover = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.fondopapel1 = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
@@ -186,63 +186,63 @@ p.nominalBounds = new cjs.Rectangle(0,0,2376,1136);
 
 
 (lib.formainferiorder = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formainferiorizq = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorder = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.formasuperiorizq = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.icono = function() {
+(lib.GuiaPortadaNegro = function() {
 	this.initialize(ss["index_atlas_2"]);
-	this.gotoAndStop(19);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.index_1 = function() {
-	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.mano2 = function() {
+(lib.icono = function() {
 	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(19);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.mano2 = function() {
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Notificacion = function() {
-	this.initialize(ss["index_atlas_1"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.TITULOGROOMING = function() {
-	this.initialize(ss["index_atlas_2"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -997,16 +997,9 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(17));
 
-	// Capa_2
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("rgba(0,0,0,0.486)").s().p("EhdCAsXMAAAhYtMC6EAAAMAAABYtg");
-	this.shape.setTransform(696,336.725);
-
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(17));
-
 	// tarjeta
-	this.instance_5 = new lib.index_1();
-	this.instance_5.setTransform(101,53,0.9953,1.0234);
+	this.instance_5 = new lib.GuiaPortadaNegro();
+	this.instance_5.setTransform(101,53,1.008,0.9895);
 
 	this.btnVolverAcuento = new lib.btnVolverAcuento();
 	this.btnVolverAcuento.name = "btnVolverAcuento";
@@ -1040,15 +1033,15 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1711318685188", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1711318685188", id:"barraseguredes"},
-		{src:"images/fondo111111111.png?1711318685188", id:"fondo111111111"},
-		{src:"images/fondoMorado.png?1711318685188", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1711318685122", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1711318685122", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1711318685188", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1711318685188", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1711318685188", id:"sound1"}
+		{src:"images/bannernegro1.png?1711487457470", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1711487457470", id:"barraseguredes"},
+		{src:"images/fondo111111111.png?1711487457470", id:"fondo111111111"},
+		{src:"images/fondoMorado.png?1711487457470", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1711487457408", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1711487457408", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1711487457470", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1711487457470", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1711487457470", id:"sound1"}
 	],
 	preloads: []
 };
