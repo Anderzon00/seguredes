@@ -521,7 +521,7 @@ if (reversed == null) { reversed = false; }
 
 	// Boca2_10.png
 	this.instance_1 = new lib.Boca2_10();
-	this.instance_1.setTransform(79.95,96,0.6753,0.6753,0,0,180);
+	this.instance_1.setTransform(77.4,99,0.6115,0.4923,0,0,180);
 	this.instance_1._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(4).to({_off:false},0).to({_off:true},16).wait(27).to({_off:false},0).to({_off:true},15).wait(65));
@@ -2515,11 +2515,11 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
 	this.shape.setTransform(176.35,604.725);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
 	this.shape_1.setTransform(176.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).to({state:[{t:this.shape_1},{t:this.prevEscena}]},6).wait(1));
@@ -2649,16 +2649,16 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1711314679555", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1711314679555", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1711314679558", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1711314679764", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1711314679764", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1711314679764", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1711314679764", id:"Voice3"},
-		{src:"sounds/interaccion.mp3?1711314679764", id:"interaccion"},
-		{src:"sounds/intro.mp3?1711314679764", id:"intro"},
-		{src:"sounds/BGM.mp3?1711314679764", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1711502644939", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1711502644940", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1711502644941", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1711502645131", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1711502645131", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1711502645131", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1711502645131", id:"Voice3"},
+		{src:"sounds/interaccion.mp3?1711502645131", id:"interaccion"},
+		{src:"sounds/intro.mp3?1711502645131", id:"intro"},
+		{src:"sounds/BGM.mp3?1711502645131", id:"BGM"}
 	],
 	preloads: []
 };

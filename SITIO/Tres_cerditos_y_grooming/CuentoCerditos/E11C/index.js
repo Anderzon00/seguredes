@@ -2120,7 +2120,7 @@ if (reversed == null) { reversed = false; }
 
 	// Boca2_9.png
 	this.instance = new lib.Boca2_9();
-	this.instance.setTransform(242,6,0.5,0.5);
+	this.instance.setTransform(242,5,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(10));
 
@@ -2542,11 +2542,11 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
 	this.shape.setTransform(176.35,604.725);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
 	this.shape_1.setTransform(176.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).to({state:[{t:this.shape_1},{t:this.prevEscena}]},9).wait(1));
@@ -2656,19 +2656,19 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1711309636746", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1711309636747", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1711309636748", id:"index_atlas_P_3"},
-		{src:"images/index_atlas_P_4.png?1711309636749", id:"index_atlas_P_4"},
-		{src:"sounds/Voice0.mp3?1711309636904", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1711309636904", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1711309636904", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1711309636904", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1711309636904", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1711309636904", id:"Voice5"},
-		{src:"sounds/interaccion.mp3?1711309636904", id:"interaccion"},
-		{src:"sounds/intro.mp3?1711309636904", id:"intro"},
-		{src:"sounds/BGM.mp3?1711309636904", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1711502491408", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1711502491408", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1711502491409", id:"index_atlas_P_3"},
+		{src:"images/index_atlas_P_4.png?1711502491410", id:"index_atlas_P_4"},
+		{src:"sounds/Voice0.mp3?1711502494206", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1711502494206", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1711502494206", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1711502494206", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1711502494206", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1711502494206", id:"Voice5"},
+		{src:"sounds/interaccion.mp3?1711502494206", id:"interaccion"},
+		{src:"sounds/intro.mp3?1711502494206", id:"intro"},
+		{src:"sounds/BGM.mp3?1711502494206", id:"BGM"}
 	],
 	preloads: []
 };

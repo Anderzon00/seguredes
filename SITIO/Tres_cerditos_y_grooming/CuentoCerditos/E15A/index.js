@@ -631,7 +631,7 @@ if (reversed == null) { reversed = false; }
 
 	// Boca1_10.png
 	this.instance = new lib.Boca2_18();
-	this.instance.setTransform(97.45,91,0.428,0.3924,0,14.9986,-165.003);
+	this.instance.setTransform(89.55,92.4,0.3603,0.3304,0,14.9984,-165.0026);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},4).wait(16).to({_off:false},0).to({_off:true},27).wait(15).to({_off:false},0).wait(65));
 
@@ -2537,11 +2537,11 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
 	this.shape.setTransform(176.35,604.725);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
 	this.shape_1.setTransform(176.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).to({state:[{t:this.shape_1},{t:this.prevEscena}]},11).wait(1));
@@ -2652,20 +2652,20 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1711304622313", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1711304622314", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1711304622315", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1711304622486", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1711304622486", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1711304622486", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1711304622486", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1711304622486", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1711304622486", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1711304622486", id:"Voice6"},
-		{src:"sounds/Voice7.mp3?1711304622486", id:"Voice7"},
-		{src:"sounds/interaccion.mp3?1711304622486", id:"interaccion"},
-		{src:"sounds/intro.mp3?1711304622486", id:"intro"},
-		{src:"sounds/BGM.mp3?1711304622486", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1711502898432", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1711502898432", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1711502898434", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1711502898629", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1711502898629", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1711502898629", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1711502898629", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1711502898629", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1711502898629", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1711502898629", id:"Voice6"},
+		{src:"sounds/Voice7.mp3?1711502898629", id:"Voice7"},
+		{src:"sounds/interaccion.mp3?1711502898629", id:"interaccion"},
+		{src:"sounds/intro.mp3?1711502898629", id:"intro"},
+		{src:"sounds/BGM.mp3?1711502898629", id:"BGM"}
 	],
 	preloads: []
 };
