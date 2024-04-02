@@ -22,14 +22,12 @@
   }
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1688314719357"></script>
+<script src="index.js?1712029383534"></script>
 <script>
 // Global Scripts
-	var golpes = 0;
-var correctas =0;
-var incorrectas =0;
-console.log("correctas" + correctas);
-console.log("incorrectas" + incorrectas);</script>
+	var contadorRespuestasCorrectas = 0;
+var contadorRespuestasIncorrectas = 0;
+var contador = 0;</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -38,7 +36,6 @@ function init() {
 	dom_overlay_container = document.getElementById("dom_overlay_container");
 	var comp=AdobeAn.getComposition("DCCA5A04F9E9EB49A3DF1304FD62D849");
 	var lib=comp.getLibrary();
-	createjs.MotionGuidePlugin.install();
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
