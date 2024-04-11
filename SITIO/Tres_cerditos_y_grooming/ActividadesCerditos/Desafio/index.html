@@ -21,22 +21,21 @@
 	top:0;bottom:0;
   }
 </style>
-<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1688314792661"></script>
+<script src="libs/1.0.0/createjs.min.js"></script>
+<script src="index.js?1712850896638"></script>
 <script>
 // Global Scripts
-	var correctas =0;
-var incorrectas =0;
-console.log("correctas" + correctas);
-console.log("incorrectas" + incorrectas);
-function sonidoMal () {
-	var instance = createjs.Sound.play("mal");  // play using id.  Could also use full source path or event.src.
-     instance.volume = 0.5
-}
-function sonidoBien () {
-	var instance = createjs.Sound.play("correct");  // play using id.  Could also use full source path or event.src.
-     instance.volume = 0.5
-	}</script>
+	var contadorRespuestasCorrectas = 0;
+var contadorRespuestasIncorrectas = 0;
+var contador = 0;
+function correcto() { 
+	contadorRespuestasCorrectas++;
+		exportRoot.texto.text = contadorRespuestasCorrectas;
+    } 
+	function incorrecto() {
+contadorRespuestasIncorrectas++;
+		exportRoot.texto2.text = contadorRespuestasIncorrectas;
+    }</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
