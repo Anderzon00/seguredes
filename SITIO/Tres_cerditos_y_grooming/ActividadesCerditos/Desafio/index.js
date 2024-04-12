@@ -4297,7 +4297,7 @@ if (reversed == null) { reversed = false; }
 
 	// Capa_4
 	this.instance = new lib.imagen7_1();
-	this.instance.setTransform(689,219.95,1,1,0,0,0,122.8,117);
+	this.instance.setTransform(689.05,207.9,1.0244,1.0669,0,0,0,122.8,117);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},1).wait(1));
 
@@ -5743,34 +5743,34 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/FondoselecciónMúltiple.png?1712882039514", id:"FondoselecciónMúltiple"},
-		{src:"images/Fondo.png?1712882039514", id:"Fondo"},
-		{src:"images/index_atlas_1.png?1712882039236", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1712882039236", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1712882039237", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1712882039237", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1712882039237", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1712882039237", id:"index_atlas_6"},
-		{src:"images/index_atlas_7.png?1712882039238", id:"index_atlas_7"},
-		{src:"sounds/audio.mp3?1712882039514", id:"audio"},
-		{src:"sounds/incorrect.mp3?1712882039514", id:"incorrect"},
-		{src:"sounds/correct.mp3?1712882039514", id:"correct"},
-		{src:"sounds/Voice4.mp3?1712882039514", id:"Voice4"},
-		{src:"sounds/Voice3.mp3?1712882039514", id:"Voice3"},
-		{src:"sounds/Voice1.mp3?1712882039514", id:"Voice1"},
-		{src:"sounds/SoundBoton.mp3?1712882039514", id:"SoundBoton"},
-		{src:"sounds/retro1.mp3?1712882039514", id:"retro1"},
-		{src:"sounds/retro10.mp3?1712882039514", id:"retro10"},
-		{src:"sounds/retro2.mp3?1712882039514", id:"retro2"},
-		{src:"sounds/retro3.mp3?1712882039514", id:"retro3"},
-		{src:"sounds/retro4.mp3?1712882039514", id:"retro4"},
-		{src:"sounds/retro5.mp3?1712882039514", id:"retro5"},
-		{src:"sounds/retro6.mp3?1712882039514", id:"retro6"},
-		{src:"sounds/retro7.mp3?1712882039514", id:"retro7"},
-		{src:"sounds/retro8.mp3?1712882039514", id:"retro8"},
-		{src:"sounds/retro9.mp3?1712882039514", id:"retro9"},
-		{src:"sounds/Voice5.mp3?1712882039514", id:"Voice5"},
-		{src:"sounds/BGM.mp3?1712882039514", id:"BGM"}
+		{src:"images/FondoselecciónMúltiple.png?1712882510079", id:"FondoselecciónMúltiple"},
+		{src:"images/Fondo.png?1712882510079", id:"Fondo"},
+		{src:"images/index_atlas_1.png?1712882509750", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1712882509751", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1712882509751", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1712882509752", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1712882509752", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1712882509752", id:"index_atlas_6"},
+		{src:"images/index_atlas_7.png?1712882509752", id:"index_atlas_7"},
+		{src:"sounds/audio.mp3?1712882510079", id:"audio"},
+		{src:"sounds/incorrect.mp3?1712882510079", id:"incorrect"},
+		{src:"sounds/correct.mp3?1712882510079", id:"correct"},
+		{src:"sounds/Voice4.mp3?1712882510079", id:"Voice4"},
+		{src:"sounds/Voice3.mp3?1712882510079", id:"Voice3"},
+		{src:"sounds/Voice1.mp3?1712882510079", id:"Voice1"},
+		{src:"sounds/SoundBoton.mp3?1712882510079", id:"SoundBoton"},
+		{src:"sounds/retro1.mp3?1712882510079", id:"retro1"},
+		{src:"sounds/retro10.mp3?1712882510079", id:"retro10"},
+		{src:"sounds/retro2.mp3?1712882510079", id:"retro2"},
+		{src:"sounds/retro3.mp3?1712882510079", id:"retro3"},
+		{src:"sounds/retro4.mp3?1712882510079", id:"retro4"},
+		{src:"sounds/retro5.mp3?1712882510079", id:"retro5"},
+		{src:"sounds/retro6.mp3?1712882510079", id:"retro6"},
+		{src:"sounds/retro7.mp3?1712882510079", id:"retro7"},
+		{src:"sounds/retro8.mp3?1712882510079", id:"retro8"},
+		{src:"sounds/retro9.mp3?1712882510079", id:"retro9"},
+		{src:"sounds/Voice5.mp3?1712882510079", id:"Voice5"},
+		{src:"sounds/BGM.mp3?1712882510079", id:"BGM"}
 	],
 	preloads: []
 };
