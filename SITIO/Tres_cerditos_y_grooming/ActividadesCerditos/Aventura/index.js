@@ -2197,7 +2197,9 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		_this.stop();
 		
-		var  retro10= createjs.Sound.play("retro10")
+		var  retro10= createjs.Sound.play("retro10").on("complete", function () {
+			globalVolume = 0.8;
+		}, this);
 		
 		_this.siguiente.on('click', function(){
 		retro10.paused=true;
@@ -2246,7 +2248,9 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		_this.stop();
 		
-		var  retro9= createjs.Sound.play("retro9")
+		var  retro9= createjs.Sound.play("retro9").on("complete", function () {
+			globalVolume = 0.8;
+		}, this);
 		
 		_this.siguiente.on('click', function(){
 		retro9.paused=true;
@@ -2295,7 +2299,9 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		_this.stop();
 		
-		var  retro8= createjs.Sound.play("retro8")
+		var  retro8= createjs.Sound.play("retro8").on("complete", function () {
+			globalVolume = 0.8;
+		}, this);
 		
 		_this.siguiente.on('click', function(){
 		retro8.paused=true;
@@ -2344,7 +2350,9 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		_this.stop();
 		
-		var  retro7= createjs.Sound.play("retro7")
+		var  retro7= createjs.Sound.play("retro7").on("complete", function () {
+			globalVolume = 0.8;
+		}, this);
 		
 		_this.siguiente.on('click', function(){
 		retro7.paused=true;
@@ -2393,7 +2401,9 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		_this.stop();
 		
-		var  retro6= createjs.Sound.play("retro6")
+		var  retro6= createjs.Sound.play("retro6").on("complete", function () {
+			globalVolume = 0.8;
+		}, this);
 		
 		_this.siguiente6.on('click', function(){
 		retro6.paused=true;
@@ -2442,7 +2452,9 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		_this.stop();
 		
-		var  retro5= createjs.Sound.play("retro5")
+		var  retro5= createjs.Sound.play("retro5").on("complete", function () {
+			globalVolume = 0.8;
+		}, this);
 		
 		_this.siguiente.on('click', function(){
 		retro5.paused=true;
@@ -2491,7 +2503,9 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		_this.stop();
 		
-		var  retro4= createjs.Sound.play("retro4")
+		var  retro4= createjs.Sound.play("retro4").on("complete", function () {
+			globalVolume = 0.8;
+		}, this);
 		
 		_this.siguiente.on('click', function(){
 		retro4.paused=true;
@@ -2540,7 +2554,9 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		_this.stop();
 		
-		var  retro3= createjs.Sound.play("retro3")
+		var  retro3= createjs.Sound.play("retro3").on("complete", function () {
+			globalVolume = 0.8;
+		}, this);
 		
 		_this.siguiente.on('click', function(){
 		retro3.paused=true;
@@ -2589,7 +2605,9 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		_this.stop();
 		
-		var  retro2= createjs.Sound.play("retro2")
+		var  retro2= createjs.Sound.play("retro2").on("complete", function () {
+			globalVolume = 0.8;
+		}, this);
 		
 		_this.siguiente.on('click', function(){
 		retro2.paused=true;
@@ -2638,7 +2656,9 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		_this.stop();
 		
-		var  retro1= createjs.Sound.play("retro1")
+		var  retro1= createjs.Sound.play("retro1").on("complete", function () {
+			globalVolume = 0.8;
+		}, this);
 		
 		_this.siguiente.on('click', function(){
 		retro1.paused=true;
@@ -4538,51 +4558,51 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/FondoselecciónMúltiple.png?1712978047418", id:"FondoselecciónMúltiple"},
-		{src:"images/Fondo.png?1712978047418", id:"Fondo"},
-		{src:"images/FondoPreguntas.png?1712978047418", id:"FondoPreguntas"},
-		{src:"images/p10.png?1712978047418", id:"p10"},
-		{src:"images/p6.png?1712978047418", id:"p6"},
-		{src:"images/p8.png?1712978047418", id:"p8"},
-		{src:"images/pregunta.png?1712978047418", id:"pregunta"},
-		{src:"images/index_atlas_1.png?1712978047198", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1712978047198", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1712978047199", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1712978047199", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1712978047199", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1712978047199", id:"index_atlas_6"},
-		{src:"images/index_atlas_7.png?1712978047200", id:"index_atlas_7"},
-		{src:"images/index_atlas_8.png?1712978047200", id:"index_atlas_8"},
-		{src:"images/index_atlas_9.png?1712978047202", id:"index_atlas_9"},
-		{src:"sounds/audio.mp3?1712978047418", id:"audio"},
-		{src:"sounds/incorrect.mp3?1712978047418", id:"incorrect"},
-		{src:"sounds/correct.mp3?1712978047418", id:"correct"},
-		{src:"sounds/Voice4.mp3?1712978047418", id:"Voice4"},
-		{src:"sounds/Voice3.mp3?1712978047418", id:"Voice3"},
-		{src:"sounds/Voice1.mp3?1712978047418", id:"Voice1"},
-		{src:"sounds/pregunta1.mp3?1712978047418", id:"pregunta1"},
-		{src:"sounds/pregunta10.mp3?1712978047418", id:"pregunta10"},
-		{src:"sounds/pregunta2.mp3?1712978047418", id:"pregunta2"},
-		{src:"sounds/pregunta3.mp3?1712978047418", id:"pregunta3"},
-		{src:"sounds/pregunta4.mp3?1712978047418", id:"pregunta4"},
-		{src:"sounds/pregunta5.mp3?1712978047418", id:"pregunta5"},
-		{src:"sounds/pregunta6.mp3?1712978047418", id:"pregunta6"},
-		{src:"sounds/pregunta7.mp3?1712978047418", id:"pregunta7"},
-		{src:"sounds/pregunta8.mp3?1712978047418", id:"pregunta8"},
-		{src:"sounds/pregunta9.mp3?1712978047418", id:"pregunta9"},
-		{src:"sounds/SoundBoton.mp3?1712978047418", id:"SoundBoton"},
-		{src:"sounds/retro1.mp3?1712978047418", id:"retro1"},
-		{src:"sounds/retro10.mp3?1712978047418", id:"retro10"},
-		{src:"sounds/retro2.mp3?1712978047418", id:"retro2"},
-		{src:"sounds/retro3.mp3?1712978047418", id:"retro3"},
-		{src:"sounds/retro4.mp3?1712978047418", id:"retro4"},
-		{src:"sounds/retro5.mp3?1712978047418", id:"retro5"},
-		{src:"sounds/retro6.mp3?1712978047418", id:"retro6"},
-		{src:"sounds/retro7.mp3?1712978047418", id:"retro7"},
-		{src:"sounds/retro8.mp3?1712978047418", id:"retro8"},
-		{src:"sounds/retro9.mp3?1712978047418", id:"retro9"},
-		{src:"sounds/Voice5.mp3?1712978047418", id:"Voice5"},
-		{src:"sounds/BGM.mp3?1712978047418", id:"BGM"}
+		{src:"images/FondoselecciónMúltiple.png?1712983918046", id:"FondoselecciónMúltiple"},
+		{src:"images/Fondo.png?1712983918046", id:"Fondo"},
+		{src:"images/FondoPreguntas.png?1712983918046", id:"FondoPreguntas"},
+		{src:"images/p10.png?1712983918046", id:"p10"},
+		{src:"images/p6.png?1712983918046", id:"p6"},
+		{src:"images/p8.png?1712983918046", id:"p8"},
+		{src:"images/pregunta.png?1712983918046", id:"pregunta"},
+		{src:"images/index_atlas_1.png?1712983917822", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1712983917822", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1712983917823", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1712983917823", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1712983917823", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1712983917823", id:"index_atlas_6"},
+		{src:"images/index_atlas_7.png?1712983917824", id:"index_atlas_7"},
+		{src:"images/index_atlas_8.png?1712983917824", id:"index_atlas_8"},
+		{src:"images/index_atlas_9.png?1712983917826", id:"index_atlas_9"},
+		{src:"sounds/audio.mp3?1712983918046", id:"audio"},
+		{src:"sounds/incorrect.mp3?1712983918046", id:"incorrect"},
+		{src:"sounds/correct.mp3?1712983918046", id:"correct"},
+		{src:"sounds/Voice4.mp3?1712983918046", id:"Voice4"},
+		{src:"sounds/Voice3.mp3?1712983918046", id:"Voice3"},
+		{src:"sounds/Voice1.mp3?1712983918046", id:"Voice1"},
+		{src:"sounds/pregunta1.mp3?1712983918046", id:"pregunta1"},
+		{src:"sounds/pregunta10.mp3?1712983918046", id:"pregunta10"},
+		{src:"sounds/pregunta2.mp3?1712983918046", id:"pregunta2"},
+		{src:"sounds/pregunta3.mp3?1712983918046", id:"pregunta3"},
+		{src:"sounds/pregunta4.mp3?1712983918046", id:"pregunta4"},
+		{src:"sounds/pregunta5.mp3?1712983918046", id:"pregunta5"},
+		{src:"sounds/pregunta6.mp3?1712983918046", id:"pregunta6"},
+		{src:"sounds/pregunta7.mp3?1712983918046", id:"pregunta7"},
+		{src:"sounds/pregunta8.mp3?1712983918046", id:"pregunta8"},
+		{src:"sounds/pregunta9.mp3?1712983918046", id:"pregunta9"},
+		{src:"sounds/SoundBoton.mp3?1712983918046", id:"SoundBoton"},
+		{src:"sounds/retro1.mp3?1712983918046", id:"retro1"},
+		{src:"sounds/retro10.mp3?1712983918046", id:"retro10"},
+		{src:"sounds/retro2.mp3?1712983918046", id:"retro2"},
+		{src:"sounds/retro3.mp3?1712983918046", id:"retro3"},
+		{src:"sounds/retro4.mp3?1712983918046", id:"retro4"},
+		{src:"sounds/retro5.mp3?1712983918046", id:"retro5"},
+		{src:"sounds/retro6.mp3?1712983918046", id:"retro6"},
+		{src:"sounds/retro7.mp3?1712983918046", id:"retro7"},
+		{src:"sounds/retro8.mp3?1712983918046", id:"retro8"},
+		{src:"sounds/retro9.mp3?1712983918046", id:"retro9"},
+		{src:"sounds/Voice5.mp3?1712983918046", id:"Voice5"},
+		{src:"sounds/BGM.mp3?1712983918046", id:"BGM"}
 	],
 	preloads: []
 };
