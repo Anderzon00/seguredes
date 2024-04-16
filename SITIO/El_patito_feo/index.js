@@ -675,15 +675,15 @@ if (reversed == null) { reversed = false; }
 		    var iframeURL = iframe.contentWindow.location.href;
 		    console.log("Iframe URL:", iframeURL);		
 		 
-			var rutaDespuesDelDominio = iframeURL.split(window.location.origin)[1];
+			var rutaDespuesDelDominio = iframeURL.split(window.location.origin)[3];
 			
 			 var esEscenaDeCuento = rutaDespuesDelDominio.startsWith('/Cuento');
 			var nuevaURL;
 			
 			 if (esEscenaDeCuento) {
-		        nuevaURL = './Ayuda/cuento/index.html';
+		        nuevaURL = '/Ayuda/cuento/index.html';
 		    } else {
-		        var nuevaURL = './Ayuda' + rutaDespuesDelDominio;
+		        var nuevaURL = '/Ayuda' + rutaDespuesDelDominio;
 		    }
 		    console.log("Nueva URL:", nuevaURL);
 			
@@ -902,14 +902,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1713235871710", id:"bannernegro1"},
-		{src:"images/fondo11.png?1713235871711", id:"fondo11"},
-		{src:"images/fondoMorado.png?1713235871711", id:"fondoMorado"},
-		{src:"images/Portada.png?1713235871711", id:"Portada"},
-		{src:"images/index_atlas_1.png?1713235871651", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1713235871711", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1713235871711", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1713235871711", id:"sound1"}
+		{src:"images/bannernegro1.png?1713238414618", id:"bannernegro1"},
+		{src:"images/fondo11.png?1713238414618", id:"fondo11"},
+		{src:"images/fondoMorado.png?1713238414618", id:"fondoMorado"},
+		{src:"images/Portada.png?1713238414618", id:"Portada"},
+		{src:"images/index_atlas_1.png?1713238414535", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1713238414618", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1713238414618", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1713238414618", id:"sound1"}
 	],
 	preloads: []
 };
