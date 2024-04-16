@@ -630,7 +630,7 @@ if (reversed == null) { reversed = false; }
 	var props = new Object();
 	props.mode = mode;
 	props.startPosition = startPosition;
-	props.labels = {Cuento:13,Contenidos:14,Actividades:15,Ayuda:16};
+	props.labels = {play:12,Cuento:13,Contenidos:14,Actividades:15,Ayuda:16};
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
@@ -638,137 +638,144 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,12,13];
 	// timeline functions:
 	this.frame_0 = function() {
-		this.stop(); 
+		this.stop();
 		
-		stage.on('drawstart', initStage, this, true);
-		function initStage() {	stretchToFit();}
+		var iframe = document.createElement('iframe');
+		iframe.id = 'mi_iframe';
+		iframe.style.position = 'absolute';
+		iframe.style.border = 'none';
+		iframe.style.zIndex = '1';
+		iframe.allow = 'autoplay';
+		document.body.appendChild(iframe);
+		
+		function cambiarSrc(url) {
+		    var iframe = document.getElementById('mi_iframe');
+		    iframe.src = url;
+		}
+		
+		function ajustarIframe() {	 
+			iframe.style.width =  window.innerWidth  + 'px';
+			iframe.style.height = window.innerHeight  + 'px';
+		}
+		
+		ajustarIframe();
+		
+		window.addEventListener('resize', ajustarIframe);
+		
+		cambiarSrc('./Ayuda/index.html');
+		document.getElementById('mi_iframe').style.display = 'none';
 		
 		var _this = this;
-		_this.btnInicio.on('click', function () {
-			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
-				window.open("../../", "_self");}, this);
-		});
 		
-		_this.btnVolver.on('click', function () {
-			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
-				window.open("../MenuPrincipal", "_self");
-			}, this);
-		});
+		_this.btnAyuda.on('click', function () {
+		    document.getElementById('mi_iframe').style.display = 'block';
 		
-		_this.btnContenidos.on('click', function () {	
-		_this.gotoAndStop("Contenidos");
-		document.getElementById('contenidos').style.display = 'block';
-		document.getElementById('cuento').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
-			document.getElementById('i_cuento').src = 'about:blank';
-			document.getElementById('i_contenidos').src=  "./Contenidos/index.html" 
-		    document.getElementById('i_actividades').src=  'about:blank';
-		    document.getElementById('i_ayuda').src = 'about:blank'; 		 
+		    var iframe = document.getElementById('i_contenidos');
+		 
+		    var iframeURL = iframe.contentWindow.location.href;
+		    console.log("Iframe URL:", iframeURL);		
+		 
+			var rutaDespuesDelDominio = iframeURL.split(window.location.origin)[1];
+			
+			 var esEscenaDeCuento = rutaDespuesDelDominio.startsWith('/Cuento');
+			var nuevaURL;
+			
+			 if (esEscenaDeCuento) {
+		        nuevaURL = '/Ayuda/cuento/index.html';
+		    } else {
+		        var nuevaURL = '/Ayuda' + rutaDespuesDelDominio;
+		    }
+		    console.log("Nueva URL:", nuevaURL);
+			
+		    cambiarSrc(nuevaURL); 
+			
 		});
+		var _this = this;
 		
-		_this.btnActividades.on('click', function () {	
-		_this.gotoAndStop("Actividades");	
-		document.getElementById('actividades').style.display = 'block';
-		document.getElementById('cuento').style.display = 'none';
+		var element = document.createElement('div');
+		element.setAttribute('id', 'contenidos');
+		document.body.appendChild(element);
+		element.style.position = "absolute";
+		
+		element.innerHTML = '<iframe id="i_contenidos" style="border:none; overflow: hidden"; allow="autoplay"  >';
+		
 		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('i_cuento').src = 'about:blank';
-		document.getElementById('i_contenidos').src =  'about:blank';
-		document.getElementById('i_actividades').src=  "./Actividades/Menu/index.html"
-		document.getElementById('i_ayuda').src = 'about:blank'; 			 		 
+		
+		_this.btnContenidos.on('click', function () {
+			document.getElementById('i_contenidos').src = "./Contenidos/index.html";
+			_this.gotoAndStop("Contenidos");
+			document.getElementById('contenidos').style.display = 'block';
 		});
 		
-		this.btnAyuda.on('click', function () {		
-		_this.gotoAndStop("Ayuda");
-		document.getElementById('ayuda').style.display = 'block';
-		document.getElementById('cuento').style.display = 'none';
-		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
-		document.getElementById('i_contenidos').src =  'about:blank';
-		document.getElementById('i_cuento').src = 'about:blank';
-		document.getElementById('i_actividades').src=  'about:blank';
-		document.getElementById('i_ayuda').src= "./dearflip/index.html"	
+		_this.btnActividades.on('click', function () {
+			document.getElementById('i_contenidos').src = "./Actividades/Menu/index.html"
+			_this.gotoAndStop("Actividades");
+			document.getElementById('contenidos').style.display = 'block';
 		});
 		
-		_this.button_popup.on('click', function () {
-			_this.gotoAndPlay(1);
-		});
-		
-		var elementCuento = document.createElement('div');
-		elementCuento.setAttribute('id', 'cuento');
-		document.body.appendChild(elementCuento);
-		elementCuento.style.position = "absolute"; 
-		elementCuento.innerHTML = '<iframe id="i_cuento" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
-		 
-		var elementContenidos = document.createElement('div');
-		elementContenidos.setAttribute('id', 'contenidos');
-		document.body.appendChild(elementContenidos);
-		elementContenidos.style.position = "absolute"; 
-		elementContenidos.innerHTML = '<iframe id="i_contenidos" style="border:none; overflow: hidden"; allow="autoplay"  >';
-		 
-		var elementActividades = document.createElement('div');
-		elementActividades.setAttribute('id', 'actividades');
-		document.body.appendChild(elementActividades);
-		elementActividades.style.position = "absolute"; 
-		elementActividades.innerHTML = '<iframe   id="i_actividades" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
-		 
-		var elementAyuda = document.createElement('div');
-		elementAyuda.setAttribute('id', 'ayuda');
-		document.body.appendChild(elementAyuda);
-		elementAyuda.style.position = "absolute"; 
-		elementAyuda.innerHTML = '<iframe   id="i_ayuda" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
-		   
 		function embed(id) {
-		  var element = document.getElementById(id);
-		  element.style.left = 2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		  element.style.top = 1.059 * Math.max(window.innerHeight) / 16 + 'px'; 
-		  element.querySelector(`#i_${id}`).style.width = 27.9250 * (Math.max(window.innerWidth) / 32) + 'px';
-		  element.querySelector(`#i_${id}`).style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
+			var element = document.getElementById(id);
+			element.style.left = 2.360 * Math.max(window.innerWidth) / 32 + 'px';
+			element.style.top = 1.059 * Math.max(window.innerHeight) / 16 + 'px';
+			element.querySelector(`#i_${id}`).style.width = 27.9250 * (Math.max(window.innerWidth) / 32) + 'px';
+			element.querySelector(`#i_${id}`).style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		function handleResize() {
-		  actions.forEach((action) => {
-		    embed(action);
-		  });
+			actions.forEach((action) => {
+				embed(action);
+			});
 		}
 		
 		window.addEventListener('resize', handleResize);
 		
-		const actions = ["cuento", "contenidos", "actividades", "ayuda"];
+		const actions = ["contenidos"];
 		
 		actions.forEach((action) => {
-		  embed(action);
+			embed(action);
 		});
+		stage.on('drawstart', initStage, this, true);
+		function initStage() {
+			stretchToFit();
+		}
 		
-		
-		document.getElementById('cuento').style.display = 'none';
-		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
 		var _this = this;
 		
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
+		
+		
+		_this.btnVolverAcuento.on('click', function () {
+			createjs.Sound.play("sound2", {
+				volume: 0.8
 			}).on("complete", function () {
 				irCuento()
 			}, this);
 		});
+		
+		_this.btnInicio.on('click', function () {
+			createjs.Sound.play("sound2", {
+				volume: 0.8
+			}).on("complete", function () {
+				window.open("../../", "_self");
+			}, this);
+		});
+		
+		_this.btnVolver.on('click', function () {
+			createjs.Sound.play("sound2", {
+				volume: 0.8
+			}).on("complete", function () {
+				window.open("../MenuPrincipal", "_self");
+			}, this);
+		});
+		
+		
+		_this.button_popup.on('click', function () {
+			_this.gotoAndPlay(1);
+		});
 	}
 	this.frame_12 = function() {
-		this.stop();
-		
-		document.getElementById('cuento').style.display = 'none';
 		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
-		document.getElementById('i_cuento').src="./Cuento/Escena_1/index.html";
-		document.getElementById('i_contenidos').src =  'about:blank';
-		document.getElementById('i_actividades').src=  'about:blank';
-		document.getElementById('i_ayuda').src = 'about:blank'; 		
 		
-		
-		
+		this.stop();
 		
 		var _this = this;
 		
@@ -781,10 +788,8 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_13 = function() {
-		document.getElementById('cuento').style.display = 'block';
-		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
+		document.getElementById('i_contenidos').src =  "./Cuento/Escena_1/index.html";
+		document.getElementById('contenidos').style.display = 'block';
 	}
 
 	// actions tween:
@@ -897,14 +902,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1699299905440", id:"bannernegro1"},
-		{src:"images/fondo11.png?1699299905440", id:"fondo11"},
-		{src:"images/fondoMorado.png?1699299905440", id:"fondoMorado"},
-		{src:"images/Portada.png?1699299905440", id:"Portada"},
-		{src:"images/index_atlas_1.png?1699299905382", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1699299905440", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1699299905440", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1699299905440", id:"sound1"}
+		{src:"images/bannernegro1.png?1713233340736", id:"bannernegro1"},
+		{src:"images/fondo11.png?1713233340736", id:"fondo11"},
+		{src:"images/fondoMorado.png?1713233340736", id:"fondoMorado"},
+		{src:"images/Portada.png?1713233340736", id:"Portada"},
+		{src:"images/index_atlas_1.png?1713233340610", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1713233340736", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1713233340736", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1713233340736", id:"sound1"}
 	],
 	preloads: []
 };
