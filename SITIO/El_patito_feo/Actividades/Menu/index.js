@@ -1692,7 +1692,7 @@ if (reversed == null) { reversed = false; }
 	this.shape.setTransform(594.5,321.5);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("rgba(35,85,148,0)").s().p("EhecAzzMAAAhnlMC85AAAMAAABnlg");
+	this.shape_1.graphics.f("rgba(0,153,0,0)").s().p("EhecAzzMAAAhnlMC85AAAMAAABnlg");
 	this.shape_1.setTransform(594.5,321.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(2));
@@ -1707,16 +1707,16 @@ lib.properties = {
 	width: 1189,
 	height: 643,
 	fps: 25,
-	color: "#235594",
+	color: "#009900",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1699307417945", id:"index_atlas_1"},
-		{src:"sounds/entrar.mp3?1699307418071", id:"entrar"},
-		{src:"sounds/error.mp3?1699307418071", id:"error"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1699307418071", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1699307418071", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1699307418071", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1699307418071", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1713404489619", id:"index_atlas_1"},
+		{src:"sounds/entrar.mp3?1713404489720", id:"entrar"},
+		{src:"sounds/error.mp3?1713404489720", id:"error"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1713404489720", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1713404489720", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1713404489720", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1713404489720", id:"an.TextInput"}
 	],
 	preloads: []
 };

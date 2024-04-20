@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[3602,659,426,226],[3111,2973,447,102],[3560,2973,447,102],[2085,2991,447,102],[2534,3019,447,102],[0,3040,447,102],[449,3040,447,102],[1137,3040,238,101],[2983,3077,238,101],[3223,3077,238,101],[3463,3077,238,101],[2085,2643,238,102],[898,3040,237,102],[3602,887,423,122],[3111,2849,423,122],[3536,2849,423,122],[3791,2630,296,89],[3791,2721,296,89],[3964,1098,87,87],[3964,1187,87,87],[3964,1276,87,87],[3964,1365,87,87],[4020,0,61,63],[4020,130,61,62],[4020,65,61,63],[3964,1454,89,64],[0,1166,2362,1132],[3877,492,157,163],[0,0,2376,1164],[2085,2849,590,140],[2677,2849,432,168],[2085,2300,230,231],[3791,2459,169,169],[4083,0,2,78],[3877,290,200,200],[3964,1520,87,61],[3703,3077,147,70],[3602,0,273,657],[1427,2300,656,835],[3964,1011,130,85],[2085,2533,235,108],[2085,2747,153,90],[3458,1909,328,144],[3877,0,141,288],[4020,194,72,52],[3852,3077,140,67],[3791,1909,267,548],[2364,2109,1425,738],[3458,1029,504,878],[2378,1029,1078,1078],[2378,0,1222,1027],[0,2300,1425,738]]}
+		{name:"index_atlas_1", frames: [[3602,659,426,226],[2599,2991,447,102],[3048,3019,447,102],[0,3040,447,102],[449,3040,447,102],[898,3040,447,102],[2599,3095,447,102],[3736,3097,238,101],[3048,3123,238,101],[1347,3137,238,101],[1587,3137,238,101],[2085,2643,238,102],[3497,3097,237,102],[3602,887,423,122],[3625,2849,423,122],[3625,2973,423,122],[3791,2630,296,89],[3791,2721,296,89],[3964,1098,87,87],[3964,1187,87,87],[3964,1276,87,87],[3964,1365,87,87],[4020,0,61,63],[4020,130,61,62],[4020,65,61,63],[3964,1454,89,64],[0,1166,2362,1132],[0,0,2376,1164],[2599,2849,590,140],[3191,2849,432,168],[2085,2300,230,231],[3791,2459,169,169],[4083,0,2,78],[3877,290,200,200],[3964,1520,87,61],[3877,584,147,70],[3602,0,273,657],[1427,2300,656,835],[3964,1011,130,85],[2085,2533,235,108],[3877,492,153,90],[3458,1909,328,144],[3877,0,141,288],[4020,194,72,52],[2085,2747,140,67],[3791,1909,267,548],[2364,2109,1425,738],[3458,1029,504,878],[2378,1029,1078,1078],[2085,2849,512,512],[2378,0,1222,1027],[0,2300,1425,738]]}
 ];
 
 
@@ -216,161 +216,161 @@ lib.ssMetadata = [
 
 
 
-(lib.Fondoreloj = function() {
+(lib.fondo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.fondo = function() {
+(lib.FondoSopaLineaDer = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(28);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.FondoSopaLineaDer = function() {
+(lib.FOndoSopaLineaPunteadaIzq = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(29);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.FOndoSopaLineaPunteadaIzq = function() {
+(lib.IconMensaje = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(30);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.IconMensaje = function() {
+(lib.imgsopaLetras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(31);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.imgsopaLetras = function() {
+(lib.LineasSeparadoras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(32);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.LineasSeparadoras = function() {
+(lib.Lupafondo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(33);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Lupafondo = function() {
+(lib.PatoPicoAbajo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(34);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PatoPicoAbajo = function() {
+(lib.PatoPicoArriba = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(35);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PatoPicoArriba = function() {
+(lib.PatoSilueta = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(36);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PatoSilueta = function() {
+(lib.pato = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(37);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.pato = function() {
+(lib.PicoAbajo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(38);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PicoAbajo = function() {
+(lib.picoarriba = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(39);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.picoarriba = function() {
+(lib.PicoAbajo_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(40);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PicoAbajo_1 = function() {
+(lib.PicoArriba = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(41);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.PicoArriba = function() {
+(lib.Profesoraala = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(42);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Profesoraala = function() {
+(lib.ProfesoraPicoAbajo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(43);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ProfesoraPicoAbajo = function() {
+(lib.ProfesoraPicoArriba = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(44);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ProfesoraPicoArriba = function() {
+(lib.ProfesoraSilueta_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(45);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ProfesoraSilueta_1 = function() {
+(lib.RetroalimetaciónFinalSopaLetras = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(46);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.RetroalimetaciónFinalSopaLetras = function() {
+(lib.SiluetaPato = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(47);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.SiluetaPato = function() {
+(lib.SopaFOndo = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(48);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.SopaFOndo = function() {
+(lib.stopwatch_3126752 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(49);
 }).prototype = p = new cjs.Sprite();
@@ -1461,7 +1461,7 @@ if (reversed == null) { reversed = false; }
 		createjs.Sound.stop();
 		 
 		
-		sound0 = createjs.Sound.play("Instrucciones", { volume: 0.3, loop: -1 }); 
+		sound0 = createjs.Sound.play("Instrucciones"); 
 		
 		
 		stage.on('drawstart', initStage, this, true);
@@ -1597,8 +1597,7 @@ if (reversed == null) { reversed = false; }
 		
 		// Función para iniciar el cronómetro
 		function iniciarCronometro() {
-		 //var tiempo = 601;
-			 var tiempo = 200;
+		 var tiempo = 601;
 		
 		  function actualizarCronometro() {
 		    tiempo--;
@@ -1685,16 +1684,16 @@ if (reversed == null) { reversed = false; }
 	this.instance_3.setTransform(593.5,284,1,1,0,0,0,590.5,283);
 	this.instance_3.alpha = 0.3516;
 
-	this.text1 = new cjs.Text("00:00:00", "24px 'Algerian'");
+	this.text1 = new cjs.Text("00:00:00", "24px 'Algerian'", "#0066CC");
 	this.text1.name = "text1";
 	this.text1.lineHeight = 29;
-	this.text1.lineWidth = 110;
+	this.text1.lineWidth = 99;
 	this.text1.parent = this;
-	this.text1.setTransform(1051.7,309.65);
+	this.text1.setTransform(974.7,477.6);
 	this.text1.shadow = new cjs.Shadow("rgba(204,255,204,1)",3,3,4);
 
-	this.instance_4 = new lib.Fondoreloj();
-	this.instance_4.setTransform(1168,254,0.8726,0.8405,0,0,180);
+	this.instance_4 = new lib.stopwatch_3126752();
+	this.instance_4.setTransform(1109.8,373,0.3805,0.3665,0,0,180);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.btnPlay}]}).to({state:[{t:this.instance_4},{t:this.text1}]},1).to({state:[]},1).to({state:[]},1).wait(1));
 
@@ -1814,13 +1813,13 @@ lib.properties = {
 	color: "#006600",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1695439217658", id:"index_atlas_1"},
-		{src:"sounds/audioLoop.mp3?1695439217885", id:"audioLoop"},
-		{src:"sounds/Instrucciones.mp3?1695439217885", id:"Instrucciones"},
-		{src:"sounds/SoundBoton.mp3?1695439217885", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1695439217885", id:"sound"},
-		{src:"sounds/retroalimentacion.mp3?1695439217885", id:"retroalimentacion"},
-		{src:"sounds/retroNegativa.mp3?1695439217885", id:"retroNegativa"}
+		{src:"images/index_atlas_1.png?1713587041464", id:"index_atlas_1"},
+		{src:"sounds/audioLoop.mp3?1713587041659", id:"audioLoop"},
+		{src:"sounds/Instrucciones.mp3?1713587041659", id:"Instrucciones"},
+		{src:"sounds/SoundBoton.mp3?1713587041659", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1713587041659", id:"sound"},
+		{src:"sounds/retroalimentacion.mp3?1713587041659", id:"retroalimentacion"},
+		{src:"sounds/retroNegativa.mp3?1713587041659", id:"retroNegativa"}
 	],
 	preloads: []
 };
