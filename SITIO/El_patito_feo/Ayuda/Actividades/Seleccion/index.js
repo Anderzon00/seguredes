@@ -310,6 +310,7 @@ if (reversed == null) { reversed = false; }
 		
 		
 		_this.btnCerrar1.on('click', function(){
+		
 		createjs.Sound.stop();
 			window.parent.ocultaAyuda();
 		});
@@ -401,8 +402,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1713544685162", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1713544685202", id:"ayuda1"}
+		{src:"images/index_atlas_P_1.png?1713765077744", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1713765077779", id:"ayuda1"}
 	],
 	preloads: []
 };

@@ -3,8 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_P_1", frames: [[1316,522,1267,286],[0,741,1267,363],[1269,810,1183,286],[1316,0,1357,520],[0,0,1314,739]]},
-		{name:"index_atlas_P_2", frames: [[0,246,927,242],[0,0,945,244],[324,597,355,105],[324,810,355,104],[324,490,356,105],[324,704,356,104],[125,813,63,63],[125,878,60,60],[0,813,123,123],[0,490,322,321]]}
+		{name:"index_atlas_P_1", frames: [[0,887,1267,286],[0,522,1267,363],[0,1175,1183,286],[0,1709,927,242],[0,1463,945,244],[947,1570,355,105],[1185,1281,355,104],[947,1463,356,105],[1185,1175,356,104],[1185,1387,63,63],[1250,1387,60,60],[1253,1677,123,123],[929,1709,322,321],[0,0,1357,520]]}
 ];
 
 
@@ -50,85 +49,78 @@ lib.ssMetadata = [
 
 
 (lib._4 = function() {
-	this.initialize(ss["index_atlas_P_2"]);
-	this.gotoAndStop(0);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib._5 = function() {
-	this.initialize(ss["index_atlas_P_2"]);
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.btnAnterior = function() {
-	this.initialize(ss["index_atlas_P_2"]);
-	this.gotoAndStop(2);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.BtnAnteriorHover = function() {
-	this.initialize(ss["index_atlas_P_2"]);
+	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnSiguiente = function() {
-	this.initialize(ss["index_atlas_P_2"]);
+(lib._5 = function() {
+	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.BtnSiguienteHover = function() {
-	this.initialize(ss["index_atlas_P_2"]);
+(lib.btnAnterior = function() {
+	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnSonidoContenido = function() {
-	this.initialize(ss["index_atlas_P_2"]);
+(lib.BtnAnteriorHover = function() {
+	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.BtnStopSonidoContenido = function() {
-	this.initialize(ss["index_atlas_P_2"]);
+(lib.btnSiguiente = function() {
+	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.btnX = function() {
-	this.initialize(ss["index_atlas_P_2"]);
+(lib.BtnSiguienteHover = function() {
+	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.FlechaIndicativa = function() {
-	this.initialize(ss["index_atlas_P_2"]);
+(lib.btnSonidoContenido = function() {
+	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.BtnStopSonidoContenido = function() {
+	this.initialize(ss["index_atlas_P_1"]);
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.btnX = function() {
+	this.initialize(ss["index_atlas_P_1"]);
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.FlechaIndicativa = function() {
+	this.initialize(ss["index_atlas_P_1"]);
+	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.FondoTexto = function() {
 	this.initialize(ss["index_atlas_P_1"]);
-	this.gotoAndStop(3);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib._img = function() {
-	this.initialize(ss["index_atlas_P_1"]);
-	this.gotoAndStop(4);
+	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -762,16 +754,10 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.ayuda).wait(1));
 
-	// Capa_3
-	this.instance = new lib._img();
-	this.instance.setTransform(0,0,1.0396,1.0392);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(682.5,384,683.5,384);
+p.nominalBounds = new cjs.Rectangle(682.5,384,683,384);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -781,13 +767,12 @@ lib.properties = {
 	color: "#006699",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1713461310967", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1713461310967", id:"index_atlas_P_2"},
-		{src:"sounds/ayuda1.mp3?1713461311023", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1713461311023", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1713461311023", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1713461311023", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1713461311023", id:"ayuda5"}
+		{src:"images/index_atlas_P_1.png?1713653896586", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1713653896650", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1713653896650", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1713653896650", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1713653896650", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1713653896650", id:"ayuda5"}
 	],
 	preloads: []
 };

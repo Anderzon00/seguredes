@@ -2976,7 +2976,7 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.Interpolación3();
 	this.instance.setTransform(2048.4,521.4,1.0208,1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(74).to({scaleX:1,x:1095.45,mode:"synched",startPosition:0},25).to({startPosition:0},75).to({x:176},25).to({startPosition:0},75).to({scaleX:1.0009,x:-754.55},25).to({startPosition:0},75).to({scaleX:1.0175,x:-1683.35},25).to({scaleX:1,x:-749.15},20).to({x:178.15},20).to({x:1096.95},20).to({x:2019.2},20).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(74).to({scaleX:1,x:1095.45,mode:"synched",startPosition:0},25).to({startPosition:0},75).to({x:176},25).to({startPosition:0},75).to({scaleX:1.0009,x:-754.55},25).to({startPosition:0},23).to({startPosition:0},52).to({scaleX:1.0175,x:-1683.35},25).to({scaleX:1,x:-749.15},20).to({x:178.15},20).to({x:1096.95},20).to({x:2019.2},20).wait(1));
 
 	this._renderFirstFrame();
 
@@ -3087,20 +3087,20 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CespedFrente.png?1711495272812", id:"CespedFrente"},
-		{src:"images/Fondo.png?1711495272812", id:"Fondo"},
-		{src:"images/Fondo_1.png?1711495272812", id:"Fondo_1"},
-		{src:"images/Fondo_1_1.png?1711495272812", id:"Fondo_1_1"},
-		{src:"images/Pantalla.png?1711495272812", id:"Pantalla"},
-		{src:"images/PortadaCuento2.png?1711495272812", id:"PortadaCuento2"},
-		{src:"images/index_atlas_1.png?1711495272647", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1711495272647", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1711495272647", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1711495272647", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1711495272648", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1711495272650", id:"index_atlas_6"},
-		{src:"sounds/intro.mp3?1711495272812", id:"intro"},
-		{src:"sounds/sound.mp3?1711495272812", id:"sound"}
+		{src:"images/CespedFrente.png?1711938081102", id:"CespedFrente"},
+		{src:"images/Fondo.png?1711938081102", id:"Fondo"},
+		{src:"images/Fondo_1.png?1711938081102", id:"Fondo_1"},
+		{src:"images/Fondo_1_1.png?1711938081102", id:"Fondo_1_1"},
+		{src:"images/Pantalla.png?1711938081102", id:"Pantalla"},
+		{src:"images/PortadaCuento2.png?1711938081102", id:"PortadaCuento2"},
+		{src:"images/index_atlas_1.png?1711938080941", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1711938080941", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1711938080941", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1711938080942", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1711938080942", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1711938080944", id:"index_atlas_6"},
+		{src:"sounds/intro.mp3?1711938081102", id:"intro"},
+		{src:"sounds/sound.mp3?1711938081102", id:"sound"}
 	],
 	preloads: []
 };

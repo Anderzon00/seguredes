@@ -732,163 +732,203 @@ if (reversed == null) { reversed = false; }
 	var props = new Object();
 	props.mode = mode;
 	props.startPosition = startPosition;
-	props.labels = {Cuento:13,Contenidos:14,Actividades:15,Ayuda:16};
+	props.labels = {Play:12,Cuento:13,Contenidos:14,Actividades:15,Ayuda:16};
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [0,12,13];
+	this.actionFrames = [0,12,13,14,15];
 	// timeline functions:
 	this.frame_0 = function() {
-		this.stop(); 
+		this.stop();
 		
-		stage.on('drawstart', initStage, this, true);
-		function initStage() {	stretchToFit();}
+		var iframec = document.createElement('iframe');
+		iframec.id = 'contenidos';
+		iframec.style.position = 'absolute';
+		iframec.style.border = 'none';
+		iframec.style.zIndex = '1'; 
+		iframec.allow = 'autoplay';
+		document.body.appendChild(iframec);
+		iframec.src = '';
+		
+		function ajustarIframe2() {		
+			iframec.style.left = 2.360 * Math.max(window.innerWidth) / 32 + 'px';
+			iframec.style.top = 1.059 * Math.max(window.innerHeight) / 16 + 'px';	
+			iframec.style.width =  27.9250 * (Math.max(window.innerWidth) / 32) + 'px';   
+			iframec.style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px'
+		}
+		
+		ajustarIframe2();
+		
+		window.addEventListener('resize', ajustarIframe2);
+		
+		document.getElementById('contenidos').style.display = 'none';
 		
 		var _this = this;
-		_this.btnInicio.on('click', function () {
-			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
-				window.open("../../", "_self");}, this);
+		
+		_this.btnAyuda.on('click', function () {
+		_this.gotoAndStop("play");
+		    document.getElementById('mi_iframe').style.display = 'block';	
 		});
 		
-		_this.btnVolver.on('click', function () {
-			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
-				window.open("../MenuPrincipal", "_self");
+		_this.btnContenidos.on('click', function () {
+			document.getElementById('contenidos').src ="./ContenidosCaperucita/index.html" ;
+			_this.gotoAndStop("Contenidos");
+			document.getElementById('contenidos').style.display = 'block';		  
+		});
+		
+		_this.btnActividades.on('click', function () {
+			document.getElementById('contenidos').src = "./ActividadesCaperucita/Menu/index.html";
+			_this.gotoAndStop("Actividades");
+			document.getElementById('contenidos').style.display = 'block';
+		});
+		this.stop();
+		
+		var iframe = document.createElement('iframe');
+		iframe.id = 'mi_iframe';
+		iframe.style.position = 'absolute';
+		iframe.style.border = 'none';
+		iframe.style.zIndex = '2'; 
+		iframe.allow = 'autoplay';
+		document.body.appendChild(iframe);
+		iframe.src = './Ayuda/index.html'
+		document.getElementById('mi_iframe').style.display = 'none';
+		
+		
+		
+		function ajustarIframe() {	 
+			document.getElementById('mi_iframe').style.width =  window.innerWidth  + 'px';
+			document.getElementById('mi_iframe').style.height = window.innerHeight  + 'px';
+		}
+		
+		ajustarIframe();
+		
+		window.addEventListener('resize', ajustarIframe);
+		stage.on('drawstart', initStage, this, true);
+		function initStage() {
+			stretchToFit();
+		}
+		
+		var _this = this;
+		
+		_this.btnVolverAcuento.on('click', function () {
+			createjs.Sound.play("sound2", {
+				volume: 0.8
+			}).on("complete", function () {
+				irCuento()
 			}, this);
 		});
 		
-		_this.btnContenidos.on('click', function () {	
-		_this.gotoAndStop("Contenidos");
-		document.getElementById('contenidos').style.display = 'block';
-		document.getElementById('cuento').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
-			document.getElementById('i_cuento').src = 'about:blank';
-			document.getElementById('i_contenidos').src=  "./ContenidosCaperucita/index.html" 
-		    document.getElementById('i_actividades').src=  'about:blank';
-		    document.getElementById('i_ayuda').src = 'about:blank'; 		 
+		_this.btnInicio.on('click', function () {
+			createjs.Sound.play("sound2", {
+				volume: 0.8
+			}).on("complete", function () {
+				window.open("../../", "_self");
+			}, this);
 		});
 		
-		_this.btnActividades.on('click', function () {	
-		_this.gotoAndStop("Actividades");	
-		document.getElementById('actividades').style.display = 'block';
-		document.getElementById('cuento').style.display = 'none';
-		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('i_cuento').src = 'about:blank';
-		document.getElementById('i_contenidos').src =  'about:blank';
-		document.getElementById('i_actividades').src=  "./ActividadesCaperucita/Menu/index.html"
-		document.getElementById('i_ayuda').src = 'about:blank'; 			 		 
-		});
-		
-		this.btnAyuda.on('click', function () {		
-		_this.gotoAndStop("Ayuda");
-		document.getElementById('ayuda').style.display = 'block';
-		document.getElementById('cuento').style.display = 'none';
-		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
-		document.getElementById('i_contenidos').src =  'about:blank';
-		document.getElementById('i_cuento').src = 'about:blank';
-		document.getElementById('i_actividades').src=  'about:blank';
-		document.getElementById('i_ayuda').src= "./dearflip/index.html"	
+		_this.btnVolver.on('click', function () {
+			createjs.Sound.play("sound2", {
+				volume: 0.8
+			}).on("complete", function () {
+				window.open("../MenuPrincipal", "_self");
+			}, this);
 		});
 		
 		_this.button_popup.on('click', function () {
 			_this.gotoAndPlay(1);
 		});
-		
-		var elementCuento = document.createElement('div');
-		elementCuento.setAttribute('id', 'cuento');
-		document.body.appendChild(elementCuento);
-		elementCuento.style.position = "absolute"; 
-		elementCuento.innerHTML = '<iframe id="i_cuento" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
-		 
-		var elementContenidos = document.createElement('div');
-		elementContenidos.setAttribute('id', 'contenidos');
-		document.body.appendChild(elementContenidos);
-		elementContenidos.style.position = "absolute"; 
-		elementContenidos.innerHTML = '<iframe id="i_contenidos" style="border:none; overflow: hidden"; allow="autoplay"  >';
-		 
-		var elementActividades = document.createElement('div');
-		elementActividades.setAttribute('id', 'actividades');
-		document.body.appendChild(elementActividades);
-		elementActividades.style.position = "absolute"; 
-		elementActividades.innerHTML = '<iframe   id="i_actividades" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
-		 
-		var elementAyuda = document.createElement('div');
-		elementAyuda.setAttribute('id', 'ayuda');
-		document.body.appendChild(elementAyuda);
-		elementAyuda.style.position = "absolute"; 
-		elementAyuda.innerHTML = '<iframe   id="i_ayuda" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
-		   
-		function embed(id) {
-		  var element = document.getElementById(id);
-		  element.style.left = 2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		  element.style.top = 1.059 * Math.max(window.innerHeight) / 16 + 'px'; 
-		  element.querySelector(`#i_${id}`).style.width = 27.9250 * (Math.max(window.innerWidth) / 32) + 'px';
-		  element.querySelector(`#i_${id}`).style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		
-		function handleResize() {
-		  actions.forEach((action) => {
-		    embed(action);
-		  });
-		}
-		
-		window.addEventListener('resize', handleResize);
-		
-		const actions = ["cuento", "contenidos", "actividades", "ayuda"];
-		
-		actions.forEach((action) => {
-		  embed(action);
-		});
-		
-		
-		document.getElementById('cuento').style.display = 'none';
-		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
-		var _this = this;
-		
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
-			}).on("complete", function () {
-				irCuento()
-			}, this);
-		});
 	}
 	this.frame_12 = function() {
-		this.stop();
-		document.getElementById('cuento').style.display = 'none';
-		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
-		document.getElementById('i_cuento').src="./CuentoCaperucita/Escena_1/index.html";
-		document.getElementById('i_contenidos').src =  'about:blank';
-		document.getElementById('i_actividades').src=  'about:blank';
-		document.getElementById('i_ayuda').src = 'about:blank'; 		
 		var _this = this;
+		_this.botones.visible = false;
 		
-		_this.bntPlay.on('click', function(){ 
+		this.stop();
+		document.getElementById('contenidos').src =  "";
+		
+		var _this= this;
+		var iframe = document.getElementById('mi_iframe');
+		iframe.src = './Ayuda/index.html'; 
+		
+		document.getElementById('contenidos').style.display = 'none';
+		
+		_this.bntPlay.on('click', function(){	
+		document.getElementById('contenidos').src = "./CuentoCaperucita/Escena_1/index.html";	
 		createjs.Sound.play("SoundPlay", {	volume: 0.8
 			}).on("complete", function () {
 				_this.gotoAndStop("Cuento");
-			}, this);
-			
+			}, this);	
 		});
-		
-		var _this = this;
-		_this.botones.visible = false;
 	}
 	this.frame_13 = function() {
-		document.getElementById('cuento').style.display = 'block';
-		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
+		document.getElementById('contenidos').style.display = 'block';
+		
+		var _this= this;
+		var iframe = document.getElementById('mi_iframe');
+		iframe.src = './Ayuda/cuento/index.html'; 
+		
+		_this.btnAyudaCuento.on('click', function () {
+			var iframeContenidos = document.getElementById('contenidos');
+			var url = iframeContenidos.contentWindow.location.href;
+			var audioMuted = iframeContenidos.contentWindow.createjs.Sound.muted;
+			iframeContenidos.contentWindow.createjs.Sound.muted = !audioMuted;	
+		    document.getElementById('mi_iframe').style.display = 'block';    
+		});
+	}
+	this.frame_14 = function() {
+		var btnAyuda = this.btnAyudaCotenidos;
+		var _this=this;
+		
+		var iframe = document.getElementById('mi_iframe');
+		iframe.src = './Ayuda/Contenidos/index.html';
+		
+		
+		
+		btnAyuda.on('click', function () {	
+			
+			var iframeContenidos = document.getElementById('contenidos');
+		
+		var url = iframeContenidos.contentWindow.location.href;
+			
+			
+			if (url.includes('/Que_es/') || url.includes('/Como_ocurre/')) {		
+				iframe.src = './Ayuda/Contenidos/Que_es/index.html';
+			} 
+			else if (url.includes('/Como_evitarlo/') || url.includes('/Si_me_ocurre/') || url.includes('/Contenido_Extra/')) {
+				iframe.src = './Ayuda/Contenidos/Como_evitarlo/index.html';
+			}		
+			iframe.style.display = 'block';	
+		});
+	}
+	this.frame_15 = function() {
+		var btnAyuda = this.btnAyudaActividades;
+		
+		var iframe = document.getElementById('mi_iframe');
+		iframe.src = './Ayuda/Actividades/Menu/index.html';
+		
+		var _this = this;
+		
+		btnAyuda.on('click', function () {
+		
+			var iframeContenidos = document.getElementById('contenidos');
+			var url = iframeContenidos.contentWindow.location.href;
+		
+			var audioMuted = iframeContenidos.contentWindow.createjs.Sound.muted;
+			iframeContenidos.contentWindow.createjs.Sound.muted = !audioMuted;
+		
+			if (url.includes('/AplastarGolpear/')) {
+				iframe.src = './Ayuda/Actividades/AplastarGolpear/index.html';
+			} else if (url.includes('/ExplosionGlobos/')) {
+				iframe.src = './Ayuda/Actividades/ExplosionGlobos/index.html';
+			} else if (url.includes('/PeligroNoPeligro/')) {
+				iframe.src = './Ayuda/Actividades/PeligroNoPeligro/index.html';
+			}
+			iframe.style.display = 'block';
+		});
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(4));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(1).call(this.frame_14).wait(1).call(this.frame_15).wait(2));
 
 	// Capa_1
 	this.botones = new lib.Símbolo2();
@@ -965,7 +1005,22 @@ if (reversed == null) { reversed = false; }
 	this.btnVolver.setTransform(1205.7,737.75,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolver, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver,p:{y:737.75}},{t:this.btnContenidos,p:{scaleY:0.9778}},{t:this.btnActividades,p:{y:32.85}},{t:this.btnAyuda,p:{y:32.85}}]}).to({state:[{t:this.btnVolver,p:{y:738.75}},{t:this.btnContenidos,p:{scaleY:1}},{t:this.btnActividades,p:{y:32.8}},{t:this.btnAyuda,p:{y:32.8}}]},13).to({state:[{t:this.btnVolver,p:{y:741.75}},{t:this.btnContenidos,p:{scaleY:1}},{t:this.btnActividades,p:{y:32.8}},{t:this.btnAyuda,p:{y:32.8}}]},1).to({state:[{t:this.btnVolver,p:{y:738.75}},{t:this.btnContenidos,p:{scaleY:1}},{t:this.btnActividades,p:{y:32.8}},{t:this.btnAyuda,p:{y:32.8}}]},1).wait(2));
+	this.btnAyudaCuento = new lib.btnAyuda();
+	this.btnAyudaCuento.name = "btnAyudaCuento";
+	this.btnAyudaCuento.setTransform(1214.85,32.8);
+	new cjs.ButtonHelper(this.btnAyudaCuento, 0, 1, 2);
+
+	this.btnAyudaCotenidos = new lib.btnAyuda();
+	this.btnAyudaCotenidos.name = "btnAyudaCotenidos";
+	this.btnAyudaCotenidos.setTransform(1214.85,32.8);
+	new cjs.ButtonHelper(this.btnAyudaCotenidos, 0, 1, 2);
+
+	this.btnAyudaActividades = new lib.btnAyuda();
+	this.btnAyudaActividades.name = "btnAyudaActividades";
+	this.btnAyudaActividades.setTransform(1214.85,32.8);
+	new cjs.ButtonHelper(this.btnAyudaActividades, 0, 1, 2);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver,p:{y:737.75}},{t:this.btnContenidos,p:{scaleY:0.9778}},{t:this.btnActividades,p:{y:32.85}},{t:this.btnAyuda}]}).to({state:[{t:this.btnVolver,p:{y:738.75}},{t:this.btnContenidos,p:{scaleY:1}},{t:this.btnActividades,p:{y:32.8}},{t:this.btnAyudaCuento}]},13).to({state:[{t:this.btnVolver,p:{y:741.75}},{t:this.btnContenidos,p:{scaleY:1}},{t:this.btnActividades,p:{y:32.8}},{t:this.btnAyudaCotenidos}]},1).to({state:[{t:this.btnVolver,p:{y:738.75}},{t:this.btnContenidos,p:{scaleY:1}},{t:this.btnActividades,p:{y:32.8}},{t:this.btnAyudaActividades}]},1).wait(2));
 
 	// tarjeta
 	this.instance_6 = new lib.VentanaPortadaReproduccion();
@@ -1015,14 +1070,14 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1711318746063", id:"bannernegro1"},
-		{src:"images/fondo1111.png?1711318746063", id:"fondo1111"},
-		{src:"images/fondoMorado.png?1711318746063", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1711318745999", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1711318745999", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1711318746063", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1711318746063", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1711318746063", id:"sound1"}
+		{src:"images/bannernegro1.png?1713821404021", id:"bannernegro1"},
+		{src:"images/fondo1111.png?1713821404021", id:"fondo1111"},
+		{src:"images/fondoMorado.png?1713821404021", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1713821403959", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1713821403960", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1713821404021", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1713821404021", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1713821404021", id:"sound1"}
 	],
 	preloads: []
 };

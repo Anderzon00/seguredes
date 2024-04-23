@@ -21,11 +21,12 @@
 	top:0;bottom:0;
   }
 </style>
-<script src="libs/1.0.0/createjs.min.js"></script>
-<script src="index.js?1699211187862"></script>
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="index.js?1713834206580"></script>
 <script>
 // Global Scripts
 	var root=this;
+var pos="";
 function funcionInvisible() { 
 exportRoot.botones.gotoAndStop(0);
     } 
@@ -34,6 +35,12 @@ exportRoot.botones.gotoAndStop(1);
     } 	
 	function irCuento(){
 exportRoot.gotoAndStop(12);	
+}
+function ocultaAyuda() {
+	document.getElementById('mi_iframe').style.display = 'none';
+	var iframeContenidos = document.getElementById('contenidos');
+	var audioMuted = iframeContenidos.contentWindow.createjs.Sound.muted;
+	iframeContenidos.contentWindow.createjs.Sound.muted = !audioMuted;
 }</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;

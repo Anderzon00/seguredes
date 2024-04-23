@@ -748,185 +748,216 @@ if (reversed == null) { reversed = false; }
 	var props = new Object();
 	props.mode = mode;
 	props.startPosition = startPosition;
-	props.labels = {Cuento:13,Contenidos:14,Actividades:15,Ayuda:16};
+	props.labels = {Play:12,Cuento:13,Contenidos:14,Actividades:15};
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [0,12,13,14,15,16];
+	this.actionFrames = [0,12,13,14,15];
 	// timeline functions:
 	this.frame_0 = function() {
+		this.stop();
+		
+		var iframec = document.createElement('iframe');
+		iframec.id = 'contenidos';
+		iframec.style.position = 'absolute';
+		iframec.style.border = 'none';
+		iframec.style.zIndex = '1'; 
+		iframec.allow = 'autoplay';
+		document.body.appendChild(iframec);
+		iframec.src = '';
+		
+		function ajustarIframe2() {		
+			iframec.style.left = 2.360 * Math.max(window.innerWidth) / 32 + 'px';
+			iframec.style.top = 1.059 * Math.max(window.innerHeight) / 16 + 'px';	
+			iframec.style.width =  27.9250 * (Math.max(window.innerWidth) / 32) + 'px';   
+			iframec.style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px'
+		}
+		
+		ajustarIframe2();
+		
+		window.addEventListener('resize', ajustarIframe2);
+		
+		document.getElementById('contenidos').style.display = 'none';
+		
 		var _this = this;
 		
-		_this.btnVolverAcuento.on('click', function(){
-		createjs.Sound.play("sound2", {	volume: 0.8
+		_this.btnAyuda.on('click', function () {
+		_this.gotoAndStop("play");
+		    document.getElementById('mi_iframe').style.display = 'block';	
+		});
+		
+		_this.btnContenidos.on('click', function () {
+			document.getElementById('contenidos').src ="./ContenidosPinocho/index.html" 
+			_this.gotoAndStop("Contenidos");
+			document.getElementById('contenidos').style.display = 'block';		  
+		});
+		
+		_this.btnActividades.on('click', function () {
+			document.getElementById('contenidos').src = "/ActividadesPinocho/Menu/index.html";
+			_this.gotoAndStop("Actividades");
+			document.getElementById('contenidos').style.display = 'block';
+		});
+		this.stop();
+		
+		var iframe = document.createElement('iframe');
+		iframe.id = 'mi_iframe';
+		iframe.style.position = 'absolute';
+		iframe.style.border = 'none';
+		iframe.style.zIndex = '2'; 
+		iframe.allow = 'autoplay';
+		document.body.appendChild(iframe);
+		iframe.src = './Ayuda/index.html'
+		document.getElementById('mi_iframe').style.display = 'none';
+		
+		
+		
+		function ajustarIframe() {	 
+			document.getElementById('mi_iframe').style.width =  window.innerWidth  + 'px';
+			document.getElementById('mi_iframe').style.height = window.innerHeight  + 'px';
+		}
+		
+		ajustarIframe();
+		
+		window.addEventListener('resize', ajustarIframe)
+		stage.on('drawstart', initStage, this, true);
+		function initStage() {
+			stretchToFit();
+		}
+		
+		var _this = this;
+		
+		_this.btnVolverAcuento.on('click', function () {
+			createjs.Sound.play("sound2", {
+				volume: 0.8
 			}).on("complete", function () {
 				irCuento()
 			}, this);
 		});
-		this.stop(); 
 		
-		stage.on('drawstart', initStage, this, true);
-		function initStage() {	stretchToFit();}
-		
-		var _this = this;
 		_this.btnInicio.on('click', function () {
-			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
-				window.open("../../", "_self");}, this);
-		});
-		
-		_this.btnVolver.on('click', function () {
-			createjs.Sound.play("sound2", {	volume: 0.8	}).on("complete", function (){
-				window.open("../MenuPrincipal", "_self");
+			createjs.Sound.play("sound2", {
+				volume: 0.8
+			}).on("complete", function () {
+				window.open("../../", "_self");
 			}, this);
 		});
 		
-		_this.btnContenidos.on('click', function () {	
-		_this.gotoAndStop("Contenidos");
-		document.getElementById('contenidos').style.display = 'block';
-		document.getElementById('cuento').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
-			document.getElementById('i_cuento').src = 'about:blank';
-			document.getElementById('i_contenidos').src=  "./ContenidosPinocho/index.html" 
-		    document.getElementById('i_actividades').src=  'about:blank';
-		    document.getElementById('i_ayuda').src = 'about:blank'; 		 
-		});
-		
-		_this.btnActividades.on('click', function () {	
-		_this.gotoAndStop("Actividades");	
-		document.getElementById('actividades').style.display = 'block';
-		document.getElementById('cuento').style.display = 'none';
-		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('i_cuento').src = 'about:blank';
-		document.getElementById('i_contenidos').src =  'about:blank';
-		document.getElementById('i_actividades').src=  "./ActividadesPinocho/Menu/index.html"
-		document.getElementById('i_ayuda').src = 'about:blank'; 			 		 
-		});
-		
-		this.btnAyuda.on('click', function () {		
-		_this.gotoAndStop("Ayuda");
-		document.getElementById('ayuda').style.display = 'block';
-		document.getElementById('cuento').style.display = 'none';
-		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
-		document.getElementById('i_contenidos').src =  'about:blank';
-		document.getElementById('i_cuento').src = 'about:blank';
-		document.getElementById('i_actividades').src=  'about:blank';
-		document.getElementById('i_ayuda').src= "./dearflip/index.html"	
+		_this.btnVolver.on('click', function () {
+			createjs.Sound.play("sound2", {
+				volume: 0.8
+			}).on("complete", function () {
+				window.open("../MenuPrincipal", "_self");
+			}, this);
 		});
 		
 		_this.popup.on('click', function () {
 			_this.gotoAndPlay(1);
 		});
-		
-		var elementCuento = document.createElement('div');
-		elementCuento.setAttribute('id', 'cuento');
-		document.body.appendChild(elementCuento);
-		elementCuento.style.position = "absolute"; 
-		elementCuento.innerHTML = '<iframe id="i_cuento" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
-		 
-		var elementContenidos = document.createElement('div');
-		elementContenidos.setAttribute('id', 'contenidos');
-		document.body.appendChild(elementContenidos);
-		elementContenidos.style.position = "absolute"; 
-		elementContenidos.innerHTML = '<iframe id="i_contenidos" style="border:none; overflow: hidden"; allow="autoplay"  >';
-		 
-		var elementActividades = document.createElement('div');
-		elementActividades.setAttribute('id', 'actividades');
-		document.body.appendChild(elementActividades);
-		elementActividades.style.position = "absolute"; 
-		elementActividades.innerHTML = '<iframe   id="i_actividades" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
-		 
-		var elementAyuda = document.createElement('div');
-		elementAyuda.setAttribute('id', 'ayuda');
-		document.body.appendChild(elementAyuda);
-		elementAyuda.style.position = "absolute"; 
-		elementAyuda.innerHTML = '<iframe   id="i_ayuda" style="border:none; overflow: hidden"  ; allow="autoplay"  >';
-		   
-		function embed(id) {
-		  var element = document.getElementById(id);
-		  element.style.left = 2.360 * Math.max(window.innerWidth) / 32 + 'px';
-		  element.style.top = 1.059 * Math.max(window.innerHeight) / 16 + 'px'; 
-		  element.querySelector(`#i_${id}`).style.width = 27.9250 * (Math.max(window.innerWidth) / 32) + 'px';
-		  element.querySelector(`#i_${id}`).style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		
-		function handleResize() {
-		  actions.forEach((action) => {
-		    embed(action);
-		  });
-		}
-		
-		window.addEventListener('resize', handleResize);
-		
-		const actions = ["cuento", "contenidos", "actividades", "ayuda"];
-		
-		actions.forEach((action) => {
-		  embed(action);
-		});
-		
-		
-		document.getElementById('cuento').style.display = 'none';
-		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
 	}
 	this.frame_12 = function() {
-		this.stop();
-		document.getElementById('cuento').style.display = 'none';
-		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
-		document.getElementById('i_cuento').src="./CuentoPinocho/E1AA/index.html";	;
-		document.getElementById('i_contenidos').src =  'about:blank';
-		document.getElementById('i_actividades').src=  'about:blank';
-		document.getElementById('i_ayuda').src = 'about:blank'; 		
 		var _this = this;
+		_this.botones.visible = false;
 		
-		_this.bntPlay.on('click', function(){ 
+		this.stop();
+		document.getElementById('contenidos').src =  "";
+		
+		var _this= this;
+		var iframe = document.getElementById('mi_iframe');
+		iframe.src = './Ayuda/index.html'; 
+		
+		document.getElementById('contenidos').style.display = 'none';
+		
+		_this.bntPlay.on('click', function(){	
+		document.getElementById('contenidos').src = "./CuentoPinocho/E1AA/index.html";	
 		createjs.Sound.play("SoundPlay", {	volume: 0.8
 			}).on("complete", function () {
 				_this.gotoAndStop("Cuento");
-			}, this);
-			
+			}, this);	
 		});
-		
-		var _this = this;
-		_this.botones.visible = false;
-		
-		var _this = this;
-		_this.botones.visible = false;
 	}
 	this.frame_13 = function() {
-		document.getElementById('cuento').style.display = 'block';
-		document.getElementById('contenidos').style.display = 'none';
-		document.getElementById('ayuda').style.display = 'none';
-		document.getElementById('actividades').style.display = 'none';
+		this.stop();
+		document.getElementById('contenidos').style.display = 'block';
+		
+		var _this= this;
+		_this.botones.visible = false;
+		
+		var iframe = document.getElementById('mi_iframe');
+		iframe.src = './Ayuda/cuento/index.html'; 
+		
+		_this.btnAyudaCuento.on('click', function () {
+			var iframeContenidos = document.getElementById('contenidos');
+			var url = iframeContenidos.contentWindow.location.href;
+			var audioMuted = iframeContenidos.contentWindow.createjs.Sound.muted;
+			iframeContenidos.contentWindow.createjs.Sound.muted = !audioMuted;	
+		    document.getElementById('mi_iframe').style.display = 'block';    
+		});
 	}
 	this.frame_14 = function() {
-		var _this = this; 
+		var btnAyuda = this.btnAyudaCotenidos;
+		var _this=this;
+		
+		var iframe = document.getElementById('mi_iframe');
+		iframe.src = './Ayuda/Contenidos/index.html';
+		
 		_this.botones.visible = true;
+		
+		btnAyuda.on('click', function () {	
+			
+			var iframeContenidos = document.getElementById('contenidos');
+		
+		var url = iframeContenidos.contentWindow.location.href;
+			
+			
+			if (url.includes('/Que_es/') || url.includes('/Como_ocurre/')) {		
+				iframe.src = './Ayuda/Contenidos/Que_es/index.html';
+			} 
+			else if (url.includes('/Como_evitarlo/') || url.includes('/Si_me_ocurre/') || url.includes('/Contenido_Extra/')) {
+				iframe.src = './Ayuda/Contenidos/Como_evitarlo/index.html';
+			}		
+			iframe.style.display = 'block';	
+		});
 	}
 	this.frame_15 = function() {
-		var _this = this; 
+		var btnAyuda = this.btnAyudaActividades;
+		
+		var iframe = document.getElementById('mi_iframe');
+		iframe.src = './Ayuda/Actividades3/Menu/index.html';
+		
+		 
+		var _this= this;
 		_this.botones.visible = false;
-	}
-	this.frame_16 = function() {
-		var _this = this;
-		_this.botones.visible = false;
+		
+		
+		btnAyuda.on('click', function () {
+		
+			var iframeContenidos = document.getElementById('contenidos');
+			var url = iframeContenidos.contentWindow.location.href;
+		
+			var audioMuted = iframeContenidos.contentWindow.createjs.Sound.muted;
+			iframeContenidos.contentWindow.createjs.Sound.muted = !audioMuted;
+		
+			if (url.includes('/Act1/')) {
+				iframe.src = './Ayuda/Actividades3/Act1/index.html';
+		 	} if (url.includes('/Act2/')) {
+				iframe.src = './Ayuda/Actividades3/Act2/index.html';
+		 	} if (url.includes('/Act3/')) {
+				iframe.src = './Ayuda/Actividades3/Act3/index.html';
+		 	}
+			iframe.style.display = 'block';
+		});
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(1).call(this.frame_14).wait(1).call(this.frame_15).wait(1).call(this.frame_16).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(1).call(this.frame_13).wait(1).call(this.frame_14).wait(1).call(this.frame_15).wait(1));
 
 	// Capa_1
 	this.botones = new lib.Símbolo2();
 	this.botones.name = "botones";
 	this.botones.setTransform(697.1,365.35,1,1,0,0,0,611.4,60.1);
 
-	this.timeline.addTween(cjs.Tween.get(this.botones).wait(17));
+	this.timeline.addTween(cjs.Tween.get(this.botones).wait(16));
 
 	// mensaje
 	this.popup = new lib.Simbologrupo();
@@ -948,9 +979,9 @@ if (reversed == null) { reversed = false; }
 	this.instance_2 = new lib.fondoMorado();
 	this.instance_2.setTransform(101,53,0.5016,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.popup}]}).to({state:[{t:this.popup}]},1).to({state:[{t:this.popup}]},10).to({state:[{t:this.bntPlay}]},1).to({state:[{t:this.instance}]},1).to({state:[{t:this.bntPlay},{t:this.instance_1}]},1).to({state:[{t:this.bntPlay},{t:this.instance_2}]},1).to({state:[]},1).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.popup).wait(1).to({regX:35.8,regY:32.3,scaleX:0.0028,scaleY:0.0031,x:683.1,y:352.4},10).to({_off:true,regX:0,regY:0,scaleX:1.5,scaleY:1.5,x:685,y:345},1).wait(5));
-	this.timeline.addTween(cjs.Tween.get(this.bntPlay).wait(11).to({_off:false},1).to({_off:true,regX:726.6,regY:709.8,scaleX:1.0019,scaleY:1,x:697.05,y:337.05,mode:"synched",startPosition:0},1).wait(1).to({_off:false,regX:0,regY:0,scaleX:1.0011,x:685.6,y:346,mode:"independent"},0).wait(1).to({scaleX:1,x:685,y:345},0).to({_off:true},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.popup}]}).to({state:[{t:this.popup}]},1).to({state:[{t:this.popup}]},10).to({state:[{t:this.bntPlay}]},1).to({state:[{t:this.instance}]},1).to({state:[{t:this.bntPlay},{t:this.instance_1}]},1).to({state:[{t:this.bntPlay},{t:this.instance_2}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.popup).wait(1).to({regX:35.8,regY:32.3,scaleX:0.0028,scaleY:0.0031,x:683.1,y:352.4},10).to({_off:true,regX:0,regY:0,scaleX:1.5,scaleY:1.5,x:685,y:345},1).wait(4));
+	this.timeline.addTween(cjs.Tween.get(this.bntPlay).wait(11).to({_off:false},1).to({_off:true,regX:726.6,regY:709.8,scaleX:1.0019,scaleY:1,x:697.05,y:337.05,mode:"synched",startPosition:0},1).wait(1).to({_off:false,regX:0,regY:0,scaleX:1.0011,x:685.6,y:346,mode:"independent"},0).wait(1).to({scaleX:1,x:685,y:345},0).wait(1));
 
 	// Capa_3
 	this.btnInicio = new lib.btnInicio();
@@ -961,14 +992,9 @@ if (reversed == null) { reversed = false; }
 	this.instance_3 = new lib.mano();
 	this.instance_3.setTransform(666.85,93,1,1,0,0,0,-97,-564.9);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.btnInicio}]}).to({state:[{t:this.btnInicio}]},12).to({state:[]},1).wait(4));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.btnInicio}]}).to({state:[{t:this.btnInicio}]},12).to({state:[]},1).wait(3));
 
 	// botones
-	this.btnAyuda = new lib.btnAyuda();
-	this.btnAyuda.name = "btnAyuda";
-	this.btnAyuda.setTransform(1214.1,32.5);
-	new cjs.ButtonHelper(this.btnAyuda, 0, 1, 2);
-
 	this.btnActividades = new lib.btnActividades();
 	this.btnActividades.name = "btnActividades";
 	this.btnActividades.setTransform(1019.5,32.5);
@@ -984,13 +1010,36 @@ if (reversed == null) { reversed = false; }
 	this.btnVolver.setTransform(1205.7,737.7,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolver, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda}]}).wait(17));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades}]}).wait(16));
+
+	// btnAyudaCotenidos
+	this.btnAyuda = new lib.btnAyuda();
+	this.btnAyuda.name = "btnAyuda";
+	this.btnAyuda.setTransform(1214.1,32.5);
+	new cjs.ButtonHelper(this.btnAyuda, 0, 1, 2);
+
+	this.btnAyudaCuento = new lib.btnAyuda();
+	this.btnAyudaCuento.name = "btnAyudaCuento";
+	this.btnAyudaCuento.setTransform(1214.1,32.5);
+	new cjs.ButtonHelper(this.btnAyudaCuento, 0, 1, 2);
+
+	this.btnAyudaCotenidos = new lib.btnAyuda();
+	this.btnAyudaCotenidos.name = "btnAyudaCotenidos";
+	this.btnAyudaCotenidos.setTransform(1214.1,32.5);
+	new cjs.ButtonHelper(this.btnAyudaCotenidos, 0, 1, 2);
+
+	this.btnAyudaActividades = new lib.btnAyuda();
+	this.btnAyudaActividades.name = "btnAyudaActividades";
+	this.btnAyudaActividades.setTransform(1214.1,32.5);
+	new cjs.ButtonHelper(this.btnAyudaActividades, 0, 1, 2);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnAyuda}]}).to({state:[{t:this.btnAyudaCuento}]},13).to({state:[{t:this.btnAyudaCotenidos}]},1).to({state:[{t:this.btnAyudaActividades}]},1).wait(1));
 
 	// barra
 	this.instance_4 = new lib.barraseguredes();
 	this.instance_4.setTransform(101,622,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(17));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(16));
 
 	// tarjeta
 	this.instance_5 = new lib.FondoOscuro();
@@ -1001,7 +1050,7 @@ if (reversed == null) { reversed = false; }
 	this.btnVolverAcuento.setTransform(163.8,737.45,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolverAcuento, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5}]}).to({state:[{t:this.btnVolverAcuento}]},13).wait(4));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5}]}).to({state:[{t:this.btnVolverAcuento}]},13).wait(3));
 
 	// fondo
 	this.instance_6 = new lib.NombreCuento();
@@ -1013,7 +1062,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_8 = new lib.fondo11();
 	this.instance_8.setTransform(-37,-37,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.instance_6}]}).wait(17));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.instance_6}]}).wait(16));
 
 	this._renderFirstFrame();
 
@@ -1028,16 +1077,16 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1699211187819", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1699211187819", id:"barraseguredes"},
-		{src:"images/fondo11.png?1699211187819", id:"fondo11"},
-		{src:"images/fondoMorado.png?1699211187819", id:"fondoMorado"},
-		{src:"images/FondoOscuro.png?1699211187819", id:"FondoOscuro"},
-		{src:"images/index_atlas_1.png?1699211187750", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1699211187751", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1699211187819", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1699211187819", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1699211187819", id:"sound1"}
+		{src:"images/bannernegro1.png?1713834206536", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1713834206536", id:"barraseguredes"},
+		{src:"images/fondo11.png?1713834206536", id:"fondo11"},
+		{src:"images/fondoMorado.png?1713834206536", id:"fondoMorado"},
+		{src:"images/FondoOscuro.png?1713834206536", id:"FondoOscuro"},
+		{src:"images/index_atlas_1.png?1713834206463", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1713834206464", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1713834206536", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1713834206536", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1713834206536", id:"sound1"}
 	],
 	preloads: []
 };

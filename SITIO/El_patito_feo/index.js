@@ -644,78 +644,63 @@ if (reversed == null) { reversed = false; }
 		iframe.id = 'mi_iframe';
 		iframe.style.position = 'absolute';
 		iframe.style.border = 'none';
-		iframe.style.zIndex = '3';
-		 
-		
+		iframe.style.zIndex = '2'; 
 		iframe.allow = 'autoplay';
 		document.body.appendChild(iframe);
+		iframe.src = './Ayuda/index.html'
+		document.getElementById('mi_iframe').style.display = 'none';
 		
-		function cambiarSrc(url) {
-		    var iframe = document.getElementById('mi_iframe');
-		    iframe.src = url;
-		}
+		
 		
 		function ajustarIframe() {	 
-			iframe.style.width =  window.innerWidth  + 'px';
-			iframe.style.height = window.innerHeight  + 'px';
+			document.getElementById('mi_iframe').style.width =  window.innerWidth  + 'px';
+			document.getElementById('mi_iframe').style.height = window.innerHeight  + 'px';
 		}
 		
 		ajustarIframe();
 		
 		window.addEventListener('resize', ajustarIframe);
+		this.stop();
 		
-		cambiarSrc('./Ayuda/index.html');
-		document.getElementById('mi_iframe').style.display = 'none';
+		var iframec = document.createElement('iframe');
+		iframec.id = 'contenidos';
+		iframec.style.position = 'absolute';
+		iframec.style.border = 'none';
+		iframec.style.zIndex = '1'; 
+		iframec.allow = 'autoplay';
+		document.body.appendChild(iframec);
+		iframec.src = '';
+		
+		function ajustarIframe2() {		
+			iframec.style.left = 2.360 * Math.max(window.innerWidth) / 32 + 'px';
+			iframec.style.top = 1.059 * Math.max(window.innerHeight) / 16 + 'px';	
+			iframec.style.width =  27.9250 * (Math.max(window.innerWidth) / 32) + 'px';   
+			iframec.style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';'px';
+		}
+		
+		ajustarIframe2();
+		
+		window.addEventListener('resize', ajustarIframe2);
+		
+		document.getElementById('contenidos').style.display = 'none';
 		
 		var _this = this;
 		
 		_this.btnAyuda.on('click', function () {
-		    document.getElementById('mi_iframe').style.display = 'block';
+		_this.gotoAndStop("play");
+		    document.getElementById('mi_iframe').style.display = 'block';	
 		});
-		var _this = this;
-		
-		var element = document.createElement('div');
-		element.setAttribute('id', 'contenidos');
-		document.body.appendChild(element);
-		element.style.position = "absolute";
-		
-		element.innerHTML = '<iframe id="i_contenidos" style="border:none; overflow: hidden"; allow="autoplay"  >';
-		
-		document.getElementById('contenidos').style.display = 'none';
 		
 		_this.btnContenidos.on('click', function () {
-			document.getElementById('i_contenidos').src = "./Contenidos/index.html";
+			document.getElementById('contenidos').src = "./Contenidos/index.html";
 			_this.gotoAndStop("Contenidos");
-			document.getElementById('contenidos').style.display = 'block';
+			document.getElementById('contenidos').style.display = 'block';		  
 		});
 		
 		_this.btnActividades.on('click', function () {
-			document.getElementById('i_contenidos').src = "./Actividades/Menu/index.html"
-			
+			document.getElementById('contenidos').src = "./Actividades/Menu/index.html"	
 			_this.gotoAndStop("Actividades");
 			document.getElementById('contenidos').style.display = 'block';
-		});
-		
-		function embed(id) {
-			var element = document.getElementById(id);
-			element.style.left = 2.360 * Math.max(window.innerWidth) / 32 + 'px';
-			element.style.top = 1.059 * Math.max(window.innerHeight) / 16 + 'px';
-			element.querySelector(`#i_${id}`).style.width = 27.9250 * (Math.max(window.innerWidth) / 32) + 'px';
-			element.querySelector(`#i_${id}`).style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
-		}
-		
-		function handleResize() {
-			actions.forEach((action) => {
-				embed(action);
-			});
-		}
-		
-		window.addEventListener('resize', handleResize);
-		
-		const actions = ["contenidos"];
-		
-		actions.forEach((action) => {
-			embed(action);
 		});
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
@@ -723,8 +708,6 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		var _this = this;
-		
-		
 		
 		_this.btnVolverAcuento.on('click', function () {
 			createjs.Sound.play("sound2", {
@@ -750,76 +733,86 @@ if (reversed == null) { reversed = false; }
 			}, this);
 		});
 		
-		
 		_this.button_popup.on('click', function () {
 			_this.gotoAndPlay(1);
 		});
 	}
 	this.frame_12 = function() {
+		this.stop();
+		document.getElementById('contenidos').src =  "";
+		
 		var _this= this;
 		var iframe = document.getElementById('mi_iframe');
 		iframe.src = './Ayuda/index.html'; 
+		
 		document.getElementById('contenidos').style.display = 'none';
 		
-		this.stop();
-		
-		var _this = this;
-		
-		_this.bntPlay.on('click', function(){ 
+		_this.bntPlay.on('click', function(){	
+		document.getElementById('contenidos').src =  "./Cuento/Escena_1/index.html";	
 		createjs.Sound.play("SoundPlay", {	volume: 0.8
 			}).on("complete", function () {
 				_this.gotoAndStop("Cuento");
-			}, this);
-			
+			}, this);	
 		});
 	}
 	this.frame_13 = function() {
-		var _this= this;
-		var iframe = document.getElementById('mi_iframe');
-		iframe.src = './Ayuda/cuento/index.html'; 
-		_this.btnAyudaCuento.on('click', function () {
-		    document.getElementById('mi_iframe').style.display = 'block';
-		    
-		    
-		});
-		document.getElementById('i_contenidos').src =  "./Cuento/Escena_1/index.html";
 		document.getElementById('contenidos').style.display = 'block';
+		
+		var _this = this;
+		var iframe = document.getElementById('mi_iframe');
+		iframe.src = './Ayuda/cuento/index.html';
+		
+		_this.btnAyudaCuento.on('click', function () {
+		
+			var iframeContenidos = document.getElementById('contenidos');
+			var url = iframeContenidos.contentWindow.location.href;
+			var audioMuted = iframeContenidos.contentWindow.createjs.Sound.muted;
+			iframeContenidos.contentWindow.createjs.Sound.muted = !audioMuted;
+			document.getElementById('mi_iframe').style.display = 'block';
+		});
 	}
 	this.frame_14 = function() {
 		var btnAyuda = this.btnAyudaCotenidos;
+		var _this=this;
 		
-		btnAyuda.on('click', function () {
-			var iframe = document.getElementById('mi_iframe');
-			var iframeContenidos = document.getElementById('i_contenidos');
-		
+		var iframe = document.getElementById('mi_iframe');
 		iframe.src = './Ayuda/Contenidos/index.html';
-			iframe.style.display = 'block';
-			var url = iframeContenidos.contentWindow.location.href;
-			console.log("iframeContenidosURL", url);
 		
-			if (url.includes('/Que_es/') || url.includes('/Como_ocurre/')) {
-				console.log("La URL contiene '/Que_es/' o '/Como_ocurre/'");
+		
+		
+		btnAyuda.on('click', function () {	
+			
+			var iframeContenidos = document.getElementById('contenidos');
+		
+		var url = iframeContenidos.contentWindow.location.href;
+			
+			
+			if (url.includes('/Que_es/') || url.includes('/Como_ocurre/')) {		
 				iframe.src = './Ayuda/Contenidos/Que_es/index.html';
-			} else if (url.includes('/Como_evitarlo/') || url.includes('/Si_me_ocurre/') || url.includes('/Contenido_Extra/')) {
-				console.log("La URL contiene '/Como_evitarlo/', '/Si_me_ocurre/', o '/Contenido_Extra/'");
+			} 
+			else if (url.includes('/Como_evitarlo/') || url.includes('/Si_me_ocurre/') || url.includes('/Contenido_Extra/')) {
 				iframe.src = './Ayuda/Contenidos/Como_evitarlo/index.html';
-			}
-		
-			console.log("iframeURL", iframe.contentWindow.location.href);
+			}		
+			iframe.style.display = 'block';	
 		});
 	}
 	this.frame_15 = function() {
 		var btnAyuda = this.btnAyudaActividades;
+		
+		
 		var iframe = document.getElementById('mi_iframe');
-		var iframeContenidos = document.getElementById('i_contenidos');
 		iframe.src = './Ayuda/Actividades/Menu/index.html';
+		
+		var _this = this;
 		
 		btnAyuda.on('click', function () {
 		
-		
-		
+			var iframeContenidos = document.getElementById('contenidos');
 			var url = iframeContenidos.contentWindow.location.href;
-			console.log("iframeContenidosURL", url);
+		
+			var audioMuted = iframeContenidos.contentWindow.createjs.Sound.muted;
+			iframeContenidos.contentWindow.createjs.Sound.muted = !audioMuted;
+		
 			if (url.includes('/Rompecabezas/')) {
 				iframe.src = './Ayuda/Actividades/Rompecabezas/index.html';
 			} else if (url.includes('/Sopa/')) {
@@ -827,10 +820,7 @@ if (reversed == null) { reversed = false; }
 			} else if (url.includes('/quiz/')) {
 				iframe.src = './Ayuda/Actividades/Seleccion/index.html';
 			}
-		
-			console.log("iframeURL", iframe.contentWindow.location.href);
 			iframe.style.display = 'block';
-		
 		});
 	}
 
@@ -962,14 +952,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1713592735327", id:"bannernegro1"},
-		{src:"images/fondo11.png?1713592735327", id:"fondo11"},
-		{src:"images/fondoMorado.png?1713592735327", id:"fondoMorado"},
-		{src:"images/Portada.png?1713592735327", id:"Portada"},
-		{src:"images/index_atlas_1.png?1713592735261", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1713592735327", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1713592735327", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1713592735327", id:"sound1"}
+		{src:"images/bannernegro1.png?1713821214588", id:"bannernegro1"},
+		{src:"images/fondo11.png?1713821214588", id:"fondo11"},
+		{src:"images/fondoMorado.png?1713821214588", id:"fondoMorado"},
+		{src:"images/Portada.png?1713821214588", id:"Portada"},
+		{src:"images/index_atlas_1.png?1713821214523", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1713821214588", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1713821214588", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1713821214588", id:"sound1"}
 	],
 	preloads: []
 };

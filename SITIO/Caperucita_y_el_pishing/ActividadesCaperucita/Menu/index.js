@@ -1680,7 +1680,7 @@ if (reversed == null) { reversed = false; }
 	this.imput1 = new lib.an_TextInput({'id': 'imput1', 'value':'', 'disabled':false, 'visible':true, 'class':'ui-textinput'});
 
 	this.imput1.name = "imput1";
-	this.imput1.setTransform(584.2,461.45,1.3597,0.9092,0,0,0,50.2,0.2);
+	this.imput1.setTransform(584.2,469.45,1.3597,0.9092,0,0,0,50.2,0.2);
 
 	this.text1 = new lib.Símbolo3();
 	this.text1.name = "text1";
@@ -1689,7 +1689,7 @@ if (reversed == null) { reversed = false; }
 	this.imput2 = new lib.an_TextInput({'id': 'imput2', 'value':'', 'disabled':false, 'visible':true, 'class':'ui-textinput'});
 
 	this.imput2.name = "imput2";
-	this.imput2.setTransform(799.9,460.95,1.3142,0.91);
+	this.imput2.setTransform(799.9,468.95,1.3142,0.91);
 
 	this.instance_4 = new lib.niños();
 	this.instance_4.setTransform(611.4,599.15,1.0046,1.0046,0,0,0,-0.4,-0.5);
@@ -1699,12 +1699,12 @@ if (reversed == null) { reversed = false; }
 	// btn
 	this.btnEntrar2 = new lib.btnEntrar();
 	this.btnEntrar2.name = "btnEntrar2";
-	this.btnEntrar2.setTransform(866.45,501.95,0.9235,0.9235,0,0,0,55.4,21.8);
+	this.btnEntrar2.setTransform(866.45,509.95,0.9235,0.9235,0,0,0,55.4,21.8);
 	new cjs.ButtonHelper(this.btnEntrar2, 0, 1, 2);
 
 	this.btnEntrar1 = new lib.btnEntrar();
 	this.btnEntrar1.name = "btnEntrar1";
-	this.btnEntrar1.setTransform(583.9,502.3,0.9235,0.9235,0,0,0,55.5,21.8);
+	this.btnEntrar1.setTransform(583.9,510.3,0.9235,0.9235,0,0,0,55.5,21.8);
 	new cjs.ButtonHelper(this.btnEntrar1, 0, 1, 2);
 
 	this.AplastarYgolpear = new lib.btnRompecabezas();
@@ -1728,10 +1728,10 @@ if (reversed == null) { reversed = false; }
 
 	// FONDO
 	this.instance_8 = new lib.FondoContraseñapngcopia();
-	this.instance_8.setTransform(785,435,0.5054,0.5308);
+	this.instance_8.setTransform(785,443,0.5054,0.5308);
 
 	this.instance_9 = new lib.FondoContraseña();
-	this.instance_9.setTransform(501,435,0.5091,0.5308);
+	this.instance_9.setTransform(501,443,0.5091,0.5308);
 
 	this.instance_10 = new lib.Fondo2();
 	this.instance_10.setTransform(0,-22,0.5032,0.4887);
@@ -1767,14 +1767,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1699307396717", id:"index_atlas_1"},
-		{src:"sounds/play.mp3?1699307396817", id:"play"},
-		{src:"sounds/error41.mp3?1699307396817", id:"error41"},
-		{src:"sounds/sound.mp3?1699307396817", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1699307396817", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1699307396817", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1699307396817", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1699307396817", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1712110613483", id:"index_atlas_1"},
+		{src:"sounds/play.mp3?1712110613589", id:"play"},
+		{src:"sounds/error41.mp3?1712110613589", id:"error41"},
+		{src:"sounds/sound.mp3?1712110613589", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1712110613589", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1712110613589", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1712110613589", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1712110613589", id:"an.TextInput"}
 	],
 	preloads: []
 };
