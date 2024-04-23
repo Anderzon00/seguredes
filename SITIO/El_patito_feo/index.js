@@ -763,7 +763,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnAyudaCuento.on('click', function () {
 		var iframe = document.getElementById('mi_iframe');
-		iframe.src = './Ayuda/cuento/index.html';
+		iframe.src = './Ayuda/Cuento/index.html';
 			var iframeContenidos = document.getElementById('contenidos');
 			var url = iframeContenidos.contentWindow.location.href;
 			var audioMuted = iframeContenidos.contentWindow.createjs.Sound.muted;
