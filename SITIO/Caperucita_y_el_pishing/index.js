@@ -865,7 +865,7 @@ if (reversed == null) { reversed = false; }
 		
 		var _this= this;
 		var iframe = document.getElementById('mi_iframe');
-		iframe.src = './Ayuda/cuento/index.html'; 
+		iframe.src = './Ayuda/Cuento/index.html'; 
 		
 		_this.btnAyudaCuento.on('click', function () {
 			var iframeContenidos = document.getElementById('contenidos');
@@ -1070,14 +1070,14 @@ lib.properties = {
 	color: "#225693",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1713821404021", id:"bannernegro1"},
-		{src:"images/fondo1111.png?1713821404021", id:"fondo1111"},
-		{src:"images/fondoMorado.png?1713821404021", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1713821403959", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1713821403960", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1713821404021", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1713821404021", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1713821404021", id:"sound1"}
+		{src:"images/bannernegro1.png?1713850174758", id:"bannernegro1"},
+		{src:"images/fondo1111.png?1713850174758", id:"fondo1111"},
+		{src:"images/fondoMorado.png?1713850174758", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1713850174678", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1713850174678", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1713850174758", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1713850174758", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1713850174758", id:"sound1"}
 	],
 	preloads: []
 };
