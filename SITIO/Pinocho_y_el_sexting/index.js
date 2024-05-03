@@ -1077,16 +1077,16 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1714750965743", id:"bannernegro1"},
-		{src:"images/barraseguredes.png?1714750965743", id:"barraseguredes"},
-		{src:"images/fondo11.png?1714750965743", id:"fondo11"},
-		{src:"images/fondoMorado.png?1714750965743", id:"fondoMorado"},
-		{src:"images/FondoOscuro.png?1714750965743", id:"FondoOscuro"},
-		{src:"images/index_atlas_1.png?1714750965673", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1714750965673", id:"index_atlas_2"},
-		{src:"sounds/sound2.mp3?1714750965743", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1714750965743", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1714750965743", id:"sound1"}
+		{src:"images/bannernegro1.png?1714777538520", id:"bannernegro1"},
+		{src:"images/barraseguredes.png?1714777538520", id:"barraseguredes"},
+		{src:"images/fondo11.png?1714777538520", id:"fondo11"},
+		{src:"images/fondoMorado.png?1714777538520", id:"fondoMorado"},
+		{src:"images/FondoOscuro.png?1714777538520", id:"FondoOscuro"},
+		{src:"images/index_atlas_1.png?1714777538438", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1714777538438", id:"index_atlas_2"},
+		{src:"sounds/sound2.mp3?1714777538520", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1714777538520", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1714777538520", id:"sound1"}
 	],
 	preloads: []
 };
