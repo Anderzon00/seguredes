@@ -1,0 +1,61 @@
+ body
+
+ {
+  font-family: 'Patrick Hand', sans-serif;
+      
+
+
+}
+
+
+  ul {
+    display: inline-block;  
+
+    
+    list-style-type: none;
+    vertical-align:top;
+  }
+
+ 
+li.outset {
+
+  color:rgb(255, 255, 255);
+  background-color: rgba(1, 151, 2205);
+  
+  border-radius: 20px;  
+  border: solid  1px  rgb(248, 250, 250);   
+  padding:0em 1em 0em 1em;
+  margin-bottom: 6px;
+  text-shadow: 0 0.5px 0 rgb(5, 5, 5);  
+  font-size:2vw
+  
+}
+li.contador
+{
+  list-style-type: none;
+  color : #008bba00;
+
+}
+
+
+li.found {
+  text-decoration: line-through;
+  background-color: rgba(34, 214, 73, 0.877);
+  list-style: '✔️';
+  
+}
+
+
+div#canvasContainer {
+  
+background-color: rgb(255, 255, 255);
+  font-family: 'Patrick Hand', sans-serif;
+
+
+  width: 60%;
+  display: inline-block;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

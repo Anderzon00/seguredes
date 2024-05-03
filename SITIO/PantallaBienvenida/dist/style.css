@@ -1,0 +1,53 @@
+progress {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 15px;
+  border: none;
+  background: transparent;
+}
+
+progress::-webkit-progress-bar {
+  background: transparent;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(to left, #dbb038, #e3c101, #e0c529, #fdc741, #c9df04, #fc4236);
+  background-attachment: fixed;
+}
+
+progress::-moz-progress-bar {
+  background: linear-gradient(to left, #4338db, #01e3bd, #25ce7b, #fdc741, #ff6b01, #fc4236);
+  background-attachment: fixed;
+}
+
+body {
+  background: linear-gradient(to bottom, #04cf5f9d, #12e4d9a4, #146df191, #2ab1bb86, #0496cf, #2abb72, #0496cf);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10vw 5vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  font-size: 24px;
+  font-size: max(18px, min(90px, 10vw));
+  font-family: "Permanent Marker", cursive;
+  line-height: 1.2;
+}
+
+
+body::-webkit-scrollbar {
+  display:none;
+
+}
