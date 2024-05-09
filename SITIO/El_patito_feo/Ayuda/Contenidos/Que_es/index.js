@@ -378,9 +378,12 @@ if (reversed == null) { reversed = false; }
 		});
 		
 		_this.btnCerrar.on('click', function(){
+			_this.btn_sonido1.visible=true;
 		createjs.Sound.stop();
 		_this.parent.ayuda.gotoAndStop(0);	
-			window.parent.ocultaAyuda();
+			window.parent.document.getElementById('mi_iframe').style.display = 'none';
+			
+			
 		});
 	}
 	this.frame_1 = function() {
@@ -509,9 +512,9 @@ lib.properties = {
 	color: "#33FF33",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1713312118068", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1713312118113", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1713312118113", id:"ayuda2"}
+		{src:"images/index_atlas_P_1.png?1715097279891", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715097279932", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715097279933", id:"ayuda2"}
 	],
 	preloads: []
 };

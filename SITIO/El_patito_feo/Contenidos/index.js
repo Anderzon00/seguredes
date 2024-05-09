@@ -1209,6 +1209,10 @@ if (reversed == null) { reversed = false; }
 			stretchToFit();
 		}
 		
+		var iframeC = window.parent.document.getElementById('mi_iframe');
+		iframeC.src = './Ayuda/Contenidos/index.html';
+		
+		
 		this.siguiente.addEventListener("click", fl_ClickToGoToWebPage_12);
 		function fl_ClickToGoToWebPage_12() {
 			
@@ -1228,6 +1232,8 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.play("audio", {
 				volume: 0.5
 			}).on("complete", function () {
+		 		window.parent.document.getElementById('mi_iframe').src='./Ayuda/Contenidos/Que_es/index.html';
+				
 				window.open("Que_es", "_self");
 			}, this);
 		}
@@ -1237,6 +1243,8 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.play("audio", {
 				volume: 0.5
 			}).on("complete", function () {
+						window.parent.document.getElementById('mi_iframe').src='./Ayuda/Contenidos/Que_es/index.html';
+		
 				window.open("Como_ocurre", "_self");
 			}, this);
 		}
@@ -1246,6 +1254,8 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.play("audio", {
 				volume: 0.5
 			}).on("complete", function () {
+				
+			window.parent.document.getElementById('mi_iframe').src  = './Ayuda/Contenidos/Como_evitarlo/index.html';
 				window.open("Como_evitarlo/index.html", "_self");
 			}, this);
 		}
@@ -1255,6 +1265,9 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.play("audio", {
 				volume: 0.5
 			}).on("complete", function () {
+				
+				window.parent.document.getElementById('mi_iframe').src=  './Ayuda/Contenidos/Como_evitarlo/index.html';
+				
 				window.open("Si_me_ocurre", "_self");
 		
 			}, this);
@@ -1270,6 +1283,7 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.play("audio", {
 				volume: 0.5
 			}).on("complete", function () {
+				window.parent.document.getElementById('mi_iframe').src= './Ayuda/Contenidos/Como_evitarlo/index.html';
 		
 				window.open("Contenido_Extra", "_self");
 		
@@ -1356,11 +1370,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1713925348649", id:"index_atlas_1"},
-		{src:"sounds/fondo.mp3?1713925348735", id:"fondo"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1713925348735", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/audio.mp3?1713925348735", id:"audio"},
-		{src:"sounds/principales.mp3?1713925348735", id:"principales"}
+		{src:"images/index_atlas_1.png?1715129236018", id:"index_atlas_1"},
+		{src:"sounds/fondo.mp3?1715129236111", id:"fondo"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1715129236111", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/audio.mp3?1715129236111", id:"audio"},
+		{src:"sounds/principales.mp3?1715129236111", id:"principales"}
 	],
 	preloads: []
 };

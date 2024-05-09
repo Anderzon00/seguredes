@@ -365,6 +365,17 @@ if (reversed == null) { reversed = false; }
 
 	// timeline functions:
 	this.frame_0 = function() {
+		var _this = this;
+		
+		_this.btnCerrar.on('click', function () {
+			_this.btn_sonido1.visible = true;
+			createjs.Sound.stop();
+			
+			
+		
+			_this.parent.ayuda.gotoAndStop(0);
+			window.parent.ocultaAyuda();
+		});
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 			stretchToFit();
@@ -375,38 +386,41 @@ if (reversed == null) { reversed = false; }
 		this.stop();
 		createjs.Sound.stop();
 		
-		 var _this = this;
-		_this.btn_sonido1.visible=true;	
+		var _this = this;
+		_this.btn_sonido1.visible = true;
 		
-		this.btn_sonido1.on('click', function(){
+		this.btn_sonido1.on('click', function () {
 			createjs.Sound.stop();
-			
-			_this.btn_sonido1.visible=false;
-			
-			createjs.Sound.play("ayuda1").on("complete", function () {                    
-			_this.btn_sonido1.visible=true; 
-		                    }, this);; 
-		});
-		 
-		_this.btnStopSonido1.on('click', function(){
-			_this.btn_sonido1.visible=true;
-			createjs.Sound.stop();
+		
+			_this.btn_sonido1.visible = false;
+		
+			createjs.Sound.play("ayuda1").on("complete", function () {
+				_this.btn_sonido1.visible = true;
+			}, this);;
 		});
 		
-		_this.btnSiguiente1.on('click', function(){
-		createjs.Sound.stop();
-		_this.gotoAndStop(1);
+		_this.btnStopSonido1.on('click', function () {
+			_this.btn_sonido1.visible = true;
+			createjs.Sound.stop();
 		});
 		
-		_this.btnCerrar.on('click', function(){
-			window.parent.ocultaAyuda();
-		_this.btn_sonido1.visible=true;	
-		
-		_this.parent.ayuda.gotoAndStop(0);	
+		_this.btnSiguiente1.on('click', function () {
 			createjs.Sound.stop();
+			_this.gotoAndStop(1);
 		});
 	}
 	this.frame_1 = function() {
+		var _this = this;
+		
+		_this.btnCerrar.on('click', function () {
+			_this.btn_sonido1.visible = true;
+			createjs.Sound.stop();
+			
+			
+		
+			_this.parent.ayuda.gotoAndStop(0);
+			window.parent.ocultaAyuda();
+		});
 		var _this = this;
 		
 		_this.btn_sonido1.visible=true;
@@ -442,6 +456,17 @@ if (reversed == null) { reversed = false; }
 	this.frame_2 = function() {
 		var _this = this;
 		
+		_this.btnCerrar.on('click', function () {
+			_this.btn_sonido1.visible = true;
+			createjs.Sound.stop();
+			
+			
+		
+			_this.parent.ayuda.gotoAndStop(0);
+			window.parent.ocultaAyuda();
+		});
+		var _this = this;
+		
 		_this.btn_sonido1.visible=true;
 			
 		
@@ -474,6 +499,17 @@ if (reversed == null) { reversed = false; }
 	this.frame_3 = function() {
 		var _this = this;
 		
+		_this.btnCerrar.on('click', function () {
+			_this.btn_sonido1.visible = true;
+			createjs.Sound.stop();
+			
+			
+		
+			_this.parent.ayuda.gotoAndStop(0);
+			window.parent.ocultaAyuda();
+		});
+		var _this = this;
+		
 		_this.btn_sonido1.visible=true;
 			
 		
@@ -503,6 +539,17 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_4 = function() {
+		var _this = this;
+		
+		_this.btnCerrar.on('click', function () {
+			_this.btn_sonido1.visible = true;
+			createjs.Sound.stop();
+			
+			
+		
+			_this.parent.ayuda.gotoAndStop(0);
+			window.parent.ocultaAyuda();
+		});
 		var _this = this;
 		
 		_this.btn_sonido1.visible=true;
@@ -684,12 +731,12 @@ lib.properties = {
 	color: "#33FF33",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1714008962180", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1714008962231", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1714008962231", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1714008962231", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1714008962231", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1714008962231", id:"ayuda5"}
+		{src:"images/index_atlas_P_1.png?1715148382905", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715148382958", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715148382958", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715148382958", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1715148382958", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1715148382958", id:"ayuda5"}
 	],
 	preloads: []
 };

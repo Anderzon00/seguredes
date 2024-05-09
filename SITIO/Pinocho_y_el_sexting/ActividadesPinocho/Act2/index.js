@@ -5,7 +5,7 @@ var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"index_atlas_1", frames: [[0,0,1552,919],[0,921,1552,918]]},
 		{name:"index_atlas_2", frames: [[1224,1470,502,402],[1224,842,476,626],[0,0,1584,840],[0,842,1222,1074]]},
-		{name:"index_atlas_3", frames: [[1251,1090,335,81],[1712,1708,334,80],[315,1927,331,80],[404,1397,391,71],[805,1215,401,260],[851,628,396,299],[1208,1215,403,252],[1249,563,399,274],[1208,1469,405,246],[1251,839,404,249],[1396,0,397,287],[0,1404,402,256],[404,1477,408,240],[0,1132,400,270],[851,929,398,284],[602,0,394,314],[402,1132,401,263],[1650,563,375,267],[998,0,396,300],[1613,1090,406,244],[1657,832,250,202],[1662,1821,265,140],[814,1717,447,102],[315,1719,447,102],[1263,1717,447,102],[764,1821,447,102],[315,1823,447,102],[1213,1821,447,102],[814,1568,238,102],[1206,1925,237,102],[1613,1336,423,122],[1615,1460,423,122],[1615,1584,423,122],[0,1953,296,89],[814,1477,296,89],[440,788,409,294],[1682,289,326,214],[843,316,384,310],[449,324,392,462],[1795,0,230,231],[764,1925,440,61],[0,1662,313,289],[0,324,447,408],[0,734,438,396],[1229,302,451,259],[0,0,600,322]]},
+		{name:"index_atlas_3", frames: [[1251,1090,335,81],[1712,1708,334,80],[315,1927,331,80],[1657,1012,391,71],[805,1215,401,260],[851,628,396,299],[1208,1215,403,252],[1249,563,399,274],[1208,1469,405,246],[1251,839,404,249],[1396,0,397,287],[0,1404,402,256],[404,1477,408,240],[0,1132,400,270],[851,929,398,284],[602,0,394,314],[402,1132,401,263],[1650,563,375,267],[998,0,396,300],[1613,1090,406,244],[1795,0,250,202],[1662,1821,265,140],[814,1717,447,102],[315,1719,447,102],[1263,1717,447,102],[764,1821,447,102],[315,1823,447,102],[1213,1821,447,102],[814,1568,238,102],[1206,1925,237,102],[1613,1336,423,122],[1615,1460,423,122],[1615,1584,423,122],[0,1953,296,89],[814,1477,296,89],[440,788,409,294],[1682,289,326,214],[843,316,384,310],[449,324,392,462],[1657,832,179,178],[764,1925,440,61],[0,1662,313,289],[0,324,447,408],[0,734,438,396],[1229,302,451,259],[0,0,600,322]]},
 		{name:"index_atlas_4", frames: [[0,325,233,43],[531,263,241,69],[240,320,241,68],[0,436,240,42],[676,103,280,71],[338,174,271,71],[0,176,271,71],[0,103,336,71],[338,103,336,69],[598,544,180,39],[946,237,72,35],[297,544,97,67],[946,274,65,37],[946,194,68,41],[884,320,140,102],[328,390,111,108],[0,0,238,101],[240,0,238,101],[480,0,238,101],[720,0,238,101],[903,532,87,87],[420,538,87,87],[509,538,87,87],[208,544,87,87],[917,424,77,106],[273,176,54,52],[960,0,61,63],[958,130,61,62],[960,65,61,63],[237,500,181,42],[0,390,326,44],[611,176,215,85],[0,524,206,42],[273,247,256,71],[441,450,239,42],[675,500,226,42],[441,406,265,42],[441,494,232,42],[483,334,196,70],[780,544,97,42],[682,455,233,43],[0,249,238,74],[0,480,235,42],[329,176,4,28],[774,263,17,32],[1020,194,2,78],[774,320,108,133],[828,176,116,142],[240,249,25,26]]}
 ];
 
@@ -629,7 +629,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,2305,269);
 
 
 
-(lib.IconMensaje = function() {
+(lib.ImgActividad2 = function() {
 	this.initialize(ss["index_atlas_3"]);
 	this.gotoAndStop(39);
 }).prototype = p = new cjs.Sprite();
@@ -813,10 +813,7 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		
 		_this.stop();
 	}
 
@@ -867,10 +864,6 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
 		_this.stop();
 	}
 
@@ -921,10 +914,7 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		
 		_this.stop();
 	}
 
@@ -975,10 +965,6 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
 		_this.stop();
 	}
 
@@ -1526,15 +1512,15 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Capa_1
-	this.instance = new lib.IconMensaje();
-	this.instance.setTransform(-57.5,-57.75,0.5,0.5);
+	this.instance = new lib.ImgActividad2();
+	this.instance.setTransform(-46,-75,0.6118,0.6118);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-57.5,-57.7,115,115.5);
+p.nominalBounds = new cjs.Rectangle(-46,-75,109.5,108.9);
 
 
 (lib.Interpolación1 = function(mode,startPosition,loop,reversed) {
@@ -2290,7 +2276,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,-8.4,115,123.9);
+p.nominalBounds = new cjs.Rectangle(11.5,-25.6,109.5,117.30000000000001);
 
 
 (lib.l4 = function(mode,startPosition,loop,reversed) {
@@ -2450,10 +2436,6 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
 		_this.stop();
 	}
 
@@ -2505,10 +2487,7 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		
 		_this.stop();
 	}
 
@@ -2560,10 +2539,7 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		
 		_this.stop();
 	}
 
@@ -2615,10 +2591,7 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		
 		_this.stop();
 	}
 
@@ -3299,15 +3272,16 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var canon = this.canon_mc; // Asigna el botón a una variable
-		var movieClip = this.movieClip_mc; // Asigna el MovieClip a una variable
+		var bala = this.movieClip_mc; // Asigna el MovieClip a una variable
 		var letrero1 = this.letrero1; // Asigna letrero1 a una variable
 		var letrero2 = this.letrero2; // Asigna letrero2 a una variable
 		var letrero3 = this.letrero3; // Asigna letrero3 a una variable
 		var letrero4 = this.letrero4; // Asigna letrero4 a una variable
+		var letreroClicado;
+		
 		var _this = this;
 		_this.stop();
 		
-		 
 		createjs.Touch.enable(stage, true, false);
 		
 		var maxDistance = 100; // Define la distancia máxima para activar el desplazamiento
@@ -3320,210 +3294,162 @@ if (reversed == null) { reversed = false; }
 		stage.addEventListener("touchmove", seguirRaton);
 		stage.addEventListener("touchend", dispararMovieClip);
 		
-		
-		
 		function seguirRaton(event) {
-		
-			if (_this.currentFrame === 7) {
-				return;
-			}
-		
 			var dx = stage.mouseX - canon.x;
 			var dy = stage.mouseY - (canon.y + canon.getBounds().height / 2); // La mitad de la altura del cañón
-		
 			var radians = Math.atan2(dy, dx);
 			var degrees = radians * (180 / Math.PI) + 144;
-		
-		
 			canon.rotation = degrees;
-			movieClip.rotation = degrees;
+			bala.rotation = degrees;
 		}
 		
+		var balaPuedeMoverse = true; // Variable para controlar si la bala puede moverse o no
+		
 		function dispararMovieClip(event) {
-			if (_this.currentFrame === 7) {
-				return;
-			}
+		    if (_this.currentFrame === 7 || !balaPuedeMoverse) {
+		        return;
+		    }
+		    var targetX = stage.mouseX;
+		    var targetY = stage.mouseY;
 		
-			var targetX = stage.mouseX;
-			var targetY = stage.mouseY;
+		    if (_this.currentFrame < 7) {
+		        createjs.Sound.play("cannonSound");
+		    }
 		
+		    createjs.Tween.get(bala).to({
+		        x: targetX,
+		        y: targetY
+		    }, 600).call(function () {
+		        // Llama a la función animacionCompleta después de que la animación de la bala haya terminado
+		        animacionCompleta();
+		    });
+		}
 		
-			if (_this.currentFrame < 7) {
-				createjs.Sound.play("cannonSound");
-			}
+		 
 		
-		
-		
-		
-		
-		
-		
-		
-		
-			createjs.Tween.get(movieClip).to({
-				x: targetX,
-				y: targetY
-			}, 600).call(animacionCompleta);
-		
-		
-		
-		
-		
+		function verificarPalabrasClicadas() {
+		    palabrasClicadas++; // Incrementamos el contador de clics
+		    
+		    if (palabrasClicadas <= 2) { // Verificamos que el usuario no haya excedido el límite de 2 clics
+		        if (palabrasClicadas === 2) { // Si el usuario ha alcanzado los 2 clics permitidos
+		            // Deshabilitamos los letreros para evitar más clics
+		            letrero1.mouseEnabled = false;
+		            letrero2.mouseEnabled = false;
+		            letrero3.mouseEnabled = false;
+		            letrero4.mouseEnabled = false;
+		            balaPuedeMoverse = false;
+					// La bala ya no puede moverse después de que se han colisionado dos letreros
+		            setTimeout(function () {
+		                balaPuedeMoverse = true;
+						palabrasClicadas=0;
+		                _this.gotoAndStop(_this.currentFrame + 1);
+		            }, 2000);
+		        }
+		    }
 		}
 		
 		function animacionCompleta() {
+		    bala.x = canon.x;
+		    bala.y = canon.y;
 		
-			movieClip.x = canon.x;
-			movieClip.y = canon.y;
+		    // Determinar la explosión a reproducir según el letrero clickeado
+		    if (letreroClicado === letrero1) {
+		        _this.explosion1.gotoAndPlay(1);
+		        // Oculta el letrero después de que la animación de la explosión haya terminado
+		        
+		            letrero1.visible = false;
+		         
+		        if (_this.currentFrame === 0 || _this.currentFrame === 1 || _this.currentFrame === 3 || _this.currentFrame === 5) {
+		            correctas();
+		        } else {
+		            incorrectas();
+		        }
+		    } else if (letreroClicado === letrero2) {
+		        _this.explosion2.gotoAndPlay(1);
+		        
+		            letrero2.visible = false;
+		        
+		        if (_this.currentFrame === 2 || _this.currentFrame === 4 || _this.currentFrame === 6) {
+		            correctas();
+		        } else {
+		            incorrectas();
+		        }
 		
+		    } else if (letreroClicado === letrero3) {
+		        _this.explosion3.gotoAndPlay(1);
+		         
+		            letrero3.visible = false;
+		        
+		        if (_this.currentFrame === 0 || _this.currentFrame === 2 || _this.currentFrame === 3 || _this.currentFrame === 5) {
+		            correctas();
+		        } else {
+		            incorrectas();
+		        }
+		
+		    } else if (letreroClicado === letrero4) {
+		
+		        _this.explosion4.gotoAndPlay(1);
+		        
+		            letrero4.visible = false;
+		         
+		        if (_this.currentFrame === 1 || _this.currentFrame === 4 || _this.currentFrame === 6) {
+		            correctas();
+		        } else {
+		            incorrectas();
+		        }
+		    }
 		}
 		
-		
-		
-		letrero1.on("click", function (e) {
-		
-		
-		
-			setTimeout(function () {
-				letrero1.visible = false;
-				_this.explosion1.gotoAndPlay(1);
-				palabrasClicadas.letrero1 = true;
-				verificarPalabrasClicadas()
-		
-				// Usar la referencia global de _this
-			}, 800); // 1000 milisegundos (1 segundo) de espera
-		
+		letrero1.on("click", function () {
+			letreroClicado = letrero1;
+			verificarPalabrasClicadas();
 		});
 		
-		letrero2.on("click", function (e) {
-			setTimeout(function () {
-				letrero2.visible = false;
-				_this.explosion2.gotoAndPlay(1);
-				palabrasClicadas.letrero2 = true;
-				verificarPalabrasClicadas()
-			}, 600);
-		
+		letrero2.on("click", function () {
+			letreroClicado = letrero2; 
+			verificarPalabrasClicadas();
 		});
 		
-		letrero3.on("click", function (e) {
-			setTimeout(function () {
-				letrero3.visible = false;
-				_this.explosion3.gotoAndPlay(1);
-				palabrasClicadas.letrero3 = true;
-				verificarPalabrasClicadas()
-			}, 600);
-		
+		letrero3.on("click", function () {
+			letreroClicado = letrero3; 
+			verificarPalabrasClicadas();
 		});
 		
-		letrero4.on("click", function (e) {
-			setTimeout(function () {
-				letrero4.visible = false;
-				_this.explosion4.gotoAndPlay(1);
-				palabrasClicadas.letrero4 = true;
-				verificarPalabrasClicadas()
-		
-			}, 700);
-		
+		letrero4.on("click", function () {
+			letreroClicado = letrero4;
+			verificarPalabrasClicadas();
 		});
 		
 		
-		let palabrasClicadas = {
-			letrero1: false,
-			letrero2: false,
-			letrero3: false,
-			letrero4: false
-		};
-		
-		
-		function verificarPalabrasClicadas() {
-			var palabrasClicadasCount = 0;
-			if (palabrasClicadas.letrero1) palabrasClicadasCount++;
-			if (palabrasClicadas.letrero2) palabrasClicadasCount++;
-			if (palabrasClicadas.letrero3) palabrasClicadasCount++;
-			if (palabrasClicadas.letrero4) palabrasClicadasCount++;
-		
-			if (palabrasClicadasCount >= 2) {
-				letrero1.visible = false;
-				letrero2.visible = false;
-				letrero3.visible = false;
-				letrero4.visible = false;
-				palabrasClicadas.letrero1 = false;
-				palabrasClicadas.letrero2 = false;
-				palabrasClicadas.letrero3 = false;
-				palabrasClicadas.letrero4 = false;
-		
-		
-				// Avanzar al siguiente cuadro después de un retraso de 2 segundos
-				setTimeout(function () {
-					palabrasClicadasCount = 0;
-		
-					_this.gotoAndStop(_this.currentFrame + 1);
-				}, 2000);
-			}
-		}
-		
-		
-		_this.on("click", function (e) {
-			if (e.target === letrero1) {
-				if (_this.currentFrame === 0 || _this.currentFrame === 1 || _this.currentFrame === 3 || _this.currentFrame === 5) {
-					correctas();
-				} else {
-					incorrectas();
-				}
-			} else if (e.target === letrero2) {
-				if (_this.currentFrame === 2 || _this.currentFrame === 4 || _this.currentFrame === 6) {
-					correctas()
-				} else {
-				incorrectas();
-				}
-			} else if (e.target === letrero3) {
-				if (_this.currentFrame === 0 || _this.currentFrame === 2 || _this.currentFrame === 3 || _this.currentFrame === 5) {
-					correctas()
-				} else {
-					incorrectas()
-				}
-			} else if (e.target === letrero4) {
-				if (_this.currentFrame === 1 || _this.currentFrame === 4 || _this.currentFrame === 6) {
-					correctas()
-				} else {
-					incorrectas()
-				}
-			}
-		
-			setTimeout(function () {
-		
-		
-				_this.texto.text = contadorRespuestasCorrectas;
-				_this.texto2.text = contadorRespuestasIncorrectas;
-			}, 1000);
-		
-		
-		});
 		
 		function correctas() {
-			setTimeout(function () {
 				contadorRespuestasCorrectas++;
-					createjs.Sound.play("correct");
-			}, 1000);
+				_this.texto.text = contadorRespuestasCorrectas;
+				_this.texto2.text = contadorRespuestasIncorrectas;
+				createjs.Sound.play("correct");	 
 		}
 		
-		function incorrectas() {
-			setTimeout(function () {
-						contadorRespuestasIncorrectas++;
-					createjs.Sound.play("incorrect");
-			}, 1000);
+		function incorrectas() {	
+				contadorRespuestasIncorrectas++;
+				_this.texto.text = contadorRespuestasCorrectas;
+				_this.texto2.text = contadorRespuestasIncorrectas;
+				createjs.Sound.play("incorrect");
 		}
 	}
 	this.frame_1 = function() {
 		var _this = this;
-		_this.letrero1.visible=true;  
-		_this.letrero2.visible=true; 
-		_this.letrero3.visible=true; 
-		_this.letrero4.visible=true; 
+		_this.letrero1.visible = true;
+		_this.letrero2.visible = true;
+		_this.letrero3.visible = true;
+		_this.letrero4.visible = true;
+		_this.letrero1.mouseEnabled = true;
+		_this.letrero2.mouseEnabled = true;
+		_this.letrero3.mouseEnabled = true;
+		_this.letrero4.mouseEnabled = true;
 		_this.letrero1.palabras1.palabra1.gotoAndStop(1);
-		_this.letrero2.palabras2.palabra2.gotoAndStop(1); 
-		 _this.letrero3.palabras3.palabra3.gotoAndStop(1); 
-		 _this.letrero4.palabras4.palabra4.gotoAndStop(1);
+		_this.letrero2.palabras2.palabra2.gotoAndStop(1);
+		_this.letrero3.palabras3.palabra3.gotoAndStop(1);
+		_this.letrero4.palabras4.palabra4.gotoAndStop(1);
 	}
 	this.frame_2 = function() {
 		var _this = this;
@@ -3531,6 +3457,10 @@ if (reversed == null) { reversed = false; }
 		_this.letrero2.visible = true;
 		_this.letrero3.visible = true;
 		_this.letrero4.visible = true;
+		_this.letrero1.mouseEnabled = true;
+		_this.letrero2.mouseEnabled = true;
+		_this.letrero3.mouseEnabled = true;
+		_this.letrero4.mouseEnabled = true;
 		_this.letrero1.palabras1.palabra1.gotoAndStop(2);
 		_this.letrero2.palabras2.palabra2.gotoAndStop(2);
 		_this.letrero3.palabras3.palabra3.gotoAndStop(2);
@@ -3538,51 +3468,67 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_3 = function() {
 		var _this = this;
-		_this.letrero1.visible=true;  
-		_this.letrero2.visible=true; 
-		_this.letrero3.visible=true; 
-		_this.letrero4.visible=true; 
+		_this.letrero1.visible = true;
+		_this.letrero2.visible = true;
+		_this.letrero3.visible = true;
+		_this.letrero4.visible = true;
+		_this.letrero1.mouseEnabled = true;
+		_this.letrero2.mouseEnabled = true;
+		_this.letrero3.mouseEnabled = true;
+		_this.letrero4.mouseEnabled = true;
 		_this.letrero1.palabras1.palabra1.gotoAndStop(3);
-		_this.letrero2.palabras2.palabra2.gotoAndStop(3); 
-		 _this.letrero3.palabras3.palabra3.gotoAndStop(3); 
-		 _this.letrero4.palabras4.palabra4.gotoAndStop(3);
+		_this.letrero2.palabras2.palabra2.gotoAndStop(3);
+		_this.letrero3.palabras3.palabra3.gotoAndStop(3);
+		_this.letrero4.palabras4.palabra4.gotoAndStop(3);
 	}
 	this.frame_4 = function() {
 		var _this = this;
-		 _this.letrero1.visible=true;  
-		_this.letrero2.visible=true; 
-		_this.letrero3.visible=true; 
-		_this.letrero4.visible=true; 
+		_this.letrero1.visible = true;
+		_this.letrero2.visible = true;
+		_this.letrero3.visible = true;
+		_this.letrero4.visible = true;
+		_this.letrero1.mouseEnabled = true;
+		_this.letrero2.mouseEnabled = true;
+		_this.letrero3.mouseEnabled = true;
+		_this.letrero4.mouseEnabled = true;
 		_this.letrero1.palabras1.palabra1.gotoAndStop(4);
-		_this.letrero2.palabras2.palabra2.gotoAndStop(4); 
-		 _this.letrero3.palabras3.palabra3.gotoAndStop(4); 
-		 _this.letrero4.palabras4.palabra4.gotoAndStop(4);
+		_this.letrero2.palabras2.palabra2.gotoAndStop(4);
+		_this.letrero3.palabras3.palabra3.gotoAndStop(4);
+		_this.letrero4.palabras4.palabra4.gotoAndStop(4);
 	}
 	this.frame_5 = function() {
 		var _this = this;
-		_this.letrero1.visible=true;  
-		_this.letrero2.visible=true; 
-		_this.letrero3.visible=true; 
-		_this.letrero4.visible=true; 
+		_this.letrero1.visible = true;
+		_this.letrero2.visible = true;
+		_this.letrero3.visible = true;
+		_this.letrero4.visible = true;
+		_this.letrero1.mouseEnabled = true;
+		_this.letrero2.mouseEnabled = true;
+		_this.letrero3.mouseEnabled = true;
+		_this.letrero4.mouseEnabled = true;
 		_this.letrero1.palabras1.palabra1.gotoAndStop(5);
-		_this.letrero2.palabras2.palabra2.gotoAndStop(5); 
-		 _this.letrero3.palabras3.palabra3.gotoAndStop(5); 
-		 _this.letrero4.palabras4.palabra4.gotoAndStop(5);
+		_this.letrero2.palabras2.palabra2.gotoAndStop(5);
+		_this.letrero3.palabras3.palabra3.gotoAndStop(5);
+		_this.letrero4.palabras4.palabra4.gotoAndStop(5);
 	}
 	this.frame_6 = function() {
 		var _this = this;
-		_this.letrero1.visible=true;  
-		_this.letrero2.visible=true; 
-		_this.letrero3.visible=true; 
-		_this.letrero4.visible=true; 
+		_this.letrero1.visible = true;
+		_this.letrero2.visible = true;
+		_this.letrero3.visible = true;
+		_this.letrero4.visible = true;
+		_this.letrero1.mouseEnabled = true;
+		_this.letrero2.mouseEnabled = true;
+		_this.letrero3.mouseEnabled = true;
+		_this.letrero4.mouseEnabled = true;
 		_this.letrero1.palabras1.palabra1.gotoAndStop(6);
 		_this.letrero2.palabras2.palabra2.gotoAndStop(6);
-		  _this.letrero3.palabras3.palabra3.gotoAndStop(6); 
-		 _this.letrero4.palabras4.palabra4.gotoAndStop(6);
+		_this.letrero3.palabras3.palabra3.gotoAndStop(6);
+		_this.letrero4.palabras4.palabra4.gotoAndStop(6);
 	}
 	this.frame_7 = function() {
-		var _this= this;
-		 _this.parent.gotoAndStop(2);
+		var _this = this;
+		_this.parent.gotoAndStop(2);
 	}
 
 	// actions tween:
@@ -3694,7 +3640,7 @@ if (reversed == null) { reversed = false; }
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(8));
+	this.timeline.addTween(cjs.Tween.get(this.instance_13).to({_off:true},7).wait(1));
 
 	// Cañon_png
 	this.canon_mc = new lib.cañon();
@@ -3712,7 +3658,7 @@ if (reversed == null) { reversed = false; }
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.movieClip_mc},{t:this.canon_mc}]}).wait(8));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.movieClip_mc},{t:this.canon_mc}]}).to({state:[]},7).wait(1));
 
 	// RuedaDerecha_png
 	this.instance_14 = new lib.RuedaDerecha();
@@ -3727,7 +3673,7 @@ if (reversed == null) { reversed = false; }
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_15},{t:this.instance_14}]}).wait(8));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_15},{t:this.instance_14}]}).to({state:[]},7).wait(1));
 
 	// bolas
 	this.instance_16 = new lib.bolaPiso();
@@ -3823,16 +3769,16 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		//https://alkakrab.itch.io/free-pirate-game-music-pack
+		this.stop();
+		createjs.Sound.stop();
 		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 		    stretchToFit();
 		}
 		
-		this.stop();
-		
-		createjs.Sound.stop();
 		sound0 = createjs.Sound.play("audio");
+		
 		 var _this = this;
 		_this.unmute.visible = false;
 		 
@@ -3866,148 +3812,117 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_1 = function() {
 		createjs.Sound.stop();
-		 var _this=this;
+		 
 		 sound =createjs.Sound.play("BGM",  { volume: 0.8, loop: -1 });
 	}
 	this.frame_2 = function() {
-		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
-		_this.stop();
+		this.stop();
 		createjs.Sound.stop();
 		
-		if (contadorRespuestasCorrectas> 13)
-			_this.gotoAndStop(_this.currentFrame + 2);
-		else if 
-		
-		 (contadorRespuestasCorrectas> 7)
-			_this.gotoAndStop(_this.currentFrame + 1);
-		else 
-		{
-		createjs.Sound.play("Voice4", "voice", true);  
-		
-		
-		_this.correctas.text=contadorRespuestasCorrectas; 
-		 _this.incorrectas.text= contadorRespuestasIncorrectas;
-		 }
-		_this.btnSalir.on('click', function(){	
-		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {                    	
-		window.open('../Menu', '_self');		 
-		                    }, this);
-		});
-		
-		
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnReintentar.on('click', function(){
-			
-			
-			createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
-		                    
-			
-		window.open('index.html', '_self');
-				 
-		                    }, this);
+		_this.correcto.text = contadorRespuestasCorrectas;
+		_this.malas.text = contadorRespuestasIncorrectas;
 		
+		_this.btnReintentar.on('click', function () {
+			createjs.Sound.play("SoundBoton", {
+				volume: 0.8
+			}).on("complete", function () {
+				window.open('index.html', '_self');
+			}, this);
 		});
+		
+		_this.btnSalir.on('click', function () {
+			createjs.Sound.play("SoundBoton", {
+				volume: 0.8
+			}).on("complete", function () {
+				window.open('../Menu', '_self');
+			}, this);
+		});
+		
+		if (contadorRespuestasCorrectas > 13)
+			_this.gotoAndStop(_this.currentFrame + 2);
+		else if
+		
+		(contadorRespuestasCorrectas > 7)
+			_this.gotoAndStop(_this.currentFrame + 1);
+		else {
+			createjs.Sound.play("Voice4", "voice", true);
+		}
 	}
 	this.frame_3 = function() {
-		var _this= this;
+		var _this = this;
 		
 		createjs.Sound.stop();
 		
+		createjs.Sound.play("Voice3");
 		
-		_this.correctas.text=contadorRespuestasCorrectas; 
-		
-		
-		 
-		 _this.incorrectas.text= contadorRespuestasIncorrectas;
-		 
-		 
-		 
-		createjs.Sound.play("Voice3");  
-		 
-		 
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnReintentarVerde.on('click', function(){
-		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
-		                    
-			
-		window.open('index.html', '_self');
-				 
-		                    }, this);
+		_this.btnReintentarVerde.on('click', function () {
+			createjs.Sound.play("SoundBoton", {
+				volume: 0.8
+			}).on("complete", function () {
+				window.open('index.html', '_self');
+			}, this);
 		});
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnSalirVerde.on('click', function(){
-			
-			createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
-		                    
-			
-		window.open('../Menu', '_self');
-				 
-		                    }, this);
+		
+		_this.btnSalirVerde.on('click', function () {
+			createjs.Sound.play("SoundBoton", {
+				volume: 0.8
+			}).on("complete", function () {
+				window.open('../Menu', '_self');
+			}, this);
 		});
 	}
 	this.frame_4 = function() {
-		var _this= this;
-		
+		var _this = this;
 		createjs.Sound.stop();
+		createjs.Sound.play("Voice5");
 		
-		
-		_this.correctas.text=contadorRespuestasCorrectas; 
-		
-		
-		 
-		 _this.incorrectas.text= contadorRespuestasIncorrectas;
-		 
-		 
-		 
-		createjs.Sound.play("Voice5");  
-		 
-		 
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnReintentarVerde.on('click', function(){
-		createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
-		                    
-			
-		window.open('index.html', '_self');
-				 
-		                    }, this);
+		_this.btnReintentarVerde.on('click', function () {
+			createjs.Sound.play("SoundBoton", {
+				volume: 0.8
+			}).on("complete", function () {
+				window.open('index.html', '_self');
+			}, this);
 		});
-		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
-		_this.btnSalirVerde.on('click', function(){
-			
-			createjs.Sound.play("SoundBoton", { volume: 0.8}).on("complete", function () {
-		                    
-			
-		window.open('../Menu', '_self');
-				 
-		                    }, this);
+		
+		
+		_this.btnSalirVerde.on('click', function () {
+			createjs.Sound.play("SoundBoton", {
+				volume: 0.8
+			}).on("complete", function () {
+				window.open('../Menu', '_self');
+			}, this);
 		});
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1).call(this.frame_2).wait(1).call(this.frame_3).wait(1).call(this.frame_4).wait(1));
 
+	// malas
+	this.malas = new cjs.Text("0", "bold 24px 'Comic Sans MS'", "#CC0000");
+	this.malas.name = "malas";
+	this.malas.lineHeight = 35;
+	this.malas.lineWidth = 100;
+	this.malas.parent = this;
+	this.malas.setTransform(467.15,334.1);
+	this.malas._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.malas).wait(2).to({_off:false},0).wait(1).to({x:525.1,y:352.05},0).wait(1).to({x:515.1,y:348.55},0).wait(1));
+
+	// correcto
+	this.correcto = new cjs.Text("0", "bold 24px 'Comic Sans MS'", "#006600");
+	this.correcto.name = "correcto";
+	this.correcto.lineHeight = 35;
+	this.correcto.lineWidth = 100;
+	this.correcto.parent = this;
+	this.correcto.setTransform(464.15,305.15);
+	this.correcto._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.correcto).wait(2).to({_off:false},0).wait(1).to({x:505.15,y:308.15},0).wait(1).to({x:487.15,y:306.65},0).wait(1));
+
 	// TARJETAS
 	this.instance = new lib.mensaje_1();
-	this.instance.setTransform(586.15,123.95,0.8052,0.8052,0,0,0,57.5,57.8);
+	this.instance.setTransform(587.35,123.95,0.8052,0.8052,0,0,0,57.5,57.8);
 
 	this.btnPlay = new lib.btnPlay();
 	this.btnPlay.name = "btnPlay";
@@ -4016,6 +3931,21 @@ if (reversed == null) { reversed = false; }
 
 	this.instance_1 = new lib.VentanaInstrucciones();
 	this.instance_1.setTransform(313,28,0.4606,0.4661);
+
+	this.text = new cjs.Text("Estalla los globos con palabras sobre sexting.", "14px 'Comic Sans MS'");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 22;
+	this.text.lineWidth = 202;
+	this.text.parent = this;
+	this.text.setTransform(422.3,390.4);
+
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#333333").ss(1,1,1).p("A+TmjMA8nAAAQCNAABjBjQBkBkAACNIAACfQAACNhkBkQhjBjiNAAMg8nAAAQiNAAhjhjQhkhkAAiNIAAifQAAiNBkhkQBjhjCNAAg");
+	this.shape.setTransform(423.0291,412.9887,0.5272,0.8353);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#FFFFFF").s().p("A+TGkQiNAAhjhjQhkhkAAiNIAAifQAAiNBkhkQBjhjCNAAMA8nAAAQCNAABjBjQBkBkAACNIAACfQAACNhkBkQhjBjiNAAg");
+	this.shape_1.setTransform(423.0291,412.9887,0.5272,0.8353);
 
 	this.btnSalir = new lib.btnSalir();
 	this.btnSalir.name = "btnSalir";
@@ -4026,20 +3956,6 @@ if (reversed == null) { reversed = false; }
 	this.btnReintentar.name = "btnReintentar";
 	this.btnReintentar.setTransform(318.95,379.05);
 	new cjs.ButtonHelper(this.btnReintentar, 0, 1, 2);
-
-	this.incorrectas = new cjs.Text("Malas", "bold 24px 'Comic Sans MS'", "#990000");
-	this.incorrectas.name = "incorrectas";
-	this.incorrectas.lineHeight = 35;
-	this.incorrectas.lineWidth = 157;
-	this.incorrectas.parent = this;
-	this.incorrectas.setTransform(468.35,335.6);
-
-	this.correctas = new cjs.Text("Correctas", "bold 24px 'Comic Sans MS'", "#006600");
-	this.correctas.name = "correctas";
-	this.correctas.lineHeight = 35;
-	this.correctas.lineWidth = 157;
-	this.correctas.parent = this;
-	this.correctas.setTransform(465.35,303.8);
 
 	this.instance_2 = new lib.letreroRojo();
 	this.instance_2.setTransform(530.2,224.55,1,1,0,0,0,356.2,184.5);
@@ -4063,7 +3979,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_5 = new lib.Símbolo2();
 	this.instance_5.setTransform(485.3,258.25,1,1,0,0,0,356.2,229.8);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.btnPlay},{t:this.instance}]}).to({state:[]},1).to({state:[{t:this.instance_2},{t:this.correctas,p:{x:465.35,y:303.8}},{t:this.incorrectas,p:{x:468.35,y:335.6}},{t:this.btnReintentar},{t:this.btnSalir}]},1).to({state:[{t:this.instance_4},{t:this.correctas,p:{x:489.8,y:310.4}},{t:this.incorrectas,p:{x:522.8,y:350.1}},{t:this.btnReintentarVerde,p:{x:421.55,y:421.9}},{t:this.btnSalirVerde,p:{x:600.45,y:421.9}},{t:this.instance_3,p:{x:495.5,y:61.45}}]},1).to({state:[{t:this.instance_5},{t:this.correctas,p:{x:477.45,y:308.4}},{t:this.incorrectas,p:{x:509.75,y:349.65}},{t:this.btnReintentarVerde,p:{x:423.8,y:412.15}},{t:this.btnSalirVerde,p:{x:608.4,y:412.15}},{t:this.instance_3,p:{x:474.65,y:46.65}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.btnPlay},{t:this.instance}]}).to({state:[{t:this.shape_1},{t:this.shape},{t:this.text}]},1).to({state:[{t:this.instance_2},{t:this.btnReintentar},{t:this.btnSalir}]},1).to({state:[{t:this.instance_4},{t:this.btnReintentarVerde,p:{x:421.55,y:421.9}},{t:this.btnSalirVerde,p:{x:600.45,y:421.9}},{t:this.instance_3,p:{x:495.5,y:61.45}}]},1).to({state:[{t:this.instance_5},{t:this.btnReintentarVerde,p:{x:423.8,y:412.15}},{t:this.btnSalirVerde,p:{x:608.4,y:412.15}},{t:this.instance_3,p:{x:474.65,y:58.65}}]},1).wait(1));
 
 	// contenedor
 	this.instance_6 = new lib.contenedor();
@@ -4130,24 +4046,24 @@ lib.properties = {
 	color: "#0000FF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Barco.png?1712937854715", id:"Barco"},
-		{src:"images/FondoCielo.png?1712937854715", id:"FondoCielo"},
-		{src:"images/FondoMar.png?1712937854715", id:"FondoMar"},
-		{src:"images/PiedrasFondoHorizonte.png?1712937854715", id:"PiedrasFondoHorizonte"},
-		{src:"images/index_atlas_1.png?1712937854466", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1712937854467", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1712937854468", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1712937854470", id:"index_atlas_4"},
-		{src:"sounds/audio.mp3?1712937854715", id:"audio"},
-		{src:"sounds/cannonSound.mp3?1712937854715", id:"cannonSound"},
-		{src:"sounds/incorrect.mp3?1712937854715", id:"incorrect"},
-		{src:"sounds/correct.mp3?1712937854715", id:"correct"},
-		{src:"sounds/Voice3.mp3?1712937854715", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1712937854715", id:"Voice4"},
-		{src:"sounds/Voice1.mp3?1712937854715", id:"Voice1"},
-		{src:"sounds/SoundBoton.mp3?1712937854715", id:"SoundBoton"},
-		{src:"sounds/Voice5.mp3?1712937854715", id:"Voice5"},
-		{src:"sounds/BGM.mp3?1712937854715", id:"BGM"}
+		{src:"images/Barco.png?1714879182858", id:"Barco"},
+		{src:"images/FondoCielo.png?1714879182858", id:"FondoCielo"},
+		{src:"images/FondoMar.png?1714879182858", id:"FondoMar"},
+		{src:"images/PiedrasFondoHorizonte.png?1714879182858", id:"PiedrasFondoHorizonte"},
+		{src:"images/index_atlas_1.png?1714879182598", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1714879182598", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1714879182601", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1714879182603", id:"index_atlas_4"},
+		{src:"sounds/audio.mp3?1714879182858", id:"audio"},
+		{src:"sounds/cannonSound.mp3?1714879182858", id:"cannonSound"},
+		{src:"sounds/incorrect.mp3?1714879182858", id:"incorrect"},
+		{src:"sounds/correct.mp3?1714879182858", id:"correct"},
+		{src:"sounds/Voice3.mp3?1714879182858", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1714879182858", id:"Voice4"},
+		{src:"sounds/Voice1.mp3?1714879182858", id:"Voice1"},
+		{src:"sounds/SoundBoton.mp3?1714879182858", id:"SoundBoton"},
+		{src:"sounds/Voice5.mp3?1714879182858", id:"Voice5"},
+		{src:"sounds/BGM.mp3?1714879182858", id:"BGM"}
 	],
 	preloads: []
 };

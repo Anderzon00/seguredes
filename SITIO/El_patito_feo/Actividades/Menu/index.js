@@ -1450,7 +1450,11 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		this.stop();
-		
+		 
+		 var iframe = window.parent.document.getElementById('mi_iframe');
+		iframe.src = './Ayuda/Actividades/Menu/index.html';
+		 
+		 
 		var textInput;
 		
 		setTimeout(function()
@@ -1498,14 +1502,20 @@ if (reversed == null) { reversed = false; }
 		      window.open('../Rompecabezas/3', '_self');
 		    }
 		  });
-		});
+		
+		  srcRompecabezas
+		  
+		  });
 		 
 		_this.btnEntrar1.on('click', function(){		
 		if ($("#imput1").val()=="Respeto" || $("#imput1").val()=="respeto"  ) { 	
 			createjs.Sound.play("entrar", {
 				volume: 0.5
 			}).on("complete", function () {
+				
+				   
 					window.open('../Sopa', '_self');
+				
 			}, this);
 			}
 			
@@ -1519,7 +1529,9 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.play("entrar", {
 				volume: 0.5
 			}).on("complete", function () {
+				
 				window.open('../quiz', '_self');
+				
 			}, this);
 			}
 			else 		 
@@ -1530,11 +1542,14 @@ if (reversed == null) { reversed = false; }
 			 if( e.keyCode==13){
 				
 			 
-			 if ($("#imput1").val()=="Respeto" || $("#imput1").val()=="respeto"  ) 
-			window.open('../Sopa', '_self'); 
-			else if ($("#imput2").val()=="Confianza"  || $("#imput2").val()=="confianza") 
+			 if ($("#imput1").val()=="Respeto" || $("#imput1").val()=="respeto"  ) {
+				
+			window.open('../Sopa', '_self');
+				 
+				 }
+			else if ($("#imput2").val()=="Confianza"  || $("#imput2").val()=="confianza") {
 			
-			window.open('../quiz', '_self'); 
+			window.open('../quiz', '_self'); }
 			else 		 
 		_this.gotoAndStop(1); 
 		
@@ -1710,13 +1725,13 @@ lib.properties = {
 	color: "#009900",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1713404489619", id:"index_atlas_1"},
-		{src:"sounds/entrar.mp3?1713404489720", id:"entrar"},
-		{src:"sounds/error.mp3?1713404489720", id:"error"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1713404489720", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1713404489720", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1713404489720", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1713404489720", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1715128840877", id:"index_atlas_1"},
+		{src:"sounds/entrar.mp3?1715128840995", id:"entrar"},
+		{src:"sounds/error.mp3?1715128840995", id:"error"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1715128840995", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1715128840995", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1715128840995", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1715128840995", id:"an.TextInput"}
 	],
 	preloads: []
 };

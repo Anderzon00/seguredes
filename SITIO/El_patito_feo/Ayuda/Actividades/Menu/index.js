@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_P_1", frames: [[1010,522,841,287],[0,522,1008,287],[0,811,934,213],[1683,0,355,105],[1683,213,355,104],[1359,323,356,105],[1683,107,356,104],[1359,430,63,63],[1424,430,60,60],[1717,319,123,123],[1359,0,322,321],[0,0,1357,520]]}
+		{name:"index_atlas_P_1", frames: [[1010,1263,841,287],[0,1263,1008,287],[0,1552,934,213],[1442,0,355,105],[1442,213,355,104],[1359,1064,356,105],[1442,107,356,104],[1799,0,63,63],[1567,319,60,60],[1442,319,123,123],[1359,741,322,321],[0,741,1357,520],[0,0,1440,739]]}
 ];
 
 
@@ -107,6 +107,13 @@ lib.ssMetadata = [
 (lib.FondoTexto = function() {
 	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.screencapturemasterd2ovn6qahf2n97amplifyapp2024041812_09_30 = function() {
+	this.initialize(ss["index_atlas_P_1"]);
+	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -578,6 +585,12 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape}]}).to({state:[{t:this.shape_1}]},1).to({state:[{t:this.shape_2}]},1).wait(1));
 
+	// Capa_2
+	this.instance_5 = new lib.screencapturemasterd2ovn6qahf2n97amplifyapp2024041812_09_30();
+	this.instance_5.setTransform(-1142,-63,0.9486,1.0392);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(3));
+
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -599,14 +612,14 @@ if (reversed == null) { reversed = false; }
 	// Capa_2
 	this.ayuda = new lib.ayuda();
 	this.ayuda.name = "ayuda";
-	this.ayuda.setTransform(1142,61.9);
+	this.ayuda.setTransform(1142,61.85,1,0.9983);
 
 	this.timeline.addTween(cjs.Tween.get(this.ayuda).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(683,381.7,683,385.3);
+p.nominalBounds = new cjs.Rectangle(683,381.8,683,383.99999999999994);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -616,12 +629,12 @@ lib.properties = {
 	color: "#00FFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1714007802167", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1714007802218", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1714007802218", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1714007802218", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1714007802218", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1714007802218", id:"ayuda5"}
+		{src:"images/index_atlas_P_1.png?1715056475278", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715056475330", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715056475330", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715056475330", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1715056475330", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1715056475330", id:"ayuda5"}
 	],
 	preloads: []
 };

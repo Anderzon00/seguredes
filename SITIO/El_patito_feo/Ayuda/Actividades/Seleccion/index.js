@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_P_1", frames: [[0,522,971,299],[125,823,63,63],[190,823,60,60],[0,823,123,123],[973,522,322,321],[0,0,1357,520]]}
+		{name:"index_atlas_P_1", frames: [[0,1263,971,299],[1359,741,63,63],[1359,806,60,60],[1297,1263,123,123],[973,1263,322,321],[0,741,1357,520],[0,0,1440,739]]}
 ];
 
 
@@ -66,6 +66,13 @@ lib.ssMetadata = [
 	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
+
+
+
+(lib.screencapture1270018090indexhtml2024041821_11_45 = function() {
+	this.initialize(ss["index_atlas_P_1"]);
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
 // helper functions:
 
 function mc_symbol_clone() {
@@ -83,6 +90,42 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	prototype.frameBounds = frameBounds;
 	return prototype;
 	}
+
+
+(lib.Símbolo1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(255,255,0,0.698)").s().p("AiPCQQgRgRgMgUQgegvgBg8QAAhUA8g7QA7g8BUABQBUgBA8A8QA6A6ACBSIAAADQAABUg8A8Qg8A7hUABQhUgBg7g7g");
+	this.shape.setTransform(19.85,20.4);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("rgba(255,255,0,0.698)").s().p("Ah/IlQgRgRgMgUQgegvAAg8QAAhVA7g7QA8g8BTABQBVgBA7A8QA6A6ACBSIAAAEQAABUg8A8Qg7A7hVABQhTgBg8g7gAifkEQgRgRgNgUQgegvAAg8QAAhVA8g7QA7g8BVABQBTgBA8A8QA6A6ABBSIAAAEQAABUg7A8Qg8A7hTABQhVgBg7g7g");
+	this.shape_1.setTransform(21.475,60.9);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("rgba(255,255,0,0.698)").s().p("Ah/O4QgRgRgMgTQgegwAAg8QAAhUA7g8QA8g7BTgBQBVABA7A7QA6A6ACBSIAAAEQAABUg8A8Qg7A8hVgBQhTABg8g8gAh/CSQgRgRgMgUQgegvAAg8QAAhUA7g7QA8g8BTABQBVgBA7A8QA6A6ACBSIAAADQAABUg8A8Qg7A7hVABQhTgBg8g7gAifqXQgRgRgNgUQgegvAAg8QAAhVA8g7QA7g8BVABQBTgBA8A8QA6A6ABBSIAAAEQAABUg7A8Qg8A7hTABQhVgBg7g7g");
+	this.shape_2.setTransform(21.475,101.2);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("rgba(255,255,0,0.698)").s().p("AiFVPQgRgSgNgTQgegwAAg7QAAhVA8g7QA7g8BUAAQBUAAA8A8QA6A5ABBSIAAAFQAABUg7A8Qg8A7hUAAQhUAAg7g7gAh/IhQgRgRgMgTQgegvAAg9QAAhUA7g8QA8g7BTAAQBVAAA7A7QA6A7ACBSIAAADQAABVg8A7Qg7A8hVAAQhTAAg8g8gAh/kDQgRgSgMgTQgegvAAg8QAAhVA7g7QA8g8BTAAQBVAAA7A8QA6A5ACBSIAAAFQAABUg8A8Qg7A7hVAAQhTAAg8g7gAifwtQgRgSgNgTQgegvAAg8QAAhVA8g7QA7g8BVAAQBTAAA8A8QA6A5ABBSIAAAFQAABUg7A8Qg8A7hTAAQhVAAg7g7g");
+	this.shape_3.setTransform(21.475,141.85);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.shape}]},12).to({state:[{t:this.shape_1}]},23).to({state:[{t:this.shape_2}]},24).to({state:[{t:this.shape_3}]},24).wait(18));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-0.5,0,44,283.7);
 
 
 (lib.Interpolación4 = function(mode,startPosition,loop,reversed) {
@@ -319,44 +362,50 @@ if (reversed == null) { reversed = false; }
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
+	// Capa_2
+	this.instance = new lib.Símbolo1();
+	this.instance.setTransform(131.5,26.7,1,1,0,0,0,20.4,20.4);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
 	// btn_sonido5
 	this.btn_sonido1 = new lib.btn_sonido();
 	this.btn_sonido1.name = "btn_sonido1";
-	this.btn_sonido1.setTransform(905.5,-31.35,1.8208,1.8208,0,0,0,15.8,15.7);
+	this.btn_sonido1.setTransform(839.5,-31.35,1.8208,1.8208,0,0,0,15.8,15.7);
 	new cjs.ButtonHelper(this.btn_sonido1, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get(this.btn_sonido1).wait(1));
 
 	// navegacion
-	this.instance = new lib.flecha();
-	this.instance.setTransform(580.35,9.9,0.9999,0.9999,0,-90.0026,89.9974,78.5,72);
+	this.instance_1 = new lib.flecha();
+	this.instance_1.setTransform(514.35,9.9,0.9999,0.9999,0,-90.0026,89.9974,78.5,72);
 
 	this.btnStopSonido1 = new lib.btnStopSonido();
 	this.btnStopSonido1.name = "btnStopSonido1";
-	this.btnStopSonido1.setTransform(906.85,-31.35,1.8208,1.8208,0,0,0,15.8,15.7);
+	this.btnStopSonido1.setTransform(839.5,-31.35,1.8208,1.8208,0,0,0,15.8,15.7);
 	new cjs.ButtonHelper(this.btnStopSonido1, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnStopSonido1},{t:this.instance}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnStopSonido1},{t:this.instance_1}]}).wait(1));
 
 	// cerrar
 	this.btnCerrar1 = new lib.cerrar();
 	this.btnCerrar1.name = "btnCerrar1";
-	this.btnCerrar1.setTransform(1155.45,-19.15,1,1,0,0,0,30.8,30.8);
+	this.btnCerrar1.setTransform(1089.45,-19.15,1,1,0,0,0,30.8,30.8);
 	new cjs.ButtonHelper(this.btnCerrar1, 0, 1, 2);
 
 	this.timeline.addTween(cjs.Tween.get(this.btnCerrar1).wait(1));
 
 	// texto
-	this.instance_1 = new lib._1_3();
-	this.instance_1.setTransform(663,13,0.5,0.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
-
-	// cuadro
-	this.instance_2 = new lib.FondoTexto();
-	this.instance_2.setTransform(634,-37,0.3997,0.4567);
+	this.instance_2 = new lib._1_3();
+	this.instance_2.setTransform(597,13,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
+
+	// cuadro
+	this.instance_3 = new lib.FondoTexto();
+	this.instance_3.setTransform(568,-37,0.3997,0.4567);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1));
 
 	// transparencia_copia
 	this.shape = new cjs.Shape();
@@ -389,6 +438,12 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.ayuda).wait(1));
 
+	// Capa_3
+	this.instance = new lib.screencapture1270018090indexhtml2024041821_11_45();
+	this.instance.setTransform(0,0,0.9486,1.0392);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
@@ -402,8 +457,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1713765077744", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1713765077779", id:"ayuda1"}
+		{src:"images/index_atlas_P_1.png?1715057387011", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715057387055", id:"ayuda1"}
 	],
 	preloads: []
 };

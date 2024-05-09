@@ -650,15 +650,12 @@ if (reversed == null) { reversed = false; }
 		iframe.src = './Ayuda/index.html'
 		document.getElementById('mi_iframe').style.display = 'none';
 		
-		
-		
 		function ajustarIframe() {	 
 			document.getElementById('mi_iframe').style.width =  window.innerWidth  + 'px';
 			document.getElementById('mi_iframe').style.height = window.innerHeight  + 'px';
 		}
 		
 		ajustarIframe();
-		
 		window.addEventListener('resize', ajustarIframe);
 		this.stop();
 		
@@ -760,62 +757,58 @@ if (reversed == null) { reversed = false; }
 		
 		var _this = this;
 		var iframe = document.getElementById('mi_iframe');
-		iframe.src = './Ayuda/Cuento/index.html';
+		iframe.src = './Ayuda/Cuento/index.html'; 
 		
 		_this.btnAyudaCuento.on('click', function () {
-			var iframeContenidos = document.getElementById('contenidos');
-			var url = iframeContenidos.contentWindow.location.href;
-			var audioMuted = iframeContenidos.contentWindow.createjs.Sound.muted;
-			iframeContenidos.contentWindow.createjs.Sound.muted = !audioMuted;
-			document.getElementById('mi_iframe').style.display = 'block';
+		document.getElementById('mi_iframe').style.display = 'block';
+			createjs.Sound.stop();
+			var root = document.getElementById('contenidos').contentWindow; 
+			root.exportRoot.pause.visible = false;
+			root.exportRoot.playaudio.visible = true;
+			root.createjs.Sound.stop();
+			
+		/*	
+		if (typeof root.playSound === 'function') {
+		  root.playSound(null, "voice", true, {});
+		}	 
+		
+		*/
+		
 		});
 	}
 	this.frame_14 = function() {
-		var btnAyuda = this.btnAyudaCotenidos;
-		var _this=this;
+		var btnAyudaC = this.btnAyudaCotenidos;
 		
-		var iframe = document.getElementById('mi_iframe');
-		iframe.src = './Ayuda/Contenidos/index.html';
-		btnAyuda.on('click', function () {	
-			
-			var iframeContenidos = document.getElementById('contenidos');
+		var iframeContenidos = document.getElementById('contenidos');
 		
-		var url = iframeContenidos.contentWindow.location.href;
-			
-			if (url.includes('/Que_es/') || url.includes('/Como_ocurre/')) {		
-				iframe.src = './Ayuda/Contenidos/Que_es/index.html';
-			} 
-			else if (url.includes('/Como_evitarlo/') || url.includes('/Si_me_ocurre/') || url.includes('/Contenido_Extra/')) {
-				iframe.src = './Ayuda/Contenidos/Como_evitarlo/index.html';
-			}		
-			iframe.style.display = 'block';	
+		
+		var iframeC = window.parent.document.getElementById('mi_iframe');
+		
+		
+		
+		
+		btnAyudaC.on('click', function () {
+			if (iframeContenidos && iframeContenidos.contentWindow && iframeContenidos.contentWindow.createjs) {
+				iframeContenidos.contentWindow.createjs.Sound.stop();
+			}
+			// Verificar si el iframe 'video' existe y si createjs está definido para él
+			var iframeVideo = iframeContenidos.contentWindow.document.getElementById('video');
+			if (iframeVideo && iframeVideo.contentWindow && iframeVideo.contentWindow.createjs) {
+				iframeVideo.contentWindow.createjs.Sound.stop();
+			}
+			iframeC.style.display = 'block';
 		});
 	}
 	this.frame_15 = function() {
-		var btnAyuda = this.btnAyudaActividades;
-		
-		
 		var iframe = document.getElementById('mi_iframe');
-		iframe.src = './Ayuda/Actividades/Menu/index.html';
 		
-		var _this = this;
+		var iframeContenidos = document.getElementById('contenidos');
+		
+		btnAyuda = this.btnAyudaActividades;
 		
 		btnAyuda.on('click', function () {
-		
-			var iframeContenidos = document.getElementById('contenidos');
-			var url = iframeContenidos.contentWindow.location.href;
-		
-			var audioMuted = iframeContenidos.contentWindow.createjs.Sound.muted;
-			iframeContenidos.contentWindow.createjs.Sound.muted = !audioMuted;
-		
-			if (url.includes('/Rompecabezas/')) {
-				iframe.src = './Ayuda/Actividades/Rompecabezas/index.html';
-			} else if (url.includes('/Sopa/')) {
-				iframe.src = './Ayuda/Actividades/Sopa/index.html';
-			} else if (url.includes('/quiz/')) {
-				iframe.src = './Ayuda/Actividades/Seleccion/index.html';
-			}
-			iframe.style.display = 'block';
+		iframeContenidos.contentWindow.createjs.Sound.muted = true;
+		iframe.style.display = 'block';
 		});
 	}
 
@@ -865,34 +858,6 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.bntPlay).wait(11).to({_off:false},1).to({regX:0,regY:0,scaleX:1,scaleY:1,x:685,y:345},1).wait(1).to({scaleX:1.0011,x:685.6},0).wait(1).to({scaleX:1,x:685},0).wait(1));
 
 	// btnAyuda
-	this.btnAyudaCuento = new lib.btnAyuda();
-	this.btnAyudaCuento.name = "btnAyudaCuento";
-	this.btnAyudaCuento.setTransform(1214.85,32.95);
-	new cjs.ButtonHelper(this.btnAyudaCuento, 0, 1, 2);
-
-	this.btnAyudaCotenidos = new lib.btnAyuda();
-	this.btnAyudaCotenidos.name = "btnAyudaCotenidos";
-	this.btnAyudaCotenidos.setTransform(1214.85,32.95);
-	new cjs.ButtonHelper(this.btnAyudaCotenidos, 0, 1, 2);
-
-	this.btnAyudaActividades = new lib.btnAyuda();
-	this.btnAyudaActividades.name = "btnAyudaActividades";
-	this.btnAyudaActividades.setTransform(1214.85,32.95);
-	new cjs.ButtonHelper(this.btnAyudaActividades, 0, 1, 2);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnAyudaCuento}]},13).to({state:[{t:this.btnAyudaCotenidos}]},1).to({state:[{t:this.btnAyudaActividades}]},1).wait(1));
-
-	// botones
-	this.btnInicio = new lib.btnInicio();
-	this.btnInicio.name = "btnInicio";
-	this.btnInicio.setTransform(113.15,738.55,1,1,0,0,0,-511.5,0.8);
-	new cjs.ButtonHelper(this.btnInicio, 0, 1, 2);
-
-	this.btnAyuda = new lib.btnAyuda();
-	this.btnAyuda.name = "btnAyuda";
-	this.btnAyuda.setTransform(1214.85,32.95);
-	new cjs.ButtonHelper(this.btnAyuda, 0, 1, 2);
-
 	this.btnActividades = new lib.btnActividades();
 	this.btnActividades.name = "btnActividades";
 	this.btnActividades.setTransform(1019.5,32.95);
@@ -908,31 +873,73 @@ if (reversed == null) { reversed = false; }
 	this.btnVolver.setTransform(1205.7,738.75,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolver, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades},{t:this.btnAyuda},{t:this.btnInicio}]}).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades}]},13).wait(3));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnVolver},{t:this.btnContenidos},{t:this.btnActividades}]}).wait(16));
 
-	// tarjeta
-	this.instance_6 = new lib.Portada();
-	this.instance_6.setTransform(101,50,0.5021,0.5009);
+	// btnInicio
+	this.btnInicio = new lib.btnInicio();
+	this.btnInicio.name = "btnInicio";
+	this.btnInicio.setTransform(113.15,738.55,1,1,0,0,0,-511.5,0.8);
+	new cjs.ButtonHelper(this.btnInicio, 0, 1, 2);
 
 	this.btnVolverAcuento = new lib.btnVolverAcuento();
 	this.btnVolverAcuento.name = "btnVolverAcuento";
 	this.btnVolverAcuento.setTransform(156.55,737.4,1,1,0,0,0,460.2,1.5);
 	new cjs.ButtonHelper(this.btnVolverAcuento, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6}]}).to({state:[{t:this.btnVolverAcuento}]},13).wait(3));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnInicio}]}).to({state:[{t:this.btnVolverAcuento}]},13).wait(3));
+
+	// btnAyuda
+	this.btnAyuda = new lib.btnAyuda();
+	this.btnAyuda.name = "btnAyuda";
+	this.btnAyuda.setTransform(1214.85,32.95);
+	new cjs.ButtonHelper(this.btnAyuda, 0, 1, 2);
+
+	this.btnAyudaCuento = new lib.btnAyuda();
+	this.btnAyudaCuento.name = "btnAyudaCuento";
+	this.btnAyudaCuento.setTransform(1214.85,32.95);
+	new cjs.ButtonHelper(this.btnAyudaCuento, 0, 1, 2);
+
+	this.btnAyudaCotenidos = new lib.btnAyuda();
+	this.btnAyudaCotenidos.name = "btnAyudaCotenidos";
+	this.btnAyudaCotenidos.setTransform(1214.85,32.95);
+	new cjs.ButtonHelper(this.btnAyudaCotenidos, 0, 1, 2);
+
+	this.btnAyudaActividades = new lib.btnAyuda();
+	this.btnAyudaActividades.name = "btnAyudaActividades";
+	this.btnAyudaActividades.setTransform(1214.85,32.95);
+	new cjs.ButtonHelper(this.btnAyudaActividades, 0, 1, 2);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnAyuda}]}).to({state:[{t:this.btnAyudaCuento}]},13).to({state:[{t:this.btnAyudaCotenidos}]},1).to({state:[{t:this.btnAyudaActividades}]},1).wait(1));
+
+	// botones
+	this.instance_6 = new lib.Portada();
+	this.instance_6.setTransform(100,50,0.5021,0.5009);
+
+	this.btnActividades_1 = new lib.btnActividades();
+	this.btnActividades_1.name = "btnActividades_1";
+	this.btnActividades_1.setTransform(1019.5,32.95);
+	new cjs.ButtonHelper(this.btnActividades_1, 0, 1, 2);
+
+	this.btnContenidos_1 = new lib.btnContenidos();
+	this.btnContenidos_1.name = "btnContenidos_1";
+	this.btnContenidos_1.setTransform(790.25,33.1);
+	new cjs.ButtonHelper(this.btnContenidos_1, 0, 1, 2, false, new lib.btnContenidos(), 3);
+
+	this.btnVolver_1 = new lib.btnVolver();
+	this.btnVolver_1.name = "btnVolver_1";
+	this.btnVolver_1.setTransform(1205.7,738.75,1,1,0,0,0,460.2,1.5);
+	new cjs.ButtonHelper(this.btnVolver_1, 0, 1, 2);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_6}]}).to({state:[{t:this.btnVolver_1},{t:this.btnContenidos_1},{t:this.btnActividades_1}]},13).wait(3));
 
 	// fondo
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#FFFFFF").s().p("Ehc8AsYMAAAhYvMC54AAAMAAABYvg");
-	this.shape_1.setTransform(696.9086,337,1.0019,1);
-
 	this.instance_7 = new lib.bannernegro1();
-	this.instance_7.setTransform(101,621,0.5025,0.5);
+	this.instance_7.setTransform(100,621,0.5025,0.5);
 
 	this.instance_8 = new lib.fondo11();
 	this.instance_8.setTransform(-38,-37,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.shape_1}]}).wait(16));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7}]}).wait(16));
 
 	this._renderFirstFrame();
 
@@ -947,14 +954,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1714750831929", id:"bannernegro1"},
-		{src:"images/fondo11.png?1714750831929", id:"fondo11"},
-		{src:"images/fondoMorado.png?1714750831929", id:"fondoMorado"},
-		{src:"images/Portada.png?1714750831929", id:"Portada"},
-		{src:"images/index_atlas_1.png?1714750831865", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1714750831929", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1714750831929", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1714750831929", id:"sound1"}
+		{src:"images/bannernegro1.png?1715148489459", id:"bannernegro1"},
+		{src:"images/fondo11.png?1715148489459", id:"fondo11"},
+		{src:"images/fondoMorado.png?1715148489459", id:"fondoMorado"},
+		{src:"images/Portada.png?1715148489459", id:"Portada"},
+		{src:"images/index_atlas_1.png?1715148489399", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1715148489459", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1715148489460", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1715148489460", id:"sound1"}
 	],
 	preloads: []
 };
