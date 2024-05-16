@@ -1471,6 +1471,14 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 		
+		 
+		
+		var iframeD = window.parent.document.getElementById('mi_iframe');
+		iframeD.src = './Ayuda/Actividades3/Menu/index.html';
+		
+			
+			
+			
 		setTimeout(function()
 		
 		{    // dom_overlay_container is a global reference to a div element created by Animate CC. "txt" is the instance name of your component
@@ -1680,14 +1688,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1714945515709", id:"index_atlas_1"},
-		{src:"sounds/play.mp3?1714945515824", id:"play"},
-		{src:"sounds/error41.mp3?1714945515824", id:"error41"},
-		{src:"sounds/sound.mp3?1714945515824", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1714945515824", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1714945515824", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1714945515824", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1714945515824", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1715625564380", id:"index_atlas_1"},
+		{src:"sounds/play.mp3?1715625564485", id:"play"},
+		{src:"sounds/error41.mp3?1715625564485", id:"error41"},
+		{src:"sounds/sound.mp3?1715625564485", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1715625564485", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1715625564485", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1715625564485", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1715625564485", id:"an.TextInput"}
 	],
 	preloads: []
 };

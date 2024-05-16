@@ -1271,8 +1271,12 @@ if (reversed == null) { reversed = false; }
 		    stretchToFit();
 		}
 		
+		
+		var iframeJ = window.parent.document.getElementById('mi_iframe');
+		iframeJ.src = './Ayuda/Contenidos/index.html';
+		
 		this.siguiente.addEventListener("click", fl_ClickToGoToWebPage_12);
-		function fl_ClickToGoToWebPage_12() {
+		 function fl_ClickToGoToWebPage_12() {
 			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
 		                    
 				window.open("Que_es", "_self");
@@ -1283,8 +1287,8 @@ if (reversed == null) { reversed = false; }
 		
 		this.btnQueEs.addEventListener("click", fl_ClickToGoToWebPage_13);
 		function fl_ClickToGoToWebPage_13() {
+		 
 			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
 			window.open("Que_es", "_self");
 				 
 		                    }, this);
@@ -1293,8 +1297,8 @@ if (reversed == null) { reversed = false; }
 		
 		this.btnComoOcurre.addEventListener("click", fl_ClickToGoToWebPage_14);
 		function fl_ClickToGoToWebPage_14() {
+		 
 		createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
 		window.open("Como_ocurre", "_self");
 				 
 		                    }, this);
@@ -1304,8 +1308,8 @@ if (reversed == null) { reversed = false; }
 		
 		this.btnComoEvitarlo.addEventListener("click", fl_ClickToGoToWebPage_15);
 		function fl_ClickToGoToWebPage_15() {
-			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
+		 	createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
+		                   
 			window.open("Como_evitarlo/index.html", "_self");
 				 
 		                    }, this);
@@ -1314,8 +1318,8 @@ if (reversed == null) { reversed = false; }
 		
 		this.btnSiMeOcurre.addEventListener("click", fl_ClickToGoToWebPage_16);
 		function fl_ClickToGoToWebPage_16() {
+		 
 			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
 		window.open("Si_me_ocurre", "_self");
 				 
 		                    }, this);
@@ -1325,8 +1329,8 @@ if (reversed == null) { reversed = false; }
 		
 		this.btnContenidoExtra.addEventListener("click", fl_ClickToGoToWebPage_17);
 		function fl_ClickToGoToWebPage_17() {
+		 
 			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
-		                    
 			window.open("Contenido_Extra", "_self");
 				 
 		                    }, this);
@@ -1410,9 +1414,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1713888054832", id:"index_atlas_1"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1713888054919", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1713888054919", id:"sound"}
+		{src:"images/index_atlas_1.png?1715476245171", id:"index_atlas_1"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1715476245262", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/sound.mp3?1715476245262", id:"sound"}
 	],
 	preloads: []
 };

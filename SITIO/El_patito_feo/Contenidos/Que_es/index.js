@@ -165,6 +165,28 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.Símbolo1, new cjs.Rectangle(-597,-284,1187,567.5), null);
 
 
+(lib.fondovideo = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Capa_1
+	this.instance = new lib.Fondodevideo();
+	this.instance.setTransform(0,0,0.4691,0.5583);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.fondovideo, new cjs.Rectangle(0,0,791.9,560.5), null);
+
+
 (lib.btnIndece = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -289,12 +311,16 @@ if (reversed == null) { reversed = false; }
 		}
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
+			 		window.parent.document.getElementById('mi_iframe').src='./Ayuda/Contenidos/Que_es/index.html';
+		
 		    stretchToFit();
 		}
 		
 		 
 		
 		var root= this;
+		
+		
 		var key;
 		
 		var element = document.createElement('div');
@@ -311,7 +337,8 @@ if (reversed == null) { reversed = false; }
 		  
 		  function embed (style){				
 		        for (key in style)
-			    element.style[key] = style[key];		
+			    element.style[key] = style[key];
+				element.style['z-index'] = '1';
 		}	 
 		
 		 embed( {position: 'absolute', 	 top: topElement  ,	left: leftElement});
@@ -326,6 +353,8 @@ if (reversed == null) { reversed = false; }
 		)
 		 
 		var _this = this;
+		 
+		 
 		 
 		_this.atrasA.on('click', function(){ 
 			createjs.Sound.play("audio", {
@@ -379,8 +408,8 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.siguienteA},{t:this.atrasA},{t:this.btnindice}]}).wait(1));
 
 	// fondo
-	this.instance = new lib.Fondodevideo();
-	this.instance.setTransform(183,-1,0.4691,0.5583);
+	this.instance = new lib.fondovideo();
+	this.instance.setTransform(578.9,279.2,1,1,0,0,0,395.9,280.2);
 
 	this.instance_1 = new lib.video();
 	this.instance_1.setTransform(21,202,0.5,0.5);
@@ -425,9 +454,11 @@ lib.properties = {
 	color: "#0066CC",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1713926107438", id:"index_atlas_1"},
-		{src:"sounds/audio2.mp3?1713926107476", id:"audio2"},
-		{src:"sounds/audio.mp3?1713926107476", id:"audio"}
+		{src:"images/index_atlas_1.png?1715630847668", id:"index_atlas_1"},
+		{src:"sounds/ayuda1.mp3?1715630847705", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715630847705", id:"ayuda2"},
+		{src:"sounds/audio2.mp3?1715630847705", id:"audio2"},
+		{src:"sounds/audio.mp3?1715630847705", id:"audio"}
 	],
 	preloads: []
 };

@@ -393,6 +393,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar1.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido1.visible=true;	
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -431,6 +432,8 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar2.on('click', function(){
 		createjs.Sound.stop();
+			
+		_this.btn_sonido2.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -464,6 +467,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar3.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido3.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -496,7 +500,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btnSiguiente1 = new lib.siguiente();
 	this.btnSiguiente1.name = "btnSiguiente1";
-	this.btnSiguiente1.setTransform(-381.75,568.05,1,1,0,0,0,89,26.2);
+	this.btnSiguiente1.setTransform(-470.75,568.05,1,1,0,0,0,89,26.2);
 	new cjs.ButtonHelper(this.btnSiguiente1, 0, 1, 2);
 
 	this.btnStopSonido1 = new lib.btnStopSonido();
@@ -521,7 +525,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btnAnterior3 = new lib.anterior();
 	this.btnAnterior3.name = "btnAnterior3";
-	this.btnAnterior3.setTransform(-472.95,306.85,1,1,0,0,0,88.8,26.2);
+	this.btnAnterior3.setTransform(-364.7,306.85,1,1,0,0,0,88.8,26.2);
 	new cjs.ButtonHelper(this.btnAnterior3, 0, 1, 2);
 
 	this.btnStopSonido3 = new lib.btnStopSonido();
@@ -634,12 +638,12 @@ lib.properties = {
 	color: "#00FFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1713898346956", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1713898347003", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1713898347003", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1713898347003", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1713898347003", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1713898347003", id:"ayuda5"}
+		{src:"images/index_atlas_P_1.png?1715672630068", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715672630122", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715672630122", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715672630122", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1715672630122", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1715672630122", id:"ayuda5"}
 	],
 	preloads: []
 };

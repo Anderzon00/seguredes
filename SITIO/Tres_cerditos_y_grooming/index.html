@@ -22,25 +22,88 @@
   }
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1714751007000"></script>
+<script src="index.js?1715826405418"></script>
 <script>
 // Global Scripts
-	var root=this;
-function funcionInvisible() { 
+	const NUMERO_BOTONES = 6;
+function irCuento() {
+    exportRoot.gotoAndStop(12);
+}
+function ocultaAyuda() {
+    document.getElementById('mi_iframe').style.display = 'none';
+    var iframeContenidos = document.getElementById('contenidos');  	
+	if(iframeContenidos.contentWindow.createjs){	
+    iframeContenidos.contentWindow.createjs.Sound.muted = false;}   
+} 	
+	function ocultaAyudaContenidos() {  
+    var iframeContenidos = document.getElementById('contenidos');
+    var iframeVideo = iframeContenidos.contentWindow.document.getElementById('video');	
+    document.getElementById('mi_iframe').style.display = 'none';
+    mostrarBotonesSonido(iframeContenidos.contentWindow.exportRoot);		
+		if(iframeVideo){
+			mostrarBotonesSonido(iframeVideo.contentWindow.exportRoot);
+			}	
+}
+function mostrarBotonesSonido(root) {
+    if (!root || typeof root !== 'object') {
+        throw new Error('El objeto root no es válido.');
+    }
+    for (var i = 1; i <= NUMERO_BOTONES; i++) {
+        var nombreBoton = 'btn_sonido' + i;
+        if (root[nombreBoton] && typeof root[nombreBoton].visible !== 'undefined') {
+            root[nombreBoton].visible = true; // Cambiar a false para ocultar
+        }
+    }
+}
+function activar (){
+	 exportRoot.btnContenidos.mouseEnabled =true
+ exportRoot.btnActividades.mouseEnabled =true
+ exportRoot.btnInicio.mouseEnabled =true
+	 exportRoot.btnVolverAcuento.mouseEnabled =true
+	 exportRoot.btnVolver.mouseEnabled =true
+	 exportRoot.btnAyuda.mouseEnabled =true	
+	 exportRoot.play.mouseEnabled =true
+	}
+	function funcionInvisible() { 
 exportRoot.botones.gotoAndStop(0);
     } 
 	function funcionVisible() {
 exportRoot.botones.gotoAndStop(1);
     } 	
-	function irCuento(){
-exportRoot.gotoAndStop(12);	
+	var valorPosicionAnterior = ''
+let historial = [];
+function agregarAlHistorial() {
+	// Extraer el subdirectorio de la URL     
+	const subdirectorio = document.getElementById('contenidos').contentWindow.location.href;
+	// Verificar si el subdirectorio ya está en el historial
+	if (historial.includes(subdirectorio)) {
+		console.log("El subdirectorio ya existe en el historial:", subdirectorio);
+	} else
+	// Agregar el subdirectorio al historial
+	{
+		historial.push(subdirectorio);
+		console.log("Subdirectorio agregado al historial:", subdirectorio);
+	}
+	// Obtener la posición del subdirectorio actual en el historial
+	const posicionActual = historial.indexOf(subdirectorio);
+	// Si la posición actual no es la primera del historial
+	if (posicionActual > 0) {
+		// Obtener el valor de la posición anterior en el historial
+		valorPosicionAnterior = historial[posicionActual - 1];
+		console.log("Valor de la posición anterior en el historial:", valorPosicionAnterior);
+	} else {
+		console.log("No hay posición anterior en el historial.");
+	}
+	console.log("Esto hay en el historial:", historial);
 }
-function ocultaAyuda() {
-	document.getElementById('mi_iframe').style.display = 'none';
-	var iframeContenidos = document.getElementById('contenidos');
-	var audioMuted = iframeContenidos.contentWindow.createjs.Sound.muted;
-	iframeContenidos.contentWindow.createjs.Sound.muted = !audioMuted;
-}</script>
+function obtenerHistorial() {
+	const posicionAnterior = historial.indexOf(valorPosicionAnterior);		
+	document.getElementById('contenidos').src = valorPosicionAnterior;	
+	historial.pop();
+	console.log("Última posición eliminada del historial.");
+}
+//window.parent.agregarAlHistorial();
+// window.parent.obtenerHistorial();</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {

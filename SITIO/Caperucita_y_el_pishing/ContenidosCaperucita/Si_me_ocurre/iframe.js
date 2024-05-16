@@ -625,13 +625,6 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
-		stage.on('drawstart', initStage, this, true);
-		function initStage() {
-			stretchToFit();
-		}
-		
-		
-		
 		var _this = this;
 		createjs.Sound.stop();
 		/*
@@ -824,11 +817,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1713886410766", id:"iframe_atlas_1"},
-		{src:"sounds/audio1.mp3?1713886410821", id:"audio1"},
-		{src:"sounds/audio2.mp3?1713886410821", id:"audio2"},
-		{src:"sounds/audio3.mp3?1713886410821", id:"audio3"},
-		{src:"sounds/audio4.mp3?1713886410821", id:"audio4"}
+		{src:"images/iframe_atlas_1.png?1715477750307", id:"iframe_atlas_1"},
+		{src:"sounds/audio1.mp3?1715477750365", id:"audio1"},
+		{src:"sounds/audio2.mp3?1715477750365", id:"audio2"},
+		{src:"sounds/audio3.mp3?1715477750365", id:"audio3"},
+		{src:"sounds/audio4.mp3?1715477750365", id:"audio4"}
 	],
 	preloads: []
 };

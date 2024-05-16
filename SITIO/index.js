@@ -1518,13 +1518,13 @@ lib.properties = {
 	color: "#006699",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/fondoizq.png?1713844067804", id:"fondoizq"},
-		{src:"images/index_atlas_P_1.png?1713844067682", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1713844067683", id:"index_atlas_P_2"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1713844067804", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1713844067804", id:"sound"},
-		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1713844067804", id:"notificationsound70621onlineaudioconvertercom"},
-		{src:"sounds/sound2.mp3?1713844067804", id:"sound2"}
+		{src:"images/fondoizq.png?1715445024782", id:"fondoizq"},
+		{src:"images/index_atlas_P_1.png?1715445024654", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1715445024654", id:"index_atlas_P_2"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1715445024782", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/sound.mp3?1715445024782", id:"sound"},
+		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1715445024782", id:"notificationsound70621onlineaudioconvertercom"},
+		{src:"sounds/sound2.mp3?1715445024782", id:"sound2"}
 	],
 	preloads: []
 };

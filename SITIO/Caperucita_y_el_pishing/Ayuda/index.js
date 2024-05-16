@@ -400,6 +400,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar1.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido1.visible=true;	
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -438,6 +439,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar2.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido2.visible=true;	
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -475,6 +477,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar3.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido3.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -512,6 +515,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar4.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido4.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -547,6 +551,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar5.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido5.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -767,12 +772,12 @@ lib.properties = {
 	color: "#006699",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1713654043971", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1713654044029", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1713654044029", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1713654044029", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1713654044029", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1713654044029", id:"ayuda5"}
+		{src:"images/index_atlas_P_1.png?1715629917764", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715629917815", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715629917815", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715629917815", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1715629917815", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1715629917815", id:"ayuda5"}
 	],
 	preloads: []
 };

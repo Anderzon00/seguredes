@@ -400,6 +400,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido1.visible=true;	
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -636,11 +637,11 @@ lib.properties = {
 	color: "#33FF33",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1713837267964", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1713837268021", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1713837268021", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1713837268021", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1713837268021", id:"ayuda4"}
+		{src:"images/index_atlas_P_1.png?1715630315627", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715630315737", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715630315737", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715630315737", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1715630315737", id:"ayuda4"}
 	],
 	preloads: []
 };

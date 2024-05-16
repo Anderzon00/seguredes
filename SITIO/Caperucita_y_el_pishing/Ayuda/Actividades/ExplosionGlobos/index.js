@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_P_1", frames: [[0,522,1101,292],[1359,125,63,63],[1424,125,60,60],[1359,0,123,123],[1103,522,322,321],[0,0,1357,520]]}
+		{name:"index_atlas_P_1", frames: [[0,1263,1101,292],[1359,866,63,63],[1359,931,60,60],[1359,741,123,123],[1103,1263,322,321],[0,741,1357,520],[0,0,1440,739]]}
 ];
 
 
@@ -65,6 +65,13 @@ lib.ssMetadata = [
 (lib.FondoTexto = function() {
 	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.screencapturemasterd2ovn6qahf2n97amplifyapp2024042018_29_05 = function() {
+	this.initialize(ss["index_atlas_P_1"]);
+	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -311,7 +318,9 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar1.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido1.visible=true;	
 			window.parent.ocultaAyuda();
+			
 		});
 	}
 
@@ -388,6 +397,12 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.ayuda).wait(1));
 
+	// Capa_3
+	this.instance = new lib.screencapturemasterd2ovn6qahf2n97amplifyapp2024042018_29_05();
+	this.instance.setTransform(0,0,0.9486,1.0392);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
@@ -401,8 +416,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1713656186789", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1713656186827", id:"ayuda1"}
+		{src:"images/index_atlas_P_1.png?1715474909539", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715474909582", id:"ayuda1"}
 	],
 	preloads: []
 };

@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>SEGUREDES</title>
+<title>iframe</title>
 <!-- write your code here -->
 <style>
   #animation_container, #_preload_div_ {
@@ -21,7 +21,7 @@
   }
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="iframe.js?1713886410862"></script>
+<script src="iframe.js?1715477750404"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -71,39 +71,14 @@ function handleComplete(evt,comp) {
 function playSound(id, loop, offset) {
 	return createjs.Sound.play(id, {'interrupt':createjs.Sound.INTERRUPT_EARLY, 'loop': loop, 'offset': offset});}
 </script>
-<script>
-	function stretchToFit() {
-		var _width = window.innerWidth;
-		var _height = window.innerHeight;
-		anim_container.style.width = _width + "px";
-		anim_container.style.height = _height + "px";
-		canvas.style.width = _width + "px";
-		canvas.style.height = _height + "px";
-		dom_overlay_container.style.width = _width + "px";
-		dom_overlay_container.style.height = _height + "px";
-	}
-	window.onresize = function() {
-		setTimeout(delayedStretch, 0);
-	};
-	function delayedStretch() {
-		stretchToFit();
-	}
-</script>
+<!-- write your code here -->
 </head>
-<body onload="init();" style="margin:0px; overflow:hidden;width:auto ;height:auto;">
-	<div id="animation_container" >
-		<canvas id="canvas"   display: none;  ></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none;   position: absolute; left: 0px; top: 0px;" display: none;>
+<body onload="init();" style="margin:0px;">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:1060px; height:974px">
+		<canvas id="canvas" width="1060" height="974" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1060px; height:974px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-	<div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block;  text-align: center;'>
-		<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>
- 	</div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:974px; width: 1060px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1715477750404 style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
-<!-- 
-stage.on('drawstart', initStage, this, true);
-function initStage() {
-    stretchToFit();
-}
- -->

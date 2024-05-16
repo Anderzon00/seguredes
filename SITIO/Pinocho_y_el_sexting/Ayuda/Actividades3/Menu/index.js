@@ -393,6 +393,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar1.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido1.visible=true;	
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -431,6 +432,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar2.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido2.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -464,6 +466,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar3.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido2.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -626,12 +629,12 @@ lib.properties = {
 	color: "#00FFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1713823015266", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1713823015313", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1713823015313", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1713823015313", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1713823015313", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1713823015313", id:"ayuda5"}
+		{src:"images/index_atlas_P_1.png?1715626869562", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715626869615", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715626869615", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715626869615", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1715626869615", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1715626869615", id:"ayuda5"}
 	],
 	preloads: []
 };

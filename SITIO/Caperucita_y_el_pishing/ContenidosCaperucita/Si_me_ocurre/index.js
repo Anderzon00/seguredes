@@ -262,6 +262,7 @@ if (reversed == null) { reversed = false; }
 		    stretchToFit();
 		}
 		
+		
 		this.btnAtras.addEventListener("click", fl_ClickToGoToWebPage_19);
 		
 		 function fl_ClickToGoToWebPage_19() {	 
@@ -286,6 +287,11 @@ if (reversed == null) { reversed = false; }
 		                    }, this);
 		
 		});
+		
+		var iframeJ = window.parent.document.getElementById('mi_iframe');
+		if(iframeJ ){
+		iframeJ.src = './Ayuda/Contenidos/Como_evitarlo/index.html';
+		}
 		var iframec = document.createElement('iframe');
 		iframec.id = 'contenidos';
 		iframec.style.position = 'absolute';
@@ -362,9 +368,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1713887842106", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1713887842140", id:"audioG"},
-		{src:"sounds/audioC.mp3?1713887842140", id:"audioC"}
+		{src:"images/index_atlas_1.png?1715477799609", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1715477799638", id:"audioG"},
+		{src:"sounds/audioC.mp3?1715477799638", id:"audioC"}
 	],
 	preloads: []
 };

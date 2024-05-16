@@ -2155,6 +2155,10 @@ if (reversed == null) { reversed = false; }
 		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
+			
+			window.parent.document.getElementById('mi_iframe').src = './Ayuda/Contenidos/Como_evitarlo/index.html';
+		
+			
 		    stretchToFit();
 		}
 		
@@ -2619,17 +2623,17 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1713889522538", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1713889522701", id:"audioG"},
-		{src:"sounds/audioC.mp3?1713889522701", id:"audioC"},
-		{src:"sounds/audio1.mp3?1713889522701", id:"audio1"},
-		{src:"sounds/audio2.mp3?1713889522701", id:"audio2"},
-		{src:"sounds/audio3.mp3?1713889522701", id:"audio3"},
-		{src:"sounds/audio4.mp3?1713889522701", id:"audio4"},
-		{src:"sounds/audio5.mp3?1713889522701", id:"audio5"},
-		{src:"sounds/audio6.mp3?1713889522701", id:"audio6"},
-		{src:"sounds/audio7.mp3?1713889522701", id:"audio7"},
-		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1713889522701", id:"y2matecomFreesoundeffectKeyboardtyping"}
+		{src:"images/index_atlas_1.png?1715670959821", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1715670959971", id:"audioG"},
+		{src:"sounds/audioC.mp3?1715670959971", id:"audioC"},
+		{src:"sounds/audio1.mp3?1715670959971", id:"audio1"},
+		{src:"sounds/audio2.mp3?1715670959971", id:"audio2"},
+		{src:"sounds/audio3.mp3?1715670959978", id:"audio3"},
+		{src:"sounds/audio4.mp3?1715670959978", id:"audio4"},
+		{src:"sounds/audio5.mp3?1715670959978", id:"audio5"},
+		{src:"sounds/audio6.mp3?1715670959978", id:"audio6"},
+		{src:"sounds/audio7.mp3?1715670959978", id:"audio7"},
+		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1715670959978", id:"y2matecomFreesoundeffectKeyboardtyping"}
 	],
 	preloads: []
 };

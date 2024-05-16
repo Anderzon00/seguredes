@@ -243,6 +243,9 @@ if (reversed == null) { reversed = false; }
 		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
+				window.parent.document.getElementById('mi_iframe').src = './Ayuda/Contenidos/Como_evitarlo/index.html';
+		
+			
 		    stretchToFit();
 		}
 		
@@ -316,9 +319,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1713889598357", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1713889598396", id:"audioG"},
-		{src:"sounds/audioC.mp3?1713889598396", id:"audioC"}
+		{src:"images/index_atlas_1.png?1715671015300", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1715671015342", id:"audioG"},
+		{src:"sounds/audioC.mp3?1715671015342", id:"audioC"}
 	],
 	preloads: []
 };

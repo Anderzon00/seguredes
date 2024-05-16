@@ -1464,6 +1464,8 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
+				window.parent.document.getElementById('mi_iframe').src  = './Ayuda/Contenidos/Como_evitarlo/index.html';
+		
 		    stretchToFit();
 			
 		}
@@ -1804,17 +1806,17 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1714010980331", id:"index_atlas_1"},
-		{src:"sounds/sound2.mp3?1714010980474", id:"sound2"},
-		{src:"sounds/sound1.mp3?1714010980474", id:"sound1"},
-		{src:"sounds/como1.mp3?1714010980474", id:"como1"},
-		{src:"sounds/como2.mp3?1714010980474", id:"como2"},
-		{src:"sounds/como3.mp3?1714010980474", id:"como3"},
-		{src:"sounds/como4.mp3?1714010980474", id:"como4"},
-		{src:"sounds/como5.mp3?1714010980474", id:"como5"},
-		{src:"sounds/como6.mp3?1714010980474", id:"como6"},
-		{src:"sounds/Scifidoorsoundeffect.mp3?1714010980474", id:"Scifidoorsoundeffect"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1714010980474", id:"y2matecomsonidodemagiaefectohadas"}
+		{src:"images/index_atlas_1.png?1715630942421", id:"index_atlas_1"},
+		{src:"sounds/sound2.mp3?1715630942557", id:"sound2"},
+		{src:"sounds/sound1.mp3?1715630942557", id:"sound1"},
+		{src:"sounds/como1.mp3?1715630942557", id:"como1"},
+		{src:"sounds/como2.mp3?1715630942557", id:"como2"},
+		{src:"sounds/como3.mp3?1715630942557", id:"como3"},
+		{src:"sounds/como4.mp3?1715630942557", id:"como4"},
+		{src:"sounds/como5.mp3?1715630942557", id:"como5"},
+		{src:"sounds/como6.mp3?1715630942557", id:"como6"},
+		{src:"sounds/Scifidoorsoundeffect.mp3?1715630942557", id:"Scifidoorsoundeffect"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1715630942557", id:"y2matecomsonidodemagiaefectohadas"}
 	],
 	preloads: []
 };

@@ -22,7 +22,7 @@
   }
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1715148489504"></script>
+<script src="index.js?1715461297454"></script>
 <script>
 // Global Scripts
 	const NUMERO_BOTONES = 6;
@@ -31,15 +31,15 @@ function irCuento() {
 }
 function ocultaAyuda() {
     document.getElementById('mi_iframe').style.display = 'none';
-    var iframeContenidos = document.getElementById('contenidos');  
-	if(iframeContenidos.contentWindow.createjs){
+    var iframeContenidos = document.getElementById('contenidos');  	
+	if(iframeContenidos.contentWindow.createjs){	
     iframeContenidos.contentWindow.createjs.Sound.muted = false;}   
 } 	
 	function ocultaAyudaContenidos() {  
     var iframeContenidos = document.getElementById('contenidos');
-    var iframeVideo = iframeContenidos.contentWindow.document.getElementById('video');
-document.getElementById('mi_iframe').style.display = 'none';
-    mostrarBotonesSonido(iframeContenidos.contentWindow.exportRoot);
+    var iframeVideo = iframeContenidos.contentWindow.document.getElementById('video');	
+    document.getElementById('mi_iframe').style.display = 'none';
+    mostrarBotonesSonido(iframeContenidos.contentWindow.exportRoot);		
 		if(iframeVideo){
 			mostrarBotonesSonido(iframeVideo.contentWindow.exportRoot);
 			}	
@@ -54,7 +54,16 @@ function mostrarBotonesSonido(root) {
             root[nombreBoton].visible = true; // Cambiar a false para ocultar
         }
     }
-}</script>
+}
+function activar (){
+	 exportRoot.btnContenidos.mouseEnabled =true
+ exportRoot.btnActividades.mouseEnabled =true
+ exportRoot.btnInicio.mouseEnabled =true
+	 exportRoot.btnVolverAcuento.mouseEnabled =true
+	 exportRoot.btnVolver.mouseEnabled =true
+	 exportRoot.btnAyuda.mouseEnabled =true	
+	 exportRoot.play.mouseEnabled =true
+	}</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {

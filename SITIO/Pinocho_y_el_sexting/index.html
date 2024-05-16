@@ -22,26 +22,54 @@
   }
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1714778102119"></script>
+<script src="index.js?1715627937864"></script>
 <script>
 // Global Scripts
-	var root=this;
-var pos="";
-function funcionInvisible() { 
+	const NUMERO_BOTONES = 6;
+function irCuento() {
+    exportRoot.gotoAndStop(12);
+}
+function ocultaAyuda() {
+    document.getElementById('mi_iframe').style.display = 'none';
+    var iframeContenidos = document.getElementById('contenidos');  	
+	if(iframeContenidos.contentWindow.createjs){	
+    iframeContenidos.contentWindow.createjs.Sound.muted = false;}   
+} 	
+	function ocultaAyudaContenidos() {  
+    var iframeContenidos = document.getElementById('contenidos');
+    var iframeVideo = iframeContenidos.contentWindow.document.getElementById('video');	
+    document.getElementById('mi_iframe').style.display = 'none';
+    mostrarBotonesSonido(iframeContenidos.contentWindow.exportRoot);		
+		if(iframeVideo){
+			mostrarBotonesSonido(iframeVideo.contentWindow.exportRoot);
+			}	
+}
+function mostrarBotonesSonido(root) {
+    if (!root || typeof root !== 'object') {
+        throw new Error('El objeto root no es válido.');
+    }
+    for (var i = 1; i <= NUMERO_BOTONES; i++) {
+        var nombreBoton = 'btn_sonido' + i;
+        if (root[nombreBoton] && typeof root[nombreBoton].visible !== 'undefined') {
+            root[nombreBoton].visible = true; // Cambiar a false para ocultar
+        }
+    }
+}
+function activar (){
+	 exportRoot.btnContenidos.mouseEnabled =true
+ exportRoot.btnActividades.mouseEnabled =true
+ exportRoot.btnInicio.mouseEnabled =true
+	 exportRoot.btnVolverAcuento.mouseEnabled =true
+	 exportRoot.btnVolver.mouseEnabled =true
+	 exportRoot.btnAyuda.mouseEnabled =true	
+	 exportRoot.play.mouseEnabled =true
+	}
+	function funcionInvisible() { 
 exportRoot.botones.gotoAndStop(0);
     } 
 	function funcionVisible() {
 exportRoot.botones.gotoAndStop(1);
-    } 	
-	function irCuento(){
-exportRoot.gotoAndStop(12);	
-}
-function ocultaAyuda() {
-	document.getElementById('mi_iframe').style.display = 'none';
-	var iframeContenidos = document.getElementById('contenidos');
-	var audioMuted = iframeContenidos.contentWindow.createjs.Sound.muted;
-	iframeContenidos.contentWindow.createjs.Sound.muted = !audioMuted;
-}</script>
+    }</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {

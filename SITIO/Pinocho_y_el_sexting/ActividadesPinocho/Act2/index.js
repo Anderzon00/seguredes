@@ -3774,6 +3774,11 @@ if (reversed == null) { reversed = false; }
 		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
+			
+			var iframe = window.parent.document.getElementById('mi_iframe')
+			if(iframe)
+			iframe.src='./Ayuda/Actividades3/Act2/index.html';
+			
 		    stretchToFit();
 		}
 		
@@ -4046,24 +4051,24 @@ lib.properties = {
 	color: "#0000FF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Barco.png?1714879182858", id:"Barco"},
-		{src:"images/FondoCielo.png?1714879182858", id:"FondoCielo"},
-		{src:"images/FondoMar.png?1714879182858", id:"FondoMar"},
-		{src:"images/PiedrasFondoHorizonte.png?1714879182858", id:"PiedrasFondoHorizonte"},
-		{src:"images/index_atlas_1.png?1714879182598", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1714879182598", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1714879182601", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1714879182603", id:"index_atlas_4"},
-		{src:"sounds/audio.mp3?1714879182858", id:"audio"},
-		{src:"sounds/cannonSound.mp3?1714879182858", id:"cannonSound"},
-		{src:"sounds/incorrect.mp3?1714879182858", id:"incorrect"},
-		{src:"sounds/correct.mp3?1714879182858", id:"correct"},
-		{src:"sounds/Voice3.mp3?1714879182858", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1714879182858", id:"Voice4"},
-		{src:"sounds/Voice1.mp3?1714879182858", id:"Voice1"},
-		{src:"sounds/SoundBoton.mp3?1714879182858", id:"SoundBoton"},
-		{src:"sounds/Voice5.mp3?1714879182858", id:"Voice5"},
-		{src:"sounds/BGM.mp3?1714879182858", id:"BGM"}
+		{src:"images/Barco.png?1715624730063", id:"Barco"},
+		{src:"images/FondoCielo.png?1715624730063", id:"FondoCielo"},
+		{src:"images/FondoMar.png?1715624730064", id:"FondoMar"},
+		{src:"images/PiedrasFondoHorizonte.png?1715624730064", id:"PiedrasFondoHorizonte"},
+		{src:"images/index_atlas_1.png?1715624729797", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1715624729797", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1715624729799", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1715624729800", id:"index_atlas_4"},
+		{src:"sounds/audio.mp3?1715624730064", id:"audio"},
+		{src:"sounds/cannonSound.mp3?1715624730064", id:"cannonSound"},
+		{src:"sounds/incorrect.mp3?1715624730064", id:"incorrect"},
+		{src:"sounds/correct.mp3?1715624730064", id:"correct"},
+		{src:"sounds/Voice3.mp3?1715624730064", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1715624730064", id:"Voice4"},
+		{src:"sounds/Voice1.mp3?1715624730064", id:"Voice1"},
+		{src:"sounds/SoundBoton.mp3?1715624730064", id:"SoundBoton"},
+		{src:"sounds/Voice5.mp3?1715624730064", id:"Voice5"},
+		{src:"sounds/BGM.mp3?1715624730064", id:"BGM"}
 	],
 	preloads: []
 };

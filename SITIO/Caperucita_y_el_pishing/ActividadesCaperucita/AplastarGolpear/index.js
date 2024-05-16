@@ -28,14 +28,14 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_6 = function() {
+(lib.CachedBmp_2 = function() {
 	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_5 = function() {
+(lib.CachedBmp_1 = function() {
 	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -896,10 +896,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Capa_2
-	this.instance = new lib.CachedBmp_5();
+	this.instance = new lib.CachedBmp_1();
 	this.instance.setTransform(-3.1,-2.95,0.3333,0.3333);
 
-	this.instance_1 = new lib.CachedBmp_6();
+	this.instance_1 = new lib.CachedBmp_2();
 	this.instance_1.setTransform(-3.55,-4.2,0.3333,0.3333);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},14).wait(23));
@@ -5118,6 +5118,7 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,1,2,3];
 	// timeline functions:
 	this.frame_0 = function() {
+		window.parent.document.getElementById('mi_iframe').src='./Ayuda/Actividades/AplastarGolpear/index.html';
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 			stretchToFit();
@@ -5397,19 +5398,19 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/EstrellasFondoRompecabezas.png?1714944004420", id:"EstrellasFondoRompecabezas"},
-		{src:"images/FondoActividad.png?1714944004420", id:"FondoActividad"},
-		{src:"images/index_atlas_1.png?1714944004162", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1714944004166", id:"index_atlas_2"},
-		{src:"sounds/audioG.mp3?1714944004420", id:"audioG"},
-		{src:"sounds/audioC.mp3?1714944004420", id:"audioC"},
-		{src:"sounds/sound1.mp3?1714944004420", id:"sound1"},
-		{src:"sounds/Voice2.mp3?1714944004420", id:"Voice2"},
-		{src:"sounds/instruccion.mp3?1714944004420", id:"instruccion"},
-		{src:"sounds/sound2.mp3?1714944004420", id:"sound2"},
-		{src:"sounds/mixkitelectricpop2365wav.mp3?1714944004420", id:"mixkitelectricpop2365wav"},
-		{src:"sounds/SoundBoton.mp3?1714944004420", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1714944004420", id:"sound"}
+		{src:"images/EstrellasFondoRompecabezas.png?1715464755027", id:"EstrellasFondoRompecabezas"},
+		{src:"images/FondoActividad.png?1715464755027", id:"FondoActividad"},
+		{src:"images/index_atlas_1.png?1715464754776", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1715464754779", id:"index_atlas_2"},
+		{src:"sounds/audioG.mp3?1715464755027", id:"audioG"},
+		{src:"sounds/audioC.mp3?1715464755027", id:"audioC"},
+		{src:"sounds/sound1.mp3?1715464755027", id:"sound1"},
+		{src:"sounds/Voice2.mp3?1715464755027", id:"Voice2"},
+		{src:"sounds/instruccion.mp3?1715464755027", id:"instruccion"},
+		{src:"sounds/sound2.mp3?1715464755027", id:"sound2"},
+		{src:"sounds/mixkitelectricpop2365wav.mp3?1715464755027", id:"mixkitelectricpop2365wav"},
+		{src:"sounds/SoundBoton.mp3?1715464755027", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1715464755027", id:"sound"}
 	],
 	preloads: []
 };

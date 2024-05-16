@@ -894,6 +894,8 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_1 = function() {
+		window.parent.document.getElementById('mi_iframe').src  = './Ayuda/Contenidos/Como_evitarlo/index.html';
+		
 		history.pushState("", document.title, window.location.pathname);
 		createjs.Sound.stop();
 		
@@ -1070,12 +1072,12 @@ lib.properties = {
 	color: "#66FF00",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1713887943377", id:"index_atlas_1"},
-		{src:"sounds/generales.mp3?1713887943472", id:"generales"},
-		{src:"sounds/indice.mp3?1713887943472", id:"indice"},
-		{src:"sounds/QuestionSoundEffect.mp3?1713887943472", id:"QuestionSoundEffect"},
-		{src:"sounds/audio4.mp3?1713887943472", id:"audio4"},
-		{src:"sounds/audio5.mp3?1713887943472", id:"audio5"}
+		{src:"images/index_atlas_1.png?1715630976516", id:"index_atlas_1"},
+		{src:"sounds/generales.mp3?1715630976609", id:"generales"},
+		{src:"sounds/indice.mp3?1715630976609", id:"indice"},
+		{src:"sounds/QuestionSoundEffect.mp3?1715630976609", id:"QuestionSoundEffect"},
+		{src:"sounds/audio4.mp3?1715630976609", id:"audio4"},
+		{src:"sounds/audio5.mp3?1715630976609", id:"audio5"}
 	],
 	preloads: []
 };

@@ -414,6 +414,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar1.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido1.visible=true;	
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -452,6 +453,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar2.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido2.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -489,6 +491,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar3.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido3.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -526,6 +529,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar4.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido4.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -565,6 +569,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar5.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido5.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -600,6 +605,8 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar6.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido6.visible=true;
+			
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -650,7 +657,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btnSiguiente1 = new lib.siguiente();
 	this.btnSiguiente1.name = "btnSiguiente1";
-	this.btnSiguiente1.setTransform(699.4,53.55,1,1,0,0,0,89,26.2);
+	this.btnSiguiente1.setTransform(595.25,53.55,1,1,0,0,0,89,26.2);
 	new cjs.ButtonHelper(this.btnSiguiente1, 0, 1, 2);
 
 	this.btnStopSonido1 = new lib.btnStopSonido();
@@ -720,7 +727,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btnAnterior6 = new lib.anterior();
 	this.btnAnterior6.name = "btnAnterior6";
-	this.btnAnterior6.setTransform(485.9,262.9,1,1,0,0,0,88.8,26.2);
+	this.btnAnterior6.setTransform(590.3,262.9,1,1,0,0,0,88.8,26.2);
 	new cjs.ButtonHelper(this.btnAnterior6, 0, 1, 2);
 
 	this.btnStopSonido6 = new lib.btnStopSonido();
@@ -865,13 +872,13 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1715046460273", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1715046460338", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1715046460338", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1715046460338", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1715046460338", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1715046460338", id:"ayuda5"},
-		{src:"sounds/ayuda6.mp3?1715046460338", id:"ayuda6"}
+		{src:"images/index_atlas_P_1.png?1715629761919", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715629761978", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715629761978", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715629761978", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1715629761978", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1715629761978", id:"ayuda5"},
+		{src:"sounds/ayuda6.mp3?1715629761978", id:"ayuda6"}
 	],
 	preloads: []
 };

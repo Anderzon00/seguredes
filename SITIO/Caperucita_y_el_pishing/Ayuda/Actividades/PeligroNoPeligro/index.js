@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_P_1", frames: [[0,522,1094,292],[1096,522,895,214],[1683,107,355,105],[1683,320,355,104],[1683,0,356,105],[1683,214,356,104],[1359,448,63,63],[1424,448,60,60],[1359,323,123,123],[1359,0,322,321],[0,0,1357,520]]}
+		{name:"index_atlas_P_1", frames: [[0,1263,1094,292],[1096,1263,895,214],[1442,430,355,105],[1442,643,355,104],[1442,323,356,105],[1442,537,356,104],[1891,0,63,63],[1956,0,60,60],[1766,0,123,123],[1442,0,322,321],[0,741,1357,520],[0,0,1440,739]]}
 ];
 
 
@@ -100,6 +100,13 @@ lib.ssMetadata = [
 (lib.FondoTexto = function() {
 	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.screencapturemasterd2ovn6qahf2n97amplifyapp2024042019_03_35 = function() {
+	this.initialize(ss["index_atlas_P_1"]);
+	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -378,6 +385,7 @@ if (reversed == null) { reversed = false; }
 		});
 		
 		_this.btnCerrar1.on('click', function(){
+			_this.btn_sonido1.visible=true;	
 		createjs.Sound.stop();
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
@@ -412,6 +420,7 @@ if (reversed == null) { reversed = false; }
 		});
 		
 		_this.btnCerrar2.on('click', function(){
+			_this.btn_sonido2.visible=true;
 		createjs.Sound.stop();
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
@@ -524,6 +533,12 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.ayuda).wait(1));
 
+	// Capa_1
+	this.instance = new lib.screencapturemasterd2ovn6qahf2n97amplifyapp2024042019_03_35();
+	this.instance.setTransform(0,0,0.9486,1.0392);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
@@ -537,9 +552,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1713660681807", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1713660681878", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1713660681878", id:"ayuda2"}
+		{src:"images/index_atlas_P_1.png?1715477339019", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715477339062", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715477339062", id:"ayuda2"}
 	],
 	preloads: []
 };

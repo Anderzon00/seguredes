@@ -313,6 +313,11 @@ if (reversed == null) { reversed = false; }
 		    stretchToFit();
 		}
 		
+		var iframeJ = window.parent.document.getElementById('mi_iframe');
+		iframeJ.src = './Ayuda/Contenidos/Como_evitarlo/index.html';
+		
+		
+		
 		this.btnAtras.addEventListener("click", fl_ClickToGoToWebPage_19);
 		
 		 function fl_ClickToGoToWebPage_19() {
@@ -390,9 +395,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1713887883209", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1713887883239", id:"audioG"},
-		{src:"sounds/audioC.mp3?1713887883239", id:"audioC"}
+		{src:"images/index_atlas_1.png?1715476463908", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1715476463941", id:"audioG"},
+		{src:"sounds/audioC.mp3?1715476463941", id:"audioC"}
 	],
 	preloads: []
 };

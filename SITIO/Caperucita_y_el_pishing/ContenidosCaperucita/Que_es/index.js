@@ -282,6 +282,9 @@ if (reversed == null) { reversed = false; }
 		    stretchToFit();
 		}
 		
+		var iframeJ = window.parent.document.getElementById('mi_iframe');
+		iframeJ.src = './Ayuda/Contenidos/Que_es/index.html';
+		
 		var root= this;
 		var key;
 		
@@ -423,9 +426,9 @@ lib.properties = {
 	color: "#0066CC",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1713882329519", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1713882329547", id:"audioG"},
-		{src:"sounds/audioC.mp3?1713882329547", id:"audioC"}
+		{src:"images/index_atlas_1.png?1715476313239", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1715476313327", id:"audioG"},
+		{src:"sounds/audioC.mp3?1715476313327", id:"audioC"}
 	],
 	preloads: []
 };

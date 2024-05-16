@@ -2672,7 +2672,7 @@ if (reversed == null) { reversed = false; }
 		var root = this; 
 		root.unmuteMC.visible = false;
 		 root.playaudio.visible = true;
-		
+		 window.parent.agregarAlHistorial();
 		
 		root.playSound = function(linkage, type, stopPrevious, props)
 		{	
@@ -2765,7 +2765,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('../E13C', '_self');
+		window.parent.obtenerHistorial();
 		});
 		
 		
@@ -2886,11 +2886,11 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.nextEscena, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAAbkDIAAIHAQhkDIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQhkDIAAIHAAbkDIAAIHAwgkDIAAIH");
 	this.shape.setTransform(176.35,604.725);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AAbkDIAAIHAQhkDIAAIHAwgkDIAAIH");
+	this.shape_1.graphics.f().s("#666666").ss(2,1,1).p("AwgkDIAAIHAQhkDIAAIHAAbkDIAAIH");
 	this.shape_1.setTransform(176.35,604.725);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.nextEscena},{t:this.prevEscena}]}).to({state:[{t:this.shape_1},{t:this.prevEscena}]},5).wait(1));
@@ -3002,14 +3002,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1711313350546", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1711313350547", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1711313350548", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1711313350714", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1711313350714", id:"Voice1"},
-		{src:"sounds/interaccion.mp3?1711313350714", id:"interaccion"},
-		{src:"sounds/intro.mp3?1711313350714", id:"intro"},
-		{src:"sounds/BGM.mp3?1711313350714", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1715817230969", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1715817230969", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1715817230970", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1715817231154", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1715817231154", id:"Voice1"},
+		{src:"sounds/interaccion.mp3?1715817231154", id:"interaccion"},
+		{src:"sounds/intro.mp3?1715817231154", id:"intro"},
+		{src:"sounds/BGM.mp3?1715817231154", id:"BGM"}
 	],
 	preloads: []
 };

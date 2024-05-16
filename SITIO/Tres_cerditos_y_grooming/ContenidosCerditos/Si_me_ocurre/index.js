@@ -1635,6 +1635,9 @@ if (reversed == null) { reversed = false; }
 		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
+				window.parent.document.getElementById('mi_iframe').src = './Ayuda/Contenidos/Como_evitarlo/index.html';
+		
+			
 		    stretchToFit();
 		}
 		createjs.Sound.stop();
@@ -2060,16 +2063,16 @@ lib.properties = {
 	color: "#66FF00",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1713889554934", id:"index_atlas_1"},
-		{src:"sounds/audio1.mp3?1713889555061", id:"audio1"},
-		{src:"sounds/audio2.mp3?1713889555061", id:"audio2"},
-		{src:"sounds/audio3.mp3?1713889555061", id:"audio3"},
-		{src:"sounds/audio4.mp3?1713889555061", id:"audio4"},
-		{src:"sounds/audio5.mp3?1713889555061", id:"audio5"},
-		{src:"sounds/audio6.mp3?1713889555061", id:"audio6"},
-		{src:"sounds/generales.mp3?1713889555061", id:"generales"},
-		{src:"sounds/indice.mp3?1713889555061", id:"indice"},
-		{src:"sounds/QuestionSoundEffect.mp3?1713889555061", id:"QuestionSoundEffect"}
+		{src:"images/index_atlas_1.png?1715670990780", id:"index_atlas_1"},
+		{src:"sounds/audio1.mp3?1715670990904", id:"audio1"},
+		{src:"sounds/audio2.mp3?1715670990904", id:"audio2"},
+		{src:"sounds/audio3.mp3?1715670990904", id:"audio3"},
+		{src:"sounds/audio4.mp3?1715670990905", id:"audio4"},
+		{src:"sounds/audio5.mp3?1715670990905", id:"audio5"},
+		{src:"sounds/audio6.mp3?1715670990905", id:"audio6"},
+		{src:"sounds/generales.mp3?1715670990905", id:"generales"},
+		{src:"sounds/indice.mp3?1715670990905", id:"indice"},
+		{src:"sounds/QuestionSoundEffect.mp3?1715670990905", id:"QuestionSoundEffect"}
 	],
 	preloads: []
 };

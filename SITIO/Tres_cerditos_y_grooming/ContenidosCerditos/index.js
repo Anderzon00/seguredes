@@ -1254,6 +1254,12 @@ if (reversed == null) { reversed = false; }
 		    stretchToFit();
 		}
 		
+		var iframek= window.parent.document.getElementById('mi_iframe');
+		iframek.src = './Ayuda/Contenidos/index.html';
+		
+		
+		
+		
 		this.siguiente.addEventListener("click", fl_ClickToGoToWebPage_12);
 		function fl_ClickToGoToWebPage_12() {
 			createjs.Sound.play("sound", { volume: 0.5}).on("complete", function () {
@@ -1397,9 +1403,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1713836824523", id:"index_atlas_1"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1713836824613", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1713836824613", id:"sound"}
+		{src:"images/index_atlas_1.png?1715670714611", id:"index_atlas_1"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1715670714726", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/sound.mp3?1715670714726", id:"sound"}
 	],
 	preloads: []
 };

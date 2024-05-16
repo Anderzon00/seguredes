@@ -3747,7 +3747,16 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		stage.on('drawstart', initStage, this, true);
-		function initStage() {stretchToFit();}
+		function initStage() {
+			
+			stretchToFit();
+			var iframe = window.parent.document.getElementById('mi_iframe')
+			if(iframe)
+			iframe.src='./Ayuda/Actividades3/Act3/index.html';
+			
+			
+			}
+		
 		this.stop();
 		createjs.Sound.stop();
 		sound0 = createjs.Sound.play("audio");
@@ -4348,28 +4357,28 @@ lib.properties = {
 	color: "#0000FF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Fondo.png?1714864224236", id:"Fondo"},
-		{src:"images/index_atlas_1.png?1714864224032", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1714864224032", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1714864224032", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1714864224032", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1714864224032", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1714864224032", id:"index_atlas_6"},
-		{src:"images/index_atlas_7.png?1714864224033", id:"index_atlas_7"},
-		{src:"images/index_atlas_8.png?1714864224033", id:"index_atlas_8"},
-		{src:"images/index_atlas_9.png?1714864224034", id:"index_atlas_9"},
-		{src:"images/index_atlas_10.png?1714864224036", id:"index_atlas_10"},
-		{src:"sounds/audio.mp3?1714864224236", id:"audio"},
-		{src:"sounds/incorrect.mp3?1714864224236", id:"incorrect"},
-		{src:"sounds/correct.mp3?1714864224236", id:"correct"},
-		{src:"sounds/Voice3.mp3?1714864224236", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1714864224236", id:"Voice4"},
-		{src:"sounds/Voice1.mp3?1714864224236", id:"Voice1"},
-		{src:"sounds/pregunta1.mp3?1714864224236", id:"pregunta1"},
-		{src:"sounds/pregunta2.mp3?1714864224236", id:"pregunta2"},
-		{src:"sounds/SoundBoton.mp3?1714864224236", id:"SoundBoton"},
-		{src:"sounds/Voice5.mp3?1714864224236", id:"Voice5"},
-		{src:"sounds/BGM.mp3?1714864224236", id:"BGM"}
+		{src:"images/Fondo.png?1715624791364", id:"Fondo"},
+		{src:"images/index_atlas_1.png?1715624791164", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1715624791164", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1715624791164", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1715624791164", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1715624791164", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1715624791165", id:"index_atlas_6"},
+		{src:"images/index_atlas_7.png?1715624791165", id:"index_atlas_7"},
+		{src:"images/index_atlas_8.png?1715624791165", id:"index_atlas_8"},
+		{src:"images/index_atlas_9.png?1715624791166", id:"index_atlas_9"},
+		{src:"images/index_atlas_10.png?1715624791168", id:"index_atlas_10"},
+		{src:"sounds/audio.mp3?1715624791364", id:"audio"},
+		{src:"sounds/incorrect.mp3?1715624791364", id:"incorrect"},
+		{src:"sounds/correct.mp3?1715624791364", id:"correct"},
+		{src:"sounds/Voice3.mp3?1715624791364", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1715624791364", id:"Voice4"},
+		{src:"sounds/Voice1.mp3?1715624791364", id:"Voice1"},
+		{src:"sounds/pregunta1.mp3?1715624791364", id:"pregunta1"},
+		{src:"sounds/pregunta2.mp3?1715624791364", id:"pregunta2"},
+		{src:"sounds/SoundBoton.mp3?1715624791364", id:"SoundBoton"},
+		{src:"sounds/Voice5.mp3?1715624791364", id:"Voice5"},
+		{src:"sounds/BGM.mp3?1715624791364", id:"BGM"}
 	],
 	preloads: []
 };

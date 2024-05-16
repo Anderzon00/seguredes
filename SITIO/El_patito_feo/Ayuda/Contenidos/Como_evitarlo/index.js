@@ -654,10 +654,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1715098714406", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1715098714460", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1715098714460", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1715098714460", id:"ayuda3"}
+		{src:"images/index_atlas_P_1.png?1715629791770", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715629791825", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715629791825", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715629791825", id:"ayuda3"}
 	],
 	preloads: []
 };

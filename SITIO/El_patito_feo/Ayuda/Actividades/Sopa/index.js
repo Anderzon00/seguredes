@@ -393,6 +393,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar1.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido1.visible=true;	
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -431,6 +432,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar2.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido2.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -464,6 +466,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar3.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido3.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -496,7 +499,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btnSiguiente1 = new lib.siguiente();
 	this.btnSiguiente1.name = "btnSiguiente1";
-	this.btnSiguiente1.setTransform(955.3,311.5,1,1,0,0,0,89,26.2);
+	this.btnSiguiente1.setTransform(851.25,311.5,1,1,0,0,0,89,26.2);
 	new cjs.ButtonHelper(this.btnSiguiente1, 0, 1, 2);
 
 	this.btnStopSonido1 = new lib.btnStopSonido();
@@ -521,20 +524,15 @@ if (reversed == null) { reversed = false; }
 
 	this.btnAnterior3 = new lib.anterior();
 	this.btnAnterior3.name = "btnAnterior3";
-	this.btnAnterior3.setTransform(420.2,173.7,1,1,0,0,0,88.8,26.2);
+	this.btnAnterior3.setTransform(528.3,173.7,1,1,0,0,0,88.8,26.2);
 	new cjs.ButtonHelper(this.btnAnterior3, 0, 1, 2);
-
-	this.btnSiguiente3 = new lib.siguiente();
-	this.btnSiguiente3.name = "btnSiguiente3";
-	this.btnSiguiente3.setTransform(629.55,173.7,1,1,0,0,0,89,26.2);
-	new cjs.ButtonHelper(this.btnSiguiente3, 0, 1, 2);
 
 	this.btnStopSonido3 = new lib.btnStopSonido();
 	this.btnStopSonido3.name = "btnStopSonido3";
 	this.btnStopSonido3.setTransform(527,-21.55,1.8208,1.8208,0,0,0,15.8,15.7);
 	new cjs.ButtonHelper(this.btnStopSonido3, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnStopSonido1},{t:this.btnSiguiente1},{t:this.instance,p:{regX:78.5,regY:72,scaleX:0.9999,scaleY:0.9999,rotation:0,skewX:-90.0009,skewY:89.9991,x:512,y:91}}]}).to({state:[{t:this.btnStopSonido2},{t:this.btnSiguiente2},{t:this.instance,p:{regX:64.9,regY:63.9,scaleX:1,scaleY:1,rotation:165.0008,skewX:0,skewY:0,x:675.25,y:163.05}},{t:this.btnAnterior2}]},1).to({state:[{t:this.btnStopSonido3},{t:this.btnSiguiente3},{t:this.instance,p:{regX:64.8,regY:63.8,scaleX:1,scaleY:1,rotation:165.0008,skewX:0,skewY:0,x:875.9,y:202.45}},{t:this.btnAnterior3}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnStopSonido1},{t:this.btnSiguiente1},{t:this.instance,p:{regX:78.5,regY:72,scaleX:0.9999,scaleY:0.9999,rotation:0,skewX:-90.0009,skewY:89.9991,x:512,y:91}}]}).to({state:[{t:this.btnStopSonido2},{t:this.btnSiguiente2},{t:this.instance,p:{regX:64.9,regY:63.9,scaleX:1,scaleY:1,rotation:165.0008,skewX:0,skewY:0,x:675.25,y:163.05}},{t:this.btnAnterior2}]},1).to({state:[{t:this.btnStopSonido3},{t:this.instance,p:{regX:64.8,regY:63.8,scaleX:1,scaleY:1,rotation:165.0008,skewX:0,skewY:0,x:875.9,y:202.45}},{t:this.btnAnterior3}]},1).wait(1));
 
 	// cerrar
 	this.btnCerrar1 = new lib.cerrar();
@@ -631,10 +629,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1713821360431", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1713821360485", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1713821360485", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1713821360485", id:"ayuda3"}
+		{src:"images/index_atlas_P_1.png?1715629730391", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715629730442", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715629730442", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715629730442", id:"ayuda3"}
 	],
 	preloads: []
 };

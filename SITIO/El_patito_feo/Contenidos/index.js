@@ -1370,11 +1370,15 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1715129236018", id:"index_atlas_1"},
-		{src:"sounds/fondo.mp3?1715129236111", id:"fondo"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1715129236111", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/audio.mp3?1715129236111", id:"audio"},
-		{src:"sounds/principales.mp3?1715129236111", id:"principales"}
+		{src:"images/index_atlas_1.png?1715456047517", id:"index_atlas_1"},
+		{src:"sounds/ayuda1.mp3?1715456047627", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715456047627", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715456047627", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1715456047627", id:"ayuda4"},
+		{src:"sounds/fondo.mp3?1715456047627", id:"fondo"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1715456047627", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/audio.mp3?1715456047627", id:"audio"},
+		{src:"sounds/principales.mp3?1715456047627", id:"principales"}
 	],
 	preloads: []
 };

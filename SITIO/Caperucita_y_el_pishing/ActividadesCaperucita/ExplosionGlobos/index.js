@@ -4754,6 +4754,10 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		 
+		var iframeE = window.parent.document.getElementById('mi_iframe');
+		
+		if(iframeE)
+		iframeE.src = './Ayuda/Actividades/ExplosionGlobos/index.html';
 		
 		 
 		var _this = this;
@@ -6760,22 +6764,22 @@ lib.properties = {
 	color: "#00FFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/EstrellasFondoRompecabezas.png?1714945153234", id:"EstrellasFondoRompecabezas"},
-		{src:"images/FondoActividad.png?1714945153234", id:"FondoActividad"},
-		{src:"images/index_atlas_1.png?1714945152912", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1714945152912", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1714945152912", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1714945152917", id:"index_atlas_4"},
-		{src:"sounds/audioG.mp3?1714945153234", id:"audioG"},
-		{src:"sounds/audioC.mp3?1714945153234", id:"audioC"},
-		{src:"sounds/correct.mp3?1714945153234", id:"correct"},
-		{src:"sounds/mal.mp3?1714945153234", id:"mal"},
-		{src:"sounds/final_corretas.mp3?1714945153234", id:"final_corretas"},
-		{src:"sounds/instruccion.mp3?1714945153234", id:"instruccion"},
-		{src:"sounds/sound2.mp3?1714945153234", id:"sound2"},
-		{src:"sounds/SoundBoton.mp3?1714945153234", id:"SoundBoton"},
-		{src:"sounds/sound.mp3?1714945153234", id:"sound"},
-		{src:"sounds/s_1.mp3?1714945153234", id:"s_1"}
+		{src:"images/EstrellasFondoRompecabezas.png?1715478567431", id:"EstrellasFondoRompecabezas"},
+		{src:"images/FondoActividad.png?1715478567431", id:"FondoActividad"},
+		{src:"images/index_atlas_1.png?1715478567143", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1715478567143", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1715478567143", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1715478567146", id:"index_atlas_4"},
+		{src:"sounds/audioG.mp3?1715478567431", id:"audioG"},
+		{src:"sounds/audioC.mp3?1715478567431", id:"audioC"},
+		{src:"sounds/correct.mp3?1715478567431", id:"correct"},
+		{src:"sounds/mal.mp3?1715478567431", id:"mal"},
+		{src:"sounds/final_corretas.mp3?1715478567431", id:"final_corretas"},
+		{src:"sounds/instruccion.mp3?1715478567431", id:"instruccion"},
+		{src:"sounds/sound2.mp3?1715478567431", id:"sound2"},
+		{src:"sounds/SoundBoton.mp3?1715478567431", id:"SoundBoton"},
+		{src:"sounds/sound.mp3?1715478567431", id:"sound"},
+		{src:"sounds/s_1.mp3?1715478567431", id:"s_1"}
 	],
 	preloads: []
 };

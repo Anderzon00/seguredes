@@ -210,6 +210,10 @@ if (reversed == null) { reversed = false; }
 		this.gotoAndStop(document.location.href.split('#')[1]);
 		}
 		
+			window.parent.document.getElementById('mi_iframe').src  = './Ayuda/Contenidos/Como_evitarlo/index.html';
+		
+		
+		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 		    stretchToFit();
@@ -318,9 +322,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1713881905328", id:"index_atlas_1"},
-		{src:"sounds/generales.mp3?1713881905357", id:"generales"},
-		{src:"sounds/indice.mp3?1713881905357", id:"indice"}
+		{src:"images/index_atlas_1.png?1715630997735", id:"index_atlas_1"},
+		{src:"sounds/generales.mp3?1715630997765", id:"generales"},
+		{src:"sounds/indice.mp3?1715630997765", id:"indice"}
 	],
 	preloads: []
 };

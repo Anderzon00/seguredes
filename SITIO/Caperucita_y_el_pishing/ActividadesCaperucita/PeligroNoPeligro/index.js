@@ -33,14 +33,14 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_8 = function() {
+(lib.CachedBmp_4 = function() {
 	this.initialize(ss["index_atlas_7"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_7 = function() {
+(lib.CachedBmp_3 = function() {
 	this.initialize(ss["index_atlas_7"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -1018,10 +1018,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Capa_2
-	this.instance = new lib.CachedBmp_7();
+	this.instance = new lib.CachedBmp_3();
 	this.instance.setTransform(-3.1,-2.95,0.3333,0.3333);
 
-	this.instance_1 = new lib.CachedBmp_8();
+	this.instance_1 = new lib.CachedBmp_4();
 	this.instance_1.setTransform(-3.55,-4.2,0.3333,0.3333);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},14).wait(23));
@@ -3047,34 +3047,8 @@ if (reversed == null) { reversed = false; }
 	this.actionFrames = [0,1,3,5,7,9,11,13,15,17,19,21,22];
 	// timeline functions:
 	this.frame_0 = function() {
-		var _this = this; 
+		window.parent.document.getElementById('mi_iframe').src='./Ayuda/Actividades/PeligroNoPeligro/index.html';
 		
-		_this.btnindice.on('click', function(){
-		 
-		window.open('../Menu', '_self');
-		});
-		
-		  
-		var _this = this; 
-		
-		
-		_this.unmute.visible = false;
-		_this.on("click", function (e) {
-		
-		
-				if (e.target.name === "unmute")
-		
-				{
-				createjs.Sound.muted = false;
-					_this.mute.visible = true;
-					_this.unmute.visible = false;
-				} else if (e.target.name === "mute") {
-				createjs.Sound.muted = true;
-					_this.mute.visible = false;
-					_this.unmute.visible = true;
-				}		
-		
-			});
 		createjs.Sound.play("instruccion"); 
 		
 		this.stop();
@@ -3095,8 +3069,6 @@ if (reversed == null) { reversed = false; }
 		 
 		});
 		//https://mixkit.co/free-sound-effects/game/?page=2
-		sound = createjs.Sound.play("BGM", {interrupt: createjs.Sound.INTERRUPT_ANY, loop:-1});  // play using id.  Could also use full source path or event.src.
-		 sound.volume = 0.5;
 		
 		//Music by Nullhertz from Pixabay fondo
 		createjs.Sound.stop();
@@ -3107,7 +3079,36 @@ if (reversed == null) { reversed = false; }
 		    stretchToFit();
 		}
 		
+		var _this = this; 
 		
+		_this.btnindice.on('click', function(){
+		 
+		window.open('../Menu', '_self');
+		});
+		
+		  sound = createjs.Sound.play("BGM", {interrupt: createjs.Sound.INTERRUPT_ANY, loop:-1});  // play using id.  Could also use full source path or event.src.
+		 sound.volume = 0.5;
+		
+		var _this = this; 
+		
+		
+		_this.unmute.visible = false;
+		_this.on("click", function (e) {
+		
+		
+				if (e.target.name === "unmute")
+		
+				{
+				sound.muted = false;
+					_this.mute.visible = true;
+					_this.unmute.visible = false;
+				} else if (e.target.name === "mute") {
+				sound.muted = true;
+					_this.mute.visible = false;
+					_this.unmute.visible = true;
+				}		
+		
+			});
 		
 		var _this = this;
 		
@@ -3391,7 +3392,7 @@ if (reversed == null) { reversed = false; }
 	this.btnindice.setTransform(42.85,609.85);
 	new cjs.ButtonHelper(this.btnindice, 0, 1, 2, false, new lib.btnIndece(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnindice},{t:this.unmute},{t:this.mute},{t:this.instance_1},{t:this.instance}]}).wait(23));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnindice},{t:this.unmute},{t:this.mute},{t:this.instance_1},{t:this.instance}]},1).wait(22));
 
 	// botones
 	this.btnNo1 = new lib.btnNoPeligroIncorrecto();
@@ -3767,21 +3768,21 @@ lib.properties = {
 	color: "#5D69B7",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/EstrellasFondoRompecabezas.png?1714944359823", id:"EstrellasFondoRompecabezas"},
-		{src:"images/index_atlas_1.png?1714944359641", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1714944359641", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1714944359642", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1714944359642", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1714944359643", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1714944359645", id:"index_atlas_6"},
-		{src:"images/index_atlas_7.png?1714944359647", id:"index_atlas_7"},
-		{src:"sounds/Voice1.mp3?1714944359823", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1714944359823", id:"Voice2"},
-		{src:"sounds/instruccion.mp3?1714944359823", id:"instruccion"},
-		{src:"sounds/SoundBoton.mp3?1714944359823", id:"SoundBoton"},
-		{src:"sounds/sound1.mp3?1714944359823", id:"sound1"},
-		{src:"sounds/sound2.mp3?1714944359823", id:"sound2"},
-		{src:"sounds/BGM.mp3?1714944359823", id:"BGM"}
+		{src:"images/EstrellasFondoRompecabezas.png?1715474983341", id:"EstrellasFondoRompecabezas"},
+		{src:"images/index_atlas_1.png?1715474983169", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1715474983169", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1715474983170", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1715474983170", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1715474983171", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1715474983172", id:"index_atlas_6"},
+		{src:"images/index_atlas_7.png?1715474983174", id:"index_atlas_7"},
+		{src:"sounds/Voice1.mp3?1715474983341", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1715474983341", id:"Voice2"},
+		{src:"sounds/instruccion.mp3?1715474983341", id:"instruccion"},
+		{src:"sounds/SoundBoton.mp3?1715474983341", id:"SoundBoton"},
+		{src:"sounds/sound1.mp3?1715474983341", id:"sound1"},
+		{src:"sounds/sound2.mp3?1715474983341", id:"sound2"},
+		{src:"sounds/BGM.mp3?1715474983341", id:"BGM"}
 	],
 	preloads: []
 };

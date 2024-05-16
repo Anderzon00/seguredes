@@ -386,6 +386,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar1.on('click', function(){
 		createjs.Sound.stop();
+			_this.btn_sonido1.visible=true;	
 		_this.parent.ayuda.gotoAndStop(0);	
 			window.parent.ocultaAyuda();
 		});
@@ -419,8 +420,9 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar2.on('click', function(){
 		createjs.Sound.stop();
+		_this.btn_sonido2.visible=true;
 		_this.parent.ayuda.gotoAndStop(0);	
-			window.parent.ocultaAyuda();
+		window.parent.ocultaAyuda();
 		});
 	}
 
@@ -576,9 +578,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1713823931929", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1713823931981", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1713823931981", id:"ayuda2"}
+		{src:"images/index_atlas_P_1.png?1715626591282", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715626591322", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715626591322", id:"ayuda2"}
 	],
 	preloads: []
 };

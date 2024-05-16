@@ -400,8 +400,9 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnCerrar1.on('click', function(){
 		createjs.Sound.stop();
+		_this.btn_sonido1.visible=true;	
 		_this.parent.ayuda.gotoAndStop(0);	
-			window.parent.ocultaAyuda();
+			window.parent.ocultaAyudaContenidos();
 		});
 	}
 	this.frame_1 = function() {
@@ -439,7 +440,9 @@ if (reversed == null) { reversed = false; }
 		_this.btnCerrar2.on('click', function(){
 		createjs.Sound.stop();
 		_this.parent.ayuda.gotoAndStop(0);	
-			window.parent.ocultaAyuda();
+			
+		_this.btn_sonido2.visible=true;
+			window.parent.ocultaAyudaContenidos();
 		});
 	}
 	this.frame_2 = function() {
@@ -472,7 +475,8 @@ if (reversed == null) { reversed = false; }
 		_this.btnCerrar3.on('click', function(){
 		createjs.Sound.stop();
 		_this.parent.ayuda.gotoAndStop(0);	
-			window.parent.ocultaAyuda();
+			window.parent.ocultaAyudaContenidos();
+			_this.btn_sonido3.visible=true;
 		});
 	}
 
@@ -503,7 +507,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btnSiguiente1 = new lib.siguiente();
 	this.btnSiguiente1.name = "btnSiguiente1";
-	this.btnSiguiente1.setTransform(831.3,204.5,1,1,0,0,0,89,26.2);
+	this.btnSiguiente1.setTransform(727.25,204.5,1,1,0,0,0,89,26.2);
 	new cjs.ButtonHelper(this.btnSiguiente1, 0, 1, 2);
 
 	this.btnStopSonido1 = new lib.btnStopSonido();
@@ -528,7 +532,7 @@ if (reversed == null) { reversed = false; }
 
 	this.btnAnterior3 = new lib.anterior();
 	this.btnAnterior3.name = "btnAnterior3";
-	this.btnAnterior3.setTransform(552.2,61.75,1,1,0,0,0,88.8,26.2);
+	this.btnAnterior3.setTransform(660.3,61.75,1,1,0,0,0,88.8,26.2);
 	new cjs.ButtonHelper(this.btnAnterior3, 0, 1, 2);
 
 	this.btnStopSonido3 = new lib.btnStopSonido();
@@ -564,7 +568,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_2.setTransform(499,40,0.5,0.5);
 
 	this.instance_3 = new lib._3();
-	this.instance_3.setTransform(429,-86,0.5,0.5);
+	this.instance_3.setTransform(437,-86,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1}]}).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
 
@@ -642,10 +646,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1713593038167", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1713593038219", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1713593038219", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1713593038219", id:"ayuda3"}
+		{src:"images/index_atlas_P_1.png?1715476889542", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715476889591", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715476889591", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715476889591", id:"ayuda3"}
 	],
 	preloads: []
 };

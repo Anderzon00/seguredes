@@ -2099,7 +2099,7 @@ if (reversed == null) { reversed = false; }
 		root.unmuteMC.visible = false;
 		 root.playaudio.visible = true;
 		
-		
+		 window.parent.agregarAlHistorial();
 		root.playSound = function(linkage, type, stopPrevious, props)
 		{	
 			if (!props)
@@ -2186,7 +2186,7 @@ if (reversed == null) { reversed = false; }
 			 
 			  else if (e.target.name == "atrasEscena")
 				
-		 	window.open('../E7A', '_self');
+		  window.parent.obtenerHistorial();
 			 
 			
 			
@@ -2426,7 +2426,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_14.setTransform(0,-8,0.5008,0.5053);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AQwkEIAAIHAwvkEIAAIHAAMkCIAAIH");
+	this.shape.graphics.f().s("#666666").ss(2,1,1).p("AAMkCIAAIHAwvkEIAAIHAQwkEIAAIH");
 	this.shape.setTransform(171.85,605.975);
 
 	this.shape_1 = new cjs.Shape();
@@ -2448,19 +2448,19 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1711299847161", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1711299847162", id:"index_atlas_P_2"},
-		{src:"images/index_atlas_P_3.png?1711299847164", id:"index_atlas_P_3"},
-		{src:"sounds/Voice0.mp3?1711299847327", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1711299847327", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1711299847327", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1711299847327", id:"Voice3"},
-		{src:"sounds/Voice4.mp3?1711299847327", id:"Voice4"},
-		{src:"sounds/Voice5.mp3?1711299847327", id:"Voice5"},
-		{src:"sounds/Voice6.mp3?1711299847327", id:"Voice6"},
-		{src:"sounds/interaccion.mp3?1711299847327", id:"interaccion"},
-		{src:"sounds/intro.mp3?1711299847327", id:"intro"},
-		{src:"sounds/BGM.mp3?1711299847327", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1715811392323", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1715811392324", id:"index_atlas_P_2"},
+		{src:"images/index_atlas_P_3.png?1715811392325", id:"index_atlas_P_3"},
+		{src:"sounds/Voice0.mp3?1715811392490", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1715811392490", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1715811392490", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1715811392490", id:"Voice3"},
+		{src:"sounds/Voice4.mp3?1715811392490", id:"Voice4"},
+		{src:"sounds/Voice5.mp3?1715811392490", id:"Voice5"},
+		{src:"sounds/Voice6.mp3?1715811392490", id:"Voice6"},
+		{src:"sounds/interaccion.mp3?1715811392490", id:"interaccion"},
+		{src:"sounds/intro.mp3?1715811392490", id:"intro"},
+		{src:"sounds/BGM.mp3?1715811392490", id:"BGM"}
 	],
 	preloads: []
 };
