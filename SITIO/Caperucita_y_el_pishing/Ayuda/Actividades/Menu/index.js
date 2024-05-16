@@ -364,9 +364,7 @@ if (reversed == null) { reversed = false; }
 		}
 		this.stop();
 		
-		var iframeF = window.parent.document.getElementById('mi_iframe');
-		if(iframeF)
-		iframeF.src = './Ayuda/Contenidos/index.html';
+		
 		
 		createjs.Sound.stop();
 		
@@ -628,12 +626,12 @@ lib.properties = {
 	color: "#00FFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1715478157984", id:"index_atlas_P_1"},
-		{src:"sounds/ayuda1.mp3?1715478158031", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1715478158031", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1715478158031", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1715478158031", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1715478158031", id:"ayuda5"}
+		{src:"images/index_atlas_P_1.png?1715836874258", id:"index_atlas_P_1"},
+		{src:"sounds/ayuda1.mp3?1715836874315", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715836874315", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715836874315", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1715836874315", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1715836874315", id:"ayuda5"}
 	],
 	preloads: []
 };

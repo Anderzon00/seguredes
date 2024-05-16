@@ -1451,8 +1451,7 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 		 
-		 var iframe = window.parent.document.getElementById('mi_iframe');
-		iframe.src = './Ayuda/Actividades/Menu/index.html';
+		 window.parent.document.getElementById('mi_iframe').src = './Ayuda/Actividades/Menu/index.html';
 		 
 		 
 		var textInput;
@@ -1503,7 +1502,7 @@ if (reversed == null) { reversed = false; }
 		    }
 		  });
 		
-		  srcRompecabezas
+		   
 		  
 		  });
 		 
@@ -1725,13 +1724,13 @@ lib.properties = {
 	color: "#009900",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1715128840877", id:"index_atlas_1"},
-		{src:"sounds/entrar.mp3?1715128840995", id:"entrar"},
-		{src:"sounds/error.mp3?1715128840995", id:"error"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1715128840995", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1715128840995", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1715128840995", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1715128840995", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1715871302688", id:"index_atlas_1"},
+		{src:"sounds/entrar.mp3?1715871302795", id:"entrar"},
+		{src:"sounds/error.mp3?1715871302795", id:"error"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1715871302795", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1715871302795", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1715871302795", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1715871302795", id:"an.TextInput"}
 	],
 	preloads: []
 };

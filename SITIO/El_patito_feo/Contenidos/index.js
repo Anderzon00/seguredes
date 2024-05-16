@@ -1202,15 +1202,14 @@ if (reversed == null) { reversed = false; }
 			this.isSingleFrame = true;
 		}
 		//Sound Effect by UNIVERSFIELD from Pixabay
-		
+		window.parent.document.getElementById('mi_iframe').src = './Ayuda/Contenidos/index.html';
 		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 			stretchToFit();
 		}
 		
-		var iframeC = window.parent.document.getElementById('mi_iframe');
-		iframeC.src = './Ayuda/Contenidos/index.html';
+		
 		
 		
 		this.siguiente.addEventListener("click", fl_ClickToGoToWebPage_12);
@@ -1232,7 +1231,6 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.play("audio", {
 				volume: 0.5
 			}).on("complete", function () {
-		 		window.parent.document.getElementById('mi_iframe').src='./Ayuda/Contenidos/Que_es/index.html';
 				
 				window.open("Que_es", "_self");
 			}, this);
@@ -1370,15 +1368,15 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1715456047517", id:"index_atlas_1"},
-		{src:"sounds/ayuda1.mp3?1715456047627", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1715456047627", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1715456047627", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1715456047627", id:"ayuda4"},
-		{src:"sounds/fondo.mp3?1715456047627", id:"fondo"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1715456047627", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/audio.mp3?1715456047627", id:"audio"},
-		{src:"sounds/principales.mp3?1715456047627", id:"principales"}
+		{src:"images/index_atlas_1.png?1715870413356", id:"index_atlas_1"},
+		{src:"sounds/ayuda1.mp3?1715870413468", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715870413468", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715870413468", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1715870413468", id:"ayuda4"},
+		{src:"sounds/fondo.mp3?1715870413468", id:"fondo"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1715870413468", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/audio.mp3?1715870413468", id:"audio"},
+		{src:"sounds/principales.mp3?1715870413468", id:"principales"}
 	],
 	preloads: []
 };

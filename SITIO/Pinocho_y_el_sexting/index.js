@@ -2045,7 +2045,7 @@ if (reversed == null) { reversed = false; }
 		var iframeContenidos = document.getElementById('contenidos');
 		
 		
-		var iframeC = window.parent.document.getElementById('mi_iframe');
+		var iframeC = document.getElementById('mi_iframe');
 		
 		
 		
@@ -2243,21 +2243,21 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1715627937809", id:"bannernegro1"},
-		{src:"images/fondo11.png?1715627937809", id:"fondo11"},
-		{src:"images/fondoMorado.png?1715627937809", id:"fondoMorado"},
-		{src:"images/FondoOscuropinocho.png?1715627937809", id:"FondoOscuropinocho"},
-		{src:"images/index_atlas_1.png?1715627937680", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1715627937681", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1715627937681", id:"index_atlas_3"},
-		{src:"sounds/ayuda1.mp3?1715627937809", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1715627937809", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1715627937809", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1715627937809", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1715627937809", id:"ayuda5"},
-		{src:"sounds/sound2.mp3?1715627937809", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1715627937809", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1715627937809", id:"sound1"}
+		{src:"images/bannernegro1.png?1715871124532", id:"bannernegro1"},
+		{src:"images/fondo11.png?1715871124532", id:"fondo11"},
+		{src:"images/fondoMorado.png?1715871124532", id:"fondoMorado"},
+		{src:"images/FondoOscuropinocho.png?1715871124532", id:"FondoOscuropinocho"},
+		{src:"images/index_atlas_1.png?1715871124401", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1715871124401", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1715871124402", id:"index_atlas_3"},
+		{src:"sounds/ayuda1.mp3?1715871124532", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715871124532", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715871124532", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1715871124532", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1715871124532", id:"ayuda5"},
+		{src:"sounds/sound2.mp3?1715871124532", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1715871124532", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1715871124532", id:"sound1"}
 	],
 	preloads: []
 };

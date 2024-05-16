@@ -1883,15 +1883,15 @@ if (reversed == null) { reversed = false; }
 			document.getElementById('contenidos').src = "./ContenidosCaperucita/index.html";
 			_this.gotoAndStop("Contenidos");
 			document.getElementById('contenidos').style.display = 'block';	
-			
-			
-		document.getElementById('mi_iframe').src = './Ayuda/Contenidos/index.html';
+		    document.getElementById('mi_iframe').src = './Ayuda/Contenidos/index.html';
 		});
 		
 		_this.btnActividades.on('click', function () {
 			document.getElementById('contenidos').src = "./ActividadesCaperucita/Menu/index.html"	
 			_this.gotoAndStop("Actividades");
 			document.getElementById('contenidos').style.display = 'block';
+			    document.getElementById('mi_iframe').src = './Ayuda/Actividades/Menu/index.html';
+		
 		});
 		
 		
@@ -1950,7 +1950,7 @@ if (reversed == null) { reversed = false; }
 		var iframeContenidos = document.getElementById('contenidos');
 		
 		
-		var iframeC = window.parent.document.getElementById('mi_iframe');
+		var iframeC =document.getElementById('mi_iframe');
 		
 		
 		
@@ -1968,7 +1968,7 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_15 = function() {
-		var iframe = document.getElementById('mi_iframe');
+		var iframeA = document.getElementById('mi_iframe');
 		
 		var iframeContenidos = document.getElementById('contenidos');
 		
@@ -1976,7 +1976,7 @@ if (reversed == null) { reversed = false; }
 		
 		btnAyuda.on('click', function () {
 		iframeContenidos.contentWindow.createjs.Sound.muted = true;
-		iframe.style.display = 'block';
+		iframeA.style.display = 'block';
 		});
 	}
 
@@ -2136,20 +2136,20 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1715620862005", id:"bannernegro1"},
-		{src:"images/fondo11.png?1715620862005", id:"fondo11"},
-		{src:"images/fondoMorado.png?1715620862005", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1715620861875", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1715620861876", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1715620861877", id:"index_atlas_3"},
-		{src:"sounds/ayuda1.mp3?1715620862005", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1715620862005", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1715620862005", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1715620862005", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1715620862005", id:"ayuda5"},
-		{src:"sounds/sound2.mp3?1715620862005", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1715620862005", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1715620862005", id:"sound1"}
+		{src:"images/bannernegro1.png?1715871102068", id:"bannernegro1"},
+		{src:"images/fondo11.png?1715871102068", id:"fondo11"},
+		{src:"images/fondoMorado.png?1715871102068", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1715871101932", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1715871101932", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1715871101934", id:"index_atlas_3"},
+		{src:"sounds/ayuda1.mp3?1715871102068", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1715871102068", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1715871102068", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1715871102068", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1715871102068", id:"ayuda5"},
+		{src:"sounds/sound2.mp3?1715871102068", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1715871102068", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1715871102068", id:"sound1"}
 	],
 	preloads: []
 };
