@@ -47,62 +47,61 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
-		const b=document.createElement('button');b.id='BotonPantallacompleta';const i=new Image();
-		i.src='BtnCerrar.png';i.style.maxWidth='95%';
-		b.appendChild(i);document.body.appendChild(b);
-		b.style.cssText=`position:absolute;top:0.1%;left:95%;z-index:3;
+		const b = document.createElement('button');
+		b.id = 'BotonPantallacompleta';
+		const i = new Image();
+		i.src = 'Fscreen1.png';
+		i.style.maxWidth = '95%';
+		b.appendChild(i);
+		document.body.appendChild(b);
+		
+		b.style.cssText = `position:absolute;top:0.1%;left:95%;z-index:3;
 		background-color:transparent;border:none`;
-		b.addEventListener('click',()=>{b.style.transform='scale(0.7)'});
-		b.addEventListener('mouseover',()=>{b.style.transform='scale(1.1)'});
-		b.addEventListener('mouseout',()=>{b.style.transform='scale(1.0)'});
-		window.addEventListener('resize',()=>{b.style.left='95%';c()});
-		b.addEventListener('click',()=>{const f=document.getElementById('i_creditos');
-		!document.fullscreenElement?f.requestFullscreen().catch(e=>{
-		console.error(`Error al habilitar pantalla completa: ${e.message}`)}):
-		document.exitFullscreen()});
-		const d=document.getElementById('creditos');
-		d&&d.remove();const e=document.createElement('div');e.id='creditos';
-		e.style.cssText='position:absolute;';document.body.appendChild(e);
-		e.innerHTML=`<iframe src="./SITIO/index.html" id="i_creditos"
+		
+		b.addEventListener('click', () => { b.style.transform = 'scale(0.7)' });
+		b.addEventListener('mouseover', () => { b.style.transform = 'scale(1.1)' });
+		b.addEventListener('mouseout', () => { b.style.transform = 'scale(1.0)' });
+		
+		window.addEventListener('resize', () => { b.style.left = '95%'; c() });
+		
+		b.addEventListener('click', () => {
+		  const f = document.getElementById('i_creditos');
+		  if (!document.fullscreenElement) {
+		    f.requestFullscreen().catch(e => {
+		      console.error(`Error al habilitar pantalla completa: ${e.message}`);
+		    });
+		  } else {
+		    document.exitFullscreen();
+		  }
+		});
+		
+		const d = document.getElementById('creditos');
+		if (d) d.remove();
+		const e = document.createElement('div');
+		e.id = 'creditos';
+		e.style.cssText = 'position:absolute;';
+		document.body.appendChild(e);
+		e.innerHTML = `<iframe src="./SITIO/index.html" id="i_creditos"
 		style="border:none;" allow="autoplay"></iframe>`;
-		function c(){const d=document.getElementById('creditos');
-		const f=document.getElementById('i_creditos');d.style.left='0px';
-		d.style.top='0px';f.style.width=`${Math.max(window.innerWidth)}px`;
-		f.style.height=`${Math.max(window.innerHeight)}px`}c();
-		const f=document.getElementById('i_creditos');f.addEventListener('load',()=>{
-		f.contentWindow.focus();
-		const u=f.contentWindow.location.href;
-		u.endsWith('index1.html')?i.src='NewImage.png':i.src='BtnCerrar.png'});
-		window.addEventListener('resize',c);
 		
-		  
+		function c() {
+		  const d = document.getElementById('creditos');
+		  const f = document.getElementById('i_creditos');
+		  d.style.left = '0px';
+		  d.style.top = '0px';
+		  f.style.width = `${Math.max(window.innerWidth)}px`;
+		  f.style.height = `${Math.max(window.innerHeight)}px`;
+		}
+		c();
 		
-		const url = "/SITIO/MenuPrincipal";
-		const request = new Request(url);
-		
-		fetch(request).then((response) => {
-		  // La página web se ha precargado
+		const f = document.getElementById('i_creditos');
+		f.addEventListener('load', () => {
+		  f.contentWindow.focus();
+		  const u = f.contentWindow.location.href;
+		  u.endsWith('index1.html') ? i.src = 'Fscreen2.png' : i.src = 'Fscreen1.png';
 		});
 		
-		// Precarga los recursos CSS y JavaScript que se necesitan para la página web
-		const resources = [
-		  {
-		    url: "/SITIO/MenuPrincipal/index.html",
-		    type: "document",
-		  },
-		  {
-		    url: "/SITIO/MenuPrincipal/index.js",
-		    type: "script",
-		  },
-		];
-		
-		resources.forEach((resource) => {
-		  const request = new Request(resource.url);
-		
-		  fetch(request).then((response) => {
-		    // El recurso se ha precargado
-		  });
-		});
+		window.addEventListener('resize', c);
 	}
 
 	// actions tween:
@@ -119,7 +118,7 @@ lib.properties = {
 	height: 768,
 	fps: 25,
 	color: "#006699",
-	opacity: 1.00,
+	opacity: 0.00,
 	manifest: [],
 	preloads: []
 };

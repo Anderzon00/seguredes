@@ -1656,103 +1656,74 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		stage.on('drawstart', initStage, this, true);
-		function initStage(){stretchToFit();}
+		function initStage() {
+			stretchToFit();
+		}
 		
-		var root = this; 
+		var root = this;
 		root.unmuteMC.visible = false;
-		 root.playaudio.visible = true;
+		root.playaudio.visible = true;
 		
-		
-		root.playSound = function(linkage, type, stopPrevious, props)
-		{	
+		root.playSound = function (linkage, type, stopPrevious, props) {
 			if (!props)
 				props = {};
-				
+		
 			if (stopPrevious && root[type])
 				root[type].stop();
-				
+		
 			root[type] = createjs.Sound.play(linkage, props);
-			
-			if(root.currentFrame < root.totalFrames-1)	
-			root[type].on("complete", function () {
-		                       root.gotoAndStop(root.currentFrame + 1);
-				
-				
-		                    }, this);;
-			
-			
-			
-			root.on("click", function(e)
-		    {
-			if (e.target.name === "unmuteMC")
-				
-				 {		
-				 createjs.Sound.volume = 1;
-		         root.muteMC.visible = true;
-			     root.unmuteMC.visible = false;	
-				 }
-			
-			else if (e.target.name === "muteMC")
-				 {
-		         createjs.Sound.volume = 0;
-		         root.muteMC.visible = false;
-		         root.unmuteMC.visible = true;
-		         }
-				 
-				 else if (e.target.name === "pause")
-				 {
-		          root[type].stop();
-				  root.pause.visible = false;
-		          root.playaudio.visible = true;
-		         }
-				 
-				  else if (e.target.name === "playaudio")
-				 {
-		         
-			     root[type].stop();
-				 root[type] = createjs.Sound.play(linkage, props);
-					 
-					 	if (root.currentFrame < root.totalFrames - 1)
-							
+		
+			if (root.currentFrame < root.totalFrames - 1)
+				root[type].on("complete", function () {
+					root.gotoAndStop(root.currentFrame + 1);
+				}, this);;
+		
+			root.on("click", function (e) {
+				if (e.target.name === "unmuteMC") {
+					createjs.Sound.volume = 1;
+					root.muteMC.visible = true;
+					root.unmuteMC.visible = false;
+				} else if (e.target.name === "muteMC") {
+					createjs.Sound.volume = 0;
+					root.muteMC.visible = false;
+					root.unmuteMC.visible = true;
+				} else if (e.target.name === "pause") {
+					root[type].stop();
+					root.pause.visible = false;
+					root.playaudio.visible = true;
+				} else if (e.target.name === "playaudio") {
+					root[type].stop();
+					root[type] = createjs.Sound.play(linkage, props);
+					if (root.currentFrame < root.totalFrames - 1)
 						root[type].on("complete", function () {
-							
 							root.gotoAndStop(root.currentFrame + 1);
 						}, this);;
-					 
-		         root.pause.visible = true;
-		         root.playaudio.visible = false;
-		         }
-				 
-		    });
-			
+					root.pause.visible = true;
+					root.playaudio.visible = false;
+				}
+			});
 		};
 		
-		root.on("click", function(e)
-		{
+		root.on("click", function (e) {
 			if (e.target.name === "prev")
-				
-			
-				
-			if(root.currentFrame=== this.totalFrames-1)
-				root.gotoAndStop(root.currentFrame - 2);
-			else
-			
-				root.gotoAndStop(root.currentFrame - 1);
-			else if (e.target.name === "next")
+		
+				if (root.currentFrame === this.totalFrames - 1)
+					root.gotoAndStop(root.currentFrame - 2);
+		
+				else
+					root.gotoAndStop(root.currentFrame - 1);
+		
+				else if (e.target.name === "next")
 				root.gotoAndStop(root.currentFrame + 1);
+		
 			else if (e.target.name == "pressToStart")
 				root.gotoAndStop(1);
-			
-			 else if (e.target.name == "adelanteEscena")
-				
-		 	window.open('../Escena_3', '_self');
-			 
-			  else if (e.target.name == "atrasEscena")
-				
-		 	window.open('../Escena_1', '_self');
-			 
-			
-			
+		
+			else if (e.target.name == "adelanteEscena")
+				window.open('../Escena_3', '_self');
+		
+			else if (e.target.name == "atrasEscena")
+				window.open('../Escena_1', '_self');
 		});
 		
 		if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) // chrome requires a initial user interaction to play audio
@@ -1988,14 +1959,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_P_1.png?1711320185143", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1711320185144", id:"index_atlas_P_2"},
-		{src:"sounds/Voice0.mp3?1711320185643", id:"Voice0"},
-		{src:"sounds/Voice1.mp3?1711320185643", id:"Voice1"},
-		{src:"sounds/Voice2.mp3?1711320185643", id:"Voice2"},
-		{src:"sounds/Voice3.mp3?1711320185643", id:"Voice3"},
-		{src:"sounds/intro.mp3?1711320185643", id:"intro"},
-		{src:"sounds/BGM.mp3?1711320185643", id:"BGM"}
+		{src:"images/index_atlas_P_1.png?1717888353151", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1717888353151", id:"index_atlas_P_2"},
+		{src:"sounds/Voice0.mp3?1717888353629", id:"Voice0"},
+		{src:"sounds/Voice1.mp3?1717888353629", id:"Voice1"},
+		{src:"sounds/Voice2.mp3?1717888353629", id:"Voice2"},
+		{src:"sounds/Voice3.mp3?1717888353629", id:"Voice3"},
+		{src:"sounds/intro.mp3?1717888353629", id:"intro"},
+		{src:"sounds/BGM.mp3?1717888353629", id:"BGM"}
 	],
 	preloads: []
 };
