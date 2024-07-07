@@ -1531,7 +1531,7 @@ if (reversed == null) { reversed = false; }
 		
 				if ($("#imput1").val() == "CiberSeguro" || $("#imput1").val() == "ciberseguro" || $("#imput1").val() == "CIBERSEGURO")
 					window.open('../Desafio', '_self');
-				else if ($("#imput2").val() == "AlertaGrooming" || $("#imput2").val() == "alertagrooming" || $("#imput2").val() == "ALERTAGROOMING")
+				else if ($("#imput2").val() == "AlertaGrooming" || $("#imput2").val() == "alertagrooming" || $("#imput2").val() == "ALERTAGROOMING"|| $("#imput2").val() == "alerta grooming" || $("#imput2").val() == "ALERTA GROOMING")
 					window.open('../Aventura', '_self');
 				else
 					_this.gotoAndStop(1);
@@ -1557,8 +1557,8 @@ if (reversed == null) { reversed = false; }
 		
 		
 		_this.btnEntrar2.on('click', function () {
-		
-			if ($("#imput2").val() == "AlertaGrooming" || $("#imput2").val() == "alertagrooming" || $("#imput2").val() == "ALERTAGROOMING")
+		 
+			if ($("#imput2").val() == "AlertaGrooming" || $("#imput2").val() == "alertagrooming" || $("#imput2").val() == "ALERTAGROOMING" || $("#imput2").val() == "alerta grooming" || $("#imput2").val() == "ALERTA GROOMING")
 		
 		
 			{
@@ -1717,14 +1717,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1715671671041", id:"index_atlas_1"},
-		{src:"sounds/play.mp3?1715671671143", id:"play"},
-		{src:"sounds/error41.mp3?1715671671143", id:"error41"},
-		{src:"sounds/sound.mp3?1715671671143", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1715671671143", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1715671671143", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1715671671143", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1715671671143", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1720128253532", id:"index_atlas_1"},
+		{src:"sounds/play.mp3?1720128253644", id:"play"},
+		{src:"sounds/error41.mp3?1720128253644", id:"error41"},
+		{src:"sounds/sound.mp3?1720128253644", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1720128253644", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1720128253644", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1720128253644", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1720128253644", id:"an.TextInput"}
 	],
 	preloads: []
 };

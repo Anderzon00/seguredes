@@ -47,6 +47,35 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
+		this.stop();
+		
+		stage.on('drawstart', initStage, this, true);
+		function initStage() {
+			stretchToFit();
+		}
+		
+		
+		var iframe = document.createElement('iframe');
+		iframe.id = 'mi_iframe';
+		iframe.style.position = 'absolute';
+		iframe.style.border = 'none';
+		iframe.style.zIndex = '2'; 
+		iframe.allow = 'autoplay';
+		document.body.appendChild(iframe);
+		
+		iframe.src="./SITIO/index.html"; 
+		
+		function ajustarIframe() {	 
+			document.getElementById('mi_iframe').style.width =  window.innerWidth  + 'px';
+			document.getElementById('mi_iframe').style.height = window.innerHeight  + 'px';
+		}
+		
+		ajustarIframe();
+		window.addEventListener('resize', ajustarIframe);
+		
+		
+		
+		
 		const b = document.createElement('button');
 		b.id = 'BotonPantallacompleta';
 		const i = new Image();
@@ -65,7 +94,7 @@ if (reversed == null) { reversed = false; }
 		window.addEventListener('resize', () => { b.style.left = '95%'; c() });
 		
 		b.addEventListener('click', () => {
-		  const f = document.getElementById('i_creditos');
+		  const f = document.getElementById('mi_iframe');
 		  if (!document.fullscreenElement) {
 		    f.requestFullscreen().catch(e => {
 		      console.error(`Error al habilitar pantalla completa: ${e.message}`);
@@ -75,33 +104,16 @@ if (reversed == null) { reversed = false; }
 		  }
 		});
 		
-		const d = document.getElementById('creditos');
-		if (d) d.remove();
-		const e = document.createElement('div');
-		e.id = 'creditos';
-		e.style.cssText = 'position:absolute;';
-		document.body.appendChild(e);
-		e.innerHTML = `<iframe src="./SITIO/index.html" id="i_creditos"
-		style="border:none;" allow="autoplay"></iframe>`;
+		 
 		
-		function c() {
-		  const d = document.getElementById('creditos');
-		  const f = document.getElementById('i_creditos');
-		  d.style.left = '0px';
-		  d.style.top = '0px';
-		  f.style.width = `${Math.max(window.innerWidth)}px`;
-		  f.style.height = `${Math.max(window.innerHeight)}px`;
-		}
-		c();
+		 
 		
-		const f = document.getElementById('i_creditos');
+		const f = document.getElementById('mi_iframe');
 		f.addEventListener('load', () => {
 		  f.contentWindow.focus();
 		  const u = f.contentWindow.location.href;
 		  u.endsWith('index1.html') ? i.src = 'Fscreen2.png' : i.src = 'Fscreen1.png';
 		});
-		
-		window.addEventListener('resize', c);
 	}
 
 	// actions tween:

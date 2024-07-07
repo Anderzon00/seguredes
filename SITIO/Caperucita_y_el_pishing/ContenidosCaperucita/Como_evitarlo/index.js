@@ -1809,7 +1809,7 @@ if (reversed == null) { reversed = false; }
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("y2matecomsonidodemagiaefectohadas");
+		playSound("mixkitkidscartoonclosebells2256");
 	}
 
 	// actions tween:
@@ -1901,7 +1901,7 @@ if (reversed == null) { reversed = false; }
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("y2matecomsonidodemagiaefectohadas");
+		playSound("mixkitkidscartoonclosebells2256");
 	}
 
 	// actions tween:
@@ -1993,7 +1993,7 @@ if (reversed == null) { reversed = false; }
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("y2matecomFreesoundeffectKeyboardtyping");
+		playSound("keyonlineaudioconvertercom");
 	}
 
 	// actions tween:
@@ -2011,7 +2011,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_2.compositeOperation = "darken";
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#999999").ss(1,1,1).p("AEJizIAAFnAkIC0IAAln");
+	this.shape.graphics.f().s("#999999").ss(1,1,1).p("AkIC0IAAlnAEJizIAAFn");
 	this.shape.setTransform(-18.45,5.05);
 
 	this.shape_1 = new cjs.Shape();
@@ -2351,7 +2351,7 @@ if (reversed == null) { reversed = false; }
 	// Capa_20
 	this.btnInteraccionB = new lib.btnInteractivoB();
 	this.btnInteraccionB.name = "btnInteraccionB";
-	this.btnInteraccionB.setTransform(-152.2,-163.5);
+	this.btnInteraccionB.setTransform(-53.5,-4.7);
 	new cjs.ButtonHelper(this.btnInteraccionB, 0, 1, 2, false, new lib.btnInteractivoB(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.btnInteraccionB).wait(51));
@@ -2419,7 +2419,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-721.2,-181,904.9000000000001,255);
+p.nominalBounds = new cjs.Rectangle(-721.2,-180,904.9000000000001,254);
 
 
 (lib.niños1 = function(mode,startPosition,loop,reversed) {
@@ -3085,7 +3085,7 @@ if (reversed == null) { reversed = false; }
 
 	// interactivos
 	this.instance_2 = new lib.candado_1();
-	this.instance_2.setTransform(636,198,0.5,0.5);
+	this.instance_2.setTransform(670,239,0.5,0.5);
 
 	this.niños1 = new lib.niños1();
 	this.niños1.name = "niños1";
@@ -3099,7 +3099,7 @@ if (reversed == null) { reversed = false; }
 	this.hombre.name = "hombre";
 	this.hombre.setTransform(636,343.5,0.9167,0.9167,0,0,0,549,87);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.niños1},{t:this.instance_2,p:{x:636,y:198}}]}).to({state:[{t:this.niña},{t:this.instance_2,p:{x:162,y:390}}]},1).to({state:[{t:this.hombre}]},1).to({state:[]},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.niños1},{t:this.instance_2,p:{x:670,y:239}}]}).to({state:[{t:this.niña},{t:this.instance_2,p:{x:162,y:390}}]},1).to({state:[{t:this.hombre}]},1).to({state:[]},1).wait(2));
 
 	// Capa_1
 	this.instance_3 = new lib.titulo();
@@ -3225,19 +3225,20 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1715476414777", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1715476414967", id:"audioG"},
-		{src:"sounds/audioC.mp3?1715476414967", id:"audioC"},
-		{src:"sounds/audio1.mp3?1715476414967", id:"audio1"},
-		{src:"sounds/audio2.mp3?1715476414967", id:"audio2"},
-		{src:"sounds/audio3.mp3?1715476414967", id:"audio3"},
-		{src:"sounds/audio4.mp3?1715476414967", id:"audio4"},
-		{src:"sounds/audio5.mp3?1715476414967", id:"audio5"},
-		{src:"sounds/audio6.mp3?1715476414967", id:"audio6"},
-		{src:"sounds/audio7.mp3?1715476414967", id:"audio7"},
-		{src:"sounds/audio8.mp3?1715476414967", id:"audio8"},
-		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1715476414967", id:"y2matecomFreesoundeffectKeyboardtyping"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1715476414967", id:"y2matecomsonidodemagiaefectohadas"}
+		{src:"images/index_atlas_1.png?1720059830623", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1720059830838", id:"audioG"},
+		{src:"sounds/audioC.mp3?1720059830838", id:"audioC"},
+		{src:"sounds/audio1.mp3?1720059830838", id:"audio1"},
+		{src:"sounds/audio2.mp3?1720059830838", id:"audio2"},
+		{src:"sounds/audio3.mp3?1720059830838", id:"audio3"},
+		{src:"sounds/audio4.mp3?1720059830838", id:"audio4"},
+		{src:"sounds/audio5.mp3?1720059830838", id:"audio5"},
+		{src:"sounds/audio6.mp3?1720059830838", id:"audio6"},
+		{src:"sounds/audio7.mp3?1720059830838", id:"audio7"},
+		{src:"sounds/audio8.mp3?1720059830838", id:"audio8"},
+		{src:"sounds/keyonlineaudioconvertercom.mp3?1720059830838", id:"keyonlineaudioconvertercom"},
+		{src:"sounds/mixkitkidscartoonclosebells2256.mp3?1720059830838", id:"mixkitkidscartoonclosebells2256"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1720059830838", id:"y2matecomsonidodemagiaefectohadas"}
 	],
 	preloads: []
 };

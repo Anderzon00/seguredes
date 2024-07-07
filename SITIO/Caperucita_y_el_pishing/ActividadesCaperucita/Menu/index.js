@@ -1581,9 +1581,9 @@ if (reversed == null) { reversed = false; }
 			if (e.keyCode == 13) {
 		
 		
-				if ($("#imput1").val() == "Estafa" || $("#imput1").val() == "estafa")
+				if ($("#imput1").val() == "Estafa" || $("#imput1").val() == "estafa"|| $("#imput1").val() == "ESTAFA")
 					window.open('../PeligroNoPeligro', '_self');
-				else if ($("#imput2").val() == "Suplantación" || $("#imput2").val() == "suplantación" || $("#imput2").val() == "Suplantacion" || $("#imput2").val() == "suplantacion")
+				else if ($("#imput2").val() == "Suplantación" || $("#imput2").val() == "suplantación" || $("#imput2").val() == "Suplantacion" || $("#imput2").val() == "suplantacion"|| $("#imput2").val() == "SUPLANTACION")
 		
 					window.open('../ExplosionGlobos', '_self');
 				else
@@ -1595,7 +1595,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnEntrar1.on('click', function () {
 		
-			if ($("#imput1").val() == "Estafa" || $("#imput1").val() == "estafa")
+			if ($("#imput1").val() == "Estafa" || $("#imput1").val() == "estafa" || $("#imput1").val() == "ESTAFA")
 		
 			{
 				createjs.Sound.play("play", {
@@ -1611,7 +1611,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.btnEntrar2.on('click', function () {
 		
-			if ($("#imput2").val() == "Suplantación" || $("#imput2").val() == "suplantación" || $("#imput2").val() == "Suplantacion" || $("#imput2").val() == "suplantacion")
+			if ($("#imput2").val() == "Suplantación" || $("#imput2").val() == "suplantación" || $("#imput2").val() == "Suplantacion" || $("#imput2").val() == "suplantacion" || $("#imput2").val() == "SUPLANTACION")
 		
 		
 			{
@@ -1774,14 +1774,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1715836201860", id:"index_atlas_1"},
-		{src:"sounds/play.mp3?1715836201976", id:"play"},
-		{src:"sounds/error41.mp3?1715836201976", id:"error41"},
-		{src:"sounds/sound.mp3?1715836201976", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1715836201976", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1715836201976", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1715836201976", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1715836201976", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1720123059141", id:"index_atlas_1"},
+		{src:"sounds/play.mp3?1720123059264", id:"play"},
+		{src:"sounds/error41.mp3?1720123059264", id:"error41"},
+		{src:"sounds/sound.mp3?1720123059264", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1720123059264", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1720123059264", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1720123059264", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1720123059264", id:"an.TextInput"}
 	],
 	preloads: []
 };

@@ -1497,9 +1497,9 @@ if (reversed == null) { reversed = false; }
 			if (e.keyCode == 13) {
 		
 		
-				if ($("#imput1").val() == "PrivacidadDigital" || $("#imput1").val() == "Privacidaddigital"|| $("#imput1").val() == "privacidaddigital")
+				if ($("#imput1").val() == "PrivacidadDigital" || $("#imput1").val() == "Privacidaddigital"|| $("#imput1").val() == "privacidaddigital" || $("#imput1").val() == "privacidad digital" || $("#imput1").val() == "PRIVACIDAD DIGITAL"|| $("#imput1").val() == "PRIVACIDADDIGITAL")
 					window.open('../Act2', '_self');
-				else if ($("#imput2").val() == "ConcienciaOnlone" || $("#imput2").val() == "Concienciaonline" || $("#imput2").val() == "concienciaonline")
+				else if ($("#imput2").val() == "ConcienciaOnlone" || $("#imput2").val() == "Concienciaonline" || $("#imput2").val() == "concienciaonline"|| $("#imput2").val() == "conciencia online"|| $("#imput2").val() == "CONCIENCIAONLINE"|| $("#imput2").val() == "CONCIENCIA ONLINE")
 					window.open('../Act3', '_self');
 				else
 					_this.gotoAndStop(1);
@@ -1688,14 +1688,14 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1715625564380", id:"index_atlas_1"},
-		{src:"sounds/play.mp3?1715625564485", id:"play"},
-		{src:"sounds/error41.mp3?1715625564485", id:"error41"},
-		{src:"sounds/sound.mp3?1715625564485", id:"sound"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1715625564485", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1715625564485", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1715625564485", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1715625564485", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1720126018424", id:"index_atlas_1"},
+		{src:"sounds/play.mp3?1720126018520", id:"play"},
+		{src:"sounds/error41.mp3?1720126018520", id:"error41"},
+		{src:"sounds/sound.mp3?1720126018520", id:"sound"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1720126018520", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1720126018520", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1720126018520", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1720126018520", id:"an.TextInput"}
 	],
 	preloads: []
 };

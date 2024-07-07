@@ -1507,7 +1507,7 @@ if (reversed == null) { reversed = false; }
 		  });
 		 
 		_this.btnEntrar1.on('click', function(){		
-		if ($("#imput1").val()=="Respeto" || $("#imput1").val()=="respeto"  ) { 	
+		if ($("#imput1").val()=="Respeto" || $("#imput1").val()=="respeto"|| $("#imput1").val()=="RESPETO"  ) { 	
 			createjs.Sound.play("entrar", {
 				volume: 0.5
 			}).on("complete", function () {
@@ -1524,7 +1524,7 @@ if (reversed == null) { reversed = false; }
 		});	 
 		 
 		_this.btnEntrar2.on('click', function(){ 		
-		if ($("#imput2").val()=="Confianza"  || $("#imput2").val()=="confianza") { 	
+		if ($("#imput2").val()=="Confianza"  || $("#imput2").val()=="confianza"|| $("#imput2").val()=="CONFIANZA" ) { 	
 			createjs.Sound.play("entrar", {
 				volume: 0.5
 			}).on("complete", function () {
@@ -1541,12 +1541,12 @@ if (reversed == null) { reversed = false; }
 			 if( e.keyCode==13){
 				
 			 
-			 if ($("#imput1").val()=="Respeto" || $("#imput1").val()=="respeto"  ) {
+			 if ($("#imput1").val()=="Respeto" || $("#imput1").val()=="respeto" || $("#imput1").val()=="RESPETO"  ) {
 				
 			window.open('../Sopa', '_self');
 				 
 				 }
-			else if ($("#imput2").val()=="Confianza"  || $("#imput2").val()=="confianza") {
+			else if ($("#imput2").val()=="Confianza"  || $("#imput2").val()=="confianza" || $("#imput2").val()=="CONFIANZA" ) {
 			
 			window.open('../quiz', '_self'); }
 			else 		 
@@ -1724,13 +1724,13 @@ lib.properties = {
 	color: "#009900",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1715871302688", id:"index_atlas_1"},
-		{src:"sounds/entrar.mp3?1715871302795", id:"entrar"},
-		{src:"sounds/error.mp3?1715871302795", id:"error"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1715871302795", id:"y2matecomsonidodemagiaefectohadas"},
-		{src:"components/lib/jquery-3.4.1.min.js?1715871302795", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1715871302795", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1715871302795", id:"an.TextInput"}
+		{src:"images/index_atlas_1.png?1720114186021", id:"index_atlas_1"},
+		{src:"sounds/entrar.mp3?1720114186120", id:"entrar"},
+		{src:"sounds/error.mp3?1720114186120", id:"error"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1720114186120", id:"y2matecomsonidodemagiaefectohadas"},
+		{src:"components/lib/jquery-3.4.1.min.js?1720114186120", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1720114186120", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1720114186120", id:"an.TextInput"}
 	],
 	preloads: []
 };

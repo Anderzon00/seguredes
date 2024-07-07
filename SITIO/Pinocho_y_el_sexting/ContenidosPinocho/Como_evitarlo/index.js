@@ -1948,7 +1948,7 @@ if (reversed == null) { reversed = false; }
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("y2matecomsonidodemagiaefectohadas");
+		playSound("mixkitkidscartoonclosebells2256");
 	}
 
 	// actions tween:
@@ -1994,7 +1994,7 @@ if (reversed == null) { reversed = false; }
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("y2matecomsonidodemagiaefectohadas");
+		playSound("keyonlineaudioconvertercom");
 	}
 
 	// actions tween:
@@ -2058,7 +2058,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_2.compositeOperation = "darken";
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#999999").ss(1,1,1).p("AEJizIAAFnAkIC0IAAln");
+	this.shape.graphics.f().s("#999999").ss(1,1,1).p("AkIC0IAAlnAEJizIAAFn");
 	this.shape.setTransform(-18.45,5.05);
 
 	this.shape_1 = new cjs.Shape();
@@ -2333,14 +2333,9 @@ if (reversed == null) { reversed = false; }
 		this.stop();
 		contador=0;
 		var _this = this;
-		/*
-		Al hacer clic en la instancia del símbolo especificada, se ejecuta una función.
-		*/
+		
 		_this.btnInteracccionA.on('click', function(){
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		
 		_this.gotoAndPlay(1);
 		});
 	}
@@ -3200,18 +3195,20 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1715615282943", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1715615283133", id:"audioG"},
-		{src:"sounds/audioC.mp3?1715615283133", id:"audioC"},
-		{src:"sounds/audio1.mp3?1715615283133", id:"audio1"},
-		{src:"sounds/audio2.mp3?1715615283133", id:"audio2"},
-		{src:"sounds/audio3.mp3?1715615283133", id:"audio3"},
-		{src:"sounds/audio4.mp3?1715615283133", id:"audio4"},
-		{src:"sounds/audio5.mp3?1715615283133", id:"audio5"},
-		{src:"sounds/audio6.mp3?1715615283133", id:"audio6"},
-		{src:"sounds/audio7.mp3?1715615283133", id:"audio7"},
-		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1715615283133", id:"y2matecomFreesoundeffectKeyboardtyping"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1715615283133", id:"y2matecomsonidodemagiaefectohadas"}
+		{src:"images/index_atlas_1.png?1720060199493", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1720060199693", id:"audioG"},
+		{src:"sounds/audioC.mp3?1720060199693", id:"audioC"},
+		{src:"sounds/audio1.mp3?1720060199693", id:"audio1"},
+		{src:"sounds/audio2.mp3?1720060199693", id:"audio2"},
+		{src:"sounds/audio3.mp3?1720060199693", id:"audio3"},
+		{src:"sounds/audio4.mp3?1720060199693", id:"audio4"},
+		{src:"sounds/audio5.mp3?1720060199693", id:"audio5"},
+		{src:"sounds/audio6.mp3?1720060199693", id:"audio6"},
+		{src:"sounds/audio7.mp3?1720060199693", id:"audio7"},
+		{src:"sounds/keyonlineaudioconvertercom.mp3?1720060199693", id:"keyonlineaudioconvertercom"},
+		{src:"sounds/mixkitkidscartoonclosebells2256.mp3?1720060199693", id:"mixkitkidscartoonclosebells2256"},
+		{src:"sounds/y2matecomFreesoundeffectKeyboardtyping.mp3?1720060199693", id:"y2matecomFreesoundeffectKeyboardtyping"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1720060199693", id:"y2matecomsonidodemagiaefectohadas"}
 	],
 	preloads: []
 };

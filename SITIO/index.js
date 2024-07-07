@@ -1418,7 +1418,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [0,98];
+	this.actionFrames = [0,40,98];
 	// timeline functions:
 	this.frame_0 = function() {
 		stage.on('drawstart', initStage, this, true);
@@ -1427,13 +1427,16 @@ if (reversed == null) { reversed = false; }
 		    stretchToFit();
 		}
 	}
+	this.frame_40 = function() {
+		createjs.Sound.play("fondo",{interrupt: createjs.Sound.INTERRUPT_ANY, loop:-1});
+	}
 	this.frame_98 = function() {
 		var _this = this;
 		_this.stop();
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(98).call(this.frame_98).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(40).call(this.frame_40).wait(58).call(this.frame_98).wait(1));
 
 	// Capa_1
 	this.instance = new lib.Interpolación4("synched",0);
@@ -1515,16 +1518,17 @@ lib.properties = {
 	width: 1366,
 	height: 768,
 	fps: 25,
-	color: "#0066CC",
+	color: "#006699",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/fondoizq.png?1716076063011", id:"fondoizq"},
-		{src:"images/index_atlas_P_1.png?1716076062871", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1716076062872", id:"index_atlas_P_2"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1716076063011", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1716076063011", id:"sound"},
-		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1716076063011", id:"notificationsound70621onlineaudioconvertercom"},
-		{src:"sounds/sound2.mp3?1716076063011", id:"sound2"}
+		{src:"images/fondoizq.png?1720374216233", id:"fondoizq"},
+		{src:"images/index_atlas_P_1.png?1720374216108", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1720374216109", id:"index_atlas_P_2"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1720374216233", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/fondo.mp3?1720374216233", id:"fondo"},
+		{src:"sounds/sound.mp3?1720374216233", id:"sound"},
+		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1720374216233", id:"notificationsound70621onlineaudioconvertercom"},
+		{src:"sounds/sound2.mp3?1720374216233", id:"sound2"}
 	],
 	preloads: []
 };

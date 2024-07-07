@@ -1494,7 +1494,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [0,81,102,103,104,105];
+	this.actionFrames = [0,81,102,103,104,105,106];
 	// timeline functions:
 	this.frame_0 = function() {
 		stage.on('drawstart', initStage, this, true);
@@ -1603,7 +1603,7 @@ if (reversed == null) { reversed = false; }
 		
 		 
 		_this.atras2.addEventListener('click', function() {
-		     _this.gotoAndStop(103)
+		     _this.gotoAndStop(103);
 		});
 	}
 	this.frame_105 = function() {
@@ -1668,11 +1668,24 @@ if (reversed == null) { reversed = false; }
 		*/
 		window.open('http://alkakrab.itch.io', '_blank');
 		});
-		playSound("sound");
+		
+		 
+		 
+		_this.atras2.addEventListener('click', function() {
+		     _this.gotoAndStop(103)
+		});
+	}
+	this.frame_106 = function() {
+		var _this= this;
+		
+		 
+		_this.atras2.addEventListener('click', function() {
+		     _this.gotoAndStop(103);
+		});
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(81).call(this.frame_81).wait(21).call(this.frame_102).wait(1).call(this.frame_103).wait(1).call(this.frame_104).wait(1).call(this.frame_105).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(81).call(this.frame_81).wait(21).call(this.frame_102).wait(1).call(this.frame_103).wait(1).call(this.frame_104).wait(1).call(this.frame_105).wait(1).call(this.frame_106).wait(1));
 
 	// botonesYtexto
 	this.instance = new lib.zoomtexto();
@@ -1819,10 +1832,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index1_atlas_P_1.png?1716064274927", id:"index1_atlas_P_1"},
-		{src:"images/index1_atlas_P_2.png?1716064274927", id:"index1_atlas_P_2"},
-		{src:"images/index1_atlas_P_3.png?1716064274928", id:"index1_atlas_P_3"},
-		{src:"sounds/sound.mp3?1716064275027", id:"sound"}
+		{src:"images/index1_atlas_P_1.png?1719376092323", id:"index1_atlas_P_1"},
+		{src:"images/index1_atlas_P_2.png?1719376092323", id:"index1_atlas_P_2"},
+		{src:"images/index1_atlas_P_3.png?1719376092324", id:"index1_atlas_P_3"},
+		{src:"sounds/sound.mp3?1719376092432", id:"sound"}
 	],
 	preloads: []
 };

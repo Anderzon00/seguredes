@@ -389,7 +389,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://caivirtual.policia.gov.co/', '_blank');
+		window.open('https://adenunciar.policia.gov.co/Adenunciar/frm_denuncia_pi.aspx', '_blank');
 		});
 		
 		
@@ -402,7 +402,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://teprotejocolombia.org/categorias-de-reporte/ciberacoso/', '_blank');
+		window.open('https://teprotejocolombia.org/categorias-de-reporte/', '_blank');
 		});
 		
 		
@@ -543,12 +543,12 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1693929334108", id:"iframe_atlas_1"},
-		{src:"sounds/audio5a.mp3?1693929334149", id:"audio5a"},
-		{src:"sounds/audio1a.mp3?1693929334149", id:"audio1a"},
-		{src:"sounds/audio2a.mp3?1693929334149", id:"audio2a"},
-		{src:"sounds/audio3a.mp3?1693929334149", id:"audio3a"},
-		{src:"sounds/audio4a.mp3?1693929334149", id:"audio4a"}
+		{src:"images/iframe_atlas_1.png?1720064985186", id:"iframe_atlas_1"},
+		{src:"sounds/audio5a.mp3?1720064985231", id:"audio5a"},
+		{src:"sounds/audio1a.mp3?1720064985231", id:"audio1a"},
+		{src:"sounds/audio2a.mp3?1720064985231", id:"audio2a"},
+		{src:"sounds/audio3a.mp3?1720064985231", id:"audio3a"},
+		{src:"sounds/audio4a.mp3?1720064985231", id:"audio4a"}
 	],
 	preloads: []
 };
