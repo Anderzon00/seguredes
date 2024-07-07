@@ -58,8 +58,7 @@ if (reversed == null) { reversed = false; }
 		var iframe = document.createElement('iframe');
 		iframe.id = 'mi_iframe';
 		iframe.style.position = 'absolute';
-		iframe.style.border = 'none';
-		iframe.style.zIndex = '2'; 
+		iframe.style.border = 'none'; 
 		iframe.allow = 'autoplay';
 		document.body.appendChild(iframe);
 		
@@ -71,9 +70,8 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		ajustarIframe();
+		
 		window.addEventListener('resize', ajustarIframe);
-		
-		
 		
 		
 		const b = document.createElement('button');
@@ -131,7 +129,9 @@ lib.properties = {
 	fps: 25,
 	color: "#006699",
 	opacity: 0.00,
-	manifest: [],
+	manifest: [
+		{src:"sounds/fondo.mp3?1720392842668", id:"fondo"}
+	],
 	preloads: []
 };
 

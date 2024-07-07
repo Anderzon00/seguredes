@@ -1832,10 +1832,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index1_atlas_P_1.png?1719376092323", id:"index1_atlas_P_1"},
-		{src:"images/index1_atlas_P_2.png?1719376092323", id:"index1_atlas_P_2"},
-		{src:"images/index1_atlas_P_3.png?1719376092324", id:"index1_atlas_P_3"},
-		{src:"sounds/sound.mp3?1719376092432", id:"sound"}
+		{src:"images/index1_atlas_P_1.png?1720389717259", id:"index1_atlas_P_1"},
+		{src:"images/index1_atlas_P_2.png?1720389717259", id:"index1_atlas_P_2"},
+		{src:"images/index1_atlas_P_3.png?1720389717260", id:"index1_atlas_P_3"},
+		{src:"sounds/sound.mp3?1720389717370", id:"sound"}
 	],
 	preloads: []
 };

@@ -1748,6 +1748,9 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 		
+		  
+		
+		
 		var iframe = document.createElement('iframe');
 		iframe.id = 'mi_iframe';
 		iframe.style.position = 'absolute';
@@ -2095,20 +2098,20 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1715871029352", id:"bannernegro1"},
-		{src:"images/fondo11.png?1715871029352", id:"fondo11"},
-		{src:"images/fondoMorado.png?1715871029352", id:"fondoMorado"},
-		{src:"images/Portada.png?1715871029352", id:"Portada"},
-		{src:"images/index_atlas_1.png?1715871029237", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1715871029239", id:"index_atlas_2"},
-		{src:"sounds/ayuda1.mp3?1715871029352", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1715871029352", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1715871029352", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1715871029352", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1715871029352", id:"ayuda5"},
-		{src:"sounds/sound2.mp3?1715871029352", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1715871029352", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1715871029352", id:"sound1"}
+		{src:"images/bannernegro1.png?1720387152729", id:"bannernegro1"},
+		{src:"images/fondo11.png?1720387152729", id:"fondo11"},
+		{src:"images/fondoMorado.png?1720387152729", id:"fondoMorado"},
+		{src:"images/Portada.png?1720387152729", id:"Portada"},
+		{src:"images/index_atlas_1.png?1720387152545", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1720387152547", id:"index_atlas_2"},
+		{src:"sounds/ayuda1.mp3?1720387152729", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1720387152729", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1720387152729", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1720387152729", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1720387152729", id:"ayuda5"},
+		{src:"sounds/sound2.mp3?1720387152729", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1720387152729", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1720387152729", id:"sound1"}
 	],
 	preloads: []
 };
