@@ -89,7 +89,7 @@ if (reversed == null) { reversed = false; }
 		b.addEventListener('mouseover', () => { b.style.transform = 'scale(1.1)' });
 		b.addEventListener('mouseout', () => { b.style.transform = 'scale(1.0)' });
 		
-		window.addEventListener('resize', () => { b.style.left = '95%'; c() });
+		window.addEventListener('resize', () => { b.style.left = '95%'; });
 		
 		b.addEventListener('click', () => {
 		  const f = document.getElementById('mi_iframe');
@@ -130,7 +130,7 @@ lib.properties = {
 	color: "#006699",
 	opacity: 0.00,
 	manifest: [
-		{src:"sounds/fondo.mp3?1720392842668", id:"fondo"}
+		{src:"sounds/fondo.mp3?1720483137556", id:"fondo"}
 	],
 	preloads: []
 };

@@ -1154,8 +1154,6 @@ if (reversed == null) { reversed = false; }
 			stretchToFit();
 		}
 		
-		
-		
 		this.stop();
 		createjs.Sound.stop();
 		
@@ -1186,16 +1184,14 @@ if (reversed == null) { reversed = false; }
 			
 		createjs.Sound.stop();
 		_this.parent.ayuda2.gotoAndStop(0);	
-		_this.parent.ayuda2.visible=false;
-			
+		_this.parent.ayuda2.visible=false;	
 			
 		});
 	}
 	this.frame_1 = function() {
 		var _this = this;
 		
-		_this.btn_sonido1.visible=true;
-			
+		_this.btn_sonido1.visible=true;	
 		
 		this.btn_sonido1.on('click', function(){
 			createjs.Sound.stop();
@@ -1303,8 +1299,6 @@ if (reversed == null) { reversed = false; }
 			stretchToFit();
 		}
 		
-		
-		
 		this.stop();
 		createjs.Sound.stop();
 		
@@ -1343,8 +1337,7 @@ if (reversed == null) { reversed = false; }
 		
 		var _this = this;
 		
-		_this.btn_sonido2.visible=true;
-			
+		_this.btn_sonido2.visible=true;	
 		
 		this.btn_sonido2.on('click', function(){
 			createjs.Sound.stop();
@@ -1360,12 +1353,10 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.stop();
 		});
 		
-		
 		_this.btnSiguiente2.on('click', function(){
 		createjs.Sound.stop();
 		_this.gotoAndStop(2);
 		});
-		
 		
 		_this.btnAnterior2.on('click', function(){
 		createjs.Sound.stop();
@@ -1382,8 +1373,7 @@ if (reversed == null) { reversed = false; }
 	this.frame_2 = function() {
 		var _this = this;
 		this.stop();
-		_this.btn_sonido3.visible=true;
-			
+		_this.btn_sonido3.visible=true;	
 		
 		this.btn_sonido3.on('click', function(){
 			createjs.Sound.stop();
@@ -1404,7 +1394,6 @@ if (reversed == null) { reversed = false; }
 		_this.gotoAndStop(3);
 		});
 		
-		
 		_this.btnAnterior3.on('click', function(){
 		createjs.Sound.stop();
 		_this.gotoAndStop(1);
@@ -1421,8 +1410,7 @@ if (reversed == null) { reversed = false; }
 		this.stop();
 		var _this = this;
 		
-		_this.btn_sonido4.visible=true;
-			
+		_this.btn_sonido4.visible=true;	
 		
 		this.btn_sonido4.on('click', function(){
 			createjs.Sound.stop();
@@ -1443,7 +1431,6 @@ if (reversed == null) { reversed = false; }
 		_this.gotoAndStop(4);
 		});
 		
-		
 		_this.btnAnterior4.on('click', function(){
 		createjs.Sound.stop();
 		_this.gotoAndStop(2);
@@ -1460,8 +1447,7 @@ if (reversed == null) { reversed = false; }
 		this.stop();
 		var _this = this;
 		
-		_this.btn_sonido5.visible=true;
-			
+		_this.btn_sonido5.visible=true;	
 		
 		this.btn_sonido5.on('click', function(){
 			createjs.Sound.stop();
@@ -1476,10 +1462,6 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido5.visible=true;
 			createjs.Sound.stop();
 		});
-		
-		
-		
-		
 		
 		_this.btnAnterior5.on('click', function(){
 		createjs.Sound.stop();
@@ -1688,6 +1670,14 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// timeline functions:
+	this.frame_1 = function() {
+		playSound("sound2");
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(2));
+
 	// Capa_1
 	this.instance = new lib.btn_amarillo();
 
@@ -1748,9 +1738,6 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 		
-		  
-		
-		
 		var iframe = document.createElement('iframe');
 		iframe.id = 'mi_iframe';
 		iframe.style.position = 'absolute';
@@ -1768,7 +1755,6 @@ if (reversed == null) { reversed = false; }
 		
 		ajustarIframe();
 		window.addEventListener('resize', ajustarIframe);
-		
 		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
@@ -1855,7 +1841,6 @@ if (reversed == null) { reversed = false; }
 			document.getElementById('contenidos').style.display = 'block';
 		});
 		
-		
 		function deshabilitar (){
 			_this.btnContenidos.mouseEnabled =false
 			_this.btnActividades.mouseEnabled =false
@@ -1895,26 +1880,12 @@ if (reversed == null) { reversed = false; }
 			root.exportRoot.pause.visible = false;
 			root.exportRoot.playaudio.visible = true;
 			root.createjs.Sound.stop();
-			
-		/*	
-		if (typeof root.playSound === 'function') {
-		  root.playSound(null, "voice", true, {});
-		}	 
-		
-		*/
-		
 		});
 	}
 	this.frame_14 = function() {
 		var btnAyudaC = this.btnAyudaCotenidos;
 		
 		var iframeContenidos = document.getElementById('contenidos');
-		
-		
-		
-		
-		
-		
 		
 		btnAyudaC.on('click', function () {
 			
@@ -1927,8 +1898,7 @@ if (reversed == null) { reversed = false; }
 			var iframeVideo = iframeContenidos.contentWindow.document.getElementById('video');
 			if (iframeVideo && iframeVideo.contentWindow && iframeVideo.contentWindow.createjs) {
 				iframeVideo.contentWindow.createjs.Sound.stop();
-			}
-			 
+			}	 
 		});
 	}
 	this.frame_15 = function() {
@@ -2098,20 +2068,20 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1720387152729", id:"bannernegro1"},
-		{src:"images/fondo11.png?1720387152729", id:"fondo11"},
-		{src:"images/fondoMorado.png?1720387152729", id:"fondoMorado"},
-		{src:"images/Portada.png?1720387152729", id:"Portada"},
-		{src:"images/index_atlas_1.png?1720387152545", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1720387152547", id:"index_atlas_2"},
-		{src:"sounds/ayuda1.mp3?1720387152729", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1720387152729", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1720387152729", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1720387152729", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1720387152729", id:"ayuda5"},
-		{src:"sounds/sound2.mp3?1720387152729", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1720387152729", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1720387152729", id:"sound1"}
+		{src:"images/bannernegro1.png?1720490563332", id:"bannernegro1"},
+		{src:"images/fondo11.png?1720490563332", id:"fondo11"},
+		{src:"images/fondoMorado.png?1720490563332", id:"fondoMorado"},
+		{src:"images/Portada.png?1720490563332", id:"Portada"},
+		{src:"images/index_atlas_1.png?1720490563214", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1720490563215", id:"index_atlas_2"},
+		{src:"sounds/ayuda1.mp3?1720490563332", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1720490563332", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1720490563332", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1720490563332", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1720490563332", id:"ayuda5"},
+		{src:"sounds/sound2.mp3?1720490563332", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1720490563332", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1720490563332", id:"sound1"}
 	],
 	preloads: []
 };

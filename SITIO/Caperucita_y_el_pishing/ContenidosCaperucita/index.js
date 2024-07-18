@@ -1231,7 +1231,7 @@ if (reversed == null) { reversed = false; }
 	// computador
 	this.interaccion = new lib.pantallamov();
 	this.interaccion.name = "interaccion";
-	this.interaccion.setTransform(92.75,172.5,0.5,0.5,0,0,0,12,190);
+	this.interaccion.setTransform(372.85,172.5,0.5,0.5,0,0,0,12,190);
 	new cjs.ButtonHelper(this.interaccion, 0, 1, 2, false, new lib.pantallamov(), 3);
 
 	this.instance_2 = new lib.computador_1();
@@ -1413,9 +1413,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1715836336010", id:"index_atlas_1"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1715836336120", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1715836336120", id:"sound"}
+		{src:"images/index_atlas_1.png?1720479032305", id:"index_atlas_1"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1720479032401", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/sound.mp3?1720479032401", id:"sound"}
 	],
 	preloads: []
 };

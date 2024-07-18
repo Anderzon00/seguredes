@@ -1075,15 +1075,15 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(1));
 
 	// Capa_1
-	this.instance = new lib.interactivo();
-	this.instance.setTransform(-39.25,-39.1,0.4245,0.4245,0,0,0,-0.6,-0.2);
+	this.instance = new lib.EmoticonC();
+	this.instance.setTransform(187,-138,0.5,0.5);
+
+	this.instance_1 = new lib.interactivo();
+	this.instance_1.setTransform(-39.25,-39.1,0.4245,0.4245,0,0,0,-0.6,-0.2);
 
 	this.mano2 = new lib.mano2();
 	this.mano2.name = "mano2";
 	this.mano2.setTransform(-60,193);
-
-	this.instance_1 = new lib.Emoticon3();
-	this.instance_1.setTransform(186,-136,0.5,0.5);
 
 	this.instance_2 = new lib.Emoticon2();
 	this.instance_2.setTransform(-166,-217,0.5,0.5);
@@ -1097,16 +1097,16 @@ if (reversed == null) { reversed = false; }
 	this.instance_5 = new lib.interactivosobre();
 	this.instance_5.setTransform(-40.05,-34.55,0.5491,0.5488,0,0,0,-0.1,-0.1);
 
-	this.instance_6 = new lib.EmoticonA();
-	this.instance_6.setTransform(-136,-323,0.5,0.5);
+	this.instance_6 = new lib.Emoticon3();
+	this.instance_6.setTransform(185,-130,0.5,0.5);
 
-	this.instance_7 = new lib.EmoticonC();
-	this.instance_7.setTransform(186,-131,0.5,0.5);
+	this.instance_7 = new lib.EmoticonA();
+	this.instance_7.setTransform(-136,-323,0.5,0.5);
 
 	this.instance_8 = new lib.EmoticonB();
 	this.instance_8.setTransform(-161,-210,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4,p:{x:-273,y:-346}},{t:this.instance_3,p:{y:-327}},{t:this.instance_2,p:{x:-166,y:-217}},{t:this.instance_1,p:{y:-136}},{t:this.mano2,p:{y:193,x:-60}},{t:this.instance}]}).to({state:[{t:this.instance_4,p:{x:-275,y:-339}},{t:this.instance_3,p:{y:-318}},{t:this.instance_1,p:{y:-129}},{t:this.instance_2,p:{x:-167,y:-209}},{t:this.mano2,p:{y:193.55,x:-60}},{t:this.instance_5}]},1).to({state:[{t:this.instance_4,p:{x:-275,y:-340}},{t:this.mano2,p:{y:155.5,x:-49.55}},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4,p:{x:-273,y:-346}},{t:this.instance_3,p:{y:-327}},{t:this.instance_2,p:{x:-166,y:-217}},{t:this.mano2,p:{y:193,x:-60}},{t:this.instance_1},{t:this.instance,p:{x:187,y:-138}}]}).to({state:[{t:this.instance_4,p:{x:-275,y:-339}},{t:this.instance_3,p:{y:-318}},{t:this.instance_2,p:{x:-167,y:-209}},{t:this.mano2,p:{y:193.55,x:-60}},{t:this.instance_5},{t:this.instance,p:{x:184,y:-131}}]},1).to({state:[{t:this.instance_4,p:{x:-275,y:-340}},{t:this.mano2,p:{y:155.5,x:-49.55}},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1235,9 +1235,7 @@ if (reversed == null) { reversed = false; }
 		
 		var _this = this; 
 		
-		_this.button_7.on('click', function(){
-			 
-		
+		_this.button_7.on('click', function(){ 
 		_this.gotoAndPlay(2);
 		});
 	}
@@ -1426,15 +1424,13 @@ if (reversed == null) { reversed = false; }
 		stage.on('drawstart', initStage, this, true);
 		
 		function initStage() {	
-		    stretchToFit();
-			
+		    stretchToFit();	
 		}
 	}
 	this.frame_40 = function() {
 		document.addEventListener('click', function iniciarAudio() {
 			const audioContext = new(window.AudioContext || window.webkitAudioContext)();
 			audioContext.resume().then(function() {
-				console.log('AudioContext reanudado después de clic');
 				window.parent.fondo();
 			});
 		
@@ -1533,14 +1529,14 @@ lib.properties = {
 	color: "#006699",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/fondoizq.png?1720391914528", id:"fondoizq"},
-		{src:"images/index_atlas_P_1.png?1720391914393", id:"index_atlas_P_1"},
-		{src:"images/index_atlas_P_2.png?1720391914394", id:"index_atlas_P_2"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1720391914528", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/fondo.mp3?1720391914528", id:"fondo"},
-		{src:"sounds/sound.mp3?1720391914528", id:"sound"},
-		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1720391914528", id:"notificationsound70621onlineaudioconvertercom"},
-		{src:"sounds/sound2.mp3?1720391914528", id:"sound2"}
+		{src:"images/fondoizq.png?1720720611396", id:"fondoizq"},
+		{src:"images/index_atlas_P_1.png?1720720611263", id:"index_atlas_P_1"},
+		{src:"images/index_atlas_P_2.png?1720720611264", id:"index_atlas_P_2"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1720720611396", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/fondo.mp3?1720720611396", id:"fondo"},
+		{src:"sounds/sound.mp3?1720720611396", id:"sound"},
+		{src:"sounds/notificationsound70621onlineaudioconvertercom.mp3?1720720611396", id:"notificationsound70621onlineaudioconvertercom"},
+		{src:"sounds/sound2.mp3?1720720611396", id:"sound2"}
 	],
 	preloads: []
 };

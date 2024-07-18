@@ -1015,7 +1015,7 @@ if (reversed == null) { reversed = false; }
 	this.instance.setTransform(490,547,0.5,0.5);
 
 	this.instance_1 = new lib.titulo();
-	this.instance_1.setTransform(349,7,0.5,0.5);
+	this.instance_1.setTransform(397,4,0.3985,0.3985);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance},{t:this.movieClip_9}]}).wait(2));
 
@@ -1072,12 +1072,12 @@ lib.properties = {
 	color: "#66FF00",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1715630976516", id:"index_atlas_1"},
-		{src:"sounds/generales.mp3?1715630976609", id:"generales"},
-		{src:"sounds/indice.mp3?1715630976609", id:"indice"},
-		{src:"sounds/QuestionSoundEffect.mp3?1715630976609", id:"QuestionSoundEffect"},
-		{src:"sounds/audio4.mp3?1715630976609", id:"audio4"},
-		{src:"sounds/audio5.mp3?1715630976609", id:"audio5"}
+		{src:"images/index_atlas_1.png?1720465486781", id:"index_atlas_1"},
+		{src:"sounds/generales.mp3?1720465486867", id:"generales"},
+		{src:"sounds/indice.mp3?1720465486867", id:"indice"},
+		{src:"sounds/QuestionSoundEffect.mp3?1720465486867", id:"QuestionSoundEffect"},
+		{src:"sounds/audio4.mp3?1720465486867", id:"audio4"},
+		{src:"sounds/audio5.mp3?1720465486867", id:"audio5"}
 	],
 	preloads: []
 };

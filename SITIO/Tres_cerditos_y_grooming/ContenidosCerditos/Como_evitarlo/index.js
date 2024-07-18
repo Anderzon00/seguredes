@@ -1413,7 +1413,7 @@ if (reversed == null) { reversed = false; }
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("mixkitkidscartoonclosebells2256");
+		playSound("y2matecomsonidodemagiaefectohadas");
 	}
 
 	// actions tween:
@@ -1431,7 +1431,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_2.compositeOperation = "darken";
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#999999").ss(1,1,1).p("AEJizIAAFnAkIC0IAAln");
+	this.shape.graphics.f().s("#999999").ss(1,1,1).p("AkIC0IAAlnAEJizIAAFn");
 	this.shape.setTransform(-18.45,5.05);
 
 	this.shape_1 = new cjs.Shape();
@@ -2149,21 +2149,15 @@ if (reversed == null) { reversed = false; }
 		this.gotoAndStop(document.location.href.split('#')[1]);
 		}
 		
-		
 		this.stop();
-		
 		
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 			
 			window.parent.document.getElementById('mi_iframe').src = './Ayuda/Contenidos/Como_evitarlo/index.html';
-		
 			
 		    stretchToFit();
 		}
-		
-		
-		
 		  
 		this.btnindice.addEventListener("click", fl_ClickToGoToWebPage_13);
 		function fl_ClickToGoToWebPage_13() {	
@@ -2208,13 +2202,6 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido2.visible=true; 
 		                    }, this);; 
 		});
-		
-		 
-		
-		
-		 
-		
-		
 		 
 		_this.btnStopSonido1.on('click', function(){
 			_this.btn_sonido1.visible=true;
@@ -2623,17 +2610,17 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1720063717489", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1720063717645", id:"audioG"},
-		{src:"sounds/audioC.mp3?1720063717645", id:"audioC"},
-		{src:"sounds/audio1.mp3?1720063717645", id:"audio1"},
-		{src:"sounds/audio2.mp3?1720063717645", id:"audio2"},
-		{src:"sounds/audio3.mp3?1720063717645", id:"audio3"},
-		{src:"sounds/audio4.mp3?1720063717645", id:"audio4"},
-		{src:"sounds/audio5.mp3?1720063717645", id:"audio5"},
-		{src:"sounds/audio6.mp3?1720063717645", id:"audio6"},
-		{src:"sounds/audio7.mp3?1720063717645", id:"audio7"},
-		{src:"sounds/mixkitkidscartoonclosebells2256.mp3?1720063717645", id:"mixkitkidscartoonclosebells2256"}
+		{src:"images/index_atlas_1.png?1720491167277", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1720491167430", id:"audioG"},
+		{src:"sounds/audioC.mp3?1720491167431", id:"audioC"},
+		{src:"sounds/audio1.mp3?1720491167431", id:"audio1"},
+		{src:"sounds/audio2.mp3?1720491167431", id:"audio2"},
+		{src:"sounds/audio3.mp3?1720491167431", id:"audio3"},
+		{src:"sounds/audio4.mp3?1720491167431", id:"audio4"},
+		{src:"sounds/audio5.mp3?1720491167431", id:"audio5"},
+		{src:"sounds/audio6.mp3?1720491167431", id:"audio6"},
+		{src:"sounds/audio7.mp3?1720491167431", id:"audio7"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1720491167431", id:"y2matecomsonidodemagiaefectohadas"}
 	],
 	preloads: []
 };

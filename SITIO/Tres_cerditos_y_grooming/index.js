@@ -1801,6 +1801,14 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// timeline functions:
+	this.frame_1 = function() {
+		playSound("sound2");
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(2));
+
 	// Capa_1
 	this.instance = new lib.btn_amarillo();
 
@@ -2234,20 +2242,20 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1720387996489", id:"bannernegro1"},
-		{src:"images/fondo11.png?1720387996489", id:"fondo11"},
-		{src:"images/fondoMorado.png?1720387996489", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1720387996358", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1720387996359", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1720387996360", id:"index_atlas_3"},
-		{src:"sounds/ayuda1.mp3?1720387996489", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1720387996489", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1720387996489", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1720387996489", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1720387996489", id:"ayuda5"},
-		{src:"sounds/sound2.mp3?1720387996489", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1720387996489", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1720387996489", id:"sound1"}
+		{src:"images/bannernegro1.png?1720490798705", id:"bannernegro1"},
+		{src:"images/fondo11.png?1720490798705", id:"fondo11"},
+		{src:"images/fondoMorado.png?1720490798705", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1720490798589", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1720490798590", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1720490798591", id:"index_atlas_3"},
+		{src:"sounds/ayuda1.mp3?1720490798705", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1720490798705", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1720490798705", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1720490798705", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1720490798705", id:"ayuda5"},
+		{src:"sounds/sound2.mp3?1720490798705", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1720490798705", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1720490798705", id:"sound1"}
 	],
 	preloads: []
 };

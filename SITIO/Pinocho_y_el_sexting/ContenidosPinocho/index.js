@@ -1108,11 +1108,19 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// timeline functions:
+	this.frame_0 = function() {
+		this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(200));
+
 	// Capa_1
 	this.instance = new lib.Interpolación7("synched",0);
 	this.instance.setTransform(139.25,178);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:121.7,y:163.15},49).to({x:139.25,y:178},50).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:121.7,y:163.15},49).to({x:139.25,y:178},50).to({x:121.7,y:163.15},50).to({x:139.25,y:178},50).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1331,7 +1339,8 @@ if (reversed == null) { reversed = false; }
 		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y continúa la reproducción desde dicho fotograma.
 		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
 		*/
-		_this.mano.gotoAndPlay(50);
+		_this.mano.gotoAndPlay(1);
+			_this.mano2.gotoAndPlay(1);
 		});
 	}
 
@@ -1360,10 +1369,11 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1));
 
 	// ManoDer.png
-	this.instance_4 = new lib.mano();
-	this.instance_4.setTransform(206.2,172,1,1,0,0,0,139.2,178);
+	this.mano2 = new lib.mano();
+	this.mano2.name = "mano2";
+	this.mano2.setTransform(206.2,172,1,1,0,0,0,139.2,178);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.mano2).wait(1));
 
 	// Mensaje2.png
 	this.interaccion = new lib.pantallamov();
@@ -1378,34 +1388,34 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.mano},{t:this.interaccion}]}).wait(1));
 
 	// ManoIzq_1.png
-	this.instance_5 = new lib.ManoIzq_1();
-	this.instance_5.setTransform(-165,-162,0.5,0.5);
+	this.instance_4 = new lib.ManoIzq_1();
+	this.instance_4.setTransform(-165,-162,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1));
+
+	// EmojiDiablo.png
+	this.instance_5 = new lib.emote();
+	this.instance_5.setTransform(-50.2,-159.8,1,1,0,0,0,35.8,37.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1));
 
-	// EmojiDiablo.png
-	this.instance_6 = new lib.emote();
-	this.instance_6.setTransform(-50.2,-159.8,1,1,0,0,0,35.8,37.2);
+	// EmojiCorazon.png
+	this.instance_6 = new lib.corazon1();
+	this.instance_6.setTransform(-121.2,-54.8,1,1,0,0,0,34.8,32.2);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(1));
+	this.instance_7 = new lib.AvionAmarillo();
+	this.instance_7.setTransform(204,-148,0.5,0.5);
+
+	this.instance_8 = new lib.AvionAzul();
+	this.instance_8.setTransform(-212,2,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.instance_6}]}).wait(1));
 
 	// EmojiCorazon.png
-	this.instance_7 = new lib.corazon1();
-	this.instance_7.setTransform(-121.2,-54.8,1,1,0,0,0,34.8,32.2);
+	this.instance_9 = new lib.corazon2();
+	this.instance_9.setTransform(246.8,10.2,1,1,0,0,0,34.8,32.2);
 
-	this.instance_8 = new lib.AvionAmarillo();
-	this.instance_8.setTransform(204,-148,0.5,0.5);
-
-	this.instance_9 = new lib.AvionAzul();
-	this.instance_9.setTransform(-212,2,0.5,0.5);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9},{t:this.instance_8},{t:this.instance_7}]}).wait(1));
-
-	// EmojiCorazon.png
-	this.instance_10 = new lib.corazon2();
-	this.instance_10.setTransform(246.8,10.2,1,1,0,0,0,34.8,32.2);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1584,9 +1594,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1715615122044", id:"index_atlas_1"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1715615122139", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1715615122139", id:"sound"}
+		{src:"images/index_atlas_1.png?1720475502067", id:"index_atlas_1"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1720475502167", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/sound.mp3?1720475502167", id:"sound"}
 	],
 	preloads: []
 };

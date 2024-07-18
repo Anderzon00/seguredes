@@ -691,6 +691,23 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-75,-11,256.7,69.1);
 
 
+(lib.emojirisa = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,0,0);
+
+
 (lib.queES = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1013,16 +1030,22 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(160));
 
 	// Capa_1
-	this.instance = new lib.Interpolación2("synched",0);
-	this.instance.setTransform(429.5,276.25,1,1,0,0,180,34.8,0);
+	this.instance = new lib.Interpolación6("synched",0);
+	this.instance.setTransform(443.6,404.65);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:34.6,regY:0.1,scaleX:1.3784,scaleY:1.3784,x:421.7,y:257.4},39).to({regX:34.8,regY:0,scaleX:1,scaleY:1,x:429.5,y:276.25},40).to({regX:34.6,regY:0.1,scaleX:1.3784,scaleY:1.3784,x:421.7,y:257.4},40).to({regX:34.8,regY:0,scaleX:1,scaleY:1,x:429.5,y:276.25},40).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({y:385.9},29).to({y:404.65},30).to({y:385.9},30).to({y:404.65},30).to({startPosition:0},40).wait(1));
 
 	// Capa_1
-	this.instance_1 = new lib.Interpolación7("synched",0);
-	this.instance_1.setTransform(139.25,178);
+	this.instance_1 = new lib.Interpolación2("synched",0);
+	this.instance_1.setTransform(429.5,276.25,1,1,0,0,180,34.8,0);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({x:135.2,y:163.15},39).to({x:139.25,y:178},40).to({x:135.2,y:163.15},40).to({x:139.25,y:178},40).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({regX:34.6,regY:0.1,scaleX:1.3784,scaleY:1.3784,x:421.7,y:257.4},39).to({regX:34.8,regY:0,scaleX:1,scaleY:1,x:429.5,y:276.25},40).to({regX:34.6,regY:0.1,scaleX:1.3784,scaleY:1.3784,x:421.7,y:257.4},40).to({regX:34.8,regY:0,scaleX:1,scaleY:1,x:429.5,y:276.25},40).wait(1));
+
+	// Capa_1
+	this.instance_2 = new lib.Interpolación7("synched",0);
+	this.instance_2.setTransform(139.25,178);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({x:135.2,y:163.15},39).to({x:139.25,y:178},40).to({x:135.2,y:163.15},40).to({x:139.25,y:178},40).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1051,29 +1074,6 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,39,38.5);
-
-
-(lib.emojirisa = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Capa_1
-	this.instance = new lib.Interpolación6("synched",0);
-	this.instance.setTransform(35.75,42.65);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({y:25.35},24).to({y:42.65},25).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,-11.9,75,70.3);
 
 
 (lib.corazon1 = function(mode,startPosition,loop,reversed) {
@@ -1138,7 +1138,7 @@ if (reversed == null) { reversed = false; }
 	// Capa_3
 	this.interaccion = new lib.pantallamov();
 	this.interaccion.name = "interaccion";
-	this.interaccion.setTransform(146.2,254.1,0.5,0.5,0,0,0,12,190);
+	this.interaccion.setTransform(85.25,254.1,0.5,0.5,0,0,0,12,190);
 	new cjs.ButtonHelper(this.interaccion, 0, 1, 2, false, new lib.pantallamov(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.interaccion).wait(1));
@@ -1403,9 +1403,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1715670714611", id:"index_atlas_1"},
-		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1715670714726", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
-		{src:"sounds/sound.mp3?1715670714726", id:"sound"}
+		{src:"images/index_atlas_1.png?1720478958027", id:"index_atlas_1"},
+		{src:"sounds/CLOCKTick_Stopwatch2_ID2138_BSB.mp3?1720478958128", id:"CLOCKTick_Stopwatch2_ID2138_BSB"},
+		{src:"sounds/sound.mp3?1720478958128", id:"sound"}
 	],
 	preloads: []
 };
