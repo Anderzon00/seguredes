@@ -2610,17 +2610,17 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1720491167277", id:"index_atlas_1"},
-		{src:"sounds/audioG.mp3?1720491167430", id:"audioG"},
-		{src:"sounds/audioC.mp3?1720491167431", id:"audioC"},
-		{src:"sounds/audio1.mp3?1720491167431", id:"audio1"},
-		{src:"sounds/audio2.mp3?1720491167431", id:"audio2"},
-		{src:"sounds/audio3.mp3?1720491167431", id:"audio3"},
-		{src:"sounds/audio4.mp3?1720491167431", id:"audio4"},
-		{src:"sounds/audio5.mp3?1720491167431", id:"audio5"},
-		{src:"sounds/audio6.mp3?1720491167431", id:"audio6"},
-		{src:"sounds/audio7.mp3?1720491167431", id:"audio7"},
-		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1720491167431", id:"y2matecomsonidodemagiaefectohadas"}
+		{src:"images/index_atlas_1.png?1721427334513", id:"index_atlas_1"},
+		{src:"sounds/audioG.mp3?1721427334655", id:"audioG"},
+		{src:"sounds/audioC.mp3?1721427334655", id:"audioC"},
+		{src:"sounds/audio1.mp3?1721427334655", id:"audio1"},
+		{src:"sounds/audio2.mp3?1721427334655", id:"audio2"},
+		{src:"sounds/audio3.mp3?1721427334655", id:"audio3"},
+		{src:"sounds/audio4.mp3?1721427334655", id:"audio4"},
+		{src:"sounds/audio5.mp3?1721427334655", id:"audio5"},
+		{src:"sounds/audio6.mp3?1721427334655", id:"audio6"},
+		{src:"sounds/audio7.mp3?1721427334655", id:"audio7"},
+		{src:"sounds/y2matecomsonidodemagiaefectohadas.mp3?1721427334655", id:"y2matecomsonidodemagiaefectohadas"}
 	],
 	preloads: []
 };

@@ -543,12 +543,12 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1720064985186", id:"iframe_atlas_1"},
-		{src:"sounds/audio5a.mp3?1720064985231", id:"audio5a"},
-		{src:"sounds/audio1a.mp3?1720064985231", id:"audio1a"},
-		{src:"sounds/audio2a.mp3?1720064985231", id:"audio2a"},
-		{src:"sounds/audio3a.mp3?1720064985231", id:"audio3a"},
-		{src:"sounds/audio4a.mp3?1720064985231", id:"audio4a"}
+		{src:"images/iframe_atlas_1.png?1721427765051", id:"iframe_atlas_1"},
+		{src:"sounds/audio5a.mp3?1721427765142", id:"audio5a"},
+		{src:"sounds/audio1a.mp3?1721427765142", id:"audio1a"},
+		{src:"sounds/audio2a.mp3?1721427765142", id:"audio2a"},
+		{src:"sounds/audio3a.mp3?1721427765142", id:"audio3a"},
+		{src:"sounds/audio4a.mp3?1721427765142", id:"audio4a"}
 	],
 	preloads: []
 };

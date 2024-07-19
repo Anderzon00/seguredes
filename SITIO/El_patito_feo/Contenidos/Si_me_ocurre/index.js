@@ -1072,12 +1072,12 @@ lib.properties = {
 	color: "#66FF00",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1720465486781", id:"index_atlas_1"},
-		{src:"sounds/generales.mp3?1720465486867", id:"generales"},
-		{src:"sounds/indice.mp3?1720465486867", id:"indice"},
-		{src:"sounds/QuestionSoundEffect.mp3?1720465486867", id:"QuestionSoundEffect"},
-		{src:"sounds/audio4.mp3?1720465486867", id:"audio4"},
-		{src:"sounds/audio5.mp3?1720465486867", id:"audio5"}
+		{src:"images/index_atlas_1.png?1721425955583", id:"index_atlas_1"},
+		{src:"sounds/generales.mp3?1721425955721", id:"generales"},
+		{src:"sounds/indice.mp3?1721425955721", id:"indice"},
+		{src:"sounds/QuestionSoundEffect.mp3?1721425955721", id:"QuestionSoundEffect"},
+		{src:"sounds/audio4.mp3?1721425955721", id:"audio4"},
+		{src:"sounds/audio5.mp3?1721425955721", id:"audio5"}
 	],
 	preloads: []
 };

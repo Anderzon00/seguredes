@@ -480,10 +480,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1693874898974", id:"iframe_atlas_1"},
-		{src:"sounds/audio1.mp3?1693874899016", id:"audio1"},
-		{src:"sounds/audio2.mp3?1693874899016", id:"audio2"},
-		{src:"sounds/audio3.mp3?1693874899016", id:"audio3"}
+		{src:"images/iframe_atlas_1.png?1721425974449", id:"iframe_atlas_1"},
+		{src:"sounds/audio1.mp3?1721425974491", id:"audio1"},
+		{src:"sounds/audio2.mp3?1721425974491", id:"audio2"},
+		{src:"sounds/audio3.mp3?1721425974491", id:"audio3"}
 	],
 	preloads: []
 };

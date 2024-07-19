@@ -5,7 +5,7 @@ var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"index1_atlas_P_1", frames: [[0,0,2730,1548]]},
 		{name:"index1_atlas_P_2", frames: [[0,0,2732,1535]]},
-		{name:"index1_atlas_P_3", frames: [[0,1870,980,134],[1065,1306,698,133],[0,1735,1153,133],[1037,366,938,134],[1155,1699,574,134],[1155,1441,642,133],[836,685,186,121],[1577,680,267,415],[1065,680,254,449],[1321,680,254,449],[809,841,254,480],[1485,283,274,80],[707,1649,274,80],[1485,178,266,103],[707,1544,266,103],[0,397,834,442],[0,841,807,432],[1721,1920,276,98],[1765,1317,276,98],[1753,178,220,98],[1799,1417,220,98],[0,1275,705,458],[707,1323,232,219],[1765,1097,231,218],[1731,1699,231,219],[1155,1576,640,121],[836,397,86,286],[924,397,86,286],[975,1323,88,276],[1846,680,88,277],[1037,0,446,364],[0,0,1035,395],[1065,1131,600,173],[982,1870,737,176],[1485,0,487,176],[1155,502,714,176]]},
+		{name:"index1_atlas_P_3", frames: [[1355,884,980,134],[0,857,698,133],[707,444,1153,133],[0,1029,938,134],[1196,1373,574,134],[1798,1198,642,133],[2682,288,186,121],[512,1165,267,415],[0,1165,254,449],[256,1165,254,449],[940,1029,254,480],[1623,800,274,80],[1899,800,274,80],[1355,757,266,103],[2337,884,266,103],[1037,0,834,442],[1873,0,807,432],[2605,884,276,98],[2440,1418,276,98],[1772,1456,220,98],[1994,1456,220,98],[0,397,705,458],[2645,434,232,219],[2442,1198,231,218],[2645,655,231,219],[1798,1333,640,121],[2682,0,86,286],[2770,0,86,286],[2718,1198,88,276],[781,1165,88,277],[1873,434,446,364],[2321,434,322,448],[707,579,322,448],[1031,579,322,448],[0,0,1035,395],[1196,1198,600,173],[1355,1020,737,176],[1355,579,487,176],[2094,1020,714,176]]},
 		{name:"index1_atlas_NP_1", frames: [[0,0,1319,398]]}
 ];
 
@@ -268,37 +268,58 @@ lib.ssMetadata = [
 
 
 
-(lib.Seguredes = function() {
+(lib.PerfilAnderson = function() {
 	this.initialize(ss["index1_atlas_P_3"]);
 	this.gotoAndStop(31);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.tituloBienvenida = function() {
+(lib.PerfilGerman = function() {
 	this.initialize(ss["index1_atlas_P_3"]);
 	this.gotoAndStop(32);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Titulo = function() {
+(lib.PerfilJulieth = function() {
 	this.initialize(ss["index1_atlas_P_3"]);
 	this.gotoAndStop(33);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Titulo_1 = function() {
+(lib.Seguredes = function() {
 	this.initialize(ss["index1_atlas_P_3"]);
 	this.gotoAndStop(34);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.titulol = function() {
+(lib.tituloBienvenida = function() {
 	this.initialize(ss["index1_atlas_P_3"]);
 	this.gotoAndStop(35);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Titulo = function() {
+	this.initialize(ss["index1_atlas_P_3"]);
+	this.gotoAndStop(36);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Titulo_1 = function() {
+	this.initialize(ss["index1_atlas_P_3"]);
+	this.gotoAndStop(37);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.titulol = function() {
+	this.initialize(ss["index1_atlas_P_3"]);
+	this.gotoAndStop(38);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -905,6 +926,99 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-2,0,142.6,50.7);
+
+
+(lib.btnAutor3 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// timeline functions:
+	this.frame_1 = function() {
+		playSound("multipop21881671onlineaudioconvertercom");
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(2));
+
+	// Capa_1
+	this.instance = new lib.PerfilAnderson();
+	this.instance.setTransform(0,0,0.8223,0.8223);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.8643,scaleY:0.8643,x:-7,y:-9},0).wait(1).to({scaleX:0.8223,scaleY:0.8223,x:0,y:0},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-7,-9,278.3,387.2);
+
+
+(lib.btnAutor2 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// timeline functions:
+	this.frame_1 = function() {
+		playSound("multipop21881671onlineaudioconvertercom");
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(2));
+
+	// Capa_1
+	this.instance = new lib.PerfilJulieth();
+	this.instance.setTransform(0,0,0.8223,0.8223);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.8814,scaleY:0.8814,x:-9,y:-14},0).wait(1).to({scaleX:0.8223,scaleY:0.8223,x:0,y:0},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-9,-14,283.8,394.9);
+
+
+(lib.btnAutor1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// timeline functions:
+	this.frame_1 = function() {
+		playSound("multipop21881671onlineaudioconvertercom");
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(2));
+
+	// Capa_1
+	this.instance = new lib.PerfilGerman();
+	this.instance.setTransform(0,0,0.8223,0.8223);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({scaleX:0.8648,scaleY:0.8648,x:-7,y:-10},0).wait(1).to({scaleX:0.8223,scaleY:0.8223,x:0,y:0},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-7,-10,278.5,387.5);
 
 
 (lib.bigsound = function(mode,startPosition,loop,reversed) {
@@ -1571,6 +1685,21 @@ if (reversed == null) { reversed = false; }
 		_this.atras2.addEventListener('click', function() {
 		     _this.gotoAndStop(103);
 		});
+		
+		var _this = this;
+		 
+		_this.btnAutor1.on('click', function(){ 
+		window.open('http://linkedin.com/in/germanfajardop', '_blank');
+		});
+		
+		
+		_this.btnAutor2.on('click', function(){ 
+		window.open('http://linkedin.com/in/julieta-buesaquillo', '_blank');
+		});
+		
+		_this.btnAutor3.on('click', function(){ 
+		window.open('http://linkedin.com/in/anderson-salazar2', '_blank');
+		});
 	}
 	this.frame_105 = function() {
 		var _this = this;
@@ -1615,11 +1744,25 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(81).call(this.frame_81).wait(21).call(this.frame_102).wait(1).call(this.frame_103).wait(1).call(this.frame_104).wait(1).call(this.frame_105).wait(1).call(this.frame_106).wait(1));
 
 	// Actions
+	this.btnAutor3 = new lib.btnAutor3();
+	this.btnAutor3.name = "btnAutor3";
+	this.btnAutor3.setTransform(967.3,390.2,1,1,0,0,0,132.3,184.2);
+	new cjs.ButtonHelper(this.btnAutor3, 0, 1, 2);
+
+	this.btnAutor2 = new lib.btnAutor2();
+	this.btnAutor2.name = "btnAutor2";
+	this.btnAutor2.setTransform(682.3,390.2,1,1,0,0,0,132.3,184.2);
+	new cjs.ButtonHelper(this.btnAutor2, 0, 1, 2);
+
+	this.btnAutor1 = new lib.btnAutor1();
+	this.btnAutor1.name = "btnAutor1";
+	this.btnAutor1.setTransform(396.3,390.2,1,1,0,0,0,132.3,184.2);
+	new cjs.ButtonHelper(this.btnAutor1, 0, 1, 2);
+
 	this.instance = new lib.ImagendeWhatsApp20240125alas215808_e95e82f7();
 	this.instance.setTransform(254,233,0.6506,0.6506);
-	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(106).to({_off:false},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btnAutor1},{t:this.btnAutor2},{t:this.btnAutor3}]},104).to({state:[]},1).to({state:[{t:this.instance}]},1).wait(1));
 
 	// botonesYtexto
 	this.instance_1 = new lib.zoomtexto();
@@ -1766,11 +1909,12 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index1_atlas_P_1.png?1721186126046", id:"index1_atlas_P_1"},
-		{src:"images/index1_atlas_P_2.png?1721186126046", id:"index1_atlas_P_2"},
-		{src:"images/index1_atlas_P_3.png?1721186126047", id:"index1_atlas_P_3"},
-		{src:"images/index1_atlas_NP_1.jpg?1721186126047", id:"index1_atlas_NP_1"},
-		{src:"sounds/sound.mp3?1721186126163", id:"sound"}
+		{src:"images/index1_atlas_P_1.png?1721425181838", id:"index1_atlas_P_1"},
+		{src:"images/index1_atlas_P_2.png?1721425181838", id:"index1_atlas_P_2"},
+		{src:"images/index1_atlas_P_3.png?1721425181840", id:"index1_atlas_P_3"},
+		{src:"images/index1_atlas_NP_1.jpg?1721425181840", id:"index1_atlas_NP_1"},
+		{src:"sounds/sound.mp3?1721425181984", id:"sound"},
+		{src:"sounds/multipop21881671onlineaudioconvertercom.mp3?1721425181984", id:"multipop21881671onlineaudioconvertercom"}
 	],
 	preloads: []
 };

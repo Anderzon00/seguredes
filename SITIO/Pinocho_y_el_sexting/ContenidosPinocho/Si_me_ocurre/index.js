@@ -1841,15 +1841,15 @@ lib.properties = {
 	color: "#66FF00",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1720465604105", id:"index_atlas_1"},
-		{src:"sounds/audio1.mp3?1720465604240", id:"audio1"},
-		{src:"sounds/audio2.mp3?1720465604240", id:"audio2"},
-		{src:"sounds/audio3.mp3?1720465604240", id:"audio3"},
-		{src:"sounds/audio4.mp3?1720465604240", id:"audio4"},
-		{src:"sounds/audio5.mp3?1720465604240", id:"audio5"},
-		{src:"sounds/generales.mp3?1720465604240", id:"generales"},
-		{src:"sounds/indice.mp3?1720465604240", id:"indice"},
-		{src:"sounds/QuestionSoundEffect.mp3?1720465604240", id:"QuestionSoundEffect"}
+		{src:"images/index_atlas_1.png?1721427169538", id:"index_atlas_1"},
+		{src:"sounds/audio1.mp3?1721427169652", id:"audio1"},
+		{src:"sounds/audio2.mp3?1721427169652", id:"audio2"},
+		{src:"sounds/audio3.mp3?1721427169652", id:"audio3"},
+		{src:"sounds/audio4.mp3?1721427169652", id:"audio4"},
+		{src:"sounds/audio5.mp3?1721427169652", id:"audio5"},
+		{src:"sounds/generales.mp3?1721427169652", id:"generales"},
+		{src:"sounds/indice.mp3?1721427169652", id:"indice"},
+		{src:"sounds/QuestionSoundEffect.mp3?1721427169652", id:"QuestionSoundEffect"}
 	],
 	preloads: []
 };
