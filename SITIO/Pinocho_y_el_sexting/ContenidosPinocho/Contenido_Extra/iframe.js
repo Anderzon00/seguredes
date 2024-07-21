@@ -253,7 +253,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://123portic.com/sexting/Informate.html','_blank');
+		window.open('https://123portic.com/que-es-sexting-grooming-y-ciberbullying/','_blank');
 		});
 		
 		
@@ -513,11 +513,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1721427294760", id:"iframe_atlas_1"},
-		{src:"sounds/audio3.mp3?1721427294810", id:"audio3"},
-		{src:"sounds/audio1.mp3?1721427294810", id:"audio1"},
-		{src:"sounds/audio4.mp3?1721427294810", id:"audio4"},
-		{src:"sounds/audio2.mp3?1721427294810", id:"audio2"}
+		{src:"images/iframe_atlas_1.png?1721582083579", id:"iframe_atlas_1"},
+		{src:"sounds/audio3.mp3?1721582083613", id:"audio3"},
+		{src:"sounds/audio1.mp3?1721582083613", id:"audio1"},
+		{src:"sounds/audio4.mp3?1721582083613", id:"audio4"},
+		{src:"sounds/audio2.mp3?1721582083613", id:"audio2"}
 	],
 	preloads: []
 };
