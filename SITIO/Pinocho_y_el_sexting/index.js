@@ -1107,10 +1107,7 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		var _this = this;
-		/*
-		Detener un clip de película o un vídeo
-		Detiene el clip de película o el vídeo especificado.
-		*/
+		 
 		_this.stop();
 	}
 
@@ -1413,10 +1410,7 @@ if (reversed == null) { reversed = false; }
 		stage.on('drawstart', initStage, this, true);
 		function initStage() {
 			stretchToFit();
-		}
-		
-		
-		
+		} 
 		this.stop();
 		createjs.Sound.stop();
 		
@@ -1572,8 +1566,7 @@ if (reversed == null) { reversed = false; }
 		this.stop();
 		var _this = this;
 		
-		_this.btn_sonido5.visible=true;
-			
+		_this.btn_sonido5.visible=true;	
 		
 		this.btn_sonido5.on('click', function(){
 			createjs.Sound.stop();
@@ -1587,12 +1580,7 @@ if (reversed == null) { reversed = false; }
 		_this.btnStopSonido5.on('click', function(){
 			_this.btn_sonido5.visible=true;
 			createjs.Sound.stop();
-		});
-		
-		
-		
-		
-		
+		}); 
 		_this.btnAnterior5.on('click', function(){
 		createjs.Sound.stop();
 		_this.gotoAndStop(3);
@@ -1964,20 +1952,19 @@ if (reversed == null) { reversed = false; }
 		 });
 		
 		_this.btnContenidos.on('click', function () {
-			document.getElementById('contenidos').src = "./ContenidosPinocho/index.html";
+				document.getElementById('contenidos').src = "";
 			_this.gotoAndStop("Contenidos");
-			document.getElementById('contenidos').style.display = 'block';	
-			
-			
+			document.getElementById('contenidos').src = "./ContenidosPinocho/index.html";	
+			document.getElementById('contenidos').style.display = 'block';		
 		document.getElementById('mi_iframe').src = './Ayuda/Contenidos/index.html';
 		});
 		
 		_this.btnActividades.on('click', function () {
-			document.getElementById('contenidos').src = "./ActividadesPinocho/Menu/index.html"	
+				document.getElementById('contenidos').src = "";
 			_this.gotoAndStop("Actividades");
+			document.getElementById('contenidos').src = "./ActividadesPinocho/Menu/index.html"		
 			document.getElementById('contenidos').style.display = 'block';
 		});
-		
 		
 		function deshabilitar (){
 			_this.btnContenidos.mouseEnabled =false
@@ -2014,7 +2001,6 @@ if (reversed == null) { reversed = false; }
 		 
 		_this.botones.visible = false;
 		
-		
 		var iframe = document.getElementById('mi_iframe');
 		iframe.src = './Ayuda/Cuento/index.html'; 
 		
@@ -2025,23 +2011,7 @@ if (reversed == null) { reversed = false; }
 			root.exportRoot.pause.visible = false;
 			root.exportRoot.playaudio.visible = true;
 			root.createjs.Sound.stop();
-			
-		/*	
-		if (typeof root.playSound === 'function') {
-		  root.playSound(null, "voice", true, {});
-		}	 
-		
-		*/
-		
 		});
-		
-		
-		
-		
-		
-		
-		
-		
 		 
 		var _this = this;
 		 
@@ -2052,18 +2022,13 @@ if (reversed == null) { reversed = false; }
 		
 		var iframeContenidos = document.getElementById('contenidos');
 		
-		
 		var iframeC = document.getElementById('mi_iframe');
-		
-		
-		
 		
 		btnAyudaC.on('click', function () {
 			if (iframeContenidos && iframeContenidos.contentWindow && iframeContenidos.contentWindow.createjs) {
 				iframeContenidos.contentWindow.createjs.Sound.stop();
 			}
-			// Verificar si el iframe 'video' existe y si createjs está definido para él
-			var iframeVideo = iframeContenidos.contentWindow.document.getElementById('video');
+		 	var iframeVideo = iframeContenidos.contentWindow.document.getElementById('video');
 			if (iframeVideo && iframeVideo.contentWindow && iframeVideo.contentWindow.createjs) {
 				iframeVideo.contentWindow.createjs.Sound.stop();
 			}
@@ -2251,21 +2216,21 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1720490704507", id:"bannernegro1"},
-		{src:"images/fondo11.png?1720490704507", id:"fondo11"},
-		{src:"images/fondoMorado.png?1720490704507", id:"fondoMorado"},
-		{src:"images/FondoOscuropinocho.png?1720490704507", id:"FondoOscuropinocho"},
-		{src:"images/index_atlas_1.png?1720490704385", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1720490704386", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1720490704386", id:"index_atlas_3"},
-		{src:"sounds/ayuda1.mp3?1720490704507", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1720490704507", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1720490704507", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1720490704507", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1720490704507", id:"ayuda5"},
-		{src:"sounds/sound2.mp3?1720490704507", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1720490704507", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1720490704507", id:"sound1"}
+		{src:"images/bannernegro1.png?1722227508687", id:"bannernegro1"},
+		{src:"images/fondo11.png?1722227508687", id:"fondo11"},
+		{src:"images/fondoMorado.png?1722227508687", id:"fondoMorado"},
+		{src:"images/FondoOscuropinocho.png?1722227508687", id:"FondoOscuropinocho"},
+		{src:"images/index_atlas_1.png?1722227508569", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1722227508570", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1722227508570", id:"index_atlas_3"},
+		{src:"sounds/ayuda1.mp3?1722227508687", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1722227508687", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1722227508687", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1722227508687", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1722227508687", id:"ayuda5"},
+		{src:"sounds/sound2.mp3?1722227508687", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1722227508687", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1722227508687", id:"sound1"}
 	],
 	preloads: []
 };

@@ -1888,17 +1888,19 @@ if (reversed == null) { reversed = false; }
 		 });
 		
 		_this.btnContenidos.on('click', function () {
-			document.getElementById('contenidos').src = "./ContenidosCaperucita/index.html";
+			document.getElementById('contenidos').src = "";
 			_this.gotoAndStop("Contenidos");
+			document.getElementById('contenidos').src = "./ContenidosCaperucita/index.html";
 			document.getElementById('contenidos').style.display = 'block';	
 		    document.getElementById('mi_iframe').src = './Ayuda/Contenidos/index.html';
 		});
 		
 		_this.btnActividades.on('click', function () {
+			document.getElementById('contenidos').src = "";
+			_this.gotoAndStop("Actividades");	
 			document.getElementById('contenidos').src = "./ActividadesCaperucita/Menu/index.html"	
-			_this.gotoAndStop("Actividades");
 			document.getElementById('contenidos').style.display = 'block';
-			    document.getElementById('mi_iframe').src = './Ayuda/Actividades/Menu/index.html';
+			document.getElementById('mi_iframe').src = './Ayuda/Actividades/Menu/index.html';
 		
 		});
 		
@@ -2144,20 +2146,20 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1720490645646", id:"bannernegro1"},
-		{src:"images/fondo11.png?1720490645646", id:"fondo11"},
-		{src:"images/fondoMorado.png?1720490645646", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1720490645531", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1720490645532", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1720490645533", id:"index_atlas_3"},
-		{src:"sounds/ayuda1.mp3?1720490645646", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1720490645646", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1720490645646", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1720490645646", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1720490645646", id:"ayuda5"},
-		{src:"sounds/sound2.mp3?1720490645646", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1720490645646", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1720490645646", id:"sound1"}
+		{src:"images/bannernegro1.png?1722226942486", id:"bannernegro1"},
+		{src:"images/fondo11.png?1722226942486", id:"fondo11"},
+		{src:"images/fondoMorado.png?1722226942486", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1722226942347", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1722226942348", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1722226942349", id:"index_atlas_3"},
+		{src:"sounds/ayuda1.mp3?1722226942486", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1722226942486", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1722226942486", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1722226942486", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1722226942486", id:"ayuda5"},
+		{src:"sounds/sound2.mp3?1722226942486", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1722226942486", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1722226942486", id:"sound1"}
 	],
 	preloads: []
 };

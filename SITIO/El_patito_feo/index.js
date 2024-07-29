@@ -1830,14 +1830,18 @@ if (reversed == null) { reversed = false; }
 		 });
 		
 		_this.btnContenidos.on('click', function () {
-			document.getElementById('contenidos').src = "./Contenidos/index.html";
+			document.getElementById('contenidos').src = "";
+			document.getElementById('contenidos').style.display = 'none';
 			_this.gotoAndStop("Contenidos");
+			document.getElementById('contenidos').src = "./Contenidos/index.html";
 			document.getElementById('contenidos').style.display = 'block';		  
 		});
 		
 		_this.btnActividades.on('click', function () {
-			document.getElementById('contenidos').src = "./Actividades/Menu/index.html"	
+			document.getElementById('contenidos').src = "";
+			document.getElementById('contenidos').style.display = 'none';
 			_this.gotoAndStop("Actividades");
+			document.getElementById('contenidos').src = "./Actividades/Menu/index.html"		
 			document.getElementById('contenidos').style.display = 'block';
 		});
 		
@@ -2068,20 +2072,20 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1720490563332", id:"bannernegro1"},
-		{src:"images/fondo11.png?1720490563332", id:"fondo11"},
-		{src:"images/fondoMorado.png?1720490563332", id:"fondoMorado"},
-		{src:"images/Portada.png?1720490563332", id:"Portada"},
-		{src:"images/index_atlas_1.png?1720490563214", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1720490563215", id:"index_atlas_2"},
-		{src:"sounds/ayuda1.mp3?1720490563332", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1720490563332", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1720490563332", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1720490563332", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1720490563332", id:"ayuda5"},
-		{src:"sounds/sound2.mp3?1720490563332", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1720490563332", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1720490563332", id:"sound1"}
+		{src:"images/bannernegro1.png?1722225752435", id:"bannernegro1"},
+		{src:"images/fondo11.png?1722225752435", id:"fondo11"},
+		{src:"images/fondoMorado.png?1722225752435", id:"fondoMorado"},
+		{src:"images/Portada.png?1722225752435", id:"Portada"},
+		{src:"images/index_atlas_1.png?1722225752281", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1722225752282", id:"index_atlas_2"},
+		{src:"sounds/ayuda1.mp3?1722225752435", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1722225752435", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1722225752435", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1722225752435", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1722225752435", id:"ayuda5"},
+		{src:"sounds/sound2.mp3?1722225752435", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1722225752435", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1722225752435", id:"sound1"}
 	],
 	preloads: []
 };
