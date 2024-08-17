@@ -3074,9 +3074,7 @@ if (reversed == null) { reversed = false; }
 		
 		var _this = this;
 		
-		_this.btnAnterior1.on('click', function () {
-			_this.gotoAndStop(4);
-		});
+		
 		
 		_this.btnSiguiente1.on('click', function () {
 			_this.gotoAndStop(1);
@@ -3133,10 +3131,6 @@ if (reversed == null) { reversed = false; }
 		_this.btnAnterior5.on('click', function () {
 			_this.gotoAndStop(3);
 		});
-		
-		_this.btnSiguiente5.on('click', function () {
-			_this.gotoAndStop(0);
-		});
 	}
 
 	// actions tween:
@@ -3145,13 +3139,8 @@ if (reversed == null) { reversed = false; }
 	// Capa_4
 	this.btnSiguiente1 = new lib.siguiente();
 	this.btnSiguiente1.name = "btnSiguiente1";
-	this.btnSiguiente1.setTransform(57.1,173.5);
+	this.btnSiguiente1.setTransform(-88.4,173.5);
 	new cjs.ButtonHelper(this.btnSiguiente1, 0, 1, 2);
-
-	this.btnAnterior1 = new lib.anterior();
-	this.btnAnterior1.name = "btnAnterior1";
-	this.btnAnterior1.setTransform(-231,173.5);
-	new cjs.ButtonHelper(this.btnAnterior1, 0, 1, 2);
 
 	this.btnSiguiente2 = new lib.siguiente();
 	this.btnSiguiente2.name = "btnSiguiente2";
@@ -3183,17 +3172,12 @@ if (reversed == null) { reversed = false; }
 	this.btnAnterior4.setTransform(-231,173.5);
 	new cjs.ButtonHelper(this.btnAnterior4, 0, 1, 2);
 
-	this.btnSiguiente5 = new lib.siguiente();
-	this.btnSiguiente5.name = "btnSiguiente5";
-	this.btnSiguiente5.setTransform(57.1,173.5);
-	new cjs.ButtonHelper(this.btnSiguiente5, 0, 1, 2);
-
 	this.btnAnterior5 = new lib.anterior();
 	this.btnAnterior5.name = "btnAnterior5";
-	this.btnAnterior5.setTransform(-231,173.5);
+	this.btnAnterior5.setTransform(-88.15,173.5);
 	new cjs.ButtonHelper(this.btnAnterior5, 0, 1, 2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnAnterior1},{t:this.btnSiguiente1}]}).to({state:[{t:this.btnAnterior2},{t:this.btnSiguiente2}]},1).to({state:[{t:this.btnAnterior3},{t:this.btnSiguiente3}]},1).to({state:[{t:this.btnAnterior4},{t:this.btnSiguiente4}]},1).to({state:[{t:this.btnAnterior5},{t:this.btnSiguiente5}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btnSiguiente1}]}).to({state:[{t:this.btnAnterior2},{t:this.btnSiguiente2}]},1).to({state:[{t:this.btnAnterior3},{t:this.btnSiguiente3}]},1).to({state:[{t:this.btnAnterior4},{t:this.btnSiguiente4}]},1).to({state:[{t:this.btnAnterior5}]},1).wait(1));
 
 	// Capa_5
 	this.btnAceptar = new lib.cerrar();
@@ -3228,7 +3212,7 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.instance_3, 0, 1, 2);
 
 	this.instance_4 = new lib.Símbolo6();
-	this.instance_4.setTransform(0.4,-102.6,1,1,0,0,0,58.4,58.4);
+	this.instance_4.setTransform(0.65,-102.6,1,1,0,0,0,58.4,58.4);
 	new cjs.ButtonHelper(this.instance_4, 0, 1, 2, false, new lib.Símbolo6(), 3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.text,p:{y:-40.6,text:"Antes de iniciar un cuento, te recomendamos revisar primero la sección de contenidos. Así aprenderás a tomar buenas decisiones y ayudarás a los personajes a mantenerse seguros en las redes sociales mientras se desarrolla la historia.",lineHeight:36.85}},{t:this.instance}]}).to({state:[{t:this.text,p:{y:-55.45,text:"Interacciones\n\nEn los cuentos y en otras partes del sitio, encontrarás un botón que te permitirá animar a los personajes. ¡Explora todas las animaciones y no te pierdas ninguna!",lineHeight:29.85}},{t:this.instance_1}]},1).to({state:[{t:this.text,p:{y:-38.65,text:"Cuando enfrentes inconvenientes o tengas dudas, presiona el botón de Ayuda, encontrarás instrucciones y consejos para navagar por SeguRedes ",lineHeight:36.85}},{t:this.instance_2}]},1).to({state:[{t:this.text,p:{y:-25.1,text:"Tanto en la sección de Contenidos como en Ayuda, encontrarás un botón de audio que te permitirá escuchar la narración del texto.",lineHeight:36.85}},{t:this.instance_3}]},1).to({state:[{t:this.text,p:{y:-26.85,text:"Haz clic en el botón de pantalla completa para ver SeguRedes sin distracciones. Para salir, presiona la tecla Esc en tu teclado.",lineHeight:36.85}},{t:this.instance_4}]},1).wait(1));
@@ -4002,23 +3986,23 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CespedFrente.png?1723917649658", id:"CespedFrente"},
-		{src:"images/Fondo.png?1723917649658", id:"Fondo"},
-		{src:"images/Fondo_1.png?1723917649658", id:"Fondo_1"},
-		{src:"images/Fondo_1_1.png?1723917649658", id:"Fondo_1_1"},
-		{src:"images/Pantalla.png?1723917649658", id:"Pantalla"},
-		{src:"images/PortadaCuento2.png?1723917649658", id:"PortadaCuento2"},
-		{src:"images/index_atlas_1.png?1723917649345", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1723917649345", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1723917649345", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1723917649346", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1723917649346", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1723917649347", id:"index_atlas_6"},
-		{src:"images/index_atlas_7.png?1723917649349", id:"index_atlas_7"},
-		{src:"sounds/intro.mp3?1723917649658", id:"intro"},
-		{src:"sounds/sound2.mp3?1723917649658", id:"sound2"},
-		{src:"sounds/sound.mp3?1723917649658", id:"sound"},
-		{src:"sounds/sound1.mp3?1723917649658", id:"sound1"}
+		{src:"images/CespedFrente.png?1723918206909", id:"CespedFrente"},
+		{src:"images/Fondo.png?1723918206909", id:"Fondo"},
+		{src:"images/Fondo_1.png?1723918206909", id:"Fondo_1"},
+		{src:"images/Fondo_1_1.png?1723918206909", id:"Fondo_1_1"},
+		{src:"images/Pantalla.png?1723918206909", id:"Pantalla"},
+		{src:"images/PortadaCuento2.png?1723918206909", id:"PortadaCuento2"},
+		{src:"images/index_atlas_1.png?1723918206651", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1723918206651", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1723918206652", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1723918206652", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1723918206652", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1723918206654", id:"index_atlas_6"},
+		{src:"images/index_atlas_7.png?1723918206657", id:"index_atlas_7"},
+		{src:"sounds/intro.mp3?1723918206909", id:"intro"},
+		{src:"sounds/sound2.mp3?1723918206909", id:"sound2"},
+		{src:"sounds/sound.mp3?1723918206909", id:"sound"},
+		{src:"sounds/sound1.mp3?1723918206909", id:"sound1"}
 	],
 	preloads: []
 };
