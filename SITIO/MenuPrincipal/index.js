@@ -3231,7 +3231,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_4.setTransform(0.4,-102.6,1,1,0,0,0,58.4,58.4);
 	new cjs.ButtonHelper(this.instance_4, 0, 1, 2, false, new lib.Símbolo6(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.text,p:{y:-40.6,text:"Antes de iniciar un cuento, te recomendamos revisar primero la sección de contenidos. Así aprenderás a tomar buenas decisiones y ayudarás a los personajes a mantenerse seguros en las redes sociales mientras se desarrolla la historia.",lineHeight:36.85}},{t:this.instance}]}).to({state:[{t:this.text,p:{y:-55.45,text:"Interacciones\n\nEn los cuentos y en otras partes del sitio, encontrarás un botón que te permitirá animar a los personajes. ¡Explora todas las animaciones y no te pierdas ninguna!",lineHeight:29.85}},{t:this.instance_1}]},1).to({state:[{t:this.text,p:{y:-38.65,text:"Cuando enfrentes inconvenientes o tengas dudas, presiona el botón de Ayuda, encontrarás instrucciones y consejos para navagar por SeguRedes ",lineHeight:36.85}},{t:this.instance_2}]},1).to({state:[{t:this.text,p:{y:-25.1,text:"Tanto en la sección de Contenidos como en Ayuda, encontrarás un botón de audio que te permitirá escuchar la narración del texto.",lineHeight:36.85}},{t:this.instance_3}]},1).to({state:[{t:this.text,p:{y:-26.85,text:"Haz clic en el botón de pantalla completa para ver el cuento sin distracciones. Para salir, presiona la tecla Esc en tu teclado.",lineHeight:36.85}},{t:this.instance_4}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.text,p:{y:-40.6,text:"Antes de iniciar un cuento, te recomendamos revisar primero la sección de contenidos. Así aprenderás a tomar buenas decisiones y ayudarás a los personajes a mantenerse seguros en las redes sociales mientras se desarrolla la historia.",lineHeight:36.85}},{t:this.instance}]}).to({state:[{t:this.text,p:{y:-55.45,text:"Interacciones\n\nEn los cuentos y en otras partes del sitio, encontrarás un botón que te permitirá animar a los personajes. ¡Explora todas las animaciones y no te pierdas ninguna!",lineHeight:29.85}},{t:this.instance_1}]},1).to({state:[{t:this.text,p:{y:-38.65,text:"Cuando enfrentes inconvenientes o tengas dudas, presiona el botón de Ayuda, encontrarás instrucciones y consejos para navagar por SeguRedes ",lineHeight:36.85}},{t:this.instance_2}]},1).to({state:[{t:this.text,p:{y:-25.1,text:"Tanto en la sección de Contenidos como en Ayuda, encontrarás un botón de audio que te permitirá escuchar la narración del texto.",lineHeight:36.85}},{t:this.instance_3}]},1).to({state:[{t:this.text,p:{y:-26.85,text:"Haz clic en el botón de pantalla completa para ver SeguRedes sin distracciones. Para salir, presiona la tecla Esc en tu teclado.",lineHeight:36.85}},{t:this.instance_4}]},1).wait(1));
 
 	// Capa_1
 	this.shape = new cjs.Shape();
@@ -4002,23 +4002,23 @@ lib.properties = {
 	color: "#323232",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CespedFrente.png?1723609731581", id:"CespedFrente"},
-		{src:"images/Fondo.png?1723609731581", id:"Fondo"},
-		{src:"images/Fondo_1.png?1723609731581", id:"Fondo_1"},
-		{src:"images/Fondo_1_1.png?1723609731581", id:"Fondo_1_1"},
-		{src:"images/Pantalla.png?1723609731581", id:"Pantalla"},
-		{src:"images/PortadaCuento2.png?1723609731581", id:"PortadaCuento2"},
-		{src:"images/index_atlas_1.png?1723609731354", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1723609731355", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1723609731355", id:"index_atlas_3"},
-		{src:"images/index_atlas_4.png?1723609731355", id:"index_atlas_4"},
-		{src:"images/index_atlas_5.png?1723609731356", id:"index_atlas_5"},
-		{src:"images/index_atlas_6.png?1723609731357", id:"index_atlas_6"},
-		{src:"images/index_atlas_7.png?1723609731360", id:"index_atlas_7"},
-		{src:"sounds/intro.mp3?1723609731581", id:"intro"},
-		{src:"sounds/sound2.mp3?1723609731581", id:"sound2"},
-		{src:"sounds/sound.mp3?1723609731581", id:"sound"},
-		{src:"sounds/sound1.mp3?1723609731581", id:"sound1"}
+		{src:"images/CespedFrente.png?1723917649658", id:"CespedFrente"},
+		{src:"images/Fondo.png?1723917649658", id:"Fondo"},
+		{src:"images/Fondo_1.png?1723917649658", id:"Fondo_1"},
+		{src:"images/Fondo_1_1.png?1723917649658", id:"Fondo_1_1"},
+		{src:"images/Pantalla.png?1723917649658", id:"Pantalla"},
+		{src:"images/PortadaCuento2.png?1723917649658", id:"PortadaCuento2"},
+		{src:"images/index_atlas_1.png?1723917649345", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1723917649345", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1723917649345", id:"index_atlas_3"},
+		{src:"images/index_atlas_4.png?1723917649346", id:"index_atlas_4"},
+		{src:"images/index_atlas_5.png?1723917649346", id:"index_atlas_5"},
+		{src:"images/index_atlas_6.png?1723917649347", id:"index_atlas_6"},
+		{src:"images/index_atlas_7.png?1723917649349", id:"index_atlas_7"},
+		{src:"sounds/intro.mp3?1723917649658", id:"intro"},
+		{src:"sounds/sound2.mp3?1723917649658", id:"sound2"},
+		{src:"sounds/sound.mp3?1723917649658", id:"sound"},
+		{src:"sounds/sound1.mp3?1723917649658", id:"sound1"}
 	],
 	preloads: []
 };
