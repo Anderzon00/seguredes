@@ -1641,7 +1641,6 @@ if (reversed == null) { reversed = false; }
 			_this.gotoAndStop("Contenidos");
 			document.getElementById('contenidos').src = "./ContenidosPinocho/index.html";	
 			document.getElementById('contenidos').style.display = 'block';		
-		document.getElementById('mi_iframe').src = './Ayuda/Contenidos/index.html';
 		});
 		
 		_this.btnActividades.on('click', function () {
