@@ -15,32 +15,35 @@
 <title>SEGUREDES</title>
 <!-- write your code here -->
 <style>
- #animation_container, #_preload_div_ {
+	body::-webkit-scrollbar{
+    display: none;
+  }
+
+  #animation_container, #_preload_div_ {
 	position:absolute;
+
 	left:0;right:0;
 	top:0;bottom:0;
 	width: 100vw;
-    height: 100vh;     
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
   }
-  
 canvas {
-    width: 100%;
-    height: 100%;
-    display: block;
+	width: 100%;
+	height: 100%;
+	display: block;
 }
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1724081239926"></script>
+<script src="index.js?1725250127198"></script>
 <script>
 // Global Scripts
-	window.parent.muteFondo();
-const NUMERO_BOTONES = 6;
-function irCuento() {
+	function irCuento() {
     exportRoot.gotoAndStop(12);
 }
+const NUMERO_BOTONES = 6;
 function ocultaAyuda() {
     document.getElementById('mi_iframe').style.display = 'none';
     var iframeContenidos = document.getElementById('contenidos');  	
@@ -81,7 +84,8 @@ exportRoot.botones.gotoAndStop(0);
     } 
 	function funcionVisible() {
 exportRoot.botones.gotoAndStop(1);
-    }</script>
+    } 	
+window.parent.muteFondo();</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {

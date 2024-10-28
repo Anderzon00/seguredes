@@ -132,7 +132,7 @@ var _widgetID = 0;
             
             var $this = this;
 			
-            $(parent).bind("DOMNodeRemoved", function(e) {
+			$(parent).bind("MutationObserver", function(e) { //$(parent).bind("DOMNodeRemoved", function(e) {
                 $this.destroy();
             });
 			this.update(true);

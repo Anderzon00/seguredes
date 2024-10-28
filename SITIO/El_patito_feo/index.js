@@ -1338,62 +1338,58 @@ if (reversed == null) { reversed = false; }
 		iframec.style.border = 'none';
 		iframec.style.zIndex = '1'; 
 		iframec.allow = 'autoplay';
+		iframec.style.display = 'none'; // Inicialmente oculto
 		document.body.appendChild(iframec);
-		iframec.src = '';
 		
 		function ajustarIframe2() {		
 			iframec.style.left = 2.360 * Math.max(window.innerWidth) / 32 + 'px';
 			iframec.style.top = 1.059 * Math.max(window.innerHeight) / 16 + 'px';	
 			iframec.style.width =  27.9250 * (Math.max(window.innerWidth) / 32) + 'px';   
-			iframec.style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';'px';
+			iframec.style.height = 13.6 * Math.max(window.innerHeight) / 16 + 'px';
 		}
 		
 		ajustarIframe2();
-		
 		window.addEventListener('resize', ajustarIframe2);
 		
-		document.getElementById('contenidos').style.display = 'none';
-		
 		var _this = this;
-		_this.ayuda.visible=false;
+		_this.ayuda.visible = false;
+		
 		_this.btnAyuda.on('click', function () {
-		_this.ayuda.visible=true
-			_this.ayuda.btn_sonido1.visible=true;
-			_this.ayuda.btn_sonido2.visible=true;
-			_this.ayuda.btn_sonido3.visible=true;
-			_this.ayuda.btn_sonido4.visible=true;
-			_this.ayuda.btn_sonido5.visible=true;
-			 
+			_this.ayuda.visible = true;
+			_this.ayuda.btn_sonido1.visible = true;
+			_this.ayuda.btn_sonido2.visible = true;
+			_this.ayuda.btn_sonido3.visible = true;
+			_this.ayuda.btn_sonido4.visible = true;
+			_this.ayuda.btn_sonido5.visible = true;	 
 			deshabilitar();
-			_this.gotoAndPlay(9);
-			
-		 });
-		
-		_this.btnContenidos.on('click', function () {
-			document.getElementById('contenidos').src = "";
-			document.getElementById('contenidos').style.display = 'none';
+			_this.gotoAndPlay(9);	
+		});
+		 
+		_this.btnContenidos.on('click', function () {	
+			iframec.style.display = 'none';	
+			iframec.src = "./Contenidos/indexc.html";
 			_this.gotoAndStop("Contenidos");
-			document.getElementById('contenidos').src = "./Contenidos/index.html";
-			document.getElementById('contenidos').style.display = 'block';		  
-		});
+			iframec.style.display = 'block'; // Mostrar iframe cuando se haya cargado el contenido
+			
+		});	
 		
-		_this.btnActividades.on('click', function () {
-			document.getElementById('contenidos').src = "";
-			document.getElementById('contenidos').style.display = 'none';
+		_this.btnActividades.on('click', function () {	
+			iframec.style.display = 'none';	
+			iframec.src = "./Actividades/Menu/index.html";
 			_this.gotoAndStop("Actividades");
-			document.getElementById('contenidos').src = "./Actividades/Menu/index.html"		
-			document.getElementById('contenidos').style.display = 'block';
+			iframec.style.display = 'block'; // Mostrar iframe cuando se haya cargado el contenido
+			
 		});
 		
-		function deshabilitar (){
-			_this.btnContenidos.mouseEnabled =false
-			_this.btnActividades.mouseEnabled =false
-			_this.btnInicio.mouseEnabled =false
-			_this.btnVolverAcuento.mouseEnabled =false
-			_this.btnVolver.mouseEnabled =false
-			_this.btnAyuda.mouseEnabled =false	
-			_this.bntPlay.mouseEnabled =false	
-			}
+		function deshabilitar() {
+			_this.btnContenidos.mouseEnabled = false;
+			_this.btnActividades.mouseEnabled = false;
+			_this.btnInicio.mouseEnabled = false;
+			_this.btnVolverAcuento.mouseEnabled = false;
+			_this.btnVolver.mouseEnabled = false;
+			_this.btnAyuda.mouseEnabled = false;	
+			_this.bntPlay.mouseEnabled = false;	
+		}
 	}
 	this.frame_12 = function() {
 		this.stop();
@@ -1409,6 +1405,14 @@ if (reversed == null) { reversed = false; }
 				_this.gotoAndStop("Cuento");
 			}, this);	
 		});
+		
+		
+		var _this = this;
+		/*
+		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y detiene la película.
+		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
+		*/
+		_this.ayuda.gotoAndStop(0);
 	}
 	this.frame_13 = function() {
 		document.getElementById('contenidos').style.display = 'block';
@@ -1431,6 +1435,8 @@ if (reversed == null) { reversed = false; }
 		
 		var iframeContenidos = document.getElementById('contenidos');
 		
+		 	
+		
 		btnAyudaC.on('click', function () {
 			
 			document.getElementById('mi_iframe').style.display = 'block';
@@ -1446,15 +1452,13 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_15 = function() {
-		var iframe = document.getElementById('mi_iframe');
-		
 		var iframeContenidos = document.getElementById('contenidos');
-		
+		 	
 		btnAyuda = this.btnAyudaActividades;
 		
 		btnAyuda.on('click', function () {
 		iframeContenidos.contentWindow.createjs.Sound.muted = true;
-		iframe.style.display = 'block';
+		document.getElementById('mi_iframe').style.display = 'block';
 		});
 	}
 
@@ -1591,21 +1595,21 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1724081971492", id:"bannernegro1"},
-		{src:"images/fondo11.png?1724081971492", id:"fondo11"},
-		{src:"images/fondoMorado.png?1724081971492", id:"fondoMorado"},
-		{src:"images/Portada.png?1724081971492", id:"Portada"},
-		{src:"images/index_atlas_1.png?1724081971388", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1724081971389", id:"index_atlas_2"},
-		{src:"sounds/ayuda6.mp3?1724081971492", id:"ayuda6"},
-		{src:"sounds/ayuda1.mp3?1724081971492", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1724081971492", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1724081971492", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1724081971492", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1724081971492", id:"ayuda5"},
-		{src:"sounds/sound2.mp3?1724081971492", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1724081971492", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1724081971492", id:"sound1"}
+		{src:"images/bannernegro1.png?1725250034075", id:"bannernegro1"},
+		{src:"images/fondo11.png?1725250034075", id:"fondo11"},
+		{src:"images/fondoMorado.png?1725250034075", id:"fondoMorado"},
+		{src:"images/Portada.png?1725250034075", id:"Portada"},
+		{src:"images/index_atlas_1.png?1725250033931", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1725250033932", id:"index_atlas_2"},
+		{src:"sounds/ayuda6.mp3?1725250034075", id:"ayuda6"},
+		{src:"sounds/ayuda1.mp3?1725250034075", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1725250034075", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1725250034075", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1725250034075", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1725250034075", id:"ayuda5"},
+		{src:"sounds/sound2.mp3?1725250034076", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1725250034076", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1725250034076", id:"sound1"}
 	],
 	preloads: []
 };
