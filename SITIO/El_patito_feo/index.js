@@ -1399,7 +1399,9 @@ if (reversed == null) { reversed = false; }
 		document.getElementById('contenidos').style.display = 'none';
 		
 		_this.bntPlay.on('click', function(){	
-		document.getElementById('contenidos').src =  "./Cuento/Escena_1/index.html";	
+		document.getElementById('contenidos').src =  "./Cuento/Escena_1/index.html";
+		var iframe = document.getElementById('mi_iframe');
+		iframe.src = './Ayuda/Cuento/index.html'; 
 		createjs.Sound.play("SoundPlay", {	volume: 0.8
 			}).on("complete", function () {
 				_this.gotoAndStop("Cuento");
@@ -1417,13 +1419,13 @@ if (reversed == null) { reversed = false; }
 	this.frame_13 = function() {
 		document.getElementById('contenidos').style.display = 'block';
 		
+		
+		document.getElementById('mi_iframe').style.display = 'block';
+		
 		var _this = this;
-		var iframe = document.getElementById('mi_iframe');
-		iframe.src = './Ayuda/Cuento/index.html'; 
 		
 		_this.btnAyudaCuento.on('click', function () {
 		document.getElementById('mi_iframe').style.display = 'block';
-			createjs.Sound.stop();
 			var root = document.getElementById('contenidos').contentWindow; 
 			root.exportRoot.pause.visible = false;
 			root.exportRoot.playaudio.visible = true;
@@ -1595,21 +1597,21 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1725250034075", id:"bannernegro1"},
-		{src:"images/fondo11.png?1725250034075", id:"fondo11"},
-		{src:"images/fondoMorado.png?1725250034075", id:"fondoMorado"},
-		{src:"images/Portada.png?1725250034075", id:"Portada"},
-		{src:"images/index_atlas_1.png?1725250033931", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1725250033932", id:"index_atlas_2"},
-		{src:"sounds/ayuda6.mp3?1725250034075", id:"ayuda6"},
-		{src:"sounds/ayuda1.mp3?1725250034075", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1725250034075", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1725250034075", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1725250034075", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1725250034075", id:"ayuda5"},
-		{src:"sounds/sound2.mp3?1725250034076", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1725250034076", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1725250034076", id:"sound1"}
+		{src:"images/bannernegro1.png?1730077057569", id:"bannernegro1"},
+		{src:"images/fondo11.png?1730077057569", id:"fondo11"},
+		{src:"images/fondoMorado.png?1730077057569", id:"fondoMorado"},
+		{src:"images/Portada.png?1730077057569", id:"Portada"},
+		{src:"images/index_atlas_1.png?1730077057453", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1730077057455", id:"index_atlas_2"},
+		{src:"sounds/ayuda6.mp3?1730077057569", id:"ayuda6"},
+		{src:"sounds/ayuda1.mp3?1730077057569", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1730077057569", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1730077057569", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1730077057569", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1730077057569", id:"ayuda5"},
+		{src:"sounds/sound2.mp3?1730077057569", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1730077057569", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1730077057569", id:"sound1"}
 	],
 	preloads: []
 };

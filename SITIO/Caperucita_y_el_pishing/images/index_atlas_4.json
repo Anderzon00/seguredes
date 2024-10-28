@@ -1,0 +1,267 @@
+﻿{"frames": {
+
+"BtnAnteriorHover":
+{
+	"frame": {"x":0,"y":1756,"w":355,"h":104},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":355,"h":104},
+	"sourceSize": {"w":355,"h":104}
+},
+"BtnInicioCuentoHover":
+{
+	"frame": {"x":1269,"y":809,"w":552,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":552,"h":90},
+	"sourceSize": {"w":552,"h":90}
+},
+"BtnSiguienteHover":
+{
+	"frame": {"x":1644,"y":1395,"w":356,"h":104},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":356,"h":104},
+	"sourceSize": {"w":356,"h":104}
+},
+"BtnStopSonidoContenido":
+{
+	"frame": {"x":1627,"y":502,"w":60,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":60},
+	"sourceSize": {"w":60,"h":60}
+},
+"FlechaIndicativa":
+{
+	"frame": {"x":1690,"y":0,"w":322,"h":321},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":322,"h":321},
+	"sourceSize": {"w":322,"h":321}
+},
+"VentanaPortadaCaperucita":
+{
+	"frame": {"x":0,"y":0,"w":1186,"h":567},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1186,"h":567},
+	"sourceSize": {"w":1186,"h":567}
+},
+"_1":
+{
+	"frame": {"x":0,"y":934,"w":1267,"h":286},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1267,"h":286},
+	"sourceSize": {"w":1267,"h":286}
+},
+"_1ActividadesNORMAL":
+{
+	"frame": {"x":1269,"y":993,"w":466,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":466,"h":90},
+	"sourceSize": {"w":466,"h":90}
+},
+"_1AyudaNORMAL":
+{
+	"frame": {"x":1092,"y":1846,"w":315,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":315,"h":90},
+	"sourceSize": {"w":315,"h":90}
+},
+"_1ContenidosNORMAL":
+{
+	"frame": {"x":1185,"y":1380,"w":457,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":457,"h":90},
+	"sourceSize": {"w":457,"h":90}
+},
+"_2":
+{
+	"frame": {"x":0,"y":569,"w":1267,"h":363},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1267,"h":363},
+	"sourceSize": {"w":1267,"h":363}
+},
+"_2actividadesSOBRE":
+{
+	"frame": {"x":1269,"y":1085,"w":466,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":466,"h":90},
+	"sourceSize": {"w":466,"h":90}
+},
+"_2ayudaSOBRE":
+{
+	"frame": {"x":1409,"y":1846,"w":315,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":315,"h":90},
+	"sourceSize": {"w":315,"h":90}
+},
+"_2contenidosSOBRE":
+{
+	"frame": {"x":947,"y":1754,"w":457,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":457,"h":90},
+	"sourceSize": {"w":457,"h":90}
+},
+"_3":
+{
+	"frame": {"x":0,"y":1222,"w":1183,"h":286},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1183,"h":286},
+	"sourceSize": {"w":1183,"h":286}
+},
+"_3actividadesDOWN":
+{
+	"frame": {"x":1185,"y":1288,"w":466,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":466,"h":90},
+	"sourceSize": {"w":466,"h":90}
+},
+"_3ayudaDOWN":
+{
+	"frame": {"x":1726,"y":1846,"w":315,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":315,"h":90},
+	"sourceSize": {"w":315,"h":90}
+},
+"_3contenidosDOWN":
+{
+	"frame": {"x":1406,"y":1754,"w":457,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":457,"h":90},
+	"sourceSize": {"w":457,"h":90}
+},
+"_4":
+{
+	"frame": {"x":947,"y":1510,"w":927,"h":242},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":927,"h":242},
+	"sourceSize": {"w":927,"h":242}
+},
+"_5":
+{
+	"frame": {"x":0,"y":1510,"w":945,"h":244},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":945,"h":244},
+	"sourceSize": {"w":945,"h":244}
+},
+"botonplay":
+{
+	"frame": {"x":1690,"y":323,"w":300,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":300},
+	"sourceSize": {"w":300,"h":300}
+},
+"btnAnterior":
+{
+	"frame": {"x":1653,"y":1288,"w":355,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":355,"h":105},
+	"sourceSize": {"w":355,"h":105}
+},
+"btnIrInicio":
+{
+	"frame": {"x":725,"y":1846,"w":365,"h":91},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":365,"h":91},
+	"sourceSize": {"w":365,"h":91}
+},
+"btnIrInicioCuento":
+{
+	"frame": {"x":1269,"y":901,"w":552,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":552,"h":90},
+	"sourceSize": {"w":552,"h":90}
+},
+"btnIrInicioHover":
+{
+	"frame": {"x":357,"y":1756,"w":366,"h":91},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":366,"h":91},
+	"sourceSize": {"w":366,"h":91}
+},
+"btnMenuCuentos":
+{
+	"frame": {"x":1269,"y":625,"w":553,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":553,"h":90},
+	"sourceSize": {"w":553,"h":90}
+},
+"btnMenuCuentosHover":
+{
+	"frame": {"x":1269,"y":717,"w":553,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":553,"h":90},
+	"sourceSize": {"w":553,"h":90}
+},
+"btnSiguiente":
+{
+	"frame": {"x":1269,"y":502,"w":356,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":356,"h":105},
+	"sourceSize": {"w":356,"h":105}
+},
+"btnSonidoContenido":
+{
+	"frame": {"x":1188,"y":502,"w":63,"h":63},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":63,"h":63},
+	"sourceSize": {"w":63,"h":63}
+},
+"btnX":
+{
+	"frame": {"x":1824,"y":625,"w":123,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":123,"h":123},
+	"sourceSize": {"w":123,"h":123}
+},
+"mano2":
+{
+	"frame": {"x":1188,"y":0,"w":500,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":500},
+	"sourceSize": {"w":500,"h":500}
+},
+"tituloCaperucitacuiento":
+{
+	"frame": {"x":1185,"y":1222,"w":802,"h":64},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":802,"h":64},
+	"sourceSize": {"w":802,"h":64}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "21.0.1.37179",
+	"image": "index_atlas_4.png",
+	"format": "undefined",
+	"size": {"w":2048,"h":2048},
+	"scale": "1"
+}
+}

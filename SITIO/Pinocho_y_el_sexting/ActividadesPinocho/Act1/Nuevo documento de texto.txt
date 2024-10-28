@@ -1,0 +1,45 @@
+// Declaración de variables
+var elemento1 = this.elemento1_mc;
+var elemento2 = this.elemento2_mc;
+var destino = this.movieclipDestino_mc;
+
+// Función para iniciar el arrastre de un elemento
+function iniciarArrastre(elemento) {
+  var posicionInicial = { x: elemento.x, y: elemento.y };
+  var arrastrando = false;
+
+  elemento.addEventListener("mousedown", function(event) {
+    arrastrando = true;
+    var offsetX = elemento.x - event.stageX;
+    var offsetY = elemento.y - event.stageY;
+
+    stage.addEventListener("stagemousemove", function(event) {
+      if (arrastrando) {
+        elemento.x = event.stageX + offsetX;
+        elemento.y = event.stageY + offsetY;
+      }
+    });
+
+    stage.addEventListener("stagemouseup", function(event) {
+      if (arrastrando) {
+        arrastrando = false;
+        stage.removeEventListener("stagemousemove", arguments.callee);
+        stage.removeEventListener("stagemouseup", arguments.callee);
+        
+        if (destino.hitTest(elemento.x, elemento.y)) {
+          elemento.x = destino.x;
+          elemento.y = destino.y;
+          console.log(elemento.name + " es verdadero");
+        } else {
+          elemento.x = posicionInicial.x;
+          elemento.y = posicionInicial.y;
+          console.log(elemento.name + " es falso");
+        }
+      }
+    });
+  });
+}
+
+// Iniciar el arrastre para los elementos
+iniciarArrastre(elemento1);
+iniciarArrastre(elemento2);

@@ -1501,6 +1501,9 @@ if (reversed == null) { reversed = false; }
 		
 		_this.bntPlay.on('click', function(){	
 		document.getElementById('contenidos').src =  "./CuentoPinocho/E1AA/index.html";	
+		var iframe = document.getElementById('mi_iframe');
+		iframe.src = './Ayuda/Cuento/index.html'; 
+		
 		createjs.Sound.play("SoundPlay", {	volume: 0.8
 			}).on("complete", function () {
 				_this.gotoAndStop("Cuento");
@@ -1517,21 +1520,18 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_13 = function() {
 		document.getElementById('contenidos').style.display = 'block';
-		
+		document.getElementById('mi_iframe').style.display = 'block';
 		var _this = this;
 		 
 		_this.botones.visible = false;
 		
-		var iframe = document.getElementById('mi_iframe');
-		iframe.src = './Ayuda/Cuento/index.html'; 
 		
-		_this.btnAyudaCuento.on('click', function () {
-		document.getElementById('mi_iframe').style.display = 'block';
-			createjs.Sound.stop();
+		_this.btnAyudaCuento.on('click', function () {	
 			var root = document.getElementById('contenidos').contentWindow; 
 			root.exportRoot.pause.visible = false;
 			root.exportRoot.playaudio.visible = true;
 			root.createjs.Sound.stop();
+			document.getElementById('mi_iframe').style.display = 'block';
 		});
 		 
 		var _this = this;
@@ -1716,21 +1716,21 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1725250127124", id:"bannernegro1"},
-		{src:"images/fondo11.png?1725250127124", id:"fondo11"},
-		{src:"images/fondoMorado.png?1725250127124", id:"fondoMorado"},
-		{src:"images/FondoOscuropinocho.png?1725250127124", id:"FondoOscuropinocho"},
-		{src:"images/index_atlas_1.png?1725250126990", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1725250126991", id:"index_atlas_2"},
-		{src:"sounds/ayuda1.mp3?1725250127124", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1725250127124", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1725250127124", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1725250127124", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1725250127124", id:"ayuda5"},
-		{src:"sounds/ayuda6.mp3?1725250127124", id:"ayuda6"},
-		{src:"sounds/sound2.mp3?1725250127124", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1725250127124", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1725250127124", id:"sound1"}
+		{src:"images/bannernegro1.png?1730077570667", id:"bannernegro1"},
+		{src:"images/fondo11.png?1730077570668", id:"fondo11"},
+		{src:"images/fondoMorado.png?1730077570668", id:"fondoMorado"},
+		{src:"images/FondoOscuropinocho.png?1730077570668", id:"FondoOscuropinocho"},
+		{src:"images/index_atlas_1.png?1730077570565", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1730077570566", id:"index_atlas_2"},
+		{src:"sounds/ayuda1.mp3?1730077570668", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1730077570668", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1730077570668", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1730077570668", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1730077570668", id:"ayuda5"},
+		{src:"sounds/ayuda6.mp3?1730077570668", id:"ayuda6"},
+		{src:"sounds/sound2.mp3?1730077570668", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1730077570668", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1730077570668", id:"sound1"}
 	],
 	preloads: []
 };

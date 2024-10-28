@@ -1504,35 +1504,28 @@ if (reversed == null) { reversed = false; }
 		
 		_this.bntPlay.on('click', function(){	
 		document.getElementById('contenidos').src =  "./CuentoCerditos/E1A/index.html";	
+		var iframe = document.getElementById('mi_iframe');
+		iframe.src = './Ayuda/Cuento/index.html'; 
 		createjs.Sound.play("SoundPlay", {	volume: 0.8
 			}).on("complete", function () {
 				_this.gotoAndStop("Cuento");
 			}, this);	
 		});
-		
-		
-		
 		 
 		var _this = this;
-		/*
-		Hace que el objeto especificado sea visible o invisible.
-		*/
+		
 		_this.botones.visible = false;
 		
-		
 		var _this = this;
-		/*
-		Mueve la cabeza lectora al número de fotograma especificado en la línea de tiempo y detiene la película.
-		Se puede utilizar en la línea de tiempo principal o en líneas de tiempo de clips de película.
-		*/
+		
 		_this.ayuda.gotoAndStop(0);
 	}
 	this.frame_13 = function() {
 		document.getElementById('contenidos').style.display = 'block';
 		
 		var _this = this;
-		var iframe = document.getElementById('mi_iframe');
-		iframe.src = './Ayuda/Cuento/index.html'; 
+		
+		document.getElementById('mi_iframe').style.display = 'block';
 		
 		_this.btnAyudaCuento.on('click', function () {
 		document.getElementById('mi_iframe').style.display = 'block';
@@ -1738,21 +1731,21 @@ lib.properties = {
 	color: "#235594",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/bannernegro1.png?1725250201446", id:"bannernegro1"},
-		{src:"images/fondo11.png?1725250201446", id:"fondo11"},
-		{src:"images/fondoMorado.png?1725250201446", id:"fondoMorado"},
-		{src:"images/index_atlas_1.png?1725250201322", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1725250201323", id:"index_atlas_2"},
-		{src:"images/index_atlas_3.png?1725250201323", id:"index_atlas_3"},
-		{src:"sounds/ayuda1.mp3?1725250201446", id:"ayuda1"},
-		{src:"sounds/ayuda2.mp3?1725250201446", id:"ayuda2"},
-		{src:"sounds/ayuda3.mp3?1725250201446", id:"ayuda3"},
-		{src:"sounds/ayuda4.mp3?1725250201446", id:"ayuda4"},
-		{src:"sounds/ayuda5.mp3?1725250201446", id:"ayuda5"},
-		{src:"sounds/ayuda6.mp3?1725250201446", id:"ayuda6"},
-		{src:"sounds/sound2.mp3?1725250201446", id:"sound2"},
-		{src:"sounds/SoundPlay.mp3?1725250201446", id:"SoundPlay"},
-		{src:"sounds/sound1.mp3?1725250201446", id:"sound1"}
+		{src:"images/bannernegro1.png?1730077937452", id:"bannernegro1"},
+		{src:"images/fondo11.png?1730077937452", id:"fondo11"},
+		{src:"images/fondoMorado.png?1730077937452", id:"fondoMorado"},
+		{src:"images/index_atlas_1.png?1730077937344", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png?1730077937345", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png?1730077937346", id:"index_atlas_3"},
+		{src:"sounds/ayuda1.mp3?1730077937452", id:"ayuda1"},
+		{src:"sounds/ayuda2.mp3?1730077937452", id:"ayuda2"},
+		{src:"sounds/ayuda3.mp3?1730077937452", id:"ayuda3"},
+		{src:"sounds/ayuda4.mp3?1730077937452", id:"ayuda4"},
+		{src:"sounds/ayuda5.mp3?1730077937452", id:"ayuda5"},
+		{src:"sounds/ayuda6.mp3?1730077937452", id:"ayuda6"},
+		{src:"sounds/sound2.mp3?1730077937452", id:"sound2"},
+		{src:"sounds/SoundPlay.mp3?1730077937452", id:"SoundPlay"},
+		{src:"sounds/sound1.mp3?1730077937452", id:"sound1"}
 	],
 	preloads: []
 };
