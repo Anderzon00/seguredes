@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"iframe_atlas_1", frames: [[0,0,1373,455],[1761,120,63,63],[1826,120,60,60],[1484,1136,499,215],[1375,0,384,384],[1484,762,372,372],[1761,0,271,38],[1761,40,271,38],[1761,80,271,38],[0,1169,1389,291],[0,1462,1402,287],[0,841,1482,326],[0,457,1482,382],[1484,386,374,374]]}
+		{name:"iframe_atlas_1", frames: [[0,0,1373,455],[1375,376,63,63],[1858,120,60,60],[1404,1169,627,632],[1484,376,372,372],[1751,0,271,38],[1751,40,271,38],[1751,80,271,38],[0,1169,1402,287],[0,841,1482,326],[0,457,1482,382],[1375,0,374,374]]}
 ];
 
 
@@ -48,79 +48,65 @@ lib.ssMetadata = [
 
 
 
-(lib.escuelainfluences = function() {
+(lib.Diseñosintítulo = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.logocyber = function() {
+(lib.logoicbf = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.logoicbf = function() {
+(lib.masinformacionDOWN = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacionDOWN = function() {
+(lib.masinformacionUP = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacionUP = function() {
+(lib.masinformacion = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.masinformacion = function() {
+(lib.textunicef = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.textescuelainlfluen = function() {
+(lib.textocyber = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.textunicef = function() {
+(lib.textomismanos = function() {
 	this.initialize(ss["iframe_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.textocyber = function() {
-	this.initialize(ss["iframe_atlas_1"]);
-	this.gotoAndStop(11);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.textomismanos = function() {
-	this.initialize(ss["iframe_atlas_1"]);
-	this.gotoAndStop(12);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.unicef = function() {
 	this.initialize(ss["iframe_atlas_1"]);
-	this.gotoAndStop(13);
+	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -248,7 +234,7 @@ if (reversed == null) { reversed = false; }
 		/*
 		Carga la URL en una ventana nueva del navegador.
 		*/
-		window.open('https://play.google.com/store/apps/details?id=cyber.escudo.com&hl=es-419', '_blank');
+		window.open('https://www.youtube.com/watch?v=E-n3m9-rZC8', '_blank');
 		});
 		
 		
@@ -293,67 +279,53 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Capa_1
-	this.btnEscuela = new lib.btnMasInformacion();
-	this.btnEscuela.name = "btnEscuela";
-	this.btnEscuela.setTransform(567.1,988.45);
-	new cjs.ButtonHelper(this.btnEscuela, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
+	this.instance = new lib.Diseñosintítulo();
+	this.instance.setTransform(789,23,0.3216,0.3216);
 
-	this.instance = new lib.unicef();
-	this.instance.setTransform(794,534,0.5134,0.5134);
+	this.instance_1 = new lib.unicef();
+	this.instance_1.setTransform(794,534,0.5134,0.5134);
 
-	this.instance_1 = new lib.textunicef();
-	this.instance_1.setTransform(20,522,0.5,0.5);
+	this.instance_2 = new lib.textunicef();
+	this.instance_2.setTransform(20,522,0.5,0.5);
 
-	this.instance_2 = new lib.textescuelainlfluen();
-	this.instance_2.setTransform(20,816,0.5,0.5);
-
-	this.instance_3 = new lib.bordes();
-	this.instance_3.setTransform(-5,791,0.543,0.5);
-
-	this.instance_4 = new lib.escuelainfluences();
-	this.instance_4.setTransform(767,911,0.5,0.5);
-
-	this.instance_5 = new lib.logoicbf();
-	this.instance_5.setTransform(794,273,0.5161,0.5161);
+	this.instance_3 = new lib.logoicbf();
+	this.instance_3.setTransform(794,273,0.5161,0.5161);
 
 	this.btnunicef = new lib.btnMasInformacion();
 	this.btnunicef.name = "btnunicef";
 	this.btnunicef.setTransform(567.1,695.9);
 	new cjs.ButtonHelper(this.btnunicef, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance_6 = new lib.bordes();
-	this.instance_6.setTransform(0,498,0.543,0.5);
+	this.instance_4 = new lib.bordes();
+	this.instance_4.setTransform(0,498,0.543,0.5);
 
 	this.btnMismanos = new lib.btnMasInformacion();
 	this.btnMismanos.name = "btnMismanos";
 	this.btnMismanos.setTransform(567.1,427.35);
 	new cjs.ButtonHelper(this.btnMismanos, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance_7 = new lib.bordes();
-	this.instance_7.setTransform(-5,226,0.543,0.5);
+	this.instance_5 = new lib.bordes();
+	this.instance_5.setTransform(-5,226,0.543,0.5);
 
-	this.instance_8 = new lib.textomismanos();
-	this.instance_8.setTransform(0,249,0.5,0.5);
-
-	this.instance_9 = new lib.logocyber();
-	this.instance_9.setTransform(794,34,0.5,0.5);
+	this.instance_6 = new lib.textomismanos();
+	this.instance_6.setTransform(0,249,0.5,0.5);
 
 	this.btnCyber = new lib.btnMasInformacion();
 	this.btnCyber.name = "btnCyber";
 	this.btnCyber.setTransform(567.1,182.8);
 	new cjs.ButtonHelper(this.btnCyber, 0, 1, 2, false, new lib.btnMasInformacion(), 3);
 
-	this.instance_10 = new lib.bordes();
-	this.instance_10.setTransform(0,-13,0.543,0.5);
+	this.instance_7 = new lib.textocyber();
+	this.instance_7.setTransform(0,0,0.5,0.5);
 
-	this.instance_11 = new lib.textocyber();
-	this.instance_11.setTransform(0,0,0.5,0.5);
+	this.instance_8 = new lib.bordes();
+	this.instance_8.setTransform(0,-13,0.543,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_11},{t:this.instance_10},{t:this.btnCyber},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.btnMismanos},{t:this.instance_6},{t:this.btnunicef},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.btnEscuela}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.btnCyber},{t:this.instance_6},{t:this.instance_5},{t:this.btnMismanos},{t:this.instance_4},{t:this.btnunicef},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Símbolo2, new cjs.Rectangle(-5,-13,1021.5,1031.5), null);
+}).prototype = getMCSymbolPrototype(lib.Símbolo2, new cjs.Rectangle(-5,-13,995.7,739), null);
 
 
 (lib.Símbolo1 = function(mode,startPosition,loop,reversed) {
@@ -375,7 +347,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Símbolo1, new cjs.Rectangle(-532.9,-240,1021.5,1031.5), null);
+}).prototype = getMCSymbolPrototype(lib.Símbolo1, new cjs.Rectangle(-532.9,-240,995.7,739), null);
 
 
 // stage content:
@@ -411,7 +383,7 @@ if (reversed == null) { reversed = false; }
 			_this.btn_sonido1.visible=false;
 			_this.btn_sonido2.visible=true;
 			_this.btn_sonido3.visible=true;
-			_this.btn_sonido4.visible=true;
+			
 			createjs.Sound.play("audio1").on("complete", function () {                    
 			_this.btn_sonido1.visible=true; 
 		                    }, this);; 
@@ -421,8 +393,7 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.stop();
 			_this.btn_sonido2.visible=false;
 			_this.btn_sonido1.visible=true;
-			_this.btn_sonido3.visible=true;
-			_this.btn_sonido4.visible=true;
+			_this.btn_sonido3.visible=true;	
 			createjs.Sound.play("audio2").on("complete", function () {                    
 			_this.btn_sonido2.visible=true; 
 		                    }, this);; 
@@ -433,24 +404,11 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.stop();
 			_this.btn_sonido3.visible=false;
 			_this.btn_sonido1.visible=true;
-			_this.btn_sonido2.visible=true;
-			_this.btn_sonido4.visible=true;
+			_this.btn_sonido2.visible=true;	
 			createjs.Sound.play("audio3").on("complete", function () {                    
 			_this.btn_sonido3.visible=true; 
 		                    }, this);; 
 		});
-		
-		_this.btn_sonido4.on('click', function(){
-			createjs.Sound.stop();
-			_this.btn_sonido4.visible=false;
-			_this.btn_sonido1.visible=true;
-			_this.btn_sonido2.visible=true;
-			_this.btn_sonido3.visible=true;
-			createjs.Sound.play("audio4").on("complete", function () {                    
-			_this.btn_sonido4.visible=true; 
-		                    }, this);; 
-		});
-		
 		
 		 
 		_this.btnStopSonido1.on('click', function(){
@@ -468,10 +426,6 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.stop();
 		});
 		
-		_this.btnStopSonido4.on('click', function(){
-			_this.btn_sonido4.visible=true;
-			createjs.Sound.stop();
-		});
 		
 		
 		   // Function to scroll vertically
@@ -507,16 +461,6 @@ if (reversed == null) { reversed = false; }
 	this.btnStopSonido1.setTransform(629.35,151.65);
 	new cjs.ButtonHelper(this.btnStopSonido1, 0, 1, 2);
 
-	this.btn_sonido4 = new lib.btn_sonido();
-	this.btn_sonido4.name = "btn_sonido4";
-	this.btn_sonido4.setTransform(585.55,972.35,1,1,0,0,0,15.8,15.8);
-	new cjs.ButtonHelper(this.btn_sonido4, 0, 1, 2);
-
-	this.btnStopSonido4 = new lib.btnStopSonido();
-	this.btnStopSonido4.name = "btnStopSonido4";
-	this.btnStopSonido4.setTransform(568.8,957.45);
-	new cjs.ButtonHelper(this.btnStopSonido4, 0, 1, 2);
-
 	this.btn_sonido3 = new lib.btn_sonido();
 	this.btn_sonido3.name = "btn_sonido3";
 	this.btn_sonido3.setTransform(552.55,677.35,1,1,0,0,0,15.8,15.8);
@@ -540,12 +484,12 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.Símbolo1();
 	this.instance.setTransform(525.05,452.7,1,1,0,0,0,-13.6,196.2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.btnStopSonido2},{t:this.btn_sonido2},{t:this.btnStopSonido3},{t:this.btn_sonido3},{t:this.btnStopSonido4},{t:this.btn_sonido4},{t:this.btnStopSonido1},{t:this.btn_sonido1}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.btnStopSonido2},{t:this.btn_sonido2},{t:this.btnStopSonido3},{t:this.btn_sonido3},{t:this.btnStopSonido1},{t:this.btn_sonido1}]}).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(521.8,545.5,505.5,502.5);
+p.nominalBounds = new cjs.Rectangle(521.8,545.5,479.6,210);
 // library properties:
 lib.properties = {
 	id: '7C1B920775F18E4C9C20E78B1DF9DE91',
@@ -555,11 +499,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/iframe_atlas_1.png?1721426037608", id:"iframe_atlas_1"},
-		{src:"sounds/audio2.mp3?1721426037662", id:"audio2"},
-		{src:"sounds/audio4.mp3?1721426037662", id:"audio4"},
-		{src:"sounds/audio1.mp3?1721426037662", id:"audio1"},
-		{src:"sounds/audio3.mp3?1721426037662", id:"audio3"}
+		{src:"images/iframe_atlas_1.png?1730862050000", id:"iframe_atlas_1"},
+		{src:"sounds/audio2.mp3?1730862050036", id:"audio2"},
+		{src:"sounds/audio4.mp3?1730862050036", id:"audio4"},
+		{src:"sounds/audio1.mp3?1730862050036", id:"audio1"},
+		{src:"sounds/audio3.mp3?1730862050036", id:"audio3"}
 	],
 	preloads: []
 };
